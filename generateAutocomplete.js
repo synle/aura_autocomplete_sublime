@@ -3,9 +3,11 @@ var path = require('path');
 var fs = require('fs');
 var colors = require('colors');
 
+//internal dependencies
+var parseHelper = require('./parseHelper');
 
-//base path
-var baseDir = '/Users/syle/git/aura/';
+//base path (parsed form command line or default to my git folder)
+var baseDir = process.argv[2] || '/Users/syle/git/aura/';
 
 
 //init Aura global obejct
@@ -23,7 +25,7 @@ var $A = {
 var Component = function(){};
 var navigator = {
 	userAgent : ''
-}
+};
 
 
 //AURA TEST JS FILE
@@ -33,32 +35,15 @@ var testJsPath = path.join(
 	'aura-impl/target/classes/aura/test/Test.js'
 );
 
-//output testjs
-console.log('Parsing testUtil file'.yellow.bold);
-console.log(testJsPath.yellow);
-
 //read content files
-var fileContent = fs.readFileSync(testJsPath, 'utf-8');
+var fileContent = parseHelper.readFromFile(testJsPath);
 
 
 //parse test js
 eval(fileContent);
-var strNamespace = '$A.test'
 var curNamespace = $A.test;
-for (var k in curNamespace){
-	
-	if(typeof curNamespace[k] === 'function'){
-		//get function definitions as string
-		var funcDef = curNamespace[k].toString();
-		
-
-		//parse the params
-		var params = funcDef.match(/\(.*\)/)[0]; // match the first (...)
-		params = params.substr(1, params.length - 2); //remove ( and )
-
-		console.log(strNamespace.red.bold + k.red.bold);
-		console.log(params.blue);
-	}
+for (var k in $A.test){
+	parseHelper.parseFunctions(k, curNamespace[k], '$A.test.');
 }
 
 
@@ -69,30 +54,13 @@ var utilJsPath = path.join(
 	'aura-impl/target/classes/aura/util/Util.js'
 );
 
-
-//output testjs
-console.log('Parsing testUtil file'.yellow.bold);
-console.log(utilJsPath.yellow);
-
-
 //read content files
-var fileContent = fs.readFileSync(utilJsPath, 'utf-8');
+var fileContent = parseHelper.readFromFile(utilJsPath);
 
 
 //parse test js
 eval(fileContent);
-var strNamespace = 'Aura.Utils.Util';
-var curNamespace = Aura.Utils.Util;
+var curNamespace = Aura.Utils.Util.prototype;
 for (var k in curNamespace){
-	if(typeof curNamespace[k] === 'function'){
-		//get function definitions as string
-		var funcDef = curNamespace[k].toString();
-		
-		//parse the params
-		var params = funcDef.match(/\(.*\)/)[0]; // match the first (...)
-		params = params.substr(1, params.length - 2); //remove ( and )
-
-		console.log(strNamespace.red.bold + k.red.bold);
-		console.log(params.blue);
-	}
+	parseHelper.parseFunctions(k, curNamespace[k], '$A.util.');
 }
