@@ -1,0 +1,744 @@
+".source.js":
+	"A.test.addWaitFor":
+		"prefix":"A.test.addWaitFor"
+		"body":"A.test.addWaitFor($1expected,$2testFunction,$3callback)"
+".source.js":
+	"A.test.addWaitForAction":
+		"prefix":"A.test.addWaitForAction"
+		"body":"A.test.addWaitForAction($1success,$2actionName,$3callback)"
+".source.js":
+	"A.test.addWaitForWithFailureMessage":
+		"prefix":"A.test.addWaitForWithFailureMessage"
+		"body":"A.test.addWaitForWithFailureMessage($1expected,$2testFunction,$3failureMessage,$4callback)"
+".source.js":
+	"A.test.blockRequests":
+		"prefix":"A.test.blockRequests"
+		"body":"A.test.blockRequests($1)"
+".source.js":
+	"A.test.blockForegroundRequests":
+		"prefix":"A.test.blockForegroundRequests"
+		"body":"A.test.blockForegroundRequests($1)"
+".source.js":
+	"A.test.blockBackgroundRequests":
+		"prefix":"A.test.blockBackgroundRequests"
+		"body":"A.test.blockBackgroundRequests($1)"
+".source.js":
+	"A.test.releaseRequests":
+		"prefix":"A.test.releaseRequests"
+		"body":"A.test.releaseRequests($1)"
+".source.js":
+	"A.test.releaseForegroundRequests":
+		"prefix":"A.test.releaseForegroundRequests"
+		"body":"A.test.releaseForegroundRequests($1)"
+".source.js":
+	"A.test.releaseBackgroundRequests":
+		"prefix":"A.test.releaseBackgroundRequests"
+		"body":"A.test.releaseBackgroundRequests($1)"
+".source.js":
+	"A.test.getSentRequestCount":
+		"prefix":"A.test.getSentRequestCount"
+		"body":"A.test.getSentRequestCount($1)"
+".source.js":
+	"A.test.areActionsComplete":
+		"prefix":"A.test.areActionsComplete"
+		"body":"A.test.areActionsComplete($1actions)"
+".source.js":
+	"A.test.addCleanup":
+		"prefix":"A.test.addCleanup"
+		"body":"A.test.addCleanup($1cleanupFunction)"
+".source.js":
+	"A.test.getAction":
+		"prefix":"A.test.getAction"
+		"body":"A.test.getAction($1component,$2name,$3params,$4callback)"
+".source.js":
+	"A.test.runActionsAsTransaction":
+		"prefix":"A.test.runActionsAsTransaction"
+		"body":"A.test.runActionsAsTransaction($1actions,$2scope,$3callback)"
+".source.js":
+	"A.test.enqueueAction":
+		"prefix":"A.test.enqueueAction"
+		"body":"A.test.enqueueAction($1action,$2background)"
+".source.js":
+	"A.test.getExternalAction":
+		"prefix":"A.test.getExternalAction"
+		"body":"A.test.getExternalAction($1component,$2descriptor,$3params,$4returnType,$5callback)"
+".source.js":
+	"A.test.clearAndAssertComponentConfigs":
+		"prefix":"A.test.clearAndAssertComponentConfigs"
+		"body":"A.test.clearAndAssertComponentConfigs($1a)"
+".source.js":
+	"A.test.isActionPending":
+		"prefix":"A.test.isActionPending"
+		"body":"A.test.isActionPending($1)"
+".source.js":
+	"A.test.callServerAction":
+		"prefix":"A.test.callServerAction"
+		"body":"A.test.callServerAction($1action,$2doImmediate)"
+".source.js":
+	"A.test.setServerReachable":
+		"prefix":"A.test.setServerReachable"
+		"body":"A.test.setServerReachable($1reachable)"
+".source.js":
+	"A.test.runAfterIf":
+		"prefix":"A.test.runAfterIf"
+		"body":"A.test.runAfterIf($1conditionFunction,$2callback,$3intervalInMs)"
+".source.js":
+	"A.test.setTestTimeout":
+		"prefix":"A.test.setTestTimeout"
+		"body":"A.test.setTestTimeout($1timeoutMsec)"
+".source.js":
+	"A.test.isComplete":
+		"prefix":"A.test.isComplete"
+		"body":"A.test.isComplete($1)"
+".source.js":
+	"A.test.getErrors":
+		"prefix":"A.test.getErrors"
+		"body":"A.test.getErrors($1)"
+".source.js":
+	"A.test.print":
+		"prefix":"A.test.print"
+		"body":"A.test.print($1value)"
+".source.js":
+	"A.test.auraError":
+		"prefix":"A.test.auraError"
+		"body":"A.test.auraError($1level, msg/*, error*/)"
+".source.js":
+	"A.test.expectAuraError":
+		"prefix":"A.test.expectAuraError"
+		"body":"A.test.expectAuraError($1e)"
+".source.js":
+	"A.test.auraWarning":
+		"prefix":"A.test.auraWarning"
+		"body":"A.test.auraWarning($1level,$2msg)"
+".source.js":
+	"A.test.expectAuraWarning":
+		"prefix":"A.test.expectAuraWarning"
+		"body":"A.test.expectAuraWarning($1w)"
+".source.js":
+	"A.test.assertAccessible":
+		"prefix":"A.test.assertAccessible"
+		"body":"A.test.assertAccessible($1)"
+".source.js":
+	"A.test.assertTruthy":
+		"prefix":"A.test.assertTruthy"
+		"body":"A.test.assertTruthy($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertFalsy":
+		"prefix":"A.test.assertFalsy"
+		"body":"A.test.assertFalsy($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assert":
+		"prefix":"A.test.assert"
+		"body":"A.test.assert($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertEquals":
+		"prefix":"A.test.assertEquals"
+		"body":"A.test.assertEquals($1arg1,$2arg2,$3assertMessage)"
+".source.js":
+	"A.test.assertEqualsIgnoreWhitespace":
+		"prefix":"A.test.assertEqualsIgnoreWhitespace"
+		"body":"A.test.assertEqualsIgnoreWhitespace($1arg1,$2arg2,$3assertMessage)"
+".source.js":
+	"A.test.assertStartsWith":
+		"prefix":"A.test.assertStartsWith"
+		"body":"A.test.assertStartsWith($1start,$2full,$3assertMessage)"
+".source.js":
+	"A.test.assertNotEquals":
+		"prefix":"A.test.assertNotEquals"
+		"body":"A.test.assertNotEquals($1arg1,$2arg2,$3assertMessage)"
+".source.js":
+	"A.test.assertDefined":
+		"prefix":"A.test.assertDefined"
+		"body":"A.test.assertDefined($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertTrue":
+		"prefix":"A.test.assertTrue"
+		"body":"A.test.assertTrue($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertFalse":
+		"prefix":"A.test.assertFalse"
+		"body":"A.test.assertFalse($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertUndefined":
+		"prefix":"A.test.assertUndefined"
+		"body":"A.test.assertUndefined($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertNotUndefinedOrNull":
+		"prefix":"A.test.assertNotUndefinedOrNull"
+		"body":"A.test.assertNotUndefinedOrNull($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertUndefinedOrNull":
+		"prefix":"A.test.assertUndefinedOrNull"
+		"body":"A.test.assertUndefinedOrNull($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertNull":
+		"prefix":"A.test.assertNull"
+		"body":"A.test.assertNull($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertNotNull":
+		"prefix":"A.test.assertNotNull"
+		"body":"A.test.assertNotNull($1condition,$2assertMessage)"
+".source.js":
+	"A.test.assertAuraType":
+		"prefix":"A.test.assertAuraType"
+		"body":"A.test.assertAuraType($1type,$2condition,$3assertMessage)"
+".source.js":
+	"A.test.fail":
+		"prefix":"A.test.fail"
+		"body":"A.test.fail($1assertMessage,$2extraInfoMessage)"
+".source.js":
+	"A.test.getPrototype":
+		"prefix":"A.test.getPrototype"
+		"body":"A.test.getPrototype($1instance)"
+".source.js":
+	"A.test.overrideFunction":
+		"prefix":"A.test.overrideFunction"
+		"body":"A.test.overrideFunction($1instance,$2name,$3newFunction)"
+".source.js":
+	"A.test.addFunctionHandler":
+		"prefix":"A.test.addFunctionHandler"
+		"body":"A.test.addFunctionHandler($1instance,$2name,$3newFunction,$4postProcess)"
+".source.js":
+	"A.test.getOuterHtml":
+		"prefix":"A.test.getOuterHtml"
+		"body":"A.test.getOuterHtml($1node)"
+".source.js":
+	"A.test.getText":
+		"prefix":"A.test.getText"
+		"body":"A.test.getText($1node)"
+".source.js":
+	"A.test.getTextByComponent":
+		"prefix":"A.test.getTextByComponent"
+		"body":"A.test.getTextByComponent($1component)"
+".source.js":
+	"A.test.getStyle":
+		"prefix":"A.test.getStyle"
+		"body":"A.test.getStyle($1elem,$2style)"
+".source.js":
+	"A.test.getNonCommentNodes":
+		"prefix":"A.test.getNonCommentNodes"
+		"body":"A.test.getNonCommentNodes($1nodes)"
+".source.js":
+	"A.test.isNodeDeleted":
+		"prefix":"A.test.isNodeDeleted"
+		"body":"A.test.isNodeDeleted($1node)"
+".source.js":
+	"A.test.select":
+		"prefix":"A.test.select"
+		"body":"A.test.select($1)"
+".source.js":
+	"A.test.contains":
+		"prefix":"A.test.contains"
+		"body":"A.test.contains($1testString,$2targetString)"
+".source.js":
+	"A.test.compareValues":
+		"prefix":"A.test.compareValues"
+		"body":"A.test.compareValues($1expected,$2actual)"
+".source.js":
+	"A.test.getActiveElement":
+		"prefix":"A.test.getActiveElement"
+		"body":"A.test.getActiveElement($1)"
+".source.js":
+	"A.test.getActiveElementText":
+		"prefix":"A.test.getActiveElementText"
+		"body":"A.test.getActiveElementText($1)"
+".source.js":
+	"A.test.walkTheDOM":
+		"prefix":"A.test.walkTheDOM"
+		"body":"A.test.walkTheDOM($1node,$2func)"
+".source.js":
+	"A.test.getElementsByClassNameCustom":
+		"prefix":"A.test.getElementsByClassNameCustom"
+		"body":"A.test.getElementsByClassNameCustom($1className,$2parentElement)"
+".source.js":
+	"A.test.findChildWithClassName":
+		"prefix":"A.test.findChildWithClassName"
+		"body":"A.test.findChildWithClassName($1parentElement,$2className)"
+".source.js":
+	"A.test.getElementByClass":
+		"prefix":"A.test.getElementByClass"
+		"body":"A.test.getElementByClass($1classname)"
+".source.js":
+	"A.test.fireDomEvent":
+		"prefix":"A.test.fireDomEvent"
+		"body":"A.test.fireDomEvent($1element,$2eventName,$3canBubble,$4cancelable)"
+".source.js":
+	"A.test.clickOrTouch":
+		"prefix":"A.test.clickOrTouch"
+		"body":"A.test.clickOrTouch($1element,$2canBubble,$3cancelable)"
+".source.js":
+	"A.test.isInstanceOfText":
+		"prefix":"A.test.isInstanceOfText"
+		"body":"A.test.isInstanceOfText($1node)"
+".source.js":
+	"A.test.isInstanceOfAnchorElement":
+		"prefix":"A.test.isInstanceOfAnchorElement"
+		"body":"A.test.isInstanceOfAnchorElement($1element)"
+".source.js":
+	"A.test.isInstanceOfInputElement":
+		"prefix":"A.test.isInstanceOfInputElement"
+		"body":"A.test.isInstanceOfInputElement($1element)"
+".source.js":
+	"A.test.isInstanceOfLiElement":
+		"prefix":"A.test.isInstanceOfLiElement"
+		"body":"A.test.isInstanceOfLiElement($1element)"
+".source.js":
+	"A.test.isInstanceOfParagraphElement":
+		"prefix":"A.test.isInstanceOfParagraphElement"
+		"body":"A.test.isInstanceOfParagraphElement($1element)"
+".source.js":
+	"A.test.isInstanceOfButtonElement":
+		"prefix":"A.test.isInstanceOfButtonElement"
+		"body":"A.test.isInstanceOfButtonElement($1element)"
+".source.js":
+	"A.test.isInstanceOfImageElement":
+		"prefix":"A.test.isInstanceOfImageElement"
+		"body":"A.test.isInstanceOfImageElement($1element)"
+".source.js":
+	"A.test.isInstanceOfDivElement":
+		"prefix":"A.test.isInstanceOfDivElement"
+		"body":"A.test.isInstanceOfDivElement($1element)"
+".source.js":
+	"A.test.isInstanceOfSpanElement":
+		"prefix":"A.test.isInstanceOfSpanElement"
+		"body":"A.test.isInstanceOfSpanElement($1element)"
+".source.js":
+	"A.test.isInstanceOf":
+		"prefix":"A.test.isInstanceOf"
+		"body":"A.test.isInstanceOf($1element,$2elementType,$3tag)"
+".source.js":
+	"A.test.objectKeys":
+		"prefix":"A.test.objectKeys"
+		"body":"A.test.objectKeys($1obj)"
+".source.js":
+	"A.test.getElementAttributeValue":
+		"prefix":"A.test.getElementAttributeValue"
+		"body":"A.test.getElementAttributeValue($1element,$2attributeName)"
+".source.js":
+	"A.test.addEventHandler":
+		"prefix":"A.test.addEventHandler"
+		"body":"A.test.addEventHandler($1eventName,$2handler,$3component,$4insert)"
+".source.js":
+	"A.test.dummyFunction":
+		"prefix":"A.test.dummyFunction"
+		"body":"A.test.dummyFunction($1)"
+".source.js":
+	"A.test.getAppCacheEvents":
+		"prefix":"A.test.getAppCacheEvents"
+		"body":"A.test.getAppCacheEvents($1)"
+".source.js":
+	"A.test.getAuraErrorMessage":
+		"prefix":"A.test.getAuraErrorMessage"
+		"body":"A.test.getAuraErrorMessage($1)"
+".source.js":
+	"A.test.getAvailableXHROverride":
+		"prefix":"A.test.getAvailableXHROverride"
+		"body":"A.test.getAvailableXHROverride($1config,$2isBackground)"
+".source.js":
+	"A.test.sendOverride":
+		"prefix":"A.test.sendOverride"
+		"body":"A.test.sendOverride($1config,$2auraXHR,$3actions,$4method,$5options)"
+".source.js":
+	"A.test.decodeOverride":
+		"prefix":"A.test.decodeOverride"
+		"body":"A.test.decodeOverride($1config,$2response,$3noStrip)"
+".source.js":
+	"A.test.PrePostConfig":
+		"prefix":"A.test.PrePostConfig"
+		"body":"A.test.PrePostConfig($1action,$2preSendCallback,$3postSendCallback)"
+".source.js":
+	"A.test.addPrePostSendCallback":
+		"prefix":"A.test.addPrePostSendCallback"
+		"body":"A.test.addPrePostSendCallback($1action,$2preSendCallback,$3postSendCallback)"
+".source.js":
+	"A.test.removePrePostSendCallback":
+		"prefix":"A.test.removePrePostSendCallback"
+		"body":"A.test.removePrePostSendCallback($1handle)"
+".source.js":
+	"A.test.install":
+		"prefix":"A.test.install"
+		"body":"A.test.install($1)"
+".source.js":
+	"A.test.run":
+		"prefix":"A.test.run"
+		"body":"A.test.run($1name,$2code,$3timeoutOverride,$4quickFixException)"
+".source.js":
+	"A.test.runInternal":
+		"prefix":"A.test.runInternal"
+		"body":"A.test.runInternal($1name)"
+".source.js":
+	"A.test.executeAfterCkEditorIsReady":
+		"prefix":"A.test.executeAfterCkEditorIsReady"
+		"body":"A.test.executeAfterCkEditorIsReady($1inputRichTextComponent,$2callback)"
+".source.js":
+	"A.test.reloadGlobalValueProviders":
+		"prefix":"A.test.reloadGlobalValueProviders"
+		"body":"A.test.reloadGlobalValueProviders($1gvp,$2callback)"
+".source.js":
+	"A.test.getCreationPath":
+		"prefix":"A.test.getCreationPath"
+		"body":"A.test.getCreationPath($1cmp)"
+".source.js":
+	"A.test.createHttpRequest":
+		"prefix":"A.test.createHttpRequest"
+		"body":"A.test.createHttpRequest($1)"
+".source.js":
+	"A.util.isIOSWebView":
+		"prefix":"A.util.isIOSWebView"
+		"body":"A.util.isIOSWebView($1)"
+".source.js":
+	"A.util.globalEval":
+		"prefix":"A.util.globalEval"
+		"body":"A.util.globalEval($1src)"
+".source.js":
+	"A.util.isArray":
+		"prefix":"A.util.isArray"
+		"body":"A.util.isArray($1)"
+".source.js":
+	"A.util.isObject":
+		"prefix":"A.util.isObject"
+		"body":"A.util.isObject($1obj)"
+".source.js":
+	"A.util.isPlainObject":
+		"prefix":"A.util.isPlainObject"
+		"body":"A.util.isPlainObject($1obj)"
+".source.js":
+	"A.util.isError":
+		"prefix":"A.util.isError"
+		"body":"A.util.isError($1obj)"
+".source.js":
+	"A.util.isFunction":
+		"prefix":"A.util.isFunction"
+		"body":"A.util.isFunction($1obj)"
+".source.js":
+	"A.util.isString":
+		"prefix":"A.util.isString"
+		"body":"A.util.isString($1obj)"
+".source.js":
+	"A.util.isNumber":
+		"prefix":"A.util.isNumber"
+		"body":"A.util.isNumber($1obj)"
+".source.js":
+	"A.util.isFiniteNumber":
+		"prefix":"A.util.isFiniteNumber"
+		"body":"A.util.isFiniteNumber($1obj)"
+".source.js":
+	"A.util.isBoolean":
+		"prefix":"A.util.isBoolean"
+		"body":"A.util.isBoolean($1obj)"
+".source.js":
+	"A.util.isUndefined":
+		"prefix":"A.util.isUndefined"
+		"body":"A.util.isUndefined($1obj)"
+".source.js":
+	"A.util.isUndefinedOrNull":
+		"prefix":"A.util.isUndefinedOrNull"
+		"body":"A.util.isUndefinedOrNull($1obj)"
+".source.js":
+	"A.util.isEmpty":
+		"prefix":"A.util.isEmpty"
+		"body":"A.util.isEmpty($1obj)"
+".source.js":
+	"A.util.getBooleanValue":
+		"prefix":"A.util.getBooleanValue"
+		"body":"A.util.getBooleanValue($1val)"
+".source.js":
+	"A.util.createHtmlElement":
+		"prefix":"A.util.createHtmlElement"
+		"body":"A.util.createHtmlElement($1tagName,$2attributes)"
+".source.js":
+	"A.util.clearNode":
+		"prefix":"A.util.clearNode"
+		"body":"A.util.clearNode($1node)"
+".source.js":
+	"A.util.getElement":
+		"prefix":"A.util.getElement"
+		"body":"A.util.getElement($1id)"
+".source.js":
+	"A.util.copy":
+		"prefix":"A.util.copy"
+		"body":"A.util.copy($1value)"
+".source.js":
+	"A.util.compareValues":
+		"prefix":"A.util.compareValues"
+		"body":"A.util.compareValues($1expected,$2actual)"
+".source.js":
+	"A.util.hasClass":
+		"prefix":"A.util.hasClass"
+		"body":"A.util.hasClass($1element,$2className)"
+".source.js":
+	"A.util.addClass":
+		"prefix":"A.util.addClass"
+		"body":"A.util.addClass($1element,$2newClass)"
+".source.js":
+	"A.util.removeClass":
+		"prefix":"A.util.removeClass"
+		"body":"A.util.removeClass($1element,$2newClass)"
+".source.js":
+	"A.util.toggleClass":
+		"prefix":"A.util.toggleClass"
+		"body":"A.util.toggleClass($1element,$2className,$3condition)"
+".source.js":
+	"A.util.swapClass":
+		"prefix":"A.util.swapClass"
+		"body":"A.util.swapClass($1element,$2oldClass,$3newClass)"
+".source.js":
+	"A.util.setClass":
+		"prefix":"A.util.setClass"
+		"body":"A.util.setClass($1element,newClass,remove)"
+".source.js":
+	"A.util.buildClass":
+		"prefix":"A.util.buildClass"
+		"body":"A.util.buildClass($1oldClass,$2newClass,$3remove)"
+".source.js":
+	"A.util.buildFlavorClass":
+		"prefix":"A.util.buildFlavorClass"
+		"body":"A.util.buildFlavorClass($1cmp,$2flavor)"
+".source.js":
+	"A.util.createElementsFromMarkup":
+		"prefix":"A.util.createElementsFromMarkup"
+		"body":"A.util.createElementsFromMarkup($1markup)"
+".source.js":
+	"A.util.insertFirst":
+		"prefix":"A.util.insertFirst"
+		"body":"A.util.insertFirst($1newEl,$2referenceEl)"
+".source.js":
+	"A.util.insertBefore":
+		"prefix":"A.util.insertBefore"
+		"body":"A.util.insertBefore($1newEl,$2referenceEl)"
+".source.js":
+	"A.util.insertAfter":
+		"prefix":"A.util.insertAfter"
+		"body":"A.util.insertAfter($1newEl,$2referenceEl)"
+".source.js":
+	"A.util.appendChild":
+		"prefix":"A.util.appendChild"
+		"body":"A.util.appendChild($1newEl,$2referenceEl)"
+".source.js":
+	"A.util.removeElement":
+		"prefix":"A.util.removeElement"
+		"body":"A.util.removeElement($1element)"
+".source.js":
+	"A.util.urlDecode":
+		"prefix":"A.util.urlDecode"
+		"body":"A.util.urlDecode($1url)"
+".source.js":
+	"A.util.trim":
+		"prefix":"A.util.trim"
+		"body":"A.util.trim($1value)"
+".source.js":
+	"A.util.format":
+		"prefix":"A.util.format"
+		"body":"A.util.format($1formatString,arg1,arg2,argN)"
+".source.js":
+	"A.util.truncate":
+		"prefix":"A.util.truncate"
+		"body":"A.util.truncate($1st,$2len,$3ellipsis,$4truncateByWord)"
+".source.js":
+	"A.util.createTimeoutCallback":
+		"prefix":"A.util.createTimeoutCallback"
+		"body":"A.util.createTimeoutCallback($1callback,$2toleranceMillis)"
+".source.js":
+	"A.util.on":
+		"prefix":"A.util.on"
+		"body":"A.util.on($1element,$2eventName,$3handler,$4useCapture,$5timeout)"
+".source.js":
+	"A.util.removeOn":
+		"prefix":"A.util.removeOn"
+		"body":"A.util.removeOn($1element,$2eventName,$3listener,$4useCapture)"
+".source.js":
+	"A.util.formToMap":
+		"prefix":"A.util.formToMap"
+		"body":"A.util.formToMap($1form)"
+".source.js":
+	"A.util.getSelectValue":
+		"prefix":"A.util.getSelectValue"
+		"body":"A.util.getSelectValue($1select)"
+".source.js":
+	"A.util.addValueToMap":
+		"prefix":"A.util.addValueToMap"
+		"body":"A.util.addValueToMap($1inputMap,$2key,$3value)"
+".source.js":
+	"A.util.addMapValueToMap":
+		"prefix":"A.util.addMapValueToMap"
+		"body":"A.util.addMapValueToMap($1inputMap,$2key,$3value,$4subMapKey)"
+".source.js":
+	"A.util.isSubDef":
+		"prefix":"A.util.isSubDef"
+		"body":"A.util.isSubDef($1def,$2qname)"
+".source.js":
+	"A.util.apply":
+		"prefix":"A.util.apply"
+		"body":"A.util.apply($1/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)"
+".source.js":
+	"A.util.camelCaseToHyphens":
+		"prefix":"A.util.camelCaseToHyphens"
+		"body":"A.util.camelCaseToHyphens($1str)"
+".source.js":
+	"A.util.hyphensToCamelCase":
+		"prefix":"A.util.hyphensToCamelCase"
+		"body":"A.util.hyphensToCamelCase($1str)"
+".source.js":
+	"A.util.acceptsData":
+		"prefix":"A.util.acceptsData"
+		"body":"A.util.acceptsData($1element)"
+".source.js":
+	"A.util.getElementAttributeValue":
+		"prefix":"A.util.getElementAttributeValue"
+		"body":"A.util.getElementAttributeValue($1element,attributeName)"
+".source.js":
+	"A.util.getDataAttribute":
+		"prefix":"A.util.getDataAttribute"
+		"body":"A.util.getDataAttribute($1element,$2key)"
+".source.js":
+	"A.util.setDataAttribute":
+		"prefix":"A.util.setDataAttribute"
+		"body":"A.util.setDataAttribute($1element,$2key,$3value)"
+".source.js":
+	"A.util.getDataAttributeName":
+		"prefix":"A.util.getDataAttributeName"
+		"body":"A.util.getDataAttributeName($1key)"
+".source.js":
+	"A.util.hasDataAttribute":
+		"prefix":"A.util.hasDataAttribute"
+		"body":"A.util.hasDataAttribute($1element,$2key)"
+".source.js":
+	"A.util.isElement":
+		"prefix":"A.util.isElement"
+		"body":"A.util.isElement($1obj)"
+".source.js":
+	"A.util.attachToDocumentBody":
+		"prefix":"A.util.attachToDocumentBody"
+		"body":"A.util.attachToDocumentBody($1element)"
+".source.js":
+	"A.util.stringEndsWith":
+		"prefix":"A.util.stringEndsWith"
+		"body":"A.util.stringEndsWith($1fullstr,$2substr)"
+".source.js":
+	"A.util.bind":
+		"prefix":"A.util.bind"
+		"body":"A.util.bind($1method /*, this, bind arguments*/)"
+".source.js":
+	"A.util.keys":
+		"prefix":"A.util.keys"
+		"body":"A.util.keys($1object,$2excludeFunctions)"
+".source.js":
+	"A.util.lookup":
+		"prefix":"A.util.lookup"
+		"body":"A.util.lookup($1object /*, var-args of arrays*/)"
+".source.js":
+	"A.util.merge":
+		"prefix":"A.util.merge"
+		"body":"A.util.merge($1first /*, var-args of arrays*/)"
+".source.js":
+	"A.util.forEach":
+		"prefix":"A.util.forEach"
+		"body":"A.util.forEach($1array,$2method,$3that)"
+".source.js":
+	"A.util.map":
+		"prefix":"A.util.map"
+		"body":"A.util.map($1array,$2method,$3that)"
+".source.js":
+	"A.util.reduce":
+		"prefix":"A.util.reduce"
+		"body":"A.util.reduce($1array,$2method,$3initial)"
+".source.js":
+	"A.util.every":
+		"prefix":"A.util.every"
+		"body":"A.util.every($1array,$2predicate,$3that)"
+".source.js":
+	"A.util.some":
+		"prefix":"A.util.some"
+		"body":"A.util.some($1array,$2predicate,$3that)"
+".source.js":
+	"A.util.filter":
+		"prefix":"A.util.filter"
+		"body":"A.util.filter($1array,$2predicate,$3that)"
+".source.js":
+	"A.util.destroyAsync":
+		"prefix":"A.util.destroyAsync"
+		"body":"A.util.destroyAsync($1cmp)"
+".source.js":
+	"A.util.instanceOf":
+		"prefix":"A.util.instanceOf"
+		"body":"A.util.instanceOf($1instance,$2constructor)"
+".source.js":
+	"A.util.emptyComponentTrash":
+		"prefix":"A.util.emptyComponentTrash"
+		"body":"A.util.emptyComponentTrash($1)"
+".source.js":
+	"A.util.contains":
+		"prefix":"A.util.contains"
+		"body":"A.util.contains($1container,$2element)"
+".source.js":
+	"A.util.squash":
+		"prefix":"A.util.squash"
+		"body":"A.util.squash($1event,$2preventDefault)"
+".source.js":
+	"A.util.stripTags":
+		"prefix":"A.util.stripTags"
+		"body":"A.util.stripTags($1input,$2tags)"
+".source.js":
+	"A.util.getWindowSize":
+		"prefix":"A.util.getWindowSize"
+		"body":"A.util.getWindowSize($1)"
+".source.js":
+	"A.util.isComponent":
+		"prefix":"A.util.isComponent"
+		"body":"A.util.isComponent($1obj)"
+".source.js":
+	"A.util.isExpression":
+		"prefix":"A.util.isExpression"
+		"body":"A.util.isExpression($1obj)"
+".source.js":
+	"A.util.isValue":
+		"prefix":"A.util.isValue"
+		"body":"A.util.isValue($1obj)"
+".source.js":
+	"A.util.isAction":
+		"prefix":"A.util.isAction"
+		"body":"A.util.isAction($1obj)"
+".source.js":
+	"A.util.supportsTouchEvents":
+		"prefix":"A.util.supportsTouchEvents"
+		"body":"A.util.supportsTouchEvents($1)"
+".source.js":
+	"A.util.estimateSize":
+		"prefix":"A.util.estimateSize"
+		"body":"A.util.estimateSize($1obj)"
+".source.js":
+	"A.util.toArray":
+		"prefix":"A.util.toArray"
+		"body":"A.util.toArray($1collection)"
+".source.js":
+	"A.util.setText":
+		"prefix":"A.util.setText"
+		"body":"A.util.setText($1node,$2text)"
+".source.js":
+	"A.util.getDebugToolComponent":
+		"prefix":"A.util.getDebugToolComponent"
+		"body":"A.util.getDebugToolComponent($1)"
+".source.js":
+	"A.util.getDebugToolsAuraInstance":
+		"prefix":"A.util.getDebugToolsAuraInstance"
+		"body":"A.util.getDebugToolsAuraInstance($1)"
+".source.js":
+	"A.util.setDebugToolWindow":
+		"prefix":"A.util.setDebugToolWindow"
+		"body":"A.util.setDebugToolWindow($1debugWindow)"
+".source.js":
+	"A.util.getUrl":
+		"prefix":"A.util.getUrl"
+		"body":"A.util.getUrl($1)"
+".source.js":
+	"A.util.getText":
+		"prefix":"A.util.getText"
+		"body":"A.util.getText($1node)"
+".source.js":
+	"A.util.errorBasedOnMode":
+		"prefix":"A.util.errorBasedOnMode"
+		"body":"A.util.errorBasedOnMode($1msg)"
+".source.js":
+	"A.util.includeScript":
+		"prefix":"A.util.includeScript"
+		"body":"A.util.includeScript($1url,$2callback)"

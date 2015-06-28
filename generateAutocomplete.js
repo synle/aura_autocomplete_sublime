@@ -82,5 +82,17 @@ for (var k in curNamespace){
 
 
 
-//consolidate
-parseHelper.writeToFile(parseHelper.consolidate(masterDictionary));
+//consolidate sublime text format
+console.log('Updating Sublime File:'.bold.magenta.underline);
+parseHelper.writeToFile(
+	parseHelper.consolidate_sublime(masterDictionary),
+	'./aura.sublime-completions'
+);
+
+
+//
+console.log('Updating Sublime File:'.bold.magenta.underline);
+parseHelper.writeToFile(
+	parseHelper.consolidate_atom(masterDictionary),
+	'./aura.atom.cson'
+);

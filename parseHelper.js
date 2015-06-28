@@ -26,6 +26,7 @@ var self = {
             }
 
            	//shorten and trim bad character
+           	var pureParams = JSON.parse(JSON.stringify(params));
             for (var i = 0; i < params.length; i++) {
                 params[i] = '$' + (i + 1) + self.shortenName(params[i]);
             }
@@ -35,7 +36,7 @@ var self = {
             // console.log((namespaceStr + functionName).green.bold.underline + ':\t');
             // console.log(params.join('\n').cyan);
 
-            return [namespaceStr + functionName, params];
+            return [namespaceStr + functionName, params, pureParams];
         } else {
             return [];
         }
@@ -47,7 +48,7 @@ var self = {
         //selectively return shorter name
         return str;
     },
-    consolidate: function(dictionary){
+    consolidate_sublime: function(dictionary){
     	var sublimeFormat = {
 			"scope": "source, js",
 			"completions":[]
@@ -73,8 +74,31 @@ var self = {
 
     	return JSON.stringify(sublimeFormat, null, 3);
     },
-    writeToFile:function(string){
-    	fs.writeFileSync('./tmp.aura.sublime-completions', string)
+    consolidate_atom: function(dictionary){
+    	var atomFormat = '';
+
+
+    	for (var functionName in dictionary){
+    		var functionParams = dictionary[functionName] || "";
+
+    		var prefix = functionName;
+    		var body = functionName + "(" + functionParams + ")";
+
+    		atomFormat += [
+    			'".source.js":',
+    			'\t"' + functionName + '":',
+    			'\t\t"prefix":"' + prefix + '"',
+    			'\t\t"body":"' + body + '"',
+    		].join('\n') + '\n';
+    	}
+
+    	return atomFormat;
+	},
+    writeToFile:function(string, path){
+    	console.log('Writing To File:' + path);
+    	fs.writeFileSync(path, string);
     }
 };
+
+
 module.exports = self;
