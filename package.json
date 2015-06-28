@@ -1,0 +1,19 @@
+{
+  "name": "aura_autocomplete",
+  "version": "1.0.0",
+  "description": "Generate autocomplete for Salesforce Aura code snippet",
+  "main": "generateAutocomplete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synle/aura_autocomplete_sublime.git"
+  },
+  "author": "Sy Le - lenguyensy@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/synle/aura_autocomplete_sublime/issues"
+  },
+  "homepage": "https://github.com/synle/aura_autocomplete_sublime"
+}
