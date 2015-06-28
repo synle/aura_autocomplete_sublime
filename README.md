@@ -1,6 +1,12 @@
 Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3
 ====
 
+To Compile the autocomplete from Aura github
+```
+   #download and install node
+   #run this
+   npm start	
+```
 
 Install on Sublime Text 3
 ```
