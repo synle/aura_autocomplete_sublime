@@ -1,5 +1,5 @@
 {
-   "scope": "source, js",
+   "scope": "source",
    "completions": [
       {
          "trigger": "A_test_addWaitFor\t$A.test",

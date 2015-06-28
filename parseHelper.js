@@ -3,7 +3,7 @@ var fs = require('fs');
 //definitions
 var self = {
     readFromFile: function(path) {
-        console.log('Reading file...'.yellow.bold);
+        console.log('Reading file...'.magenta.bold);
         console.log(path.yellow);
         return fs.readFileSync(path, 'utf-8');
     },
@@ -50,10 +50,10 @@ var self = {
     },
     consolidate_sublime: function(dictionary){
     	var sublimeFormat = {
-			"scope": "source, js",
+			// "scope": "source, js",
+			"scope": "source",
 			"completions":[]
 		};
-
 
     	for (var functionName in dictionary){
     		var functionParams = dictionary[functionName] || "";
@@ -95,7 +95,7 @@ var self = {
     	return atomFormat;
 	},
     writeToFile:function(string, path){
-    	console.log('Writing To File:' + path);
+    	console.log(path.yellow);
     	fs.writeFileSync(path, string);
     }
 };
