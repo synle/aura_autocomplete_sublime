@@ -57,23 +57,24 @@ var self = {
     	for (var functionName in dictionary){
     		var functionParams = dictionary[functionName] || "";
 
+    		//triggers
+    		var trigger = functionName.replace(/[.]/g, '_');
+    		trigger += trigger.indexOf('_test_') >= 0 ? '\t$A.test' : '\t$A.util';
+
+    		//contents
+    		var contents = functionName + "(" + functionParams + ")";
+
 			//sublime format
 			sublimeFormat.completions.push({
-				trigger: "",
-				contents: functionName + "(" + functionParams + ")"
+				trigger: trigger,
+				contents: contents
 			});
-
-			// 		{
-			// "scope": "source, js",
-			// "completions":
-			// [
-			//     { "trigger": "a_test_error\t()", "contents": "A.test.errors $1"},
     	}
 
     	return JSON.stringify(sublimeFormat, null, 3);
     },
     writeToFile:function(string){
-    	console.log(string);
+    	fs.writeFileSync('./tmp.aura.sublime-completions', string)
     }
 };
 module.exports = self;
