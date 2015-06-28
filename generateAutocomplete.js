@@ -28,6 +28,9 @@ var navigator = {
 };
 
 
+//master dictionary
+var masterDictionary = {};
+
 //AURA TEST JS FILE
 //generarte path for the test and util js file
 var testJsPath = path.join(
@@ -43,7 +46,13 @@ var fileContent = parseHelper.readFromFile(testJsPath);
 eval(fileContent);
 var curNamespace = $A.test;
 for (var k in $A.test){
-	parseHelper.parseFunctions(k, curNamespace[k], '$A.test.');
+	var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
+	if(parsedStuffs.length >0){
+		var functionName = parsedStuffs[0];
+		var functionParams = parsedStuffs[1];
+
+		masterDictionary[functionName] = functionParams;
+	}
 }
 
 
@@ -62,5 +71,16 @@ var fileContent = parseHelper.readFromFile(utilJsPath);
 eval(fileContent);
 var curNamespace = Aura.Utils.Util.prototype;
 for (var k in curNamespace){
-	parseHelper.parseFunctions(k, curNamespace[k], '$A.util.');
+	var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
+	if(parsedStuffs.length >0){
+		var functionName = parsedStuffs[0];
+		var functionParams = parsedStuffs[1];
+
+		masterDictionary[functionName] = functionParams;
+	}
 }
+
+
+
+//consolidate
+parseHelper.writeToFile(parseHelper.consolidate(masterDictionary));
