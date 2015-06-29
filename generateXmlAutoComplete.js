@@ -38,56 +38,42 @@ componentFileNames.cmp.forEach(function(fileName){
 //generate events stuffs
 var eventDictionary = {};
 componentFileNames.evt.forEach(function(fileName){
-	if(fileName.indexOf('updateGridRow.evt') >= 0){
-		var shortFileName = path.basename(fileName);
-		var evtName = shortFileName.substr(0, shortFileName.indexOf('.'));
-		var evtDescription = '';
-		var evtParams = [];
+	var shortFileName = path.basename(fileName);
+	var evtName = shortFileName.substr(0, shortFileName.indexOf('.'));
+	var evtDescription = '';
+	var evtParams = [];
 
-		// console.log('evt'.bold.blue, fileName.yellow);
-		var fileContent = parseHelper.readFromFile(fileName);	
+	// console.log('evt'.bold.blue, fileName.yellow);
+	var fileContent = parseHelper.readFromFile(fileName);	
 
 
-		//parsing xml
-		parseString(fileContent, function (err, result) {
-			evtDescription = result['aura:event'].$.description;
+	//parsing xml
+	parseString(fileContent, {async: true}, function (err, result) {
+		evtDescription = result['aura:event'].$.description;
 
+		if (result['aura:event']['aura:attribute']){
 			result['aura:event']['aura:attribute'].forEach(function(auraAttribute){
 				var evtAttribute = auraAttribute.$;
 				evtParams.push(evtAttribute);
 			});
+		}
 
 
-			//save it to the dictionary
-			eventDictionary[shortFileName] = {
-				name: evtName,
-				description: evtDescription,
-				params : evtParams
-			};
-		});
-	}
+		//save it to the dictionary
+		eventDictionary[shortFileName] = {
+			name: evtName,
+			description: evtDescription,
+			params : evtParams
+		};
+	});
 });
 
 
-console.log(eventDictionary);
 
 
-// /Users/syle/git/aura/aura-components/src/main/components/ui/updateGridRow/updateGridRow.evt
-
-
-// var e = cmp.find('tabset2').get("e.addTab");
-
-//         e.setParams({tab: {
-//             "title": title,
-//             "closable": closable,
-//             "active": active,
-//             "body": [{
-//                 "componentDef": { descriptor:"markup://aura:text" },
-//                 "attributes": {
-//                     "values": {
-//                         "value": content
-//                     }
-//                 }
-//             }],
-//             }, index: -1});
-//         e.fire();
+//consolidate js evt
+console.log('Updating Sublime File:'.bold.magenta.underline);
+parseHelper.writeToFile(
+	parseHelper.consolidate_evt_sublime(eventDictionary),
+	'./aura.event.sublime-completions'
+);

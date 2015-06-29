@@ -77,11 +77,7 @@ var self = {
         return str;
     },
     consolidate_sublime: function(dictionary){
-    	var sublimeFormat = {
-			// "scope": "source, js",
-			"scope": "source",
-			"completions":[]
-		};
+    	var sublimeFormat = self._getDefaultSublimeJSObject();
 
     	for (var functionName in dictionary){
     		var functionParams = dictionary[functionName] || "";
@@ -105,7 +101,6 @@ var self = {
     consolidate_atom: function(dictionary){
     	var atomFormat = '';
 
-
     	for (var functionName in dictionary){
     		var functionParams = dictionary[functionName] || "";
 
@@ -122,6 +117,49 @@ var self = {
 
     	return atomFormat;
 	},
+    consolidate_evt_sublime:function(evtDictionary){
+        var sublimeFormat = self._getDefaultSublimeJSObject();
+
+        for (var evtName in evtDictionary){
+            var evt = evtDictionary[evtName];
+
+            var trigger = 'evt_' + evt.name + '\t$A.Event';
+            var contents = [
+                'var e = cmp.find("some_cmp").get("e.'+evt.name+'");',
+                'e.setParams({'
+            ];
+
+            //loop through params and do stuffs
+            if(evt.params.length > 0){
+                for (var i = 0; i < evt.params.length; i++){
+                    var evtDef = evt.params[i];
+                    contents.push(
+                        evtDef.name + ': "' +'$' + (i + 1)+evtDef.type+'"' + ', //' + evtDef.description
+                    );
+                }
+            }
+            contents.push('});');
+            contents.push('e.fire();');
+
+            //combine to the string
+            contents = contents.join('\n')
+
+            //push
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+        };
+
+        return JSON.stringify(sublimeFormat, null, 3);
+    },
+    _getDefaultSublimeJSObject: function(){
+        return {
+            // "scope": "source, js",
+            "scope": "source",
+            "completions":[]
+        };
+    },
     writeToFile:function(string, path){
     	console.log(path.yellow);
     	fs.writeFileSync(path, string);
