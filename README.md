@@ -25,7 +25,7 @@ You can hit tab to select the completion as well as navigate through parameters
 ## To autocomplete an Aura event type
 ```
 	Trigger:
-	evt-{EVENT_NAME}
+	evt-{COMPONENT_NAME}-{EVENT_NAME}
 
 	Example:
 	evt-search
