@@ -108,3 +108,6 @@ parseHelper.writeToFile(
 	parseHelper.consolidate_evt_sublime(componentEventDictionary),
 	'./aura.event.sublime-completions'
 );
+
+
+

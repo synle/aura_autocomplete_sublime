@@ -111,7 +111,12 @@ var self = {
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var trigger = 'e_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var contents = [
-                actualEvt.description ? '//' + actualEvt.description : '', 'var e = cmp.find("$1' + evtObj.component + '").get("e.' + actualEvt.name + '");', 'e.setParams({'
+                '// ' + 'component=' + evtObj.component,
+                '// ' + 'evtName=' + actualEvt.name,
+                '// ' + 'evtType='+ actualEvt.type,
+                actualEvt.description ? '// ' + actualEvt.description : '',
+                'var e = cmp.find("$1' + evtObj.component + '").get("e.' + actualEvt.name + '");',
+                'e.setParams({'
             ];
             //loop through params and do stuffs
             if (evt.params.length > 0) {
