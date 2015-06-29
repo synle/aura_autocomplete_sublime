@@ -77,6 +77,7 @@ var self = {
             //triggers
             var trigger = functionName.replace(/[.]/g, '_');
             trigger += trigger.indexOf('_test_') >= 0 ? '\t$A.test' : '\t$A.util';
+
             //contents
             var contents = functionName + "(" + functionParams + ")";
             //sublime format
@@ -107,7 +108,8 @@ var self = {
                 console.log('error'.red, evtObj);
                 continue;
             }
-            var trigger = 'evt_' + actualEvt.name + '_' + evtObj.component + '\t$A.Event';
+            // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
+            var trigger = 'e_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var contents = [
                 actualEvt.description ? '//' + actualEvt.description : '', 'var e = cmp.find("$1' + evtObj.component + '").get("e.' + actualEvt.name + '");', 'e.setParams({'
             ];
@@ -115,7 +117,7 @@ var self = {
             if (evt.params.length > 0) {
                 for (var i = 0; i < evt.params.length; i++) {
                     var evtDef = evt.params[i];
-                    contents.push(evtDef.name + ': "' + '$' + (i + 2) + evtDef.type + '"' + ',' + (evtDef.description ? '// ' + evtDef.description : ''));
+                    contents.push('\t' + evtDef.name + ': "' + '$' + (i + 2) + evtDef.type + '"' + ',' + (evtDef.description ? '// ' + evtDef.description : ''));
                 }
             }
             contents.push('});');

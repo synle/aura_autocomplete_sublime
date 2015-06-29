@@ -55,8 +55,8 @@ componentFileNames.evt.forEach(function(fileName){
 		//save it to the dictionary
 		if(eventDictionary[evtName]){
 			console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
-			console.log(fileName);
-			console.log(eventDictionary[evtName].fileName);
+			console.log('newfile'.blue, fileName);
+			console.log('existed'.blue, eventDictionary[evtName].fileName);
 		}
 		else{
 			eventDictionary[evtName] = {
@@ -108,6 +108,3 @@ parseHelper.writeToFile(
 	parseHelper.consolidate_evt_sublime(componentEventDictionary),
 	'./aura.event.sublime-completions'
 );
-
-
-
