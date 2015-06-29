@@ -163,7 +163,8 @@ var self = {
             // console.log('attributeObj', attributeObj);
 
             //triggers
-            var trigger = 'attr_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
+            // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
+            var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr';
 
             //contents
             var contents = attributeComponent.name + '="$1' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')"';
