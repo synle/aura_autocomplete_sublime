@@ -2,6 +2,8 @@
 var path = require('path');
 var fs = require('fs');
 var colors = require('colors');
+var parseString = require('xml2js').parseString;
+
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
@@ -29,15 +31,48 @@ componentFileNames.cmp.forEach(function(fileName){
 
 // var fileContent = parseHelper.readFromFile(utilJsPath);
 
-// /Users/syle/git/aura/aura-components/src/main/components/ui/updateGridRow/updateGridRow.evt
 
 
+
+//events stuffs
 //generate events stuffs
+var eventDictionary = {};
 componentFileNames.evt.forEach(function(fileName){
-	// console.log('evt'.bold.blue, fileName.yellow);
-	var fileContent = parseHelper.readFromFile(fileName);	
-	console.log(fileContent);
+	if(fileName.indexOf('updateGridRow.evt') >= 0){
+		var shortFileName = path.basename(fileName);
+		var evtName = shortFileName.substr(0, shortFileName.indexOf('.'));
+		var evtDescription = '';
+		var evtParams = [];
+
+		// console.log('evt'.bold.blue, fileName.yellow);
+		var fileContent = parseHelper.readFromFile(fileName);	
+
+
+		//parsing xml
+		parseString(fileContent, function (err, result) {
+			evtDescription = result['aura:event'].$.description;
+
+			result['aura:event']['aura:attribute'].forEach(function(auraAttribute){
+				var evtAttribute = auraAttribute.$;
+				evtParams.push(evtAttribute);
+			});
+
+
+			//save it to the dictionary
+			eventDictionary[shortFileName] = {
+				name: evtName,
+				description: evtDescription,
+				params : evtParams
+			};
+		});
+	}
 });
+
+
+console.log(eventDictionary);
+
+
+// /Users/syle/git/aura/aura-components/src/main/components/ui/updateGridRow/updateGridRow.evt
 
 
 // var e = cmp.find('tabset2').get("e.addTab");
