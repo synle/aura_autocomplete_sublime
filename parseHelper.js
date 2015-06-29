@@ -27,6 +27,15 @@ var self = {
             } else {
                 //is a file
                 var extension = path.extname(newDir);
+
+
+                //ignore auradev auradoc
+                // if (newDir.indexOf('auradoc') >= 0
+                // || newDir.indexOf('auradev') >= 0
+                // || newDir.indexOf('aurajstest') >= 0){
+                //     continue;
+                // }
+
                 switch (extension) {
                     case '.cmp':
                         res.cmp.push(newDir);
@@ -129,7 +138,7 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event.';
+            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event';
             var contents = [
                 '//' + 'component=' + evtObj.component,
                 '//' + 'evtName=' + actualEvt.name,

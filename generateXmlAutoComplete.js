@@ -40,6 +40,11 @@ componentFileNames.evt.forEach(function(fileName){
 		true
 	);	
 
+
+	//get file breakup which allows us to generate a more accurate component name
+	var fileBreakups = parseHelper.getComponentBreakup(fileName);
+
+
 	//parsing xml
 	parseString(fileContent, {async: true}, function (err, result) {
 		evtDescription = result['aura:event'].$.description;
@@ -53,22 +58,23 @@ componentFileNames.evt.forEach(function(fileName){
 
 
 		//save it to the dictionary
-		if(eventDictionary[evtName]){
+		var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
+		if(eventDictionary[evtNameKey]){
 			console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
 			console.log('newfile'.bold.red, fileName.blue);
 			console.log('existed'.bold.red, eventDictionary[evtName].fileName.blue);
 		}
 		else{
-			eventDictionary[evtName] = {
+			eventDictionary[evtNameKey] = {
 				name: evtName,
 				description: evtDescription,
 				params : evtParams,
 				fileName : fileName
 			};
 		}
+		// console.log('EventDef', evtNameKey.bold.blue);
 	});
 });
-
 
 
 //reading and parsing the componentEvents
@@ -107,7 +113,16 @@ componentFileNames.cmp.forEach(function(fileName){
 		if(componentAuraEvents){
 			componentAuraEvents.forEach(function(curCmpEvt){
 				var evtObj = curCmpEvt.$;
-				var matchingEvtDef = eventDictionary[evtObj.type.substr(evtObj.type.indexOf(':') + 1)];
+				var matchingEvtDef = eventDictionary[evtObj.type];
+
+				// console.log('component used'.red, evtObj.type);
+
+				if (matchingEvtDef === undefined){
+					console.log('Error : cant find in dictionary'.bold.red,evtObj.type);
+					console.log(matchingEvtDef);
+					return;	
+				}
+				
 
 				componentEventDictionary.push({
 					component : componentName,
@@ -134,6 +149,8 @@ componentFileNames.cmp.forEach(function(fileName){
 
 	componentDictionary.push(componentObj);
 });
+// console.log('ui:carouselPageEvent', eventDictionary['ui:carouselPageEvent']);
+// console.log(Object.keys(eventDictionary));
 
 //consolidate js evt
 console.log('Updating Sublime File: Component Events'.bold.magenta.underline);
