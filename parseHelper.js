@@ -37,6 +37,7 @@ var self = {
                 }
             }
         }
+        
         return res;
     },
     parseFunctions: function(functionName, functionDefition, namespaceStr) {
@@ -128,7 +129,7 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt_'  + actualEvt.name + '\t$A.Event.' + evtObj.component;
+            var trigger = 'evt' + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var contents = [
                 '//' + 'component=' + evtObj.component,
                 '//' + 'evtName=' + actualEvt.name,
@@ -189,7 +190,7 @@ var self = {
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
-            var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr';
+            var trigger = 'attr-' + attributeComponent.namespace + '-' + attributeComponent.name + '-' + attributeObj.name + '\t$A.attr';
 
             //contents
             var contents = attributeComponent.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
