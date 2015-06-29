@@ -20,32 +20,25 @@ var componentBaseDir = path.join(
 );
 
 
+// global dictionary
+var eventDictionary = {};
+var componentDictionary = {};
+var componentEventDictionary = [];
 
 //find all cmp files in nested structures
 var componentFileNames = parseHelper.listDir(componentBaseDir);
 
-//generate xml stuffs
-componentFileNames.cmp.forEach(function(fileName){
-	// console.log('cmp'.bold.blue, fileName.yellow);
-});
-
-// var fileContent = parseHelper.readFromFile(utilJsPath);
-
-
-
-
 //events stuffs
-//generate events stuffs
-var eventDictionary = {};
+//reading and parsing the events
 componentFileNames.evt.forEach(function(fileName){
 	var shortFileName = path.basename(fileName);
 	var evtName = shortFileName.substr(0, shortFileName.indexOf('.'));
 	var evtDescription = '';
 	var evtParams = [];
-
-	// console.log('evt'.bold.blue, fileName.yellow);
-	var fileContent = parseHelper.readFromFile(fileName);	
-
+	var fileContent = parseHelper.readFromFile(
+		fileName,
+		true
+	);	
 
 	//parsing xml
 	parseString(fileContent, {async: true}, function (err, result) {
@@ -60,20 +53,61 @@ componentFileNames.evt.forEach(function(fileName){
 
 
 		//save it to the dictionary
-		eventDictionary[shortFileName] = {
-			name: evtName,
-			description: evtDescription,
-			params : evtParams
-		};
+		if(eventDictionary[evtName]){
+			console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
+			console.log(fileName);
+			console.log(eventDictionary[evtName].fileName);
+		}
+		else{
+			eventDictionary[evtName] = {
+				name: evtName,
+				description: evtDescription,
+				params : evtParams,
+				fileName : fileName
+			};
+		}
 	});
 });
 
 
 
+//reading and parsing the componentEvents
+componentFileNames.cmp.forEach(function(fileName){
+	var shortFileName = path.basename(fileName);
+	var componentName = shortFileName.substr(0, shortFileName.indexOf('.'));
+	var fileContent = parseHelper.readFromFile(
+		fileName,
+		true
+	);
+
+
+	//parsing xml
+	parseString(fileContent, {async: true}, function (err, result) {
+		var componentParsedXml = result['aura:component'];
+
+		//push component events
+		if(componentParsedXml['aura:registerevent']){
+			componentParsedXml['aura:registerevent'].forEach(function(curCmpEvt){
+				var evtObj = curCmpEvt.$;
+				var matchingEvtDef = eventDictionary[evtObj.type.substr(evtObj.type.indexOf(':') + 1)];
+
+				componentEventDictionary.push({
+					component : componentName,
+					evt : evtObj,
+					evtDef : matchingEvtDef
+				});
+			});
+		}
+	});
+});
+
 
 //consolidate js evt
 console.log('Updating Sublime File:'.bold.magenta.underline);
 parseHelper.writeToFile(
-	parseHelper.consolidate_evt_sublime(eventDictionary),
+	parseHelper.consolidate_evt_sublime(componentEventDictionary),
 	'./aura.event.sublime-completions'
 );
+
+
+

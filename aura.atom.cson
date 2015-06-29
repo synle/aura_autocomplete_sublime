@@ -1,4 +1,12 @@
 ".source.js":
+	"A.test.getInitialGlobalState":
+		"prefix":"A.test.getInitialGlobalState"
+		"body":"A.test.getInitialGlobalState($1)"
+".source.js":
+	"A.test.getWhitelistedVariables":
+		"prefix":"A.test.getWhitelistedVariables"
+		"body":"A.test.getWhitelistedVariables($1)"
+".source.js":
 	"A.test.addWaitFor":
 		"prefix":"A.test.addWaitFor"
 		"body":"A.test.addWaitFor($1expected,$2testFunction,$3callback)"
@@ -382,6 +390,10 @@
 	"A.test.createHttpRequest":
 		"prefix":"A.test.createHttpRequest"
 		"body":"A.test.createHttpRequest($1)"
+".source.js":
+	"A.test.checkGlobalNamespacePollution":
+		"prefix":"A.test.checkGlobalNamespacePollution"
+		"body":"A.test.checkGlobalNamespacePollution($1)"
 ".source.js":
 	"A.util.isIOSWebView":
 		"prefix":"A.util.isIOSWebView"

@@ -2,6 +2,14 @@
    "scope": "source",
    "completions": [
       {
+         "trigger": "A_test_getInitialGlobalState\t$A.test",
+         "contents": "A.test.getInitialGlobalState($1)"
+      },
+      {
+         "trigger": "A_test_getWhitelistedVariables\t$A.test",
+         "contents": "A.test.getWhitelistedVariables($1)"
+      },
+      {
          "trigger": "A_test_addWaitFor\t$A.test",
          "contents": "A.test.addWaitFor($1expected,$2testFunction,$3callback)"
       },
@@ -384,6 +392,10 @@
       {
          "trigger": "A_test_createHttpRequest\t$A.test",
          "contents": "A.test.createHttpRequest($1)"
+      },
+      {
+         "trigger": "A_test_checkGlobalNamespacePollution\t$A.test",
+         "contents": "A.test.checkGlobalNamespacePollution($1)"
       },
       {
          "trigger": "A_util_isIOSWebView\t$A.util",
