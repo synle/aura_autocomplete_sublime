@@ -72,7 +72,6 @@ componentFileNames.evt.forEach(function(fileName){
 
 
 //reading and parsing the componentEvents
-componentFileNames.cmp = [componentFileNames.cmp[287]];//used this to do quick change
 componentFileNames.cmp.forEach(function(fileName){
 	var componentName = parseHelper.getBaseFileNameWithoutExtension(fileName);
 
@@ -98,7 +97,7 @@ componentFileNames.cmp.forEach(function(fileName){
 	//parsing xml
 	parseString(fileContent, {async: true}, function (err, result) {
 		var componentParsedXml = result['aura:component'];
-		var componentParsedObj = componentParsedXml.$;
+		var componentParsedObj = componentParsedXml.$ || {};
 
 		componentObj.description = componentParsedObj.description;
 		componentObj.implements = componentParsedObj.implements;

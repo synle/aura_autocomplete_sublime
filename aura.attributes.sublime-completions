@@ -1,0 +1,3969 @@
+{
+   "scope": "source",
+   "completions": [
+      {
+         "trigger": "attr_component_body\t$A.attr.aura:component",
+         "contents": "component=\"$1aura:component(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_debug_errorsData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_warningsData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_cmpData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_eventData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_storageData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_consoleData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_storageName\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_debug_accessibilityData\t$A.attr.aura:debug",
+         "contents": "debug=\"$1aura:debug(String)\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_auraStyleTags\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(String)\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_auraScriptTags\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(String)\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_auraInit\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(String)\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_auraInitBlock\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(String)\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_extraStyleTags\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_extraScriptTags\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_embeddedTemplate_extraMetaTags\t$A.attr.aura:embeddedTemplate",
+         "contents": "embeddedTemplate=\"$1aura:embeddedTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_expression_value\t$A.attr.aura:expression",
+         "contents": "expression=\"$1aura:expression(String)\""
+      },
+      {
+         "trigger": "attr_html_body\t$A.attr.aura:html",
+         "contents": "html=\"$1aura:html(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_html_tag\t$A.attr.aura:html",
+         "contents": "html=\"$1aura:html(String)\""
+      },
+      {
+         "trigger": "attr_html_HTMLAttributes\t$A.attr.aura:html",
+         "contents": "html=\"$1aura:html(Map)\""
+      },
+      {
+         "trigger": "attr_if_isTrue\t$A.attr.aura:if",
+         "contents": "if=\"$1aura:if(Boolean)\""
+      },
+      {
+         "trigger": "attr_if_body\t$A.attr.aura:if",
+         "contents": "if=\"$1aura:if(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_if_else\t$A.attr.aura:if",
+         "contents": "if=\"$1aura:if(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_if_template\t$A.attr.aura:if",
+         "contents": "if=\"$1aura:if(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_include_name\t$A.attr.aura:include",
+         "contents": "include=\"$1aura:include(String)\""
+      },
+      {
+         "trigger": "attr_include_imports\t$A.attr.aura:include",
+         "contents": "include=\"$1aura:include(String)\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_auraStyleTags\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(String)\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_auraScriptTags\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(String)\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_auraInit\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(String)\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_auraInitBlock\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(String)\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_extraStyleTags\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_extraScriptTags\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_integrationServiceTemplate_extraMetaTags\t$A.attr.aura:integrationServiceTemplate",
+         "contents": "integrationServiceTemplate=\"$1aura:integrationServiceTemplate(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_iteration_items\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(List)\""
+      },
+      {
+         "trigger": "attr_iteration_var\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(String)\""
+      },
+      {
+         "trigger": "attr_iteration_indexVar\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(String)\""
+      },
+      {
+         "trigger": "attr_iteration_start\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Integer)\""
+      },
+      {
+         "trigger": "attr_iteration_end\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Integer)\""
+      },
+      {
+         "trigger": "attr_iteration_loaded\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Boolean)\""
+      },
+      {
+         "trigger": "attr_iteration_body\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_iteration_template\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_iteration_forceServer\t$A.attr.aura:iteration",
+         "contents": "iteration=\"$1aura:iteration(Boolean)\""
+      },
+      {
+         "trigger": "attr_label_value\t$A.attr.aura:label",
+         "contents": "label=\"$1aura:label(String)\""
+      },
+      {
+         "trigger": "attr_placeholder_body\t$A.attr.aura:placeholder",
+         "contents": "placeholder=\"$1aura:placeholder(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_placeholder_refDescriptor\t$A.attr.aura:placeholder",
+         "contents": "placeholder=\"$1aura:placeholder(java://org.auraframework.def.DefDescriptor)\""
+      },
+      {
+         "trigger": "attr_placeholder_attributes\t$A.attr.aura:placeholder",
+         "contents": "placeholder=\"$1aura:placeholder(Object)\""
+      },
+      {
+         "trigger": "attr_placeholder_loaded\t$A.attr.aura:placeholder",
+         "contents": "placeholder=\"$1aura:placeholder(Boolean)\""
+      },
+      {
+         "trigger": "attr_placeholder_exclusive\t$A.attr.aura:placeholder",
+         "contents": "placeholder=\"$1aura:placeholder(Boolean)\""
+      },
+      {
+         "trigger": "attr_renderIf_isTrue\t$A.attr.aura:renderIf",
+         "contents": "renderIf=\"$1aura:renderIf(Boolean)\""
+      },
+      {
+         "trigger": "attr_renderIf_else\t$A.attr.aura:renderIf",
+         "contents": "renderIf=\"$1aura:renderIf(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_title\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraStyleTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraScriptTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraBaseScriptTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraNamespacesScriptTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraResetCss\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraInlineStyle\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraInit\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraInitSync\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_auraPreInitBlock\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_auraInitBlock\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_autoInitialize\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_autoInitializeSync\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_afterAuraInit\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_loadingText\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_errorTitle\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_errorMessage\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_forceError\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Boolean)\""
+      },
+      {
+         "trigger": "attr_template_extraScriptTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_extraMetaTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_defaultBodyClass\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_bodyClass\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_manifest\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_lastMod\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_doctype\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(String)\""
+      },
+      {
+         "trigger": "attr_template_extraStyleTags\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_normalizeCss\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Boolean)\""
+      },
+      {
+         "trigger": "attr_template_inlineStyle\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_template_appcacheProgressBarStyle\t$A.attr.aura:template",
+         "contents": "template=\"$1aura:template(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_text_value\t$A.attr.aura:text",
+         "contents": "text=\"$1aura:text(String)\""
+      },
+      {
+         "trigger": "attr_text_truncate\t$A.attr.aura:text",
+         "contents": "text=\"$1aura:text(Integer)\""
+      },
+      {
+         "trigger": "attr_text_truncateByWord\t$A.attr.aura:text",
+         "contents": "text=\"$1aura:text(Boolean)\""
+      },
+      {
+         "trigger": "attr_text_ellipsis\t$A.attr.aura:text",
+         "contents": "text=\"$1aura:text(Boolean)\""
+      },
+      {
+         "trigger": "attr_unescapedHtml_body\t$A.attr.aura:unescapedHtml",
+         "contents": "unescapedHtml=\"$1aura:unescapedHtml(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_unescapedHtml_value\t$A.attr.aura:unescapedHtml",
+         "contents": "unescapedHtml=\"$1aura:unescapedHtml(String)\""
+      },
+      {
+         "trigger": "attr_fuelGauge_storageName\t$A.attr.auraStorage:fuelGauge",
+         "contents": "fuelGauge=\"$1auraStorage:fuelGauge(String)\""
+      },
+      {
+         "trigger": "attr_fuelGauge_value\t$A.attr.auraStorage:fuelGauge",
+         "contents": "fuelGauge=\"$1auraStorage:fuelGauge(Decimal)\""
+      },
+      {
+         "trigger": "attr_fuelGauge_enabled\t$A.attr.auraStorage:fuelGauge",
+         "contents": "fuelGauge=\"$1auraStorage:fuelGauge(Boolean)\""
+      },
+      {
+         "trigger": "attr_fuelGauge_implementation\t$A.attr.auraStorage:fuelGauge",
+         "contents": "fuelGauge=\"$1auraStorage:fuelGauge(String)\""
+      },
+      {
+         "trigger": "attr_init_name\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(String)\""
+      },
+      {
+         "trigger": "attr_init_persistent\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Boolean)\""
+      },
+      {
+         "trigger": "attr_init_secure\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Boolean)\""
+      },
+      {
+         "trigger": "attr_init_clearStorageOnInit\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Boolean)\""
+      },
+      {
+         "trigger": "attr_init_defaultExpiration\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Integer)\""
+      },
+      {
+         "trigger": "attr_init_defaultAutoRefreshInterval\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Integer)\""
+      },
+      {
+         "trigger": "attr_init_maxSize\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Integer)\""
+      },
+      {
+         "trigger": "attr_init_debugLoggingEnabled\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Boolean)\""
+      },
+      {
+         "trigger": "attr_init_requireUseStorageQueryParam\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(Boolean)\""
+      },
+      {
+         "trigger": "attr_init_version\t$A.attr.auraStorage:init",
+         "contents": "init=\"$1auraStorage:init(String)\""
+      },
+      {
+         "trigger": "attr_cacheView_name\t$A.attr.auraadmin:cacheView",
+         "contents": "cacheView=\"$1auraadmin:cacheView(String)\""
+      },
+      {
+         "trigger": "attr_cacheView_expanded\t$A.attr.auraadmin:cacheView",
+         "contents": "cacheView=\"$1auraadmin:cacheView(boolean)\""
+      },
+      {
+         "trigger": "attr_cacheView_showDefs\t$A.attr.auraadmin:cacheView",
+         "contents": "cacheView=\"$1auraadmin:cacheView(boolean)\""
+      },
+      {
+         "trigger": "attr_cacheView_data\t$A.attr.auraadmin:cacheView",
+         "contents": "cacheView=\"$1auraadmin:cacheView(Map)\""
+      },
+      {
+         "trigger": "attr_cachingRegistryView_expanded\t$A.attr.auraadmin:cachingRegistryView",
+         "contents": "cachingRegistryView=\"$1auraadmin:cachingRegistryView(boolean)\""
+      },
+      {
+         "trigger": "attr_counterBeans_beans\t$A.attr.auraadmin:counterBeans",
+         "contents": "counterBeans=\"$1auraadmin:counterBeans(List)\""
+      },
+      {
+         "trigger": "attr_registryView_registry\t$A.attr.auraadmin:registryView",
+         "contents": "registryView=\"$1auraadmin:registryView(Map)\""
+      },
+      {
+         "trigger": "attr_registryView_buttons\t$A.attr.auraadmin:registryView",
+         "contents": "registryView=\"$1auraadmin:registryView(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_componentClass_fullyQualifiedName\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(String)\""
+      },
+      {
+         "trigger": "attr_componentClass_superFullyQualifiedName\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(String)\""
+      },
+      {
+         "trigger": "attr_componentClass_className\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(String)\""
+      },
+      {
+         "trigger": "attr_componentClass_superClassName\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(String)\""
+      },
+      {
+         "trigger": "attr_componentClass_helperProperties\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>)\""
+      },
+      {
+         "trigger": "attr_componentClass_renderMethods\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(java://List<org.auraframework.util.json.JsFunction>)\""
+      },
+      {
+         "trigger": "attr_componentClass_renderMethodStubs\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(String[])\""
+      },
+      {
+         "trigger": "attr_componentClass_superRenderMethodNames\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(java://List<org.auraframework.impl.ServerServiceImpl.RerenderInfo>)\""
+      },
+      {
+         "trigger": "attr_componentClass_rootComponent\t$A.attr.auradev:componentClass",
+         "contents": "componentClass=\"$1auradev:componentClass(Boolean)\""
+      },
+      {
+         "trigger": "attr_createBaseComponentDefQuickFix_defType\t$A.attr.auradev:createBaseComponentDefQuickFix",
+         "contents": "createBaseComponentDefQuickFix=\"$1auradev:createBaseComponentDefQuickFix(String)\""
+      },
+      {
+         "trigger": "attr_dependencyItem_descriptor\t$A.attr.auradev:dependencyItem",
+         "contents": "dependencyItem=\"$1auradev:dependencyItem(String)\""
+      },
+      {
+         "trigger": "attr_dependencyItem_type\t$A.attr.auradev:dependencyItem",
+         "contents": "dependencyItem=\"$1auradev:dependencyItem(String)\""
+      },
+      {
+         "trigger": "attr_dependencyItem_uid\t$A.attr.auradev:dependencyItem",
+         "contents": "dependencyItem=\"$1auradev:dependencyItem(String)\""
+      },
+      {
+         "trigger": "attr_dependencyItem_error\t$A.attr.auradev:dependencyItem",
+         "contents": "dependencyItem=\"$1auradev:dependencyItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_lintc_name\t$A.attr.auradev:lintc",
+         "contents": "lintc=\"$1auradev:lintc(String)\""
+      },
+      {
+         "trigger": "attr_quickFix_quickFix\t$A.attr.auradev:quickFix",
+         "contents": "quickFix=\"$1auradev:quickFix(java://org.auraframework.throwable.quickfix.AuraQuickFix)\""
+      },
+      {
+         "trigger": "attr_quickFixButton_quickFix\t$A.attr.auradev:quickFixButton",
+         "contents": "quickFixButton=\"$1auradev:quickFixButton(java://org.auraframework.throwable.quickfix.AuraQuickFix)\""
+      },
+      {
+         "trigger": "attr_quickFixException_exception\t$A.attr.auradev:quickFixException",
+         "contents": "quickFixException=\"$1auradev:quickFixException(java://org.auraframework.throwable.quickfix.QuickFixException)\""
+      },
+      {
+         "trigger": "attr_quickFixException_cause\t$A.attr.auradev:quickFixException",
+         "contents": "quickFixException=\"$1auradev:quickFixException(String)\""
+      },
+      {
+         "trigger": "attr_saveApplication_def\t$A.attr.auradev:saveApplication",
+         "contents": "saveApplication=\"$1auradev:saveApplication(java://org.auraframework.def.ApplicationDef)\""
+      },
+      {
+         "trigger": "attr_saveComponent_def\t$A.attr.auradev:saveComponent",
+         "contents": "saveComponent=\"$1auradev:saveComponent(java://org.auraframework.def.ComponentDef)\""
+      },
+      {
+         "trigger": "attr_saveComponentJava_def\t$A.attr.auradev:saveComponentJava",
+         "contents": "saveComponentJava=\"$1auradev:saveComponentJava(java://org.auraframework.def.ComponentDef)\""
+      },
+      {
+         "trigger": "attr_saveStyle_def\t$A.attr.auradev:saveStyle",
+         "contents": "saveStyle=\"$1auradev:saveStyle(java://org.auraframework.def.StyleDef)\""
+      },
+      {
+         "trigger": "attr_saveTheme_def\t$A.attr.auradev:saveTheme",
+         "contents": "saveTheme=\"$1auradev:saveTheme(java://org.auraframework.def.ComponentDef)\""
+      },
+      {
+         "trigger": "attr_showDependencies_component\t$A.attr.auradev:showDependencies",
+         "contents": "showDependencies=\"$1auradev:showDependencies(String)\""
+      },
+      {
+         "trigger": "attr_apiParam_symbol\t$A.attr.auradocs:apiParam",
+         "contents": "apiParam=\"$1auradocs:apiParam(Object)\""
+      },
+      {
+         "trigger": "attr_apiParams_params\t$A.attr.auradocs:apiParams",
+         "contents": "apiParams=\"$1auradocs:apiParams(Object[])\""
+      },
+      {
+         "trigger": "attr_apiSymbol_symbol\t$A.attr.auradocs:apiSymbol",
+         "contents": "apiSymbol=\"$1auradocs:apiSymbol(Object)\""
+      },
+      {
+         "trigger": "attr_apiSymbols_title\t$A.attr.auradocs:apiSymbols",
+         "contents": "apiSymbols=\"$1auradocs:apiSymbols(String)\""
+      },
+      {
+         "trigger": "attr_apiSymbols_symbols\t$A.attr.auradocs:apiSymbols",
+         "contents": "apiSymbols=\"$1auradocs:apiSymbols(Object[])\""
+      },
+      {
+         "trigger": "attr_contentsNode_text\t$A.attr.auradocs:contentsNode",
+         "contents": "contentsNode=\"$1auradocs:contentsNode(String)\""
+      },
+      {
+         "trigger": "attr_contentsNode_id\t$A.attr.auradocs:contentsNode",
+         "contents": "contentsNode=\"$1auradocs:contentsNode(String)\""
+      },
+      {
+         "trigger": "attr_contentsNode_class\t$A.attr.auradocs:contentsNode",
+         "contents": "contentsNode=\"$1auradocs:contentsNode(String)\""
+      },
+      {
+         "trigger": "attr_def_descriptor\t$A.attr.auradocs:def",
+         "contents": "def=\"$1auradocs:def(String)\""
+      },
+      {
+         "trigger": "attr_def_defType\t$A.attr.auradocs:def",
+         "contents": "def=\"$1auradocs:def(String)\""
+      },
+      {
+         "trigger": "attr_defDependencies_descriptor\t$A.attr.auradocs:defDependencies",
+         "contents": "defDependencies=\"$1auradocs:defDependencies(String)\""
+      },
+      {
+         "trigger": "attr_defDependencies_defType\t$A.attr.auradocs:defDependencies",
+         "contents": "defDependencies=\"$1auradocs:defDependencies(String)\""
+      },
+      {
+         "trigger": "attr_defDescription_descriptions\t$A.attr.auradocs:defDescription",
+         "contents": "defDescription=\"$1auradocs:defDescription(Object)\""
+      },
+      {
+         "trigger": "attr_defLayout_title\t$A.attr.auradocs:defLayout",
+         "contents": "defLayout=\"$1auradocs:defLayout(String)\""
+      },
+      {
+         "trigger": "attr_defLayout_subtitle\t$A.attr.auradocs:defLayout",
+         "contents": "defLayout=\"$1auradocs:defLayout(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_defLayout_description\t$A.attr.auradocs:defLayout",
+         "contents": "defLayout=\"$1auradocs:defLayout(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_defLayout_labels\t$A.attr.auradocs:defLayout",
+         "contents": "defLayout=\"$1auradocs:defLayout(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_defLayout_status\t$A.attr.auradocs:defLayout",
+         "contents": "defLayout=\"$1auradocs:defLayout(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_defLink_descriptor\t$A.attr.auradocs:defLink",
+         "contents": "defLink=\"$1auradocs:defLink(String)\""
+      },
+      {
+         "trigger": "attr_defLink_defType\t$A.attr.auradocs:defLink",
+         "contents": "defLink=\"$1auradocs:defLink(String)\""
+      },
+      {
+         "trigger": "attr_defMemberList_title\t$A.attr.auradocs:defMemberList",
+         "contents": "defMemberList=\"$1auradocs:defMemberList(String)\""
+      },
+      {
+         "trigger": "attr_defMemberList_list\t$A.attr.auradocs:defMemberList",
+         "contents": "defMemberList=\"$1auradocs:defMemberList(Object)\""
+      },
+      {
+         "trigger": "attr_defOverview_descriptor\t$A.attr.auradocs:defOverview",
+         "contents": "defOverview=\"$1auradocs:defOverview(String)\""
+      },
+      {
+         "trigger": "attr_defOverview_defType\t$A.attr.auradocs:defOverview",
+         "contents": "defOverview=\"$1auradocs:defOverview(String)\""
+      },
+      {
+         "trigger": "attr_demoAutocompleteProvider_dataType\t$A.attr.auradocs:demoAutocompleteProvider",
+         "contents": "demoAutocompleteProvider=\"$1auradocs:demoAutocompleteProvider(String)\""
+      },
+      {
+         "trigger": "attr_demoForm_myDate\t$A.attr.auradocs:demoForm",
+         "contents": "demoForm=\"$1auradocs:demoForm(Date)\""
+      },
+      {
+         "trigger": "attr_demoLabelDyn_simplevalue1\t$A.attr.auradocs:demoLabelDyn",
+         "contents": "demoLabelDyn=\"$1auradocs:demoLabelDyn(Object)\""
+      },
+      {
+         "trigger": "attr_demoListTemplate_label\t$A.attr.auradocs:demoListTemplate",
+         "contents": "demoListTemplate=\"$1auradocs:demoListTemplate(String)\""
+      },
+      {
+         "trigger": "attr_demoMenu_status\t$A.attr.auradocs:demoMenu",
+         "contents": "demoMenu=\"$1auradocs:demoMenu(String[])\""
+      },
+      {
+         "trigger": "attr_demoPanel_demo\t$A.attr.auradocs:demoPanel",
+         "contents": "demoPanel=\"$1auradocs:demoPanel(String)\""
+      },
+      {
+         "trigger": "attr_demoPanel_example\t$A.attr.auradocs:demoPanel",
+         "contents": "demoPanel=\"$1auradocs:demoPanel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_myDate\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(Date)\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_sizes\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(List)\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_invalidEmail\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(Boolean)\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_invalidPW\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(Boolean)\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_invalidURL\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(Boolean)\""
+      },
+      {
+         "trigger": "attr_demoSubmitForm_filled\t$A.attr.auradocs:demoSubmitForm",
+         "contents": "demoSubmitForm=\"$1auradocs:demoSubmitForm(Boolean)\""
+      },
+      {
+         "trigger": "attr_demoVdatagrid_data\t$A.attr.auradocs:demoVdatagrid",
+         "contents": "demoVdatagrid=\"$1auradocs:demoVdatagrid(List)\""
+      },
+      {
+         "trigger": "attr_demosNode_text\t$A.attr.auradocs:demosNode",
+         "contents": "demosNode=\"$1auradocs:demosNode(String)\""
+      },
+      {
+         "trigger": "attr_demosNode_id\t$A.attr.auradocs:demosNode",
+         "contents": "demosNode=\"$1auradocs:demosNode(String)\""
+      },
+      {
+         "trigger": "attr_demosNode_class\t$A.attr.auradocs:demosNode",
+         "contents": "demosNode=\"$1auradocs:demosNode(String)\""
+      },
+      {
+         "trigger": "attr_descriptorLink_defModel\t$A.attr.auradocs:descriptorLink",
+         "contents": "descriptorLink=\"$1auradocs:descriptorLink(java://org.auraframework.docs.DefModel)\""
+      },
+      {
+         "trigger": "attr_editorPanel_title\t$A.attr.auradocs:editorPanel",
+         "contents": "editorPanel=\"$1auradocs:editorPanel(String)\""
+      },
+      {
+         "trigger": "attr_editorPanel_descriptor\t$A.attr.auradocs:editorPanel",
+         "contents": "editorPanel=\"$1auradocs:editorPanel(String)\""
+      },
+      {
+         "trigger": "attr_editorPanel_defType\t$A.attr.auradocs:editorPanel",
+         "contents": "editorPanel=\"$1auradocs:editorPanel(String)\""
+      },
+      {
+         "trigger": "attr_editorPanel_includeDefName\t$A.attr.auradocs:editorPanel",
+         "contents": "editorPanel=\"$1auradocs:editorPanel(String)\""
+      },
+      {
+         "trigger": "attr_editorPanel_region\t$A.attr.auradocs:editorPanel",
+         "contents": "editorPanel=\"$1auradocs:editorPanel(String)\""
+      },
+      {
+         "trigger": "attr_example_label\t$A.attr.auradocs:example",
+         "contents": "example=\"$1auradocs:example(String)\""
+      },
+      {
+         "trigger": "attr_example_description\t$A.attr.auradocs:example",
+         "contents": "example=\"$1auradocs:example(String)\""
+      },
+      {
+         "trigger": "attr_example_descriptor\t$A.attr.auradocs:example",
+         "contents": "example=\"$1auradocs:example(String)\""
+      },
+      {
+         "trigger": "attr_examplesc_name\t$A.attr.auradocs:examplesc",
+         "contents": "examplesc=\"$1auradocs:examplesc(String)\""
+      },
+      {
+         "trigger": "attr_helloAttributes_whom\t$A.attr.auradocs:helloAttributes",
+         "contents": "helloAttributes=\"$1auradocs:helloAttributes(String)\""
+      },
+      {
+         "trigger": "attr_helpPanel_topic\t$A.attr.auradocs:helpPanel",
+         "contents": "helpPanel=\"$1auradocs:helpPanel(String)\""
+      },
+      {
+         "trigger": "attr_helpPanel_topicPanel\t$A.attr.auradocs:helpPanel",
+         "contents": "helpPanel=\"$1auradocs:helpPanel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_nav_referenceOnly\t$A.attr.auradocs:nav",
+         "contents": "nav=\"$1auradocs:nav(boolean)\""
+      },
+      {
+         "trigger": "attr_navLink_location\t$A.attr.auradocs:navLink",
+         "contents": "navLink=\"$1auradocs:navLink(String)\""
+      },
+      {
+         "trigger": "attr_openTopicTree_layoutToken\t$A.attr.auradocs:openTopicTree",
+         "contents": "openTopicTree=\"$1auradocs:openTopicTree(String)\""
+      },
+      {
+         "trigger": "attr_openTopicTree_catchAllHref\t$A.attr.auradocs:openTopicTree",
+         "contents": "openTopicTree=\"$1auradocs:openTopicTree(String)\""
+      },
+      {
+         "trigger": "attr_openTopicTree_tree\t$A.attr.auradocs:openTopicTree",
+         "contents": "openTopicTree=\"$1auradocs:openTopicTree(Aura.Component)\""
+      },
+      {
+         "trigger": "attr_outputViewerc_def\t$A.attr.auradocs:outputViewerc",
+         "contents": "outputViewerc=\"$1auradocs:outputViewerc(String)\""
+      },
+      {
+         "trigger": "attr_referenceTopicLink_topic\t$A.attr.auradocs:referenceTopicLink",
+         "contents": "referenceTopicLink=\"$1auradocs:referenceTopicLink(String)\""
+      },
+      {
+         "trigger": "attr_referenceTreeSection_title\t$A.attr.auradocs:referenceTreeSection",
+         "contents": "referenceTreeSection=\"$1auradocs:referenceTreeSection(String)\""
+      },
+      {
+         "trigger": "attr_referenceTreeSection_namespaces\t$A.attr.auradocs:referenceTreeSection",
+         "contents": "referenceTreeSection=\"$1auradocs:referenceTreeSection(List)\""
+      },
+      {
+         "trigger": "attr_searchFilterTree_tree\t$A.attr.auradocs:searchFilterTree",
+         "contents": "searchFilterTree=\"$1auradocs:searchFilterTree(Aura.Component)\""
+      },
+      {
+         "trigger": "attr_sidebar_toolbar\t$A.attr.auradocs:sidebar",
+         "contents": "sidebar=\"$1auradocs:sidebar(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_simpledragdrop__dropzoneContext1\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(Object)\""
+      },
+      {
+         "trigger": "attr_simpledragdrop__dropzoneContext2\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(Object)\""
+      },
+      {
+         "trigger": "attr_simpledragdrop__draggableContext1\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(Object)\""
+      },
+      {
+         "trigger": "attr_simpledragdrop__draggableContext2\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(Object)\""
+      },
+      {
+         "trigger": "attr_simpledragdrop_list1\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(String[])\""
+      },
+      {
+         "trigger": "attr_simpledragdrop_list2\t$A.attr.auradocs:simpledragdrop",
+         "contents": "simpledragdrop=\"$1auradocs:simpledragdrop(String[])\""
+      },
+      {
+         "trigger": "attr_topicExample_descriptor\t$A.attr.auradocs:topicExample",
+         "contents": "topicExample=\"$1auradocs:topicExample(String)\""
+      },
+      {
+         "trigger": "attr_topicExample_defType\t$A.attr.auradocs:topicExample",
+         "contents": "topicExample=\"$1auradocs:topicExample(String)\""
+      },
+      {
+         "trigger": "attr_topicLink_topic\t$A.attr.auradocs:topicLink",
+         "contents": "topicLink=\"$1auradocs:topicLink(String)\""
+      },
+      {
+         "trigger": "attr_topicPanel_topic\t$A.attr.auradocs:topicPanel",
+         "contents": "topicPanel=\"$1auradocs:topicPanel(String)\""
+      },
+      {
+         "trigger": "attr_topicPanel_example\t$A.attr.auradocs:topicPanel",
+         "contents": "topicPanel=\"$1auradocs:topicPanel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_viewer_descriptor\t$A.attr.auradocs:viewer",
+         "contents": "viewer=\"$1auradocs:viewer(String)\""
+      },
+      {
+         "trigger": "attr_jstestCase_case\t$A.attr.aurajstest:jstestCase",
+         "contents": "jstestCase=\"$1aurajstest:jstestCase(java://org.auraframework.def.TestCaseDef)\""
+      },
+      {
+         "trigger": "attr_jstestCase_suite\t$A.attr.aurajstest:jstestCase",
+         "contents": "jstestCase=\"$1aurajstest:jstestCase(java://org.auraframework.def.TestSuiteDef)\""
+      },
+      {
+         "trigger": "attr_jstestCase_url\t$A.attr.aurajstest:jstestCase",
+         "contents": "jstestCase=\"$1aurajstest:jstestCase(String)\""
+      },
+      {
+         "trigger": "attr_jstestCase_status\t$A.attr.aurajstest:jstestCase",
+         "contents": "jstestCase=\"$1aurajstest:jstestCase(String)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_items\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(List)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_itemShape\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Object)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_mode\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_state\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_sortable\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_createable\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_selectAll\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_selectedItems\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(List)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_sortBy\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_dataProvider\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_dataWriter\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_columns\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_summaryRow\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_abstractDataGrid_actionDelegate\t$A.attr.ui:abstractDataGrid",
+         "contents": "abstractDataGrid=\"$1ui:abstractDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractList_itemTemplate\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_abstractList_items\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Object[])\""
+      },
+      {
+         "trigger": "attr_abstractList_itemVar\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(String)\""
+      },
+      {
+         "trigger": "attr_abstractList_dataProvider\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractList_emptyListContent\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractList_loadingIndicator\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractList_header\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_abstractList_footer\t$A.attr.ui:abstractList",
+         "contents": "abstractList=\"$1ui:abstractList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_action_name\t$A.attr.ui:action",
+         "contents": "action=\"$1ui:action(String)\""
+      },
+      {
+         "trigger": "attr_action_label\t$A.attr.ui:action",
+         "contents": "action=\"$1ui:action(String)\""
+      },
+      {
+         "trigger": "attr_action_labelClass\t$A.attr.ui:action",
+         "contents": "action=\"$1ui:action(String)\""
+      },
+      {
+         "trigger": "attr_action_index\t$A.attr.ui:action",
+         "contents": "action=\"$1ui:action(Integer)\""
+      },
+      {
+         "trigger": "attr_action_value\t$A.attr.ui:action",
+         "contents": "action=\"$1ui:action(Object)\""
+      },
+      {
+         "trigger": "attr_actionButton_disabled\t$A.attr.ui:actionButton",
+         "contents": "actionButton=\"$1ui:actionButton(Boolean)\""
+      },
+      {
+         "trigger": "attr_actionCheckbox_disabled\t$A.attr.ui:actionCheckbox",
+         "contents": "actionCheckbox=\"$1ui:actionCheckbox(Boolean)\""
+      },
+      {
+         "trigger": "attr_actionMenuItem_id\t$A.attr.ui:actionMenuItem",
+         "contents": "actionMenuItem=\"$1ui:actionMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_actionMenuItem_hideMenuAfterSelected\t$A.attr.ui:actionMenuItem",
+         "contents": "actionMenuItem=\"$1ui:actionMenuItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_asyncComponentManager_maxConcurrency\t$A.attr.ui:asyncComponentManager",
+         "contents": "asyncComponentManager=\"$1ui:asyncComponentManager(Integer)\""
+      },
+      {
+         "trigger": "attr_asyncImage_actualImageSrc\t$A.attr.ui:asyncImage",
+         "contents": "asyncImage=\"$1ui:asyncImage(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_dataProvider\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_emptyListContent\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_loadingIndicator\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_inputClass\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_inputType\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_listOption\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_optionVar\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_placeholder\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_propertyToMatch\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_theme\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(String)\""
+      },
+      {
+         "trigger": "attr_autocomplete_matchFunc\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_autocomplete_autocompleteButton\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_header\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocomplete_footer\t$A.attr.ui:autocomplete",
+         "contents": "autocomplete=\"$1ui:autocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocompleteList_ignoredElements\t$A.attr.ui:autocompleteList",
+         "contents": "autocompleteList=\"$1ui:autocompleteList(Object)\""
+      },
+      {
+         "trigger": "attr_autocompleteList_keyword\t$A.attr.ui:autocompleteList",
+         "contents": "autocompleteList=\"$1ui:autocompleteList(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteList_propertyToMatch\t$A.attr.ui:autocompleteList",
+         "contents": "autocompleteList=\"$1ui:autocompleteList(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteList_theme\t$A.attr.ui:autocompleteList",
+         "contents": "autocompleteList=\"$1ui:autocompleteList(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteList_matchFunc\t$A.attr.ui:autocompleteList",
+         "contents": "autocompleteList=\"$1ui:autocompleteList(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_autocompleteOption_displayText\t$A.attr.ui:autocompleteOption",
+         "contents": "autocompleteOption=\"$1ui:autocompleteOption(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteOption_label\t$A.attr.ui:autocompleteOption",
+         "contents": "autocompleteOption=\"$1ui:autocompleteOption(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteOption_theme\t$A.attr.ui:autocompleteOption",
+         "contents": "autocompleteOption=\"$1ui:autocompleteOption(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteOption_domId\t$A.attr.ui:autocompleteOption",
+         "contents": "autocompleteOption=\"$1ui:autocompleteOption(String)\""
+      },
+      {
+         "trigger": "attr_block_overflow\t$A.attr.ui:block",
+         "contents": "block=\"$1ui:block(Boolean)\""
+      },
+      {
+         "trigger": "attr_block_left\t$A.attr.ui:block",
+         "contents": "block=\"$1ui:block(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_block_right\t$A.attr.ui:block",
+         "contents": "block=\"$1ui:block(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_block_tag\t$A.attr.ui:block",
+         "contents": "block=\"$1ui:block(String)\""
+      },
+      {
+         "trigger": "attr_button_buttonTitle\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_buttonType\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_class\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_label\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_labelClass\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_labelDisplay\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(Boolean)\""
+      },
+      {
+         "trigger": "attr_button_iconImgSrc\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_iconClass\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_disabled\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(Boolean)\""
+      },
+      {
+         "trigger": "attr_button_accesskey\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_labelDir\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(String)\""
+      },
+      {
+         "trigger": "attr_button_stopPropagation\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(Boolean)\""
+      },
+      {
+         "trigger": "attr_button_tabIndex\t$A.attr.ui:button",
+         "contents": "button=\"$1ui:button(Integer)\""
+      },
+      {
+         "trigger": "attr_carousel_height\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Integer)\""
+      },
+      {
+         "trigger": "attr_carousel_width\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Integer)\""
+      },
+      {
+         "trigger": "attr_carousel_pageModels\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Object[])\""
+      },
+      {
+         "trigger": "attr_carousel_pageComponents\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carousel_prefetchedTab\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carousel_isDotIndicator\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Boolean)\""
+      },
+      {
+         "trigger": "attr_carousel_initialPage\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(String)\""
+      },
+      {
+         "trigger": "attr_carousel_prefetchFirstTab\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Boolean)\""
+      },
+      {
+         "trigger": "attr_carousel_lazyLoadTabs\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Boolean)\""
+      },
+      {
+         "trigger": "attr_carousel_indicatorStateClass\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(String)\""
+      },
+      {
+         "trigger": "attr_carousel_pageScrollerPlugins\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(String)\""
+      },
+      {
+         "trigger": "attr_carousel_justifyContent\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(String)\""
+      },
+      {
+         "trigger": "attr_carousel_prefetchedTabIndex\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Integer)\""
+      },
+      {
+         "trigger": "attr_carousel_suppressIndicators\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(String)\""
+      },
+      {
+         "trigger": "attr_carousel_isScrollable\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Boolean)\""
+      },
+      {
+         "trigger": "attr_carousel_bindEventsToScroller\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Boolean)\""
+      },
+      {
+         "trigger": "attr_carousel_pageIndicatorComponent\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carousel_carouselPageComponent\t$A.attr.ui:carousel",
+         "contents": "carousel=\"$1ui:carousel(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_title\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_width\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_height\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_useTransition\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_pageIndicatorPosition\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_continuousFlow\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_defaultPage\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_pageModels\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Object[])\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_pageComponents\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_navigationTabs\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_onPageChange\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_spinner\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_priv_currentPage\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_priv_carouselStyle\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_priv_scrollerWidth\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_priv_snap\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselDeprecated_priv_scrollContentClass\t$A.attr.ui:carouselDeprecated",
+         "contents": "carouselDeprecated=\"$1ui:carouselDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselIndicator_pageModels\t$A.attr.ui:carouselIndicator",
+         "contents": "carouselIndicator=\"$1ui:carouselIndicator(Object[])\""
+      },
+      {
+         "trigger": "attr_carouselIndicator_pageComponents\t$A.attr.ui:carouselIndicator",
+         "contents": "carouselIndicator=\"$1ui:carouselIndicator(Object[])\""
+      },
+      {
+         "trigger": "attr_carouselIndicator_justifyContent\t$A.attr.ui:carouselIndicator",
+         "contents": "carouselIndicator=\"$1ui:carouselIndicator(String)\""
+      },
+      {
+         "trigger": "attr_carouselIndicator_isDotIndicator\t$A.attr.ui:carouselIndicator",
+         "contents": "carouselIndicator=\"$1ui:carouselIndicator(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselIndicator__calculatedStyles\t$A.attr.ui:carouselIndicator",
+         "contents": "carouselIndicator=\"$1ui:carouselIndicator(String)\""
+      },
+      {
+         "trigger": "attr_carouselPage_content\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(Object)\""
+      },
+      {
+         "trigger": "attr_carouselPage_pageIndex\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPage_scrollerPlugins\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(String)\""
+      },
+      {
+         "trigger": "attr_carouselPage_isContentLoaded\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPage_isScrollable\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPage_placeholder\t$A.attr.ui:carouselPage",
+         "contents": "carouselPage=\"$1ui:carouselPage(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_title\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_isCacheable\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_isDefault\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_pageModel\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Object)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_pageIndex\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_isSelected\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_parent\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_width\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_height\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_pageStyle\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_pageId\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_visible\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_continuousFlow\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_priv_snap\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageDeprecated_showPage\t$A.attr.ui:carouselPageDeprecated",
+         "contents": "carouselPageDeprecated=\"$1ui:carouselPageDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicator_pageComponents\t$A.attr.ui:carouselPageIndicator",
+         "contents": "carouselPageIndicator=\"$1ui:carouselPageIndicator(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicator_currentPage\t$A.attr.ui:carouselPageIndicator",
+         "contents": "carouselPageIndicator=\"$1ui:carouselPageIndicator(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicator_navigationTabs\t$A.attr.ui:carouselPageIndicator",
+         "contents": "carouselPageIndicator=\"$1ui:carouselPageIndicator(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_pageIndex\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_title\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_label\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_navigationTab\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_id\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_ariaSelected\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_ariaControlId\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(String)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_tabIndex\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(Integer)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_pageComponent\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(Object)\""
+      },
+      {
+         "trigger": "attr_carouselPageIndicatorItem_priv_selectedClass\t$A.attr.ui:carouselPageIndicatorItem",
+         "contents": "carouselPageIndicatorItem=\"$1ui:carouselPageIndicatorItem(String)\""
+      },
+      {
+         "trigger": "attr_dataGrid_summary\t$A.attr.ui:dataGrid",
+         "contents": "dataGrid=\"$1ui:dataGrid(String)\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_name\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_label\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_class\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_scope\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_header\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_outputComponent\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_dataGridActionColumn_body\t$A.attr.ui:dataGridActionColumn",
+         "contents": "dataGridActionColumn=\"$1ui:dataGridActionColumn(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_name\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_label\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_type\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_sortable\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_disabled\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_required\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_direction\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_initialDirectionOnSort\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_ascLabel\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_descLabel\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_order\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_scope\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_onsortchange\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_dataGridColumn_outputComponent\t$A.attr.ui:dataGridColumn",
+         "contents": "dataGridColumn=\"$1ui:dataGridColumn(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_dataGridSelectionColumn_selectAll\t$A.attr.ui:dataGridSelectionColumn",
+         "contents": "dataGridSelectionColumn=\"$1ui:dataGridSelectionColumn(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridSelectionColumn_outputComponent\t$A.attr.ui:dataGridSelectionColumn",
+         "contents": "dataGridSelectionColumn=\"$1ui:dataGridSelectionColumn(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_column\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(String)\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_type\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(String)\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_items\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(List)\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_value\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_outputComponent\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_dataGridSummaryCell_priv_outputComponent\t$A.attr.ui:dataGridSummaryCell",
+         "contents": "dataGridSummaryCell=\"$1ui:dataGridSummaryCell(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_dataTable_class\t$A.attr.ui:dataTable",
+         "contents": "dataTable=\"$1ui:dataTable(String)\""
+      },
+      {
+         "trigger": "attr_dataTable_items\t$A.attr.ui:dataTable",
+         "contents": "dataTable=\"$1ui:dataTable(Object[])\""
+      },
+      {
+         "trigger": "attr_dataTable_noDataText\t$A.attr.ui:dataTable",
+         "contents": "dataTable=\"$1ui:dataTable(String)\""
+      },
+      {
+         "trigger": "attr_dataTable_headerValues\t$A.attr.ui:dataTable",
+         "contents": "dataTable=\"$1ui:dataTable(String[])\""
+      },
+      {
+         "trigger": "attr_dataTable_striped\t$A.attr.ui:dataTable",
+         "contents": "dataTable=\"$1ui:dataTable(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataTableColumn_class\t$A.attr.ui:dataTableColumn",
+         "contents": "dataTableColumn=\"$1ui:dataTableColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataTableColumn_scope\t$A.attr.ui:dataTableColumn",
+         "contents": "dataTableColumn=\"$1ui:dataTableColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataTableColumn_headerValue\t$A.attr.ui:dataTableColumn",
+         "contents": "dataTableColumn=\"$1ui:dataTableColumn(String)\""
+      },
+      {
+         "trigger": "attr_dataWriter_items\t$A.attr.ui:dataWriter",
+         "contents": "dataWriter=\"$1ui:dataWriter(List)\""
+      },
+      {
+         "trigger": "attr_dataWriter_defaultFields\t$A.attr.ui:dataWriter",
+         "contents": "dataWriter=\"$1ui:dataWriter(Map)\""
+      },
+      {
+         "trigger": "attr_dataWriter_sync\t$A.attr.ui:dataWriter",
+         "contents": "dataWriter=\"$1ui:dataWriter(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_hasTime\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_hours\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_datePicker_is24HourFormat\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_maxYear\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_datePicker_minYear\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_datePicker_minutes\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_datePicker_value\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(String)\""
+      },
+      {
+         "trigger": "attr_datePicker_visible\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker__yearListInitialized\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_managed\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_referenceElement\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Object)\""
+      },
+      {
+         "trigger": "attr_datePicker_dimension\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(String)\""
+      },
+      {
+         "trigger": "attr_datePicker_showToday\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_hideOnSelect\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_setFocus\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePicker_titleHeadingLevel\t$A.attr.ui:datePicker",
+         "contents": "datePicker=\"$1ui:datePicker(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_class\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_date\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Integer)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_hasTime\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_month\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Integer)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_year\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Integer)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_selectedDate\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Date)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_dimension\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_setFocus\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_rangeStart\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_rangeEnd\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid_rangeClass\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(String)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid__setFocus\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_datePickerGrid__namesOfWeekdays\t$A.attr.ui:datePickerGrid",
+         "contents": "datePickerGrid=\"$1ui:datePickerGrid(List)\""
+      },
+      {
+         "trigger": "attr_dayInMonthCell_ariaSelected\t$A.attr.ui:dayInMonthCell",
+         "contents": "dayInMonthCell=\"$1ui:dayInMonthCell(Boolean)\""
+      },
+      {
+         "trigger": "attr_dayInMonthCell_tabIndex\t$A.attr.ui:dayInMonthCell",
+         "contents": "dayInMonthCell=\"$1ui:dayInMonthCell(Integer)\""
+      },
+      {
+         "trigger": "attr_dayInMonthCell_value\t$A.attr.ui:dayInMonthCell",
+         "contents": "dayInMonthCell=\"$1ui:dayInMonthCell(Date)\""
+      },
+      {
+         "trigger": "attr_dayInMonthCell_dimension\t$A.attr.ui:dayInMonthCell",
+         "contents": "dayInMonthCell=\"$1ui:dayInMonthCell(String)\""
+      },
+      {
+         "trigger": "attr_dialog_ariaRole\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_autoFocus\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_dialog_buttons\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_dialog_clickOutToClose\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_dialog_description\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_isModal\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_dialog_title\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_width\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_closeClass\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_closeLabel\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_closeTitle\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_dialogClass\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog_maskClass\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(String)\""
+      },
+      {
+         "trigger": "attr_dialog__handlerConfig\t$A.attr.ui:dialog",
+         "contents": "dialog=\"$1ui:dialog(Object)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_defaultButtons\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_confirmClass\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_confirmLabel\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_confirmTitle\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_cancelClass\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_cancelLabel\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons_cancelTitle\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(String)\""
+      },
+      {
+         "trigger": "attr_dialogButtons__parentDialog\t$A.attr.ui:dialogButtons",
+         "contents": "dialogButtons=\"$1ui:dialogButtons(Object)\""
+      },
+      {
+         "trigger": "attr_dialogManager__activeDialog\t$A.attr.ui:dialogManager",
+         "contents": "dialogManager=\"$1ui:dialogManager(Object)\""
+      },
+      {
+         "trigger": "attr_dragAndDropAccessibility_draggables\t$A.attr.ui:dragAndDropAccessibility",
+         "contents": "dragAndDropAccessibility=\"$1ui:dragAndDropAccessibility(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_dragAndDropAccessibilityMenu_class\t$A.attr.ui:dragAndDropAccessibilityMenu",
+         "contents": "dragAndDropAccessibilityMenu=\"$1ui:dragAndDropAccessibilityMenu(String)\""
+      },
+      {
+         "trigger": "attr_dragAndDropAccessibilityMenu_draggables\t$A.attr.ui:dragAndDropAccessibilityMenu",
+         "contents": "dragAndDropAccessibilityMenu=\"$1ui:dragAndDropAccessibilityMenu(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_dragAndDropAccessibilityMenu_dropzoneMenu\t$A.attr.ui:dragAndDropAccessibilityMenu",
+         "contents": "dragAndDropAccessibilityMenu=\"$1ui:dragAndDropAccessibilityMenu(List)\""
+      },
+      {
+         "trigger": "attr_draggable_type\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_draggable_dataTransfer\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(Map)\""
+      },
+      {
+         "trigger": "attr_draggable_class\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_draggable_dragClass\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_draggable_dragAccessibilityClass\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_draggable_dragImageClass\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_draggable_disable\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(Boolean)\""
+      },
+      {
+         "trigger": "attr_draggable_ariaGrabbed\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(boolean)\""
+      },
+      {
+         "trigger": "attr_draggable_accessibilityComponent\t$A.attr.ui:draggable",
+         "contents": "draggable=\"$1ui:draggable(String)\""
+      },
+      {
+         "trigger": "attr_dropzone_types\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String[])\""
+      },
+      {
+         "trigger": "attr_dropzone_dragOverInterval\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(Integer)\""
+      },
+      {
+         "trigger": "attr_dropzone_class\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String)\""
+      },
+      {
+         "trigger": "attr_dropzone_dragOverClass\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String)\""
+      },
+      {
+         "trigger": "attr_dropzone_dragOverAccessibilityClass\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String)\""
+      },
+      {
+         "trigger": "attr_dropzone_label\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String)\""
+      },
+      {
+         "trigger": "attr_dropzone_ariaDropEffect\t$A.attr.ui:dropzone",
+         "contents": "dropzone=\"$1ui:dropzone(String)\""
+      },
+      {
+         "trigger": "attr_image_title\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_imageType\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_src\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_class\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_href\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_linkClass\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_alt\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_image_target\t$A.attr.ui:image",
+         "contents": "image=\"$1ui:image(String)\""
+      },
+      {
+         "trigger": "attr_infiniteList_enableRowSwipe\t$A.attr.ui:infiniteList",
+         "contents": "infiniteList=\"$1ui:infiniteList(Boolean)\""
+      },
+      {
+         "trigger": "attr_infiniteListRow_class\t$A.attr.ui:infiniteListRow",
+         "contents": "infiniteListRow=\"$1ui:infiniteListRow(String)\""
+      },
+      {
+         "trigger": "attr_infiniteListRow_swipeBody\t$A.attr.ui:infiniteListRow",
+         "contents": "infiniteListRow=\"$1ui:infiniteListRow(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_input_disableDoubleClicks\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Boolean)\""
+      },
+      {
+         "trigger": "attr_input_showErrors\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Boolean)\""
+      },
+      {
+         "trigger": "attr_input_errors\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Object[])\""
+      },
+      {
+         "trigger": "attr_input_errorComponent\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_input_type\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_required\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Boolean)\""
+      },
+      {
+         "trigger": "attr_input_updateOn\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_value\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_label\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_labelClass\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_labelPosition\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_labelTitle\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_requiredIndicatorClass\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_disabled\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Boolean)\""
+      },
+      {
+         "trigger": "attr_input_domId\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(String)\""
+      },
+      {
+         "trigger": "attr_input_requiredIndicator\t$A.attr.ui:input",
+         "contents": "input=\"$1ui:input(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_inputCheckbox_updateOn\t$A.attr.ui:inputCheckbox",
+         "contents": "inputCheckbox=\"$1ui:inputCheckbox(String)\""
+      },
+      {
+         "trigger": "attr_inputDate_placeholder\t$A.attr.ui:inputDate",
+         "contents": "inputDate=\"$1ui:inputDate(String)\""
+      },
+      {
+         "trigger": "attr_inputDate_loadDatePicker\t$A.attr.ui:inputDate",
+         "contents": "inputDate=\"$1ui:inputDate(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputDate_datePickerDimension\t$A.attr.ui:inputDate",
+         "contents": "inputDate=\"$1ui:inputDate(String)\""
+      },
+      {
+         "trigger": "attr_inputDateRange_startInputPlaceholder\t$A.attr.ui:inputDateRange",
+         "contents": "inputDateRange=\"$1ui:inputDateRange(String)\""
+      },
+      {
+         "trigger": "attr_inputDateRange_endInputPlaceholder\t$A.attr.ui:inputDateRange",
+         "contents": "inputDateRange=\"$1ui:inputDateRange(String)\""
+      },
+      {
+         "trigger": "attr_inputDateRange_startDate\t$A.attr.ui:inputDateRange",
+         "contents": "inputDateRange=\"$1ui:inputDateRange(String)\""
+      },
+      {
+         "trigger": "attr_inputDateRange_endDate\t$A.attr.ui:inputDateRange",
+         "contents": "inputDateRange=\"$1ui:inputDateRange(String)\""
+      },
+      {
+         "trigger": "attr_inputDateTime_value\t$A.attr.ui:inputDateTime",
+         "contents": "inputDateTime=\"$1ui:inputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_inputDateTime_placeholder\t$A.attr.ui:inputDateTime",
+         "contents": "inputDateTime=\"$1ui:inputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_inputDateTime_timezone\t$A.attr.ui:inputDateTime",
+         "contents": "inputDateTime=\"$1ui:inputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_inputDateTime_datePickerDimension\t$A.attr.ui:inputDateTime",
+         "contents": "inputDateTime=\"$1ui:inputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_inputDefaultError_value\t$A.attr.ui:inputDefaultError",
+         "contents": "inputDefaultError=\"$1ui:inputDefaultError(String[])\""
+      },
+      {
+         "trigger": "attr_inputDefaultError_errors\t$A.attr.ui:inputDefaultError",
+         "contents": "inputDefaultError=\"$1ui:inputDefaultError(Object[])\""
+      },
+      {
+         "trigger": "attr_inputDefaultError_domId\t$A.attr.ui:inputDefaultError",
+         "contents": "inputDefaultError=\"$1ui:inputDefaultError(String)\""
+      },
+      {
+         "trigger": "attr_inputOption_type\t$A.attr.ui:inputOption",
+         "contents": "inputOption=\"$1ui:inputOption(String)\""
+      },
+      {
+         "trigger": "attr_inputRadio_disabled\t$A.attr.ui:inputRadio",
+         "contents": "inputRadio=\"$1ui:inputRadio(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputRange_min\t$A.attr.ui:inputRange",
+         "contents": "inputRange=\"$1ui:inputRange(Integer)\""
+      },
+      {
+         "trigger": "attr_inputRange_max\t$A.attr.ui:inputRange",
+         "contents": "inputRange=\"$1ui:inputRange(Integer)\""
+      },
+      {
+         "trigger": "attr_inputRange_step\t$A.attr.ui:inputRange",
+         "contents": "inputRange=\"$1ui:inputRange(Integer)\""
+      },
+      {
+         "trigger": "attr_inputRange_value\t$A.attr.ui:inputRange",
+         "contents": "inputRange=\"$1ui:inputRange(Integer)\""
+      },
+      {
+         "trigger": "attr_inputRichText_toolbar\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(String)\""
+      },
+      {
+         "trigger": "attr_inputRichText_customToolbarConfig\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(Object)\""
+      },
+      {
+         "trigger": "attr_inputRichText_toolbarLocation\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(String)\""
+      },
+      {
+         "trigger": "attr_inputRichText_width\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(String)\""
+      },
+      {
+         "trigger": "attr_inputRichText_height\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(String)\""
+      },
+      {
+         "trigger": "attr_inputRichText_isRichText\t$A.attr.ui:inputRichText",
+         "contents": "inputRichText=\"$1ui:inputRichText(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputSearch_updateOn\t$A.attr.ui:inputSearch",
+         "contents": "inputSearch=\"$1ui:inputSearch(String)\""
+      },
+      {
+         "trigger": "attr_inputSearch_type\t$A.attr.ui:inputSearch",
+         "contents": "inputSearch=\"$1ui:inputSearch(String)\""
+      },
+      {
+         "trigger": "attr_inputSearch_placeholder\t$A.attr.ui:inputSearch",
+         "contents": "inputSearch=\"$1ui:inputSearch(String)\""
+      },
+      {
+         "trigger": "attr_inputSearch_showClear\t$A.attr.ui:inputSearch",
+         "contents": "inputSearch=\"$1ui:inputSearch(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputSelect_options\t$A.attr.ui:inputSelect",
+         "contents": "inputSelect=\"$1ui:inputSelect(List)\""
+      },
+      {
+         "trigger": "attr_inputSelect_name\t$A.attr.ui:inputSelect",
+         "contents": "inputSelect=\"$1ui:inputSelect(String)\""
+      },
+      {
+         "trigger": "attr_inputSelect_multiple\t$A.attr.ui:inputSelect",
+         "contents": "inputSelect=\"$1ui:inputSelect(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputSelect_size\t$A.attr.ui:inputSelect",
+         "contents": "inputSelect=\"$1ui:inputSelect(Integer)\""
+      },
+      {
+         "trigger": "attr_inputSelectOptionGroup_class\t$A.attr.ui:inputSelectOptionGroup",
+         "contents": "inputSelectOptionGroup=\"$1ui:inputSelectOptionGroup(String)\""
+      },
+      {
+         "trigger": "attr_inputSelectOptionGroup_label\t$A.attr.ui:inputSelectOptionGroup",
+         "contents": "inputSelectOptionGroup=\"$1ui:inputSelectOptionGroup(String)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_rows\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(Integer)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_cols\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(Integer)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_readonly\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_placeholder\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(String)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_resizable\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(Boolean)\""
+      },
+      {
+         "trigger": "attr_inputTextArea_maxlength\t$A.attr.ui:inputTextArea",
+         "contents": "inputTextArea=\"$1ui:inputTextArea(Integer)\""
+      },
+      {
+         "trigger": "attr_inputTextAreaForAutocomplete_autocompleteButton\t$A.attr.ui:inputTextAreaForAutocomplete",
+         "contents": "inputTextAreaForAutocomplete=\"$1ui:inputTextAreaForAutocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_inputTextAreaForAutocomplete_ariaExpanded\t$A.attr.ui:inputTextAreaForAutocomplete",
+         "contents": "inputTextAreaForAutocomplete=\"$1ui:inputTextAreaForAutocomplete(String)\""
+      },
+      {
+         "trigger": "attr_inputTextAreaForAutocomplete_ariaActiveDescendant\t$A.attr.ui:inputTextAreaForAutocomplete",
+         "contents": "inputTextAreaForAutocomplete=\"$1ui:inputTextAreaForAutocomplete(String)\""
+      },
+      {
+         "trigger": "attr_inputTextForAutocomplete_autocompleteButton\t$A.attr.ui:inputTextForAutocomplete",
+         "contents": "inputTextForAutocomplete=\"$1ui:inputTextForAutocomplete(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_inputTextForAutocomplete_ariaExpanded\t$A.attr.ui:inputTextForAutocomplete",
+         "contents": "inputTextForAutocomplete=\"$1ui:inputTextForAutocomplete(String)\""
+      },
+      {
+         "trigger": "attr_inputTextForAutocomplete_ariaActiveDescendant\t$A.attr.ui:inputTextForAutocomplete",
+         "contents": "inputTextForAutocomplete=\"$1ui:inputTextForAutocomplete(String)\""
+      },
+      {
+         "trigger": "attr_interactive_disabled\t$A.attr.ui:interactive",
+         "contents": "interactive=\"$1ui:interactive(Boolean)\""
+      },
+      {
+         "trigger": "attr_interactive_disableDoubleClicks\t$A.attr.ui:interactive",
+         "contents": "interactive=\"$1ui:interactive(Boolean)\""
+      },
+      {
+         "trigger": "attr_label_label\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(String)\""
+      },
+      {
+         "trigger": "attr_label_title\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(String)\""
+      },
+      {
+         "trigger": "attr_label_class\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(String)\""
+      },
+      {
+         "trigger": "attr_label_labelDisplay\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(Boolean)\""
+      },
+      {
+         "trigger": "attr_label_for\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(Object)\""
+      },
+      {
+         "trigger": "attr_label_requiredIndicator\t$A.attr.ui:label",
+         "contents": "label=\"$1ui:label(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_listSorter_dataProvider\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_listSorter_class\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_title\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_cancelLabel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_applyLabel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_visible\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Boolean)\""
+      },
+      {
+         "trigger": "attr_listSorter_items\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Object[])\""
+      },
+      {
+         "trigger": "attr_listSorter_defaultSelectedItems\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Object)\""
+      },
+      {
+         "trigger": "attr_listSorter_triggerLabel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_ascendingLabel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_descendingLabel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_trigger\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_listSorter_modal\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Boolean)\""
+      },
+      {
+         "trigger": "attr_listSorter_rowVar\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(String)\""
+      },
+      {
+         "trigger": "attr_listSorter_rowDef\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_listSorter_onApply\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_listSorter_onOpen\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_listSorter_onCancel\t$A.attr.ui:listSorter",
+         "contents": "listSorter=\"$1ui:listSorter(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_listView_id\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(String)\""
+      },
+      {
+         "trigger": "attr_listView_alternateRowClass\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(String)\""
+      },
+      {
+         "trigger": "attr_listView_blockSize\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(Integer)\""
+      },
+      {
+         "trigger": "attr_listView_columns\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(List)\""
+      },
+      {
+         "trigger": "attr_listView_dataColumns\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(List)\""
+      },
+      {
+         "trigger": "attr_listView_dataTemplates\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(List)\""
+      },
+      {
+         "trigger": "attr_listView_emptyMessage\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(String)\""
+      },
+      {
+         "trigger": "attr_listView_footer\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_listView_items\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(List)\""
+      },
+      {
+         "trigger": "attr_listView_rowClass\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(String)\""
+      },
+      {
+         "trigger": "attr_listView_rowTooltip\t$A.attr.ui:listView",
+         "contents": "listView=\"$1ui:listView(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumn_column\t$A.attr.ui:listViewColumn",
+         "contents": "listViewColumn=\"$1ui:listViewColumn(Object)\""
+      },
+      {
+         "trigger": "attr_listViewColumn_index\t$A.attr.ui:listViewColumn",
+         "contents": "listViewColumn=\"$1ui:listViewColumn(Integer)\""
+      },
+      {
+         "trigger": "attr_listViewColumn_item\t$A.attr.ui:listViewColumn",
+         "contents": "listViewColumn=\"$1ui:listViewColumn(Object)\""
+      },
+      {
+         "trigger": "attr_listViewColumn_scope\t$A.attr.ui:listViewColumn",
+         "contents": "listViewColumn=\"$1ui:listViewColumn(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumn_type\t$A.attr.ui:listViewColumn",
+         "contents": "listViewColumn=\"$1ui:listViewColumn(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnCheckbox_label\t$A.attr.ui:listViewColumnCheckbox",
+         "contents": "listViewColumnCheckbox=\"$1ui:listViewColumnCheckbox(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnCheckbox_labelClass\t$A.attr.ui:listViewColumnCheckbox",
+         "contents": "listViewColumnCheckbox=\"$1ui:listViewColumnCheckbox(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnCheckbox_checked\t$A.attr.ui:listViewColumnCheckbox",
+         "contents": "listViewColumnCheckbox=\"$1ui:listViewColumnCheckbox(Boolean)\""
+      },
+      {
+         "trigger": "attr_listViewColumnEmail_text\t$A.attr.ui:listViewColumnEmail",
+         "contents": "listViewColumnEmail=\"$1ui:listViewColumnEmail(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnEmail_url\t$A.attr.ui:listViewColumnEmail",
+         "contents": "listViewColumnEmail=\"$1ui:listViewColumnEmail(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnHtml_markup\t$A.attr.ui:listViewColumnHtml",
+         "contents": "listViewColumnHtml=\"$1ui:listViewColumnHtml(Object)\""
+      },
+      {
+         "trigger": "attr_listViewColumnLink_target\t$A.attr.ui:listViewColumnLink",
+         "contents": "listViewColumnLink=\"$1ui:listViewColumnLink(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnLink_text\t$A.attr.ui:listViewColumnLink",
+         "contents": "listViewColumnLink=\"$1ui:listViewColumnLink(String)\""
+      },
+      {
+         "trigger": "attr_listViewColumnLink_url\t$A.attr.ui:listViewColumnLink",
+         "contents": "listViewColumnLink=\"$1ui:listViewColumnLink(String)\""
+      },
+      {
+         "trigger": "attr_listViewRow_index\t$A.attr.ui:listViewRow",
+         "contents": "listViewRow=\"$1ui:listViewRow(Integer)\""
+      },
+      {
+         "trigger": "attr_listViewRow_item\t$A.attr.ui:listViewRow",
+         "contents": "listViewRow=\"$1ui:listViewRow(Object)\""
+      },
+      {
+         "trigger": "attr_manifest_lastMod\t$A.attr.ui:manifest",
+         "contents": "manifest=\"$1ui:manifest(String)\""
+      },
+      {
+         "trigger": "attr_manifest_resourceURLs\t$A.attr.ui:manifest",
+         "contents": "manifest=\"$1ui:manifest(String)\""
+      },
+      {
+         "trigger": "attr_menuItem_selected\t$A.attr.ui:menuItem",
+         "contents": "menuItem=\"$1ui:menuItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_menuItem_type\t$A.attr.ui:menuItem",
+         "contents": "menuItem=\"$1ui:menuItem(String)\""
+      },
+      {
+         "trigger": "attr_menuItem_hideMenuAfterSelected\t$A.attr.ui:menuItem",
+         "contents": "menuItem=\"$1ui:menuItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_menuItem_label\t$A.attr.ui:menuItem",
+         "contents": "menuItem=\"$1ui:menuItem(String)\""
+      },
+      {
+         "trigger": "attr_menuList_menuItems\t$A.attr.ui:menuList",
+         "contents": "menuList=\"$1ui:menuList(List)\""
+      },
+      {
+         "trigger": "attr_menuList_visible\t$A.attr.ui:menuList",
+         "contents": "menuList=\"$1ui:menuList(Boolean)\""
+      },
+      {
+         "trigger": "attr_menuList_focusItemIndex\t$A.attr.ui:menuList",
+         "contents": "menuList=\"$1ui:menuList(Integer)\""
+      },
+      {
+         "trigger": "attr_menuList_focusTrigger\t$A.attr.ui:menuList",
+         "contents": "menuList=\"$1ui:menuList(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_menuList_childMenuItems\t$A.attr.ui:menuList",
+         "contents": "menuList=\"$1ui:menuList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_menuTriggerLink_label\t$A.attr.ui:menuTriggerLink",
+         "contents": "menuTriggerLink=\"$1ui:menuTriggerLink(String)\""
+      },
+      {
+         "trigger": "attr_message_title\t$A.attr.ui:message",
+         "contents": "message=\"$1ui:message(String)\""
+      },
+      {
+         "trigger": "attr_message_severity\t$A.attr.ui:message",
+         "contents": "message=\"$1ui:message(String)\""
+      },
+      {
+         "trigger": "attr_message_closable\t$A.attr.ui:message",
+         "contents": "message=\"$1ui:message(Boolean)\""
+      },
+      {
+         "trigger": "attr_modal_title\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_titleDisplay\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(Boolean)\""
+      },
+      {
+         "trigger": "attr_modal_class\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_startOfDialogLabel\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_showCloseButton\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(Boolean)\""
+      },
+      {
+         "trigger": "attr_modal_closeDialogLabel\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_useTransition\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(Boolean)\""
+      },
+      {
+         "trigger": "attr_modal_animation\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_closeAnimation\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(String)\""
+      },
+      {
+         "trigger": "attr_modal_autoFocus\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(Boolean)\""
+      },
+      {
+         "trigger": "attr_modal_closeButton\t$A.attr.ui:modal",
+         "contents": "modal=\"$1ui:modal(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_output_value\t$A.attr.ui:output",
+         "contents": "output=\"$1ui:output(Object)\""
+      },
+      {
+         "trigger": "attr_outputCheckbox_value\t$A.attr.ui:outputCheckbox",
+         "contents": "outputCheckbox=\"$1ui:outputCheckbox(Boolean)\""
+      },
+      {
+         "trigger": "attr_outputCheckbox_altChecked\t$A.attr.ui:outputCheckbox",
+         "contents": "outputCheckbox=\"$1ui:outputCheckbox(String)\""
+      },
+      {
+         "trigger": "attr_outputCheckbox_altUnchecked\t$A.attr.ui:outputCheckbox",
+         "contents": "outputCheckbox=\"$1ui:outputCheckbox(String)\""
+      },
+      {
+         "trigger": "attr_outputCurrency_value\t$A.attr.ui:outputCurrency",
+         "contents": "outputCurrency=\"$1ui:outputCurrency(Decimal)\""
+      },
+      {
+         "trigger": "attr_outputCurrency_format\t$A.attr.ui:outputCurrency",
+         "contents": "outputCurrency=\"$1ui:outputCurrency(String)\""
+      },
+      {
+         "trigger": "attr_outputCurrency_currencyCode\t$A.attr.ui:outputCurrency",
+         "contents": "outputCurrency=\"$1ui:outputCurrency(String)\""
+      },
+      {
+         "trigger": "attr_outputCurrency_currencySymbol\t$A.attr.ui:outputCurrency",
+         "contents": "outputCurrency=\"$1ui:outputCurrency(String)\""
+      },
+      {
+         "trigger": "attr_outputDate_value\t$A.attr.ui:outputDate",
+         "contents": "outputDate=\"$1ui:outputDate(String)\""
+      },
+      {
+         "trigger": "attr_outputDateTime_timezone\t$A.attr.ui:outputDateTime",
+         "contents": "outputDateTime=\"$1ui:outputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_outputDateTime_value\t$A.attr.ui:outputDateTime",
+         "contents": "outputDateTime=\"$1ui:outputDateTime(String)\""
+      },
+      {
+         "trigger": "attr_outputEmail_value\t$A.attr.ui:outputEmail",
+         "contents": "outputEmail=\"$1ui:outputEmail(String)\""
+      },
+      {
+         "trigger": "attr_outputMultiSelect_value\t$A.attr.ui:outputMultiSelect",
+         "contents": "outputMultiSelect=\"$1ui:outputMultiSelect(String[])\""
+      },
+      {
+         "trigger": "attr_outputMultiSelect_delimiter\t$A.attr.ui:outputMultiSelect",
+         "contents": "outputMultiSelect=\"$1ui:outputMultiSelect(String)\""
+      },
+      {
+         "trigger": "attr_outputNumber_value\t$A.attr.ui:outputNumber",
+         "contents": "outputNumber=\"$1ui:outputNumber(Decimal)\""
+      },
+      {
+         "trigger": "attr_outputNumber_format\t$A.attr.ui:outputNumber",
+         "contents": "outputNumber=\"$1ui:outputNumber(String)\""
+      },
+      {
+         "trigger": "attr_outputPercent_value\t$A.attr.ui:outputPercent",
+         "contents": "outputPercent=\"$1ui:outputPercent(Decimal)\""
+      },
+      {
+         "trigger": "attr_outputPercent_format\t$A.attr.ui:outputPercent",
+         "contents": "outputPercent=\"$1ui:outputPercent(String)\""
+      },
+      {
+         "trigger": "attr_outputPercent_valueScale\t$A.attr.ui:outputPercent",
+         "contents": "outputPercent=\"$1ui:outputPercent(Integer)\""
+      },
+      {
+         "trigger": "attr_outputPhone_value\t$A.attr.ui:outputPhone",
+         "contents": "outputPhone=\"$1ui:outputPhone(String)\""
+      },
+      {
+         "trigger": "attr_outputRichText_value\t$A.attr.ui:outputRichText",
+         "contents": "outputRichText=\"$1ui:outputRichText(String)\""
+      },
+      {
+         "trigger": "attr_outputRichText_supportedTags\t$A.attr.ui:outputRichText",
+         "contents": "outputRichText=\"$1ui:outputRichText(String)\""
+      },
+      {
+         "trigger": "attr_outputText_value\t$A.attr.ui:outputText",
+         "contents": "outputText=\"$1ui:outputText(String)\""
+      },
+      {
+         "trigger": "attr_outputTextArea_value\t$A.attr.ui:outputTextArea",
+         "contents": "outputTextArea=\"$1ui:outputTextArea(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_iconClass\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_title\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_value\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_target\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_alt\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_label\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(String)\""
+      },
+      {
+         "trigger": "attr_outputURL_disabled\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(Boolean)\""
+      },
+      {
+         "trigger": "attr_outputURL_stopPropagation\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(Boolean)\""
+      },
+      {
+         "trigger": "attr_outputURL_fixURL\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(Boolean)\""
+      },
+      {
+         "trigger": "attr_outputURL_stopNavigation\t$A.attr.ui:outputURL",
+         "contents": "outputURL=\"$1ui:outputURL(Boolean)\""
+      },
+      {
+         "trigger": "attr_pagerJumpToPage_Labels_Page\t$A.attr.ui:pagerJumpToPage",
+         "contents": "pagerJumpToPage=\"$1ui:pagerJumpToPage(String)\""
+      },
+      {
+         "trigger": "attr_pagerJumpToPage_Labels_Of\t$A.attr.ui:pagerJumpToPage",
+         "contents": "pagerJumpToPage=\"$1ui:pagerJumpToPage(String)\""
+      },
+      {
+         "trigger": "attr_pagerNextPrevious_Labels_First\t$A.attr.ui:pagerNextPrevious",
+         "contents": "pagerNextPrevious=\"$1ui:pagerNextPrevious(String)\""
+      },
+      {
+         "trigger": "attr_pagerNextPrevious_Labels_Last\t$A.attr.ui:pagerNextPrevious",
+         "contents": "pagerNextPrevious=\"$1ui:pagerNextPrevious(String)\""
+      },
+      {
+         "trigger": "attr_pagerNextPrevious_Labels_Next\t$A.attr.ui:pagerNextPrevious",
+         "contents": "pagerNextPrevious=\"$1ui:pagerNextPrevious(String)\""
+      },
+      {
+         "trigger": "attr_pagerNextPrevious_Labels_Previous\t$A.attr.ui:pagerNextPrevious",
+         "contents": "pagerNextPrevious=\"$1ui:pagerNextPrevious(String)\""
+      },
+      {
+         "trigger": "attr_pagerPageInfo_Labels_Of\t$A.attr.ui:pagerPageInfo",
+         "contents": "pagerPageInfo=\"$1ui:pagerPageInfo(String)\""
+      },
+      {
+         "trigger": "attr_pagerPageInfo_Labels_To\t$A.attr.ui:pagerPageInfo",
+         "contents": "pagerPageInfo=\"$1ui:pagerPageInfo(String)\""
+      },
+      {
+         "trigger": "attr_pagerPageSize_Labels_All\t$A.attr.ui:pagerPageSize",
+         "contents": "pagerPageSize=\"$1ui:pagerPageSize(String)\""
+      },
+      {
+         "trigger": "attr_pagerPageSize_Labels_Records\t$A.attr.ui:pagerPageSize",
+         "contents": "pagerPageSize=\"$1ui:pagerPageSize(String)\""
+      },
+      {
+         "trigger": "attr_panel_title\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_class\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_titleDisplay\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panel_startOfDialogLabel\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_closeOnClickOut\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panel_closeAction\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Object)\""
+      },
+      {
+         "trigger": "attr_panel_showCloseButton\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panel_closeDialogLabel\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_useTransition\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panel_animation\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_closeAnimation\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_autoFocus\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panel_referenceElementSelector\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_referenceElement\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Object)\""
+      },
+      {
+         "trigger": "attr_panel_direction\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(String)\""
+      },
+      {
+         "trigger": "attr_panel_showPointer\t$A.attr.ui:panel",
+         "contents": "panel=\"$1ui:panel(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_closeOnClickOut\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_showCloseButton\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_closeAction\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_panelDialog_class\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_animation\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_title\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_startOfDialogLabel\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_closeDialogLabel\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_detail\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(String)\""
+      },
+      {
+         "trigger": "attr_panelDialog_icon\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_panelDialog_isVisible\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_autoFocus\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_titleDisplay\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_isTransient\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_isModal\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Boolean)\""
+      },
+      {
+         "trigger": "attr_panelDialog_referenceElement\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Object)\""
+      },
+      {
+         "trigger": "attr_panelDialog_callbacks\t$A.attr.ui:panelDialog",
+         "contents": "panelDialog=\"$1ui:panelDialog(Object)\""
+      },
+      {
+         "trigger": "attr_panelManager_class\t$A.attr.ui:panelManager",
+         "contents": "panelManager=\"$1ui:panelManager(String)\""
+      },
+      {
+         "trigger": "attr_panelManager_cancelButtonLabel\t$A.attr.ui:panelManager",
+         "contents": "panelManager=\"$1ui:panelManager(String)\""
+      },
+      {
+         "trigger": "attr_panelManager2_registeredPanels\t$A.attr.ui:panelManager2",
+         "contents": "panelManager2=\"$1ui:panelManager2(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_pill_label\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(String)\""
+      },
+      {
+         "trigger": "attr_pill_id\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(String)\""
+      },
+      {
+         "trigger": "attr_pill_showDelete\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(Boolean)\""
+      },
+      {
+         "trigger": "attr_pill_iconUrl\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(String)\""
+      },
+      {
+         "trigger": "attr_pill_accessibleDeleteLabel\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(String)\""
+      },
+      {
+         "trigger": "attr_pill_maxCharacters\t$A.attr.ui:pill",
+         "contents": "pill=\"$1ui:pill(Integer)\""
+      },
+      {
+         "trigger": "attr_pillContainer_items\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(List)\""
+      },
+      {
+         "trigger": "attr_pillContainer_maxAllowed\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Integer)\""
+      },
+      {
+         "trigger": "attr_pillContainer_maxCharactersInPill\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Integer)\""
+      },
+      {
+         "trigger": "attr_pillContainer_maxLines\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Integer)\""
+      },
+      {
+         "trigger": "attr_pillContainer_focusOnInput\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Boolean)\""
+      },
+      {
+         "trigger": "attr_pillContainer_allowRemove\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Boolean)\""
+      },
+      {
+         "trigger": "attr_pillContainer_pillInput\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_pillContainer_showMoreLabel\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(String)\""
+      },
+      {
+         "trigger": "attr_pillContainer_pillFlavor\t$A.attr.ui:pillContainer",
+         "contents": "pillContainer=\"$1ui:pillContainer(String)\""
+      },
+      {
+         "trigger": "attr_pillContainerAutoComplete_allowNew\t$A.attr.ui:pillContainerAutoComplete",
+         "contents": "pillContainerAutoComplete=\"$1ui:pillContainerAutoComplete(Boolean)\""
+      },
+      {
+         "trigger": "attr_pillContainerAutoCompleteOption_iconUrl\t$A.attr.ui:pillContainerAutoCompleteOption",
+         "contents": "pillContainerAutoCompleteOption=\"$1ui:pillContainerAutoCompleteOption(String)\""
+      },
+      {
+         "trigger": "attr_popupTarget_visible\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_closeOnTabKey\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_autoPosition\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_manualPosition\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_attachToBody\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_referenceElement\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Object)\""
+      },
+      {
+         "trigger": "attr_popupTarget_curtain\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_closeOnClickOutside\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_closeOnClickInside\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(Boolean)\""
+      },
+      {
+         "trigger": "attr_popupTarget_preTransitionClass\t$A.attr.ui:popupTarget",
+         "contents": "popupTarget=\"$1ui:popupTarget(String)\""
+      },
+      {
+         "trigger": "attr_popupTrigger_title\t$A.attr.ui:popupTrigger",
+         "contents": "popupTrigger=\"$1ui:popupTrigger(String)\""
+      },
+      {
+         "trigger": "attr_popupTrigger_trigger\t$A.attr.ui:popupTrigger",
+         "contents": "popupTrigger=\"$1ui:popupTrigger(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_popupTrigger_stopClickPropagation\t$A.attr.ui:popupTrigger",
+         "contents": "popupTrigger=\"$1ui:popupTrigger(Boolean)\""
+      },
+      {
+         "trigger": "attr_radioToggleMenuItem_isAscending\t$A.attr.ui:radioToggleMenuItem",
+         "contents": "radioToggleMenuItem=\"$1ui:radioToggleMenuItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_radioToggleMenuItem_ascLabel\t$A.attr.ui:radioToggleMenuItem",
+         "contents": "radioToggleMenuItem=\"$1ui:radioToggleMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_radioToggleMenuItem_descLabel\t$A.attr.ui:radioToggleMenuItem",
+         "contents": "radioToggleMenuItem=\"$1ui:radioToggleMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_resizeObserver_onresize\t$A.attr.ui:resizeObserver",
+         "contents": "resizeObserver=\"$1ui:resizeObserver(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_scroll\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_enabled\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_useCSSTransition\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_useNativeScroller\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_preventNestedScroll\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_preventDefaultOnMove\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_debounce\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_snap\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_endless\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_snapType\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_plugins\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_gpuOptimization\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_bindEventsToScroller\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_showScrollbars\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_canShowMore\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_canRefresh\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_width\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_height\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_itemWidth\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_itemHeight\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_class\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_scrollContentClass\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_minThreshold\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_minDirectionThreshold\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_lockOnDirection\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_onBeforeScrollStart\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_onScrollStart\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_onScrollEnd\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_onScrollMove\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_onPullToShowMore\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_onPullToRefresh\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_infiniteLoading\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scroller_infiniteLoadingThreshold\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Integer)\""
+      },
+      {
+         "trigger": "attr_scroller_infiniteLoadingDataProvider\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMoreClick\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMorePull\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMoreRelease\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMoreUpdating\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMoreSubtitle\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToShowMoreError\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshClick\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshPull\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshRelease\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshUpdating\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshError\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_pullToRefreshSubtitle\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_scrollButtonUp\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_scrollButtonDown\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_scrollButtonLeft\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_scrollButtonRight\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(String)\""
+      },
+      {
+         "trigger": "attr_scroller_supportVoiceOver\t$A.attr.ui:scroller",
+         "contents": "scroller=\"$1ui:scroller(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_hScroll\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_vScroll\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_showScrollbars\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_enabled\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_useTransform\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_useTransition\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_snap\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_width\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_class\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_scrollContentClass\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onBeforeScrollStart\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onScrollStart\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onScrollEnd\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onScrollMove\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onScrollToBottom\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_scrollToBottomThreshold\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Integer)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onPullToShowMore\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToShowMorePull\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToShowMoreRelease\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToShowMoreUpdating\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToShowMoreSubtitle\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_canShowMore\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_onPullToRefresh\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToRefreshPull\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToRefreshRelease\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToRefreshUpdating\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_pullToRefreshSubtitle\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(String)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_canRefresh\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_extendedPullContent\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_stopEventPropagation\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_checkDOMChanges\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_scrollerDeprecated_bindEventsToScroller\t$A.attr.ui:scrollerDeprecated",
+         "contents": "scrollerDeprecated=\"$1ui:scrollerDeprecated(Boolean)\""
+      },
+      {
+         "trigger": "attr_spinner_isVisible\t$A.attr.ui:spinner",
+         "contents": "spinner=\"$1ui:spinner(Boolean)\""
+      },
+      {
+         "trigger": "attr_stamp_severity\t$A.attr.ui:stamp",
+         "contents": "stamp=\"$1ui:stamp(String)\""
+      },
+      {
+         "trigger": "attr_stamp_title\t$A.attr.ui:stamp",
+         "contents": "stamp=\"$1ui:stamp(String)\""
+      },
+      {
+         "trigger": "attr_stamp_onclick\t$A.attr.ui:stamp",
+         "contents": "stamp=\"$1ui:stamp(Aura.Action)\""
+      },
+      {
+         "trigger": "attr_tab_class\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(String)\""
+      },
+      {
+         "trigger": "attr_tab_title\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(String)\""
+      },
+      {
+         "trigger": "attr_tab_name\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(String)\""
+      },
+      {
+         "trigger": "attr_tab_icon\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_tab_scroll\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(Boolean)\""
+      },
+      {
+         "trigger": "attr_tab_active\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(Boolean)\""
+      },
+      {
+         "trigger": "attr_tab_iconClass\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(String)\""
+      },
+      {
+         "trigger": "attr_tab_closable\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(Boolean)\""
+      },
+      {
+         "trigger": "attr_tab_ariaControlId\t$A.attr.ui:tab",
+         "contents": "tab=\"$1ui:tab(String)\""
+      },
+      {
+         "trigger": "attr_tabBar_tabs\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(List)\""
+      },
+      {
+         "trigger": "attr_tabBar_class\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(String)\""
+      },
+      {
+         "trigger": "attr_tabBar_useOverflowMenu\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabBar_overflowLabel\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(String)\""
+      },
+      {
+         "trigger": "attr_tabBar_barWidth\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(Integer)\""
+      },
+      {
+         "trigger": "attr_tabBar_tabItemWidth\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(Integer)\""
+      },
+      {
+         "trigger": "attr_tabBar_overflowData\t$A.attr.ui:tabBar",
+         "contents": "tabBar=\"$1ui:tabBar(Object)\""
+      },
+      {
+         "trigger": "attr_tabItem_class\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(String)\""
+      },
+      {
+         "trigger": "attr_tabItem_title\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(String)\""
+      },
+      {
+         "trigger": "attr_tabItem_name\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(String)\""
+      },
+      {
+         "trigger": "attr_tabItem_icon\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_tabItem_active\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabItem_hidden\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabItem_iconClass\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(String)\""
+      },
+      {
+         "trigger": "attr_tabItem_closable\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabItem_ariaControlId\t$A.attr.ui:tabItem",
+         "contents": "tabItem=\"$1ui:tabItem(String)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_class\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_title\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_icon\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_active\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_iconClass\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_ariaControlId\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_menuItems\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(Object[])\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_menuItemCache\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(Object)\""
+      },
+      {
+         "trigger": "attr_tabOverflowMenuItem_focusedItemName\t$A.attr.ui:tabOverflowMenuItem",
+         "contents": "tabOverflowMenuItem=\"$1ui:tabOverflowMenuItem(String)\""
+      },
+      {
+         "trigger": "attr_tabset_tabs\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(List)\""
+      },
+      {
+         "trigger": "attr_tabset_tabItems\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(List)\""
+      },
+      {
+         "trigger": "attr_tabset_class\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(String)\""
+      },
+      {
+         "trigger": "attr_tabset_lazyRenderTabs\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabset_useOverflowMenu\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(Boolean)\""
+      },
+      {
+         "trigger": "attr_tabset_barWidth\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(Integer)\""
+      },
+      {
+         "trigger": "attr_tabset_tabItemWidth\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(Integer)\""
+      },
+      {
+         "trigger": "attr_tabset_overflowLabel\t$A.attr.ui:tabset",
+         "contents": "tabset=\"$1ui:tabset(String)\""
+      },
+      {
+         "trigger": "attr_timePicker_hours\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_timePicker_is24HourFormat\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_timePicker_isValid\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_timePicker_minutes\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(Integer)\""
+      },
+      {
+         "trigger": "attr_timePicker_visible\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(Boolean)\""
+      },
+      {
+         "trigger": "attr_timePicker_dimension\t$A.attr.ui:timePicker",
+         "contents": "timePicker=\"$1ui:timePicker(String)\""
+      },
+      {
+         "trigger": "attr_toolbar_class\t$A.attr.ui:toolbar",
+         "contents": "toolbar=\"$1ui:toolbar(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_tooltipBody\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_disabled\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Boolean)\""
+      },
+      {
+         "trigger": "attr_tooltip_advanced\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Boolean)\""
+      },
+      {
+         "trigger": "attr_tooltip_trigger\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_triggerClass\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_isVisible\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Boolean)\""
+      },
+      {
+         "trigger": "attr_tooltip_fadeOut\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Boolean)\""
+      },
+      {
+         "trigger": "attr_tooltip_fadeIn\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Boolean)\""
+      },
+      {
+         "trigger": "attr_tooltip_fadeOutDuration\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Integer)\""
+      },
+      {
+         "trigger": "attr_tooltip_fadeInDuration\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Integer)\""
+      },
+      {
+         "trigger": "attr_tooltip_delay\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Integer)\""
+      },
+      {
+         "trigger": "attr_tooltip_class\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_tabIndex\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(Integer)\""
+      },
+      {
+         "trigger": "attr_tooltip_direction\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tooltip_domId\t$A.attr.ui:tooltip",
+         "contents": "tooltip=\"$1ui:tooltip(String)\""
+      },
+      {
+         "trigger": "attr_tree_nodes\t$A.attr.ui:tree",
+         "contents": "tree=\"$1ui:tree(java://List<aura.components.ui.TreeNode>)\""
+      },
+      {
+         "trigger": "attr_tree_class\t$A.attr.ui:tree",
+         "contents": "tree=\"$1ui:tree(String)\""
+      },
+      {
+         "trigger": "attr_tree_activeNode\t$A.attr.ui:tree",
+         "contents": "tree=\"$1ui:tree(Aura.Component)\""
+      },
+      {
+         "trigger": "attr_treeNode_href\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(String)\""
+      },
+      {
+         "trigger": "attr_treeNode_title\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(String)\""
+      },
+      {
+         "trigger": "attr_treeNode_leafClass\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(String)\""
+      },
+      {
+         "trigger": "attr_treeNode_class\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(String)\""
+      },
+      {
+         "trigger": "attr_treeNode_expanded\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(Boolean)\""
+      },
+      {
+         "trigger": "attr_treeNode_active\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(Boolean)\""
+      },
+      {
+         "trigger": "attr_treeNode_hidden\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(Boolean)\""
+      },
+      {
+         "trigger": "attr_treeNode_item\t$A.attr.ui:treeNode",
+         "contents": "treeNode=\"$1ui:treeNode(java://org.auraframework.components.ui.TreeNode)\""
+      },
+      {
+         "trigger": "attr_underConstruction_short\t$A.attr.ui:underConstruction",
+         "contents": "underConstruction=\"$1ui:underConstruction(Boolean)\""
+      },
+      {
+         "trigger": "attr_vbox_north\t$A.attr.ui:vbox",
+         "contents": "vbox=\"$1ui:vbox(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_vbox_south\t$A.attr.ui:vbox",
+         "contents": "vbox=\"$1ui:vbox(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_vbox_centerClass\t$A.attr.ui:vbox",
+         "contents": "vbox=\"$1ui:vbox(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_sortBy\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_class\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_items\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(List)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_headerColumns\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_columns\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_columnsEdit\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_dataModel\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid__dirty\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_itemVar\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid__sortBy\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGrid_fixedHeader\t$A.attr.ui:virtualDataGrid",
+         "contents": "virtualDataGrid=\"$1ui:virtualDataGrid(Boolean)\""
+      },
+      {
+         "trigger": "attr_virtualList__dirty\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualList_itemTemplate\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(Aura.ComponentDefRef[])\""
+      },
+      {
+         "trigger": "attr_virtualList_items\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(Object[])\""
+      },
+      {
+         "trigger": "attr_virtualList_forceRender\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(Boolean)\""
+      },
+      {
+         "trigger": "attr_virtualList_itemVar\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(String)\""
+      },
+      {
+         "trigger": "attr_virtualList_dataProvider\t$A.attr.ui:virtualList",
+         "contents": "virtualList=\"$1ui:virtualList(Aura.Component[])\""
+      },
+      {
+         "trigger": "attr_autocompleteDataProvider_size\t$A.attr.uiExamples:autocompleteDataProvider",
+         "contents": "autocompleteDataProvider=\"$1uiExamples:autocompleteDataProvider(Integer)\""
+      },
+      {
+         "trigger": "attr_autocompleteExample_autocompleteValue\t$A.attr.uiExamples:autocompleteExample",
+         "contents": "autocompleteExample=\"$1uiExamples:autocompleteExample(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteExample_autocompleteExtendedOptsValue\t$A.attr.uiExamples:autocompleteExample",
+         "contents": "autocompleteExample=\"$1uiExamples:autocompleteExample(String)\""
+      },
+      {
+         "trigger": "attr_autocompleteExample_classes\t$A.attr.uiExamples:autocompleteExample",
+         "contents": "autocompleteExample=\"$1uiExamples:autocompleteExample(Boolean)\""
+      },
+      {
+         "trigger": "attr_checkbox_myBool\t$A.attr.uiExamples:checkbox",
+         "contents": "checkbox=\"$1uiExamples:checkbox(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_sortBy\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(String)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_pageSize\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_currentPage\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_totalItems\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_index\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridDynamicColumns_count\t$A.attr.uiExamples:dataGridDynamicColumns",
+         "contents": "dataGridDynamicColumns=\"$1uiExamples:dataGridDynamicColumns(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_mode\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(String)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_sortBy\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(String)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_pageSize\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_currentPage\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_totalItems\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_index\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_count\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_className\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(String)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_rowIndex\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_gridItems\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(List)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSink_gridSelectedItems\t$A.attr.uiExamples:dataGridKitchenSink",
+         "contents": "dataGridKitchenSink=\"$1uiExamples:dataGridKitchenSink(List)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSinkDataProvider_sortBy\t$A.attr.uiExamples:dataGridKitchenSinkDataProvider",
+         "contents": "dataGridKitchenSinkDataProvider=\"$1uiExamples:dataGridKitchenSinkDataProvider(String)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSinkDataProvider_empty\t$A.attr.uiExamples:dataGridKitchenSinkDataProvider",
+         "contents": "dataGridKitchenSinkDataProvider=\"$1uiExamples:dataGridKitchenSinkDataProvider(Boolean)\""
+      },
+      {
+         "trigger": "attr_dataGridKitchenSinkDataProvider_throwError\t$A.attr.uiExamples:dataGridKitchenSinkDataProvider",
+         "contents": "dataGridKitchenSinkDataProvider=\"$1uiExamples:dataGridKitchenSinkDataProvider(Boolean)\""
+      },
+      {
+         "trigger": "attr_date_today\t$A.attr.uiExamples:date",
+         "contents": "date=\"$1uiExamples:date(Date)\""
+      },
+      {
+         "trigger": "attr_datePicker_selectedDate\t$A.attr.uiExamples:datePicker",
+         "contents": "datePicker=\"$1uiExamples:datePicker(Date)\""
+      },
+      {
+         "trigger": "attr_datetime_today\t$A.attr.uiExamples:datetime",
+         "contents": "datetime=\"$1uiExamples:datetime(Date)\""
+      },
+      {
+         "trigger": "attr_dragAndDropExample__context1\t$A.attr.uiExamples:dragAndDropExample",
+         "contents": "dragAndDropExample=\"$1uiExamples:dragAndDropExample(Object)\""
+      },
+      {
+         "trigger": "attr_dragAndDropExample__context2\t$A.attr.uiExamples:dragAndDropExample",
+         "contents": "dragAndDropExample=\"$1uiExamples:dragAndDropExample(Object)\""
+      },
+      {
+         "trigger": "attr_dragAndDropExample__context3\t$A.attr.uiExamples:dragAndDropExample",
+         "contents": "dragAndDropExample=\"$1uiExamples:dragAndDropExample(Object)\""
+      },
+      {
+         "trigger": "attr_dragAndDropExample__accessibilityComponent\t$A.attr.uiExamples:dragAndDropExample",
+         "contents": "dragAndDropExample=\"$1uiExamples:dragAndDropExample(String)\""
+      },
+      {
+         "trigger": "attr_dragAndDropProvider_prefix\t$A.attr.uiExamples:dragAndDropProvider",
+         "contents": "dragAndDropProvider=\"$1uiExamples:dragAndDropProvider(String)\""
+      },
+      {
+         "trigger": "attr_dragAndDropProvider_count\t$A.attr.uiExamples:dragAndDropProvider",
+         "contents": "dragAndDropProvider=\"$1uiExamples:dragAndDropProvider(Integer)\""
+      },
+      {
+         "trigger": "attr_infiniteDataProvider_listType\t$A.attr.uiExamples:infiniteDataProvider",
+         "contents": "infiniteDataProvider=\"$1uiExamples:infiniteDataProvider(String)\""
+      },
+      {
+         "trigger": "attr_infiniteListRow_item\t$A.attr.uiExamples:infiniteListRow",
+         "contents": "infiniteListRow=\"$1uiExamples:infiniteListRow(Object)\""
+      },
+      {
+         "trigger": "attr_inputExample_today\t$A.attr.uiExamples:inputExample",
+         "contents": "inputExample=\"$1uiExamples:inputExample(Date)\""
+      },
+      {
+         "trigger": "attr_inputExample_deadline\t$A.attr.uiExamples:inputExample",
+         "contents": "inputExample=\"$1uiExamples:inputExample(Date)\""
+      },
+      {
+         "trigger": "attr_inputExample_display\t$A.attr.uiExamples:inputExample",
+         "contents": "inputExample=\"$1uiExamples:inputExample(Boolean)\""
+      },
+      {
+         "trigger": "attr_libraryExample_message\t$A.attr.uiExamples:libraryExample",
+         "contents": "libraryExample=\"$1uiExamples:libraryExample(String)\""
+      },
+      {
+         "trigger": "attr_outputExample_myText\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(String)\""
+      },
+      {
+         "trigger": "attr_outputExample_myNum\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(Decimal)\""
+      },
+      {
+         "trigger": "attr_outputExample_myCurr\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(Decimal)\""
+      },
+      {
+         "trigger": "attr_outputExample_myBool\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(Boolean)\""
+      },
+      {
+         "trigger": "attr_outputExample_myDate\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(Date)\""
+      },
+      {
+         "trigger": "attr_outputExample_myDateTime\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(Date)\""
+      },
+      {
+         "trigger": "attr_outputExample_myTextArea\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(String)\""
+      },
+      {
+         "trigger": "attr_outputExample_myURL\t$A.attr.uiExamples:outputExample",
+         "contents": "outputExample=\"$1uiExamples:outputExample(String)\""
+      },
+      {
+         "trigger": "attr_panelContent_class\t$A.attr.uiExamples:panelContent",
+         "contents": "panelContent=\"$1uiExamples:panelContent(String)\""
+      },
+      {
+         "trigger": "attr_radio_stages\t$A.attr.uiExamples:radio",
+         "contents": "radio=\"$1uiExamples:radio(String[])\""
+      },
+      {
+         "trigger": "attr_renderIfExample_display\t$A.attr.uiExamples:renderIfExample",
+         "contents": "renderIfExample=\"$1uiExamples:renderIfExample(Boolean)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_sortBy\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_pageSize\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_currentPage\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_totalItems\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_index\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_count\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_className\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(String)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_rowIndex\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Integer)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_gridItems\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(List)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_gridSelectedItems\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(List)\""
+      },
+      {
+         "trigger": "attr_virtualDataGridKitchenSink_provideNoData\t$A.attr.uiExamples:virtualDataGridKitchenSink",
+         "contents": "virtualDataGridKitchenSink=\"$1uiExamples:virtualDataGridKitchenSink(Boolean)\""
+      }
+   ]
+}

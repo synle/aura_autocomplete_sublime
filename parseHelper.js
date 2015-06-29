@@ -138,13 +138,49 @@ var self = {
         return JSON.stringify(sublimeFormat, null, 3);
     },
 
+
+    /**
+     * sample entries
+     * 
+    attributeObj { name: 'tabItemWidth', type: 'Integer', description: '' }
+    attributeComponent { name: 'tabset',
+        description: 'A tab set that displays a list of tabs in an unordered list.',
+        namespace: 'ui',
+        fullComponentTag: 'ui:tabset',
+        implements: 'ui:visible' }
+     *
+     * @param  {[type]} attributeDictionary [description]
+     * @return {[type]}                     [description]
+     */
     consolidate_attributes_sublime: function(attributeDictionary){
-        
+        var sublimeFormat = self._getDefaultSublimeJSObject('source');
+
+        for (var attributeIdx in attributeDictionary){
+            var attributeComponent = attributeDictionary[attributeIdx].component;
+            var attributeObj = attributeDictionary[attributeIdx].attribute;
+
+            // console.log('attributeComponent',attributeComponent);
+            // console.log('attributeObj', attributeObj);
+
+            //triggers
+            var trigger = 'attr_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
+
+            //contents
+            var contents = attributeComponent.name + '="$1' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')"';
+
+
+            //sublime format
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+        }
+
+        return JSON.stringify(sublimeFormat, null, 3);
     },
-    _getDefaultSublimeJSObject: function() {
+    _getDefaultSublimeJSObject: function(incomingScope) {
         return {
-            // "scope": "source, js",
-            "scope": "source",
+            "scope": incomingScope || "source",
             "completions": []
         };
     },
@@ -162,3 +198,4 @@ var self = {
     }
 };
 module.exports = self;
+
