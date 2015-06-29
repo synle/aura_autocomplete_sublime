@@ -1,6 +1,10 @@
 //depdencies
 var fs = require('fs');
 var path = require('path');
+
+//vars
+var TRIGGER_SEPARATOR = '-';
+
 //definitions
 var self = {
     readFromFile: function(path, silent) {
@@ -82,12 +86,14 @@ var self = {
         return str;
     },
     consolidate_sublime: function(dictionary) {
-        var sublimeFormat = self._getDefaultSublimeJSObject();
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
+        );
         for (var functionName in dictionary) {
             var functionParams = dictionary[functionName] || "";
             //triggers
-            var trigger = functionName.replace(/[.]/g, '_');
-            trigger += trigger.indexOf('_test_') >= 0 ? '\t$A.test' : '\t$A.util';
+            var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
+            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A.test' : '\t$A.util';
 
             //contents
             var contents = functionName + "(" + functionParams + ")";
@@ -110,7 +116,9 @@ var self = {
         return atomFormat;
     },
     consolidate_evt_sublime: function(evtDictionary) {
-        var sublimeFormat = self._getDefaultSublimeJSObject();
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'source.js'
+        );
         for (var evtName in evtDictionary) {
             var evtObj = evtDictionary[evtName];
             var evt = evtObj.evtDef;
@@ -120,12 +128,12 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'e_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
+            var trigger = 'evt_'  + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var contents = [
-                '// ' + 'component=' + evtObj.component,
-                '// ' + 'evtName=' + actualEvt.name,
-                '// ' + 'evtType='+ actualEvt.type,
-                actualEvt.description ? '// ' + actualEvt.description : '',
+                '//' + 'component=' + evtObj.component,
+                '//' + 'evtName=' + actualEvt.name,
+                '//' + 'evtType='+ actualEvt.type,
+                actualEvt.description ? '//' + actualEvt.description : '',
                 'var e = cmp.find("${1:' + evtObj.component + '}").get("e.' + actualEvt.name + '");',
                 'e.setParams({'
             ];
@@ -133,19 +141,25 @@ var self = {
             if (evt.params.length > 0) {
                 for (var i = 0; i < evt.params.length; i++) {
                     var evtDef = evt.params[i];
-                    contents.push('\t' + evtDef.name + ': "' + '${' + (i + 2) + ':' + evtDef.type + '"' + ',' + (evtDef.description ? '// ' + evtDef.description : ''));
+                    contents.push(
+                        '\t' + evtDef.name + ': "' + '${' + (i + 2) + ':' + evtDef.type + '}"' + ',' + (evtDef.description ? '// ' + evtDef.description : '')
+                        // '\t' + evtDef.name + ': "' + evtDef.type + '"' + ',' + (evtDef.description ? '//' + evtDef.description : '')
+                    );
                 }
             }
+
             contents.push('});');
             contents.push('e.fire();');
             //combine to the string
             contents = contents.join('\n')
-                //push
+
+            //push
             sublimeFormat.completions.push({
                 trigger: trigger,
                 contents: contents
             });
         };
+
         return JSON.stringify(sublimeFormat, null, 3);
     },
 
@@ -164,7 +178,7 @@ var self = {
      * @return {[type]}                     [description]
      */
     consolidate_attributes_sublime: function(attributeDictionary){
-        var sublimeFormat = self._getDefaultSublimeJSObject('source');
+        var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
 
         for (var attributeIdx in attributeDictionary){
             var attributeComponent = attributeDictionary[attributeIdx].component;
@@ -178,7 +192,7 @@ var self = {
             var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr';
 
             //contents
-            var contents = attributeComponent.name + '="$1' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')"';
+            var contents = attributeComponent.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
 
 
             //sublime format
@@ -206,8 +220,8 @@ var self = {
     },
     getComponentBreakup: function(fileName){
         var splits = fileName.split('/');
+
         return [splits[splits.length - 3], splits[splits.length - 2]]
     }
 };
 module.exports = self;
-
