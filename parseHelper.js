@@ -185,9 +185,6 @@ var self = {
             var attributeComponent = attributeDictionary[attributeIdx].component;
             var attributeObj = attributeDictionary[attributeIdx].attribute;
 
-            // console.log('attributeComponent',attributeComponent);
-            // console.log('attributeObj', attributeObj);
-
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
             var trigger = 'attr-' + attributeComponent.namespace + '-' + attributeComponent.name + '-' + attributeObj.name + '\t$A.attr';
@@ -205,6 +202,43 @@ var self = {
 
         return JSON.stringify(sublimeFormat, null, 3);
     },
+
+
+    consolidate_uitags_sublime: function(componentDictionary){
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'meta.tag.xml'
+        );
+
+
+        for (var idx in componentDictionary){
+            var componentObj = componentDictionary[idx];
+
+            //triggers
+            var trigger = componentObj.fullComponentTag + '\t$A.Tag'  + componentObj.namespace;
+
+            //contents
+            var contents = [
+                componentObj.fullComponentTag + '$1>${2:',
+                componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.' : '',
+                componentObj.description,
+                '}</'+componentObj.fullComponentTag+'>'
+            ].join('');
+
+
+            // console.log(componentObj);
+
+
+            //sublime format
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+        }
+
+
+        return JSON.stringify(sublimeFormat, null, 3);
+    },
+
     _getDefaultSublimeJSObject: function(incomingScope) {
         return {
             "scope": incomingScope || "source",
@@ -221,6 +255,8 @@ var self = {
     },
     getComponentBreakup: function(fileName){
         var splits = fileName.split('/');
+
+
 
         return [splits[splits.length - 3], splits[splits.length - 2]]
     }

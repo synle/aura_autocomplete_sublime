@@ -2,3 +2,4 @@
 cp aura.sublime-completions ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 cp aura.event.sublime-completions ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 cp aura.attributes.sublime-completions ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+cp aura.uitags.sublime-completions ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/

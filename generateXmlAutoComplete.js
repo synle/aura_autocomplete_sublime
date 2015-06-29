@@ -22,7 +22,7 @@ var componentBaseDir = path.join(
 
 // global dictionary
 var eventDictionary = {};
-// var componentDictionary = [];
+var componentDictionary = [];
 var componentEventDictionary = [];
 var componentAttributesDictionary = [];
 
@@ -99,8 +99,8 @@ componentFileNames.cmp.forEach(function(fileName){
 		var componentParsedXml = result['aura:component'];
 		var componentParsedObj = componentParsedXml.$ || {};
 
-		componentObj.description = componentParsedObj.description;
-		componentObj.implements = componentParsedObj.implements;
+		componentObj.description = componentParsedObj.description || '';
+		componentObj.implements = componentParsedObj.implements || '';
 
 		//push component events
 		var componentAuraEvents = componentParsedXml['aura:registerevent'];
@@ -132,7 +132,7 @@ componentFileNames.cmp.forEach(function(fileName){
 		}
 	});
 
-	// componentDictionary.push(componentObj);
+	componentDictionary.push(componentObj);
 });
 
 //consolidate js evt
@@ -148,4 +148,14 @@ console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline
 parseHelper.writeToFile(
 	parseHelper.consolidate_attributes_sublime(componentAttributesDictionary),
 	'./aura.attributes.sublime-completions'
+);
+
+
+
+
+//consolidate component tags
+console.log('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
+parseHelper.writeToFile(
+	parseHelper.consolidate_uitags_sublime(componentDictionary),
+	'./aura.uitags.sublime-completions'
 );
