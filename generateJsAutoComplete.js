@@ -39,7 +39,10 @@ var testJsPath = path.join(
 );
 
 //read content files
-var fileContent = parseHelper.readFromFile(testJsPath);
+var fileContent = parseHelper.readFromFile(
+	testJsPath,
+	true//silent
+);
 
 
 //parse test js
@@ -64,7 +67,10 @@ var utilJsPath = path.join(
 );
 
 //read content files
-var fileContent = parseHelper.readFromFile(utilJsPath);
+var fileContent = parseHelper.readFromFile(
+	utilJsPath,
+	true//silent
+);
 
 
 //parse test js
@@ -83,15 +89,15 @@ for (var k in curNamespace){
 
 
 //consolidate sublime text format
-console.log('Updating Sublime File:'.bold.magenta.underline);
+console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_sublime(masterDictionary),
 	'./aura.sublime-completions'
 );
 
 
-//
-console.log('Updating Sublime File:'.bold.magenta.underline);
+//consolidate atom files
+console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_atom(masterDictionary),
 	'./aura.atom.cson'
