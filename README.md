@@ -9,7 +9,12 @@
 
    #run this
    npm install 
-   npm start	
+   
+   node generateJsAutoComplete.js /Users/sle/git/aura ;
+   node generateXmlAutoComplete.js /Users/sle/git/aura ;
+
+   #install it on local
+   sh install.sublime.sh
 ```
 
 ## Install on Sublime Text 
@@ -29,6 +34,9 @@ You can hit tab to select the completion as well as navigate through parameters
 
 	Example:
 	evt-search
+
+
+	Outcome:
 	You should get 
 		//component=inputSearch
         //evtName=search

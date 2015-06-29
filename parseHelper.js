@@ -219,7 +219,7 @@ var self = {
             //contents
             var contents = [
                 componentObj.fullComponentTag + '$1>${2:',
-                componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.' : '',
+                componentObj.implements.length > 0 ? '\nImplements '+componentObj.implements + '.\n' : '',
                 componentObj.description,
                 '}</'+componentObj.fullComponentTag+'>'
             ].join('');
