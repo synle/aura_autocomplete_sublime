@@ -137,6 +137,10 @@ var self = {
         };
         return JSON.stringify(sublimeFormat, null, 3);
     },
+
+    consolidate_attributes_sublime: function(attributeDictionary){
+        
+    },
     _getDefaultSublimeJSObject: function() {
         return {
             // "scope": "source, js",
@@ -147,6 +151,14 @@ var self = {
     writeToFile: function(string, path) {
         console.log(path.yellow);
         fs.writeFileSync(path, string);
+    },
+    getBaseFileNameWithoutExtension: function(fileName){
+        var shortFileName = path.basename(fileName);
+        return shortFileName.substr(0, shortFileName.indexOf('.'));
+    },
+    getComponentBreakup: function(fileName){
+        var splits = fileName.split('/');
+        return [splits[splits.length - 3], splits[splits.length - 2]]
     }
 };
 module.exports = self;
