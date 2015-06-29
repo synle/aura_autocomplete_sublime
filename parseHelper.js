@@ -47,14 +47,25 @@ var self = {
                 //no closure comment, do it this way (array)
                 //convert params string to array
                 params = paramsStr.split(', ');
+
+                //shorten and trim bad character
+                for (var i = 0; i < params.length; i++) {
+                    params[i] = '${' + (i + 1)  + ':' + self.shortenName(params[i]) + '}';
+                }
             } else {
+                //dont do anything when /**/ found
                 params = [paramsStr];
+
+                //shorten and trim bad character
+                for (var i = 0; i < params.length; i++) {
+                    params[i] = '$' + (i + 1) + self.shortenName(params[i]);
+                }
             }
-            //shorten and trim bad character
+
+
+            //pure params
             var pureParams = JSON.parse(JSON.stringify(params));
-            for (var i = 0; i < params.length; i++) {
-                params[i] = '$' + (i + 1) + self.shortenName(params[i]);
-            }
+
             //output
             // console.log((namespaceStr + functionName).green.bold.underline + ':\t');
             // console.log(params.join('\n').cyan);
@@ -115,14 +126,14 @@ var self = {
                 '// ' + 'evtName=' + actualEvt.name,
                 '// ' + 'evtType='+ actualEvt.type,
                 actualEvt.description ? '// ' + actualEvt.description : '',
-                'var e = cmp.find("$1' + evtObj.component + '").get("e.' + actualEvt.name + '");',
+                'var e = cmp.find("${1:' + evtObj.component + '}").get("e.' + actualEvt.name + '");',
                 'e.setParams({'
             ];
             //loop through params and do stuffs
             if (evt.params.length > 0) {
                 for (var i = 0; i < evt.params.length; i++) {
                     var evtDef = evt.params[i];
-                    contents.push('\t' + evtDef.name + ': "' + '$' + (i + 2) + evtDef.type + '"' + ',' + (evtDef.description ? '// ' + evtDef.description : ''));
+                    contents.push('\t' + evtDef.name + ': "' + '${' + (i + 2) + ':' + evtDef.type + '"' + ',' + (evtDef.description ? '// ' + evtDef.description : ''));
                 }
             }
             contents.push('});');
