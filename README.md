@@ -23,10 +23,10 @@ You can hit tab to select the completion as well as navigate through parameters
 
 
 ## To autocomplete an Aura event type
-![](images/evt1.jpg)
-![](images/evt2.jpg)
 ```
+	Trigger:
 	evt-{EVENT_NAME}
+
 	Example:
 	evt-search
 	You should get 
@@ -42,57 +42,79 @@ You can hit tab to select the completion as well as navigate through parameters
         });
         e.fire();
 ```
+![](images/evt1.jpg)
+![](images/evt2.jpg)
+
 
 ## To autocomplete an Aura Test js method
-![](images/test1.jpg)
-![](images/test2.jpg)
 ```
+	Trigger:
 	$a-test-{TEST_METHOD_NAME}
+
 	Example:
 	$A.test.assertTru
-	You should get this
-		$A.test.assertTruthy(condition,assertMessage)
+
+	Output:
+		You should get this
+			$A.test.assertTruthy(condition,assertMessage)
 ```
 
 
 ## To autocomplete an Util Test js method
-![](images/util1.jpg)
-![](images/util2.jpg)
 ```
+	Trigger:
 	$a-util-{UTIL_METHOD_NAME}
+
 	Example:
 	$A-util-getbool
-	You should get this
-		$A.util.getBooleanValue(val)
+
+	Output:
+		You should get this
+			$A.util.getBooleanValue(val)
 ```
+![](images/util1.jpg)
+![](images/util2.jpg)
 
 
 ## To autocomplete an aura attribute
-![](images/attribute1.jpg)
-![](images/attribute2.jpg)
 ```
+	Trigger:
 	inside a tag
 	attr-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}
-	Example
+
+
+	Example:
 		<a attr-ui-menuitem-select
-	You should get: this will show which component is suggested along with its value
-		<a menuItem="ui:menuItem(Boolean)"
+
+	Output:
+		You should get: this will show which component is suggested along with its value
+			<a menuItem="ui:menuItem(Boolean)"
 ```	
+![](images/attribute1.jpg)
+![](images/attribute2.jpg)
 
 
 
 
 ## To autocomplete an aura attribute
-![](images/tag1.jpg)
-![](images/tag2.jpg)
 ```
+	Trigger:
 	inside a tag
 	tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}
-	Example
-		
-	You should get: this will show which component is suggested along with its value
-		
+
+	Example:
+	<tag-ui-inputtext
+
+	Output:
+		You should get: this will show which component is suggested along with its value
+			<ui:inputText>
+				Implements ui:inputTextComponent.
+				Represents an input field suitable for entering a single line of free-form text.
+			</ui:inputText>
 ```	
+![](images/tag1.jpg)
+![](images/tag2.jpg)
+
 
 
 
