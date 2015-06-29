@@ -214,7 +214,7 @@ var self = {
             var componentObj = componentDictionary[idx];
 
             //triggers
-            var trigger = componentObj.fullComponentTag + '\t$A.Tag'  + componentObj.namespace;
+            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + '-' + componentObj.name + '\t$A.Tag.'  + componentObj.namespace;
 
             //contents
             var contents = [

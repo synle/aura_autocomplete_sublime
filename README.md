@@ -1,7 +1,7 @@
-Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3
-====
+# Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3
 
-To Compile the autocomplete from Aura github
+
+## To Compile the autocomplete from Aura githu
 ```
    #download and install node
    #if you use home brew
@@ -12,16 +12,20 @@ To Compile the autocomplete from Aura github
    npm start	
 ```
 
-Install on Sublime Text 3
+## Install on Sublime Text 
 ```
 	sh install.sublime.sh
 ```
 
 
-Instruction Sublime Text 3
+## Instruction Sublime Text 
 You can hit tab to select the completion as well as navigate through parameters
+
+
+## To autocomplete an Aura event type
+![](images/evt1.jpg)
+![](images/evt2.jpg)
 ```
-To autocomplete an Aura event type in
 	evt-{EVENT_NAME}
 	Example:
 	evt-search
@@ -37,26 +41,36 @@ To autocomplete an Aura event type in
             searchTerm: "String",// The term that was specified to search.
         });
         e.fire();
+```
 
-
-To autocomplete an Aura Test js methods
+## To autocomplete an Aura Test js method
+![](images/test1.jpg)
+![](images/test2.jpg)
+```
 	$a-test-{TEST_METHOD_NAME}
 	Example:
 	$A.test.assertTru
 	You should get this
 		$A.test.assertTruthy(condition,assertMessage)
+```
 
 
-To autocomplete an Util Test js methods
+## To autocomplete an Util Test js method
+![](images/util1.jpg)
+![](images/util2.jpg)
+```
 	$a-util-{UTIL_METHOD_NAME}
 	Example:
 	$A-util-getbool
 	You should get this
 		$A.util.getBooleanValue(val)
+```
 
 
-
-To autocomplete an aura attribute
+## To autocomplete an aura attribute
+![](images/attribute1.jpg)
+![](images/attribute2.jpg)
+```
 	inside a tag
 	attr-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}
 	Example
@@ -68,7 +82,22 @@ To autocomplete an aura attribute
 
 
 
-Install on Atom (WIP): for now this plugin supports Sublime Text 3
+## To autocomplete an aura attribute
+![](images/tag1.jpg)
+![](images/tag2.jpg)
+```
+	inside a tag
+	tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}
+	Example
+		
+	You should get: this will show which component is suggested along with its value
+		
+```	
+
+
+
+
+## Install on Atom (WIP): for now this plugin only supports Sublime Text 3
 ```
   CMD + SHIFT + P
   Type in "snippet"
