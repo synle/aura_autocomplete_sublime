@@ -1,11 +1,39 @@
 //depdencies
 var fs = require('fs');
+var path = require('path');
+
 //definitions
 var self = {
     readFromFile: function(path) {
         console.log('Reading file...'.magenta.bold);
         console.log(path.yellow);
         return fs.readFileSync(path, 'utf-8');
+    },
+    listDir: function listDir(dir, res){
+        res = res || {cmp: [], evt: []};
+        var dirs = fs.readdirSync(dir);
+        
+        for (var i = 0; i < dirs.length; i++){
+            var newDir = path.join(dir, dirs[i]);
+            if (fs.lstatSync(newDir).isDirectory()){
+                listDir(newDir, res);
+            }
+            else{
+                //is a file
+                var extension = path.extname(newDir);
+
+                switch(extension){
+                    case '.cmp':
+                        res.cmp.push(newDir);
+                        break;
+                    case '.evt':
+                        res.evt.push(newDir);
+                        break;
+                }
+            }
+        }
+
+        return res;
     },
     parseFunctions: function(functionName, functionDefition, namespaceStr) {
         if (typeof functionDefition === 'function') {
