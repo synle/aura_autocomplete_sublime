@@ -129,7 +129,7 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt' + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event.' + evtObj.component;
+            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event.';
             var contents = [
                 '//' + 'component=' + evtObj.component,
                 '//' + 'evtName=' + actualEvt.name,

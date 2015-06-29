@@ -2,1375 +2,1375 @@
    "scope": "meta.tag.xml",
    "completions": [
       {
-         "trigger": "tag-aura-component\t$A.Tagaura",
+         "trigger": "tag-aura-component\t$A.Tag.aura",
          "contents": "aura:component$1>${2:Implements aura:rootComponent.The root of the component hierarchy. Provides a default rendering implementation.}</aura:component>"
       },
       {
-         "trigger": "tag-aura-debug\t$A.Tagaura",
+         "trigger": "tag-aura-debug\t$A.Tag.aura",
          "contents": "aura:debug$1>${2:The Aura debug tool opens a separate browser window and outputs debug information about an Aura component. The debug tool has the following tabs: Errors, Warnings, Components, Events, Storage, Accessibility, and Console. To launch the Aura Debug tool, add the query string aura.debugtool=true after the URL of the Aura component file that you are viewing in your browser. For example: http://localhost:8080/auranote/noteList.cmp?aura.debugtool=true. To display additional statistics in the Components tab, append the query string aura.mode=STATS to the URL. For example: http://localhost:8080/auranote/noteList.cmp?aura.debugtool=true&aura.mode=STATS. You must disable the popup blocking feature of your web browser to use the debug tool.}</aura:debug>"
       },
       {
-         "trigger": "tag-aura-embeddedTemplate\t$A.Tagaura",
+         "trigger": "tag-aura-embeddedTemplate\t$A.Tag.aura",
          "contents": "aura:embeddedTemplate$1>${2:A server-rendered template used to bootstrap the loading of the Aura framework and an application or component embedded in other containers, such as Visualforce, Siteforce, and legacy Salesforce UI.}</aura:embeddedTemplate>"
       },
       {
-         "trigger": "tag-aura-expression\t$A.Tagaura",
+         "trigger": "tag-aura-expression\t$A.Tag.aura",
          "contents": "aura:expression$1>${2:Implements aura:rootComponent.Renders the value to which an expression evaluates. Creates an instance of this component which renders the\n                        referenced \"property reference value\" set to the value attribute when expressions are found in free text or markup.}</aura:expression>"
       },
       {
-         "trigger": "tag-aura-html\t$A.Tagaura",
+         "trigger": "tag-aura-html\t$A.Tag.aura",
          "contents": "aura:html$1>${2:Implements aura:rootComponent.A meta component that represents all html elements.  Any html found in your markup causes the creation of one of these.}</aura:html>"
       },
       {
-         "trigger": "tag-aura-if\t$A.Tagaura",
+         "trigger": "tag-aura-if\t$A.Tag.aura",
          "contents": "aura:if$1>${2:Implements aura:rootComponent.Conditionally instantiates and renders either the body or the components in the else attribute.}</aura:if>"
       },
       {
-         "trigger": "tag-aura-include\t$A.Tagaura",
+         "trigger": "tag-aura-include\t$A.Tag.aura",
          "contents": "aura:include$1>${2:Only usable in the body of aura:library (.lib) files. This attribute is used to specifiy the Javascript files that are loaded by the library and which file depend on which.}</aura:include>"
       },
       {
-         "trigger": "tag-aura-integrationServiceTemplate\t$A.Tagaura",
+         "trigger": "tag-aura-integrationServiceTemplate\t$A.Tag.aura",
          "contents": "aura:integrationServiceTemplate$1>${2:A server-rendered template used to bootstrap the loading of the Aura framework and an application or component embedded in other containers, such as Visualforce, Siteforce, and legacy Salesforce UI.}</aura:integrationServiceTemplate>"
       },
       {
-         "trigger": "tag-aura-iteration\t$A.Tagaura",
+         "trigger": "tag-aura-iteration\t$A.Tag.aura",
          "contents": "aura:iteration$1>${2:Implements aura:rootComponent.Renders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.}</aura:iteration>"
       },
       {
-         "trigger": "tag-aura-label\t$A.Tagaura",
+         "trigger": "tag-aura-label\t$A.Tag.aura",
          "contents": "aura:label$1>${2:Represents a label that accepts a dynamic value.}</aura:label>"
       },
       {
-         "trigger": "tag-aura-placeholder\t$A.Tagaura",
+         "trigger": "tag-aura-placeholder\t$A.Tag.aura",
          "contents": "aura:placeholder$1>${2:}</aura:placeholder>"
       },
       {
-         "trigger": "tag-aura-renderIf\t$A.Tagaura",
+         "trigger": "tag-aura-renderIf\t$A.Tag.aura",
          "contents": "aura:renderIf$1>${2:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
       },
       {
-         "trigger": "tag-aura-template\t$A.Tagaura",
+         "trigger": "tag-aura-template\t$A.Tag.aura",
          "contents": "aura:template$1>${2:The default template used to bootstrap the loading of the aura framework and an application or component. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
       },
       {
-         "trigger": "tag-aura-text\t$A.Tagaura",
+         "trigger": "tag-aura-text\t$A.Tag.aura",
          "contents": "aura:text$1>${2:Implements aura:rootComponent.Renders plain text.  When any free text (not a tag or attribute value) is found in markup, an instance of this component is created with the value attribute set to the text found in the markup.}</aura:text>"
       },
       {
-         "trigger": "tag-aura-unescapedHtml\t$A.Tagaura",
+         "trigger": "tag-aura-unescapedHtml\t$A.Tag.aura",
          "contents": "aura:unescapedHtml$1>${2:The value assigned to this component will be rendered as-is, without altering its contents. It's intended for outputting pre-formatted HTML, for example, where the formatting is arbitrary, or expensive to calculate. The body of this component is ignored, and won't be rendered. Warning: this component outputs value as unescaped HTML, which introduces the possibility of security vulnerabilities in your code. You must sanitize user input before rendering it unescaped, or you will create a cross-site scripting (XSS) vulnerability. Only use <aura:unescapedHtml> with trusted or sanitized sources of data.}</aura:unescapedHtml>"
       },
       {
-         "trigger": "tag-auraStorage-fuelGauge\t$A.TagauraStorage",
+         "trigger": "tag-auraStorage-fuelGauge\t$A.Tag.auraStorage",
          "contents": "auraStorage:fuelGauge$1>${2:}</auraStorage:fuelGauge>"
       },
       {
-         "trigger": "tag-auraStorage-init\t$A.TagauraStorage",
+         "trigger": "tag-auraStorage-init\t$A.Tag.auraStorage",
          "contents": "auraStorage:init$1>${2:}</auraStorage:init>"
       },
       {
-         "trigger": "tag-auraadmin-cacheView\t$A.Tagauraadmin",
+         "trigger": "tag-auraadmin-cacheView\t$A.Tag.auraadmin",
          "contents": "auraadmin:cacheView$1>${2:}</auraadmin:cacheView>"
       },
       {
-         "trigger": "tag-auraadmin-cachingRegistryView\t$A.Tagauraadmin",
+         "trigger": "tag-auraadmin-cachingRegistryView\t$A.Tag.auraadmin",
          "contents": "auraadmin:cachingRegistryView$1>${2:}</auraadmin:cachingRegistryView>"
       },
       {
-         "trigger": "tag-auraadmin-counterBeans\t$A.Tagauraadmin",
+         "trigger": "tag-auraadmin-counterBeans\t$A.Tag.auraadmin",
          "contents": "auraadmin:counterBeans$1>${2:}</auraadmin:counterBeans>"
       },
       {
-         "trigger": "tag-auraadmin-registryView\t$A.Tagauraadmin",
+         "trigger": "tag-auraadmin-registryView\t$A.Tag.auraadmin",
          "contents": "auraadmin:registryView$1>${2:}</auraadmin:registryView>"
       },
       {
-         "trigger": "tag-auradev-blankTemplate\t$A.Tagauradev",
+         "trigger": "tag-auradev-blankTemplate\t$A.Tag.auradev",
          "contents": "auradev:blankTemplate$1>${2:}</auradev:blankTemplate>"
       },
       {
-         "trigger": "tag-auradev-componentClass\t$A.Tagauradev",
+         "trigger": "tag-auradev-componentClass\t$A.Tag.auradev",
          "contents": "auradev:componentClass$1>${2:Renders the concrete javascript class for a component.}</auradev:componentClass>"
       },
       {
-         "trigger": "tag-auradev-createApplicationDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createApplicationDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createApplicationDefQuickFix$1>${2:}</auradev:createApplicationDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-createAttributeDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createAttributeDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createAttributeDefQuickFix$1>${2:}</auradev:createAttributeDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-createBaseComponentDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createBaseComponentDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createBaseComponentDefQuickFix$1>${2:}</auradev:createBaseComponentDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-createComponentDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createComponentDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createComponentDefQuickFix$1>${2:}</auradev:createComponentDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-createThemeDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createThemeDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createThemeDefQuickFix$1>${2:}</auradev:createThemeDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-createThemeVarDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-createThemeVarDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:createThemeVarDefQuickFix$1>${2:}</auradev:createThemeVarDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-dependencyItem\t$A.Tagauradev",
+         "trigger": "tag-auradev-dependencyItem\t$A.Tag.auradev",
          "contents": "auradev:dependencyItem$1>${2:}</auradev:dependencyItem>"
       },
       {
-         "trigger": "tag-auradev-lintc\t$A.Tagauradev",
+         "trigger": "tag-auradev-lintc\t$A.Tag.auradev",
          "contents": "auradev:lintc$1>${2:}</auradev:lintc>"
       },
       {
-         "trigger": "tag-auradev-quickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-quickFix\t$A.Tag.auradev",
          "contents": "auradev:quickFix$1>${2:}</auradev:quickFix>"
       },
       {
-         "trigger": "tag-auradev-quickFixButton\t$A.Tagauradev",
+         "trigger": "tag-auradev-quickFixButton\t$A.Tag.auradev",
          "contents": "auradev:quickFixButton$1>${2:}</auradev:quickFixButton>"
       },
       {
-         "trigger": "tag-auradev-quickFixException\t$A.Tagauradev",
+         "trigger": "tag-auradev-quickFixException\t$A.Tag.auradev",
          "contents": "auradev:quickFixException$1>${2:}</auradev:quickFixException>"
       },
       {
-         "trigger": "tag-auradev-quickFixTemplate\t$A.Tagauradev",
+         "trigger": "tag-auradev-quickFixTemplate\t$A.Tag.auradev",
          "contents": "auradev:quickFixTemplate$1>${2:}</auradev:quickFixTemplate>"
       },
       {
-         "trigger": "tag-auradev-removeAttributeDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-removeAttributeDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:removeAttributeDefQuickFix$1>${2:}</auradev:removeAttributeDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-removeBodyDefQuickFix\t$A.Tagauradev",
+         "trigger": "tag-auradev-removeBodyDefQuickFix\t$A.Tag.auradev",
          "contents": "auradev:removeBodyDefQuickFix$1>${2:}</auradev:removeBodyDefQuickFix>"
       },
       {
-         "trigger": "tag-auradev-saveApplication\t$A.Tagauradev",
+         "trigger": "tag-auradev-saveApplication\t$A.Tag.auradev",
          "contents": "auradev:saveApplication$1>${2:}</auradev:saveApplication>"
       },
       {
-         "trigger": "tag-auradev-saveComponent\t$A.Tagauradev",
+         "trigger": "tag-auradev-saveComponent\t$A.Tag.auradev",
          "contents": "auradev:saveComponent$1>${2:}</auradev:saveComponent>"
       },
       {
-         "trigger": "tag-auradev-saveComponentJava\t$A.Tagauradev",
+         "trigger": "tag-auradev-saveComponentJava\t$A.Tag.auradev",
          "contents": "auradev:saveComponentJava$1>${2:}</auradev:saveComponentJava>"
       },
       {
-         "trigger": "tag-auradev-saveStyle\t$A.Tagauradev",
+         "trigger": "tag-auradev-saveStyle\t$A.Tag.auradev",
          "contents": "auradev:saveStyle$1>${2:}</auradev:saveStyle>"
       },
       {
-         "trigger": "tag-auradev-saveTheme\t$A.Tagauradev",
+         "trigger": "tag-auradev-saveTheme\t$A.Tag.auradev",
          "contents": "auradev:saveTheme$1>${2:}</auradev:saveTheme>"
       },
       {
-         "trigger": "tag-auradev-showDependencies\t$A.Tagauradev",
+         "trigger": "tag-auradev-showDependencies\t$A.Tag.auradev",
          "contents": "auradev:showDependencies$1>${2:}</auradev:showDependencies>"
       },
       {
-         "trigger": "tag-auradev-testDataProvider\t$A.Tagauradev",
+         "trigger": "tag-auradev-testDataProvider\t$A.Tag.auradev",
          "contents": "auradev:testDataProvider$1>${2:A test data provider.}</auradev:testDataProvider>"
       },
       {
-         "trigger": "tag-auradev-testDataProvider2\t$A.Tagauradev",
+         "trigger": "tag-auradev-testDataProvider2\t$A.Tag.auradev",
          "contents": "auradev:testDataProvider2$1>${2:A test data provider.}</auradev:testDataProvider2>"
       },
       {
-         "trigger": "tag-auradocs-about\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-about\t$A.Tag.auradocs",
          "contents": "auradocs:about$1>${2:}</auradocs:about>"
       },
       {
-         "trigger": "tag-auradocs-api\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-api\t$A.Tag.auradocs",
          "contents": "auradocs:api$1>${2:}</auradocs:api>"
       },
       {
-         "trigger": "tag-auradocs-apiParam\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-apiParam\t$A.Tag.auradocs",
          "contents": "auradocs:apiParam$1>${2:}</auradocs:apiParam>"
       },
       {
-         "trigger": "tag-auradocs-apiParams\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-apiParams\t$A.Tag.auradocs",
          "contents": "auradocs:apiParams$1>${2:}</auradocs:apiParams>"
       },
       {
-         "trigger": "tag-auradocs-apiSymbol\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-apiSymbol\t$A.Tag.auradocs",
          "contents": "auradocs:apiSymbol$1>${2:}</auradocs:apiSymbol>"
       },
       {
-         "trigger": "tag-auradocs-apiSymbols\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-apiSymbols\t$A.Tag.auradocs",
          "contents": "auradocs:apiSymbols$1>${2:}</auradocs:apiSymbols>"
       },
       {
-         "trigger": "tag-auradocs-apiTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-apiTopic\t$A.Tag.auradocs",
          "contents": "auradocs:apiTopic$1>${2:}</auradocs:apiTopic>"
       },
       {
-         "trigger": "tag-auradocs-codeblock\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-codeblock\t$A.Tag.auradocs",
          "contents": "auradocs:codeblock$1>${2:}</auradocs:codeblock>"
       },
       {
-         "trigger": "tag-auradocs-contentsNode\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-contentsNode\t$A.Tag.auradocs",
          "contents": "auradocs:contentsNode$1>${2:}</auradocs:contentsNode>"
       },
       {
-         "trigger": "tag-auradocs-def\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-def\t$A.Tag.auradocs",
          "contents": "auradocs:def$1>${2:}</auradocs:def>"
       },
       {
-         "trigger": "tag-auradocs-defDependencies\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defDependencies\t$A.Tag.auradocs",
          "contents": "auradocs:defDependencies$1>${2:}</auradocs:defDependencies>"
       },
       {
-         "trigger": "tag-auradocs-defDescription\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defDescription\t$A.Tag.auradocs",
          "contents": "auradocs:defDescription$1>${2:}</auradocs:defDescription>"
       },
       {
-         "trigger": "tag-auradocs-defLayout\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defLayout\t$A.Tag.auradocs",
          "contents": "auradocs:defLayout$1>${2:}</auradocs:defLayout>"
       },
       {
-         "trigger": "tag-auradocs-defLink\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defLink\t$A.Tag.auradocs",
          "contents": "auradocs:defLink$1>${2:}</auradocs:defLink>"
       },
       {
-         "trigger": "tag-auradocs-defMemberList\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defMemberList\t$A.Tag.auradocs",
          "contents": "auradocs:defMemberList$1>${2:}</auradocs:defMemberList>"
       },
       {
-         "trigger": "tag-auradocs-defOverview\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-defOverview\t$A.Tag.auradocs",
          "contents": "auradocs:defOverview$1>${2:}</auradocs:defOverview>"
       },
       {
-         "trigger": "tag-auradocs-demoAuraError\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoAuraError\t$A.Tag.auradocs",
          "contents": "auradocs:demoAuraError$1>${2:}</auradocs:demoAuraError>"
       },
       {
-         "trigger": "tag-auradocs-demoAutocomplete\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoAutocomplete\t$A.Tag.auradocs",
          "contents": "auradocs:demoAutocomplete$1>${2:}</auradocs:demoAutocomplete>"
       },
       {
-         "trigger": "tag-auradocs-demoAutocompleteProvider\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoAutocompleteProvider\t$A.Tag.auradocs",
          "contents": "auradocs:demoAutocompleteProvider$1>${2:A test data provider to test autocomplete component.}</auradocs:demoAutocompleteProvider>"
       },
       {
-         "trigger": "tag-auradocs-demoCarousel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoCarousel\t$A.Tag.auradocs",
          "contents": "auradocs:demoCarousel$1>${2:}</auradocs:demoCarousel>"
       },
       {
-         "trigger": "tag-auradocs-demoCss\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoCss\t$A.Tag.auradocs",
          "contents": "auradocs:demoCss$1>${2:}</auradocs:demoCss>"
       },
       {
-         "trigger": "tag-auradocs-demoDataProvider\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoDataProvider\t$A.Tag.auradocs",
          "contents": "auradocs:demoDataProvider$1>${2:A test data provider.}</auradocs:demoDataProvider>"
       },
       {
-         "trigger": "tag-auradocs-demoDialog\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoDialog\t$A.Tag.auradocs",
          "contents": "auradocs:demoDialog$1>${2:}</auradocs:demoDialog>"
       },
       {
-         "trigger": "tag-auradocs-demoEvents\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoEvents\t$A.Tag.auradocs",
          "contents": "auradocs:demoEvents$1>${2:}</auradocs:demoEvents>"
       },
       {
-         "trigger": "tag-auradocs-demoForm\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoForm\t$A.Tag.auradocs",
          "contents": "auradocs:demoForm$1>${2:}</auradocs:demoForm>"
       },
       {
-         "trigger": "tag-auradocs-demoFriendlyError\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoFriendlyError\t$A.Tag.auradocs",
          "contents": "auradocs:demoFriendlyError$1>${2:}</auradocs:demoFriendlyError>"
       },
       {
-         "trigger": "tag-auradocs-demoInputRT\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoInputRT\t$A.Tag.auradocs",
          "contents": "auradocs:demoInputRT$1>${2:}</auradocs:demoInputRT>"
       },
       {
-         "trigger": "tag-auradocs-demoLabel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoLabel\t$A.Tag.auradocs",
          "contents": "auradocs:demoLabel$1>${2:}</auradocs:demoLabel>"
       },
       {
-         "trigger": "tag-auradocs-demoLabelDyn\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoLabelDyn\t$A.Tag.auradocs",
          "contents": "auradocs:demoLabelDyn$1>${2:}</auradocs:demoLabelDyn>"
       },
       {
-         "trigger": "tag-auradocs-demoLangLocale\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoLangLocale\t$A.Tag.auradocs",
          "contents": "auradocs:demoLangLocale$1>${2:}</auradocs:demoLangLocale>"
       },
       {
-         "trigger": "tag-auradocs-demoList\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoList\t$A.Tag.auradocs",
          "contents": "auradocs:demoList$1>${2:}</auradocs:demoList>"
       },
       {
-         "trigger": "tag-auradocs-demoListTemplate\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoListTemplate\t$A.Tag.auradocs",
          "contents": "auradocs:demoListTemplate$1>${2:}</auradocs:demoListTemplate>"
       },
       {
-         "trigger": "tag-auradocs-demoLocale\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoLocale\t$A.Tag.auradocs",
          "contents": "auradocs:demoLocale$1>${2:}</auradocs:demoLocale>"
       },
       {
-         "trigger": "tag-auradocs-demoMenu\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoMenu\t$A.Tag.auradocs",
          "contents": "auradocs:demoMenu$1>${2:}</auradocs:demoMenu>"
       },
       {
-         "trigger": "tag-auradocs-demoMenuMeta\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoMenuMeta\t$A.Tag.auradocs",
          "contents": "auradocs:demoMenuMeta$1>${2:}</auradocs:demoMenuMeta>"
       },
       {
-         "trigger": "tag-auradocs-demoMessage\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoMessage\t$A.Tag.auradocs",
          "contents": "auradocs:demoMessage$1>${2:}</auradocs:demoMessage>"
       },
       {
-         "trigger": "tag-auradocs-demoModal\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoModal\t$A.Tag.auradocs",
          "contents": "auradocs:demoModal$1>${2:}</auradocs:demoModal>"
       },
       {
-         "trigger": "tag-auradocs-demoPanel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoPanel\t$A.Tag.auradocs",
          "contents": "auradocs:demoPanel$1>${2:}</auradocs:demoPanel>"
       },
       {
-         "trigger": "tag-auradocs-demoScroller\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoScroller\t$A.Tag.auradocs",
          "contents": "auradocs:demoScroller$1>${2:}</auradocs:demoScroller>"
       },
       {
-         "trigger": "tag-auradocs-demoSelect\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoSelect\t$A.Tag.auradocs",
          "contents": "auradocs:demoSelect$1>${2:}</auradocs:demoSelect>"
       },
       {
-         "trigger": "tag-auradocs-demoSpinner\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoSpinner\t$A.Tag.auradocs",
          "contents": "auradocs:demoSpinner$1>${2:}</auradocs:demoSpinner>"
       },
       {
-         "trigger": "tag-auradocs-demoStamp\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoStamp\t$A.Tag.auradocs",
          "contents": "auradocs:demoStamp$1>${2:}</auradocs:demoStamp>"
       },
       {
-         "trigger": "tag-auradocs-demoSubmitForm\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoSubmitForm\t$A.Tag.auradocs",
          "contents": "auradocs:demoSubmitForm$1>${2:}</auradocs:demoSubmitForm>"
       },
       {
-         "trigger": "tag-auradocs-demoTab\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoTab\t$A.Tag.auradocs",
          "contents": "auradocs:demoTab$1>${2:}</auradocs:demoTab>"
       },
       {
-         "trigger": "tag-auradocs-demoTable\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoTable\t$A.Tag.auradocs",
          "contents": "auradocs:demoTable$1>${2:}</auradocs:demoTable>"
       },
       {
-         "trigger": "tag-auradocs-demoTodo\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoTodo\t$A.Tag.auradocs",
          "contents": "auradocs:demoTodo$1>${2:}</auradocs:demoTodo>"
       },
       {
-         "trigger": "tag-auradocs-demoToolbar\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoToolbar\t$A.Tag.auradocs",
          "contents": "auradocs:demoToolbar$1>${2:}</auradocs:demoToolbar>"
       },
       {
-         "trigger": "tag-auradocs-demoTooltip\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoTooltip\t$A.Tag.auradocs",
          "contents": "auradocs:demoTooltip$1>${2:}</auradocs:demoTooltip>"
       },
       {
-         "trigger": "tag-auradocs-demoVbox\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoVbox\t$A.Tag.auradocs",
          "contents": "auradocs:demoVbox$1>${2:}</auradocs:demoVbox>"
       },
       {
-         "trigger": "tag-auradocs-demoVdatagrid\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demoVdatagrid\t$A.Tag.auradocs",
          "contents": "auradocs:demoVdatagrid$1>${2:}</auradocs:demoVdatagrid>"
       },
       {
-         "trigger": "tag-auradocs-demos\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demos\t$A.Tag.auradocs",
          "contents": "auradocs:demos$1>${2:}</auradocs:demos>"
       },
       {
-         "trigger": "tag-auradocs-demosNode\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-demosNode\t$A.Tag.auradocs",
          "contents": "auradocs:demosNode$1>${2:}</auradocs:demosNode>"
       },
       {
-         "trigger": "tag-auradocs-descriptorLink\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-descriptorLink\t$A.Tag.auradocs",
          "contents": "auradocs:descriptorLink$1>${2:}</auradocs:descriptorLink>"
       },
       {
-         "trigger": "tag-auradocs-docTestRef\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-docTestRef\t$A.Tag.auradocs",
          "contents": "auradocs:docTestRef$1>${2:}</auradocs:docTestRef>"
       },
       {
-         "trigger": "tag-auradocs-doctabs\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-doctabs\t$A.Tag.auradocs",
          "contents": "auradocs:doctabs$1>${2:}</auradocs:doctabs>"
       },
       {
-         "trigger": "tag-auradocs-download\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-download\t$A.Tag.auradocs",
          "contents": "auradocs:download$1>${2:}</auradocs:download>"
       },
       {
-         "trigger": "tag-auradocs-editorPanel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-editorPanel\t$A.Tag.auradocs",
          "contents": "auradocs:editorPanel$1>${2:}</auradocs:editorPanel>"
       },
       {
-         "trigger": "tag-auradocs-empty\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-empty\t$A.Tag.auradocs",
          "contents": "auradocs:empty$1>${2:}</auradocs:empty>"
       },
       {
-         "trigger": "tag-auradocs-error\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-error\t$A.Tag.auradocs",
          "contents": "auradocs:error$1>${2:}</auradocs:error>"
       },
       {
-         "trigger": "tag-auradocs-example\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-example\t$A.Tag.auradocs",
          "contents": "auradocs:example$1>${2:}</auradocs:example>"
       },
       {
-         "trigger": "tag-auradocs-examplesTemplate\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-examplesTemplate\t$A.Tag.auradocs",
          "contents": "auradocs:examplesTemplate$1>${2:}</auradocs:examplesTemplate>"
       },
       {
-         "trigger": "tag-auradocs-examplesc\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-examplesc\t$A.Tag.auradocs",
          "contents": "auradocs:examplesc$1>${2:}</auradocs:examplesc>"
       },
       {
-         "trigger": "tag-auradocs-helloAttributes\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-helloAttributes\t$A.Tag.auradocs",
          "contents": "auradocs:helloAttributes$1>${2:}</auradocs:helloAttributes>"
       },
       {
-         "trigger": "tag-auradocs-helpPanel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-helpPanel\t$A.Tag.auradocs",
          "contents": "auradocs:helpPanel$1>${2:}</auradocs:helpPanel>"
       },
       {
-         "trigger": "tag-auradocs-home\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-home\t$A.Tag.auradocs",
          "contents": "auradocs:home$1>${2:}</auradocs:home>"
       },
       {
-         "trigger": "tag-auradocs-htmlTags\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-htmlTags\t$A.Tag.auradocs",
          "contents": "auradocs:htmlTags$1>${2:}</auradocs:htmlTags>"
       },
       {
-         "trigger": "tag-auradocs-htmlTagsTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-htmlTagsTopic\t$A.Tag.auradocs",
          "contents": "auradocs:htmlTagsTopic$1>${2:}</auradocs:htmlTagsTopic>"
       },
       {
-         "trigger": "tag-auradocs-info\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-info\t$A.Tag.auradocs",
          "contents": "auradocs:info$1>${2:}</auradocs:info>"
       },
       {
-         "trigger": "tag-auradocs-nav\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-nav\t$A.Tag.auradocs",
          "contents": "auradocs:nav$1>${2:}</auradocs:nav>"
       },
       {
-         "trigger": "tag-auradocs-navLink\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-navLink\t$A.Tag.auradocs",
          "contents": "auradocs:navLink$1>${2:}</auradocs:navLink>"
       },
       {
-         "trigger": "tag-auradocs-openTopicTree\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-openTopicTree\t$A.Tag.auradocs",
          "contents": "auradocs:openTopicTree$1>${2:A decorator for a ui:tree that adds the attribute 'active=true' to the currently selected topic based on a mapping from the current URL location to the node with a matching href.}</auradocs:openTopicTree>"
       },
       {
-         "trigger": "tag-auradocs-outputViewerc\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-outputViewerc\t$A.Tag.auradocs",
          "contents": "auradocs:outputViewerc$1>${2:}</auradocs:outputViewerc>"
       },
       {
-         "trigger": "tag-auradocs-prefixerTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-prefixerTopic\t$A.Tag.auradocs",
          "contents": "auradocs:prefixerTopic$1>${2:}</auradocs:prefixerTopic>"
       },
       {
-         "trigger": "tag-auradocs-referenceTabTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-referenceTabTopic\t$A.Tag.auradocs",
          "contents": "auradocs:referenceTabTopic$1>${2:}</auradocs:referenceTabTopic>"
       },
       {
-         "trigger": "tag-auradocs-referenceTopicLink\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-referenceTopicLink\t$A.Tag.auradocs",
          "contents": "auradocs:referenceTopicLink$1>${2:}</auradocs:referenceTopicLink>"
       },
       {
-         "trigger": "tag-auradocs-referenceTree\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-referenceTree\t$A.Tag.auradocs",
          "contents": "auradocs:referenceTree$1>${2:}</auradocs:referenceTree>"
       },
       {
-         "trigger": "tag-auradocs-referenceTreeSection\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-referenceTreeSection\t$A.Tag.auradocs",
          "contents": "auradocs:referenceTreeSection$1>${2:}</auradocs:referenceTreeSection>"
       },
       {
-         "trigger": "tag-auradocs-sampleUnescape\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-sampleUnescape\t$A.Tag.auradocs",
          "contents": "auradocs:sampleUnescape$1>${2:}</auradocs:sampleUnescape>"
       },
       {
-         "trigger": "tag-auradocs-searchFilterTree\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-searchFilterTree\t$A.Tag.auradocs",
          "contents": "auradocs:searchFilterTree$1>${2:}</auradocs:searchFilterTree>"
       },
       {
-         "trigger": "tag-auradocs-sidebar\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-sidebar\t$A.Tag.auradocs",
          "contents": "auradocs:sidebar$1>${2:}</auradocs:sidebar>"
       },
       {
-         "trigger": "tag-auradocs-simpledragdrop\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-simpledragdrop\t$A.Tag.auradocs",
          "contents": "auradocs:simpledragdrop$1>${2:}</auradocs:simpledragdrop>"
       },
       {
-         "trigger": "tag-auradocs-spinnerTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-spinnerTopic\t$A.Tag.auradocs",
          "contents": "auradocs:spinnerTopic$1>${2:}</auradocs:spinnerTopic>"
       },
       {
-         "trigger": "tag-auradocs-stretchEditorPanel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-stretchEditorPanel\t$A.Tag.auradocs",
          "contents": "auradocs:stretchEditorPanel$1>${2:}</auradocs:stretchEditorPanel>"
       },
       {
-         "trigger": "tag-auradocs-stretchTab\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-stretchTab\t$A.Tag.auradocs",
          "contents": "auradocs:stretchTab$1>${2:}</auradocs:stretchTab>"
       },
       {
-         "trigger": "tag-auradocs-tableDemo\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-tableDemo\t$A.Tag.auradocs",
          "contents": "auradocs:tableDemo$1>${2:}</auradocs:tableDemo>"
       },
       {
-         "trigger": "tag-auradocs-template\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-template\t$A.Tag.auradocs",
          "contents": "auradocs:template$1>${2:}</auradocs:template>"
       },
       {
-         "trigger": "tag-auradocs-topic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topic\t$A.Tag.auradocs",
          "contents": "auradocs:topic$1>${2:}</auradocs:topic>"
       },
       {
-         "trigger": "tag-auradocs-topicExample\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topicExample\t$A.Tag.auradocs",
          "contents": "auradocs:topicExample$1>${2:}</auradocs:topicExample>"
       },
       {
-         "trigger": "tag-auradocs-topicLink\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topicLink\t$A.Tag.auradocs",
          "contents": "auradocs:topicLink$1>${2:}</auradocs:topicLink>"
       },
       {
-         "trigger": "tag-auradocs-topicList\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topicList\t$A.Tag.auradocs",
          "contents": "auradocs:topicList$1>${2:}</auradocs:topicList>"
       },
       {
-         "trigger": "tag-auradocs-topicPanel\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topicPanel\t$A.Tag.auradocs",
          "contents": "auradocs:topicPanel$1>${2:}</auradocs:topicPanel>"
       },
       {
-         "trigger": "tag-auradocs-topics\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-topics\t$A.Tag.auradocs",
          "contents": "auradocs:topics$1>${2:}</auradocs:topics>"
       },
       {
-         "trigger": "tag-auradocs-viewer\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-viewer\t$A.Tag.auradocs",
          "contents": "auradocs:viewer$1>${2:}</auradocs:viewer>"
       },
       {
-         "trigger": "tag-auradocs-warning\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-warning\t$A.Tag.auradocs",
          "contents": "auradocs:warning$1>${2:}</auradocs:warning>"
       },
       {
-         "trigger": "tag-auradocs-welcomeTopic\t$A.Tagauradocs",
+         "trigger": "tag-auradocs-welcomeTopic\t$A.Tag.auradocs",
          "contents": "auradocs:welcomeTopic$1>${2:}</auradocs:welcomeTopic>"
       },
       {
-         "trigger": "tag-aurajstest-emptyTemplate\t$A.Tagaurajstest",
+         "trigger": "tag-aurajstest-emptyTemplate\t$A.Tag.aurajstest",
          "contents": "aurajstest:emptyTemplate$1>${2:Used by aurajstest:inject so that TestInjectionRenderer is entirely responsible for output}</aurajstest:emptyTemplate>"
       },
       {
-         "trigger": "tag-aurajstest-jstestCase\t$A.Tagaurajstest",
+         "trigger": "tag-aurajstest-jstestCase\t$A.Tag.aurajstest",
          "contents": "aurajstest:jstestCase$1>${2:}</aurajstest:jstestCase>"
       },
       {
-         "trigger": "tag-ui-abstractDataGrid\t$A.Tagui",
+         "trigger": "tag-ui-abstractDataGrid\t$A.Tag.ui",
          "contents": "ui:abstractDataGrid$1>${2:Implements ui:visible.An abstract component that provides a basic layout for the ui:dataGrid component.}</ui:abstractDataGrid>"
       },
       {
-         "trigger": "tag-ui-abstractList\t$A.Tagui",
+         "trigger": "tag-ui-abstractList\t$A.Tag.ui",
          "contents": "ui:abstractList$1>${2:Implements ui:visible, ui:pagingInterface.An abstract component that provides a basic layout for the ui:list component.}</ui:abstractList>"
       },
       {
-         "trigger": "tag-ui-action\t$A.Tagui",
+         "trigger": "tag-ui-action\t$A.Tag.ui",
          "contents": "ui:action$1>${2:An abstract component that provides bubbling of events.}</ui:action>"
       },
       {
-         "trigger": "tag-ui-actionButton\t$A.Tagui",
+         "trigger": "tag-ui-actionButton\t$A.Tag.ui",
          "contents": "ui:actionButton$1>${2:A button used in ui:dataGrid that enables row-level click events to bubble up to the grid.}</ui:actionButton>"
       },
       {
-         "trigger": "tag-ui-actionCheckbox\t$A.Tagui",
+         "trigger": "tag-ui-actionCheckbox\t$A.Tag.ui",
          "contents": "ui:actionCheckbox$1>${2:A checkbox used in ui:dataGrid that enables row-level click events to bubble up to the grid.}</ui:actionCheckbox>"
       },
       {
-         "trigger": "tag-ui-actionDelegate\t$A.Tagui",
+         "trigger": "tag-ui-actionDelegate\t$A.Tag.ui",
          "contents": "ui:actionDelegate$1>${2:Fires and handles the onaction event for the ui:dataGrid component.}</ui:actionDelegate>"
       },
       {
-         "trigger": "tag-ui-actionMenuItem\t$A.Tagui",
+         "trigger": "tag-ui-actionMenuItem\t$A.Tag.ui",
          "contents": "ui:actionMenuItem$1>${2:​A menu item that triggers an action. This component is nested in a ui:menu component.}</ui:actionMenuItem>"
       },
       {
-         "trigger": "tag-ui-asyncComponentManager\t$A.Tagui",
+         "trigger": "tag-ui-asyncComponentManager\t$A.Tag.ui",
          "contents": "ui:asyncComponentManager$1>${2:Manages the asynchronous initialization of components.}</ui:asyncComponentManager>"
       },
       {
-         "trigger": "tag-ui-asyncImage\t$A.Tagui",
+         "trigger": "tag-ui-asyncImage\t$A.Tag.ui",
          "contents": "ui:asyncImage$1>${2:Implements ui:asyncComponent.Encapsulates asynchronously loading of an image.}</ui:asyncImage>"
       },
       {
-         "trigger": "tag-ui-autocomplete\t$A.Tagui",
+         "trigger": "tag-ui-autocomplete\t$A.Tag.ui",
          "contents": "ui:autocomplete$1>${2:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
       },
       {
-         "trigger": "tag-ui-autocompleteList\t$A.Tagui",
+         "trigger": "tag-ui-autocompleteList\t$A.Tag.ui",
          "contents": "ui:autocompleteList$1>${2:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
       },
       {
-         "trigger": "tag-ui-autocompleteOption\t$A.Tagui",
+         "trigger": "tag-ui-autocompleteOption\t$A.Tag.ui",
          "contents": "ui:autocompleteOption$1>${2:Implements ui:autocompleteOptionTemplate.This component represents list options in an ui:autocomplete component. The options are displayed when an input keyword matches an item in the data provider.}</ui:autocompleteOption>"
       },
       {
-         "trigger": "tag-ui-block\t$A.Tagui",
+         "trigger": "tag-ui-block\t$A.Tag.ui",
          "contents": "ui:block$1>${2:Implements ui:visible.Use this component to create a two or three column layout.}</ui:block>"
       },
       {
-         "trigger": "tag-ui-button\t$A.Tagui",
+         "trigger": "tag-ui-button\t$A.Tag.ui",
          "contents": "ui:button$1>${2:Represents a button element.}</ui:button>"
       },
       {
-         "trigger": "tag-ui-calendar\t$A.Tagui",
+         "trigger": "tag-ui-calendar\t$A.Tag.ui",
          "contents": "ui:calendar$1>${2:}</ui:calendar>"
       },
       {
-         "trigger": "tag-ui-carousel\t$A.Tagui",
+         "trigger": "tag-ui-carousel\t$A.Tag.ui",
          "contents": "ui:carousel$1>${2:Implements ui:scrollerEmbeddable.}</ui:carousel>"
       },
       {
-         "trigger": "tag-ui-carouselDeprecated\t$A.Tagui",
+         "trigger": "tag-ui-carouselDeprecated\t$A.Tag.ui",
          "contents": "ui:carouselDeprecated$1>${2:A tabset component that enables swiping through groups of related content types in addition to standard keyboard, touch, and mouse interactions. The carousel provides page indicators by default and supports horizontal overflow of pages.}</ui:carouselDeprecated>"
       },
       {
-         "trigger": "tag-ui-carouselIndicator\t$A.Tagui",
+         "trigger": "tag-ui-carouselIndicator\t$A.Tag.ui",
          "contents": "ui:carouselIndicator$1>${2:}</ui:carouselIndicator>"
       },
       {
-         "trigger": "tag-ui-carouselPage\t$A.Tagui",
+         "trigger": "tag-ui-carouselPage\t$A.Tag.ui",
          "contents": "ui:carouselPage$1>${2:}</ui:carouselPage>"
       },
       {
-         "trigger": "tag-ui-carouselPageDeprecated\t$A.Tagui",
+         "trigger": "tag-ui-carouselPageDeprecated\t$A.Tag.ui",
          "contents": "ui:carouselPageDeprecated$1>${2:A scrollable page in a ui:carousel component.}</ui:carouselPageDeprecated>"
       },
       {
-         "trigger": "tag-ui-carouselPageIndicator\t$A.Tagui",
+         "trigger": "tag-ui-carouselPageIndicator\t$A.Tag.ui",
          "contents": "ui:carouselPageIndicator$1>${2:A container for ui:carouselPageIndicatorItem components. This component is not displayed if the carousel uses a continuous flow.}</ui:carouselPageIndicator>"
       },
       {
-         "trigger": "tag-ui-carouselPageIndicatorItem\t$A.Tagui",
+         "trigger": "tag-ui-carouselPageIndicatorItem\t$A.Tag.ui",
          "contents": "ui:carouselPageIndicatorItem$1>${2:A carousel page indicator item which enables tabbing through the carousel pages. This component is used in a ui:carouselPageIndicator component.}</ui:carouselPageIndicatorItem>"
       },
       {
-         "trigger": "tag-ui-checkboxMenuItem\t$A.Tagui",
+         "trigger": "tag-ui-checkboxMenuItem\t$A.Tag.ui",
          "contents": "ui:checkboxMenuItem$1>${2:​A menu item with a checkbox that supports multiple selection and can be used to invoke an action. This component is nested in a ui:menu component.}</ui:checkboxMenuItem>"
       },
       {
-         "trigger": "tag-ui-column\t$A.Tagui",
+         "trigger": "tag-ui-column\t$A.Tag.ui",
          "contents": "ui:column$1>${2:A column template used to define layout behavior in ui:listView.}</ui:column>"
       },
       {
-         "trigger": "tag-ui-dataGrid\t$A.Tagui",
+         "trigger": "tag-ui-dataGrid\t$A.Tag.ui",
          "contents": "ui:dataGrid$1>${2:Represents a table containing dynamic rows of data with inline edit support}</ui:dataGrid>"
       },
       {
-         "trigger": "tag-ui-dataGridActionColumn\t$A.Tagui",
+         "trigger": "tag-ui-dataGridActionColumn\t$A.Tag.ui",
          "contents": "ui:dataGridActionColumn$1>${2:A column of actionable buttons or links in ui:dataGrid}</ui:dataGridActionColumn>"
       },
       {
-         "trigger": "tag-ui-dataGridColumn\t$A.Tagui",
+         "trigger": "tag-ui-dataGridColumn\t$A.Tag.ui",
          "contents": "ui:dataGridColumn$1>${2:Implements ui:visible.A column of data in ui:dataGrid}</ui:dataGridColumn>"
       },
       {
-         "trigger": "tag-ui-dataGridSelectionColumn\t$A.Tagui",
+         "trigger": "tag-ui-dataGridSelectionColumn\t$A.Tag.ui",
          "contents": "ui:dataGridSelectionColumn$1>${2:A column of checkboxes for individual and multiple row selection in ui:dataGrid}</ui:dataGridSelectionColumn>"
       },
       {
-         "trigger": "tag-ui-dataGridSummaryCell\t$A.Tagui",
+         "trigger": "tag-ui-dataGridSummaryCell\t$A.Tag.ui",
          "contents": "ui:dataGridSummaryCell$1>${2:Implements ui:visible.A value rendered in the table footer that computes a given column in ui:dataGrid}</ui:dataGridSummaryCell>"
       },
       {
-         "trigger": "tag-ui-dataProvider\t$A.Tagui",
+         "trigger": "tag-ui-dataProvider\t$A.Tag.ui",
          "contents": "ui:dataProvider$1>${2:Implements ui:dataProviderInterface,ui:pagingInterface,ui:sortingInterface,ui:searchInterface.A generic list data provider}</ui:dataProvider>"
       },
       {
-         "trigger": "tag-ui-dataTable\t$A.Tagui",
+         "trigger": "tag-ui-dataTable\t$A.Tag.ui",
          "contents": "ui:dataTable$1>${2:A table that displays an item of data per row, which is defined by iterating over the set of data. The body of <ui:dataTable> contains one or more <ui:dataTableRow> components.}</ui:dataTable>"
       },
       {
-         "trigger": "tag-ui-dataTableColumn\t$A.Tagui",
+         "trigger": "tag-ui-dataTableColumn\t$A.Tag.ui",
          "contents": "ui:dataTableColumn$1>${2:A column in a table. A <ui:dataTableColumn> component must be a child of a <ui:dataTableRow> component.}</ui:dataTableColumn>"
       },
       {
-         "trigger": "tag-ui-dataTableRow\t$A.Tagui",
+         "trigger": "tag-ui-dataTableRow\t$A.Tag.ui",
          "contents": "ui:dataTableRow$1>${2:A row in a table. Must be used inside a <dataTable> component and can be used to nest <ui:dataTableColumn>.}</ui:dataTableRow>"
       },
       {
-         "trigger": "tag-ui-dataWriter\t$A.Tagui",
+         "trigger": "tag-ui-dataWriter\t$A.Tag.ui",
          "contents": "ui:dataWriter$1>${2:}</ui:dataWriter>"
       },
       {
-         "trigger": "tag-ui-datePicker\t$A.Tagui",
+         "trigger": "tag-ui-datePicker\t$A.Tag.ui",
          "contents": "ui:datePicker$1>${2:Implements ui:visible.Represents a date picker, which can be used in input components such as ui:inputDate and ui:inputDateTime.}</ui:datePicker>"
       },
       {
-         "trigger": "tag-ui-datePickerGrid\t$A.Tagui",
+         "trigger": "tag-ui-datePickerGrid\t$A.Tag.ui",
          "contents": "ui:datePickerGrid$1>${2:Provides the monthly grid view in a ui:datePicker component.}</ui:datePickerGrid>"
       },
       {
-         "trigger": "tag-ui-datePickerManager\t$A.Tagui",
+         "trigger": "tag-ui-datePickerManager\t$A.Tag.ui",
          "contents": "ui:datePickerManager$1>${2:Represents a date picker manager that renders a single date picker for multiple date input components.}</ui:datePickerManager>"
       },
       {
-         "trigger": "tag-ui-dayInMonthCell\t$A.Tagui",
+         "trigger": "tag-ui-dayInMonthCell\t$A.Tag.ui",
          "contents": "ui:dayInMonthCell$1>${2:Provides the date in a ui:datePickerGrid component.}</ui:dayInMonthCell>"
       },
       {
-         "trigger": "tag-ui-dialog\t$A.Tagui",
+         "trigger": "tag-ui-dialog\t$A.Tag.ui",
          "contents": "ui:dialog$1>${2:A dialog window used for overlays or modals.}</ui:dialog>"
       },
       {
-         "trigger": "tag-ui-dialogButtons\t$A.Tagui",
+         "trigger": "tag-ui-dialogButtons\t$A.Tag.ui",
          "contents": "ui:dialogButtons$1>${2:A facet of ui:dialog to hold any buttons displayed at the bottom of the dialog window. This component comes with two default buttons, 'OK' and 'Cancel'. You can use zero or more of the default buttons, and/or provide your own custom buttons in this component's body.}</ui:dialogButtons>"
       },
       {
-         "trigger": "tag-ui-dialogManager\t$A.Tagui",
+         "trigger": "tag-ui-dialogManager\t$A.Tag.ui",
          "contents": "ui:dialogManager$1>${2:Manages all instances of ui:dialog in an application, by handling visibility and all DOM events. One (and only one) instance of this component is required if you wish to use the ui:dialog component. We recommend putting the ui:dialogManager component at the end of your .app file.}</ui:dialogManager>"
       },
       {
-         "trigger": "tag-ui-dragAndDropAccessibility\t$A.Tagui",
+         "trigger": "tag-ui-dragAndDropAccessibility\t$A.Tag.ui",
          "contents": "ui:dragAndDropAccessibility$1>${2:A drag and drop accessibility component.}</ui:dragAndDropAccessibility>"
       },
       {
-         "trigger": "tag-ui-dragAndDropAccessibilityMenu\t$A.Tagui",
+         "trigger": "tag-ui-dragAndDropAccessibilityMenu\t$A.Tag.ui",
          "contents": "ui:dragAndDropAccessibilityMenu$1>${2:A drag and drop accessibility component.}</ui:dragAndDropAccessibilityMenu>"
       },
       {
-         "trigger": "tag-ui-draggable\t$A.Tagui",
+         "trigger": "tag-ui-draggable\t$A.Tag.ui",
          "contents": "ui:draggable$1>${2:Implements ui:hasContextComponent.A draggable component in drag and drop operation.}</ui:draggable>"
       },
       {
-         "trigger": "tag-ui-dropzone\t$A.Tagui",
+         "trigger": "tag-ui-dropzone\t$A.Tag.ui",
          "contents": "ui:dropzone$1>${2:Implements ui:hasContextComponent.Component that could be a drop target in drag and drop operation.}</ui:dropzone>"
       },
       {
-         "trigger": "tag-ui-fieldLabel\t$A.Tagui",
+         "trigger": "tag-ui-fieldLabel\t$A.Tag.ui",
          "contents": "ui:fieldLabel$1>${2:The label displayed on a field component.}</ui:fieldLabel>"
       },
       {
-         "trigger": "tag-ui-header\t$A.Tagui",
+         "trigger": "tag-ui-header\t$A.Tag.ui",
          "contents": "ui:header$1>${2:}</ui:header>"
       },
       {
-         "trigger": "tag-ui-image\t$A.Tagui",
+         "trigger": "tag-ui-image\t$A.Tag.ui",
          "contents": "ui:image$1>${2:An image that is rendered as an HTML <img> element. Use the alt attribute if imageType=\"informational\".}</ui:image>"
       },
       {
-         "trigger": "tag-ui-infiniteList\t$A.Tagui",
+         "trigger": "tag-ui-infiniteList\t$A.Tag.ui",
          "contents": "ui:infiniteList$1>${2:Implements ui:scrollerEmbeddable.A list component that iterates over and displays the items in the ui:dataProvider component.}</ui:infiniteList>"
       },
       {
-         "trigger": "tag-ui-infiniteListRow\t$A.Tagui",
+         "trigger": "tag-ui-infiniteListRow\t$A.Tag.ui",
          "contents": "ui:infiniteListRow$1>${2:}</ui:infiniteListRow>"
       },
       {
-         "trigger": "tag-ui-input\t$A.Tagui",
+         "trigger": "tag-ui-input\t$A.Tag.ui",
          "contents": "ui:input$1>${2:Implements ui:visible, ui:uiEvents.An abstract class that is extended by input components such as ui:inputCheckbox and ui:inputText.}</ui:input>"
       },
       {
-         "trigger": "tag-ui-inputCheckbox\t$A.Tagui",
+         "trigger": "tag-ui-inputCheckbox\t$A.Tag.ui",
          "contents": "ui:inputCheckbox$1>${2:Implements ui:inputBaseOption.Represents a checkbox. Its behavior can be configured using events such as click and change.}</ui:inputCheckbox>"
       },
       {
-         "trigger": "tag-ui-inputCurrency\t$A.Tagui",
+         "trigger": "tag-ui-inputCurrency\t$A.Tag.ui",
          "contents": "ui:inputCurrency$1>${2:Implements ui:inputNumberComponent,ui:inputTextComponent.An input field for entering a currency.}</ui:inputCurrency>"
       },
       {
-         "trigger": "tag-ui-inputDate\t$A.Tagui",
+         "trigger": "tag-ui-inputDate\t$A.Tag.ui",
          "contents": "ui:inputDate$1>${2:Implements ui:inputDateComponent.An input field for entering a date.}</ui:inputDate>"
       },
       {
-         "trigger": "tag-ui-inputDateRange\t$A.Tagui",
+         "trigger": "tag-ui-inputDateRange\t$A.Tag.ui",
          "contents": "ui:inputDateRange$1>${2:Implements ui:inputDateComponent.A component for entering a date range.}</ui:inputDateRange>"
       },
       {
-         "trigger": "tag-ui-inputDateTime\t$A.Tagui",
+         "trigger": "tag-ui-inputDateTime\t$A.Tag.ui",
          "contents": "ui:inputDateTime$1>${2:Implements ui:inputDateComponent.An input field for entering a date and time.}</ui:inputDateTime>"
       },
       {
-         "trigger": "tag-ui-inputDateTrigger\t$A.Tagui",
+         "trigger": "tag-ui-inputDateTrigger\t$A.Tag.ui",
          "contents": "ui:inputDateTrigger$1>${2:Represents a date input component that can be used with the date picker manager, ui:datePickerManager.}</ui:inputDateTrigger>"
       },
       {
-         "trigger": "tag-ui-inputDefaultError\t$A.Tagui",
+         "trigger": "tag-ui-inputDefaultError\t$A.Tag.ui",
          "contents": "ui:inputDefaultError$1>${2:Implements ui:visible.The default implementation of field-level errors, which iterates over the value and displays the message.}</ui:inputDefaultError>"
       },
       {
-         "trigger": "tag-ui-inputEmail\t$A.Tagui",
+         "trigger": "tag-ui-inputEmail\t$A.Tag.ui",
          "contents": "ui:inputEmail$1>${2:Implements ui:inputTextComponent.Represents an input field for entering an email address.}</ui:inputEmail>"
       },
       {
-         "trigger": "tag-ui-inputFile\t$A.Tagui",
+         "trigger": "tag-ui-inputFile\t$A.Tag.ui",
          "contents": "ui:inputFile$1>${2:An HTML input element for specifying or uploading a file.}</ui:inputFile>"
       },
       {
-         "trigger": "tag-ui-inputNumber\t$A.Tagui",
+         "trigger": "tag-ui-inputNumber\t$A.Tag.ui",
          "contents": "ui:inputNumber$1>${2:Implements ui:inputNumberComponent,ui:inputTextComponent.An input field for entering a number, taking advantage of client input assistance and validation when available.}</ui:inputNumber>"
       },
       {
-         "trigger": "tag-ui-inputOption\t$A.Tagui",
+         "trigger": "tag-ui-inputOption\t$A.Tag.ui",
          "contents": "ui:inputOption$1>${2:Implements ui:inputBaseOption.An abstract component for input options with type checkbox, radio, or selectOption.}</ui:inputOption>"
       },
       {
-         "trigger": "tag-ui-inputPercent\t$A.Tagui",
+         "trigger": "tag-ui-inputPercent\t$A.Tag.ui",
          "contents": "ui:inputPercent$1>${2:Implements ui:inputNumberComponent,ui:inputTextComponent.An input field for entering a percentage.}</ui:inputPercent>"
       },
       {
-         "trigger": "tag-ui-inputPhone\t$A.Tagui",
+         "trigger": "tag-ui-inputPhone\t$A.Tag.ui",
          "contents": "ui:inputPhone$1>${2:Implements ui:inputTextComponent.Represents an input field for entering a telephone number.}</ui:inputPhone>"
       },
       {
-         "trigger": "tag-ui-inputRadio\t$A.Tagui",
+         "trigger": "tag-ui-inputRadio\t$A.Tag.ui",
          "contents": "ui:inputRadio$1>${2:Implements ui:inputBaseOption.The radio button used in the input.}</ui:inputRadio>"
       },
       {
-         "trigger": "tag-ui-inputRange\t$A.Tagui",
+         "trigger": "tag-ui-inputRange\t$A.Tag.ui",
          "contents": "ui:inputRange$1>${2:The range used in the input.}</ui:inputRange>"
       },
       {
-         "trigger": "tag-ui-inputRichText\t$A.Tagui",
+         "trigger": "tag-ui-inputRichText\t$A.Tag.ui",
          "contents": "ui:inputRichText$1>${2:An input field for entering rich text.}</ui:inputRichText>"
       },
       {
-         "trigger": "tag-ui-inputSearch\t$A.Tagui",
+         "trigger": "tag-ui-inputSearch\t$A.Tag.ui",
          "contents": "ui:inputSearch$1>${2:Implements ui:inputTextComponent.This component displays an input field suitable for entering a search string.}</ui:inputSearch>"
       },
       {
-         "trigger": "tag-ui-inputSecret\t$A.Tagui",
+         "trigger": "tag-ui-inputSecret\t$A.Tag.ui",
          "contents": "ui:inputSecret$1>${2:Implements ui:inputTextComponent.An input field for entering secret text with type password.}</ui:inputSecret>"
       },
       {
-         "trigger": "tag-ui-inputSelect\t$A.Tagui",
+         "trigger": "tag-ui-inputSelect\t$A.Tag.ui",
          "contents": "ui:inputSelect$1>${2:Represents a drop-down list with options.}</ui:inputSelect>"
       },
       {
-         "trigger": "tag-ui-inputSelectOption\t$A.Tagui",
+         "trigger": "tag-ui-inputSelectOption\t$A.Tag.ui",
          "contents": "ui:inputSelectOption$1>${2:Implements ui:inputBaseOption.An HTML option element that is nested in a <ui:inputSelect> element. Denotes the available options in the list.}</ui:inputSelectOption>"
       },
       {
-         "trigger": "tag-ui-inputSelectOptionGroup\t$A.Tagui",
+         "trigger": "tag-ui-inputSelectOptionGroup\t$A.Tag.ui",
          "contents": "ui:inputSelectOptionGroup$1>${2:An HTML optgroup element that groups related options in a <ui:inputSelect> element.}</ui:inputSelectOptionGroup>"
       },
       {
-         "trigger": "tag-ui-inputText\t$A.Tagui",
+         "trigger": "tag-ui-inputText\t$A.Tag.ui",
          "contents": "ui:inputText$1>${2:Implements ui:inputTextComponent.Represents an input field suitable for entering a single line of free-form text.}</ui:inputText>"
       },
       {
-         "trigger": "tag-ui-inputTextArea\t$A.Tagui",
+         "trigger": "tag-ui-inputTextArea\t$A.Tag.ui",
          "contents": "ui:inputTextArea$1>${2:An HTML textarea element that can be editable or read-only. Scroll bars may not appear on Chrome browsers in Android devices, but you can select focus in the textarea to activate scrolling.}</ui:inputTextArea>"
       },
       {
-         "trigger": "tag-ui-inputTextAreaForAutocomplete\t$A.Tagui",
+         "trigger": "tag-ui-inputTextAreaForAutocomplete\t$A.Tag.ui",
          "contents": "ui:inputTextAreaForAutocomplete$1>${2:This component is used as input text area in a ui:autocomplete component.}</ui:inputTextAreaForAutocomplete>"
       },
       {
-         "trigger": "tag-ui-inputTextForAutocomplete\t$A.Tagui",
+         "trigger": "tag-ui-inputTextForAutocomplete\t$A.Tag.ui",
          "contents": "ui:inputTextForAutocomplete$1>${2:Implements ui:inputTextComponent.This component is used as input text in a ui:autocomplete component.}</ui:inputTextForAutocomplete>"
       },
       {
-         "trigger": "tag-ui-inputURL\t$A.Tagui",
+         "trigger": "tag-ui-inputURL\t$A.Tag.ui",
          "contents": "ui:inputURL$1>${2:Implements ui:inputTextComponent.An input field for entering a URL.}</ui:inputURL>"
       },
       {
-         "trigger": "tag-ui-interactive\t$A.Tagui",
+         "trigger": "tag-ui-interactive\t$A.Tag.ui",
          "contents": "ui:interactive$1>${2:Implements ui:visible.An abstract component which capsulates common events.}</ui:interactive>"
       },
       {
-         "trigger": "tag-ui-label\t$A.Tagui",
+         "trigger": "tag-ui-label\t$A.Tag.ui",
          "contents": "ui:label$1>${2:The label displayed on an input component. To bind a label to an input component, use the for attribute.}</ui:label>"
       },
       {
-         "trigger": "tag-ui-list\t$A.Tagui",
+         "trigger": "tag-ui-list\t$A.Tag.ui",
          "contents": "ui:list$1>${2:A list component that iterates over and displays the items in the ui:dataProvider component.}</ui:list>"
       },
       {
-         "trigger": "tag-ui-listSorter\t$A.Tagui",
+         "trigger": "tag-ui-listSorter\t$A.Tag.ui",
          "contents": "ui:listSorter$1>${2:This component provides the user selected items with sort order based on the data from the data provider.}</ui:listSorter>"
       },
       {
-         "trigger": "tag-ui-listView\t$A.Tagui",
+         "trigger": "tag-ui-listView\t$A.Tag.ui",
          "contents": "ui:listView$1>${2:Implements ui:elementInterface.Deprecated. A column based listview with comprehensive event support.}</ui:listView>"
       },
       {
-         "trigger": "tag-ui-listViewColumn\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumn\t$A.Tag.ui",
          "contents": "ui:listViewColumn$1>${2:Implements ui:elementInterface,ui:listViewColumnInterface.An abstract column template component, used to specify column display information in ui:listView.}</ui:listViewColumn>"
       },
       {
-         "trigger": "tag-ui-listViewColumnCell\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnCell\t$A.Tag.ui",
          "contents": "ui:listViewColumnCell$1>${2:A simple column template definition, describes a barebones table data cell.}</ui:listViewColumnCell>"
       },
       {
-         "trigger": "tag-ui-listViewColumnCheckbox\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnCheckbox\t$A.Tag.ui",
          "contents": "ui:listViewColumnCheckbox$1>${2:A checkbox column template definition, describes a checkbox in a table data cell.}</ui:listViewColumnCheckbox>"
       },
       {
-         "trigger": "tag-ui-listViewColumnEmail\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnEmail\t$A.Tag.ui",
          "contents": "ui:listViewColumnEmail$1>${2:An email column template definition, describes an email mailto: link reference in a table data cell.}</ui:listViewColumnEmail>"
       },
       {
-         "trigger": "tag-ui-listViewColumnHeader\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnHeader\t$A.Tag.ui",
          "contents": "ui:listViewColumnHeader$1>${2:A simple column template definition, describes a barebones table header cell.}</ui:listViewColumnHeader>"
       },
       {
-         "trigger": "tag-ui-listViewColumnHtml\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnHtml\t$A.Tag.ui",
          "contents": "ui:listViewColumnHtml$1>${2:An html column template definition, describes unescaped markup in a table data cell.}</ui:listViewColumnHtml>"
       },
       {
-         "trigger": "tag-ui-listViewColumnIndex\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnIndex\t$A.Tag.ui",
          "contents": "ui:listViewColumnIndex$1>${2:An index column template definition, describes the (one-based) number of the current item being processed in a table data cell.}</ui:listViewColumnIndex>"
       },
       {
-         "trigger": "tag-ui-listViewColumnLink\t$A.Tagui",
+         "trigger": "tag-ui-listViewColumnLink\t$A.Tag.ui",
          "contents": "ui:listViewColumnLink$1>${2:A link column template definition, describes a hyperlink reference in a table data cell.}</ui:listViewColumnLink>"
       },
       {
-         "trigger": "tag-ui-listViewRow\t$A.Tagui",
+         "trigger": "tag-ui-listViewRow\t$A.Tag.ui",
          "contents": "ui:listViewRow$1>${2:Implements ui:elementInterface.A basic row component used by the listView.}</ui:listViewRow>"
       },
       {
-         "trigger": "tag-ui-manifest\t$A.Tagui",
+         "trigger": "tag-ui-manifest\t$A.Tag.ui",
          "contents": "ui:manifest$1>${2:}</ui:manifest>"
       },
       {
-         "trigger": "tag-ui-menu\t$A.Tagui",
+         "trigger": "tag-ui-menu\t$A.Tag.ui",
          "contents": "ui:menu$1>${2:Implements ui:visible.A dropdown menu list with a trigger that controls its visibility. Need to provide a menuTriggerLink and menuList component.}</ui:menu>"
       },
       {
-         "trigger": "tag-ui-menuItem\t$A.Tagui",
+         "trigger": "tag-ui-menuItem\t$A.Tag.ui",
          "contents": "ui:menuItem$1>${2:A UI menu item in a ui:menuList component.}</ui:menuItem>"
       },
       {
-         "trigger": "tag-ui-menuItemSeparator\t$A.Tagui",
+         "trigger": "tag-ui-menuItemSeparator\t$A.Tag.ui",
          "contents": "ui:menuItemSeparator$1>${2:Implements ui:visible.A menu separator to divide menu items, such as ui:radioMenuItem, and used in a ui:menuList component.}</ui:menuItemSeparator>"
       },
       {
-         "trigger": "tag-ui-menuList\t$A.Tagui",
+         "trigger": "tag-ui-menuList\t$A.Tag.ui",
          "contents": "ui:menuList$1>${2:Implements ui:visible.A menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
       },
       {
-         "trigger": "tag-ui-menuTrigger\t$A.Tagui",
+         "trigger": "tag-ui-menuTrigger\t$A.Tag.ui",
          "contents": "ui:menuTrigger$1>${2:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:menuTrigger>"
       },
       {
-         "trigger": "tag-ui-menuTriggerLink\t$A.Tagui",
+         "trigger": "tag-ui-menuTriggerLink\t$A.Tag.ui",
          "contents": "ui:menuTriggerLink$1>${2:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
       },
       {
-         "trigger": "tag-ui-message\t$A.Tagui",
+         "trigger": "tag-ui-message\t$A.Tag.ui",
          "contents": "ui:message$1>${2:Implements ui:visible.Represents a message of varying severity levels}</ui:message>"
       },
       {
-         "trigger": "tag-ui-modal\t$A.Tagui",
+         "trigger": "tag-ui-modal\t$A.Tag.ui",
          "contents": "ui:modal$1>${2:Implements ui:panelType.}</ui:modal>"
       },
       {
-         "trigger": "tag-ui-output\t$A.Tagui",
+         "trigger": "tag-ui-output\t$A.Tag.ui",
          "contents": "ui:output$1>${2:The base component of most output components.}</ui:output>"
       },
       {
-         "trigger": "tag-ui-outputCheckbox\t$A.Tagui",
+         "trigger": "tag-ui-outputCheckbox\t$A.Tag.ui",
          "contents": "ui:outputCheckbox$1>${2:Implements ui:visible.Displays a checkbox in a checked or unchecked state.}</ui:outputCheckbox>"
       },
       {
-         "trigger": "tag-ui-outputCurrency\t$A.Tagui",
+         "trigger": "tag-ui-outputCurrency\t$A.Tag.ui",
          "contents": "ui:outputCurrency$1>${2:Implements ui:visible.Displays the currency in the default or specified format, such as with specific currency code or decimal places.}</ui:outputCurrency>"
       },
       {
-         "trigger": "tag-ui-outputDate\t$A.Tagui",
+         "trigger": "tag-ui-outputDate\t$A.Tag.ui",
          "contents": "ui:outputDate$1>${2:Implements ui:outputDateComponent, ui:visible.Displays a date in the default or specified format based on the user's locale.}</ui:outputDate>"
       },
       {
-         "trigger": "tag-ui-outputDateTime\t$A.Tagui",
+         "trigger": "tag-ui-outputDateTime\t$A.Tag.ui",
          "contents": "ui:outputDateTime$1>${2:Implements ui:outputDateComponent, ui:visible.Displays a date, time in a specified or default format based on the user's locale.}</ui:outputDateTime>"
       },
       {
-         "trigger": "tag-ui-outputEmail\t$A.Tagui",
+         "trigger": "tag-ui-outputEmail\t$A.Tag.ui",
          "contents": "ui:outputEmail$1>${2:Implements ui:visible.Displays an email address in an HTML anchor (<a>) element. The leading and trailing space are trimmed.}</ui:outputEmail>"
       },
       {
-         "trigger": "tag-ui-outputLabel\t$A.Tagui",
+         "trigger": "tag-ui-outputLabel\t$A.Tag.ui",
          "contents": "ui:outputLabel$1>${2:Implements ui:visible.Displays an element label as specified by the value attribute.}</ui:outputLabel>"
       },
       {
-         "trigger": "tag-ui-outputMultiSelect\t$A.Tagui",
+         "trigger": "tag-ui-outputMultiSelect\t$A.Tag.ui",
          "contents": "ui:outputMultiSelect$1>${2:Implements ui:visible.Displays multiple values from a list of options.}</ui:outputMultiSelect>"
       },
       {
-         "trigger": "tag-ui-outputNumber\t$A.Tagui",
+         "trigger": "tag-ui-outputNumber\t$A.Tag.ui",
          "contents": "ui:outputNumber$1>${2:Implements ui:visible.Displays the number in the default or specified format. Supports up to 18 digits before the decimal place.}</ui:outputNumber>"
       },
       {
-         "trigger": "tag-ui-outputPercent\t$A.Tagui",
+         "trigger": "tag-ui-outputPercent\t$A.Tag.ui",
          "contents": "ui:outputPercent$1>${2:Implements ui:visible.Displays the percentage in the default or specified format with the user's locale.}</ui:outputPercent>"
       },
       {
-         "trigger": "tag-ui-outputPhone\t$A.Tagui",
+         "trigger": "tag-ui-outputPhone\t$A.Tag.ui",
          "contents": "ui:outputPhone$1>${2:Implements ui:visible.Displays the phone number in a URL link format.}</ui:outputPhone>"
       },
       {
-         "trigger": "tag-ui-outputRadio\t$A.Tagui",
+         "trigger": "tag-ui-outputRadio\t$A.Tag.ui",
          "contents": "ui:outputRadio$1>${2:Implements ui:visible.Displays a radio button based on the value attribute.}</ui:outputRadio>"
       },
       {
-         "trigger": "tag-ui-outputRichText\t$A.Tagui",
+         "trigger": "tag-ui-outputRichText\t$A.Tag.ui",
          "contents": "ui:outputRichText$1>${2:Implements ui:visible.Displays richly-formatted text including tags such as paragraph, image, and hyperlink, as specified in the value attribute.}</ui:outputRichText>"
       },
       {
-         "trigger": "tag-ui-outputSelect\t$A.Tagui",
+         "trigger": "tag-ui-outputSelect\t$A.Tag.ui",
          "contents": "ui:outputSelect$1>${2:Implements ui:visible.Displays a list of options based on the value attribute.}</ui:outputSelect>"
       },
       {
-         "trigger": "tag-ui-outputText\t$A.Tagui",
+         "trigger": "tag-ui-outputText\t$A.Tag.ui",
          "contents": "ui:outputText$1>${2:Implements ui:visible.Displays text as specified by the value attribute.}</ui:outputText>"
       },
       {
-         "trigger": "tag-ui-outputTextArea\t$A.Tagui",
+         "trigger": "tag-ui-outputTextArea\t$A.Tag.ui",
          "contents": "ui:outputTextArea$1>${2:Implements ui:visible.Displays the text area as specified by the value attribute.}</ui:outputTextArea>"
       },
       {
-         "trigger": "tag-ui-outputURL\t$A.Tagui",
+         "trigger": "tag-ui-outputURL\t$A.Tag.ui",
          "contents": "ui:outputURL$1>${2:Implements ui:visible.Displays a link to a URL as specified by the value attribute, rendered on a given text (label attribute) and image, if any.}</ui:outputURL>"
       },
       {
-         "trigger": "tag-ui-pager\t$A.Tagui",
+         "trigger": "tag-ui-pager\t$A.Tag.ui",
          "contents": "ui:pager$1>${2:Implements ui:visible, ui:pagingInterface.An abstract pager component, used to specify common behavior across implementations.}</ui:pager>"
       },
       {
-         "trigger": "tag-ui-pagerJumpToPage\t$A.Tagui",
+         "trigger": "tag-ui-pagerJumpToPage\t$A.Tag.ui",
          "contents": "ui:pagerJumpToPage$1>${2:A pager implementation that allows the user to navigate to any page between 1 and pageCount.}</ui:pagerJumpToPage>"
       },
       {
-         "trigger": "tag-ui-pagerNextPrevious\t$A.Tagui",
+         "trigger": "tag-ui-pagerNextPrevious\t$A.Tag.ui",
          "contents": "ui:pagerNextPrevious$1>${2:A pager implementation that allows the user to navigate sequentially between pages or jump to the first or last page.}</ui:pagerNextPrevious>"
       },
       {
-         "trigger": "tag-ui-pagerPageInfo\t$A.Tagui",
+         "trigger": "tag-ui-pagerPageInfo\t$A.Tag.ui",
          "contents": "ui:pagerPageInfo$1>${2:A purely presentational pager implementation, used to display the current and total items.}</ui:pagerPageInfo>"
       },
       {
-         "trigger": "tag-ui-pagerPageSize\t$A.Tagui",
+         "trigger": "tag-ui-pagerPageSize\t$A.Tag.ui",
          "contents": "ui:pagerPageSize$1>${2:A pager implementation that allows the user to change the size of pages in items.}</ui:pagerPageSize>"
       },
       {
-         "trigger": "tag-ui-panel\t$A.Tagui",
+         "trigger": "tag-ui-panel\t$A.Tag.ui",
          "contents": "ui:panel$1>${2:Implements ui:panelType.A panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
       },
       {
-         "trigger": "tag-ui-panelDialog\t$A.Tagui",
+         "trigger": "tag-ui-panelDialog\t$A.Tag.ui",
          "contents": "ui:panelDialog$1>${2:A panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panelDialog>"
       },
       {
-         "trigger": "tag-ui-panelManager\t$A.Tagui",
+         "trigger": "tag-ui-panelManager\t$A.Tag.ui",
          "contents": "ui:panelManager$1>${2:A panel manager that instantiates and handles panels.}</ui:panelManager>"
       },
       {
-         "trigger": "tag-ui-panelManager2\t$A.Tagui",
+         "trigger": "tag-ui-panelManager2\t$A.Tag.ui",
          "contents": "ui:panelManager2$1>${2:Panel manager 2}</ui:panelManager2>"
       },
       {
-         "trigger": "tag-ui-pill\t$A.Tagui",
+         "trigger": "tag-ui-pill\t$A.Tag.ui",
          "contents": "ui:pill$1>${2:Implements ui:visible, ui:focusable.A UI pill in a ui:pillContainer component}</ui:pill>"
       },
       {
-         "trigger": "tag-ui-pillContainer\t$A.Tagui",
+         "trigger": "tag-ui-pillContainer\t$A.Tag.ui",
          "contents": "ui:pillContainer$1>${2:A container for ui:pill}</ui:pillContainer>"
       },
       {
-         "trigger": "tag-ui-pillContainerAutoComplete\t$A.Tagui",
+         "trigger": "tag-ui-pillContainerAutoComplete\t$A.Tag.ui",
          "contents": "ui:pillContainerAutoComplete$1>${2:Implements ui:pillContainerInput.Auto complete component for use in a ui:pillContainer}</ui:pillContainerAutoComplete>"
       },
       {
-         "trigger": "tag-ui-pillContainerAutoCompleteOption\t$A.Tagui",
+         "trigger": "tag-ui-pillContainerAutoCompleteOption\t$A.Tag.ui",
          "contents": "ui:pillContainerAutoCompleteOption$1>${2:Auto complete component for use in a ui:pillContainer}</ui:pillContainerAutoCompleteOption>"
       },
       {
-         "trigger": "tag-ui-popup\t$A.Tagui",
+         "trigger": "tag-ui-popup\t$A.Tag.ui",
          "contents": "ui:popup$1>${2:Implements ui:visible.A popup with a trigger that controls its visibility. This is a base component for ui:menu and ui:panelDialog.}</ui:popup>"
       },
       {
-         "trigger": "tag-ui-popupTarget\t$A.Tagui",
+         "trigger": "tag-ui-popupTarget\t$A.Tag.ui",
          "contents": "ui:popupTarget$1>${2:Implements ui:visible.A container that is displayed in response to a trigger event. If used in a mobile context, it is recommended that curtain be set to true to prevent nested iframes from consuming the closeOnClickOutside event.}</ui:popupTarget>"
       },
       {
-         "trigger": "tag-ui-popupTrigger\t$A.Tagui",
+         "trigger": "tag-ui-popupTrigger\t$A.Tag.ui",
          "contents": "ui:popupTrigger$1>${2:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:popupTrigger>"
       },
       {
-         "trigger": "tag-ui-radioMenuItem\t$A.Tagui",
+         "trigger": "tag-ui-radioMenuItem\t$A.Tag.ui",
          "contents": "ui:radioMenuItem$1>${2:​A menu item with a radio button that indicates a mutually exclusive selection and can be used to invoke an action. This component is nested in a ui:menu component.}</ui:radioMenuItem>"
       },
       {
-         "trigger": "tag-ui-radioToggleMenuItem\t$A.Tagui",
+         "trigger": "tag-ui-radioToggleMenuItem\t$A.Tag.ui",
          "contents": "ui:radioToggleMenuItem$1>${2:​A menu item that indicates a mutually exclusive selection + toggle state. This component is nested in a ui:menu component.}</ui:radioToggleMenuItem>"
       },
       {
-         "trigger": "tag-ui-resizeObserver\t$A.Tagui",
+         "trigger": "tag-ui-resizeObserver\t$A.Tag.ui",
          "contents": "ui:resizeObserver$1>${2:Detects a window resize or orientation change event and runs the updateSize controller method. Ensures the order of component composition.}</ui:resizeObserver>"
       },
       {
-         "trigger": "tag-ui-scroller\t$A.Tagui",
+         "trigger": "tag-ui-scroller\t$A.Tag.ui",
          "contents": "ui:scroller$1>${2:A scrollable view with scroll bars and pull-to-refresh support}</ui:scroller>"
       },
       {
-         "trigger": "tag-ui-scrollerDeprecated\t$A.Tagui",
+         "trigger": "tag-ui-scrollerDeprecated\t$A.Tag.ui",
          "contents": "ui:scrollerDeprecated$1>${2:Deprecated and replaced by ui:scroller.}</ui:scrollerDeprecated>"
       },
       {
-         "trigger": "tag-ui-spinner\t$A.Tagui",
+         "trigger": "tag-ui-spinner\t$A.Tag.ui",
          "contents": "ui:spinner$1>${2:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
       },
       {
-         "trigger": "tag-ui-stamp\t$A.Tagui",
+         "trigger": "tag-ui-stamp\t$A.Tag.ui",
          "contents": "ui:stamp$1>${2:Implements ui:visible.A decorated stamp containing text}</ui:stamp>"
       },
       {
-         "trigger": "tag-ui-tab\t$A.Tagui",
+         "trigger": "tag-ui-tab\t$A.Tag.ui",
          "contents": "ui:tab$1>${2:A single tab that is nested in a ui:tabset component.}</ui:tab>"
       },
       {
-         "trigger": "tag-ui-tabBar\t$A.Tagui",
+         "trigger": "tag-ui-tabBar\t$A.Tag.ui",
          "contents": "ui:tabBar$1>${2:A list wrapper for tabs in a ui:tabset component}</ui:tabBar>"
       },
       {
-         "trigger": "tag-ui-tabItem\t$A.Tagui",
+         "trigger": "tag-ui-tabItem\t$A.Tag.ui",
          "contents": "ui:tabItem$1>${2:A tab that is rendered by the ui:tabBar component}</ui:tabItem>"
       },
       {
-         "trigger": "tag-ui-tabOverflowMenuItem\t$A.Tagui",
+         "trigger": "tag-ui-tabOverflowMenuItem\t$A.Tag.ui",
          "contents": "ui:tabOverflowMenuItem$1>${2:A tab that is rendered by the ui:tabBar component for its overflow menu}</ui:tabOverflowMenuItem>"
       },
       {
-         "trigger": "tag-ui-tabOverflowMenuList\t$A.Tagui",
+         "trigger": "tag-ui-tabOverflowMenuList\t$A.Tag.ui",
          "contents": "ui:tabOverflowMenuList$1>${2:An extension of ui:menuList to add custom keyboard interactions for a tab overflow menu}</ui:tabOverflowMenuList>"
       },
       {
-         "trigger": "tag-ui-tabset\t$A.Tagui",
+         "trigger": "tag-ui-tabset\t$A.Tag.ui",
          "contents": "ui:tabset$1>${2:Implements ui:visible.A tab set that displays a list of tabs in an unordered list.}</ui:tabset>"
       },
       {
-         "trigger": "tag-ui-timePicker\t$A.Tagui",
+         "trigger": "tag-ui-timePicker\t$A.Tag.ui",
          "contents": "ui:timePicker$1>${2:Implements ui:visible.A time picker which can be used in datePicker to select both date and time}</ui:timePicker>"
       },
       {
-         "trigger": "tag-ui-toolbar\t$A.Tagui",
+         "trigger": "tag-ui-toolbar\t$A.Tag.ui",
          "contents": "ui:toolbar$1>${2:A horizontal toolbar that is displayed as an HTML menu element.}</ui:toolbar>"
       },
       {
-         "trigger": "tag-ui-tooltip\t$A.Tagui",
+         "trigger": "tag-ui-tooltip\t$A.Tag.ui",
          "contents": "ui:tooltip$1>${2:}</ui:tooltip>"
       },
       {
-         "trigger": "tag-ui-tree\t$A.Tagui",
+         "trigger": "tag-ui-tree\t$A.Tag.ui",
          "contents": "ui:tree$1>${2:}</ui:tree>"
       },
       {
-         "trigger": "tag-ui-treeNode\t$A.Tagui",
+         "trigger": "tag-ui-treeNode\t$A.Tag.ui",
          "contents": "ui:treeNode$1>${2:Implements ui:visitable.}</ui:treeNode>"
       },
       {
-         "trigger": "tag-ui-underConstruction\t$A.Tagui",
+         "trigger": "tag-ui-underConstruction\t$A.Tag.ui",
          "contents": "ui:underConstruction$1>${2:Displays “Unsupported” if the short attribute is set to true.}</ui:underConstruction>"
       },
       {
-         "trigger": "tag-ui-vbox\t$A.Tagui",
+         "trigger": "tag-ui-vbox\t$A.Tag.ui",
          "contents": "ui:vbox$1>${2:This container component creates a vertical box area on a page with simple wrapper HTML.}</ui:vbox>"
       },
       {
-         "trigger": "tag-ui-virtualDataGrid\t$A.Tagui",
+         "trigger": "tag-ui-virtualDataGrid\t$A.Tag.ui",
          "contents": "ui:virtualDataGrid$1>${2:}</ui:virtualDataGrid>"
       },
       {
-         "trigger": "tag-ui-virtualList\t$A.Tagui",
+         "trigger": "tag-ui-virtualList\t$A.Tag.ui",
          "contents": "ui:virtualList$1>${2:Implements ui:scrollerEmbeddable.Aura Virtual List}</ui:virtualList>"
       },
       {
-         "trigger": "tag-uiExamples-autocompleteDataProvider\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-autocompleteDataProvider\t$A.Tag.uiExamples",
          "contents": "uiExamples:autocompleteDataProvider$1>${2:}</uiExamples:autocompleteDataProvider>"
       },
       {
-         "trigger": "tag-uiExamples-autocompleteExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-autocompleteExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:autocompleteExample$1>${2:}</uiExamples:autocompleteExample>"
       },
       {
-         "trigger": "tag-uiExamples-autocompleteOptionExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-autocompleteOptionExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:autocompleteOptionExample$1>${2:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExample>"
       },
       {
-         "trigger": "tag-uiExamples-autocompleteOptionExampleExtended\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-autocompleteOptionExampleExtended\t$A.Tag.uiExamples",
          "contents": "uiExamples:autocompleteOptionExampleExtended$1>${2:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExampleExtended>"
       },
       {
-         "trigger": "tag-uiExamples-buttonExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-buttonExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:buttonExample$1>${2:}</uiExamples:buttonExample>"
       },
       {
-         "trigger": "tag-uiExamples-checkbox\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-checkbox\t$A.Tag.uiExamples",
          "contents": "uiExamples:checkbox$1>${2:}</uiExamples:checkbox>"
       },
       {
-         "trigger": "tag-uiExamples-currency\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-currency\t$A.Tag.uiExamples",
          "contents": "uiExamples:currency$1>${2:}</uiExamples:currency>"
       },
       {
-         "trigger": "tag-uiExamples-dataGridDynamicColumns\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dataGridDynamicColumns\t$A.Tag.uiExamples",
          "contents": "uiExamples:dataGridDynamicColumns$1>${2:}</uiExamples:dataGridDynamicColumns>"
       },
       {
-         "trigger": "tag-uiExamples-dataGridKitchenSink\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dataGridKitchenSink\t$A.Tag.uiExamples",
          "contents": "uiExamples:dataGridKitchenSink$1>${2:}</uiExamples:dataGridKitchenSink>"
       },
       {
-         "trigger": "tag-uiExamples-dataGridKitchenSinkDataProvider\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dataGridKitchenSinkDataProvider\t$A.Tag.uiExamples",
          "contents": "uiExamples:dataGridKitchenSinkDataProvider$1>${2:}</uiExamples:dataGridKitchenSinkDataProvider>"
       },
       {
-         "trigger": "tag-uiExamples-dataProviderExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dataProviderExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:dataProviderExample$1>${2:Implements ui:pagingInterface, ui:scrollerEmbeddable.}</uiExamples:dataProviderExample>"
       },
       {
-         "trigger": "tag-uiExamples-date\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-date\t$A.Tag.uiExamples",
          "contents": "uiExamples:date$1>${2:}</uiExamples:date>"
       },
       {
-         "trigger": "tag-uiExamples-datePicker\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-datePicker\t$A.Tag.uiExamples",
          "contents": "uiExamples:datePicker$1>${2:}</uiExamples:datePicker>"
       },
       {
-         "trigger": "tag-uiExamples-datetime\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-datetime\t$A.Tag.uiExamples",
          "contents": "uiExamples:datetime$1>${2:}</uiExamples:datetime>"
       },
       {
-         "trigger": "tag-uiExamples-detailPopover\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-detailPopover\t$A.Tag.uiExamples",
          "contents": "uiExamples:detailPopover$1>${2:}</uiExamples:detailPopover>"
       },
       {
-         "trigger": "tag-uiExamples-dragAndDropExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dragAndDropExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:dragAndDropExample$1>${2:}</uiExamples:dragAndDropExample>"
       },
       {
-         "trigger": "tag-uiExamples-dragAndDropProvider\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-dragAndDropProvider\t$A.Tag.uiExamples",
          "contents": "uiExamples:dragAndDropProvider$1>${2:}</uiExamples:dragAndDropProvider>"
       },
       {
-         "trigger": "tag-uiExamples-email\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-email\t$A.Tag.uiExamples",
          "contents": "uiExamples:email$1>${2:}</uiExamples:email>"
       },
       {
-         "trigger": "tag-uiExamples-infiniteDataProvider\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-infiniteDataProvider\t$A.Tag.uiExamples",
          "contents": "uiExamples:infiniteDataProvider$1>${2:}</uiExamples:infiniteDataProvider>"
       },
       {
-         "trigger": "tag-uiExamples-infiniteList\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-infiniteList\t$A.Tag.uiExamples",
          "contents": "uiExamples:infiniteList$1>${2:}</uiExamples:infiniteList>"
       },
       {
-         "trigger": "tag-uiExamples-infiniteListDataProvider\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-infiniteListDataProvider\t$A.Tag.uiExamples",
          "contents": "uiExamples:infiniteListDataProvider$1>${2:}</uiExamples:infiniteListDataProvider>"
       },
       {
-         "trigger": "tag-uiExamples-infiniteListRow\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-infiniteListRow\t$A.Tag.uiExamples",
          "contents": "uiExamples:infiniteListRow$1>${2:}</uiExamples:infiniteListRow>"
       },
       {
-         "trigger": "tag-uiExamples-inputExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-inputExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:inputExample$1>${2:}</uiExamples:inputExample>"
       },
       {
-         "trigger": "tag-uiExamples-inputNumberExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-inputNumberExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:inputNumberExample$1>${2:}</uiExamples:inputNumberExample>"
       },
       {
-         "trigger": "tag-uiExamples-inputTextExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-inputTextExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:inputTextExample$1>${2:}</uiExamples:inputTextExample>"
       },
       {
-         "trigger": "tag-uiExamples-iterationExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-iterationExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:iterationExample$1>${2:}</uiExamples:iterationExample>"
       },
       {
-         "trigger": "tag-uiExamples-libraryExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-libraryExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:libraryExample$1>${2:}</uiExamples:libraryExample>"
       },
       {
-         "trigger": "tag-uiExamples-mobileViewport\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-mobileViewport\t$A.Tag.uiExamples",
          "contents": "uiExamples:mobileViewport$1>${2:A component to remove the boilerplate neccessary for a mobile demo.}</uiExamples:mobileViewport>"
       },
       {
-         "trigger": "tag-uiExamples-modalContent\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-modalContent\t$A.Tag.uiExamples",
          "contents": "uiExamples:modalContent$1>${2:}</uiExamples:modalContent>"
       },
       {
-         "trigger": "tag-uiExamples-outputExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-outputExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:outputExample$1>${2:}</uiExamples:outputExample>"
       },
       {
-         "trigger": "tag-uiExamples-panelContent\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-panelContent\t$A.Tag.uiExamples",
          "contents": "uiExamples:panelContent$1>${2:}</uiExamples:panelContent>"
       },
       {
-         "trigger": "tag-uiExamples-panelDialogExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-panelDialogExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:panelDialogExample$1>${2:}</uiExamples:panelDialogExample>"
       },
       {
-         "trigger": "tag-uiExamples-panelFooter\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-panelFooter\t$A.Tag.uiExamples",
          "contents": "uiExamples:panelFooter$1>${2:}</uiExamples:panelFooter>"
       },
       {
-         "trigger": "tag-uiExamples-panelHeader\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-panelHeader\t$A.Tag.uiExamples",
          "contents": "uiExamples:panelHeader$1>${2:}</uiExamples:panelHeader>"
       },
       {
-         "trigger": "tag-uiExamples-panelPositioningExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-panelPositioningExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:panelPositioningExample$1>${2:}</uiExamples:panelPositioningExample>"
       },
       {
-         "trigger": "tag-uiExamples-phone\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-phone\t$A.Tag.uiExamples",
          "contents": "uiExamples:phone$1>${2:}</uiExamples:phone>"
       },
       {
-         "trigger": "tag-uiExamples-popupExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-popupExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:popupExample$1>${2:}</uiExamples:popupExample>"
       },
       {
-         "trigger": "tag-uiExamples-radio\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-radio\t$A.Tag.uiExamples",
          "contents": "uiExamples:radio$1>${2:}</uiExamples:radio>"
       },
       {
-         "trigger": "tag-uiExamples-renderIfExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-renderIfExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:renderIfExample$1>${2:}</uiExamples:renderIfExample>"
       },
       {
-         "trigger": "tag-uiExamples-secret\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-secret\t$A.Tag.uiExamples",
          "contents": "uiExamples:secret$1>${2:}</uiExamples:secret>"
       },
       {
-         "trigger": "tag-uiExamples-tabsetExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-tabsetExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:tabsetExample$1>${2:}</uiExamples:tabsetExample>"
       },
       {
-         "trigger": "tag-uiExamples-text\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-text\t$A.Tag.uiExamples",
          "contents": "uiExamples:text$1>${2:}</uiExamples:text>"
       },
       {
-         "trigger": "tag-uiExamples-textarea\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-textarea\t$A.Tag.uiExamples",
          "contents": "uiExamples:textarea$1>${2:}</uiExamples:textarea>"
       },
       {
-         "trigger": "tag-uiExamples-tooltipExample\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-tooltipExample\t$A.Tag.uiExamples",
          "contents": "uiExamples:tooltipExample$1>${2:}</uiExamples:tooltipExample>"
       },
       {
-         "trigger": "tag-uiExamples-url\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-url\t$A.Tag.uiExamples",
          "contents": "uiExamples:url$1>${2:}</uiExamples:url>"
       },
       {
-         "trigger": "tag-uiExamples-virtualDataGridKitchenSink\t$A.TaguiExamples",
+         "trigger": "tag-uiExamples-virtualDataGridKitchenSink\t$A.Tag.uiExamples",
          "contents": "uiExamples:virtualDataGridKitchenSink$1>${2:}</uiExamples:virtualDataGridKitchenSink>"
       }
    ]
