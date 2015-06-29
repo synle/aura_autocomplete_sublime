@@ -156,7 +156,7 @@ componentFileNames.cmp.forEach(function(fileName){
 console.log('Updating Sublime File: Component Events'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_evt_sublime(componentEventDictionary),
-	'./aura.event.sublime-completions'
+	'./snippet/aura.event.sublime-completions'
 );
 
 
@@ -164,7 +164,7 @@ parseHelper.writeToFile(
 console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_attributes_sublime(componentAttributesDictionary),
-	'./aura.attributes.sublime-completions'
+	'./snippet/aura.attributes.sublime-completions'
 );
 
 
@@ -174,5 +174,5 @@ parseHelper.writeToFile(
 console.log('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_uitags_sublime(componentDictionary),
-	'./aura.uitags.sublime-completions'
+	'./snippet/aura.uitags.sublime-completions'
 );

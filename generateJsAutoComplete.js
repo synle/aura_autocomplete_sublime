@@ -92,7 +92,7 @@ for (var k in curNamespace){
 console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_sublime(masterDictionary),
-	'./aura.sublime-completions'
+	'./snippet/aura.sublime-completions'
 );
 
 
@@ -100,5 +100,5 @@ parseHelper.writeToFile(
 console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
 parseHelper.writeToFile(
 	parseHelper.consolidate_atom(masterDictionary),
-	'./aura.atom.cson'
+	'./snippet/aura.atom.cson'
 );
