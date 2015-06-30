@@ -57,12 +57,12 @@ var self = {
             } 
         ...]  
     **/
-    consolidate_evt: function(evtDictionary) {
+    consolidate_evt: function(arrayEvents) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js'
         );
-        for (var evtName in evtDictionary) {
-            var evtObj = evtDictionary[evtName];
+        for (var evtName in arrayEvents) {
+            var evtObj = arrayEvents[evtName];
             var evt = evtObj.evtDef;
             var actualEvt = evtObj.evt;
             if (evt === undefined) {
@@ -123,12 +123,12 @@ var self = {
         ...
         ]
      */
-    consolidate_attributes: function(attributeDictionary){
+    consolidate_attributes: function(arrayAttributes){
         var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
 
-        for (var attributeIdx in attributeDictionary){
-            var attributeComponent = attributeDictionary[attributeIdx].component;
-            var attributeObj = attributeDictionary[attributeIdx].attribute;
+        for (var attributeIdx in arrayAttributes){
+            var attributeComponent = arrayAttributes[attributeIdx].component;
+            var attributeObj = arrayAttributes[attributeIdx].attribute;
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
@@ -160,14 +160,14 @@ var self = {
         ...
      ]
      */
-    consolidate_uitags: function(componentDictionary){
+    consolidate_uitags: function(arrayComponents){
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'meta.tag.xml'
         );
 
 
-        for (var idx in componentDictionary){
-            var componentObj = componentDictionary[idx];
+        for (var idx in arrayComponents){
+            var componentObj = arrayComponents[idx];
 
             //triggers
             var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + '-' + componentObj.name + '\t$A';

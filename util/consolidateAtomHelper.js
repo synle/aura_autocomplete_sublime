@@ -27,7 +27,14 @@ var self = {
 
             var prefix = functionName;
             var body = functionName + "(" + annotatedParams + ")";
-            atomFormat += ['".source.js":', '\t"' + functionName + '":', '\t\t"prefix":"' + prefix + '"', '\t\t"body":"' + body + '"', ].join('\n') + '\n';
+            
+
+            atomFormat += [
+                '".source.js":',
+                '\t"' + functionName + '":',
+                '\t\t"prefix":"' + prefix + '"',
+                '\t\t"body":"' + body + '"',
+            ].join('\n') + '\n';
         }
         return atomFormat;
     },
@@ -49,7 +56,7 @@ var self = {
             } 
         ...]  
     **/
-    consolidate_evt: function(evtDictionary) {
+    consolidate_evt: function(arrayEvents) {
     },
 
 
@@ -70,7 +77,7 @@ var self = {
         ...
         ]
      */
-    consolidate_attributes: function(attributeDictionary){
+    consolidate_attributes: function(arrayAttributes){
     },
 
 
@@ -86,7 +93,7 @@ var self = {
         ...
      ]
      */
-    consolidate_uitags: function(componentDictionary){
+    consolidate_uitags: function(arrayComponents){
     }
 };
 module.exports = self;
