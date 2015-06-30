@@ -25,8 +25,8 @@ var self = {
             var origParams = dictionary[functionName].origValue || "";
 
 
-            var prefix = functionName;
-            var body = functionName + "(" + annotatedParams + ")";
+            var prefix = functionName.replace(/\./g, '-');
+            var body = functionName + "(" + origParams + ")";
             
 
             atomFormat += [

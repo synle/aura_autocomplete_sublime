@@ -47,7 +47,7 @@ var self = {
                 }
             }
         }
-        
+
         return res;
     },
     parseFunctions: function(functionName, functionDefition, namespaceStr) {

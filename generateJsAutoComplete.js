@@ -17,7 +17,7 @@ if(process.argv[2]){
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
 	if (process.argv[2] === '--silent'){
-		console.log('Silent mode'.red);
+		console.log('Silent mode: assumed path: '.bold.red, config.baseDir);
 		baseDir = config.baseDir;
 	}
 	else{
