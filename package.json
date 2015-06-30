@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "Generate autocomplete for Salesforce Aura code snippet",
   "scripts": {
-    "test": "No Test Yet\n",
+    "test": "echo 'No Test Yet\n'",
     "pkg": "node generateJsAutoComplete.js --silent; node generateXmlAutoComplete.js --silent",
     "start": "node generateJsAutoComplete.js; node generateXmlAutoComplete.js"
   },
