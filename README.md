@@ -32,6 +32,28 @@
 ## Installation:
 + [Sublime Text 3 Instruction](https://github.com/synle/aura_autocomplete_sublime/blob/master/README.sublime.md)
 
+# Salesforce Aura (Lightning) Autocomplete
++ [Salesforce Aura Github](https://github.com/forcedotcom/aura)
++ [Sublime Text 3 Instruction](https://github.com/synle/aura_autocomplete_sublime/blob/master/README.sublime.md)
+
+
+
+
+## Cheatsheet
+Please note that anything in {} and - is optional. Instead of attr-ui-menuitem-select, you can simply replace it with attruimenuitemselect. Also you can also skip the component name and type it as attr-menuitem.
+
+Trigger | Example | Description
+------- | ------- | -----------
+evt-{COMPONENT_NAME}-{EVENT_NAME} | evt-search | Autocompelte for events
+$a-test-{TEST_METHOD_NAME} | $A.test.assertTru | All Test.js functions
+$a-util-{UTIL_METHOD_NAME} | $A-util-getbool | All Util.js functions
+attr-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} | <a attr-ui-menuitem-select | all Aura tag attributes
+tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aura tag names
+
+
+
+
+
 ## Screenshots:
 ![](images/evt1.jpg)
 ![](images/evt2.jpg)
