@@ -7,19 +7,20 @@ var parseString = require('xml2js').parseString;
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
-var promptSchema = require('./prompt.schema');
+var config = require('./config');
+var promptSchema = config.prompt;
 
 
 
 console.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
-
 
 if(process.argv[2]){
 	//if passed in command line via
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
 	if (process.argv[2] === '--silent'){
-		baseDir = promptSchema.properties.baseDir.default;
+		console.log('Silent mode'.red);
+		baseDir = config.baseDir;
 	}
 	else{
 		baseDir = process.argv[2];	
@@ -27,7 +28,7 @@ if(process.argv[2]){
 
 	processParser( 
 		baseDir,
-		'./snippet'
+		config.outputDir
 	);
 }
 else{
@@ -37,7 +38,7 @@ else{
 	prompt.get(promptSchema, function (err, result) {
 		processParser (
 			result.baseDir,
-			'./snippet'
+			config.outputDir
 		);
 	});
 }
