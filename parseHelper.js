@@ -103,7 +103,7 @@ var self = {
             var functionParams = dictionary[functionName] || "";
             //triggers
             var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A.test' : '\t$A.util';
+            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A.test' : '\t$A';
 
             //contents
             var contents = functionName + "(" + functionParams + ")";
@@ -138,7 +138,7 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A.Event';
+            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A';
             var contents = [
                 '//' + 'component=' + evtObj.component,
                 '//' + 'evtName=' + actualEvt.name,
@@ -196,7 +196,7 @@ var self = {
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
-            var trigger = 'attr-' + attributeComponent.namespace + '-' + attributeComponent.name + '-' + attributeObj.name + '\t$A.attr';
+            var trigger = 'attr-' + attributeComponent.namespace + '-' + attributeComponent.name + '-' + attributeObj.name + '\t$A';
 
             //contents
             var contents = attributeComponent.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
@@ -223,7 +223,7 @@ var self = {
             var componentObj = componentDictionary[idx];
 
             //triggers
-            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + '-' + componentObj.name + '\t$A.Tag.'  + componentObj.namespace;
+            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + '-' + componentObj.name + '\t$A';
 
             //contents
             var contents = [
@@ -264,7 +264,6 @@ var self = {
     },
     getComponentBreakup: function(fileName){
         var splits = fileName.split('/');
-
 
 
         return [splits[splits.length - 3], splits[splits.length - 2]]

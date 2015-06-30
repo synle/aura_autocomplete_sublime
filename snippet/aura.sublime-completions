@@ -398,363 +398,363 @@
          "contents": "A.test.checkGlobalNamespacePollution(${1:})"
       },
       {
-         "trigger": "A-util-isIOSWebView\t$A.util",
+         "trigger": "A-util-isIOSWebView\t$A",
          "contents": "A.util.isIOSWebView(${1:})"
       },
       {
-         "trigger": "A-util-globalEval\t$A.util",
+         "trigger": "A-util-globalEval\t$A",
          "contents": "A.util.globalEval(${1:src})"
       },
       {
-         "trigger": "A-util-isArray\t$A.util",
+         "trigger": "A-util-isArray\t$A",
          "contents": "A.util.isArray(${1:})"
       },
       {
-         "trigger": "A-util-isObject\t$A.util",
+         "trigger": "A-util-isObject\t$A",
          "contents": "A.util.isObject(${1:obj})"
       },
       {
-         "trigger": "A-util-isPlainObject\t$A.util",
+         "trigger": "A-util-isPlainObject\t$A",
          "contents": "A.util.isPlainObject(${1:obj})"
       },
       {
-         "trigger": "A-util-isError\t$A.util",
+         "trigger": "A-util-isError\t$A",
          "contents": "A.util.isError(${1:obj})"
       },
       {
-         "trigger": "A-util-isFunction\t$A.util",
+         "trigger": "A-util-isFunction\t$A",
          "contents": "A.util.isFunction(${1:obj})"
       },
       {
-         "trigger": "A-util-isString\t$A.util",
+         "trigger": "A-util-isString\t$A",
          "contents": "A.util.isString(${1:obj})"
       },
       {
-         "trigger": "A-util-isNumber\t$A.util",
+         "trigger": "A-util-isNumber\t$A",
          "contents": "A.util.isNumber(${1:obj})"
       },
       {
-         "trigger": "A-util-isFiniteNumber\t$A.util",
+         "trigger": "A-util-isFiniteNumber\t$A",
          "contents": "A.util.isFiniteNumber(${1:obj})"
       },
       {
-         "trigger": "A-util-isBoolean\t$A.util",
+         "trigger": "A-util-isBoolean\t$A",
          "contents": "A.util.isBoolean(${1:obj})"
       },
       {
-         "trigger": "A-util-isUndefined\t$A.util",
+         "trigger": "A-util-isUndefined\t$A",
          "contents": "A.util.isUndefined(${1:obj})"
       },
       {
-         "trigger": "A-util-isUndefinedOrNull\t$A.util",
+         "trigger": "A-util-isUndefinedOrNull\t$A",
          "contents": "A.util.isUndefinedOrNull(${1:obj})"
       },
       {
-         "trigger": "A-util-isEmpty\t$A.util",
+         "trigger": "A-util-isEmpty\t$A",
          "contents": "A.util.isEmpty(${1:obj})"
       },
       {
-         "trigger": "A-util-getBooleanValue\t$A.util",
+         "trigger": "A-util-getBooleanValue\t$A",
          "contents": "A.util.getBooleanValue(${1:val})"
       },
       {
-         "trigger": "A-util-createHtmlElement\t$A.util",
+         "trigger": "A-util-createHtmlElement\t$A",
          "contents": "A.util.createHtmlElement(${1:tagName},${2:attributes})"
       },
       {
-         "trigger": "A-util-clearNode\t$A.util",
+         "trigger": "A-util-clearNode\t$A",
          "contents": "A.util.clearNode(${1:node})"
       },
       {
-         "trigger": "A-util-getElement\t$A.util",
+         "trigger": "A-util-getElement\t$A",
          "contents": "A.util.getElement(${1:id})"
       },
       {
-         "trigger": "A-util-copy\t$A.util",
+         "trigger": "A-util-copy\t$A",
          "contents": "A.util.copy(${1:value})"
       },
       {
-         "trigger": "A-util-compareValues\t$A.util",
+         "trigger": "A-util-compareValues\t$A",
          "contents": "A.util.compareValues(${1:expected},${2:actual})"
       },
       {
-         "trigger": "A-util-hasClass\t$A.util",
+         "trigger": "A-util-hasClass\t$A",
          "contents": "A.util.hasClass(${1:element},${2:className})"
       },
       {
-         "trigger": "A-util-addClass\t$A.util",
+         "trigger": "A-util-addClass\t$A",
          "contents": "A.util.addClass(${1:element},${2:newClass})"
       },
       {
-         "trigger": "A-util-removeClass\t$A.util",
+         "trigger": "A-util-removeClass\t$A",
          "contents": "A.util.removeClass(${1:element},${2:newClass})"
       },
       {
-         "trigger": "A-util-toggleClass\t$A.util",
+         "trigger": "A-util-toggleClass\t$A",
          "contents": "A.util.toggleClass(${1:element},${2:className},${3:condition})"
       },
       {
-         "trigger": "A-util-swapClass\t$A.util",
+         "trigger": "A-util-swapClass\t$A",
          "contents": "A.util.swapClass(${1:element},${2:oldClass},${3:newClass})"
       },
       {
-         "trigger": "A-util-setClass\t$A.util",
+         "trigger": "A-util-setClass\t$A",
          "contents": "A.util.setClass(${1:element,newClass,remove})"
       },
       {
-         "trigger": "A-util-buildClass\t$A.util",
+         "trigger": "A-util-buildClass\t$A",
          "contents": "A.util.buildClass(${1:oldClass},${2:newClass},${3:remove})"
       },
       {
-         "trigger": "A-util-buildFlavorClass\t$A.util",
+         "trigger": "A-util-buildFlavorClass\t$A",
          "contents": "A.util.buildFlavorClass(${1:cmp},${2:flavor})"
       },
       {
-         "trigger": "A-util-createElementsFromMarkup\t$A.util",
+         "trigger": "A-util-createElementsFromMarkup\t$A",
          "contents": "A.util.createElementsFromMarkup(${1:markup})"
       },
       {
-         "trigger": "A-util-insertFirst\t$A.util",
+         "trigger": "A-util-insertFirst\t$A",
          "contents": "A.util.insertFirst(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-insertBefore\t$A.util",
+         "trigger": "A-util-insertBefore\t$A",
          "contents": "A.util.insertBefore(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-insertAfter\t$A.util",
+         "trigger": "A-util-insertAfter\t$A",
          "contents": "A.util.insertAfter(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-appendChild\t$A.util",
+         "trigger": "A-util-appendChild\t$A",
          "contents": "A.util.appendChild(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-removeElement\t$A.util",
+         "trigger": "A-util-removeElement\t$A",
          "contents": "A.util.removeElement(${1:element})"
       },
       {
-         "trigger": "A-util-urlDecode\t$A.util",
+         "trigger": "A-util-urlDecode\t$A",
          "contents": "A.util.urlDecode(${1:url})"
       },
       {
-         "trigger": "A-util-trim\t$A.util",
+         "trigger": "A-util-trim\t$A",
          "contents": "A.util.trim(${1:value})"
       },
       {
-         "trigger": "A-util-format\t$A.util",
+         "trigger": "A-util-format\t$A",
          "contents": "A.util.format(${1:formatString,arg1,arg2,argN})"
       },
       {
-         "trigger": "A-util-truncate\t$A.util",
+         "trigger": "A-util-truncate\t$A",
          "contents": "A.util.truncate(${1:st},${2:len},${3:ellipsis},${4:truncateByWord})"
       },
       {
-         "trigger": "A-util-createTimeoutCallback\t$A.util",
+         "trigger": "A-util-createTimeoutCallback\t$A",
          "contents": "A.util.createTimeoutCallback(${1:callback},${2:toleranceMillis})"
       },
       {
-         "trigger": "A-util-on\t$A.util",
+         "trigger": "A-util-on\t$A",
          "contents": "A.util.on(${1:element},${2:eventName},${3:handler},${4:useCapture},${5:timeout})"
       },
       {
-         "trigger": "A-util-removeOn\t$A.util",
+         "trigger": "A-util-removeOn\t$A",
          "contents": "A.util.removeOn(${1:element},${2:eventName},${3:listener},${4:useCapture})"
       },
       {
-         "trigger": "A-util-formToMap\t$A.util",
+         "trigger": "A-util-formToMap\t$A",
          "contents": "A.util.formToMap(${1:form})"
       },
       {
-         "trigger": "A-util-getSelectValue\t$A.util",
+         "trigger": "A-util-getSelectValue\t$A",
          "contents": "A.util.getSelectValue(${1:select})"
       },
       {
-         "trigger": "A-util-addValueToMap\t$A.util",
+         "trigger": "A-util-addValueToMap\t$A",
          "contents": "A.util.addValueToMap(${1:inputMap},${2:key},${3:value})"
       },
       {
-         "trigger": "A-util-addMapValueToMap\t$A.util",
+         "trigger": "A-util-addMapValueToMap\t$A",
          "contents": "A.util.addMapValueToMap(${1:inputMap},${2:key},${3:value},${4:subMapKey})"
       },
       {
-         "trigger": "A-util-isSubDef\t$A.util",
+         "trigger": "A-util-isSubDef\t$A",
          "contents": "A.util.isSubDef(${1:def},${2:qname})"
       },
       {
-         "trigger": "A-util-apply\t$A.util",
+         "trigger": "A-util-apply\t$A",
          "contents": "A.util.apply($1/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)"
       },
       {
-         "trigger": "A-util-camelCaseToHyphens\t$A.util",
+         "trigger": "A-util-camelCaseToHyphens\t$A",
          "contents": "A.util.camelCaseToHyphens(${1:str})"
       },
       {
-         "trigger": "A-util-hyphensToCamelCase\t$A.util",
+         "trigger": "A-util-hyphensToCamelCase\t$A",
          "contents": "A.util.hyphensToCamelCase(${1:str})"
       },
       {
-         "trigger": "A-util-acceptsData\t$A.util",
+         "trigger": "A-util-acceptsData\t$A",
          "contents": "A.util.acceptsData(${1:element})"
       },
       {
-         "trigger": "A-util-getElementAttributeValue\t$A.util",
+         "trigger": "A-util-getElementAttributeValue\t$A",
          "contents": "A.util.getElementAttributeValue(${1:element,attributeName})"
       },
       {
-         "trigger": "A-util-getDataAttribute\t$A.util",
+         "trigger": "A-util-getDataAttribute\t$A",
          "contents": "A.util.getDataAttribute(${1:element},${2:key})"
       },
       {
-         "trigger": "A-util-setDataAttribute\t$A.util",
+         "trigger": "A-util-setDataAttribute\t$A",
          "contents": "A.util.setDataAttribute(${1:element},${2:key},${3:value})"
       },
       {
-         "trigger": "A-util-getDataAttributeName\t$A.util",
+         "trigger": "A-util-getDataAttributeName\t$A",
          "contents": "A.util.getDataAttributeName(${1:key})"
       },
       {
-         "trigger": "A-util-hasDataAttribute\t$A.util",
+         "trigger": "A-util-hasDataAttribute\t$A",
          "contents": "A.util.hasDataAttribute(${1:element},${2:key})"
       },
       {
-         "trigger": "A-util-isElement\t$A.util",
+         "trigger": "A-util-isElement\t$A",
          "contents": "A.util.isElement(${1:obj})"
       },
       {
-         "trigger": "A-util-attachToDocumentBody\t$A.util",
+         "trigger": "A-util-attachToDocumentBody\t$A",
          "contents": "A.util.attachToDocumentBody(${1:element})"
       },
       {
-         "trigger": "A-util-stringEndsWith\t$A.util",
+         "trigger": "A-util-stringEndsWith\t$A",
          "contents": "A.util.stringEndsWith(${1:fullstr},${2:substr})"
       },
       {
-         "trigger": "A-util-bind\t$A.util",
+         "trigger": "A-util-bind\t$A",
          "contents": "A.util.bind($1method /*, this, bind arguments*/)"
       },
       {
-         "trigger": "A-util-keys\t$A.util",
+         "trigger": "A-util-keys\t$A",
          "contents": "A.util.keys(${1:object},${2:excludeFunctions})"
       },
       {
-         "trigger": "A-util-lookup\t$A.util",
+         "trigger": "A-util-lookup\t$A",
          "contents": "A.util.lookup($1object /*, var-args of arrays*/)"
       },
       {
-         "trigger": "A-util-merge\t$A.util",
+         "trigger": "A-util-merge\t$A",
          "contents": "A.util.merge($1first /*, var-args of arrays*/)"
       },
       {
-         "trigger": "A-util-forEach\t$A.util",
+         "trigger": "A-util-forEach\t$A",
          "contents": "A.util.forEach(${1:array},${2:method},${3:that})"
       },
       {
-         "trigger": "A-util-map\t$A.util",
+         "trigger": "A-util-map\t$A",
          "contents": "A.util.map(${1:array},${2:method},${3:that})"
       },
       {
-         "trigger": "A-util-reduce\t$A.util",
+         "trigger": "A-util-reduce\t$A",
          "contents": "A.util.reduce(${1:array},${2:method},${3:initial})"
       },
       {
-         "trigger": "A-util-every\t$A.util",
+         "trigger": "A-util-every\t$A",
          "contents": "A.util.every(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-some\t$A.util",
+         "trigger": "A-util-some\t$A",
          "contents": "A.util.some(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-filter\t$A.util",
+         "trigger": "A-util-filter\t$A",
          "contents": "A.util.filter(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-destroyAsync\t$A.util",
+         "trigger": "A-util-destroyAsync\t$A",
          "contents": "A.util.destroyAsync(${1:cmp})"
       },
       {
-         "trigger": "A-util-instanceOf\t$A.util",
+         "trigger": "A-util-instanceOf\t$A",
          "contents": "A.util.instanceOf(${1:instance},${2:constructor})"
       },
       {
-         "trigger": "A-util-emptyComponentTrash\t$A.util",
+         "trigger": "A-util-emptyComponentTrash\t$A",
          "contents": "A.util.emptyComponentTrash(${1:})"
       },
       {
-         "trigger": "A-util-contains\t$A.util",
+         "trigger": "A-util-contains\t$A",
          "contents": "A.util.contains(${1:container},${2:element})"
       },
       {
-         "trigger": "A-util-squash\t$A.util",
+         "trigger": "A-util-squash\t$A",
          "contents": "A.util.squash(${1:event},${2:preventDefault})"
       },
       {
-         "trigger": "A-util-stripTags\t$A.util",
+         "trigger": "A-util-stripTags\t$A",
          "contents": "A.util.stripTags(${1:input},${2:tags})"
       },
       {
-         "trigger": "A-util-getWindowSize\t$A.util",
+         "trigger": "A-util-getWindowSize\t$A",
          "contents": "A.util.getWindowSize(${1:})"
       },
       {
-         "trigger": "A-util-isComponent\t$A.util",
+         "trigger": "A-util-isComponent\t$A",
          "contents": "A.util.isComponent(${1:obj})"
       },
       {
-         "trigger": "A-util-isExpression\t$A.util",
+         "trigger": "A-util-isExpression\t$A",
          "contents": "A.util.isExpression(${1:obj})"
       },
       {
-         "trigger": "A-util-isValue\t$A.util",
+         "trigger": "A-util-isValue\t$A",
          "contents": "A.util.isValue(${1:obj})"
       },
       {
-         "trigger": "A-util-isAction\t$A.util",
+         "trigger": "A-util-isAction\t$A",
          "contents": "A.util.isAction(${1:obj})"
       },
       {
-         "trigger": "A-util-supportsTouchEvents\t$A.util",
+         "trigger": "A-util-supportsTouchEvents\t$A",
          "contents": "A.util.supportsTouchEvents(${1:})"
       },
       {
-         "trigger": "A-util-estimateSize\t$A.util",
+         "trigger": "A-util-estimateSize\t$A",
          "contents": "A.util.estimateSize(${1:obj})"
       },
       {
-         "trigger": "A-util-toArray\t$A.util",
+         "trigger": "A-util-toArray\t$A",
          "contents": "A.util.toArray(${1:collection})"
       },
       {
-         "trigger": "A-util-setText\t$A.util",
+         "trigger": "A-util-setText\t$A",
          "contents": "A.util.setText(${1:node},${2:text})"
       },
       {
-         "trigger": "A-util-getDebugToolComponent\t$A.util",
+         "trigger": "A-util-getDebugToolComponent\t$A",
          "contents": "A.util.getDebugToolComponent(${1:})"
       },
       {
-         "trigger": "A-util-getDebugToolsAuraInstance\t$A.util",
+         "trigger": "A-util-getDebugToolsAuraInstance\t$A",
          "contents": "A.util.getDebugToolsAuraInstance(${1:})"
       },
       {
-         "trigger": "A-util-setDebugToolWindow\t$A.util",
+         "trigger": "A-util-setDebugToolWindow\t$A",
          "contents": "A.util.setDebugToolWindow(${1:debugWindow})"
       },
       {
-         "trigger": "A-util-getUrl\t$A.util",
+         "trigger": "A-util-getUrl\t$A",
          "contents": "A.util.getUrl(${1:})"
       },
       {
-         "trigger": "A-util-getText\t$A.util",
+         "trigger": "A-util-getText\t$A",
          "contents": "A.util.getText(${1:node})"
       },
       {
-         "trigger": "A-util-errorBasedOnMode\t$A.util",
+         "trigger": "A-util-errorBasedOnMode\t$A",
          "contents": "A.util.errorBasedOnMode(${1:msg})"
       },
       {
-         "trigger": "A-util-includeScript\t$A.util",
+         "trigger": "A-util-includeScript\t$A",
          "contents": "A.util.includeScript(${1:url},${2:callback})"
       }
    ]
