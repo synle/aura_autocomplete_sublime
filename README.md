@@ -10,6 +10,12 @@
    #run this
    npm install 
 
+   #make sure you sync up all the submodule (Salesforce Aura module)
+   #might only be needed on the first run
+   git submodule init
+   #to pull latest and greatest
+   git submodule update --recursive
+
    #to run in a guided mode
    npm start
    
