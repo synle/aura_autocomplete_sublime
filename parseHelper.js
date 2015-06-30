@@ -264,8 +264,6 @@ var self = {
     },
     getComponentBreakup: function(fileName){
         var splits = fileName.split('/');
-
-
         return [splits[splits.length - 3], splits[splits.length - 2]]
     }
 };
