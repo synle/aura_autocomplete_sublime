@@ -79,7 +79,7 @@ var self = {
 
 
             //pure params
-            var pureParams = JSON.parse(JSON.stringify(params));
+            var pureParams = paramsStr;
 
             //output
             // console.log((namespaceStr + functionName).green.bold.underline + ':\t');

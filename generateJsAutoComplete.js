@@ -87,9 +87,11 @@ function processParser(baseDir, outputDir){
 		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
 		if(parsedStuffs.length >0){
 			var functionName = parsedStuffs[0];
-			var functionParams = parsedStuffs[1];
 
-			masterDictionary[functionName] = functionParams;
+			masterDictionary[functionName] = {
+				annotatedValue: parsedStuffs[1],
+				origValue : parsedStuffs[2]
+			};
 		}
 	}
 
@@ -115,9 +117,11 @@ function processParser(baseDir, outputDir){
 		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
 		if(parsedStuffs.length >0){
 			var functionName = parsedStuffs[0];
-			var functionParams = parsedStuffs[1];
 
-			masterDictionary[functionName] = functionParams;
+			masterDictionary[functionName] = {
+				annotatedValue: parsedStuffs[1],
+				origValue : parsedStuffs[2]
+			};
 		}
 	}
 

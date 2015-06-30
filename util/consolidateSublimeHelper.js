@@ -7,18 +7,31 @@ var TRIGGER_SEPARATOR = '-';
 
 //definitions
 var self = {
+    /**
+     {
+        ...
+         'A.util.map':
+            {
+                annotatedValue: [ '${1:array}', '${2:method}', '${3:that}' ],
+                origValue: 'array, method, that' 
+            }
+        ...
+     }
+     */ 
     consolidate_js: function(dictionary) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
         for (var functionName in dictionary) {
-            var functionParams = dictionary[functionName] || "";
+            var annotatedParams = dictionary[functionName].annotatedValue || "";
+            var origParams = dictionary[functionName].origValue || "";
+
             //triggers
             var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
             trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A' : '\t$A';
 
             //contents
-            var contents = functionName + "(" + functionParams + ")";
+            var contents = functionName + "(" + annotatedParams + ")";
             //sublime format
             sublimeFormat.completions.push({
                 trigger: trigger,
@@ -27,6 +40,23 @@ var self = {
         }
         return JSON.stringify(sublimeFormat, null, 3);
     },
+
+    /**
+        [...
+            {
+                component: 'tabset',
+                    evt:
+                     { name: 'onActivate',
+                       type: 'ui:tabsetEvent',
+                       description: 'The event is triggered when the tab is activated.' },
+                evtDef:
+                     { name: 'tabsetEvent',
+                       description: 'Event for ui:tabset component.',
+                       params: [Object],
+                       fileName: '/Users/sle/git/typeahead_aura/aura_upstream/aura-components/src/main/components/ui/tabsetEvent/tabsetEvent.evt' }
+            } 
+        ...]  
+    **/
     consolidate_evt: function(evtDictionary) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js'
@@ -79,15 +109,19 @@ var self = {
     /**
      * sample entries
      * 
-    attributeObj { name: 'tabItemWidth', type: 'Integer', description: '' }
-    attributeComponent { name: 'tabset',
-        description: 'A tab set that displays a list of tabs in an unordered list.',
-        namespace: 'ui',
-        fullComponentTag: 'ui:tabset',
-        implements: 'ui:visible' }
-     *
-     * @param  {[type]} attributeDictionary [description]
-     * @return {[type]}                     [description]
+        [
+        ...
+            {
+            attributeObj { name: 'tabItemWidth', type: 'Integer', description: '' }
+            attributeComponent { name: 'tabset',
+                description: 'A tab set that displays a list of tabs in an unordered list.',
+                namespace: 'ui',
+                fullComponentTag: 'ui:tabset',
+                implements: 'ui:visible' 
+                }
+            }
+        ...
+        ]
      */
     consolidate_attributes: function(attributeDictionary){
         var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
@@ -115,6 +149,17 @@ var self = {
     },
 
 
+    /**
+     [
+        ...
+        { name: 'virtualDataGridKitchenSink',
+            description: '',
+            namespace: 'uiExamples',
+            fullComponentTag: 'uiExamples:virtualDataGridKitchenSink',
+            implements: '' }
+        ...
+     ]
+     */
     consolidate_uitags: function(componentDictionary){
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'meta.tag.xml'
