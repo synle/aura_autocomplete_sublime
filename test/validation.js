@@ -1,7 +1,7 @@
 var assert = require("assert");
 var fs = require('fs');
 var path = require('path');
-describe('Validation', function() {
+describe('Sublime Text 3 - Snippet Validation', function() {
     it('aura.sublime-completions is valid', function() {
         var fileName = 'aura.sublime-completions';
         assertSublimeContent(fileName, _readSnippet(fileName));
