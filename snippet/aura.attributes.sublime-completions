@@ -1,0 +1,3949 @@
+{
+   "scope": "text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml",
+   "completions": [
+      {
+         "trigger": "attr-aura-component-body\t$A",
+         "contents": "component=\"${1:aura:component(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-debug-errorsData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-warningsData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-cmpData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-eventData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-storageData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-consoleData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-storageName\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-debug-accessibilityData\t$A",
+         "contents": "debug=\"${1:aura:debug(String)}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-auraStyleTags\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-auraScriptTags\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-auraInit\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-auraInitBlock\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-extraStyleTags\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-extraScriptTags\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-embeddedTemplate-extraMetaTags\t$A",
+         "contents": "embeddedTemplate=\"${1:aura:embeddedTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-expression-value\t$A",
+         "contents": "expression=\"${1:aura:expression(String)}\""
+      },
+      {
+         "trigger": "attr-aura-html-body\t$A",
+         "contents": "html=\"${1:aura:html(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-html-tag\t$A",
+         "contents": "html=\"${1:aura:html(String)}\""
+      },
+      {
+         "trigger": "attr-aura-html-HTMLAttributes\t$A",
+         "contents": "html=\"${1:aura:html(Map)}\""
+      },
+      {
+         "trigger": "attr-aura-if-isTrue\t$A",
+         "contents": "if=\"${1:aura:if(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-if-body\t$A",
+         "contents": "if=\"${1:aura:if(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-aura-if-else\t$A",
+         "contents": "if=\"${1:aura:if(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-aura-if-template\t$A",
+         "contents": "if=\"${1:aura:if(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-aura-include-name\t$A",
+         "contents": "include=\"${1:aura:include(String)}\""
+      },
+      {
+         "trigger": "attr-aura-include-imports\t$A",
+         "contents": "include=\"${1:aura:include(String)}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-auraStyleTags\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-auraScriptTags\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-auraInit\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-auraInitBlock\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-extraStyleTags\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-extraScriptTags\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-integrationServiceTemplate-extraMetaTags\t$A",
+         "contents": "integrationServiceTemplate=\"${1:aura:integrationServiceTemplate(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-items\t$A",
+         "contents": "iteration=\"${1:aura:iteration(List)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-var\t$A",
+         "contents": "iteration=\"${1:aura:iteration(String)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-indexVar\t$A",
+         "contents": "iteration=\"${1:aura:iteration(String)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-start\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Integer)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-end\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Integer)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-loaded\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-body\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-template\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-aura-iteration-forceServer\t$A",
+         "contents": "iteration=\"${1:aura:iteration(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-label-value\t$A",
+         "contents": "label=\"${1:aura:label(String)}\""
+      },
+      {
+         "trigger": "attr-aura-placeholder-body\t$A",
+         "contents": "placeholder=\"${1:aura:placeholder(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-placeholder-refDescriptor\t$A",
+         "contents": "placeholder=\"${1:aura:placeholder(java://org.auraframework.def.DefDescriptor)}\""
+      },
+      {
+         "trigger": "attr-aura-placeholder-attributes\t$A",
+         "contents": "placeholder=\"${1:aura:placeholder(Object)}\""
+      },
+      {
+         "trigger": "attr-aura-placeholder-loaded\t$A",
+         "contents": "placeholder=\"${1:aura:placeholder(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-placeholder-exclusive\t$A",
+         "contents": "placeholder=\"${1:aura:placeholder(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-renderIf-isTrue\t$A",
+         "contents": "renderIf=\"${1:aura:renderIf(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-renderIf-else\t$A",
+         "contents": "renderIf=\"${1:aura:renderIf(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-title\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraStyleTags\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraScriptTags\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraBaseScriptTags\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraNamespacesScriptTags\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraResetCss\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraInlineStyle\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraInit\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraInitSync\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraPreInitBlock\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-auraInitBlock\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-autoInitialize\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-autoInitializeSync\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-doctype\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-loadingText\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-errorTitle\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-errorMessage\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-defaultBodyClass\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-bodyClass\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-extraStyleTags\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-extraScriptTags\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-extraMetaTags\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-normalizeCss\t$A",
+         "contents": "template=\"${1:aura:template(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-template-forceError\t$A",
+         "contents": "template=\"${1:aura:template(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-template-manifest\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-lastMod\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-afterAuraInit\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-inlineStyle\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-template-appcacheProgressBarStyle\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-text-value\t$A",
+         "contents": "text=\"${1:aura:text(String)}\""
+      },
+      {
+         "trigger": "attr-aura-text-truncate\t$A",
+         "contents": "text=\"${1:aura:text(Integer)}\""
+      },
+      {
+         "trigger": "attr-aura-text-truncateByWord\t$A",
+         "contents": "text=\"${1:aura:text(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-text-ellipsis\t$A",
+         "contents": "text=\"${1:aura:text(Boolean)}\""
+      },
+      {
+         "trigger": "attr-aura-unescapedHtml-body\t$A",
+         "contents": "unescapedHtml=\"${1:aura:unescapedHtml(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-aura-unescapedHtml-value\t$A",
+         "contents": "unescapedHtml=\"${1:aura:unescapedHtml(String)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-fuelGauge-storageName\t$A",
+         "contents": "fuelGauge=\"${1:auraStorage:fuelGauge(String)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-fuelGauge-value\t$A",
+         "contents": "fuelGauge=\"${1:auraStorage:fuelGauge(Decimal)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-fuelGauge-enabled\t$A",
+         "contents": "fuelGauge=\"${1:auraStorage:fuelGauge(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-fuelGauge-implementation\t$A",
+         "contents": "fuelGauge=\"${1:auraStorage:fuelGauge(String)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-name\t$A",
+         "contents": "init=\"${1:auraStorage:init(String)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-persistent\t$A",
+         "contents": "init=\"${1:auraStorage:init(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-secure\t$A",
+         "contents": "init=\"${1:auraStorage:init(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-clearStorageOnInit\t$A",
+         "contents": "init=\"${1:auraStorage:init(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-defaultExpiration\t$A",
+         "contents": "init=\"${1:auraStorage:init(Integer)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-defaultAutoRefreshInterval\t$A",
+         "contents": "init=\"${1:auraStorage:init(Integer)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-maxSize\t$A",
+         "contents": "init=\"${1:auraStorage:init(Integer)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-debugLoggingEnabled\t$A",
+         "contents": "init=\"${1:auraStorage:init(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-requireUseStorageQueryParam\t$A",
+         "contents": "init=\"${1:auraStorage:init(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auraStorage-init-version\t$A",
+         "contents": "init=\"${1:auraStorage:init(String)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-cacheView-name\t$A",
+         "contents": "cacheView=\"${1:auraadmin:cacheView(String)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-cacheView-expanded\t$A",
+         "contents": "cacheView=\"${1:auraadmin:cacheView(boolean)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-cacheView-showDefs\t$A",
+         "contents": "cacheView=\"${1:auraadmin:cacheView(boolean)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-cacheView-data\t$A",
+         "contents": "cacheView=\"${1:auraadmin:cacheView(Map)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-cachingRegistryView-expanded\t$A",
+         "contents": "cachingRegistryView=\"${1:auraadmin:cachingRegistryView(boolean)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-counterBeans-beans\t$A",
+         "contents": "counterBeans=\"${1:auraadmin:counterBeans(List)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-registryView-registry\t$A",
+         "contents": "registryView=\"${1:auraadmin:registryView(Map)}\""
+      },
+      {
+         "trigger": "attr-auraadmin-registryView-buttons\t$A",
+         "contents": "registryView=\"${1:auraadmin:registryView(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-fullyQualifiedName\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-superFullyQualifiedName\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-className\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-superClassName\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-helperProperties\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-renderMethods\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(java://List<org.auraframework.util.json.JsFunction>)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-renderMethodStubs\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(String[])}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-superRenderMethodNames\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(java://List<org.auraframework.impl.ServerServiceImpl.RerenderInfo>)}\""
+      },
+      {
+         "trigger": "attr-auradev-componentClass-rootComponent\t$A",
+         "contents": "componentClass=\"${1:auradev:componentClass(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradev-createBaseComponentDefQuickFix-defType\t$A",
+         "contents": "createBaseComponentDefQuickFix=\"${1:auradev:createBaseComponentDefQuickFix(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-dependencyItem-descriptor\t$A",
+         "contents": "dependencyItem=\"${1:auradev:dependencyItem(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-dependencyItem-type\t$A",
+         "contents": "dependencyItem=\"${1:auradev:dependencyItem(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-dependencyItem-uid\t$A",
+         "contents": "dependencyItem=\"${1:auradev:dependencyItem(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-dependencyItem-error\t$A",
+         "contents": "dependencyItem=\"${1:auradev:dependencyItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradev-lintc-name\t$A",
+         "contents": "lintc=\"${1:auradev:lintc(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-quickFix-quickFix\t$A",
+         "contents": "quickFix=\"${1:auradev:quickFix(java://org.auraframework.throwable.quickfix.AuraQuickFix)}\""
+      },
+      {
+         "trigger": "attr-auradev-quickFixButton-quickFix\t$A",
+         "contents": "quickFixButton=\"${1:auradev:quickFixButton(java://org.auraframework.throwable.quickfix.AuraQuickFix)}\""
+      },
+      {
+         "trigger": "attr-auradev-quickFixException-exception\t$A",
+         "contents": "quickFixException=\"${1:auradev:quickFixException(java://org.auraframework.throwable.quickfix.QuickFixException)}\""
+      },
+      {
+         "trigger": "attr-auradev-quickFixException-cause\t$A",
+         "contents": "quickFixException=\"${1:auradev:quickFixException(String)}\""
+      },
+      {
+         "trigger": "attr-auradev-saveApplication-def\t$A",
+         "contents": "saveApplication=\"${1:auradev:saveApplication(java://org.auraframework.def.ApplicationDef)}\""
+      },
+      {
+         "trigger": "attr-auradev-saveComponent-def\t$A",
+         "contents": "saveComponent=\"${1:auradev:saveComponent(java://org.auraframework.def.ComponentDef)}\""
+      },
+      {
+         "trigger": "attr-auradev-saveComponentJava-def\t$A",
+         "contents": "saveComponentJava=\"${1:auradev:saveComponentJava(java://org.auraframework.def.ComponentDef)}\""
+      },
+      {
+         "trigger": "attr-auradev-saveStyle-def\t$A",
+         "contents": "saveStyle=\"${1:auradev:saveStyle(java://org.auraframework.def.StyleDef)}\""
+      },
+      {
+         "trigger": "attr-auradev-saveTheme-def\t$A",
+         "contents": "saveTheme=\"${1:auradev:saveTheme(java://org.auraframework.def.ComponentDef)}\""
+      },
+      {
+         "trigger": "attr-auradev-showDependencies-component\t$A",
+         "contents": "showDependencies=\"${1:auradev:showDependencies(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-apiParam-symbol\t$A",
+         "contents": "apiParam=\"${1:auradocs:apiParam(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-apiParams-params\t$A",
+         "contents": "apiParams=\"${1:auradocs:apiParams(Object[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-apiSymbol-symbol\t$A",
+         "contents": "apiSymbol=\"${1:auradocs:apiSymbol(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-apiSymbols-title\t$A",
+         "contents": "apiSymbols=\"${1:auradocs:apiSymbols(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-apiSymbols-symbols\t$A",
+         "contents": "apiSymbols=\"${1:auradocs:apiSymbols(Object[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-contentsNode-text\t$A",
+         "contents": "contentsNode=\"${1:auradocs:contentsNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-contentsNode-id\t$A",
+         "contents": "contentsNode=\"${1:auradocs:contentsNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-contentsNode-class\t$A",
+         "contents": "contentsNode=\"${1:auradocs:contentsNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-def-descriptor\t$A",
+         "contents": "def=\"${1:auradocs:def(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-def-defType\t$A",
+         "contents": "def=\"${1:auradocs:def(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defDependencies-descriptor\t$A",
+         "contents": "defDependencies=\"${1:auradocs:defDependencies(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defDependencies-defType\t$A",
+         "contents": "defDependencies=\"${1:auradocs:defDependencies(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defDescription-descriptions\t$A",
+         "contents": "defDescription=\"${1:auradocs:defDescription(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLayout-title\t$A",
+         "contents": "defLayout=\"${1:auradocs:defLayout(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLayout-subtitle\t$A",
+         "contents": "defLayout=\"${1:auradocs:defLayout(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLayout-description\t$A",
+         "contents": "defLayout=\"${1:auradocs:defLayout(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLayout-labels\t$A",
+         "contents": "defLayout=\"${1:auradocs:defLayout(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLayout-status\t$A",
+         "contents": "defLayout=\"${1:auradocs:defLayout(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLink-descriptor\t$A",
+         "contents": "defLink=\"${1:auradocs:defLink(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defLink-defType\t$A",
+         "contents": "defLink=\"${1:auradocs:defLink(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defMemberList-title\t$A",
+         "contents": "defMemberList=\"${1:auradocs:defMemberList(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defMemberList-list\t$A",
+         "contents": "defMemberList=\"${1:auradocs:defMemberList(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defOverview-descriptor\t$A",
+         "contents": "defOverview=\"${1:auradocs:defOverview(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-defOverview-defType\t$A",
+         "contents": "defOverview=\"${1:auradocs:defOverview(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoAutocompleteProvider-dataType\t$A",
+         "contents": "demoAutocompleteProvider=\"${1:auradocs:demoAutocompleteProvider(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoForm-myDate\t$A",
+         "contents": "demoForm=\"${1:auradocs:demoForm(Date)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoLabelDyn-simplevalue1\t$A",
+         "contents": "demoLabelDyn=\"${1:auradocs:demoLabelDyn(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoListTemplate-label\t$A",
+         "contents": "demoListTemplate=\"${1:auradocs:demoListTemplate(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoMenu-status\t$A",
+         "contents": "demoMenu=\"${1:auradocs:demoMenu(String[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoPanel-demo\t$A",
+         "contents": "demoPanel=\"${1:auradocs:demoPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoPanel-example\t$A",
+         "contents": "demoPanel=\"${1:auradocs:demoPanel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-myDate\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(Date)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-sizes\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(List)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-invalidEmail\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-invalidPW\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-invalidURL\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoSubmitForm-filled\t$A",
+         "contents": "demoSubmitForm=\"${1:auradocs:demoSubmitForm(Boolean)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demoVdatagrid-data\t$A",
+         "contents": "demoVdatagrid=\"${1:auradocs:demoVdatagrid(List)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demosNode-text\t$A",
+         "contents": "demosNode=\"${1:auradocs:demosNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demosNode-id\t$A",
+         "contents": "demosNode=\"${1:auradocs:demosNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-demosNode-class\t$A",
+         "contents": "demosNode=\"${1:auradocs:demosNode(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-descriptorLink-defModel\t$A",
+         "contents": "descriptorLink=\"${1:auradocs:descriptorLink(java://org.auraframework.docs.DefModel)}\""
+      },
+      {
+         "trigger": "attr-auradocs-editorPanel-title\t$A",
+         "contents": "editorPanel=\"${1:auradocs:editorPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-editorPanel-descriptor\t$A",
+         "contents": "editorPanel=\"${1:auradocs:editorPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-editorPanel-defType\t$A",
+         "contents": "editorPanel=\"${1:auradocs:editorPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-editorPanel-includeDefName\t$A",
+         "contents": "editorPanel=\"${1:auradocs:editorPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-editorPanel-region\t$A",
+         "contents": "editorPanel=\"${1:auradocs:editorPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-example-label\t$A",
+         "contents": "example=\"${1:auradocs:example(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-example-description\t$A",
+         "contents": "example=\"${1:auradocs:example(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-example-descriptor\t$A",
+         "contents": "example=\"${1:auradocs:example(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-examplesc-name\t$A",
+         "contents": "examplesc=\"${1:auradocs:examplesc(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-helloAttributes-whom\t$A",
+         "contents": "helloAttributes=\"${1:auradocs:helloAttributes(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-helpPanel-topic\t$A",
+         "contents": "helpPanel=\"${1:auradocs:helpPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-helpPanel-topicPanel\t$A",
+         "contents": "helpPanel=\"${1:auradocs:helpPanel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-nav-referenceOnly\t$A",
+         "contents": "nav=\"${1:auradocs:nav(boolean)}\""
+      },
+      {
+         "trigger": "attr-auradocs-navLink-location\t$A",
+         "contents": "navLink=\"${1:auradocs:navLink(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-openTopicTree-layoutToken\t$A",
+         "contents": "openTopicTree=\"${1:auradocs:openTopicTree(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-openTopicTree-catchAllHref\t$A",
+         "contents": "openTopicTree=\"${1:auradocs:openTopicTree(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-openTopicTree-tree\t$A",
+         "contents": "openTopicTree=\"${1:auradocs:openTopicTree(Aura.Component)}\""
+      },
+      {
+         "trigger": "attr-auradocs-outputViewerc-def\t$A",
+         "contents": "outputViewerc=\"${1:auradocs:outputViewerc(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-referenceTopicLink-topic\t$A",
+         "contents": "referenceTopicLink=\"${1:auradocs:referenceTopicLink(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-referenceTreeSection-title\t$A",
+         "contents": "referenceTreeSection=\"${1:auradocs:referenceTreeSection(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-referenceTreeSection-namespaces\t$A",
+         "contents": "referenceTreeSection=\"${1:auradocs:referenceTreeSection(List)}\""
+      },
+      {
+         "trigger": "attr-auradocs-searchFilterTree-tree\t$A",
+         "contents": "searchFilterTree=\"${1:auradocs:searchFilterTree(Aura.Component)}\""
+      },
+      {
+         "trigger": "attr-auradocs-sidebar-toolbar\t$A",
+         "contents": "sidebar=\"${1:auradocs:sidebar(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-_dropzoneContext1\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-_dropzoneContext2\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-_draggableContext1\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-_draggableContext2\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(Object)}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-list1\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(String[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-simpledragdrop-list2\t$A",
+         "contents": "simpledragdrop=\"${1:auradocs:simpledragdrop(String[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-topicExample-descriptor\t$A",
+         "contents": "topicExample=\"${1:auradocs:topicExample(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-topicExample-defType\t$A",
+         "contents": "topicExample=\"${1:auradocs:topicExample(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-topicLink-topic\t$A",
+         "contents": "topicLink=\"${1:auradocs:topicLink(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-topicPanel-topic\t$A",
+         "contents": "topicPanel=\"${1:auradocs:topicPanel(String)}\""
+      },
+      {
+         "trigger": "attr-auradocs-topicPanel-example\t$A",
+         "contents": "topicPanel=\"${1:auradocs:topicPanel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-auradocs-viewer-descriptor\t$A",
+         "contents": "viewer=\"${1:auradocs:viewer(String)}\""
+      },
+      {
+         "trigger": "attr-aurajstest-jstestCase-case\t$A",
+         "contents": "jstestCase=\"${1:aurajstest:jstestCase(java://org.auraframework.def.TestCaseDef)}\""
+      },
+      {
+         "trigger": "attr-aurajstest-jstestCase-suite\t$A",
+         "contents": "jstestCase=\"${1:aurajstest:jstestCase(java://org.auraframework.def.TestSuiteDef)}\""
+      },
+      {
+         "trigger": "attr-aurajstest-jstestCase-url\t$A",
+         "contents": "jstestCase=\"${1:aurajstest:jstestCase(String)}\""
+      },
+      {
+         "trigger": "attr-aurajstest-jstestCase-status\t$A",
+         "contents": "jstestCase=\"${1:aurajstest:jstestCase(String)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-items\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(List)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-itemShape\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-mode\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-state\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-sortable\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-createable\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-selectAll\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-selectedItems\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(List)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-sortBy\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-dataProvider\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-dataWriter\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-columns\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-summaryRow\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractDataGrid-actionDelegate\t$A",
+         "contents": "abstractDataGrid=\"${1:ui:abstractDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-itemTemplate\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-items\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-itemVar\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(String)}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-dataProvider\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-emptyListContent\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-loadingIndicator\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-header\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-abstractList-footer\t$A",
+         "contents": "abstractList=\"${1:ui:abstractList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-action-name\t$A",
+         "contents": "action=\"${1:ui:action(String)}\""
+      },
+      {
+         "trigger": "attr-ui-action-label\t$A",
+         "contents": "action=\"${1:ui:action(String)}\""
+      },
+      {
+         "trigger": "attr-ui-action-labelClass\t$A",
+         "contents": "action=\"${1:ui:action(String)}\""
+      },
+      {
+         "trigger": "attr-ui-action-index\t$A",
+         "contents": "action=\"${1:ui:action(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-action-value\t$A",
+         "contents": "action=\"${1:ui:action(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-actionButton-disabled\t$A",
+         "contents": "actionButton=\"${1:ui:actionButton(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-actionCheckbox-disabled\t$A",
+         "contents": "actionCheckbox=\"${1:ui:actionCheckbox(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-actionMenuItem-id\t$A",
+         "contents": "actionMenuItem=\"${1:ui:actionMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-actionMenuItem-hideMenuAfterSelected\t$A",
+         "contents": "actionMenuItem=\"${1:ui:actionMenuItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-asyncComponentManager-maxConcurrency\t$A",
+         "contents": "asyncComponentManager=\"${1:ui:asyncComponentManager(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-asyncImage-actualImageSrc\t$A",
+         "contents": "asyncImage=\"${1:ui:asyncImage(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-dataProvider\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-emptyListContent\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-loadingIndicator\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-inputClass\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-inputType\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-listOption\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-optionVar\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-placeholder\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-propertyToMatch\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-theme\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-matchFunc\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-autocompleteButton\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-header\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocomplete-footer\t$A",
+         "contents": "autocomplete=\"${1:ui:autocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteList-ignoredElements\t$A",
+         "contents": "autocompleteList=\"${1:ui:autocompleteList(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteList-keyword\t$A",
+         "contents": "autocompleteList=\"${1:ui:autocompleteList(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteList-propertyToMatch\t$A",
+         "contents": "autocompleteList=\"${1:ui:autocompleteList(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteList-theme\t$A",
+         "contents": "autocompleteList=\"${1:ui:autocompleteList(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteList-matchFunc\t$A",
+         "contents": "autocompleteList=\"${1:ui:autocompleteList(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteOption-displayText\t$A",
+         "contents": "autocompleteOption=\"${1:ui:autocompleteOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteOption-label\t$A",
+         "contents": "autocompleteOption=\"${1:ui:autocompleteOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteOption-theme\t$A",
+         "contents": "autocompleteOption=\"${1:ui:autocompleteOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-autocompleteOption-domId\t$A",
+         "contents": "autocompleteOption=\"${1:ui:autocompleteOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-block-overflow\t$A",
+         "contents": "block=\"${1:ui:block(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-block-left\t$A",
+         "contents": "block=\"${1:ui:block(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-block-right\t$A",
+         "contents": "block=\"${1:ui:block(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-block-tag\t$A",
+         "contents": "block=\"${1:ui:block(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-buttonTitle\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-buttonType\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-class\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-label\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-labelClass\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-labelDisplay\t$A",
+         "contents": "button=\"${1:ui:button(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-button-iconImgSrc\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-iconClass\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-disabled\t$A",
+         "contents": "button=\"${1:ui:button(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-button-accesskey\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-labelDir\t$A",
+         "contents": "button=\"${1:ui:button(String)}\""
+      },
+      {
+         "trigger": "attr-ui-button-stopPropagation\t$A",
+         "contents": "button=\"${1:ui:button(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-button-tabIndex\t$A",
+         "contents": "button=\"${1:ui:button(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-height\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-width\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-pageModels\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-pageComponents\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-prefetchedTab\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-isDotIndicator\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-initialPage\t$A",
+         "contents": "carousel=\"${1:ui:carousel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-prefetchFirstTab\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-lazyLoadTabs\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-indicatorStateClass\t$A",
+         "contents": "carousel=\"${1:ui:carousel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-pageScrollerPlugins\t$A",
+         "contents": "carousel=\"${1:ui:carousel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-justifyContent\t$A",
+         "contents": "carousel=\"${1:ui:carousel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-prefetchedTabIndex\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-suppressIndicators\t$A",
+         "contents": "carousel=\"${1:ui:carousel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-isScrollable\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-bindEventsToScroller\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-pageIndicatorComponent\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carousel-carouselPageComponent\t$A",
+         "contents": "carousel=\"${1:ui:carousel(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-title\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-width\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-height\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-useTransition\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-pageIndicatorPosition\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-continuousFlow\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-defaultPage\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-pageModels\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-pageComponents\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-navigationTabs\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-onPageChange\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-spinner\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-priv_currentPage\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-priv_carouselStyle\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-priv_scrollerWidth\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-priv_snap\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselDeprecated-priv_scrollContentClass\t$A",
+         "contents": "carouselDeprecated=\"${1:ui:carouselDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselIndicator-pageModels\t$A",
+         "contents": "carouselIndicator=\"${1:ui:carouselIndicator(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselIndicator-pageComponents\t$A",
+         "contents": "carouselIndicator=\"${1:ui:carouselIndicator(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselIndicator-justifyContent\t$A",
+         "contents": "carouselIndicator=\"${1:ui:carouselIndicator(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselIndicator-isDotIndicator\t$A",
+         "contents": "carouselIndicator=\"${1:ui:carouselIndicator(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselIndicator-_calculatedStyles\t$A",
+         "contents": "carouselIndicator=\"${1:ui:carouselIndicator(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-content\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-pageIndex\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-scrollerPlugins\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-isContentLoaded\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-isScrollable\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPage-placeholder\t$A",
+         "contents": "carouselPage=\"${1:ui:carouselPage(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-title\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-isCacheable\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-isDefault\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-pageModel\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-pageIndex\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-isSelected\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-parent\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_width\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_height\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_pageStyle\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_pageId\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_visible\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_continuousFlow\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-priv_snap\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageDeprecated-showPage\t$A",
+         "contents": "carouselPageDeprecated=\"${1:ui:carouselPageDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicator-pageComponents\t$A",
+         "contents": "carouselPageIndicator=\"${1:ui:carouselPageIndicator(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicator-currentPage\t$A",
+         "contents": "carouselPageIndicator=\"${1:ui:carouselPageIndicator(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicator-navigationTabs\t$A",
+         "contents": "carouselPageIndicator=\"${1:ui:carouselPageIndicator(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-pageIndex\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-title\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-label\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-navigationTab\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_id\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_ariaSelected\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_ariaControlId\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_tabIndex\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_pageComponent\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-carouselPageIndicatorItem-priv_selectedClass\t$A",
+         "contents": "carouselPageIndicatorItem=\"${1:ui:carouselPageIndicatorItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGrid-summary\t$A",
+         "contents": "dataGrid=\"${1:ui:dataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-name\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-label\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-class\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-scope\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-header\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-outputComponent\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridActionColumn-body\t$A",
+         "contents": "dataGridActionColumn=\"${1:ui:dataGridActionColumn(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-name\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-label\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-type\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-sortable\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-disabled\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-required\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-direction\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-initialDirectionOnSort\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-ascLabel\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-descLabel\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-order\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-scope\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-onsortchange\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridColumn-outputComponent\t$A",
+         "contents": "dataGridColumn=\"${1:ui:dataGridColumn(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSelectionColumn-selectAll\t$A",
+         "contents": "dataGridSelectionColumn=\"${1:ui:dataGridSelectionColumn(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSelectionColumn-outputComponent\t$A",
+         "contents": "dataGridSelectionColumn=\"${1:ui:dataGridSelectionColumn(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-column\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-type\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-items\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(List)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-value\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-outputComponent\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataGridSummaryCell-priv_outputComponent\t$A",
+         "contents": "dataGridSummaryCell=\"${1:ui:dataGridSummaryCell(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataTable-class\t$A",
+         "contents": "dataTable=\"${1:ui:dataTable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataTable-items\t$A",
+         "contents": "dataTable=\"${1:ui:dataTable(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataTable-noDataText\t$A",
+         "contents": "dataTable=\"${1:ui:dataTable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataTable-headerValues\t$A",
+         "contents": "dataTable=\"${1:ui:dataTable(String[])}\""
+      },
+      {
+         "trigger": "attr-ui-dataTable-striped\t$A",
+         "contents": "dataTable=\"${1:ui:dataTable(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dataTableColumn-class\t$A",
+         "contents": "dataTableColumn=\"${1:ui:dataTableColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataTableColumn-scope\t$A",
+         "contents": "dataTableColumn=\"${1:ui:dataTableColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataTableColumn-headerValue\t$A",
+         "contents": "dataTableColumn=\"${1:ui:dataTableColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dataWriter-items\t$A",
+         "contents": "dataWriter=\"${1:ui:dataWriter(List)}\""
+      },
+      {
+         "trigger": "attr-ui-dataWriter-defaultFields\t$A",
+         "contents": "dataWriter=\"${1:ui:dataWriter(Map)}\""
+      },
+      {
+         "trigger": "attr-ui-dataWriter-sync\t$A",
+         "contents": "dataWriter=\"${1:ui:dataWriter(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-hasTime\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-hours\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-is24HourFormat\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-maxYear\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-minYear\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-minutes\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-value\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-visible\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-_yearListInitialized\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-managed\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-referenceElement\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-showToday\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-hideOnSelect\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-setFocus\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePicker-titleHeadingLevel\t$A",
+         "contents": "datePicker=\"${1:ui:datePicker(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-class\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-date\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-hasTime\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-month\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-year\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-selectedDate\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Date)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-setFocus\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-rangeStart\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-rangeEnd\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-rangeClass\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-_setFocus\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-datePickerGrid-_namesOfWeekdays\t$A",
+         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(List)}\""
+      },
+      {
+         "trigger": "attr-ui-dayInMonthCell-ariaSelected\t$A",
+         "contents": "dayInMonthCell=\"${1:ui:dayInMonthCell(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dayInMonthCell-tabIndex\t$A",
+         "contents": "dayInMonthCell=\"${1:ui:dayInMonthCell(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-dayInMonthCell-value\t$A",
+         "contents": "dayInMonthCell=\"${1:ui:dayInMonthCell(Date)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-ariaRole\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-autoFocus\t$A",
+         "contents": "dialog=\"${1:ui:dialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-buttons\t$A",
+         "contents": "dialog=\"${1:ui:dialog(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-clickOutToClose\t$A",
+         "contents": "dialog=\"${1:ui:dialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-description\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-isModal\t$A",
+         "contents": "dialog=\"${1:ui:dialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-title\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-width\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-closeClass\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-closeLabel\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-closeTitle\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-dialogClass\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-maskClass\t$A",
+         "contents": "dialog=\"${1:ui:dialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialog-_handlerConfig\t$A",
+         "contents": "dialog=\"${1:ui:dialog(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-defaultButtons\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-confirmClass\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-confirmLabel\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-confirmTitle\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-cancelClass\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-cancelLabel\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-cancelTitle\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogButtons-_parentDialog\t$A",
+         "contents": "dialogButtons=\"${1:ui:dialogButtons(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-dialogManager-_activeDialog\t$A",
+         "contents": "dialogManager=\"${1:ui:dialogManager(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-dragAndDropAccessibility-draggables\t$A",
+         "contents": "dragAndDropAccessibility=\"${1:ui:dragAndDropAccessibility(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-dragAndDropAccessibilityMenu-class\t$A",
+         "contents": "dragAndDropAccessibilityMenu=\"${1:ui:dragAndDropAccessibilityMenu(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dragAndDropAccessibilityMenu-draggables\t$A",
+         "contents": "dragAndDropAccessibilityMenu=\"${1:ui:dragAndDropAccessibilityMenu(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-dragAndDropAccessibilityMenu-dropzoneMenu\t$A",
+         "contents": "dragAndDropAccessibilityMenu=\"${1:ui:dragAndDropAccessibilityMenu(List)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-type\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-dataTransfer\t$A",
+         "contents": "draggable=\"${1:ui:draggable(Map)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-class\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-dragClass\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-dragAccessibilityClass\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-dragImageClass\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-disable\t$A",
+         "contents": "draggable=\"${1:ui:draggable(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-ariaGrabbed\t$A",
+         "contents": "draggable=\"${1:ui:draggable(boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-draggable-accessibilityComponent\t$A",
+         "contents": "draggable=\"${1:ui:draggable(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-types\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String[])}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-dragOverInterval\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-class\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-dragOverClass\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-dragOverAccessibilityClass\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-label\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-dropzone-ariaDropEffect\t$A",
+         "contents": "dropzone=\"${1:ui:dropzone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-title\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-imageType\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-src\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-class\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-href\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-linkClass\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-alt\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-image-target\t$A",
+         "contents": "image=\"${1:ui:image(String)}\""
+      },
+      {
+         "trigger": "attr-ui-infiniteList-enableRowSwipe\t$A",
+         "contents": "infiniteList=\"${1:ui:infiniteList(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-infiniteListRow-class\t$A",
+         "contents": "infiniteListRow=\"${1:ui:infiniteListRow(String)}\""
+      },
+      {
+         "trigger": "attr-ui-infiniteListRow-swipeBody\t$A",
+         "contents": "infiniteListRow=\"${1:ui:infiniteListRow(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-input-disableDoubleClicks\t$A",
+         "contents": "input=\"${1:ui:input(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-input-showErrors\t$A",
+         "contents": "input=\"${1:ui:input(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-input-errors\t$A",
+         "contents": "input=\"${1:ui:input(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-input-errorComponent\t$A",
+         "contents": "input=\"${1:ui:input(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-input-type\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-required\t$A",
+         "contents": "input=\"${1:ui:input(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-input-updateOn\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-value\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-label\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-labelClass\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-labelPosition\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-labelTitle\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-requiredIndicatorClass\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-disabled\t$A",
+         "contents": "input=\"${1:ui:input(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-input-domId\t$A",
+         "contents": "input=\"${1:ui:input(String)}\""
+      },
+      {
+         "trigger": "attr-ui-input-requiredIndicator\t$A",
+         "contents": "input=\"${1:ui:input(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-inputCheckbox-updateOn\t$A",
+         "contents": "inputCheckbox=\"${1:ui:inputCheckbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDate-placeholder\t$A",
+         "contents": "inputDate=\"${1:ui:inputDate(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDate-loadDatePicker\t$A",
+         "contents": "inputDate=\"${1:ui:inputDate(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateRange-startInputPlaceholder\t$A",
+         "contents": "inputDateRange=\"${1:ui:inputDateRange(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateRange-endInputPlaceholder\t$A",
+         "contents": "inputDateRange=\"${1:ui:inputDateRange(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateRange-startDate\t$A",
+         "contents": "inputDateRange=\"${1:ui:inputDateRange(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateRange-endDate\t$A",
+         "contents": "inputDateRange=\"${1:ui:inputDateRange(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateTime-value\t$A",
+         "contents": "inputDateTime=\"${1:ui:inputDateTime(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateTime-placeholder\t$A",
+         "contents": "inputDateTime=\"${1:ui:inputDateTime(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDateTime-timezone\t$A",
+         "contents": "inputDateTime=\"${1:ui:inputDateTime(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputDefaultError-value\t$A",
+         "contents": "inputDefaultError=\"${1:ui:inputDefaultError(String[])}\""
+      },
+      {
+         "trigger": "attr-ui-inputDefaultError-errors\t$A",
+         "contents": "inputDefaultError=\"${1:ui:inputDefaultError(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-inputDefaultError-domId\t$A",
+         "contents": "inputDefaultError=\"${1:ui:inputDefaultError(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputOption-type\t$A",
+         "contents": "inputOption=\"${1:ui:inputOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRadio-disabled\t$A",
+         "contents": "inputRadio=\"${1:ui:inputRadio(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRange-min\t$A",
+         "contents": "inputRange=\"${1:ui:inputRange(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRange-max\t$A",
+         "contents": "inputRange=\"${1:ui:inputRange(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRange-step\t$A",
+         "contents": "inputRange=\"${1:ui:inputRange(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRange-value\t$A",
+         "contents": "inputRange=\"${1:ui:inputRange(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-toolbar\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-customToolbarConfig\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-toolbarLocation\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-width\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-height\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputRichText-isRichText\t$A",
+         "contents": "inputRichText=\"${1:ui:inputRichText(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSearch-updateOn\t$A",
+         "contents": "inputSearch=\"${1:ui:inputSearch(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSearch-type\t$A",
+         "contents": "inputSearch=\"${1:ui:inputSearch(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSearch-placeholder\t$A",
+         "contents": "inputSearch=\"${1:ui:inputSearch(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSearch-showClear\t$A",
+         "contents": "inputSearch=\"${1:ui:inputSearch(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelect-options\t$A",
+         "contents": "inputSelect=\"${1:ui:inputSelect(List)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelect-name\t$A",
+         "contents": "inputSelect=\"${1:ui:inputSelect(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelect-multiple\t$A",
+         "contents": "inputSelect=\"${1:ui:inputSelect(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelect-size\t$A",
+         "contents": "inputSelect=\"${1:ui:inputSelect(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelectOptionGroup-class\t$A",
+         "contents": "inputSelectOptionGroup=\"${1:ui:inputSelectOptionGroup(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputSelectOptionGroup-label\t$A",
+         "contents": "inputSelectOptionGroup=\"${1:ui:inputSelectOptionGroup(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-rows\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-cols\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-readonly\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-placeholder\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-resizable\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextArea-maxlength\t$A",
+         "contents": "inputTextArea=\"${1:ui:inputTextArea(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextAreaForAutocomplete-autocompleteButton\t$A",
+         "contents": "inputTextAreaForAutocomplete=\"${1:ui:inputTextAreaForAutocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextAreaForAutocomplete-ariaExpanded\t$A",
+         "contents": "inputTextAreaForAutocomplete=\"${1:ui:inputTextAreaForAutocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextAreaForAutocomplete-ariaActiveDescendant\t$A",
+         "contents": "inputTextAreaForAutocomplete=\"${1:ui:inputTextAreaForAutocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextForAutocomplete-autocompleteButton\t$A",
+         "contents": "inputTextForAutocomplete=\"${1:ui:inputTextForAutocomplete(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextForAutocomplete-ariaExpanded\t$A",
+         "contents": "inputTextForAutocomplete=\"${1:ui:inputTextForAutocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-inputTextForAutocomplete-ariaActiveDescendant\t$A",
+         "contents": "inputTextForAutocomplete=\"${1:ui:inputTextForAutocomplete(String)}\""
+      },
+      {
+         "trigger": "attr-ui-interactive-disabled\t$A",
+         "contents": "interactive=\"${1:ui:interactive(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-interactive-disableDoubleClicks\t$A",
+         "contents": "interactive=\"${1:ui:interactive(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-label-label\t$A",
+         "contents": "label=\"${1:ui:label(String)}\""
+      },
+      {
+         "trigger": "attr-ui-label-title\t$A",
+         "contents": "label=\"${1:ui:label(String)}\""
+      },
+      {
+         "trigger": "attr-ui-label-class\t$A",
+         "contents": "label=\"${1:ui:label(String)}\""
+      },
+      {
+         "trigger": "attr-ui-label-labelDisplay\t$A",
+         "contents": "label=\"${1:ui:label(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-label-for\t$A",
+         "contents": "label=\"${1:ui:label(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-label-requiredIndicator\t$A",
+         "contents": "label=\"${1:ui:label(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-dataProvider\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-class\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-title\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-cancelLabel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-applyLabel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-visible\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-items\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-defaultSelectedItems\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-triggerLabel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-ascendingLabel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-descendingLabel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-trigger\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-modal\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-rowVar\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-rowDef\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-onApply\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-onOpen\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-listSorter-onCancel\t$A",
+         "contents": "listSorter=\"${1:ui:listSorter(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-id\t$A",
+         "contents": "listView=\"${1:ui:listView(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-alternateRowClass\t$A",
+         "contents": "listView=\"${1:ui:listView(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-blockSize\t$A",
+         "contents": "listView=\"${1:ui:listView(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-columns\t$A",
+         "contents": "listView=\"${1:ui:listView(List)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-dataColumns\t$A",
+         "contents": "listView=\"${1:ui:listView(List)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-dataTemplates\t$A",
+         "contents": "listView=\"${1:ui:listView(List)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-emptyMessage\t$A",
+         "contents": "listView=\"${1:ui:listView(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-footer\t$A",
+         "contents": "listView=\"${1:ui:listView(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-listView-items\t$A",
+         "contents": "listView=\"${1:ui:listView(List)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-rowClass\t$A",
+         "contents": "listView=\"${1:ui:listView(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listView-rowTooltip\t$A",
+         "contents": "listView=\"${1:ui:listView(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumn-column\t$A",
+         "contents": "listViewColumn=\"${1:ui:listViewColumn(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumn-index\t$A",
+         "contents": "listViewColumn=\"${1:ui:listViewColumn(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumn-item\t$A",
+         "contents": "listViewColumn=\"${1:ui:listViewColumn(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumn-scope\t$A",
+         "contents": "listViewColumn=\"${1:ui:listViewColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumn-type\t$A",
+         "contents": "listViewColumn=\"${1:ui:listViewColumn(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnCheckbox-label\t$A",
+         "contents": "listViewColumnCheckbox=\"${1:ui:listViewColumnCheckbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnCheckbox-labelClass\t$A",
+         "contents": "listViewColumnCheckbox=\"${1:ui:listViewColumnCheckbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnCheckbox-checked\t$A",
+         "contents": "listViewColumnCheckbox=\"${1:ui:listViewColumnCheckbox(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnEmail-text\t$A",
+         "contents": "listViewColumnEmail=\"${1:ui:listViewColumnEmail(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnEmail-url\t$A",
+         "contents": "listViewColumnEmail=\"${1:ui:listViewColumnEmail(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnHtml-markup\t$A",
+         "contents": "listViewColumnHtml=\"${1:ui:listViewColumnHtml(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnLink-target\t$A",
+         "contents": "listViewColumnLink=\"${1:ui:listViewColumnLink(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnLink-text\t$A",
+         "contents": "listViewColumnLink=\"${1:ui:listViewColumnLink(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewColumnLink-url\t$A",
+         "contents": "listViewColumnLink=\"${1:ui:listViewColumnLink(String)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewRow-index\t$A",
+         "contents": "listViewRow=\"${1:ui:listViewRow(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-listViewRow-item\t$A",
+         "contents": "listViewRow=\"${1:ui:listViewRow(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-manifest-lastMod\t$A",
+         "contents": "manifest=\"${1:ui:manifest(String)}\""
+      },
+      {
+         "trigger": "attr-ui-manifest-resourceURLs\t$A",
+         "contents": "manifest=\"${1:ui:manifest(String)}\""
+      },
+      {
+         "trigger": "attr-ui-menuItem-selected\t$A",
+         "contents": "menuItem=\"${1:ui:menuItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-menuItem-type\t$A",
+         "contents": "menuItem=\"${1:ui:menuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-menuItem-hideMenuAfterSelected\t$A",
+         "contents": "menuItem=\"${1:ui:menuItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-menuItem-label\t$A",
+         "contents": "menuItem=\"${1:ui:menuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-menuList-menuItems\t$A",
+         "contents": "menuList=\"${1:ui:menuList(List)}\""
+      },
+      {
+         "trigger": "attr-ui-menuList-visible\t$A",
+         "contents": "menuList=\"${1:ui:menuList(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-menuList-focusItemIndex\t$A",
+         "contents": "menuList=\"${1:ui:menuList(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-menuList-focusTrigger\t$A",
+         "contents": "menuList=\"${1:ui:menuList(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-menuList-childMenuItems\t$A",
+         "contents": "menuList=\"${1:ui:menuList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-menuTriggerLink-label\t$A",
+         "contents": "menuTriggerLink=\"${1:ui:menuTriggerLink(String)}\""
+      },
+      {
+         "trigger": "attr-ui-message-title\t$A",
+         "contents": "message=\"${1:ui:message(String)}\""
+      },
+      {
+         "trigger": "attr-ui-message-severity\t$A",
+         "contents": "message=\"${1:ui:message(String)}\""
+      },
+      {
+         "trigger": "attr-ui-message-closable\t$A",
+         "contents": "message=\"${1:ui:message(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-title\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-titleDisplay\t$A",
+         "contents": "modal=\"${1:ui:modal(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-class\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-startOfDialogLabel\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-showCloseButton\t$A",
+         "contents": "modal=\"${1:ui:modal(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-closeDialogLabel\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-useTransition\t$A",
+         "contents": "modal=\"${1:ui:modal(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-animation\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-closeAnimation\t$A",
+         "contents": "modal=\"${1:ui:modal(String)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-autoFocus\t$A",
+         "contents": "modal=\"${1:ui:modal(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-modal-closeButton\t$A",
+         "contents": "modal=\"${1:ui:modal(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-output-value\t$A",
+         "contents": "output=\"${1:ui:output(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCheckbox-value\t$A",
+         "contents": "outputCheckbox=\"${1:ui:outputCheckbox(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCheckbox-altChecked\t$A",
+         "contents": "outputCheckbox=\"${1:ui:outputCheckbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCheckbox-altUnchecked\t$A",
+         "contents": "outputCheckbox=\"${1:ui:outputCheckbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCurrency-value\t$A",
+         "contents": "outputCurrency=\"${1:ui:outputCurrency(Decimal)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCurrency-format\t$A",
+         "contents": "outputCurrency=\"${1:ui:outputCurrency(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCurrency-currencyCode\t$A",
+         "contents": "outputCurrency=\"${1:ui:outputCurrency(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputCurrency-currencySymbol\t$A",
+         "contents": "outputCurrency=\"${1:ui:outputCurrency(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputDate-value\t$A",
+         "contents": "outputDate=\"${1:ui:outputDate(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputDateTime-timezone\t$A",
+         "contents": "outputDateTime=\"${1:ui:outputDateTime(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputDateTime-value\t$A",
+         "contents": "outputDateTime=\"${1:ui:outputDateTime(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputEmail-value\t$A",
+         "contents": "outputEmail=\"${1:ui:outputEmail(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputMultiSelect-value\t$A",
+         "contents": "outputMultiSelect=\"${1:ui:outputMultiSelect(String[])}\""
+      },
+      {
+         "trigger": "attr-ui-outputMultiSelect-delimiter\t$A",
+         "contents": "outputMultiSelect=\"${1:ui:outputMultiSelect(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputNumber-value\t$A",
+         "contents": "outputNumber=\"${1:ui:outputNumber(Decimal)}\""
+      },
+      {
+         "trigger": "attr-ui-outputNumber-format\t$A",
+         "contents": "outputNumber=\"${1:ui:outputNumber(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputPercent-value\t$A",
+         "contents": "outputPercent=\"${1:ui:outputPercent(Decimal)}\""
+      },
+      {
+         "trigger": "attr-ui-outputPercent-format\t$A",
+         "contents": "outputPercent=\"${1:ui:outputPercent(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputPercent-valueScale\t$A",
+         "contents": "outputPercent=\"${1:ui:outputPercent(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-outputPhone-value\t$A",
+         "contents": "outputPhone=\"${1:ui:outputPhone(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputRichText-value\t$A",
+         "contents": "outputRichText=\"${1:ui:outputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputRichText-supportedTags\t$A",
+         "contents": "outputRichText=\"${1:ui:outputRichText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputText-value\t$A",
+         "contents": "outputText=\"${1:ui:outputText(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputTextArea-value\t$A",
+         "contents": "outputTextArea=\"${1:ui:outputTextArea(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-iconClass\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-title\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-value\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-target\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-alt\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-label\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(String)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-disabled\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-stopPropagation\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-fixURL\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-outputURL-stopNavigation\t$A",
+         "contents": "outputURL=\"${1:ui:outputURL(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerJumpToPage-Labels_Page\t$A",
+         "contents": "pagerJumpToPage=\"${1:ui:pagerJumpToPage(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerJumpToPage-Labels_Of\t$A",
+         "contents": "pagerJumpToPage=\"${1:ui:pagerJumpToPage(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerNextPrevious-Labels_First\t$A",
+         "contents": "pagerNextPrevious=\"${1:ui:pagerNextPrevious(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerNextPrevious-Labels_Last\t$A",
+         "contents": "pagerNextPrevious=\"${1:ui:pagerNextPrevious(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerNextPrevious-Labels_Next\t$A",
+         "contents": "pagerNextPrevious=\"${1:ui:pagerNextPrevious(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerNextPrevious-Labels_Previous\t$A",
+         "contents": "pagerNextPrevious=\"${1:ui:pagerNextPrevious(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerPageInfo-Labels_Of\t$A",
+         "contents": "pagerPageInfo=\"${1:ui:pagerPageInfo(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerPageInfo-Labels_To\t$A",
+         "contents": "pagerPageInfo=\"${1:ui:pagerPageInfo(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerPageSize-Labels_All\t$A",
+         "contents": "pagerPageSize=\"${1:ui:pagerPageSize(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pagerPageSize-Labels_Records\t$A",
+         "contents": "pagerPageSize=\"${1:ui:pagerPageSize(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-title\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-class\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-titleDisplay\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-startOfDialogLabel\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeOnClickOut\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeAction\t$A",
+         "contents": "panel=\"${1:ui:panel(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-showCloseButton\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeDialogLabel\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-useTransition\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-animation\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeAnimation\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-autoFocus\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-referenceElementSelector\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-referenceElement\t$A",
+         "contents": "panel=\"${1:ui:panel(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-direction\t$A",
+         "contents": "panel=\"${1:ui:panel(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-showPointer\t$A",
+         "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeButton\t$A",
+         "contents": "panel=\"${1:ui:panel(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-closeOnClickOut\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-showCloseButton\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-closeAction\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-class\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-animation\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-title\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-startOfDialogLabel\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-closeDialogLabel\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-detail\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-icon\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-isVisible\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-autoFocus\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-titleDisplay\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-isTransient\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-isModal\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-referenceElement\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-panelDialog-callbacks\t$A",
+         "contents": "panelDialog=\"${1:ui:panelDialog(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-panelManager-class\t$A",
+         "contents": "panelManager=\"${1:ui:panelManager(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelManager-cancelButtonLabel\t$A",
+         "contents": "panelManager=\"${1:ui:panelManager(String)}\""
+      },
+      {
+         "trigger": "attr-ui-panelManager2-registeredPanels\t$A",
+         "contents": "panelManager2=\"${1:ui:panelManager2(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-pill-label\t$A",
+         "contents": "pill=\"${1:ui:pill(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pill-id\t$A",
+         "contents": "pill=\"${1:ui:pill(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pill-showDelete\t$A",
+         "contents": "pill=\"${1:ui:pill(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-pill-iconUrl\t$A",
+         "contents": "pill=\"${1:ui:pill(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pill-accessibleDeleteLabel\t$A",
+         "contents": "pill=\"${1:ui:pill(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pill-maxCharacters\t$A",
+         "contents": "pill=\"${1:ui:pill(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-items\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(List)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-maxAllowed\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-maxCharactersInPill\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-maxLines\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-focusOnInput\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-allowRemove\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-pillInput\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-showMoreLabel\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainer-pillFlavor\t$A",
+         "contents": "pillContainer=\"${1:ui:pillContainer(String)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainerAutoComplete-allowNew\t$A",
+         "contents": "pillContainerAutoComplete=\"${1:ui:pillContainerAutoComplete(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-pillContainerAutoCompleteOption-iconUrl\t$A",
+         "contents": "pillContainerAutoCompleteOption=\"${1:ui:pillContainerAutoCompleteOption(String)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-visible\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-closeOnTabKey\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-autoPosition\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-manualPosition\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-attachToBody\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-referenceElement\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-curtain\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-closeOnClickOutside\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-closeOnClickInside\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTarget-preTransitionClass\t$A",
+         "contents": "popupTarget=\"${1:ui:popupTarget(String)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTrigger-title\t$A",
+         "contents": "popupTrigger=\"${1:ui:popupTrigger(String)}\""
+      },
+      {
+         "trigger": "attr-ui-popupTrigger-trigger\t$A",
+         "contents": "popupTrigger=\"${1:ui:popupTrigger(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-popupTrigger-stopClickPropagation\t$A",
+         "contents": "popupTrigger=\"${1:ui:popupTrigger(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-radioToggleMenuItem-isAscending\t$A",
+         "contents": "radioToggleMenuItem=\"${1:ui:radioToggleMenuItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-radioToggleMenuItem-ascLabel\t$A",
+         "contents": "radioToggleMenuItem=\"${1:ui:radioToggleMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-radioToggleMenuItem-descLabel\t$A",
+         "contents": "radioToggleMenuItem=\"${1:ui:radioToggleMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-resizeObserver-onresize\t$A",
+         "contents": "resizeObserver=\"${1:ui:resizeObserver(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scroll\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-enabled\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-useCSSTransition\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-useNativeScroller\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-preventNestedScroll\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-preventDefaultOnMove\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-debounce\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-snap\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-endless\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-snapType\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-plugins\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-gpuOptimization\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-bindEventsToScroller\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-showScrollbars\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-canShowMore\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-canRefresh\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-width\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-height\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-itemWidth\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-itemHeight\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-class\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scrollContentClass\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-minThreshold\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-minDirectionThreshold\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-lockOnDirection\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onBeforeScrollStart\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onScrollStart\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onScrollEnd\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onScrollMove\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onPullToShowMore\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-onPullToRefresh\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-infiniteLoading\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-infiniteLoadingThreshold\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-infiniteLoadingDataProvider\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMoreClick\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMorePull\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMoreRelease\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMoreUpdating\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMoreSubtitle\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToShowMoreError\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshClick\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshPull\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshRelease\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshUpdating\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshError\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-pullToRefreshSubtitle\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scrollButtonUp\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scrollButtonDown\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scrollButtonLeft\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-scrollButtonRight\t$A",
+         "contents": "scroller=\"${1:ui:scroller(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scroller-supportVoiceOver\t$A",
+         "contents": "scroller=\"${1:ui:scroller(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-hScroll\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-vScroll\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-showScrollbars\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-enabled\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-useTransform\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-useTransition\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-snap\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-width\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-class\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-scrollContentClass\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onBeforeScrollStart\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onScrollStart\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onScrollEnd\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onScrollMove\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onScrollToBottom\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-scrollToBottomThreshold\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onPullToShowMore\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToShowMorePull\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToShowMoreRelease\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToShowMoreUpdating\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToShowMoreSubtitle\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-canShowMore\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-onPullToRefresh\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToRefreshPull\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToRefreshRelease\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToRefreshUpdating\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-pullToRefreshSubtitle\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(String)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-canRefresh\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-extendedPullContent\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-stopEventPropagation\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-checkDOMChanges\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-scrollerDeprecated-bindEventsToScroller\t$A",
+         "contents": "scrollerDeprecated=\"${1:ui:scrollerDeprecated(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-spinner-isVisible\t$A",
+         "contents": "spinner=\"${1:ui:spinner(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-stamp-severity\t$A",
+         "contents": "stamp=\"${1:ui:stamp(String)}\""
+      },
+      {
+         "trigger": "attr-ui-stamp-title\t$A",
+         "contents": "stamp=\"${1:ui:stamp(String)}\""
+      },
+      {
+         "trigger": "attr-ui-stamp-onclick\t$A",
+         "contents": "stamp=\"${1:ui:stamp(Aura.Action)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-class\t$A",
+         "contents": "tab=\"${1:ui:tab(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-title\t$A",
+         "contents": "tab=\"${1:ui:tab(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-name\t$A",
+         "contents": "tab=\"${1:ui:tab(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-icon\t$A",
+         "contents": "tab=\"${1:ui:tab(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-tab-scroll\t$A",
+         "contents": "tab=\"${1:ui:tab(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-active\t$A",
+         "contents": "tab=\"${1:ui:tab(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-iconClass\t$A",
+         "contents": "tab=\"${1:ui:tab(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-closable\t$A",
+         "contents": "tab=\"${1:ui:tab(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tab-ariaControlId\t$A",
+         "contents": "tab=\"${1:ui:tab(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-tabs\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(List)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-class\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-useOverflowMenu\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-overflowLabel\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-barWidth\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-tabItemWidth\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tabBar-overflowData\t$A",
+         "contents": "tabBar=\"${1:ui:tabBar(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-class\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-title\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-name\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-icon\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-active\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-hidden\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-iconClass\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-closable\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabItem-ariaControlId\t$A",
+         "contents": "tabItem=\"${1:ui:tabItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-class\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-title\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-icon\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-active\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-iconClass\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-ariaControlId\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-menuItems\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-menuItemCache\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(Object)}\""
+      },
+      {
+         "trigger": "attr-ui-tabOverflowMenuItem-focusedItemName\t$A",
+         "contents": "tabOverflowMenuItem=\"${1:ui:tabOverflowMenuItem(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-tabs\t$A",
+         "contents": "tabset=\"${1:ui:tabset(List)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-tabItems\t$A",
+         "contents": "tabset=\"${1:ui:tabset(List)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-class\t$A",
+         "contents": "tabset=\"${1:ui:tabset(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-lazyRenderTabs\t$A",
+         "contents": "tabset=\"${1:ui:tabset(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-useOverflowMenu\t$A",
+         "contents": "tabset=\"${1:ui:tabset(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-barWidth\t$A",
+         "contents": "tabset=\"${1:ui:tabset(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-tabItemWidth\t$A",
+         "contents": "tabset=\"${1:ui:tabset(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tabset-overflowLabel\t$A",
+         "contents": "tabset=\"${1:ui:tabset(String)}\""
+      },
+      {
+         "trigger": "attr-ui-timePicker-hours\t$A",
+         "contents": "timePicker=\"${1:ui:timePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-timePicker-is24HourFormat\t$A",
+         "contents": "timePicker=\"${1:ui:timePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-timePicker-isValid\t$A",
+         "contents": "timePicker=\"${1:ui:timePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-timePicker-minutes\t$A",
+         "contents": "timePicker=\"${1:ui:timePicker(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-timePicker-visible\t$A",
+         "contents": "timePicker=\"${1:ui:timePicker(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-toolbar-class\t$A",
+         "contents": "toolbar=\"${1:ui:toolbar(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-tooltipBody\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-disabled\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-advanced\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-trigger\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-triggerClass\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-isVisible\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-fadeOut\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-fadeIn\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-fadeOutDuration\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-fadeInDuration\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-delay\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-class\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-tabIndex\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-direction\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tooltip-domId\t$A",
+         "contents": "tooltip=\"${1:ui:tooltip(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tree-nodes\t$A",
+         "contents": "tree=\"${1:ui:tree(java://List<aura.components.ui.TreeNode>)}\""
+      },
+      {
+         "trigger": "attr-ui-tree-class\t$A",
+         "contents": "tree=\"${1:ui:tree(String)}\""
+      },
+      {
+         "trigger": "attr-ui-tree-activeNode\t$A",
+         "contents": "tree=\"${1:ui:tree(Aura.Component)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-href\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(String)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-title\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(String)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-leafClass\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(String)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-class\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(String)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-expanded\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-active\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-hidden\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-treeNode-item\t$A",
+         "contents": "treeNode=\"${1:ui:treeNode(java://org.auraframework.components.ui.TreeNode)}\""
+      },
+      {
+         "trigger": "attr-ui-underConstruction-short\t$A",
+         "contents": "underConstruction=\"${1:ui:underConstruction(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-vbox-north\t$A",
+         "contents": "vbox=\"${1:ui:vbox(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-vbox-south\t$A",
+         "contents": "vbox=\"${1:ui:vbox(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-vbox-centerClass\t$A",
+         "contents": "vbox=\"${1:ui:vbox(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-sortBy\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-class\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-items\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(List)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-headerColumns\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-columns\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-columnsEdit\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-dataModel\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-_dirty\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-itemVar\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-_sortBy\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualDataGrid-fixedHeader\t$A",
+         "contents": "virtualDataGrid=\"${1:ui:virtualDataGrid(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-_dirty\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(Integer)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-itemTemplate\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(Aura.ComponentDefRef[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-items\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(Object[])}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-forceRender\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-itemVar\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(String)}\""
+      },
+      {
+         "trigger": "attr-ui-virtualList-dataProvider\t$A",
+         "contents": "virtualList=\"${1:ui:virtualList(Aura.Component[])}\""
+      },
+      {
+         "trigger": "attr-uiExamples-autocompleteDataProvider-size\t$A",
+         "contents": "autocompleteDataProvider=\"${1:uiExamples:autocompleteDataProvider(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-autocompleteExample-autocompleteValue\t$A",
+         "contents": "autocompleteExample=\"${1:uiExamples:autocompleteExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-autocompleteExample-autocompleteExtendedOptsValue\t$A",
+         "contents": "autocompleteExample=\"${1:uiExamples:autocompleteExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-autocompleteExample-classes\t$A",
+         "contents": "autocompleteExample=\"${1:uiExamples:autocompleteExample(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-checkbox-myBool\t$A",
+         "contents": "checkbox=\"${1:uiExamples:checkbox(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-sortBy\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-pageSize\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-currentPage\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-totalItems\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-index\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridDynamicColumns-count\t$A",
+         "contents": "dataGridDynamicColumns=\"${1:uiExamples:dataGridDynamicColumns(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-mode\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-sortBy\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-pageSize\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-currentPage\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-totalItems\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-index\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-count\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-className\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-rowIndex\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-gridItems\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(List)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSink-gridSelectedItems\t$A",
+         "contents": "dataGridKitchenSink=\"${1:uiExamples:dataGridKitchenSink(List)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSinkDataProvider-sortBy\t$A",
+         "contents": "dataGridKitchenSinkDataProvider=\"${1:uiExamples:dataGridKitchenSinkDataProvider(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSinkDataProvider-empty\t$A",
+         "contents": "dataGridKitchenSinkDataProvider=\"${1:uiExamples:dataGridKitchenSinkDataProvider(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dataGridKitchenSinkDataProvider-throwError\t$A",
+         "contents": "dataGridKitchenSinkDataProvider=\"${1:uiExamples:dataGridKitchenSinkDataProvider(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-date-today\t$A",
+         "contents": "date=\"${1:uiExamples:date(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-datePicker-selectedDate\t$A",
+         "contents": "datePicker=\"${1:uiExamples:datePicker(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-datetime-today\t$A",
+         "contents": "datetime=\"${1:uiExamples:datetime(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropExample-_context1\t$A",
+         "contents": "dragAndDropExample=\"${1:uiExamples:dragAndDropExample(Object)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropExample-_context2\t$A",
+         "contents": "dragAndDropExample=\"${1:uiExamples:dragAndDropExample(Object)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropExample-_context3\t$A",
+         "contents": "dragAndDropExample=\"${1:uiExamples:dragAndDropExample(Object)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropExample-_accessibilityComponent\t$A",
+         "contents": "dragAndDropExample=\"${1:uiExamples:dragAndDropExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropProvider-prefix\t$A",
+         "contents": "dragAndDropProvider=\"${1:uiExamples:dragAndDropProvider(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-dragAndDropProvider-count\t$A",
+         "contents": "dragAndDropProvider=\"${1:uiExamples:dragAndDropProvider(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-infiniteDataProvider-listType\t$A",
+         "contents": "infiniteDataProvider=\"${1:uiExamples:infiniteDataProvider(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-infiniteListRow-item\t$A",
+         "contents": "infiniteListRow=\"${1:uiExamples:infiniteListRow(Object)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-inputExample-today\t$A",
+         "contents": "inputExample=\"${1:uiExamples:inputExample(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-inputExample-deadline\t$A",
+         "contents": "inputExample=\"${1:uiExamples:inputExample(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-inputExample-display\t$A",
+         "contents": "inputExample=\"${1:uiExamples:inputExample(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-libraryExample-message\t$A",
+         "contents": "libraryExample=\"${1:uiExamples:libraryExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myText\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myNum\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(Decimal)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myCurr\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(Decimal)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myBool\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myDate\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myDateTime\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(Date)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myTextArea\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-outputExample-myURL\t$A",
+         "contents": "outputExample=\"${1:uiExamples:outputExample(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-panelContent-class\t$A",
+         "contents": "panelContent=\"${1:uiExamples:panelContent(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-radio-stages\t$A",
+         "contents": "radio=\"${1:uiExamples:radio(String[])}\""
+      },
+      {
+         "trigger": "attr-uiExamples-renderIfExample-display\t$A",
+         "contents": "renderIfExample=\"${1:uiExamples:renderIfExample(Boolean)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-sortBy\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-pageSize\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-currentPage\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-totalItems\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-index\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-count\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-className\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(String)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-rowIndex\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Integer)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-gridItems\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(List)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-gridSelectedItems\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(List)}\""
+      },
+      {
+         "trigger": "attr-uiExamples-virtualDataGridKitchenSink-provideNoData\t$A",
+         "contents": "virtualDataGridKitchenSink=\"${1:uiExamples:virtualDataGridKitchenSink(Boolean)}\""
+      }
+   ]
+}
