@@ -1,15 +1,15 @@
-# Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3 [![Build Status](https://travis-ci.org/synle/aura_autocomplete_sublime.svg?branch=master)](https://travis-ci.org/synle/aura_autocomplete_sublime)
+### Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3 [![Build Status](https://travis-ci.org/synle/aura_autocomplete_sublime.svg?branch=master)](https://travis-ci.org/synle/aura_autocomplete_sublime)
 
-## Install on Sublime Text 
+#### Install on Sublime Text 
 ```
 	sh install.sublime.sh
 ```
 
-## Instruction Sublime Text 
+#### Instruction Sublime Text 
 You can hit tab to select the completion as well as navigate through parameters
 
 
-## Cheatsheet
+#### Cheatsheet
 Please note that anything in {} and - is optional. Instead of attr-ui-menuitem-select, you can simply replace it with attruimenuitemselect. Also you can also skip the component name and type it as attr-menuitem.
 
 Trigger | Example | Description
@@ -24,7 +24,7 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
 
 
 
-## To autocomplete an Aura event type
+#### To autocomplete an Aura event type
 ```
 	Trigger:
 	evt-{COMPONENT_NAME}-{EVENT_NAME}
@@ -51,7 +51,7 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
 ![](images/evt2.jpg)
 
 
-## To autocomplete an Aura Test js method
+#### To autocomplete an Aura Test js method
 ```
 	Trigger:
 	$a-test-{TEST_METHOD_NAME}
@@ -65,7 +65,7 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
 ```
 
 
-## To autocomplete an Util Test js method
+#### To autocomplete an Util Test js method
 ```
 	Trigger:
 	$a-util-{UTIL_METHOD_NAME}
@@ -81,7 +81,7 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
 ![](images/util2.jpg)
 
 
-## To autocomplete an aura attribute
+#### To autocomplete an aura attribute
 ```
 	Trigger:
 	inside a tag
@@ -101,7 +101,7 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
 
 
 
-## To autocomplete an aura attribute
+#### To autocomplete an aura attribute
 ```
 	Trigger:
 	inside a tag
