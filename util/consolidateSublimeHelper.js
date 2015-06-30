@@ -7,95 +7,7 @@ var TRIGGER_SEPARATOR = '-';
 
 //definitions
 var self = {
-    readFromFile: function(path, silent) {
-        if (silent !== true) {
-            console.log('Reading file...'.magenta.bold);
-            console.log(path.yellow);
-        }
-        return fs.readFileSync(path, 'utf-8');
-    },
-    listDir: function listDir(dir, res) {
-        res = res || {
-            cmp: [],
-            evt: []
-        };
-        var dirs = fs.readdirSync(dir);
-        for (var i = 0; i < dirs.length; i++) {
-            var newDir = path.join(dir, dirs[i]);
-            if (fs.lstatSync(newDir).isDirectory()) {
-                listDir(newDir, res);
-            } else {
-                //is a file
-                var extension = path.extname(newDir);
-
-
-                //ignore auradev auradoc
-                // if (newDir.indexOf('auradoc') >= 0
-                // || newDir.indexOf('auradev') >= 0
-                // || newDir.indexOf('aurajstest') >= 0){
-                //     continue;
-                // }
-
-                switch (extension) {
-                    case '.cmp':
-                        res.cmp.push(newDir);
-                        break;
-                    case '.evt':
-                        res.evt.push(newDir);
-                        break;
-                }
-            }
-        }
-        
-        return res;
-    },
-    parseFunctions: function(functionName, functionDefition, namespaceStr) {
-        if (typeof functionDefition === 'function') {
-            //get function definitions as string
-            var funcDefStr = functionDefition.toString();
-            //parse the params
-            var paramsStr = funcDefStr.match(/\(.*\)/)[0]; // match the first (...)
-            paramsStr = paramsStr.substr(1, paramsStr.length - 2); //remove ( and )
-            var params; //params array
-            if (paramsStr.indexOf('*') === -1) {
-                //no closure comment, do it this way (array)
-                //convert params string to array
-                params = paramsStr.split(', ');
-
-                //shorten and trim bad character
-                for (var i = 0; i < params.length; i++) {
-                    params[i] = '${' + (i + 1)  + ':' + self.shortenName(params[i]) + '}';
-                }
-            } else {
-                //dont do anything when /**/ found
-                params = [paramsStr];
-
-                //shorten and trim bad character
-                for (var i = 0; i < params.length; i++) {
-                    params[i] = '$' + (i + 1) + self.shortenName(params[i]);
-                }
-            }
-
-
-            //pure params
-            var pureParams = JSON.parse(JSON.stringify(params));
-
-            //output
-            // console.log((namespaceStr + functionName).green.bold.underline + ':\t');
-            // console.log(params.join('\n').cyan);
-            return [namespaceStr + functionName, params, pureParams];
-        } else {
-            return [];
-        }
-    },
-    shortenName: function(str) {
-        //remove closure code comment and trim
-        // str = str.replace(/[|]|-|\s/g, '').replace(/\/.*\//g, '');
-        str = str.trim();
-        //selectively return shorter name
-        return str;
-    },
-    consolidate_sublime: function(dictionary) {
+    consolidate_js: function(dictionary) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
@@ -115,17 +27,7 @@ var self = {
         }
         return JSON.stringify(sublimeFormat, null, 3);
     },
-    consolidate_atom: function(dictionary) {
-        var atomFormat = '';
-        for (var functionName in dictionary) {
-            var functionParams = dictionary[functionName] || "";
-            var prefix = functionName;
-            var body = functionName + "(" + functionParams + ")";
-            atomFormat += ['".source.js":', '\t"' + functionName + '":', '\t\t"prefix":"' + prefix + '"', '\t\t"body":"' + body + '"', ].join('\n') + '\n';
-        }
-        return atomFormat;
-    },
-    consolidate_evt_sublime: function(evtDictionary) {
+    consolidate_evt: function(evtDictionary) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js'
         );
@@ -187,7 +89,7 @@ var self = {
      * @param  {[type]} attributeDictionary [description]
      * @return {[type]}                     [description]
      */
-    consolidate_attributes_sublime: function(attributeDictionary){
+    consolidate_attributes: function(attributeDictionary){
         var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
 
         for (var attributeIdx in attributeDictionary){
@@ -213,7 +115,7 @@ var self = {
     },
 
 
-    consolidate_uitags_sublime: function(componentDictionary){
+    consolidate_uitags: function(componentDictionary){
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'meta.tag.xml'
         );
@@ -253,18 +155,6 @@ var self = {
             "scope": incomingScope || "source",
             "completions": []
         };
-    },
-    writeToFile: function(string, path) {
-        console.log(path.yellow);
-        fs.writeFileSync(path, string);
-    },
-    getBaseFileNameWithoutExtension: function(fileName){
-        var shortFileName = path.basename(fileName);
-        return shortFileName.substr(0, shortFileName.indexOf('.'));
-    },
-    getComponentBreakup: function(fileName){
-        var splits = fileName.split('/');
-        return [splits[splits.length - 3], splits[splits.length - 2]]
     }
 };
 module.exports = self;

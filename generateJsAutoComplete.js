@@ -5,7 +5,7 @@ var colors = require('colors');
 var prompt = require('prompt');
 
 //internal dependencies
-var parseHelper = require('./parseHelper');
+var parseHelper = require('./util/parseHelper');
 var config = require('./config');
 var promptSchema = config.prompt;
 
@@ -123,24 +123,6 @@ function processParser(baseDir, outputDir){
 
 
 
-	//consolidate sublime text format
-	console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_sublime(masterDictionary),
-		path.join(
-			outputDir,
-			'aura.sublime-completions'
-		)
-	);
-
-
-	//consolidate atom files
-	console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_atom(masterDictionary),
-		path.join(
-			outputDir,
-			'aura.atom.cson'
-		)
-	);
+	//consolidate js file
+	parseHelper.updateJs(masterDictionary, outputDir);
 }

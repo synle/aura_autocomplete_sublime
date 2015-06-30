@@ -6,7 +6,7 @@ var prompt = require('prompt');
 var parseString = require('xml2js').parseString;
 
 //internal dependencies
-var parseHelper = require('./parseHelper');
+var parseHelper = require('./util/parseHelper');
 var config = require('./config');
 var promptSchema = config.prompt;
 
@@ -55,10 +55,10 @@ function processParser(baseDir, outputDir){
 
 
 	// global dictionary
-	var eventDictionary = {};
-	var componentDictionary = [];
-	var componentEventDictionary = [];
-	var componentAttributesDictionary = [];
+	var eventDictionary = {};//being used only as a quick look up
+	var arrayComponents = [];
+	var arrayEvents = [];
+	var arrayAttributes = [];
 
 	//find all cmp files in nested structures
 	var componentFileNames = parseHelper.listDir(componentBaseDir);
@@ -158,7 +158,7 @@ function processParser(baseDir, outputDir){
 					}
 					
 
-					componentEventDictionary.push({
+					arrayEvents.push({
 						component : componentName,
 						evt : evtObj,
 						evtDef : matchingEvtDef
@@ -173,7 +173,7 @@ function processParser(baseDir, outputDir){
 					var attributeObj = curAttribute.$;
 					// componentObj.attributes.push(attributeObj);
 
-					componentAttributesDictionary.push({
+					arrayAttributes.push({
 						component: componentObj,
 						attribute: attributeObj
 					});
@@ -181,42 +181,15 @@ function processParser(baseDir, outputDir){
 			}
 		});
 
-		componentDictionary.push(componentObj);
+		arrayComponents.push(componentObj);
 	});
-	// console.log('ui:carouselPageEvent', eventDictionary['ui:carouselPageEvent']);
-	// console.log(Object.keys(eventDictionary));
-
-	//consolidate js evt
-	console.log('Updating Sublime File: Component Events'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_evt_sublime(componentEventDictionary),
-		path.join(
-			outputDir,
-			'aura.event.sublime-completions'
-		)
-	);
 
 
+
+	//consolidate events
 	//consolidate component attribute
-	console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_attributes_sublime(componentAttributesDictionary),
-		path.join(
-			outputDir,
-			'aura.attributes.sublime-completions'
-		)
-	);
-
-
-
-
 	//consolidate component tags
-	console.log('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_uitags_sublime(componentDictionary),
-		path.join(
-			outputDir,
-			'aura.uitags.sublime-completions'
-		)
-	);
+	parseHelper.updateEvt(arrayEvents, outputDir);
+	parseHelper.updateTag(arrayComponents, outputDir);
+	parseHelper.updateTagAttr(arrayAttributes, outputDir);
 }
