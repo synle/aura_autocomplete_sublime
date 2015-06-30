@@ -62,7 +62,7 @@ function processParser(baseDir, outputDir){
 	//generarte path for the test and util js file
 	var testJsPath = path.join(
 		baseDir,
-		'aura-impl/target/classes/aura/test/Test.js'
+		'/aura-impl/src/main/resources/aura/test/Test.js'
 	);
 
 	//read content files
@@ -90,7 +90,7 @@ function processParser(baseDir, outputDir){
 	//AURA UTILS JS FILE
 	var utilJsPath = path.join(
 		baseDir,
-		'aura-impl/target/classes/aura/util/Util.js'
+		'aura-impl/src/main/resources/aura/util/Util.js'
 	);
 
 	//read content files

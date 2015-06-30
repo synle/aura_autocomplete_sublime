@@ -51,7 +51,7 @@
       },
       {
          "trigger": "tag-aura-template\t$A",
-         "contents": "aura:template$1>${2:The default template used to bootstrap the loading of the aura framework and an application or component. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
+         "contents": "aura:template$1>${2:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
       },
       {
          "trigger": "tag-aura-text\t$A",

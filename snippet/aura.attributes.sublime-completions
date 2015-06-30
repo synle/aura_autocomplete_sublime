@@ -254,7 +254,7 @@
          "contents": "template=\"${1:aura:template(String)}\""
       },
       {
-         "trigger": "attr-aura-template-afterAuraInit\t$A",
+         "trigger": "attr-aura-template-doctype\t$A",
          "contents": "template=\"${1:aura:template(String)}\""
       },
       {
@@ -270,8 +270,16 @@
          "contents": "template=\"${1:aura:template(String)}\""
       },
       {
-         "trigger": "attr-aura-template-forceError\t$A",
-         "contents": "template=\"${1:aura:template(Boolean)}\""
+         "trigger": "attr-aura-template-defaultBodyClass\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-bodyClass\t$A",
+         "contents": "template=\"${1:aura:template(String)}\""
+      },
+      {
+         "trigger": "attr-aura-template-extraStyleTags\t$A",
+         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
       },
       {
          "trigger": "attr-aura-template-extraScriptTags\t$A",
@@ -282,12 +290,12 @@
          "contents": "template=\"${1:aura:template(Aura.Component[])}\""
       },
       {
-         "trigger": "attr-aura-template-defaultBodyClass\t$A",
-         "contents": "template=\"${1:aura:template(String)}\""
+         "trigger": "attr-aura-template-normalizeCss\t$A",
+         "contents": "template=\"${1:aura:template(Boolean)}\""
       },
       {
-         "trigger": "attr-aura-template-bodyClass\t$A",
-         "contents": "template=\"${1:aura:template(String)}\""
+         "trigger": "attr-aura-template-forceError\t$A",
+         "contents": "template=\"${1:aura:template(Boolean)}\""
       },
       {
          "trigger": "attr-aura-template-manifest\t$A",
@@ -298,16 +306,8 @@
          "contents": "template=\"${1:aura:template(String)}\""
       },
       {
-         "trigger": "attr-aura-template-doctype\t$A",
+         "trigger": "attr-aura-template-afterAuraInit\t$A",
          "contents": "template=\"${1:aura:template(String)}\""
-      },
-      {
-         "trigger": "attr-aura-template-extraStyleTags\t$A",
-         "contents": "template=\"${1:aura:template(Aura.Component[])}\""
-      },
-      {
-         "trigger": "attr-aura-template-normalizeCss\t$A",
-         "contents": "template=\"${1:aura:template(Boolean)}\""
       },
       {
          "trigger": "attr-aura-template-inlineStyle\t$A",
@@ -1650,10 +1650,6 @@
          "contents": "datePicker=\"${1:ui:datePicker(Object)}\""
       },
       {
-         "trigger": "attr-ui-datePicker-dimension\t$A",
-         "contents": "datePicker=\"${1:ui:datePicker(String)}\""
-      },
-      {
          "trigger": "attr-ui-datePicker-showToday\t$A",
          "contents": "datePicker=\"${1:ui:datePicker(Boolean)}\""
       },
@@ -1694,10 +1690,6 @@
          "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Date)}\""
       },
       {
-         "trigger": "attr-ui-datePickerGrid-dimension\t$A",
-         "contents": "datePickerGrid=\"${1:ui:datePickerGrid(String)}\""
-      },
-      {
          "trigger": "attr-ui-datePickerGrid-setFocus\t$A",
          "contents": "datePickerGrid=\"${1:ui:datePickerGrid(Boolean)}\""
       },
@@ -1732,10 +1724,6 @@
       {
          "trigger": "attr-ui-dayInMonthCell-value\t$A",
          "contents": "dayInMonthCell=\"${1:ui:dayInMonthCell(Date)}\""
-      },
-      {
-         "trigger": "attr-ui-dayInMonthCell-dimension\t$A",
-         "contents": "dayInMonthCell=\"${1:ui:dayInMonthCell(String)}\""
       },
       {
          "trigger": "attr-ui-dialog-ariaRole\t$A",
@@ -2030,10 +2018,6 @@
          "contents": "inputDate=\"${1:ui:inputDate(Boolean)}\""
       },
       {
-         "trigger": "attr-ui-inputDate-datePickerDimension\t$A",
-         "contents": "inputDate=\"${1:ui:inputDate(String)}\""
-      },
-      {
          "trigger": "attr-ui-inputDateRange-startInputPlaceholder\t$A",
          "contents": "inputDateRange=\"${1:ui:inputDateRange(String)}\""
       },
@@ -2059,10 +2043,6 @@
       },
       {
          "trigger": "attr-ui-inputDateTime-timezone\t$A",
-         "contents": "inputDateTime=\"${1:ui:inputDateTime(String)}\""
-      },
-      {
-         "trigger": "attr-ui-inputDateTime-datePickerDimension\t$A",
          "contents": "inputDateTime=\"${1:ui:inputDateTime(String)}\""
       },
       {
@@ -2768,6 +2748,10 @@
       {
          "trigger": "attr-ui-panel-showPointer\t$A",
          "contents": "panel=\"${1:ui:panel(Boolean)}\""
+      },
+      {
+         "trigger": "attr-ui-panel-closeButton\t$A",
+         "contents": "panel=\"${1:ui:panel(Aura.Component[])}\""
       },
       {
          "trigger": "attr-ui-panelDialog-closeOnClickOut\t$A",
@@ -3520,10 +3504,6 @@
       {
          "trigger": "attr-ui-timePicker-visible\t$A",
          "contents": "timePicker=\"${1:ui:timePicker(Boolean)}\""
-      },
-      {
-         "trigger": "attr-ui-timePicker-dimension\t$A",
-         "contents": "timePicker=\"${1:ui:timePicker(String)}\""
       },
       {
          "trigger": "attr-ui-toolbar-class\t$A",
