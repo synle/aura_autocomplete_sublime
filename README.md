@@ -9,13 +9,21 @@
 
    #run this
    npm install 
+
+   #to run in a guided mode
+   npm start
    
-   node generateJsAutoComplete.js /Users/sle/git/aura ;
-   node generateXmlAutoComplete.js /Users/sle/git/aura ;
+   #to run in silent mode, please provide the base dir
+   node generateJsAutoComplete.js /Users/sle/git/aura;
+   node generateXmlAutoComplete.js /Users/sle/git/aura;
 
    #install it on local
    sh install.sublime.sh
 ```
+![](images/generate.jpg)
+
+
+
 
 ## Install on Sublime Text 
 ```

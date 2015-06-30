@@ -16,7 +16,10 @@ console.log('    Parsing Aura JS Files    '.rainbow.cyan.underline.bgBlack);
 if(process.argv[2]){
 	//if passed in command line via
 	//node generateJsAutoComplete.js /path/to/auragit
-	processParser( process.argv[2] );
+	processParser( 
+		process.argv[2],
+		'./snippet'
+	);
 }
 else{
 	//via prompt
@@ -25,7 +28,7 @@ else{
 	prompt.get(promptSchema, function (err, result) {
 		processParser (
 			result.baseDir,
-			result.outputDir
+			'./snippet'
 		);
 	});
 }

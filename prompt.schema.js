@@ -5,10 +5,10 @@ module.exports = {
             default: '/Users/sle/git/aura',
             required: true
         },
-        outputDir :{
-        	message: 'Directory to output files'.bold.red,
-            default: './snippet',
-            required: true	
-        }
+        // outputDir :{
+        // 	message: 'Directory to output files'.bold.red,
+        //     default: './snippet',
+        //     required: true	
+        // }
     }
 };
