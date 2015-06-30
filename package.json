@@ -2,10 +2,9 @@
   "name": "aura_autocomplete",
   "version": "1.0.0",
   "description": "Generate autocomplete for Salesforce Aura code snippet",
-  "main": "generateAutocomplete.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node generateJsAutoComplete.js"
+    "start": "node generateJsAutoComplete.js; node generateXmlAutoComplete.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,7 @@
   "homepage": "https://github.com/synle/aura_autocomplete_sublime",
   "dependencies": {
     "colors": "^1.1.2",
+    "prompt": "^0.2.14",
     "xml2js": "^0.4.9"
   }
 }

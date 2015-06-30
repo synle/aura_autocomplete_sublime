@@ -2,103 +2,134 @@
 var path = require('path');
 var fs = require('fs');
 var colors = require('colors');
+var prompt = require('prompt');
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
+var promptSchema = require('./prompt.schema');
+
+
+
+//greeting
+console.log('    Parsing Aura JS Files    '.rainbow.cyan.underline.bgBlack);
+
+if(process.argv[2]){
+	//if passed in command line via
+	//node generateJsAutoComplete.js /path/to/auragit
+	processParser( process.argv[2] );
+}
+else{
+	//via prompt
+	prompt.start();
+
+	prompt.get(promptSchema, function (err, result) {
+		processParser (
+			result.baseDir,
+			result.outputDir
+		);
+	});
+}
+
 
 //base path (parsed form command line or default to my git folder)
-var baseDir = process.argv[2] || '/Users/syle/git/aura/';
+//outputDir where to store the snippet
+function processParser(baseDir, outputDir){
+	//init Aura global obejct
+	var Aura = {
+		Utils: {
+			Util : {}
+		}
+	};
+	var AuraLayoutService = window = {};
+	var $A = {
+		logger:{
+			subscribe:function(){}
+		}
+	};
+	var Component = function(){};
+	var navigator = {
+		userAgent : ''
+	};
 
 
-//init Aura global obejct
-var Aura = {
-	Utils: {
-		Util : {}
+	//master dictionary
+	var masterDictionary = {};
+
+	//AURA TEST JS FILE
+	//generarte path for the test and util js file
+	var testJsPath = path.join(
+		baseDir,
+		'aura-impl/target/classes/aura/test/Test.js'
+	);
+
+	//read content files
+	var fileContent = parseHelper.readFromFile(
+		testJsPath,
+		true//silent
+	);
+
+
+	//parse test js
+	eval(fileContent);
+	var curNamespace = $A.test;
+	for (var k in $A.test){
+		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
+		if(parsedStuffs.length >0){
+			var functionName = parsedStuffs[0];
+			var functionParams = parsedStuffs[1];
+
+			masterDictionary[functionName] = functionParams;
+		}
 	}
-};
-var AuraLayoutService = window = {};
-var $A = {
-	logger:{
-		subscribe:function(){}
+
+
+
+	//AURA UTILS JS FILE
+	var utilJsPath = path.join(
+		baseDir,
+		'aura-impl/target/classes/aura/util/Util.js'
+	);
+
+	//read content files
+	var fileContent = parseHelper.readFromFile(
+		utilJsPath,
+		true//silent
+	);
+
+
+	//parse test js
+	eval(fileContent);
+	var curNamespace = Aura.Utils.Util.prototype;
+	for (var k in curNamespace){
+		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
+		if(parsedStuffs.length >0){
+			var functionName = parsedStuffs[0];
+			var functionParams = parsedStuffs[1];
+
+			masterDictionary[functionName] = functionParams;
+		}
 	}
-};
-var Component = function(){};
-var navigator = {
-	userAgent : ''
-};
 
 
-//master dictionary
-var masterDictionary = {};
 
-//AURA TEST JS FILE
-//generarte path for the test and util js file
-var testJsPath = path.join(
-	baseDir,
-	'aura-impl/target/classes/aura/test/Test.js'
-);
-
-//read content files
-var fileContent = parseHelper.readFromFile(
-	testJsPath,
-	true//silent
-);
+	//consolidate sublime text format
+	console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
+	parseHelper.writeToFile(
+		parseHelper.consolidate_sublime(masterDictionary),
+		path.join(
+			outputDir,
+			'aura.sublime-completions'
+		)
+	);
 
 
-//parse test js
-eval(fileContent);
-var curNamespace = $A.test;
-for (var k in $A.test){
-	var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
-	if(parsedStuffs.length >0){
-		var functionName = parsedStuffs[0];
-		var functionParams = parsedStuffs[1];
-
-		masterDictionary[functionName] = functionParams;
-	}
+	//consolidate atom files
+	console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
+	parseHelper.writeToFile(
+		parseHelper.consolidate_atom(masterDictionary),
+		path.join(
+			outputDir,
+			'aura.atom.cson'
+		)
+	);
 }
-
-
-
-//AURA UTILS JS FILE
-var utilJsPath = path.join(
-	baseDir,
-	'aura-impl/target/classes/aura/util/Util.js'
-);
-
-//read content files
-var fileContent = parseHelper.readFromFile(
-	utilJsPath,
-	true//silent
-);
-
-
-//parse test js
-eval(fileContent);
-var curNamespace = Aura.Utils.Util.prototype;
-for (var k in curNamespace){
-	var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
-	if(parsedStuffs.length >0){
-		var functionName = parsedStuffs[0];
-		var functionParams = parsedStuffs[1];
-
-		masterDictionary[functionName] = functionParams;
-	}
-}
-
-
-
-//consolidate sublime text format
-console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
-parseHelper.writeToFile(
-	parseHelper.consolidate_sublime(masterDictionary),
-	'./snippet/aura.sublime-completions'
-);
-
-
-//consolidate atom files
-console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
-parseHelper.writeToFile(
-	parseHelper.consolidate_atom(masterDictionary),
-	'./snippet/aura.atom.cson'
-);
