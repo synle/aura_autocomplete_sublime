@@ -1,5 +1,4 @@
-# Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3
-
+# Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3 [![Build Status](https://travis-ci.org/synle/aura_autocomplete_sublime.svg?branch=master)](https://travis-ci.org/synle/aura_autocomplete_sublime)
 
 ## To Compile the autocomplete from Aura github
 ```
@@ -136,14 +135,3 @@ You can hit tab to select the completion as well as navigate through parameters
 ```	
 ![](images/tag1.jpg)
 ![](images/tag2.jpg)
-
-
-
-
-
-## Install on Atom (WIP): for now this plugin only supports Sublime Text 3
-```
-  CMD + SHIFT + P
-  Type in "snippet"
-  Copy and paste aura.snippet.cson to the file and save.
-```
