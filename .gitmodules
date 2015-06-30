@@ -1,0 +1,3 @@
+[submodule "aura_upstream"]
+	path = aura_upstream
+	url = https://github.com/forcedotcom/aura.git
