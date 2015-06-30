@@ -17,8 +17,16 @@ console.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
 if(process.argv[2]){
 	//if passed in command line via
 	//node generateJsAutoComplete.js /path/to/auragit
-	processParser(
-		process.argv[2],
+	var baseDir;
+	if (process.argv[2] === '--silent'){
+		baseDir = promptSchema.properties.baseDir.default;
+	}
+	else{
+		baseDir = process.argv[2];	
+	}
+
+	processParser( 
+		baseDir,
 		'./snippet'
 	);
 }
