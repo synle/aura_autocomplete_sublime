@@ -103,7 +103,7 @@ var self = {
             var functionParams = dictionary[functionName] || "";
             //triggers
             var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A.test' : '\t$A';
+            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A' : '\t$A';
 
             //contents
             var contents = functionName + "(" + functionParams + ")";
