@@ -1,11 +1,11 @@
 ### Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3 [![Build Status](https://travis-ci.org/synle/aura_autocomplete_sublime.svg?branch=master)](https://travis-ci.org/synle/aura_autocomplete_sublime)
 
-#### Install on Sublime Text 
+#### Install on Sublime Text 3
 ```
 	sh install.sublime.sh
 ```
 
-#### Instruction Sublime Text 
+#### Instruction Sublime Text 3
 You can hit tab to select the completion as well as navigate through parameters
 
 
