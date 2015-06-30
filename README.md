@@ -36,12 +36,11 @@ tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME} |  <tag-ui-inputtext | All Aur
    #to pull latest and greatest
    git submodule update --recursive
 
-   #to run in a guided mode
+   #to run in a guided mode with prompts
    npm start
    
    #to run in silent mode, please provide the base dir
-   node generateJsAutoComplete.js /Users/sle/git/aura;
-   node generateXmlAutoComplete.js /Users/sle/git/aura;
+   npm run pkg
 
    #install it on local
    sh install.sublime.sh
