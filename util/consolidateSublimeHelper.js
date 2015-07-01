@@ -104,7 +104,7 @@ var self = {
         );
         for (var evtName in arrayEvents) {
             var evtObj = arrayEvents[evtName];
-            console.log(evtObj);
+            // console.log(evtObj);
             var evt = evtObj.evtDef;
             var actualEvt = evtObj.evt;
             if (evt === undefined) {
