@@ -29,7 +29,7 @@ var self = {
 
             //triggers
             var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0  ;
+            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '' : '' ;
 
             //contents
             var contents = functionName + "(" + annotatedParams + ")";
