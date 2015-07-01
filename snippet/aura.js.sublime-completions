@@ -2,759 +2,759 @@
    "scope": "source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json",
    "completions": [
       {
-         "trigger": "A-test-getInitialGlobalState\t$A",
+         "trigger": "A-test-getInitialGlobalStatetrue",
          "contents": "A.test.getInitialGlobalState(${1:})"
       },
       {
-         "trigger": "A-test-getWhitelistedVariables\t$A",
+         "trigger": "A-test-getWhitelistedVariablestrue",
          "contents": "A.test.getWhitelistedVariables(${1:})"
       },
       {
-         "trigger": "A-test-addWaitFor\t$A",
+         "trigger": "A-test-addWaitFortrue",
          "contents": "A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})"
       },
       {
-         "trigger": "A-test-addWaitForAction\t$A",
+         "trigger": "A-test-addWaitForActiontrue",
          "contents": "A.test.addWaitForAction(${1:success},${2:actionName},${3:callback})"
       },
       {
-         "trigger": "A-test-addWaitForWithFailureMessage\t$A",
+         "trigger": "A-test-addWaitForWithFailureMessagetrue",
          "contents": "A.test.addWaitForWithFailureMessage(${1:expected},${2:testFunction},${3:failureMessage},${4:callback})"
       },
       {
-         "trigger": "A-test-blockRequests\t$A",
+         "trigger": "A-test-blockRequeststrue",
          "contents": "A.test.blockRequests(${1:})"
       },
       {
-         "trigger": "A-test-blockForegroundRequests\t$A",
+         "trigger": "A-test-blockForegroundRequeststrue",
          "contents": "A.test.blockForegroundRequests(${1:})"
       },
       {
-         "trigger": "A-test-blockBackgroundRequests\t$A",
+         "trigger": "A-test-blockBackgroundRequeststrue",
          "contents": "A.test.blockBackgroundRequests(${1:})"
       },
       {
-         "trigger": "A-test-releaseRequests\t$A",
+         "trigger": "A-test-releaseRequeststrue",
          "contents": "A.test.releaseRequests(${1:})"
       },
       {
-         "trigger": "A-test-releaseForegroundRequests\t$A",
+         "trigger": "A-test-releaseForegroundRequeststrue",
          "contents": "A.test.releaseForegroundRequests(${1:})"
       },
       {
-         "trigger": "A-test-releaseBackgroundRequests\t$A",
+         "trigger": "A-test-releaseBackgroundRequeststrue",
          "contents": "A.test.releaseBackgroundRequests(${1:})"
       },
       {
-         "trigger": "A-test-getSentRequestCount\t$A",
+         "trigger": "A-test-getSentRequestCounttrue",
          "contents": "A.test.getSentRequestCount(${1:})"
       },
       {
-         "trigger": "A-test-areActionsComplete\t$A",
+         "trigger": "A-test-areActionsCompletetrue",
          "contents": "A.test.areActionsComplete(${1:actions})"
       },
       {
-         "trigger": "A-test-addCleanup\t$A",
+         "trigger": "A-test-addCleanuptrue",
          "contents": "A.test.addCleanup(${1:cleanupFunction})"
       },
       {
-         "trigger": "A-test-getAction\t$A",
+         "trigger": "A-test-getActiontrue",
          "contents": "A.test.getAction(${1:component},${2:name},${3:params},${4:callback})"
       },
       {
-         "trigger": "A-test-runActionsAsTransaction\t$A",
+         "trigger": "A-test-runActionsAsTransactiontrue",
          "contents": "A.test.runActionsAsTransaction(${1:actions},${2:scope},${3:callback})"
       },
       {
-         "trigger": "A-test-enqueueAction\t$A",
+         "trigger": "A-test-enqueueActiontrue",
          "contents": "A.test.enqueueAction(${1:action},${2:background})"
       },
       {
-         "trigger": "A-test-getExternalAction\t$A",
+         "trigger": "A-test-getExternalActiontrue",
          "contents": "A.test.getExternalAction(${1:component},${2:descriptor},${3:params},${4:returnType},${5:callback})"
       },
       {
-         "trigger": "A-test-clearAndAssertComponentConfigs\t$A",
+         "trigger": "A-test-clearAndAssertComponentConfigstrue",
          "contents": "A.test.clearAndAssertComponentConfigs(${1:a})"
       },
       {
-         "trigger": "A-test-isActionPending\t$A",
+         "trigger": "A-test-isActionPendingtrue",
          "contents": "A.test.isActionPending(${1:})"
       },
       {
-         "trigger": "A-test-callServerAction\t$A",
+         "trigger": "A-test-callServerActiontrue",
          "contents": "A.test.callServerAction(${1:action},${2:doImmediate})"
       },
       {
-         "trigger": "A-test-setServerReachable\t$A",
+         "trigger": "A-test-setServerReachabletrue",
          "contents": "A.test.setServerReachable(${1:reachable})"
       },
       {
-         "trigger": "A-test-runAfterIf\t$A",
+         "trigger": "A-test-runAfterIftrue",
          "contents": "A.test.runAfterIf(${1:conditionFunction},${2:callback},${3:intervalInMs})"
       },
       {
-         "trigger": "A-test-setTestTimeout\t$A",
+         "trigger": "A-test-setTestTimeouttrue",
          "contents": "A.test.setTestTimeout(${1:timeoutMsec})"
       },
       {
-         "trigger": "A-test-isComplete\t$A",
+         "trigger": "A-test-isCompletetrue",
          "contents": "A.test.isComplete(${1:})"
       },
       {
-         "trigger": "A-test-getErrors\t$A",
+         "trigger": "A-test-getErrorstrue",
          "contents": "A.test.getErrors(${1:})"
       },
       {
-         "trigger": "A-test-print\t$A",
+         "trigger": "A-test-printtrue",
          "contents": "A.test.print(${1:value})"
       },
       {
-         "trigger": "A-test-auraError\t$A",
+         "trigger": "A-test-auraErrortrue",
          "contents": "A.test.auraError($1level, msg/*, error*/)"
       },
       {
-         "trigger": "A-test-expectAuraError\t$A",
+         "trigger": "A-test-expectAuraErrortrue",
          "contents": "A.test.expectAuraError(${1:e})"
       },
       {
-         "trigger": "A-test-auraWarning\t$A",
+         "trigger": "A-test-auraWarningtrue",
          "contents": "A.test.auraWarning(${1:level},${2:msg})"
       },
       {
-         "trigger": "A-test-expectAuraWarning\t$A",
+         "trigger": "A-test-expectAuraWarningtrue",
          "contents": "A.test.expectAuraWarning(${1:w})"
       },
       {
-         "trigger": "A-test-assertAccessible\t$A",
+         "trigger": "A-test-assertAccessibletrue",
          "contents": "A.test.assertAccessible(${1:})"
       },
       {
-         "trigger": "A-test-assertTruthy\t$A",
+         "trigger": "A-test-assertTruthytrue",
          "contents": "A.test.assertTruthy(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertFalsy\t$A",
+         "trigger": "A-test-assertFalsytrue",
          "contents": "A.test.assertFalsy(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assert\t$A",
+         "trigger": "A-test-asserttrue",
          "contents": "A.test.assert(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertEquals\t$A",
+         "trigger": "A-test-assertEqualstrue",
          "contents": "A.test.assertEquals(${1:arg1},${2:arg2},${3:assertMessage})"
       },
       {
-         "trigger": "A-test-assertEqualsIgnoreWhitespace\t$A",
+         "trigger": "A-test-assertEqualsIgnoreWhitespacetrue",
          "contents": "A.test.assertEqualsIgnoreWhitespace(${1:arg1},${2:arg2},${3:assertMessage})"
       },
       {
-         "trigger": "A-test-assertStartsWith\t$A",
+         "trigger": "A-test-assertStartsWithtrue",
          "contents": "A.test.assertStartsWith(${1:start},${2:full},${3:assertMessage})"
       },
       {
-         "trigger": "A-test-assertNotEquals\t$A",
+         "trigger": "A-test-assertNotEqualstrue",
          "contents": "A.test.assertNotEquals(${1:arg1},${2:arg2},${3:assertMessage})"
       },
       {
-         "trigger": "A-test-assertDefined\t$A",
+         "trigger": "A-test-assertDefinedtrue",
          "contents": "A.test.assertDefined(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertTrue\t$A",
+         "trigger": "A-test-assertTruetrue",
          "contents": "A.test.assertTrue(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertFalse\t$A",
+         "trigger": "A-test-assertFalsetrue",
          "contents": "A.test.assertFalse(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertUndefined\t$A",
+         "trigger": "A-test-assertUndefinedtrue",
          "contents": "A.test.assertUndefined(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertNotUndefinedOrNull\t$A",
+         "trigger": "A-test-assertNotUndefinedOrNulltrue",
          "contents": "A.test.assertNotUndefinedOrNull(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertUndefinedOrNull\t$A",
+         "trigger": "A-test-assertUndefinedOrNulltrue",
          "contents": "A.test.assertUndefinedOrNull(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertNull\t$A",
+         "trigger": "A-test-assertNulltrue",
          "contents": "A.test.assertNull(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertNotNull\t$A",
+         "trigger": "A-test-assertNotNulltrue",
          "contents": "A.test.assertNotNull(${1:condition},${2:assertMessage})"
       },
       {
-         "trigger": "A-test-assertAuraType\t$A",
+         "trigger": "A-test-assertAuraTypetrue",
          "contents": "A.test.assertAuraType(${1:type},${2:condition},${3:assertMessage})"
       },
       {
-         "trigger": "A-test-fail\t$A",
+         "trigger": "A-test-failtrue",
          "contents": "A.test.fail(${1:assertMessage},${2:extraInfoMessage})"
       },
       {
-         "trigger": "A-test-getPrototype\t$A",
+         "trigger": "A-test-getPrototypetrue",
          "contents": "A.test.getPrototype(${1:instance})"
       },
       {
-         "trigger": "A-test-overrideFunction\t$A",
+         "trigger": "A-test-overrideFunctiontrue",
          "contents": "A.test.overrideFunction(${1:instance},${2:name},${3:newFunction})"
       },
       {
-         "trigger": "A-test-addFunctionHandler\t$A",
+         "trigger": "A-test-addFunctionHandlertrue",
          "contents": "A.test.addFunctionHandler(${1:instance},${2:name},${3:newFunction},${4:postProcess})"
       },
       {
-         "trigger": "A-test-getOuterHtml\t$A",
+         "trigger": "A-test-getOuterHtmltrue",
          "contents": "A.test.getOuterHtml(${1:node})"
       },
       {
-         "trigger": "A-test-getText\t$A",
+         "trigger": "A-test-getTexttrue",
          "contents": "A.test.getText(${1:node})"
       },
       {
-         "trigger": "A-test-getTextByComponent\t$A",
+         "trigger": "A-test-getTextByComponenttrue",
          "contents": "A.test.getTextByComponent(${1:component})"
       },
       {
-         "trigger": "A-test-getStyle\t$A",
+         "trigger": "A-test-getStyletrue",
          "contents": "A.test.getStyle(${1:elem},${2:style})"
       },
       {
-         "trigger": "A-test-getNonCommentNodes\t$A",
+         "trigger": "A-test-getNonCommentNodestrue",
          "contents": "A.test.getNonCommentNodes(${1:nodes})"
       },
       {
-         "trigger": "A-test-isNodeDeleted\t$A",
+         "trigger": "A-test-isNodeDeletedtrue",
          "contents": "A.test.isNodeDeleted(${1:node})"
       },
       {
-         "trigger": "A-test-select\t$A",
+         "trigger": "A-test-selecttrue",
          "contents": "A.test.select(${1:})"
       },
       {
-         "trigger": "A-test-contains\t$A",
+         "trigger": "A-test-containstrue",
          "contents": "A.test.contains(${1:testString},${2:targetString})"
       },
       {
-         "trigger": "A-test-compareValues\t$A",
+         "trigger": "A-test-compareValuestrue",
          "contents": "A.test.compareValues(${1:expected},${2:actual})"
       },
       {
-         "trigger": "A-test-getActiveElement\t$A",
+         "trigger": "A-test-getActiveElementtrue",
          "contents": "A.test.getActiveElement(${1:})"
       },
       {
-         "trigger": "A-test-getActiveElementText\t$A",
+         "trigger": "A-test-getActiveElementTexttrue",
          "contents": "A.test.getActiveElementText(${1:})"
       },
       {
-         "trigger": "A-test-walkTheDOM\t$A",
+         "trigger": "A-test-walkTheDOMtrue",
          "contents": "A.test.walkTheDOM(${1:node},${2:func})"
       },
       {
-         "trigger": "A-test-getElementsByClassNameCustom\t$A",
+         "trigger": "A-test-getElementsByClassNameCustomtrue",
          "contents": "A.test.getElementsByClassNameCustom(${1:className},${2:parentElement})"
       },
       {
-         "trigger": "A-test-findChildWithClassName\t$A",
+         "trigger": "A-test-findChildWithClassNametrue",
          "contents": "A.test.findChildWithClassName(${1:parentElement},${2:className})"
       },
       {
-         "trigger": "A-test-getElementByClass\t$A",
+         "trigger": "A-test-getElementByClasstrue",
          "contents": "A.test.getElementByClass(${1:classname})"
       },
       {
-         "trigger": "A-test-fireDomEvent\t$A",
+         "trigger": "A-test-fireDomEventtrue",
          "contents": "A.test.fireDomEvent(${1:element},${2:eventName},${3:canBubble},${4:cancelable})"
       },
       {
-         "trigger": "A-test-clickOrTouch\t$A",
+         "trigger": "A-test-clickOrTouchtrue",
          "contents": "A.test.clickOrTouch(${1:element},${2:canBubble},${3:cancelable})"
       },
       {
-         "trigger": "A-test-isInstanceOfText\t$A",
+         "trigger": "A-test-isInstanceOfTexttrue",
          "contents": "A.test.isInstanceOfText(${1:node})"
       },
       {
-         "trigger": "A-test-isInstanceOfAnchorElement\t$A",
+         "trigger": "A-test-isInstanceOfAnchorElementtrue",
          "contents": "A.test.isInstanceOfAnchorElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfInputElement\t$A",
+         "trigger": "A-test-isInstanceOfInputElementtrue",
          "contents": "A.test.isInstanceOfInputElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfLiElement\t$A",
+         "trigger": "A-test-isInstanceOfLiElementtrue",
          "contents": "A.test.isInstanceOfLiElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfParagraphElement\t$A",
+         "trigger": "A-test-isInstanceOfParagraphElementtrue",
          "contents": "A.test.isInstanceOfParagraphElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfButtonElement\t$A",
+         "trigger": "A-test-isInstanceOfButtonElementtrue",
          "contents": "A.test.isInstanceOfButtonElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfImageElement\t$A",
+         "trigger": "A-test-isInstanceOfImageElementtrue",
          "contents": "A.test.isInstanceOfImageElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfDivElement\t$A",
+         "trigger": "A-test-isInstanceOfDivElementtrue",
          "contents": "A.test.isInstanceOfDivElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOfSpanElement\t$A",
+         "trigger": "A-test-isInstanceOfSpanElementtrue",
          "contents": "A.test.isInstanceOfSpanElement(${1:element})"
       },
       {
-         "trigger": "A-test-isInstanceOf\t$A",
+         "trigger": "A-test-isInstanceOftrue",
          "contents": "A.test.isInstanceOf(${1:element},${2:elementType},${3:tag})"
       },
       {
-         "trigger": "A-test-objectKeys\t$A",
+         "trigger": "A-test-objectKeystrue",
          "contents": "A.test.objectKeys(${1:obj})"
       },
       {
-         "trigger": "A-test-getElementAttributeValue\t$A",
+         "trigger": "A-test-getElementAttributeValuetrue",
          "contents": "A.test.getElementAttributeValue(${1:element},${2:attributeName})"
       },
       {
-         "trigger": "A-test-addEventHandler\t$A",
+         "trigger": "A-test-addEventHandlertrue",
          "contents": "A.test.addEventHandler(${1:eventName},${2:handler},${3:component},${4:insert})"
       },
       {
-         "trigger": "A-test-dummyFunction\t$A",
+         "trigger": "A-test-dummyFunctiontrue",
          "contents": "A.test.dummyFunction(${1:})"
       },
       {
-         "trigger": "A-test-getAppCacheEvents\t$A",
+         "trigger": "A-test-getAppCacheEventstrue",
          "contents": "A.test.getAppCacheEvents(${1:})"
       },
       {
-         "trigger": "A-test-getAuraErrorMessage\t$A",
+         "trigger": "A-test-getAuraErrorMessagetrue",
          "contents": "A.test.getAuraErrorMessage(${1:})"
       },
       {
-         "trigger": "A-test-getAvailableXHROverride\t$A",
+         "trigger": "A-test-getAvailableXHROverridetrue",
          "contents": "A.test.getAvailableXHROverride(${1:config},${2:isBackground})"
       },
       {
-         "trigger": "A-test-sendOverride\t$A",
+         "trigger": "A-test-sendOverridetrue",
          "contents": "A.test.sendOverride(${1:config},${2:auraXHR},${3:actions},${4:method},${5:options})"
       },
       {
-         "trigger": "A-test-decodeOverride\t$A",
+         "trigger": "A-test-decodeOverridetrue",
          "contents": "A.test.decodeOverride(${1:config},${2:response},${3:noStrip})"
       },
       {
-         "trigger": "A-test-PrePostConfig\t$A",
+         "trigger": "A-test-PrePostConfigtrue",
          "contents": "A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback})"
       },
       {
-         "trigger": "A-test-addPrePostSendCallback\t$A",
+         "trigger": "A-test-addPrePostSendCallbacktrue",
          "contents": "A.test.addPrePostSendCallback(${1:action},${2:preSendCallback},${3:postSendCallback})"
       },
       {
-         "trigger": "A-test-removePrePostSendCallback\t$A",
+         "trigger": "A-test-removePrePostSendCallbacktrue",
          "contents": "A.test.removePrePostSendCallback(${1:handle})"
       },
       {
-         "trigger": "A-test-install\t$A",
+         "trigger": "A-test-installtrue",
          "contents": "A.test.install(${1:})"
       },
       {
-         "trigger": "A-test-run\t$A",
+         "trigger": "A-test-runtrue",
          "contents": "A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})"
       },
       {
-         "trigger": "A-test-runInternal\t$A",
+         "trigger": "A-test-runInternaltrue",
          "contents": "A.test.runInternal(${1:name})"
       },
       {
-         "trigger": "A-test-executeAfterCkEditorIsReady\t$A",
+         "trigger": "A-test-executeAfterCkEditorIsReadytrue",
          "contents": "A.test.executeAfterCkEditorIsReady(${1:inputRichTextComponent},${2:callback})"
       },
       {
-         "trigger": "A-test-reloadGlobalValueProviders\t$A",
+         "trigger": "A-test-reloadGlobalValueProviderstrue",
          "contents": "A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})"
       },
       {
-         "trigger": "A-test-getCreationPath\t$A",
+         "trigger": "A-test-getCreationPathtrue",
          "contents": "A.test.getCreationPath(${1:cmp})"
       },
       {
-         "trigger": "A-test-createHttpRequest\t$A",
+         "trigger": "A-test-createHttpRequesttrue",
          "contents": "A.test.createHttpRequest(${1:})"
       },
       {
-         "trigger": "A-test-checkGlobalNamespacePollution\t$A",
+         "trigger": "A-test-checkGlobalNamespacePollutiontrue",
          "contents": "A.test.checkGlobalNamespacePollution(${1:})"
       },
       {
-         "trigger": "A-util-isIOSWebView\t$A",
+         "trigger": "A-util-isIOSWebViewfalse",
          "contents": "A.util.isIOSWebView(${1:})"
       },
       {
-         "trigger": "A-util-globalEval\t$A",
+         "trigger": "A-util-globalEvalfalse",
          "contents": "A.util.globalEval(${1:src})"
       },
       {
-         "trigger": "A-util-isArray\t$A",
+         "trigger": "A-util-isArrayfalse",
          "contents": "A.util.isArray(${1:})"
       },
       {
-         "trigger": "A-util-isObject\t$A",
+         "trigger": "A-util-isObjectfalse",
          "contents": "A.util.isObject(${1:obj})"
       },
       {
-         "trigger": "A-util-isPlainObject\t$A",
+         "trigger": "A-util-isPlainObjectfalse",
          "contents": "A.util.isPlainObject(${1:obj})"
       },
       {
-         "trigger": "A-util-isError\t$A",
+         "trigger": "A-util-isErrorfalse",
          "contents": "A.util.isError(${1:obj})"
       },
       {
-         "trigger": "A-util-isFunction\t$A",
+         "trigger": "A-util-isFunctionfalse",
          "contents": "A.util.isFunction(${1:obj})"
       },
       {
-         "trigger": "A-util-isString\t$A",
+         "trigger": "A-util-isStringfalse",
          "contents": "A.util.isString(${1:obj})"
       },
       {
-         "trigger": "A-util-isNumber\t$A",
+         "trigger": "A-util-isNumberfalse",
          "contents": "A.util.isNumber(${1:obj})"
       },
       {
-         "trigger": "A-util-isFiniteNumber\t$A",
+         "trigger": "A-util-isFiniteNumberfalse",
          "contents": "A.util.isFiniteNumber(${1:obj})"
       },
       {
-         "trigger": "A-util-isBoolean\t$A",
+         "trigger": "A-util-isBooleanfalse",
          "contents": "A.util.isBoolean(${1:obj})"
       },
       {
-         "trigger": "A-util-isUndefined\t$A",
+         "trigger": "A-util-isUndefinedfalse",
          "contents": "A.util.isUndefined(${1:obj})"
       },
       {
-         "trigger": "A-util-isUndefinedOrNull\t$A",
+         "trigger": "A-util-isUndefinedOrNullfalse",
          "contents": "A.util.isUndefinedOrNull(${1:obj})"
       },
       {
-         "trigger": "A-util-isEmpty\t$A",
+         "trigger": "A-util-isEmptyfalse",
          "contents": "A.util.isEmpty(${1:obj})"
       },
       {
-         "trigger": "A-util-getBooleanValue\t$A",
+         "trigger": "A-util-getBooleanValuefalse",
          "contents": "A.util.getBooleanValue(${1:val})"
       },
       {
-         "trigger": "A-util-createHtmlElement\t$A",
+         "trigger": "A-util-createHtmlElementfalse",
          "contents": "A.util.createHtmlElement(${1:tagName},${2:attributes})"
       },
       {
-         "trigger": "A-util-clearNode\t$A",
+         "trigger": "A-util-clearNodefalse",
          "contents": "A.util.clearNode(${1:node})"
       },
       {
-         "trigger": "A-util-getElement\t$A",
+         "trigger": "A-util-getElementfalse",
          "contents": "A.util.getElement(${1:id})"
       },
       {
-         "trigger": "A-util-copy\t$A",
+         "trigger": "A-util-copyfalse",
          "contents": "A.util.copy(${1:value})"
       },
       {
-         "trigger": "A-util-compareValues\t$A",
+         "trigger": "A-util-compareValuesfalse",
          "contents": "A.util.compareValues(${1:expected},${2:actual})"
       },
       {
-         "trigger": "A-util-hasClass\t$A",
+         "trigger": "A-util-hasClassfalse",
          "contents": "A.util.hasClass(${1:element},${2:className})"
       },
       {
-         "trigger": "A-util-addClass\t$A",
+         "trigger": "A-util-addClassfalse",
          "contents": "A.util.addClass(${1:element},${2:newClass})"
       },
       {
-         "trigger": "A-util-removeClass\t$A",
+         "trigger": "A-util-removeClassfalse",
          "contents": "A.util.removeClass(${1:element},${2:newClass})"
       },
       {
-         "trigger": "A-util-toggleClass\t$A",
+         "trigger": "A-util-toggleClassfalse",
          "contents": "A.util.toggleClass(${1:element},${2:className},${3:condition})"
       },
       {
-         "trigger": "A-util-swapClass\t$A",
+         "trigger": "A-util-swapClassfalse",
          "contents": "A.util.swapClass(${1:element},${2:oldClass},${3:newClass})"
       },
       {
-         "trigger": "A-util-setClass\t$A",
+         "trigger": "A-util-setClassfalse",
          "contents": "A.util.setClass(${1:element,newClass,remove})"
       },
       {
-         "trigger": "A-util-buildClass\t$A",
+         "trigger": "A-util-buildClassfalse",
          "contents": "A.util.buildClass(${1:oldClass},${2:newClass},${3:remove})"
       },
       {
-         "trigger": "A-util-buildFlavorClass\t$A",
+         "trigger": "A-util-buildFlavorClassfalse",
          "contents": "A.util.buildFlavorClass(${1:cmp},${2:flavor})"
       },
       {
-         "trigger": "A-util-createElementsFromMarkup\t$A",
+         "trigger": "A-util-createElementsFromMarkupfalse",
          "contents": "A.util.createElementsFromMarkup(${1:markup})"
       },
       {
-         "trigger": "A-util-insertFirst\t$A",
+         "trigger": "A-util-insertFirstfalse",
          "contents": "A.util.insertFirst(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-insertBefore\t$A",
+         "trigger": "A-util-insertBeforefalse",
          "contents": "A.util.insertBefore(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-insertAfter\t$A",
+         "trigger": "A-util-insertAfterfalse",
          "contents": "A.util.insertAfter(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-appendChild\t$A",
+         "trigger": "A-util-appendChildfalse",
          "contents": "A.util.appendChild(${1:newEl},${2:referenceEl})"
       },
       {
-         "trigger": "A-util-removeElement\t$A",
+         "trigger": "A-util-removeElementfalse",
          "contents": "A.util.removeElement(${1:element})"
       },
       {
-         "trigger": "A-util-urlDecode\t$A",
+         "trigger": "A-util-urlDecodefalse",
          "contents": "A.util.urlDecode(${1:url})"
       },
       {
-         "trigger": "A-util-trim\t$A",
+         "trigger": "A-util-trimfalse",
          "contents": "A.util.trim(${1:value})"
       },
       {
-         "trigger": "A-util-format\t$A",
+         "trigger": "A-util-formatfalse",
          "contents": "A.util.format(${1:formatString,arg1,arg2,argN})"
       },
       {
-         "trigger": "A-util-truncate\t$A",
+         "trigger": "A-util-truncatefalse",
          "contents": "A.util.truncate(${1:st},${2:len},${3:ellipsis},${4:truncateByWord})"
       },
       {
-         "trigger": "A-util-createTimeoutCallback\t$A",
+         "trigger": "A-util-createTimeoutCallbackfalse",
          "contents": "A.util.createTimeoutCallback(${1:callback},${2:toleranceMillis})"
       },
       {
-         "trigger": "A-util-on\t$A",
+         "trigger": "A-util-onfalse",
          "contents": "A.util.on(${1:element},${2:eventName},${3:handler},${4:useCapture},${5:timeout})"
       },
       {
-         "trigger": "A-util-removeOn\t$A",
+         "trigger": "A-util-removeOnfalse",
          "contents": "A.util.removeOn(${1:element},${2:eventName},${3:listener},${4:useCapture})"
       },
       {
-         "trigger": "A-util-formToMap\t$A",
+         "trigger": "A-util-formToMapfalse",
          "contents": "A.util.formToMap(${1:form})"
       },
       {
-         "trigger": "A-util-getSelectValue\t$A",
+         "trigger": "A-util-getSelectValuefalse",
          "contents": "A.util.getSelectValue(${1:select})"
       },
       {
-         "trigger": "A-util-addValueToMap\t$A",
+         "trigger": "A-util-addValueToMapfalse",
          "contents": "A.util.addValueToMap(${1:inputMap},${2:key},${3:value})"
       },
       {
-         "trigger": "A-util-addMapValueToMap\t$A",
+         "trigger": "A-util-addMapValueToMapfalse",
          "contents": "A.util.addMapValueToMap(${1:inputMap},${2:key},${3:value},${4:subMapKey})"
       },
       {
-         "trigger": "A-util-isSubDef\t$A",
+         "trigger": "A-util-isSubDeffalse",
          "contents": "A.util.isSubDef(${1:def},${2:qname})"
       },
       {
-         "trigger": "A-util-apply\t$A",
+         "trigger": "A-util-applyfalse",
          "contents": "A.util.apply($1/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)"
       },
       {
-         "trigger": "A-util-camelCaseToHyphens\t$A",
+         "trigger": "A-util-camelCaseToHyphensfalse",
          "contents": "A.util.camelCaseToHyphens(${1:str})"
       },
       {
-         "trigger": "A-util-hyphensToCamelCase\t$A",
+         "trigger": "A-util-hyphensToCamelCasefalse",
          "contents": "A.util.hyphensToCamelCase(${1:str})"
       },
       {
-         "trigger": "A-util-acceptsData\t$A",
+         "trigger": "A-util-acceptsDatafalse",
          "contents": "A.util.acceptsData(${1:element})"
       },
       {
-         "trigger": "A-util-getElementAttributeValue\t$A",
+         "trigger": "A-util-getElementAttributeValuefalse",
          "contents": "A.util.getElementAttributeValue(${1:element,attributeName})"
       },
       {
-         "trigger": "A-util-getDataAttribute\t$A",
+         "trigger": "A-util-getDataAttributefalse",
          "contents": "A.util.getDataAttribute(${1:element},${2:key})"
       },
       {
-         "trigger": "A-util-setDataAttribute\t$A",
+         "trigger": "A-util-setDataAttributefalse",
          "contents": "A.util.setDataAttribute(${1:element},${2:key},${3:value})"
       },
       {
-         "trigger": "A-util-getDataAttributeName\t$A",
+         "trigger": "A-util-getDataAttributeNamefalse",
          "contents": "A.util.getDataAttributeName(${1:key})"
       },
       {
-         "trigger": "A-util-hasDataAttribute\t$A",
+         "trigger": "A-util-hasDataAttributefalse",
          "contents": "A.util.hasDataAttribute(${1:element},${2:key})"
       },
       {
-         "trigger": "A-util-isElement\t$A",
+         "trigger": "A-util-isElementfalse",
          "contents": "A.util.isElement(${1:obj})"
       },
       {
-         "trigger": "A-util-attachToDocumentBody\t$A",
+         "trigger": "A-util-attachToDocumentBodyfalse",
          "contents": "A.util.attachToDocumentBody(${1:element})"
       },
       {
-         "trigger": "A-util-stringEndsWith\t$A",
+         "trigger": "A-util-stringEndsWithfalse",
          "contents": "A.util.stringEndsWith(${1:fullstr},${2:substr})"
       },
       {
-         "trigger": "A-util-bind\t$A",
+         "trigger": "A-util-bindfalse",
          "contents": "A.util.bind($1method /*, this, bind arguments*/)"
       },
       {
-         "trigger": "A-util-keys\t$A",
+         "trigger": "A-util-keysfalse",
          "contents": "A.util.keys(${1:object},${2:excludeFunctions})"
       },
       {
-         "trigger": "A-util-lookup\t$A",
+         "trigger": "A-util-lookupfalse",
          "contents": "A.util.lookup($1object /*, var-args of arrays*/)"
       },
       {
-         "trigger": "A-util-merge\t$A",
+         "trigger": "A-util-mergefalse",
          "contents": "A.util.merge($1first /*, var-args of arrays*/)"
       },
       {
-         "trigger": "A-util-forEach\t$A",
+         "trigger": "A-util-forEachfalse",
          "contents": "A.util.forEach(${1:array},${2:method},${3:that})"
       },
       {
-         "trigger": "A-util-map\t$A",
+         "trigger": "A-util-mapfalse",
          "contents": "A.util.map(${1:array},${2:method},${3:that})"
       },
       {
-         "trigger": "A-util-reduce\t$A",
+         "trigger": "A-util-reducefalse",
          "contents": "A.util.reduce(${1:array},${2:method},${3:initial})"
       },
       {
-         "trigger": "A-util-every\t$A",
+         "trigger": "A-util-everyfalse",
          "contents": "A.util.every(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-some\t$A",
+         "trigger": "A-util-somefalse",
          "contents": "A.util.some(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-filter\t$A",
+         "trigger": "A-util-filterfalse",
          "contents": "A.util.filter(${1:array},${2:predicate},${3:that})"
       },
       {
-         "trigger": "A-util-destroyAsync\t$A",
+         "trigger": "A-util-destroyAsyncfalse",
          "contents": "A.util.destroyAsync(${1:cmp})"
       },
       {
-         "trigger": "A-util-instanceOf\t$A",
+         "trigger": "A-util-instanceOffalse",
          "contents": "A.util.instanceOf(${1:instance},${2:constructor})"
       },
       {
-         "trigger": "A-util-emptyComponentTrash\t$A",
+         "trigger": "A-util-emptyComponentTrashfalse",
          "contents": "A.util.emptyComponentTrash(${1:})"
       },
       {
-         "trigger": "A-util-contains\t$A",
+         "trigger": "A-util-containsfalse",
          "contents": "A.util.contains(${1:container},${2:element})"
       },
       {
-         "trigger": "A-util-squash\t$A",
+         "trigger": "A-util-squashfalse",
          "contents": "A.util.squash(${1:event},${2:preventDefault})"
       },
       {
-         "trigger": "A-util-stripTags\t$A",
+         "trigger": "A-util-stripTagsfalse",
          "contents": "A.util.stripTags(${1:input},${2:tags})"
       },
       {
-         "trigger": "A-util-getWindowSize\t$A",
+         "trigger": "A-util-getWindowSizefalse",
          "contents": "A.util.getWindowSize(${1:})"
       },
       {
-         "trigger": "A-util-isComponent\t$A",
+         "trigger": "A-util-isComponentfalse",
          "contents": "A.util.isComponent(${1:obj})"
       },
       {
-         "trigger": "A-util-isExpression\t$A",
+         "trigger": "A-util-isExpressionfalse",
          "contents": "A.util.isExpression(${1:obj})"
       },
       {
-         "trigger": "A-util-isValue\t$A",
+         "trigger": "A-util-isValuefalse",
          "contents": "A.util.isValue(${1:obj})"
       },
       {
-         "trigger": "A-util-isAction\t$A",
+         "trigger": "A-util-isActionfalse",
          "contents": "A.util.isAction(${1:obj})"
       },
       {
-         "trigger": "A-util-supportsTouchEvents\t$A",
+         "trigger": "A-util-supportsTouchEventsfalse",
          "contents": "A.util.supportsTouchEvents(${1:})"
       },
       {
-         "trigger": "A-util-estimateSize\t$A",
+         "trigger": "A-util-estimateSizefalse",
          "contents": "A.util.estimateSize(${1:obj})"
       },
       {
-         "trigger": "A-util-toArray\t$A",
+         "trigger": "A-util-toArrayfalse",
          "contents": "A.util.toArray(${1:collection})"
       },
       {
-         "trigger": "A-util-setText\t$A",
+         "trigger": "A-util-setTextfalse",
          "contents": "A.util.setText(${1:node},${2:text})"
       },
       {
-         "trigger": "A-util-getDebugToolComponent\t$A",
+         "trigger": "A-util-getDebugToolComponentfalse",
          "contents": "A.util.getDebugToolComponent(${1:})"
       },
       {
-         "trigger": "A-util-getDebugToolsAuraInstance\t$A",
+         "trigger": "A-util-getDebugToolsAuraInstancefalse",
          "contents": "A.util.getDebugToolsAuraInstance(${1:})"
       },
       {
-         "trigger": "A-util-setDebugToolWindow\t$A",
+         "trigger": "A-util-setDebugToolWindowfalse",
          "contents": "A.util.setDebugToolWindow(${1:debugWindow})"
       },
       {
-         "trigger": "A-util-getUrl\t$A",
+         "trigger": "A-util-getUrlfalse",
          "contents": "A.util.getUrl(${1:})"
       },
       {
-         "trigger": "A-util-getText\t$A",
+         "trigger": "A-util-getTextfalse",
          "contents": "A.util.getText(${1:node})"
       },
       {
-         "trigger": "A-util-errorBasedOnMode\t$A",
+         "trigger": "A-util-errorBasedOnModefalse",
          "contents": "A.util.errorBasedOnMode(${1:msg})"
       },
       {
-         "trigger": "A-util-includeScript\t$A",
+         "trigger": "A-util-includeScriptfalse",
          "contents": "A.util.includeScript(${1:url},${2:callback})"
       }
    ]

@@ -114,8 +114,6 @@ function processParser(baseDir, outputDir){
 
 	//reading and parsing the componentEvents
 	componentFileNames.cmp.forEach(function(fileName){
-		var componentName = parseHelper.getBaseFileNameWithoutExtension(fileName);
-
 		var fileContent = parseHelper.readFromFile(
 			fileName,
 			true
@@ -123,14 +121,15 @@ function processParser(baseDir, outputDir){
 
 
 		var fileBreakups = parseHelper.getComponentBreakup(fileName);
-
+		var namespace = fileBreakups[0];
+		var componentName = fileBreakups[1];
 
 		var componentObj = {
 			name : componentName,
 			description : '',
 			// attributes : [],
-			namespace : fileBreakups[0],
-			fullComponentTag: fileBreakups[0] + ':' + fileBreakups[1],
+			namespace : namespace,
+			fullComponentTag: namespace + ':' + componentName,
 			implements : ''
 		}
 
@@ -160,6 +159,7 @@ function processParser(baseDir, outputDir){
 					
 
 					arrayEvents.push({
+						namespace: namespace,
 						component : componentName,
 						evt : evtObj,
 						evtDef : matchingEvtDef

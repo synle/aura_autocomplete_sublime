@@ -29,7 +29,7 @@ var self = {
 
             //triggers
             var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A' : '\t$A';
+            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0  ;
 
             //contents
             var contents = functionName + "(" + annotatedParams + ")";
@@ -65,7 +65,7 @@ var self = {
                 var functionName = currentComponentHelperObj.functionName || ''
 
                 //triggers
-                var trigger = 'helper' + TRIGGER_SEPARATOR + namespace + TRIGGER_SEPARATOR + componentName + TRIGGER_SEPARATOR + functionName + '\t$A';
+                var trigger = 'helper' + TRIGGER_SEPARATOR + namespace + TRIGGER_SEPARATOR + componentName + TRIGGER_SEPARATOR + functionName ;
 
                 //contents
                 var contents = 'cmp.getDef().getHelper().' + functionName + "(" + annotatedParams + ")";
@@ -85,7 +85,8 @@ var self = {
         [...
             {
                 component: 'tabset',
-                    evt:
+                namespace: 'namespace'
+                evt:
                      { name: 'onActivate',
                        type: 'ui:tabsetEvent',
                        description: 'The event is triggered when the tab is activated.' },
@@ -103,6 +104,7 @@ var self = {
         );
         for (var evtName in arrayEvents) {
             var evtObj = arrayEvents[evtName];
+            console.log(evtObj);
             var evt = evtObj.evtDef;
             var actualEvt = evtObj.evt;
             if (evt === undefined) {
@@ -110,7 +112,7 @@ var self = {
                 continue;
             }
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name + '\t$A';
+            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.namespace + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name ;
             var contents = [
                 '//' + 'component=' + evtObj.component,
                 '//' + 'evtName=' + actualEvt.name,
@@ -172,7 +174,7 @@ var self = {
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
-            var trigger = 'attr-' + attributeComponent.namespace + '-' + attributeComponent.name + '-' + attributeObj.name + '\t$A';
+            var trigger = 'attr-' + attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name ;
 
             //contents
             var contents = attributeComponent.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
@@ -210,7 +212,7 @@ var self = {
             var componentObj = arrayComponents[idx];
 
             //triggers
-            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + '-' + componentObj.name + '\t$A';
+            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name ;
 
             //contents
             var contents = [
