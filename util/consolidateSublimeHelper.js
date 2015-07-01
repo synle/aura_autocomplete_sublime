@@ -212,7 +212,7 @@ var self = {
             var componentObj = arrayComponents[idx];
 
             //triggers
-            var trigger = 'tag'+ TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name ;
+            var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name + '\t$A.Tag' ;
 
             //contents
             var contents = [
