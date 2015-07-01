@@ -6,7 +6,7 @@ var prompt = require('prompt');
 var parseString = require('xml2js').parseString;
 
 //internal dependencies
-var parseHelper = require('./parseHelper');
+var parseHelper = require('./util/parseHelper');
 var config = require('./config');
 var promptSchema = config.prompt;
 
@@ -19,7 +19,7 @@ if(process.argv[2]){
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
 	if (process.argv[2] === '--silent'){
-		console.log('Silent mode'.red);
+		console.log('Silent mode: assumed path: '.bold.red, config.baseDir);
 		baseDir = config.baseDir;
 	}
 	else{
@@ -55,10 +55,11 @@ function processParser(baseDir, outputDir){
 
 
 	// global dictionary
-	var eventDictionary = {};
-	var componentDictionary = [];
-	var componentEventDictionary = [];
-	var componentAttributesDictionary = [];
+	var eventDictionary = {};//being used only as a quick look up
+	var arrayComponents = [];
+	var arrayEvents = [];
+	var arrayAttributes = [];
+	var helperDictionary = {};
 
 	//find all cmp files in nested structures
 	var componentFileNames = parseHelper.listDir(componentBaseDir);
@@ -113,8 +114,6 @@ function processParser(baseDir, outputDir){
 
 	//reading and parsing the componentEvents
 	componentFileNames.cmp.forEach(function(fileName){
-		var componentName = parseHelper.getBaseFileNameWithoutExtension(fileName);
-
 		var fileContent = parseHelper.readFromFile(
 			fileName,
 			true
@@ -122,14 +121,15 @@ function processParser(baseDir, outputDir){
 
 
 		var fileBreakups = parseHelper.getComponentBreakup(fileName);
-
+		var namespace = fileBreakups[0];
+		var componentName = fileBreakups[1];
 
 		var componentObj = {
 			name : componentName,
 			description : '',
 			// attributes : [],
-			namespace : fileBreakups[0],
-			fullComponentTag: fileBreakups[0] + ':' + fileBreakups[1],
+			namespace : namespace,
+			fullComponentTag: namespace + ':' + componentName,
 			implements : ''
 		}
 
@@ -158,7 +158,8 @@ function processParser(baseDir, outputDir){
 					}
 					
 
-					componentEventDictionary.push({
+					arrayEvents.push({
+						namespace: namespace,
 						component : componentName,
 						evt : evtObj,
 						evtDef : matchingEvtDef
@@ -173,7 +174,7 @@ function processParser(baseDir, outputDir){
 					var attributeObj = curAttribute.$;
 					// componentObj.attributes.push(attributeObj);
 
-					componentAttributesDictionary.push({
+					arrayAttributes.push({
 						component: componentObj,
 						attribute: attributeObj
 					});
@@ -181,42 +182,77 @@ function processParser(baseDir, outputDir){
 			}
 		});
 
-		componentDictionary.push(componentObj);
+		arrayComponents.push(componentObj);
 	});
-	// console.log('ui:carouselPageEvent', eventDictionary['ui:carouselPageEvent']);
-	// console.log(Object.keys(eventDictionary));
+	
 
-	//consolidate js evt
-	console.log('Updating Sublime File: Component Events'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_evt_sublime(componentEventDictionary),
-		path.join(
-			outputDir,
-			'aura.event.sublime-completions'
-		)
-	);
+	
+	//look up the helper
+	componentFileNames.helperjs.forEach(function(fileName){
+		var fileBreakups = parseHelper.getComponentBreakup(fileName);
+		var namespace = fileBreakups[0];
+		var componentName = fileBreakups[1];
+		var fullCompName = namespace + ':' + componentName;
+		var componentHelpers = [];
+
+		var fileContent = parseHelper.readFromFile(
+			fileName,
+			true
+		);
+
+		//save it to helper dictionary
+		helperDictionary[fullCompName] = {
+			namespace : namespace,
+			componentName : componentName,
+			fullCompName : fullCompName,
+			helpers: componentHelpers
+		}
 
 
+
+		//attached custom js for parser
+		//try parse
+		try{
+			var METHOD_PLACEHOLDER = {};
+			fileContent = fileContent.replace(/(?:\/\*(?:[\s\S]*?)\*\/)|(?:([\s;])+\/\/(?:.*)$)/gm, '$1');
+			fileContent = fileContent.substr(fileContent.indexOf('('));
+			fileContent = [
+				'(function MAGIC_PARSER(dummyObj){',
+				'METHOD_PLACEHOLDER = dummyObj;',
+				'})'
+			].join('\n')  + fileContent;
+
+			// console.log('fileName'.blue, fileName)
+			eval(fileContent);
+
+			for(var methodName in METHOD_PLACEHOLDER){
+				var methodDef = METHOD_PLACEHOLDER[methodName];
+				if (typeof methodDef === 'function'){
+					var methodDefStr = methodDef.toString();
+					var paramsStr = parseHelper.getParamsFromFuncDef(methodDefStr);
+					var params = parseHelper.getParamsArrayFromStr(paramsStr);
+
+					var parsedStuffs = parseHelper.parseFunctions(methodName, methodDef, fullCompName)
+
+					componentHelpers.push({
+						functionName : methodName,
+						annotatedValue: parsedStuffs[1],
+						origValue : parsedStuffs[2]
+					});
+				}
+			}
+		}
+		catch(e){
+			console.log('ERR! error processing the file'.bold.underline.red , fileName.blue , e.toString());
+		}
+	})
+
+
+	//consolidate events
 	//consolidate component attribute
-	console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_attributes_sublime(componentAttributesDictionary),
-		path.join(
-			outputDir,
-			'aura.attributes.sublime-completions'
-		)
-	);
-
-
-
-
 	//consolidate component tags
-	console.log('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_uitags_sublime(componentDictionary),
-		path.join(
-			outputDir,
-			'aura.uitags.sublime-completions'
-		)
-	);
+	parseHelper.updateEvt(arrayEvents, outputDir);
+	parseHelper.updateTag(arrayComponents, outputDir);
+	parseHelper.updateTagAttr(arrayAttributes, outputDir);
+	parseHelper.updateHelper(helperDictionary, outputDir);
 }

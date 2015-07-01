@@ -5,7 +5,7 @@ var colors = require('colors');
 var prompt = require('prompt');
 
 //internal dependencies
-var parseHelper = require('./parseHelper');
+var parseHelper = require('./util/parseHelper');
 var config = require('./config');
 var promptSchema = config.prompt;
 
@@ -17,7 +17,7 @@ if(process.argv[2]){
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
 	if (process.argv[2] === '--silent'){
-		console.log('Silent mode'.red);
+		console.log('Silent mode: assumed path: '.bold.red, config.baseDir);
 		baseDir = config.baseDir;
 	}
 	else{
@@ -87,9 +87,11 @@ function processParser(baseDir, outputDir){
 		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
 		if(parsedStuffs.length >0){
 			var functionName = parsedStuffs[0];
-			var functionParams = parsedStuffs[1];
 
-			masterDictionary[functionName] = functionParams;
+			masterDictionary[functionName] = {
+				annotatedValue: parsedStuffs[1],
+				origValue : parsedStuffs[2]
+			};
 		}
 	}
 
@@ -115,32 +117,16 @@ function processParser(baseDir, outputDir){
 		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
 		if(parsedStuffs.length >0){
 			var functionName = parsedStuffs[0];
-			var functionParams = parsedStuffs[1];
 
-			masterDictionary[functionName] = functionParams;
+			masterDictionary[functionName] = {
+				annotatedValue: parsedStuffs[1],
+				origValue : parsedStuffs[2]
+			};
 		}
 	}
 
 
 
-	//consolidate sublime text format
-	console.log('Updating Sublime File: Util and Test JS:'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_sublime(masterDictionary),
-		path.join(
-			outputDir,
-			'aura.sublime-completions'
-		)
-	);
-
-
-	//consolidate atom files
-	console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
-	parseHelper.writeToFile(
-		parseHelper.consolidate_atom(masterDictionary),
-		path.join(
-			outputDir,
-			'aura.atom.cson'
-		)
-	);
+	//consolidate js file
+	parseHelper.updateJs(masterDictionary, outputDir);
 }

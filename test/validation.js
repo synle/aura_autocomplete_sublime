@@ -2,8 +2,8 @@ var assert = require("assert");
 var fs = require('fs');
 var path = require('path');
 describe('Sublime Text 3 - Snippet Validation', function() {
-    it('aura.sublime-completions is valid', function() {
-        var fileName = 'aura.sublime-completions';
+    it('aura.js.sublime-completions is valid', function() {
+        var fileName = 'aura.js.sublime-completions';
         assertSublimeContent(fileName, _readSnippet(fileName));
     });
     it('aura.attributes.sublime-completions is valid', function() {
@@ -14,10 +14,16 @@ describe('Sublime Text 3 - Snippet Validation', function() {
         var fileName = 'aura.uitags.sublime-completions';
         assertSublimeContent(fileName, _readSnippet(fileName));
     });
-    it('aura.event.sublime-completions is valid', function() {
-        var fileName = 'aura.event.sublime-completions';
+    it('aura.event.js.sublime-completions is valid', function() {
+        var fileName = 'aura.event.js.sublime-completions';
         assertSublimeContent(fileName, _readSnippet(fileName));
     });
+    it('aura.helper.js.sublime-completions is valid', function() {
+        var fileName = 'aura.helper.js.sublime-completions';
+        assertSublimeContent(fileName, _readSnippet(fileName));
+    });
+
+    
 
     function _readSnippet(fileName) {
         return fs.readFileSync(path.join('./snippet', fileName), 'utf-8');
