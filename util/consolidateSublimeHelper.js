@@ -1,14 +1,7 @@
 //depdencies
 var fs = require('fs');
 var path = require('path');
-// var _ = require('lodash');
-var _ = {
-    forEach: function(v, c){
-        for (var k in v){
-            c(v[k], k)
-        }
-    }
-}
+var _ = require('lodash');
 
 //vars
 var TRIGGER_SEPARATOR = '-';
@@ -49,29 +42,41 @@ var self = {
         return JSON.stringify(sublimeFormat, null, 3);
     },
 
+    /**
+     { namespace: 'ui',
+     componentName: 'inputDateTime',
+     fullCompName: 'ui:inputDateTime',
+     helpers: [] }
+     **/
     consolidate_helperjs: function(helperDictionary){
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
 
+        // console.log(helperDictionary);
+
         _.forEach(helperDictionary, function(cmpHelperObj, componentName){
-            console.log(componentName.red, cmpHelperObj.yellow);
-            for (var functionName in cmpHelperObj) {
-                var annotatedParams = dictionary[functionName].annotatedValue || "";
-                var origParams = dictionary[functionName].origValue || "";
+            var componentName = cmpHelperObj.componentName;
+            var namespace = cmpHelperObj.namespace;
+
+            _.forEach(cmpHelperObj.helpers, function(currentComponentHelperObj){
+                var annotatedParams = currentComponentHelperObj.annotatedValue || "";
+                var origParams = currentComponentHelperObj.origValue || "";
+                var functionName = currentComponentHelperObj.functionName || ''
 
                 //triggers
-                var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-                trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A' : '\t$A';
+                var trigger = 'helper' + TRIGGER_SEPARATOR + namespace + TRIGGER_SEPARATOR + componentName + TRIGGER_SEPARATOR + functionName + '\t$A';
 
                 //contents
-                var contents = functionName + "(" + annotatedParams + ")";
+                var contents = 'cmp.getDef().getHelper().' + functionName + "(" + annotatedParams + ")";
+
+
                 //sublime format
                 sublimeFormat.completions.push({
                     trigger: trigger,
                     contents: contents
                 });
-            }
+            });
         });
         return JSON.stringify(sublimeFormat, null, 3);
     },

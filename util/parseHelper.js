@@ -90,6 +90,7 @@ var self = {
             var funcDefStr = functionDefition.toString();
             //parse the params
             var paramsStr = self.getParamsFromFuncDef(funcDefStr);
+            // console.log(functionName.blue, paramsStr)
             var params = self.getParamsArrayFromStr(paramsStr);
 
             //pure params

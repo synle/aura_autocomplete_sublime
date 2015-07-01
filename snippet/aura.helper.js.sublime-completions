@@ -1,4 +1,3705 @@
 {
    "scope": "source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json",
-   "completions": []
+   "completions": [
+      {
+         "trigger": "helper-aura-debug-output\t$A",
+         "contents": "cmp.getDef().getHelper()output(${1:cmp},${2:name},${3:msg},${4:purgeOldData})"
+      },
+      {
+         "trigger": "helper-aura-debug-scrollToBottom\t$A",
+         "contents": "cmp.getDef().getHelper()scrollToBottom(${1:cmp},${2:name})"
+      },
+      {
+         "trigger": "helper-aura-debug-getAuraStats\t$A",
+         "contents": "cmp.getDef().getHelper()getAuraStats(${1:cmp},${2:viewName})"
+      },
+      {
+         "trigger": "helper-aura-html-caseAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()caseAttribute(${1:attribute})"
+      },
+      {
+         "trigger": "helper-aura-html-addNamedClickHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addNamedClickHandler(${1:element},${2:handler},${3:handlerName})"
+      },
+      {
+         "trigger": "helper-aura-html-domEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()domEventHandler(${1:event})"
+      },
+      {
+         "trigger": "helper-aura-html-canHaveBody\t$A",
+         "contents": "cmp.getDef().getHelper()canHaveBody(${1:component})"
+      },
+      {
+         "trigger": "helper-aura-html-createHtmlAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()createHtmlAttribute(${1:component},${2:element},${3:name},${4:attribute})"
+      },
+      {
+         "trigger": "helper-aura-if-createBody\t$A",
+         "contents": "cmp.getDef().getHelper()createBody(${1:cmp},${2:isTrue},${3:localCreation})"
+      },
+      {
+         "trigger": "helper-aura-iteration-createBody\t$A",
+         "contents": "cmp.getDef().getHelper()createBody(${1:component})"
+      },
+      {
+         "trigger": "helper-aura-iteration-updateBody\t$A",
+         "contents": "cmp.getDef().getHelper()updateBody(${1:component})"
+      },
+      {
+         "trigger": "helper-aura-iteration-buildBody\t$A",
+         "contents": "cmp.getDef().getHelper()buildBody(${1:component},${2:itemHandler},${3:completeHandler})"
+      },
+      {
+         "trigger": "helper-aura-iteration-buildTemplate\t$A",
+         "contents": "cmp.getDef().getHelper()buildTemplate(${1:component},${2:template},${3:item},${4:index},${5:itemVar},${6:indexVar},${7:templateValueProvider},${8:localCreation},${9:forceServer},${10:callback})"
+      },
+      {
+         "trigger": "helper-aura-iteration-getStart\t$A",
+         "contents": "cmp.getDef().getHelper()getStart(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aura-iteration-getEnd\t$A",
+         "contents": "cmp.getDef().getHelper()getEnd(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aura-iteration-trackItem\t$A",
+         "contents": "cmp.getDef().getHelper()trackItem(${1:component},${2:item},${3:index},${4:components})"
+      },
+      {
+         "trigger": "helper-aura-label-tokenize\t$A",
+         "contents": "cmp.getDef().getHelper()tokenize(${1:base},${2:vPattern},${3:vEndPattern})"
+      },
+      {
+         "trigger": "helper-auraStorage-fuelGauge-getStorage\t$A",
+         "contents": "cmp.getDef().getHelper()getStorage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auraStorage-fuelGauge-isEnabled\t$A",
+         "contents": "cmp.getDef().getHelper()isEnabled(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auraStorage-fuelGauge-update\t$A",
+         "contents": "cmp.getDef().getHelper()update(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auraStorage-init-getStorage\t$A",
+         "contents": "cmp.getDef().getHelper()getStorage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auraStorage-init-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradev-testDataProvider-provide\t$A",
+         "contents": "cmp.getDef().getHelper()provide(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-auradev-testDataProvider2-provide\t$A",
+         "contents": "cmp.getDef().getHelper()provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-auradocs-demoAuraError-helperThrow\t$A",
+         "contents": "cmp.getDef().getHelper()helperThrow(${1:})"
+      },
+      {
+         "trigger": "helper-auradocs-demoAutocomplete-handleInputChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleInputChange(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-auradocs-demoAutocomplete-handleSelectOption\t$A",
+         "contents": "cmp.getDef().getHelper()handleSelectOption(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-auradocs-demoAutocomplete-handleMatchDone\t$A",
+         "contents": "cmp.getDef().getHelper()handleMatchDone(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-auradocs-demoDataProvider-provide\t$A",
+         "contents": "cmp.getDef().getHelper()provide(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-auradocs-demoEvents-getUnwrapped\t$A",
+         "contents": "cmp.getDef().getHelper()getUnwrapped(${1:cmp},${2:action})"
+      },
+      {
+         "trigger": "helper-auradocs-docs-showWaiting\t$A",
+         "contents": "cmp.getDef().getHelper()showWaiting(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-docs-hideWaiting\t$A",
+         "contents": "cmp.getDef().getHelper()hideWaiting(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-docs-showRefreshing\t$A",
+         "contents": "cmp.getDef().getHelper()showRefreshing(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-docs-hideRefreshing\t$A",
+         "contents": "cmp.getDef().getHelper()hideRefreshing(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-editorPanel-createCodeMirror\t$A",
+         "contents": "cmp.getDef().getHelper()createCodeMirror(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-helpPanel-setTopicPanelFacet\t$A",
+         "contents": "cmp.getDef().getHelper()setTopicPanelFacet(${1:cmp},${2:topic})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-initActiveTopicVisitor\t$A",
+         "contents": "cmp.getDef().getHelper()initActiveTopicVisitor(${1:topicMap},${2:parentMap})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-preprocessTree\t$A",
+         "contents": "cmp.getDef().getHelper()preprocessTree(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-expandActiveAncestry\t$A",
+         "contents": "cmp.getDef().getHelper()expandActiveAncestry(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-highlightActive\t$A",
+         "contents": "cmp.getDef().getHelper()highlightActive(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-setActive\t$A",
+         "contents": "cmp.getDef().getHelper()setActive(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-openTopicTree-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-reference-showWaiting\t$A",
+         "contents": "cmp.getDef().getHelper()showWaiting(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-reference-hideWaiting\t$A",
+         "contents": "cmp.getDef().getHelper()hideWaiting(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-reference-showRefreshing\t$A",
+         "contents": "cmp.getDef().getHelper()showRefreshing(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-reference-hideRefreshing\t$A",
+         "contents": "cmp.getDef().getHelper()hideRefreshing(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auradocs-searchFilterTree-initSearchFilterVisitor\t$A",
+         "contents": "cmp.getDef().getHelper()initSearchFilterVisitor(${1:query})"
+      },
+      {
+         "trigger": "helper-auradocs-viewer-normalizeDescriptor\t$A",
+         "contents": "cmp.getDef().getHelper()normalizeDescriptor(${1:descriptor})"
+      },
+      {
+         "trigger": "helper-aurajstest-jstest-runNextTest\t$A",
+         "contents": "cmp.getDef().getHelper()runNextTest(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aurajstest-jstestAis-runNextTest\t$A",
+         "contents": "cmp.getDef().getHelper()runNextTest(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aurajstest-jstestCase-loadTest\t$A",
+         "contents": "cmp.getDef().getHelper()loadTest(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aurajstest-jstestCase-runTest\t$A",
+         "contents": "cmp.getDef().getHelper()runTest(${1:cmp})"
+      },
+      {
+         "trigger": "helper-aurajstest-jstestCase-displayResults\t$A",
+         "contents": "cmp.getDef().getHelper()displayResults(${1:cmp},${2:win})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-fireSelectedItemsChange\t$A",
+         "contents": "cmp.getDef().getHelper()fireSelectedItemsChange(${1:cmp},${2:data})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-fireProvide\t$A",
+         "contents": "cmp.getDef().getHelper()fireProvide(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-initializeDataProviders\t$A",
+         "contents": "cmp.getDef().getHelper()initializeDataProviders(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-handleRefresh\t$A",
+         "contents": "cmp.getDef().getHelper()handleRefresh(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-deriveItemShape\t$A",
+         "contents": "cmp.getDef().getHelper()deriveItemShape(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-handleDataChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleDataChange(${1:concrete},${2:data})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-handleModeChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleModeChange(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-handleSortByChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleSortByChange(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-abstractDataGrid-handleAddRemove\t$A",
+         "contents": "cmp.getDef().getHelper()handleAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-handleDataChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleDataChange(${1:component},${2:event},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-beforeRefresh\t$A",
+         "contents": "cmp.getDef().getHelper()beforeRefresh(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-updateEmptyListContent\t$A",
+         "contents": "cmp.getDef().getHelper()updateEmptyListContent(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-initTriggerDataProviders\t$A",
+         "contents": "cmp.getDef().getHelper()initTriggerDataProviders(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-initDataProvider\t$A",
+         "contents": "cmp.getDef().getHelper()initDataProvider(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-initPagers\t$A",
+         "contents": "cmp.getDef().getHelper()initPagers(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-remove\t$A",
+         "contents": "cmp.getDef().getHelper()remove(${1:component},${2:index},${3:count},${4:timeout},${5:animate},${6:callback})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-removeItem\t$A",
+         "contents": "cmp.getDef().getHelper()removeItem(${1:component},${2:array},${3:index},${4:timeout},${5:animate},${6:callback})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-exclude\t$A",
+         "contents": "cmp.getDef().getHelper()exclude(${1:items},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-showLoading\t$A",
+         "contents": "cmp.getDef().getHelper()showLoading(${1:component},${2:visible})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-triggerDataProvider\t$A",
+         "contents": "cmp.getDef().getHelper()triggerDataProvider(${1:component},${2:index},${3:refresh})"
+      },
+      {
+         "trigger": "helper-ui-abstractList-handleError\t$A",
+         "contents": "cmp.getDef().getHelper()handleError(${1:cmp},${2:errorMsg})"
+      },
+      {
+         "trigger": "helper-ui-action-getInputElement\t$A",
+         "contents": "cmp.getDef().getHelper()getInputElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-asyncComponentManager-loadComponents\t$A",
+         "contents": "cmp.getDef().getHelper()loadComponents(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-findHighlightedOptionIndex\t$A",
+         "contents": "cmp.getDef().getHelper()findHighlightedOptionIndex(${1:iters})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-fireMatchDoneEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireMatchDoneEvent(${1:component},${2:items})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getEventSourceOptionComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getEventSourceOptionComponent(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getNextVisibleOption\t$A",
+         "contents": "cmp.getDef().getHelper()getNextVisibleOption(${1:iters},${2:k})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getOnClickEndFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEndFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getOnClickEventProp\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEventProp(${1:prop})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getOnClickStartFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickStartFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-getPrevVisibleOption\t$A",
+         "contents": "cmp.getDef().getHelper()getPrevVisibleOption(${1:iters},${2:k})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handleDataChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleDataChange(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handleEsckeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleEsckeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handleKeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleKeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handleListHighlight\t$A",
+         "contents": "cmp.getDef().getHelper()handleListHighlight(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handlePressOnHighlighted\t$A",
+         "contents": "cmp.getDef().getHelper()handlePressOnHighlighted(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-handleTabkeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleTabkeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-hasVisibleOption\t$A",
+         "contents": "cmp.getDef().getHelper()hasVisibleOption(${1:items})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-isHTMLElement\t$A",
+         "contents": "cmp.getDef().getHelper()isHTMLElement(${1:obj})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-matchFunc\t$A",
+         "contents": "cmp.getDef().getHelper()matchFunc(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-matchFuncDone\t$A",
+         "contents": "cmp.getDef().getHelper()matchFuncDone(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-matchText\t$A",
+         "contents": "cmp.getDef().getHelper()matchText(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-toggleListVisibility\t$A",
+         "contents": "cmp.getDef().getHelper()toggleListVisibility(${1:component},${2:items})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-updateAriaAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()updateAriaAttributes(${1:component},${2:highlightedCmp})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-updateEmptyListContent\t$A",
+         "contents": "cmp.getDef().getHelper()updateEmptyListContent(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteList-showLoading\t$A",
+         "contents": "cmp.getDef().getHelper()showLoading(${1:component},${2:visible})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteOption-addOptionDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addOptionDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteOption-displayText\t$A",
+         "contents": "cmp.getDef().getHelper()displayText(${1:component},${2:keyword})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteOption-handleMouseover\t$A",
+         "contents": "cmp.getDef().getHelper()handleMouseover(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteOption-handleMouseout\t$A",
+         "contents": "cmp.getDef().getHelper()handleMouseout(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-autocompleteOption-htmlEscape\t$A",
+         "contents": "cmp.getDef().getHelper()htmlEscape(${1:str})"
+      },
+      {
+         "trigger": "helper-ui-carousel-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-_buildCarouselPlugin\t$A",
+         "contents": "cmp.getDef().getHelper()_buildCarouselPlugin(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-initializeInstrumentation\t$A",
+         "contents": "cmp.getDef().getHelper()initializeInstrumentation(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-initializeCarouselPlugin\t$A",
+         "contents": "cmp.getDef().getHelper()initializeCarouselPlugin(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-initializeIndicator\t$A",
+         "contents": "cmp.getDef().getHelper()initializeIndicator(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-initializePages\t$A",
+         "contents": "cmp.getDef().getHelper()initializePages(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-createCarouselPage\t$A",
+         "contents": "cmp.getDef().getHelper()createCarouselPage(${1:contentCmp},${2:pageConfig},${3:index},${4:preloadContent})"
+      },
+      {
+         "trigger": "helper-ui-carousel-getCarouselSize\t$A",
+         "contents": "cmp.getDef().getHelper()getCarouselSize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-afterRenderCarousel\t$A",
+         "contents": "cmp.getDef().getHelper()afterRenderCarousel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-onPageChange\t$A",
+         "contents": "cmp.getDef().getHelper()onPageChange(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carousel-setCurrentPageIndex\t$A",
+         "contents": "cmp.getDef().getHelper()setCurrentPageIndex(${1:cmp},${2:currentIndex})"
+      },
+      {
+         "trigger": "helper-ui-carousel-setPageVisibility\t$A",
+         "contents": "cmp.getDef().getHelper()setPageVisibility(${1:carouselPage},${2:isVisible})"
+      },
+      {
+         "trigger": "helper-ui-carousel-getCurrentPageIndex\t$A",
+         "contents": "cmp.getDef().getHelper()getCurrentPageIndex(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-getCarouselInstance\t$A",
+         "contents": "cmp.getDef().getHelper()getCarouselInstance(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-getDOMPages\t$A",
+         "contents": "cmp.getDef().getHelper()getDOMPages(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carousel-getCarouselDOM\t$A",
+         "contents": "cmp.getDef().getHelper()getCarouselDOM(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-initSize\t$A",
+         "contents": "cmp.getDef().getHelper()initSize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-initScroller\t$A",
+         "contents": "cmp.getDef().getHelper()initScroller(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-initPages\t$A",
+         "contents": "cmp.getDef().getHelper()initPages(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-initPageIndicator\t$A",
+         "contents": "cmp.getDef().getHelper()initPageIndicator(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-attachEvents\t$A",
+         "contents": "cmp.getDef().getHelper()attachEvents(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-detachEvents\t$A",
+         "contents": "cmp.getDef().getHelper()detachEvents(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-onStart\t$A",
+         "contents": "cmp.getDef().getHelper()onStart(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-onMove\t$A",
+         "contents": "cmp.getDef().getHelper()onMove(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-onClick\t$A",
+         "contents": "cmp.getDef().getHelper()onClick(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-hasMoved\t$A",
+         "contents": "cmp.getDef().getHelper()hasMoved(${1:cmp},${2:evt},${3:direction})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageComponentsFromIteration\t$A",
+         "contents": "cmp.getDef().getHelper()getPageComponentsFromIteration(${1:iterCmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-refresh\t$A",
+         "contents": "cmp.getDef().getHelper()refresh(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-updateSize\t$A",
+         "contents": "cmp.getDef().getHelper()updateSize(${1:cmp},${2:force})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-updateCarouselSize\t$A",
+         "contents": "cmp.getDef().getHelper()updateCarouselSize(${1:cmp},${2:pages},${3:carouselSize},${4:force})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-updatePageSize\t$A",
+         "contents": "cmp.getDef().getHelper()updatePageSize(${1:cmp},${2:pages},${3:carouselSize})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getSizeStyle\t$A",
+         "contents": "cmp.getDef().getHelper()getSizeStyle(${1:width},${2:height})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getCarouselSize\t$A",
+         "contents": "cmp.getDef().getHelper()getCarouselSize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageSize\t$A",
+         "contents": "cmp.getDef().getHelper()getPageSize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-updatePage\t$A",
+         "contents": "cmp.getDef().getHelper()updatePage(${1:cmp},${2:pageIndex},${3:pageContentCmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-handlePagerClicked\t$A",
+         "contents": "cmp.getDef().getHelper()handlePagerClicked(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-handlePagerKeyed\t$A",
+         "contents": "cmp.getDef().getHelper()handlePagerKeyed(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-handleScrollMove\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollMove(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-handleScrollEnd\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollEnd(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-showPage\t$A",
+         "contents": "cmp.getDef().getHelper()showPage(${1:pageCmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-hidePage\t$A",
+         "contents": "cmp.getDef().getHelper()hidePage(${1:pageCmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-pageSelected\t$A",
+         "contents": "cmp.getDef().getHelper()pageSelected(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-showPages\t$A",
+         "contents": "cmp.getDef().getHelper()showPages(${1:cmp},${2:from},${3:to})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-hideAllUnselectedPages\t$A",
+         "contents": "cmp.getDef().getHelper()hideAllUnselectedPages(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-firePageSelectedEventToPage\t$A",
+         "contents": "cmp.getDef().getHelper()firePageSelectedEventToPage(${1:pageCmp},${2:selectedPage})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-firePageSelectedEventToPageIndicator\t$A",
+         "contents": "cmp.getDef().getHelper()firePageSelectedEventToPageIndicator(${1:carouselCmp},${2:pageCmp},${3:selectedPage})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-selectPage\t$A",
+         "contents": "cmp.getDef().getHelper()selectPage(${1:cmp},${2:pageIndex},${3:time})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-selectDefaultPage\t$A",
+         "contents": "cmp.getDef().getHelper()selectDefaultPage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getDefaultPageIndex\t$A",
+         "contents": "cmp.getDef().getHelper()getDefaultPageIndex(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageComponents\t$A",
+         "contents": "cmp.getDef().getHelper()getPageComponents(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageModels\t$A",
+         "contents": "cmp.getDef().getHelper()getPageModels(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageModelFromIndex\t$A",
+         "contents": "cmp.getDef().getHelper()getPageModelFromIndex(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageComponentFromIndex\t$A",
+         "contents": "cmp.getDef().getHelper()getPageComponentFromIndex(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getPageIndicatorsComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getPageIndicatorsComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getScroller\t$A",
+         "contents": "cmp.getDef().getHelper()getScroller(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getSnap\t$A",
+         "contents": "cmp.getDef().getHelper()getSnap(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-delayHideAllUnselectedPages\t$A",
+         "contents": "cmp.getDef().getHelper()delayHideAllUnselectedPages(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-showLoadingIndicator\t$A",
+         "contents": "cmp.getDef().getHelper()showLoadingIndicator(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-hideLoadingIndicator\t$A",
+         "contents": "cmp.getDef().getHelper()hideLoadingIndicator(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-setSelectedPage\t$A",
+         "contents": "cmp.getDef().getHelper()setSelectedPage(${1:cmp},${2:selectedPage})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-getSelectedPage\t$A",
+         "contents": "cmp.getDef().getHelper()getSelectedPage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselDeprecated-unrender\t$A",
+         "contents": "cmp.getDef().getHelper()unrender(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-_createNavTemplate\t$A",
+         "contents": "cmp.getDef().getHelper()_createNavTemplate(${1:content})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-_createItem\t$A",
+         "contents": "cmp.getDef().getHelper()_createItem(${1:data},${2:isDot})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-attachHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()attachHandlers(${1:cmp},${2:root})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-_getPageNumber\t$A",
+         "contents": "cmp.getDef().getHelper()_getPageNumber(${1:e})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-_handleEvent\t$A",
+         "contents": "cmp.getDef().getHelper()_handleEvent(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-_handleKeyEvent\t$A",
+         "contents": "cmp.getDef().getHelper()_handleKeyEvent(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-changeActivePage\t$A",
+         "contents": "cmp.getDef().getHelper()changeActivePage(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-goToPage\t$A",
+         "contents": "cmp.getDef().getHelper()goToPage(${1:cmp},${2:pageNumber})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-setAriaAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()setAriaAttributes(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-setIndicatorSize\t$A",
+         "contents": "cmp.getDef().getHelper()setIndicatorSize(${1:cmp},${2:indicatorDOM})"
+      },
+      {
+         "trigger": "helper-ui-carouselIndicator-createDOM\t$A",
+         "contents": "cmp.getDef().getHelper()createDOM(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-_buildScrollerPagePlugin\t$A",
+         "contents": "cmp.getDef().getHelper()_buildScrollerPagePlugin(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-_initScrollerPagePlugin\t$A",
+         "contents": "cmp.getDef().getHelper()_initScrollerPagePlugin(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-loadComponent\t$A",
+         "contents": "cmp.getDef().getHelper()loadComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-onLoadComponent\t$A",
+         "contents": "cmp.getDef().getHelper()onLoadComponent(${1:cmp},${2:action},${3:isAlreadyLoaded})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-injectComponent\t$A",
+         "contents": "cmp.getDef().getHelper()injectComponent(${1:cmp},${2:content},${3:noMore})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-injectPlaceholder\t$A",
+         "contents": "cmp.getDef().getHelper()injectPlaceholder(${1:cmp},${2:placeholderDef})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-setPullToLoadMoreDelegation\t$A",
+         "contents": "cmp.getDef().getHelper()setPullToLoadMoreDelegation(${1:cmp},${2:contentCmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-afterRenderCarouselPage\t$A",
+         "contents": "cmp.getDef().getHelper()afterRenderCarouselPage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPage-addScrollLock\t$A",
+         "contents": "cmp.getDef().getHelper()addScrollLock(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-updateSize\t$A",
+         "contents": "cmp.getDef().getHelper()updateSize(${1:cmp},${2:width},${3:height})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-selectPage\t$A",
+         "contents": "cmp.getDef().getHelper()selectPage(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-updatePage\t$A",
+         "contents": "cmp.getDef().getHelper()updatePage(${1:cmp},${2:pageBody})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-setVisibility\t$A",
+         "contents": "cmp.getDef().getHelper()setVisibility(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-showPage\t$A",
+         "contents": "cmp.getDef().getHelper()showPage(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-hidePage\t$A",
+         "contents": "cmp.getDef().getHelper()hidePage(${1:cmp},${2:pageIndex})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageDeprecated-setDefaultAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()setDefaultAttributes(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-carouselPageIndicator-onPageSelected\t$A",
+         "contents": "cmp.getDef().getHelper()onPageSelected(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-checkboxMenuItem-setSelected\t$A",
+         "contents": "cmp.getDef().getHelper()setSelected(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-initializeCaches\t$A",
+         "contents": "cmp.getDef().getHelper()initializeCaches(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-initializeNewColumns\t$A",
+         "contents": "cmp.getDef().getHelper()initializeNewColumns(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-initializeRowData\t$A",
+         "contents": "cmp.getDef().getHelper()initializeRowData(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-handleAddRemove\t$A",
+         "contents": "cmp.getDef().getHelper()handleAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-handleItemsChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleItemsChange(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-handleSortByChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleSortByChange(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-handleAction\t$A",
+         "contents": "cmp.getDef().getHelper()handleAction(${1:cmp},${2:cfg})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-getColumns\t$A",
+         "contents": "cmp.getDef().getHelper()getColumns(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createSelectionData\t$A",
+         "contents": "cmp.getDef().getHelper()createSelectionData(${1:})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-selectAll\t$A",
+         "contents": "cmp.getDef().getHelper()selectAll(${1:cmp},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-setSelectedItems\t$A",
+         "contents": "cmp.getDef().getHelper()setSelectedItems(${1:cmp},${2:value},${3:rows})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-updateColumnAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()updateColumnAttributes(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createRowData\t$A",
+         "contents": "cmp.getDef().getHelper()createRowData(${1:concrete},${2:items})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-shiftRowData\t$A",
+         "contents": "cmp.getDef().getHelper()shiftRowData(${1:concrete},${2:index},${3:count},${4:remove})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-removeRows\t$A",
+         "contents": "cmp.getDef().getHelper()removeRows(${1:concrete},${2:index},${3:count})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-insertRowsAndUpdateData\t$A",
+         "contents": "cmp.getDef().getHelper()insertRowsAndUpdateData(${1:concrete},${2:index},${3:count},${4:newItems},${5:insertItems},${6:callback})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-resize\t$A",
+         "contents": "cmp.getDef().getHelper()resize(${1:concrete},${2:length})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-updateValueProvidersFromItems\t$A",
+         "contents": "cmp.getDef().getHelper()updateValueProvidersFromItems(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createCellData\t$A",
+         "contents": "cmp.getDef().getHelper()createCellData(${1:rowData},${2:colIndex})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-destroyCellData\t$A",
+         "contents": "cmp.getDef().getHelper()destroyCellData(${1:rowData},${2:colIndex},${3:parentTR})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createTableBody\t$A",
+         "contents": "cmp.getDef().getHelper()createTableBody(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createAndRenderTableRows\t$A",
+         "contents": "cmp.getDef().getHelper()createAndRenderTableRows(${1:concrete},${2:rowDataArray})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createAndRenderCell\t$A",
+         "contents": "cmp.getDef().getHelper()createAndRenderCell(${1:concrete},${2:cdrs},${3:vp},${4:element},${5:components},${6:callback})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-renderTableRow\t$A",
+         "contents": "cmp.getDef().getHelper()renderTableRow(${1:concrete},${2:rowData},${3:tr},${4:cleanOldComponents})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-rerenderRowsWithNewColumns\t$A",
+         "contents": "cmp.getDef().getHelper()rerenderRowsWithNewColumns(${1:concrete},${2:rowDataArray})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-updateRowClass\t$A",
+         "contents": "cmp.getDef().getHelper()updateRowClass(${1:cmp},${2:rowData},${3:rowElement},${4:params})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-updateValueProvider\t$A",
+         "contents": "cmp.getDef().getHelper()updateValueProvider(${1:cmp},${2:rowData},${3:attributes})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-createPassthroughValue\t$A",
+         "contents": "cmp.getDef().getHelper()createPassthroughValue(${1:concrete},${2:item},${3:rowIndex})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-updateColumns\t$A",
+         "contents": "cmp.getDef().getHelper()updateColumns(${1:concrete},${2:attribute},${3:value})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-componentMap\t$A",
+         "contents": "cmp.getDef().getHelper()componentMap(${1:concrete},${2:batch},${3:op})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-selectiveMap\t$A",
+         "contents": "cmp.getDef().getHelper()selectiveMap(${1:concrete},${2:rowIndex},${3:count},${4:batch},${5:op})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-parseSortBy\t$A",
+         "contents": "cmp.getDef().getHelper()parseSortBy(${1:sortBy})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-clone\t$A",
+         "contents": "cmp.getDef().getHelper()clone(${1:source})"
+      },
+      {
+         "trigger": "helper-ui-dataGrid-generateNewItemShape\t$A",
+         "contents": "cmp.getDef().getHelper()generateNewItemShape(${1:concrete})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-intialize\t$A",
+         "contents": "cmp.getDef().getHelper()intialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-intializeDefaultOutputComponent\t$A",
+         "contents": "cmp.getDef().getHelper()intializeDefaultOutputComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-updateNameRef\t$A",
+         "contents": "cmp.getDef().getHelper()updateNameRef(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-wireComponentDefRef\t$A",
+         "contents": "cmp.getDef().getHelper()wireComponentDefRef(${1:cmp},${2:defRef})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-createPropertyReference\t$A",
+         "contents": "cmp.getDef().getHelper()createPropertyReference(${1:descriptor},${2:path})"
+      },
+      {
+         "trigger": "helper-ui-dataGridColumn-toggleSort\t$A",
+         "contents": "cmp.getDef().getHelper()toggleSort(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-calculate\t$A",
+         "contents": "cmp.getDef().getHelper()calculate(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-isValid\t$A",
+         "contents": "cmp.getDef().getHelper()isValid(${1:value})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-extractNumbers\t$A",
+         "contents": "cmp.getDef().getHelper()extractNumbers(${1:items},${2:column})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-aggregate_sum\t$A",
+         "contents": "cmp.getDef().getHelper()aggregate_sum(${1:items},${2:column})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-aggregate_avg\t$A",
+         "contents": "cmp.getDef().getHelper()aggregate_avg(${1:items},${2:column})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-aggregate_min\t$A",
+         "contents": "cmp.getDef().getHelper()aggregate_min(${1:items},${2:column})"
+      },
+      {
+         "trigger": "helper-ui-dataGridSummaryCell-aggregate_max\t$A",
+         "contents": "cmp.getDef().getHelper()aggregate_max(${1:items},${2:column})"
+      },
+      {
+         "trigger": "helper-ui-dataProvider-fireDataChangeEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireDataChangeEvent(${1:dataProvider},${2:data},${3:currentPage})"
+      },
+      {
+         "trigger": "helper-ui-dataProvider-invokeProvide\t$A",
+         "contents": "cmp.getDef().getHelper()invokeProvide(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dataWriter-handleItemsChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleItemsChange(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-dataWriter-handleWrite\t$A",
+         "contents": "cmp.getDef().getHelper()handleWrite(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dataWriter-write\t$A",
+         "contents": "cmp.getDef().getHelper()write(${1:concrete},${2:cfg},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-attachToDocumentBody\t$A",
+         "contents": "cmp.getDef().getHelper()attachToDocumentBody(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-focusDate\t$A",
+         "contents": "cmp.getDef().getHelper()focusDate(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-getOnClickEndFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEndFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-getOnClickEventProp\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEventProp(${1:prop})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-getOnClickStartFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickStartFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-goToNextYear\t$A",
+         "contents": "cmp.getDef().getHelper()goToNextYear(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-goToPrevYear\t$A",
+         "contents": "cmp.getDef().getHelper()goToPrevYear(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-handleESCKey\t$A",
+         "contents": "cmp.getDef().getHelper()handleESCKey(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-isElementInComponent\t$A",
+         "contents": "cmp.getDef().getHelper()isElementInComponent(${1:component},${2:targetElem})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-localizeToday\t$A",
+         "contents": "cmp.getDef().getHelper()localizeToday(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-getNormalizedLang\t$A",
+         "contents": "cmp.getDef().getHelper()getNormalizedLang(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-handleWinResize\t$A",
+         "contents": "cmp.getDef().getHelper()handleWinResize(${1:component},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-position\t$A",
+         "contents": "cmp.getDef().getHelper()position(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-refreshYearSelection\t$A",
+         "contents": "cmp.getDef().getHelper()refreshYearSelection(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-setGridInitialValue\t$A",
+         "contents": "cmp.getDef().getHelper()setGridInitialValue(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-setTitleTag\t$A",
+         "contents": "cmp.getDef().getHelper()setTitleTag(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-updateGlobalEventListeners\t$A",
+         "contents": "cmp.getDef().getHelper()updateGlobalEventListeners(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-updateMonthYear\t$A",
+         "contents": "cmp.getDef().getHelper()updateMonthYear(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-updateMobileMonthYear\t$A",
+         "contents": "cmp.getDef().getHelper()updateMobileMonthYear(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-datePicker-yearChange\t$A",
+         "contents": "cmp.getDef().getHelper()yearChange(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-changeCalendar\t$A",
+         "contents": "cmp.getDef().getHelper()changeCalendar(${1:component},${2:localId},${3:deltaMonth},${4:deltaYear})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-changeMonthYear\t$A",
+         "contents": "cmp.getDef().getHelper()changeMonthYear(${1:component},${2:monthChange},${3:yearChange},${4:date})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-dateCompare\t$A",
+         "contents": "cmp.getDef().getHelper()dateCompare(${1:date1},${2:date2})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-dateEquals\t$A",
+         "contents": "cmp.getDef().getHelper()dateEquals(${1:date1},${2:date2})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-dateInRange\t$A",
+         "contents": "cmp.getDef().getHelper()dateInRange(${1:date},${2:rangeStart},${3:rangeEnd})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-findDateComponent\t$A",
+         "contents": "cmp.getDef().getHelper()findDateComponent(${1:component},${2:date})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-generateMonth\t$A",
+         "contents": "cmp.getDef().getHelper()generateMonth(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-getEventTarget\t$A",
+         "contents": "cmp.getDef().getHelper()getEventTarget(${1:e})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-goToFirstOfMonth\t$A",
+         "contents": "cmp.getDef().getHelper()goToFirstOfMonth(${1:component},${2:localId})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-goToLastOfMonth\t$A",
+         "contents": "cmp.getDef().getHelper()goToLastOfMonth(${1:component},${2:localId})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-handleArrowKey\t$A",
+         "contents": "cmp.getDef().getHelper()handleArrowKey(${1:component},${2:localId},${3:deltaDays})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-handleESC\t$A",
+         "contents": "cmp.getDef().getHelper()handleESC(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-handleKeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleKeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-handleSpaceBar\t$A",
+         "contents": "cmp.getDef().getHelper()handleSpaceBar(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-renderGrid\t$A",
+         "contents": "cmp.getDef().getHelper()renderGrid(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-selectDate\t$A",
+         "contents": "cmp.getDef().getHelper()selectDate(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-setFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setFocus(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-updateTitle\t$A",
+         "contents": "cmp.getDef().getHelper()updateTitle(${1:component},${2:month},${3:year})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-getDateFromString\t$A",
+         "contents": "cmp.getDef().getHelper()getDateFromString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-clearSelectStyles\t$A",
+         "contents": "cmp.getDef().getHelper()clearSelectStyles(${1:tdNode},${2:dayOfWeek})"
+      },
+      {
+         "trigger": "helper-ui-datePickerGrid-updateNameOfWeekDays\t$A",
+         "contents": "cmp.getDef().getHelper()updateNameOfWeekDays(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dayInMonthCell-updateCell\t$A",
+         "contents": "cmp.getDef().getHelper()updateCell(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dialogButtons-confirmOrCancel\t$A",
+         "contents": "cmp.getDef().getHelper()confirmOrCancel(${1:dialog},${2:confirmClicked})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-activateDialog\t$A",
+         "contents": "cmp.getDef().getHelper()activateDialog(${1:dialog},${2:manager})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-deactivateDialog\t$A",
+         "contents": "cmp.getDef().getHelper()deactivateDialog(${1:dialog},${2:manager})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-applyHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()applyHandlers(${1:config})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-removeHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()removeHandlers(${1:config})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getHandlerConfig\t$A",
+         "contents": "cmp.getDef().getHelper()getHandlerConfig(${1:dialog},${2:isModal},${3:clickOutToClose})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getKeydownHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getKeydownHandler(${1:dialog},${2:isModal},${3:firstFocusable},${4:event})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getClickHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getClickHandler(${1:dialog},${2:clickOutToClose},${3:event})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getResizeHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getResizeHandler(${1:dialog},${2:isModal})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getFirstFocusableElement\t$A",
+         "contents": "cmp.getDef().getHelper()getFirstFocusableElement(${1:dialog})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-toggleDisplay\t$A",
+         "contents": "cmp.getDef().getHelper()toggleDisplay(${1:show},${2:dialog},${3:autoFocus},${4:isModal},${5:config})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getContentMaxHeight\t$A",
+         "contents": "cmp.getDef().getHelper()getContentMaxHeight(${1:dialog})"
+      },
+      {
+         "trigger": "helper-ui-dialogManager-getDialogRoot\t$A",
+         "contents": "cmp.getDef().getHelper()getDialogRoot(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-getDropzoneComponents\t$A",
+         "contents": "cmp.getDef().getHelper()getDropzoneComponents(${1:type})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-enterDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()enterDragOperation(${1:dropzones})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-exitDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()exitDragOperation(${1:dropzones})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-fireDragEnd\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragEnd(${1:draggables},${2:isValid})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-fireDragEnter\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragEnter(${1:dropzones})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-fireDragLeave\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragLeave(${1:dropzones})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibility-fireDrop\t$A",
+         "contents": "cmp.getDef().getHelper()fireDrop(${1:dropzones},${2:draggables})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-startDragAndDrop\t$A",
+         "contents": "cmp.getDef().getHelper()startDragAndDrop(${1:component},${2:draggables},${3:target})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-position\t$A",
+         "contents": "cmp.getDef().getHelper()position(${1:targetComponent},${2:referenceEl})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-areInSameContext\t$A",
+         "contents": "cmp.getDef().getHelper()areInSameContext(${1:draggables},${2:dropzone})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-handleMenuCollapse\t$A",
+         "contents": "cmp.getDef().getHelper()handleMenuCollapse(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-handleMenuFocusChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleMenuFocusChange(${1:previousItem},${2:currentItem})"
+      },
+      {
+         "trigger": "helper-ui-dragAndDropAccessibilityMenu-handleMenuSelect\t$A",
+         "contents": "cmp.getDef().getHelper()handleMenuSelect(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-resetCssClass\t$A",
+         "contents": "cmp.getDef().getHelper()resetCssClass(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-draggable-setDragClass\t$A",
+         "contents": "cmp.getDef().getHelper()setDragClass(${1:component},${2:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-draggable-handleKeyPress\t$A",
+         "contents": "cmp.getDef().getHelper()handleKeyPress(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-handleDragStart\t$A",
+         "contents": "cmp.getDef().getHelper()handleDragStart(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-getDataTransfer\t$A",
+         "contents": "cmp.getDef().getHelper()getDataTransfer(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-fireDragStart\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragStart(${1:component},${2:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-draggable-createDragImage\t$A",
+         "contents": "cmp.getDef().getHelper()createDragImage(${1:element},${2:cssClasses},${3:x},${4:y},${5:offsetX},${6:offsetY})"
+      },
+      {
+         "trigger": "helper-ui-draggable-isDropEventSuccessful\t$A",
+         "contents": "cmp.getDef().getHelper()isDropEventSuccessful(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-handleDragEnd\t$A",
+         "contents": "cmp.getDef().getHelper()handleDragEnd(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-fireDragEnd\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragEnd(${1:component},${2:isValid},${3:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-draggable-handleDropComplete\t$A",
+         "contents": "cmp.getDef().getHelper()handleDropComplete(${1:component},${2:dragEvent})"
+      },
+      {
+         "trigger": "helper-ui-draggable-updateDropOperationStatus\t$A",
+         "contents": "cmp.getDef().getHelper()updateDropOperationStatus(${1:component},${2:eventType},${3:event})"
+      },
+      {
+         "trigger": "helper-ui-draggable-enterDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()enterDragOperation(${1:component},${2:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-draggable-newDropOperationStatus\t$A",
+         "contents": "cmp.getDef().getHelper()newDropOperationStatus(${1:})"
+      },
+      {
+         "trigger": "helper-ui-draggable-exitDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()exitDragOperation(${1:component},${2:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-resetCssClass\t$A",
+         "contents": "cmp.getDef().getHelper()resetCssClass(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-setDragOverClass\t$A",
+         "contents": "cmp.getDef().getHelper()setDragOverClass(${1:component},${2:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-handleDragEnter\t$A",
+         "contents": "cmp.getDef().getHelper()handleDragEnter(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-fireDragEnter\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragEnter(${1:component},${2:targetComponent},${3:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-setDropEffect\t$A",
+         "contents": "cmp.getDef().getHelper()setDropEffect(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-handleDragOver\t$A",
+         "contents": "cmp.getDef().getHelper()handleDragOver(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-fireDragOver\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragOver(${1:component},${2:targetComponent})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-handleDragLeave\t$A",
+         "contents": "cmp.getDef().getHelper()handleDragLeave(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-fireDragLeave\t$A",
+         "contents": "cmp.getDef().getHelper()fireDragLeave(${1:component},${2:targetComponent},${3:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-handleDrop\t$A",
+         "contents": "cmp.getDef().getHelper()handleDrop(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-fireDrop\t$A",
+         "contents": "cmp.getDef().getHelper()fireDrop(${1:component},${2:operationType},${3:dataTransfer},${4:dragComponent},${5:targetComponent},${6:isInAccessibilityMode})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-enterDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()enterDragOperation(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-dropzone-exitDragOperation\t$A",
+         "contents": "cmp.getDef().getHelper()exitDragOperation(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-image-getImageElement\t$A",
+         "contents": "cmp.getDef().getHelper()getImageElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-image-isAnchorImage\t$A",
+         "contents": "cmp.getDef().getHelper()isAnchorImage(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-image-buildBody\t$A",
+         "contents": "cmp.getDef().getHelper()buildBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-image-buildImageElement\t$A",
+         "contents": "cmp.getDef().getHelper()buildImageElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-initializeHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()initializeHandlers(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-handleDataChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleDataChange(${1:cmp},${2:evt},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-attachListeners\t$A",
+         "contents": "cmp.getDef().getHelper()attachListeners(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-detachListeners\t$A",
+         "contents": "cmp.getDef().getHelper()detachListeners(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-ontouchstart\t$A",
+         "contents": "cmp.getDef().getHelper()ontouchstart(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-ontouchcancel\t$A",
+         "contents": "cmp.getDef().getHelper()ontouchcancel(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-ontouchmove\t$A",
+         "contents": "cmp.getDef().getHelper()ontouchmove(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-ontouchend\t$A",
+         "contents": "cmp.getDef().getHelper()ontouchend(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-fireRowOpen\t$A",
+         "contents": "cmp.getDef().getHelper()fireRowOpen(${1:cmp},${2:row})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-fireRowClose\t$A",
+         "contents": "cmp.getDef().getHelper()fireRowClose(${1:cmp},${2:row})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-setCheckedTimeout\t$A",
+         "contents": "cmp.getDef().getHelper()setCheckedTimeout(${1:cmp},${2:code},${3:delay})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-onInfiniteListRowClose\t$A",
+         "contents": "cmp.getDef().getHelper()onInfiniteListRowClose(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-closeRowBlockAndReset\t$A",
+         "contents": "cmp.getDef().getHelper()closeRowBlockAndReset(${1:cmp},${2:body},${3:useTransition})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-isBlocked\t$A",
+         "contents": "cmp.getDef().getHelper()isBlocked(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-block\t$A",
+         "contents": "cmp.getDef().getHelper()block(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-unblock\t$A",
+         "contents": "cmp.getDef().getHelper()unblock(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-removeItem\t$A",
+         "contents": "cmp.getDef().getHelper()removeItem(${1:component},${2:array},${3:index},${4:timeout},${5:animate},${6:callback})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getEventNames\t$A",
+         "contents": "cmp.getDef().getHelper()getEventNames(${1:})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getPoint\t$A",
+         "contents": "cmp.getDef().getHelper()getPoint(${1:e})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getScrollAxis\t$A",
+         "contents": "cmp.getDef().getHelper()getScrollAxis(${1:absX},${2:absY})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getRow\t$A",
+         "contents": "cmp.getDef().getHelper()getRow(${1:el},${2:targetClassName},${3:rootClassName})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getNthRow\t$A",
+         "contents": "cmp.getDef().getHelper()getNthRow(${1:component},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getWidthPercentage\t$A",
+         "contents": "cmp.getDef().getHelper()getWidthPercentage(${1:cmp},${2:el},${3:x})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-getPixelFromPercentage\t$A",
+         "contents": "cmp.getDef().getHelper()getPixelFromPercentage(${1:cmp},${2:el},${3:percentage})"
+      },
+      {
+         "trigger": "helper-ui-infiniteList-translateX\t$A",
+         "contents": "cmp.getDef().getHelper()translateX(${1:cmp},${2:el},${3:percent})"
+      },
+      {
+         "trigger": "helper-ui-infiniteListRow-open\t$A",
+         "contents": "cmp.getDef().getHelper()open(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-infiniteListRow-close\t$A",
+         "contents": "cmp.getDef().getHelper()close(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-ui-infiniteListRow-createAndDispatch\t$A",
+         "contents": "cmp.getDef().getHelper()createAndDispatch(${1:el},${2:name},${3:detail})"
+      },
+      {
+         "trigger": "helper-ui-input-buildBody\t$A",
+         "contents": "cmp.getDef().getHelper()buildBody(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-checkValidPosition\t$A",
+         "contents": "cmp.getDef().getHelper()checkValidPosition(${1:passedInPosition})"
+      },
+      {
+         "trigger": "helper-ui-input-addDomHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addDomHandler(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-input-addInputDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addInputDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-getUpdateOn\t$A",
+         "contents": "cmp.getDef().getHelper()getUpdateOn(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-getDomElementValue\t$A",
+         "contents": "cmp.getDef().getHelper()getDomElementValue(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-input-getHandledDOMEvents\t$A",
+         "contents": "cmp.getDef().getHelper()getHandledDOMEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-input-preEventFiring\t$A",
+         "contents": "cmp.getDef().getHelper()preEventFiring(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-input-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component},${2:event},${3:helper})"
+      },
+      {
+         "trigger": "helper-ui-input-handleUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()handleUpdate(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-input-setEventParams\t$A",
+         "contents": "cmp.getDef().getHelper()setEventParams(${1:e},${2:DOMEvent})"
+      },
+      {
+         "trigger": "helper-ui-input-getInputElement\t$A",
+         "contents": "cmp.getDef().getHelper()getInputElement(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-updateError\t$A",
+         "contents": "cmp.getDef().getHelper()updateError(${1:component},${2:errors})"
+      },
+      {
+         "trigger": "helper-ui-input-addAriaDescribedBy\t$A",
+         "contents": "cmp.getDef().getHelper()addAriaDescribedBy(${1:component},${2:errorCmpId})"
+      },
+      {
+         "trigger": "helper-ui-input-updateErrorElement\t$A",
+         "contents": "cmp.getDef().getHelper()updateErrorElement(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-addClass\t$A",
+         "contents": "cmp.getDef().getHelper()addClass(${1:component},${2:className})"
+      },
+      {
+         "trigger": "helper-ui-input-removeClass\t$A",
+         "contents": "cmp.getDef().getHelper()removeClass(${1:component},${2:className})"
+      },
+      {
+         "trigger": "helper-ui-input-isHTML5Input\t$A",
+         "contents": "cmp.getDef().getHelper()isHTML5Input(${1:type})"
+      },
+      {
+         "trigger": "helper-ui-input-isEventSupported\t$A",
+         "contents": "cmp.getDef().getHelper()isEventSupported(${1:eventName})"
+      },
+      {
+         "trigger": "helper-ui-input-setAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()setAttribute(${1:cmp},${2:attr})"
+      },
+      {
+         "trigger": "helper-ui-input-addTokenToString\t$A",
+         "contents": "cmp.getDef().getHelper()addTokenToString(${1:str},${2:token})"
+      },
+      {
+         "trigger": "helper-ui-input-addInputClass\t$A",
+         "contents": "cmp.getDef().getHelper()addInputClass(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-hasLabel\t$A",
+         "contents": "cmp.getDef().getHelper()hasLabel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-input-setDisabled\t$A",
+         "contents": "cmp.getDef().getHelper()setDisabled(${1:component},${2:disabled},${3:disabledCss})"
+      },
+      {
+         "trigger": "helper-ui-input-getDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()getDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-input-domEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()domEventHandler(${1:event})"
+      },
+      {
+         "trigger": "helper-ui-inputCheckbox-getDomElementValue\t$A",
+         "contents": "cmp.getDef().getHelper()getDomElementValue(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-inputCurrency-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-inputCurrency-getNumber\t$A",
+         "contents": "cmp.getDef().getHelper()getNumber(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputDate-displayValue\t$A",
+         "contents": "cmp.getDef().getHelper()displayValue(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDate-displayDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()displayDatePicker(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDate-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-inputDate-getDateString\t$A",
+         "contents": "cmp.getDef().getHelper()getDateString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDate-toggleClearButton\t$A",
+         "contents": "cmp.getDef().getHelper()toggleClearButton(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-openStartDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()openStartDatePicker(${1:component},${2:selectedDate})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-openEndDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()openEndDatePicker(${1:component},${2:selectedDate})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-displayDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()displayDatePicker(${1:datePicker},${2:referenceElement},${3:selectedValue})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-hideDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()hideDatePicker(${1:datePicker},${2:timeout})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-highlightRange\t$A",
+         "contents": "cmp.getDef().getHelper()highlightRange(${1:datePicker},${2:startDate},${3:endDate})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-setStartDateValue\t$A",
+         "contents": "cmp.getDef().getHelper()setStartDateValue(${1:component},${2:newValue})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-setEndDateValue\t$A",
+         "contents": "cmp.getDef().getHelper()setEndDateValue(${1:component},${2:newValue})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-displayDates\t$A",
+         "contents": "cmp.getDef().getHelper()displayDates(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-displayValue\t$A",
+         "contents": "cmp.getDef().getHelper()displayValue(${1:component},${2:value},${3:inputElement})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-getDateString\t$A",
+         "contents": "cmp.getDef().getHelper()getDateString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-dateCompare\t$A",
+         "contents": "cmp.getDef().getHelper()dateCompare(${1:date1},${2:date2})"
+      },
+      {
+         "trigger": "helper-ui-inputDateRange-getDateFromString\t$A",
+         "contents": "cmp.getDef().getHelper()getDateFromString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-displayDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()displayDatePicker(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-displayDateTime\t$A",
+         "contents": "cmp.getDef().getHelper()displayDateTime(${1:component},${2:displayValue})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-formatDateTime\t$A",
+         "contents": "cmp.getDef().getHelper()formatDateTime(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-getDateString\t$A",
+         "contents": "cmp.getDef().getHelper()getDateString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-getUTCDateString\t$A",
+         "contents": "cmp.getDef().getHelper()getUTCDateString(${1:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-is24HourFormat\t$A",
+         "contents": "cmp.getDef().getHelper()is24HourFormat(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-popUpDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()popUpDatePicker(${1:component},${2:date})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTime-toggleClearButton\t$A",
+         "contents": "cmp.getDef().getHelper()toggleClearButton(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputDateTrigger-displayDatePicker\t$A",
+         "contents": "cmp.getDef().getHelper()displayDatePicker(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputNumber-getNumber\t$A",
+         "contents": "cmp.getDef().getHelper()getNumber(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputPercent-doUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()doUpdate(${1:component},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-inputPercent-getNumber\t$A",
+         "contents": "cmp.getDef().getHelper()getNumber(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputRadio-getDomElementValue\t$A",
+         "contents": "cmp.getDef().getHelper()getDomElementValue(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-addDomHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addDomHandler(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-handleUpdate\t$A",
+         "contents": "cmp.getDef().getHelper()handleUpdate(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-editorEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()editorEventHandler(${1:event})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-initEditor\t$A",
+         "contents": "cmp.getDef().getHelper()initEditor(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-isLibraryLoaded\t$A",
+         "contents": "cmp.getDef().getHelper()isLibraryLoaded(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-toggle\t$A",
+         "contents": "cmp.getDef().getHelper()toggle(${1:cmp},${2:isRichText})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getEditorId\t$A",
+         "contents": "cmp.getDef().getHelper()getEditorId(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getEditorInstance\t$A",
+         "contents": "cmp.getDef().getHelper()getEditorInstance(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getContent\t$A",
+         "contents": "cmp.getDef().getHelper()getContent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-setContent\t$A",
+         "contents": "cmp.getDef().getHelper()setContent(${1:cmp},${2:content})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getLocale\t$A",
+         "contents": "cmp.getDef().getHelper()getLocale(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getEditorConfig\t$A",
+         "contents": "cmp.getDef().getHelper()getEditorConfig(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-merge\t$A",
+         "contents": "cmp.getDef().getHelper()merge(${1:target},${2:source})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-getToolbarConfig\t$A",
+         "contents": "cmp.getDef().getHelper()getToolbarConfig(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputRichText-unrender\t$A",
+         "contents": "cmp.getDef().getHelper()unrender(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputSearch-addEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addEventHandler(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputSearch-preEventFiring\t$A",
+         "contents": "cmp.getDef().getHelper()preEventFiring(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-inputSearch-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-inputSearch-toggleClearButton\t$A",
+         "contents": "cmp.getDef().getHelper()toggleClearButton(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-getDomElementValue\t$A",
+         "contents": "cmp.getDef().getHelper()getDomElementValue(${1:el})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-getOptionsWithStrategy\t$A",
+         "contents": "cmp.getDef().getHelper()getOptionsWithStrategy(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-updateOptionsFromValue\t$A",
+         "contents": "cmp.getDef().getHelper()updateOptionsFromValue(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-isAlreadySelected\t$A",
+         "contents": "cmp.getDef().getHelper()isAlreadySelected(${1:cmp},${2:selectedOptions})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-updateValueFromOptions\t$A",
+         "contents": "cmp.getDef().getHelper()updateValueFromOptions(${1:cmp},${2:optionsPack})"
+      },
+      {
+         "trigger": "helper-ui-inputSelect-renderOptions\t$A",
+         "contents": "cmp.getDef().getHelper()renderOptions(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-inputTextArea-setDomElementValue\t$A",
+         "contents": "cmp.getDef().getHelper()setDomElementValue(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-interactive-addDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-interactive-addDomHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addDomHandler(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-interactive-domEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()domEventHandler(${1:event})"
+      },
+      {
+         "trigger": "helper-ui-interactive-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component},${2:event},${3:helper})"
+      },
+      {
+         "trigger": "helper-ui-interactive-getDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()getDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-interactive-getHandledDOMEvents\t$A",
+         "contents": "cmp.getDef().getHelper()getHandledDOMEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-interactive-preEventFiring\t$A",
+         "contents": "cmp.getDef().getHelper()preEventFiring(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-interactive-setEventParams\t$A",
+         "contents": "cmp.getDef().getHelper()setEventParams(${1:e},${2:DOMEvent})"
+      },
+      {
+         "trigger": "helper-ui-interactive-setDisabled\t$A",
+         "contents": "cmp.getDef().getHelper()setDisabled(${1:component},${2:disabled},${3:disabledCss})"
+      },
+      {
+         "trigger": "helper-ui-label-updateAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()updateAttribute(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-doInit\t$A",
+         "contents": "cmp.getDef().getHelper()doInit(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-initSorterTrigger\t$A",
+         "contents": "cmp.getDef().getHelper()initSorterTrigger(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-initDataProvider\t$A",
+         "contents": "cmp.getDef().getHelper()initDataProvider(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-initItems\t$A",
+         "contents": "cmp.getDef().getHelper()initItems(${1:cmp},${2:items},${3:selectedItems})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-handleOnOpen\t$A",
+         "contents": "cmp.getDef().getHelper()handleOnOpen(${1:cmp},${2:force})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-handleOnCancel\t$A",
+         "contents": "cmp.getDef().getHelper()handleOnCancel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-handleApply\t$A",
+         "contents": "cmp.getDef().getHelper()handleApply(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-reset\t$A",
+         "contents": "cmp.getDef().getHelper()reset(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-getDefaultSortBy\t$A",
+         "contents": "cmp.getDef().getHelper()getDefaultSortBy(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-parseSortBy\t$A",
+         "contents": "cmp.getDef().getHelper()parseSortBy(${1:cmp},${2:sortBy})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-triggerDataProvider\t$A",
+         "contents": "cmp.getDef().getHelper()triggerDataProvider(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-setVisible\t$A",
+         "contents": "cmp.getDef().getHelper()setVisible(${1:cmp},${2:visible})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-updateSortOrder\t$A",
+         "contents": "cmp.getDef().getHelper()updateSortOrder(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-getSelectedMenuItems\t$A",
+         "contents": "cmp.getDef().getHelper()getSelectedMenuItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-getSelectedItems\t$A",
+         "contents": "cmp.getDef().getHelper()getSelectedItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-setSelectedItems\t$A",
+         "contents": "cmp.getDef().getHelper()setSelectedItems(${1:cmp},${2:selectedItems})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-selectMenuItem\t$A",
+         "contents": "cmp.getDef().getHelper()selectMenuItem(${1:cmp},${2:selectedItems})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-attachEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()attachEventHandler(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-removeEventHandler\t$A",
+         "contents": "cmp.getDef().getHelper()removeEventHandler(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-appendElementToBody\t$A",
+         "contents": "cmp.getDef().getHelper()appendElementToBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-updateSize\t$A",
+         "contents": "cmp.getDef().getHelper()updateSize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-getOrientationChangeHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getOrientationChangeHandler(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-getKeydownHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getKeydownHandler(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-isElementInComponent\t$A",
+         "contents": "cmp.getDef().getHelper()isElementInComponent(${1:component},${2:targetElem})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-unrender\t$A",
+         "contents": "cmp.getDef().getHelper()unrender(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listSorter-refreshMenu\t$A",
+         "contents": "cmp.getDef().getHelper()refreshMenu(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-listView-addEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addEvents(${1:component},${2:events})"
+      },
+      {
+         "trigger": "helper-ui-listView-buildColumns\t$A",
+         "contents": "cmp.getDef().getHelper()buildColumns(${1:component},${2:templates},${3:listHeader})"
+      },
+      {
+         "trigger": "helper-ui-listView-buildList\t$A",
+         "contents": "cmp.getDef().getHelper()buildList(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-listView-buildRows\t$A",
+         "contents": "cmp.getDef().getHelper()buildRows(${1:component},${2:templates},${3:listBody})"
+      },
+      {
+         "trigger": "helper-ui-listView-decodeHtml\t$A",
+         "contents": "cmp.getDef().getHelper()decodeHtml(${1:htmlString})"
+      },
+      {
+         "trigger": "helper-ui-listView-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component},${2:target},${3:eventType},${4:listViewEventType},${5:rawEvent},${6:data})"
+      },
+      {
+         "trigger": "helper-ui-listView-fireEvents\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvents(${1:component},${2:type},${3:domEvent},${4:eventParams})"
+      },
+      {
+         "trigger": "helper-ui-listView-formatColumnName\t$A",
+         "contents": "cmp.getDef().getHelper()formatColumnName(${1:columnName})"
+      },
+      {
+         "trigger": "helper-ui-listView-formatContent\t$A",
+         "contents": "cmp.getDef().getHelper()formatContent(${1:columnTemplate},${2:dataItem},${3:fieldName},${4:items},${5:index},${6:formatters})"
+      },
+      {
+         "trigger": "helper-ui-listView-generateColumns\t$A",
+         "contents": "cmp.getDef().getHelper()generateColumns(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-listView-generateComponent\t$A",
+         "contents": "cmp.getDef().getHelper()generateComponent(${1:type},${2:attributes},${3:events})"
+      },
+      {
+         "trigger": "helper-ui-listView-getAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()getAttributes(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-listView-getAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()getAttribute(${1:component},${2:attributeMap},${3:value})"
+      },
+      {
+         "trigger": "helper-ui-listView-getColumnTemplates\t$A",
+         "contents": "cmp.getDef().getHelper()getColumnTemplates(${1:component},${2:listId},${3:columnTemplates},${4:dataTemplates},${5:colSpans},${6:headers},${7:depth},${8:nextId})"
+      },
+      {
+         "trigger": "helper-ui-listView-getEvents\t$A",
+         "contents": "cmp.getDef().getHelper()getEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-listView-getEventTargets\t$A",
+         "contents": "cmp.getDef().getHelper()getEventTargets(${1:component},${2:target})"
+      },
+      {
+         "trigger": "helper-ui-listView-getEventType\t$A",
+         "contents": "cmp.getDef().getHelper()getEventType(${1:component},${2:target})"
+      },
+      {
+         "trigger": "helper-ui-listView-getExpression\t$A",
+         "contents": "cmp.getDef().getHelper()getExpression(${1:value})"
+      },
+      {
+         "trigger": "helper-ui-listView-getParams\t$A",
+         "contents": "cmp.getDef().getHelper()getParams(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-listView-getRowClass\t$A",
+         "contents": "cmp.getDef().getHelper()getRowClass(${1:component},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-listView-getTarget\t$A",
+         "contents": "cmp.getDef().getHelper()getTarget(${1:target},${2:limit},${3:matches})"
+      },
+      {
+         "trigger": "helper-ui-listView-getTextContent\t$A",
+         "contents": "cmp.getDef().getHelper()getTextContent(${1:facet})"
+      },
+      {
+         "trigger": "helper-ui-listView-parseExpressions\t$A",
+         "contents": "cmp.getDef().getHelper()parseExpressions(${1:component},${2:attributes})"
+      },
+      {
+         "trigger": "helper-ui-listView-resolveObject\t$A",
+         "contents": "cmp.getDef().getHelper()resolveObject(${1:base},${2:qualifiedPath})"
+      },
+      {
+         "trigger": "helper-ui-listView-resolveObjects\t$A",
+         "contents": "cmp.getDef().getHelper()resolveObjects(${1:qualifiedPaths})"
+      },
+      {
+         "trigger": "helper-ui-listView-setImmediate\t$A",
+         "contents": "cmp.getDef().getHelper()setImmediate(${1:callback})"
+      },
+      {
+         "trigger": "helper-ui-listViewColumn-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component,name,type,rawEvent,data})"
+      },
+      {
+         "trigger": "helper-ui-menu-handleRefresh\t$A",
+         "contents": "cmp.getDef().getHelper()handleRefresh(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menu-setTargetEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()setTargetEventHandlers(${1:component},${2:targetComponent})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-addMenuItemDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addMenuItemDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-fireEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireEvent(${1:component},${2:event},${3:helper})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-fireSelectEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireSelectEvent(${1:component},${2:event},${3:options})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-handleSpacekeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleSpacekeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-preEventFiring\t$A",
+         "contents": "cmp.getDef().getHelper()preEventFiring(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-setDisabled\t$A",
+         "contents": "cmp.getDef().getHelper()setDisabled(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-setFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setFocus(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-getAnchorElement\t$A",
+         "contents": "cmp.getDef().getHelper()getAnchorElement(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuItem-supportKeyboardInteraction\t$A",
+         "contents": "cmp.getDef().getHelper()supportKeyboardInteraction(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setEventHandlersOnChildren\t$A",
+         "contents": "cmp.getDef().getHelper()setEventHandlersOnChildren(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setHandlersOnMenuItems\t$A",
+         "contents": "cmp.getDef().getHelper()setHandlersOnMenuItems(${1:component},${2:items},${3:children})"
+      },
+      {
+         "trigger": "helper-ui-menuList-getMenuItem\t$A",
+         "contents": "cmp.getDef().getHelper()getMenuItem(${1:component},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-menuList-handleVisible\t$A",
+         "contents": "cmp.getDef().getHelper()handleVisible(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setMenuItemFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setMenuItemFocus(${1:component},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setFocus(${1:component},${2:currentlyVisible})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setKeyboardEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()setKeyboardEventHandlers(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-removeKeyboardEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()removeKeyboardEventHandlers(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-getKeyboardInteractionHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getKeyboardInteractionHandler(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-handleEsckeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleEsckeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setFocusToTrigger\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToTrigger(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setFocusToNextItem\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToNextItem(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setFocusToPreviousItem\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToPreviousItem(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-fireMenuFocusChangeEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireMenuFocusChangeEvent(${1:component},${2:previousItem},${3:currentItem})"
+      },
+      {
+         "trigger": "helper-ui-menuList-handleTabkeydown\t$A",
+         "contents": "cmp.getDef().getHelper()handleTabkeydown(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-setFocusToTypingChars\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToTypingChars(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-deselectSiblings\t$A",
+         "contents": "cmp.getDef().getHelper()deselectSiblings(${1:component},${2:selectedItem})"
+      },
+      {
+         "trigger": "helper-ui-menuList-onMenuItemSelected\t$A",
+         "contents": "cmp.getDef().getHelper()onMenuItemSelected(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-menuList-getComponentForElement\t$A",
+         "contents": "cmp.getDef().getHelper()getComponentForElement(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-menuTrigger-handleClick\t$A",
+         "contents": "cmp.getDef().getHelper()handleClick(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuTrigger-fireMenuTriggerPress\t$A",
+         "contents": "cmp.getDef().getHelper()fireMenuTriggerPress(${1:component},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-menuTriggerLink-focus\t$A",
+         "contents": "cmp.getDef().getHelper()focus(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-menuTriggerLink-getAnchorElement\t$A",
+         "contents": "cmp.getDef().getHelper()getAnchorElement(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-modal-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-modal-_getKeyHandler\t$A",
+         "contents": "cmp.getDef().getHelper()_getKeyHandler(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-modal-validateAnimationName\t$A",
+         "contents": "cmp.getDef().getHelper()validateAnimationName(${1:name})"
+      },
+      {
+         "trigger": "helper-ui-modal-show\t$A",
+         "contents": "cmp.getDef().getHelper()show(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-modal-_findContainedComponent\t$A",
+         "contents": "cmp.getDef().getHelper()_findContainedComponent(${1:cmp},${2:id})"
+      },
+      {
+         "trigger": "helper-ui-modal-close\t$A",
+         "contents": "cmp.getDef().getHelper()close(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-modal-hide\t$A",
+         "contents": "cmp.getDef().getHelper()hide(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-modal-mask\t$A",
+         "contents": "cmp.getDef().getHelper()mask(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-outputDate-formatDate\t$A",
+         "contents": "cmp.getDef().getHelper()formatDate(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-outputDateTime-displayDateTime\t$A",
+         "contents": "cmp.getDef().getHelper()displayDateTime(${1:component},${2:displayValue})"
+      },
+      {
+         "trigger": "helper-ui-outputDateTime-getFormat\t$A",
+         "contents": "cmp.getDef().getHelper()getFormat(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-outputDateTime-getTimeZone\t$A",
+         "contents": "cmp.getDef().getHelper()getTimeZone(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-outputDateTime-formatDateTime\t$A",
+         "contents": "cmp.getDef().getHelper()formatDateTime(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-outputEmail-buildBody\t$A",
+         "contents": "cmp.getDef().getHelper()buildBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-outputPhone-updateValue\t$A",
+         "contents": "cmp.getDef().getHelper()updateValue(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-outputPhone-removeSpaces\t$A",
+         "contents": "cmp.getDef().getHelper()removeSpaces(${1:value})"
+      },
+      {
+         "trigger": "helper-ui-outputPhone-formatPhoneNumber\t$A",
+         "contents": "cmp.getDef().getHelper()formatPhoneNumber(${1:rawPhoneNumber})"
+      },
+      {
+         "trigger": "helper-ui-outputRichText-removeEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()removeEventHandlers(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-outputRichText-validate\t$A",
+         "contents": "cmp.getDef().getHelper()validate(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-outputRichText-validateElement\t$A",
+         "contents": "cmp.getDef().getHelper()validateElement(${1:element},${2:supportedTags})"
+      },
+      {
+         "trigger": "helper-ui-outputText-appendTextElements\t$A",
+         "contents": "cmp.getDef().getHelper()appendTextElements(${1:textValue},${2:containerEl})"
+      },
+      {
+         "trigger": "helper-ui-outputText-removeChildren\t$A",
+         "contents": "cmp.getDef().getHelper()removeChildren(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-outputURL-makeAbsolute\t$A",
+         "contents": "cmp.getDef().getHelper()makeAbsolute(${1:url})"
+      },
+      {
+         "trigger": "helper-ui-outputURL-buildLinkBody\t$A",
+         "contents": "cmp.getDef().getHelper()buildLinkBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-outputURL-handleDisabled\t$A",
+         "contents": "cmp.getDef().getHelper()handleDisabled(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pager-changePage\t$A",
+         "contents": "cmp.getDef().getHelper()changePage(${1:component},${2:targetPage},${3:domEvent})"
+      },
+      {
+         "trigger": "helper-ui-pager-changePageSize\t$A",
+         "contents": "cmp.getDef().getHelper()changePageSize(${1:component},${2:targetPageSize},${3:domEvent})"
+      },
+      {
+         "trigger": "helper-ui-pager-firePageChangeEvent\t$A",
+         "contents": "cmp.getDef().getHelper()firePageChangeEvent(${1:component},${2:pageData},${3:domEvent})"
+      },
+      {
+         "trigger": "helper-ui-pager-updateCalculatedFields\t$A",
+         "contents": "cmp.getDef().getHelper()updateCalculatedFields(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-panel-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panel-show\t$A",
+         "contents": "cmp.getDef().getHelper()show(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-panel-hide\t$A",
+         "contents": "cmp.getDef().getHelper()hide(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-panel-close\t$A",
+         "contents": "cmp.getDef().getHelper()close(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-panel-position\t$A",
+         "contents": "cmp.getDef().getHelper()position(${1:cmp},${2:referenceEl},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-hide\t$A",
+         "contents": "cmp.getDef().getHelper()hide(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-show\t$A",
+         "contents": "cmp.getDef().getHelper()show(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-beforeTransitionEnd\t$A",
+         "contents": "cmp.getDef().getHelper()beforeTransitionEnd(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-position\t$A",
+         "contents": "cmp.getDef().getHelper()position(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-getModalGlassElement\t$A",
+         "contents": "cmp.getDef().getHelper()getModalGlassElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-getPanelElement\t$A",
+         "contents": "cmp.getDef().getHelper()getPanelElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-close\t$A",
+         "contents": "cmp.getDef().getHelper()close(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-_findContainedComponent\t$A",
+         "contents": "cmp.getDef().getHelper()_findContainedComponent(${1:cmp},${2:localId})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-getPrefix\t$A",
+         "contents": "cmp.getDef().getHelper()getPrefix(${1:})"
+      },
+      {
+         "trigger": "helper-ui-panelDialog-getAnimationEndEventName\t$A",
+         "contents": "cmp.getDef().getHelper()getAnimationEndEventName(${1:})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_copy\t$A",
+         "contents": "cmp.getDef().getHelper()_copy(${1:obj1})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-getManager\t$A",
+         "contents": "cmp.getDef().getHelper()getManager(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-createCancelButton\t$A",
+         "contents": "cmp.getDef().getHelper()createCancelButton(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-updatePanel\t$A",
+         "contents": "cmp.getDef().getHelper()updatePanel(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-getHeaderButtons\t$A",
+         "contents": "cmp.getDef().getHelper()getHeaderButtons(${1:cmp},${2:headerActions},${3:maxButtons})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-openPanel\t$A",
+         "contents": "cmp.getDef().getHelper()openPanel(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-createPanel\t$A",
+         "contents": "cmp.getDef().getHelper()createPanel(${1:cmp},${2:config},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-createPanelDialog\t$A",
+         "contents": "cmp.getDef().getHelper()createPanelDialog(${1:cmp},${2:config},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-beforeCreatePanel\t$A",
+         "contents": "cmp.getDef().getHelper()beforeCreatePanel(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-isModal\t$A",
+         "contents": "cmp.getDef().getHelper()isModal(${1:panelType})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-getCloseActionForModal\t$A",
+         "contents": "cmp.getDef().getHelper()getCloseActionForModal(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_createPanel\t$A",
+         "contents": "cmp.getDef().getHelper()_createPanel(${1:cmp},${2:def},${3:config},${4:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_createComponent\t$A",
+         "contents": "cmp.getDef().getHelper()_createComponent(${1:def},${2:attr},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-attachPanelInstance\t$A",
+         "contents": "cmp.getDef().getHelper()attachPanelInstance(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_findContainer\t$A",
+         "contents": "cmp.getDef().getHelper()_findContainer(${1:cmp},${2:id})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-openInstance\t$A",
+         "contents": "cmp.getDef().getHelper()openInstance(${1:cmp},${2:panel},${3:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-afterOpenInstance\t$A",
+         "contents": "cmp.getDef().getHelper()afterOpenInstance(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-isPanel\t$A",
+         "contents": "cmp.getDef().getHelper()isPanel(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-closeInstance\t$A",
+         "contents": "cmp.getDef().getHelper()closeInstance(${1:cmp},${2:panel},${3:options})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-emptyDeleteQueue\t$A",
+         "contents": "cmp.getDef().getHelper()emptyDeleteQueue(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-removeInstance\t$A",
+         "contents": "cmp.getDef().getHelper()removeInstance(${1:cmp},${2:panel},${3:forceImmediateDestroy})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_removePanel\t$A",
+         "contents": "cmp.getDef().getHelper()_removePanel(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-destroySlidePanelDEPRECATED\t$A",
+         "contents": "cmp.getDef().getHelper()destroySlidePanelDEPRECATED(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-destroyPanel\t$A",
+         "contents": "cmp.getDef().getHelper()destroyPanel(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-destroyAllPanels\t$A",
+         "contents": "cmp.getDef().getHelper()destroyAllPanels(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-getActiveInstance\t$A",
+         "contents": "cmp.getDef().getHelper()getActiveInstance(${1:manager})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-setActiveInstance\t$A",
+         "contents": "cmp.getDef().getHelper()setActiveInstance(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-afterSetActiveInstance\t$A",
+         "contents": "cmp.getDef().getHelper()afterSetActiveInstance(${1:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_updateModalGlasszIndex\t$A",
+         "contents": "cmp.getDef().getHelper()_updateModalGlasszIndex(${1:panelHelper},${2:panel},${3:stackIndex})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-_updatePanelElementzIndex\t$A",
+         "contents": "cmp.getDef().getHelper()_updatePanelElementzIndex(${1:panelHelper},${2:panel},${3:stackIndex})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-stackPanel\t$A",
+         "contents": "cmp.getDef().getHelper()stackPanel(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-unstackPanel\t$A",
+         "contents": "cmp.getDef().getHelper()unstackPanel(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-isVisible\t$A",
+         "contents": "cmp.getDef().getHelper()isVisible(${1:el})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-focusAllowed\t$A",
+         "contents": "cmp.getDef().getHelper()focusAllowed(${1:el})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-getFocusables\t$A",
+         "contents": "cmp.getDef().getHelper()getFocusables(${1:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-bindKeyHandler\t$A",
+         "contents": "cmp.getDef().getHelper()bindKeyHandler(${1:manager})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-unbindKeyHandler\t$A",
+         "contents": "cmp.getDef().getHelper()unbindKeyHandler(${1:manager})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-bindClickHandler\t$A",
+         "contents": "cmp.getDef().getHelper()bindClickHandler(${1:manager})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-unbindClickHandler\t$A",
+         "contents": "cmp.getDef().getHelper()unbindClickHandler(${1:manager})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-transitionBegin\t$A",
+         "contents": "cmp.getDef().getHelper()transitionBegin(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-transitionEnd\t$A",
+         "contents": "cmp.getDef().getHelper()transitionEnd(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-setFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setFocus(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager-onPanelLoaded\t$A",
+         "contents": "cmp.getDef().getHelper()onPanelLoaded(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-initializeRegisteredPanels\t$A",
+         "contents": "cmp.getDef().getHelper()initializeRegisteredPanels(${1:cmp},${2:newPanels})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-createPanel\t$A",
+         "contents": "cmp.getDef().getHelper()createPanel(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-getActivePanel\t$A",
+         "contents": "cmp.getDef().getHelper()getActivePanel(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-setPanelOwner\t$A",
+         "contents": "cmp.getDef().getHelper()setPanelOwner(${1:panel},${2:givenOwner})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-stackPanel\t$A",
+         "contents": "cmp.getDef().getHelper()stackPanel(${1:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-createPanelInstance\t$A",
+         "contents": "cmp.getDef().getHelper()createPanelInstance(${1:cmp},${2:panelDef},${3:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-beforeShow\t$A",
+         "contents": "cmp.getDef().getHelper()beforeShow(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-destroyPanelInstance\t$A",
+         "contents": "cmp.getDef().getHelper()destroyPanelInstance(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-activateNextPanel\t$A",
+         "contents": "cmp.getDef().getHelper()activateNextPanel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-deactivateAllPanelInstances\t$A",
+         "contents": "cmp.getDef().getHelper()deactivateAllPanelInstances(${1:cmp},${2:activePanel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-renderPanel\t$A",
+         "contents": "cmp.getDef().getHelper()renderPanel(${1:cmp},${2:panel})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-notifyPanelContent\t$A",
+         "contents": "cmp.getDef().getHelper()notifyPanelContent(${1:content},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-broadcastNotify\t$A",
+         "contents": "cmp.getDef().getHelper()broadcastNotify(${1:cmp},${2:source},${3:config})"
+      },
+      {
+         "trigger": "helper-ui-panelManager2-getContainerPanelId\t$A",
+         "contents": "cmp.getDef().getHelper()getContainerPanelId(${1:source})"
+      },
+      {
+         "trigger": "helper-ui-pill-handledInteraction\t$A",
+         "contents": "cmp.getDef().getHelper()handledInteraction(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-pill-fireHandleEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireHandleEvent(${1:component},${2:action})"
+      },
+      {
+         "trigger": "helper-ui-pill-setFocus\t$A",
+         "contents": "cmp.getDef().getHelper()setFocus(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-pill-removeFocus\t$A",
+         "contents": "cmp.getDef().getHelper()removeFocus(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-handleItemSelected\t$A",
+         "contents": "cmp.getDef().getHelper()handleItemSelected(${1:cmp},${2:newItemList})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-insertItems\t$A",
+         "contents": "cmp.getDef().getHelper()insertItems(${1:cmp},${2:newItems})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-handlePillEvent\t$A",
+         "contents": "cmp.getDef().getHelper()handlePillEvent(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-deleteItem\t$A",
+         "contents": "cmp.getDef().getHelper()deleteItem(${1:cmp},${2:data})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-focusItem\t$A",
+         "contents": "cmp.getDef().getHelper()focusItem(${1:cmp},${2:data},${3:direction})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-focusOnInputBox\t$A",
+         "contents": "cmp.getDef().getHelper()focusOnInputBox(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-adjustHeight\t$A",
+         "contents": "cmp.getDef().getHelper()adjustHeight(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-showMore\t$A",
+         "contents": "cmp.getDef().getHelper()showMore(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_getActualHeight\t$A",
+         "contents": "cmp.getDef().getHelper()_getActualHeight(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_itemExists\t$A",
+         "contents": "cmp.getDef().getHelper()_itemExists(${1:itemsList},${2:newItem})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_hasReachedMax\t$A",
+         "contents": "cmp.getDef().getHelper()_hasReachedMax(${1:cmp},${2:items})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_isEqual\t$A",
+         "contents": "cmp.getDef().getHelper()_isEqual(${1:object1},${2:object2})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_deleteItem\t$A",
+         "contents": "cmp.getDef().getHelper()_deleteItem(${1:cmp},${2:data})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_processPillInserted\t$A",
+         "contents": "cmp.getDef().getHelper()_processPillInserted(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pillContainer-_processPillRemoved\t$A",
+         "contents": "cmp.getDef().getHelper()_processPillRemoved(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-handleEnterKeyOnInput\t$A",
+         "contents": "cmp.getDef().getHelper()handleEnterKeyOnInput(${1:component},${2:input})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-handleOtherKeyAction\t$A",
+         "contents": "cmp.getDef().getHelper()handleOtherKeyAction(${1:component},${2:input},${3:event})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-handleCreatePill\t$A",
+         "contents": "cmp.getDef().getHelper()handleCreatePill(${1:concrete},${2:input})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-initFetchParameters\t$A",
+         "contents": "cmp.getDef().getHelper()initFetchParameters(${1:})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-handleParameterChange\t$A",
+         "contents": "cmp.getDef().getHelper()handleParameterChange(${1:component},${2:parameters})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoComplete-addParentListElementAsInput\t$A",
+         "contents": "cmp.getDef().getHelper()addParentListElementAsInput(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoCompleteOption-displayText\t$A",
+         "contents": "cmp.getDef().getHelper()displayText(${1:component},${2:keyword})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoCompleteOption-handleMouseover\t$A",
+         "contents": "cmp.getDef().getHelper()handleMouseover(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-pillContainerAutoCompleteOption-handleMouseout\t$A",
+         "contents": "cmp.getDef().getHelper()handleMouseout(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-getTargetComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getTargetComponent(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-getTriggerComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getTriggerComponent(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-getComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getComponent(${1:component},${2:componentName})"
+      },
+      {
+         "trigger": "helper-ui-popup-handleTriggerPress\t$A",
+         "contents": "cmp.getDef().getHelper()handleTriggerPress(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-handleTargetShow\t$A",
+         "contents": "cmp.getDef().getHelper()handleTargetShow(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-handleTargetHide\t$A",
+         "contents": "cmp.getDef().getHelper()handleTargetHide(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-handleKeyboardEvent\t$A",
+         "contents": "cmp.getDef().getHelper()handleKeyboardEvent(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-popup-setTargetVisibility\t$A",
+         "contents": "cmp.getDef().getHelper()setTargetVisibility(${1:component},${2:visible})"
+      },
+      {
+         "trigger": "helper-ui-popup-delegateEventToTarget\t$A",
+         "contents": "cmp.getDef().getHelper()delegateEventToTarget(${1:component},${2:event},${3:eventName})"
+      },
+      {
+         "trigger": "helper-ui-popup-setEventHandlersOnChildren\t$A",
+         "contents": "cmp.getDef().getHelper()setEventHandlersOnChildren(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-setTriggerEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()setTriggerEventHandlers(${1:component},${2:childComponent})"
+      },
+      {
+         "trigger": "helper-ui-popup-setTargetEventHandlers\t$A",
+         "contents": "cmp.getDef().getHelper()setTargetEventHandlers(${1:component},${2:targetComponent})"
+      },
+      {
+         "trigger": "helper-ui-popup-addCloseHandler\t$A",
+         "contents": "cmp.getDef().getHelper()addCloseHandler(${1:component},${2:childComponent})"
+      },
+      {
+         "trigger": "helper-ui-popup-handleRefresh\t$A",
+         "contents": "cmp.getDef().getHelper()handleRefresh(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popup-findElement\t$A",
+         "contents": "cmp.getDef().getHelper()findElement(${1:component},${2:localId})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getElementCache\t$A",
+         "contents": "cmp.getDef().getHelper()getElementCache(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getTransitionEndEventName\t$A",
+         "contents": "cmp.getDef().getHelper()getTransitionEndEventName(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getTriggerComponent\t$A",
+         "contents": "cmp.getDef().getHelper()getTriggerComponent(${1:element})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-position\t$A",
+         "contents": "cmp.getDef().getHelper()position(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-positionAsBodyChild\t$A",
+         "contents": "cmp.getDef().getHelper()positionAsBodyChild(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-setAriaAttributes\t$A",
+         "contents": "cmp.getDef().getHelper()setAriaAttributes(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-onVisibleChange\t$A",
+         "contents": "cmp.getDef().getHelper()onVisibleChange(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getOnClickEventProp\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEventProp(${1:prop})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getOnClickStartFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickStartFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getOnClickEndFunction\t$A",
+         "contents": "cmp.getDef().getHelper()getOnClickEndFunction(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getWindowBlurHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getWindowBlurHandler(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-getWindowResizeHandler\t$A",
+         "contents": "cmp.getDef().getHelper()getWindowResizeHandler(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-isElementInComponent\t$A",
+         "contents": "cmp.getDef().getHelper()isElementInComponent(${1:component},${2:targetElem})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-addDismissEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addDismissEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-removeDismissEvents\t$A",
+         "contents": "cmp.getDef().getHelper()removeDismissEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTarget-handleKeyboardEvent\t$A",
+         "contents": "cmp.getDef().getHelper()handleKeyboardEvent(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-addTriggerDomEvents\t$A",
+         "contents": "cmp.getDef().getHelper()addTriggerDomEvents(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-preEventFiring\t$A",
+         "contents": "cmp.getDef().getHelper()preEventFiring(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-handleClick\t$A",
+         "contents": "cmp.getDef().getHelper()handleClick(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-handleTriggerPress\t$A",
+         "contents": "cmp.getDef().getHelper()handleTriggerPress(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-showTarget\t$A",
+         "contents": "cmp.getDef().getHelper()showTarget(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-hideTarget\t$A",
+         "contents": "cmp.getDef().getHelper()hideTarget(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-handlePopupToggle\t$A",
+         "contents": "cmp.getDef().getHelper()handlePopupToggle(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-popupTrigger-firePopupEvent\t$A",
+         "contents": "cmp.getDef().getHelper()firePopupEvent(${1:component},${2:eventName},${3:params})"
+      },
+      {
+         "trigger": "helper-ui-radioMenuItem-handleClick\t$A",
+         "contents": "cmp.getDef().getHelper()handleClick(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-radioMenuItem-setSelected\t$A",
+         "contents": "cmp.getDef().getHelper()setSelected(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-radioToggleMenuItem-handleClick\t$A",
+         "contents": "cmp.getDef().getHelper()handleClick(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-radioToggleMenuItem-toggleState\t$A",
+         "contents": "cmp.getDef().getHelper()toggleState(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-radioToggleMenuItem-updateDirection\t$A",
+         "contents": "cmp.getDef().getHelper()updateDirection(${1:cmp},${2:ascending})"
+      },
+      {
+         "trigger": "helper-ui-resizeObserver-getResizer\t$A",
+         "contents": "cmp.getDef().getHelper()getResizer(${1:})"
+      },
+      {
+         "trigger": "helper-ui-resizeObserver-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-resizeObserver-update\t$A",
+         "contents": "cmp.getDef().getHelper()update(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-resizeObserver-remove\t$A",
+         "contents": "cmp.getDef().getHelper()remove(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-resizeObserver-updateSize\t$A",
+         "contents": "cmp.getDef().getHelper()updateSize(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-isPluginRegistered\t$A",
+         "contents": "cmp.getDef().getHelper()isPluginRegistered(${1:name})"
+      },
+      {
+         "trigger": "helper-ui-scroller-registerPlugin\t$A",
+         "contents": "cmp.getDef().getHelper()registerPlugin(${1:name},${2:constructor})"
+      },
+      {
+         "trigger": "helper-ui-scroller-setPluginConfig\t$A",
+         "contents": "cmp.getDef().getHelper()setPluginConfig(${1:component},${2:config})"
+      },
+      {
+         "trigger": "helper-ui-scroller-initAfterRender\t$A",
+         "contents": "cmp.getDef().getHelper()initAfterRender(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-getScrollerInstance\t$A",
+         "contents": "cmp.getDef().getHelper()getScrollerInstance(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-setScollerInstance\t$A",
+         "contents": "cmp.getDef().getHelper()setScollerInstance(${1:component},${2:scrollerInstance})"
+      },
+      {
+         "trigger": "helper-ui-scroller-getScrollerNamespace\t$A",
+         "contents": "cmp.getDef().getHelper()getScrollerNamespace(${1:})"
+      },
+      {
+         "trigger": "helper-ui-scroller-handleScrollTo\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollTo(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-scroller-handleScrollBy\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollBy(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-scroller-swapShowMore\t$A",
+         "contents": "cmp.getDef().getHelper()swapShowMore(${1:cmp},${2:newValue})"
+      },
+      {
+         "trigger": "helper-ui-scroller-swapRefresh\t$A",
+         "contents": "cmp.getDef().getHelper()swapRefresh(${1:cmp},${2:newValue})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_bind\t$A",
+         "contents": "cmp.getDef().getHelper()_bind(${1:method})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getScrollerWrapper\t$A",
+         "contents": "cmp.getDef().getHelper()_getScrollerWrapper(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getPullToRefreshConfig\t$A",
+         "contents": "cmp.getDef().getHelper()_getPullToRefreshConfig(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getPullToLoadMoreConfig\t$A",
+         "contents": "cmp.getDef().getHelper()_getPullToLoadMoreConfig(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getInfiniteLoadingConfig\t$A",
+         "contents": "cmp.getDef().getHelper()_getInfiniteLoadingConfig(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getVoiceOverConfig\t$A",
+         "contents": "cmp.getDef().getHelper()_getVoiceOverConfig(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_getPlugins\t$A",
+         "contents": "cmp.getDef().getHelper()_getPlugins(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_mapAuraScrollerOptions\t$A",
+         "contents": "cmp.getDef().getHelper()_mapAuraScrollerOptions(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_bridgeScrollerCallback\t$A",
+         "contents": "cmp.getDef().getHelper()_bridgeScrollerCallback(${1:component},${2:auraAction},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_bridgeScrollerAction\t$A",
+         "contents": "cmp.getDef().getHelper()_bridgeScrollerAction(${1:component},${2:scrollerInstance},${3:actionName})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_preventDefault\t$A",
+         "contents": "cmp.getDef().getHelper()_preventDefault(${1:e})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_attachAuraEvents\t$A",
+         "contents": "cmp.getDef().getHelper()_attachAuraEvents(${1:component},${2:scrollerInstance})"
+      },
+      {
+         "trigger": "helper-ui-scroller-_stopNativeDragging\t$A",
+         "contents": "cmp.getDef().getHelper()_stopNativeDragging(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scroller-deactivate\t$A",
+         "contents": "cmp.getDef().getHelper()deactivate(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-refresh\t$A",
+         "contents": "cmp.getDef().getHelper()refresh(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-refreshScroller\t$A",
+         "contents": "cmp.getDef().getHelper()refreshScroller(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-swapShowMore\t$A",
+         "contents": "cmp.getDef().getHelper()swapShowMore(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-handleScrollTo\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollTo(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-handleScrollBy\t$A",
+         "contents": "cmp.getDef().getHelper()handleScrollBy(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-parseIntHelper\t$A",
+         "contents": "cmp.getDef().getHelper()parseIntHelper(${1:str})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-heightOffsetHelper\t$A",
+         "contents": "cmp.getDef().getHelper()heightOffsetHelper(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-init\t$A",
+         "contents": "cmp.getDef().getHelper()init(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-trackActiveInstance\t$A",
+         "contents": "cmp.getDef().getHelper()trackActiveInstance(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-initImageOnload\t$A",
+         "contents": "cmp.getDef().getHelper()initImageOnload(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-initWidth\t$A",
+         "contents": "cmp.getDef().getHelper()initWidth(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-deactivate\t$A",
+         "contents": "cmp.getDef().getHelper()deactivate(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-validateScrollers\t$A",
+         "contents": "cmp.getDef().getHelper()validateScrollers(${1:})"
+      },
+      {
+         "trigger": "helper-ui-scrollerDeprecated-initIScroll\t$A",
+         "contents": "cmp.getDef().getHelper()initIScroll(${1:})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-activateTab\t$A",
+         "contents": "cmp.getDef().getHelper()activateTab(${1:cmp},${2:index},${3:focus})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-closeTab\t$A",
+         "contents": "cmp.getDef().getHelper()closeTab(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-getTabItems\t$A",
+         "contents": "cmp.getDef().getHelper()getTabItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-addTab\t$A",
+         "contents": "cmp.getDef().getHelper()addTab(${1:cmp},${2:index},${3:tab})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-deactivateTab\t$A",
+         "contents": "cmp.getDef().getHelper()deactivateTab(${1:cmp},${2:activeTab})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-onKeyDown\t$A",
+         "contents": "cmp.getDef().getHelper()onKeyDown(${1:cmp},${2:domEvent})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-getTabIndex\t$A",
+         "contents": "cmp.getDef().getHelper()getTabIndex(${1:cmp},${2:element})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-setTabItems\t$A",
+         "contents": "cmp.getDef().getHelper()setTabItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-createComponents\t$A",
+         "contents": "cmp.getDef().getHelper()createComponents(${1:cmp},${2:tabValues},${3:callback})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-calculateMaxTabs\t$A",
+         "contents": "cmp.getDef().getHelper()calculateMaxTabs(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-calculateOverflowStartIndex\t$A",
+         "contents": "cmp.getDef().getHelper()calculateOverflowStartIndex(${1:cmp},${2:maxTabs})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-initializeOverflowData\t$A",
+         "contents": "cmp.getDef().getHelper()initializeOverflowData(${1:cmp},${2:startIndex})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-updateOverflowTab\t$A",
+         "contents": "cmp.getDef().getHelper()updateOverflowTab(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-swapOverflowTabs\t$A",
+         "contents": "cmp.getDef().getHelper()swapOverflowTabs(${1:cmp},${2:overflowTab},${3:oldTab},${4:newTab})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-toggleTab\t$A",
+         "contents": "cmp.getDef().getHelper()toggleTab(${1:tab},${2:condition})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-isInOverflow\t$A",
+         "contents": "cmp.getDef().getHelper()isInOverflow(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-getTabName\t$A",
+         "contents": "cmp.getDef().getHelper()getTabName(${1:tab})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-getOverflowData\t$A",
+         "contents": "cmp.getDef().getHelper()getOverflowData(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-createMenuItemFromTab\t$A",
+         "contents": "cmp.getDef().getHelper()createMenuItemFromTab(${1:tab})"
+      },
+      {
+         "trigger": "helper-ui-tabBar-createMenuItem\t$A",
+         "contents": "cmp.getDef().getHelper()createMenuItem(${1:id},${2:label})"
+      },
+      {
+         "trigger": "helper-ui-tabItem-setActive\t$A",
+         "contents": "cmp.getDef().getHelper()setActive(${1:cmp},${2:active},${3:focus})"
+      },
+      {
+         "trigger": "helper-ui-tabItem-handleHoverEvent\t$A",
+         "contents": "cmp.getDef().getHelper()handleHoverEvent(${1:cmp},${2:eventName})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuItem-handleHoverEvent\t$A",
+         "contents": "cmp.getDef().getHelper()handleHoverEvent(${1:cmp},${2:eventName})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuItem-updateMenuItems\t$A",
+         "contents": "cmp.getDef().getHelper()updateMenuItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuItem-getMenuItemCache\t$A",
+         "contents": "cmp.getDef().getHelper()getMenuItemCache(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuItem-updateMenuList\t$A",
+         "contents": "cmp.getDef().getHelper()updateMenuList(${1:cmp},${2:menuItems})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuItem-triggerTab\t$A",
+         "contents": "cmp.getDef().getHelper()triggerTab(${1:cmp},${2:name},${3:index},${4:focus})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuList-setFocusToNextItem\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToNextItem(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-tabOverflowMenuList-setFocusToPreviousItem\t$A",
+         "contents": "cmp.getDef().getHelper()setFocusToPreviousItem(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-tabset-setActive\t$A",
+         "contents": "cmp.getDef().getHelper()setActive(${1:cmp},${2:option})"
+      },
+      {
+         "trigger": "helper-ui-tabset-addTab\t$A",
+         "contents": "cmp.getDef().getHelper()addTab(${1:cmp},${2:index},${3:tab},${4:callback})"
+      },
+      {
+         "trigger": "helper-ui-tabset-removeTab\t$A",
+         "contents": "cmp.getDef().getHelper()removeTab(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-tabset-getActiveTab\t$A",
+         "contents": "cmp.getDef().getHelper()getActiveTab(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabset-fireBeforeActiveEvent\t$A",
+         "contents": "cmp.getDef().getHelper()fireBeforeActiveEvent(${1:cmp},${2:params},${3:target})"
+      },
+      {
+         "trigger": "helper-ui-tabset-getTabIndexFromEvent\t$A",
+         "contents": "cmp.getDef().getHelper()getTabIndexFromEvent(${1:cmp},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-tabset-setActiveTabBody\t$A",
+         "contents": "cmp.getDef().getHelper()setActiveTabBody(${1:cmp},${2:option})"
+      },
+      {
+         "trigger": "helper-ui-tabset-removeTabBody\t$A",
+         "contents": "cmp.getDef().getHelper()removeTabBody(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-ui-tabset-initTabs\t$A",
+         "contents": "cmp.getDef().getHelper()initTabs(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabset-finishInit\t$A",
+         "contents": "cmp.getDef().getHelper()finishInit(${1:cmp},${2:result})"
+      },
+      {
+         "trigger": "helper-ui-tabset-createTabsFromAttribute\t$A",
+         "contents": "cmp.getDef().getHelper()createTabsFromAttribute(${1:cmp},${2:tabConfigs})"
+      },
+      {
+         "trigger": "helper-ui-tabset-getTabsFromBody\t$A",
+         "contents": "cmp.getDef().getHelper()getTabsFromBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabset-createTabComponent\t$A",
+         "contents": "cmp.getDef().getHelper()createTabComponent(${1:cmp},${2:tabConfig},${3:callback},${4:async})"
+      },
+      {
+         "trigger": "helper-ui-tabset-getTabItemConfig\t$A",
+         "contents": "cmp.getDef().getHelper()getTabItemConfig(${1:cmp},${2:tab})"
+      },
+      {
+         "trigger": "helper-ui-tabset-getTabComponents\t$A",
+         "contents": "cmp.getDef().getHelper()getTabComponents(${1:body})"
+      },
+      {
+         "trigger": "helper-ui-tabset-_getTabComponent\t$A",
+         "contents": "cmp.getDef().getHelper()_getTabComponent(${1:cmp},${2:type})"
+      },
+      {
+         "trigger": "helper-ui-tabset-_getSuperest\t$A",
+         "contents": "cmp.getDef().getHelper()_getSuperest(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabset-unrender\t$A",
+         "contents": "cmp.getDef().getHelper()unrender(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-tabset-createTabCollection\t$A",
+         "contents": "cmp.getDef().getHelper()createTabCollection(${1:})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-convertFrom24To12\t$A",
+         "contents": "cmp.getDef().getHelper()convertFrom24To12(${1:component},${2:hours})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-localizeAmpmLabel\t$A",
+         "contents": "cmp.getDef().getHelper()localizeAmpmLabel(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-renderTime\t$A",
+         "contents": "cmp.getDef().getHelper()renderTime(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-updateHourValue\t$A",
+         "contents": "cmp.getDef().getHelper()updateHourValue(${1:component},${2:hours})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-updateMinuteValue\t$A",
+         "contents": "cmp.getDef().getHelper()updateMinuteValue(${1:component},${2:minutes})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-validateNumber\t$A",
+         "contents": "cmp.getDef().getHelper()validateNumber(${1:value},${2:min},${3:max})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-validateHours\t$A",
+         "contents": "cmp.getDef().getHelper()validateHours(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-timePicker-validateMinutes\t$A",
+         "contents": "cmp.getDef().getHelper()validateMinutes(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-setTransform\t$A",
+         "contents": "cmp.getDef().getHelper()setTransform(${1:el},${2:transformValue})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-buildTooltip\t$A",
+         "contents": "cmp.getDef().getHelper()buildTooltip(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-_doUpdatePosition\t$A",
+         "contents": "cmp.getDef().getHelper()_doUpdatePosition(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-_handlePositionEvents\t$A",
+         "contents": "cmp.getDef().getHelper()_handlePositionEvents(${1:ev},${2:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-_canFocus\t$A",
+         "contents": "cmp.getDef().getHelper()_canFocus(${1:})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-show\t$A",
+         "contents": "cmp.getDef().getHelper()show(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-updatePosition\t$A",
+         "contents": "cmp.getDef().getHelper()updatePosition(${1:component},${2:async})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-hide\t$A",
+         "contents": "cmp.getDef().getHelper()hide(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-toggle\t$A",
+         "contents": "cmp.getDef().getHelper()toggle(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-tooltip-makeTrigger\t$A",
+         "contents": "cmp.getDef().getHelper()makeTrigger(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-getChildren\t$A",
+         "contents": "cmp.getDef().getHelper()getChildren(${1:node})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-initPostOrderTraverser\t$A",
+         "contents": "cmp.getDef().getHelper()initPostOrderTraverser(${1:})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-initPreOrderTraverser\t$A",
+         "contents": "cmp.getDef().getHelper()initPreOrderTraverser(${1:})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-initPrintVisitor\t$A",
+         "contents": "cmp.getDef().getHelper()initPrintVisitor(${1:})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-initApplyVisitor\t$A",
+         "contents": "cmp.getDef().getHelper()initApplyVisitor(${1:funcToApply})"
+      },
+      {
+         "trigger": "helper-ui-treeNode-initCollapseVisitor\t$A",
+         "contents": "cmp.getDef().getHelper()initCollapseVisitor(${1:})"
+      },
+      {
+         "trigger": "helper-ui-vbox-filterEmptyTextNodes\t$A",
+         "contents": "cmp.getDef().getHelper()filterEmptyTextNodes(${1:el})"
+      },
+      {
+         "trigger": "helper-ui-vbox-updateContainer\t$A",
+         "contents": "cmp.getDef().getHelper()updateContainer(${1:component})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-reset\t$A",
+         "contents": "cmp.getDef().getHelper()reset(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-verifyInterfaces\t$A",
+         "contents": "cmp.getDef().getHelper()verifyInterfaces(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initializeDataModel\t$A",
+         "contents": "cmp.getDef().getHelper()initializeDataModel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initializeItems\t$A",
+         "contents": "cmp.getDef().getHelper()initializeItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initializeTemplates\t$A",
+         "contents": "cmp.getDef().getHelper()initializeTemplates(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initializeFixedHeader\t$A",
+         "contents": "cmp.getDef().getHelper()initializeFixedHeader(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-updateSizesForFixedHeader\t$A",
+         "contents": "cmp.getDef().getHelper()updateSizesForFixedHeader(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-virtualRerender\t$A",
+         "contents": "cmp.getDef().getHelper()virtualRerender(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-onItemChange\t$A",
+         "contents": "cmp.getDef().getHelper()onItemChange(${1:ptv},${2:evt})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-getGridBody\t$A",
+         "contents": "cmp.getDef().getHelper()getGridBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-markClean\t$A",
+         "contents": "cmp.getDef().getHelper()markClean(${1:cmp},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-markDirty\t$A",
+         "contents": "cmp.getDef().getHelper()markDirty(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_initializeRowTemplate\t$A",
+         "contents": "cmp.getDef().getHelper()_initializeRowTemplate(${1:templates})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_createPassthroughValue\t$A",
+         "contents": "cmp.getDef().getHelper()_createPassthroughValue(${1:cmp},${2:itemVar},${3:item},${4:rowIndex})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-createEventDelegates\t$A",
+         "contents": "cmp.getDef().getHelper()createEventDelegates(${1:cmp},${2:container})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_getRenderingComponentForElement\t$A",
+         "contents": "cmp.getDef().getHelper()_getRenderingComponentForElement(${1:domElement})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_dispatchAction\t$A",
+         "contents": "cmp.getDef().getHelper()_dispatchAction(${1:actionHandler},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_getActionHandler\t$A",
+         "contents": "cmp.getDef().getHelper()_getActionHandler(${1:htmlCmp},${2:eventType})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_eventDelegator\t$A",
+         "contents": "cmp.getDef().getHelper()_eventDelegator(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_findVirtualElementPosition\t$A",
+         "contents": "cmp.getDef().getHelper()_findVirtualElementPosition(${1:items},${2:elmt})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_replaceDOMElement\t$A",
+         "contents": "cmp.getDef().getHelper()_replaceDOMElement(${1:parent},${2:newChild},${3:oldChild})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_rerenderDirtyElement\t$A",
+         "contents": "cmp.getDef().getHelper()_rerenderDirtyElement(${1:cmp},${2:item},${3:oldElement})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_generateVirtualRow\t$A",
+         "contents": "cmp.getDef().getHelper()_generateVirtualRow(${1:cmp},${2:item})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_getItemAttached\t$A",
+         "contents": "cmp.getDef().getHelper()_getItemAttached(${1:dom})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-_attachItemToElement\t$A",
+         "contents": "cmp.getDef().getHelper()_attachItemToElement(${1:dom},${2:item})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-appendVirtualRows\t$A",
+         "contents": "cmp.getDef().getHelper()appendVirtualRows(${1:cmp},${2:items})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-createVirtualRows\t$A",
+         "contents": "cmp.getDef().getHelper()createVirtualRows(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-initializeSorting\t$A",
+         "contents": "cmp.getDef().getHelper()initializeSorting(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-updateSortData\t$A",
+         "contents": "cmp.getDef().getHelper()updateSortData(${1:cmp},${2:sortBy})"
+      },
+      {
+         "trigger": "helper-ui-virtualDataGrid-sortCallback\t$A",
+         "contents": "cmp.getDef().getHelper()sortCallback(${1:cmp},${2:response})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-initialize\t$A",
+         "contents": "cmp.getDef().getHelper()initialize(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-initializeBody\t$A",
+         "contents": "cmp.getDef().getHelper()initializeBody(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-initializeDataModel\t$A",
+         "contents": "cmp.getDef().getHelper()initializeDataModel(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_createPassthroughValue\t$A",
+         "contents": "cmp.getDef().getHelper()_createPassthroughValue(${1:cmp},${2:itemVar},${3:item})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-onItemChange\t$A",
+         "contents": "cmp.getDef().getHelper()onItemChange(${1:cmp},${2:ptv},${3:evt})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-ignorePTVChanges\t$A",
+         "contents": "cmp.getDef().getHelper()ignorePTVChanges(${1:cmp},${2:ignore})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_initializeItemTemplate\t$A",
+         "contents": "cmp.getDef().getHelper()_initializeItemTemplate(${1:cmpTemplate})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-initializeTemplate\t$A",
+         "contents": "cmp.getDef().getHelper()initializeTemplate(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-initializeItems\t$A",
+         "contents": "cmp.getDef().getHelper()initializeItems(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_attachItemToElement\t$A",
+         "contents": "cmp.getDef().getHelper()_attachItemToElement(${1:dom},${2:item})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_generateVirtualItem\t$A",
+         "contents": "cmp.getDef().getHelper()_generateVirtualItem(${1:cmp},${2:item})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-createVirtualList\t$A",
+         "contents": "cmp.getDef().getHelper()createVirtualList(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-getListBody\t$A",
+         "contents": "cmp.getDef().getHelper()getListBody(${1:cmp},${2:dom})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-markClean\t$A",
+         "contents": "cmp.getDef().getHelper()markClean(${1:cmp},${2:value})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-markDirty\t$A",
+         "contents": "cmp.getDef().getHelper()markDirty(${1:cmp})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-createEventDelegates\t$A",
+         "contents": "cmp.getDef().getHelper()createEventDelegates(${1:cmp},${2:container})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_findVirtualElementPosition\t$A",
+         "contents": "cmp.getDef().getHelper()_findVirtualElementPosition(${1:virtualElements},${2:item},${3:element})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_replaceDOMElement\t$A",
+         "contents": "cmp.getDef().getHelper()_replaceDOMElement(${1:parent},${2:newChild},${3:oldChild})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_rerenderDirtyElement\t$A",
+         "contents": "cmp.getDef().getHelper()_rerenderDirtyElement(${1:cmp},${2:item},${3:oldElement})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_getRenderingComponentForElement\t$A",
+         "contents": "cmp.getDef().getHelper()_getRenderingComponentForElement(${1:domElement})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_dispatchAction\t$A",
+         "contents": "cmp.getDef().getHelper()_dispatchAction(${1:actionHandler},${2:event})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_getItemAttached\t$A",
+         "contents": "cmp.getDef().getHelper()_getItemAttached(${1:dom})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_getActionHandler\t$A",
+         "contents": "cmp.getDef().getHelper()_getActionHandler(${1:htmlCmp},${2:eventType})"
+      },
+      {
+         "trigger": "helper-ui-virtualList-_eventDelegator\t$A",
+         "contents": "cmp.getDef().getHelper()_eventDelegator(${1:cmp},${2:e})"
+      },
+      {
+         "trigger": "helper-uiExamples-autocompleteDataProvider-provide\t$A",
+         "contents": "cmp.getDef().getHelper()provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSink-fireAddRemove\t$A",
+         "contents": "cmp.getDef().getHelper()fireAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSink-changeRowDisabled\t$A",
+         "contents": "cmp.getDef().getHelper()changeRowDisabled(${1:cmp},${2:index},${3:disable})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSink-changeRowClass\t$A",
+         "contents": "cmp.getDef().getHelper()changeRowClass(${1:cmp},${2:index},${3:className},${4:op})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-sort\t$A",
+         "contents": "cmp.getDef().getHelper()sort(${1:items},${2:column},${3:descending})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-applyPagination\t$A",
+         "contents": "cmp.getDef().getHelper()applyPagination(${1:tasks},${2:currentPage},${3:pageSize})"
+      },
+      {
+         "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-createTasks\t$A",
+         "contents": "cmp.getDef().getHelper()createTasks(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uiExamples-libraryExample-getLoadedScriptMessage\t$A",
+         "contents": "cmp.getDef().getHelper()getLoadedScriptMessage(${1:})"
+      },
+      {
+         "trigger": "helper-uiExamples-panelPositioningExample-doSomething\t$A",
+         "contents": "cmp.getDef().getHelper()doSomething(${1:})"
+      },
+      {
+         "trigger": "helper-uiExamples-virtualDataGridKitchenSink-generateColumnConfigs\t$A",
+         "contents": "cmp.getDef().getHelper()generateColumnConfigs(${1:cmp})"
+      }
+   ]
 }

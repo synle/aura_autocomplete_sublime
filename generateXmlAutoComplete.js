@@ -194,18 +194,19 @@ function processParser(baseDir, outputDir){
 		var componentName = fileBreakups[1];
 		var fullCompName = namespace + ':' + componentName;
 		var componentHelpers = [];
-		
+
+		var fileContent = parseHelper.readFromFile(
+			fileName,
+			true
+		);
+
+		//save it to helper dictionary
 		helperDictionary[fullCompName] = {
 			namespace : namespace,
 			componentName : componentName,
 			fullCompName : fullCompName,
 			helpers: componentHelpers
 		}
-
-		var fileContent = parseHelper.readFromFile(
-			fileName,
-			true
-		);
 
 
 
@@ -229,11 +230,12 @@ function processParser(baseDir, outputDir){
 				if (typeof methodDef === 'function'){
 					var methodDefStr = methodDef.toString();
 					var paramsStr = parseHelper.getParamsFromFuncDef(methodDefStr);
-					var params = self.getParamsArrayFromStr(paramsStr);
+					var params = parseHelper.getParamsArrayFromStr(paramsStr);
 
-					var parsedStuffs = parseFunctions(methodName, methodDef, fullCompName)
+					var parsedStuffs = parseHelper.parseFunctions(methodName, methodDef, fullCompName)
 
-					helperDictionary.push({
+					componentHelpers.push({
+						functionName : methodName,
 						annotatedValue: parsedStuffs[1],
 						origValue : parsedStuffs[2]
 					});
@@ -241,7 +243,7 @@ function processParser(baseDir, outputDir){
 			}
 		}
 		catch(e){
-			// console.log('fileName contains invalid escaper'.red, fileName)
+			console.log('ERR! error processing the file'.bold.underline.red , fileName.blue , e.toString());
 		}
 	})
 
