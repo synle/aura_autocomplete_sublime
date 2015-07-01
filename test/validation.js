@@ -18,6 +18,12 @@ describe('Sublime Text 3 - Snippet Validation', function() {
         var fileName = 'aura.event.js.sublime-completions';
         assertSublimeContent(fileName, _readSnippet(fileName));
     });
+    it('aura.helper.js.sublime-completions is valid', function() {
+        var fileName = 'aura.helper.js.sublime-completions';
+        assertSublimeContent(fileName, _readSnippet(fileName));
+    });
+
+    
 
     function _readSnippet(fileName) {
         return fs.readFileSync(path.join('./snippet', fileName), 'utf-8');
