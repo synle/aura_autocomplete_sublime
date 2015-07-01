@@ -1,6 +1,14 @@
 //depdencies
 var fs = require('fs');
 var path = require('path');
+// var _ = require('lodash');
+var _ = {
+    forEach: function(v, c){
+        for (var k in v){
+            c(v[k], k)
+        }
+    }
+}
 
 //vars
 var TRIGGER_SEPARATOR = '-';
@@ -38,6 +46,33 @@ var self = {
                 contents: contents
             });
         }
+        return JSON.stringify(sublimeFormat, null, 3);
+    },
+
+    consolidate_helperjs: function(helperDictionary){
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
+        );
+
+        _.forEach(helperDictionary, function(cmpHelperObj, componentName){
+            console.log(componentName.red, cmpHelperObj.yellow);
+            for (var functionName in cmpHelperObj) {
+                var annotatedParams = dictionary[functionName].annotatedValue || "";
+                var origParams = dictionary[functionName].origValue || "";
+
+                //triggers
+                var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
+                trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '\t$A' : '\t$A';
+
+                //contents
+                var contents = functionName + "(" + annotatedParams + ")";
+                //sublime format
+                sublimeFormat.completions.push({
+                    trigger: trigger,
+                    contents: contents
+                });
+            }
+        });
         return JSON.stringify(sublimeFormat, null, 3);
     },
 

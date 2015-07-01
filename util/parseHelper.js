@@ -18,7 +18,8 @@ var self = {
     listDir: function listDir(dir, res) {
         res = res || {
             cmp: [],
-            evt: []
+            evt: [],
+            helperjs: []
         };
         var dirs = fs.readdirSync(dir);
         for (var i = 0; i < dirs.length; i++) {
@@ -44,39 +45,52 @@ var self = {
                     case '.evt':
                         res.evt.push(newDir);
                         break;
+                    default:
+                        if(newDir.indexOf('Helper.js') >= 0){
+                            res.helperjs.push(newDir);    
+                        }
+                        break;
                 }
             }
         }
 
         return res;
     },
+    getParamsFromFuncDef: function(funcDefStr){
+        var paramsStr = funcDefStr.match(/\(.*\)/)[0]; // match the first (...)
+        paramsStr = paramsStr.substr(1, paramsStr.length - 2); //remove ( and )
+        return paramsStr;
+    },
+    getParamsArrayFromStr: function(paramsStr){
+        var params; //params array
+        if (paramsStr.indexOf('*') === -1) {
+            //no closure comment, do it this way (array)
+            //convert params string to array
+            params = paramsStr.split(', ');
+
+            //shorten and trim bad character
+            for (var i = 0; i < params.length; i++) {
+                params[i] = '${' + (i + 1)  + ':' + self.shortenName(params[i]) + '}';
+            }
+        } else {
+            //dont do anything when /**/ found
+            params = [paramsStr];
+
+            //shorten and trim bad character
+            for (var i = 0; i < params.length; i++) {
+                params[i] = '$' + (i + 1) + self.shortenName(params[i]);
+            }
+        }
+
+        return params;
+    },
     parseFunctions: function(functionName, functionDefition, namespaceStr) {
         if (typeof functionDefition === 'function') {
             //get function definitions as string
             var funcDefStr = functionDefition.toString();
             //parse the params
-            var paramsStr = funcDefStr.match(/\(.*\)/)[0]; // match the first (...)
-            paramsStr = paramsStr.substr(1, paramsStr.length - 2); //remove ( and )
-            var params; //params array
-            if (paramsStr.indexOf('*') === -1) {
-                //no closure comment, do it this way (array)
-                //convert params string to array
-                params = paramsStr.split(', ');
-
-                //shorten and trim bad character
-                for (var i = 0; i < params.length; i++) {
-                    params[i] = '${' + (i + 1)  + ':' + self.shortenName(params[i]) + '}';
-                }
-            } else {
-                //dont do anything when /**/ found
-                params = [paramsStr];
-
-                //shorten and trim bad character
-                for (var i = 0; i < params.length; i++) {
-                    params[i] = '$' + (i + 1) + self.shortenName(params[i]);
-                }
-            }
-
+            var paramsStr = self.getParamsFromFuncDef(funcDefStr);
+            var params = self.getParamsArrayFromStr(paramsStr);
 
             //pure params
             var pureParams = paramsStr;
@@ -97,7 +111,7 @@ var self = {
         return str;
     },
     updateJs:function(dictionary, outputDir){
-        console.log('Updating Atom File: Util and Test JS:'.bold.magenta.underline);
+        console.log('Updating JS File: Util and Test JS:'.bold.magenta.underline);
 
         //consolidate sublime text format
         self.writeToFile(
@@ -115,6 +129,28 @@ var self = {
             path.join(
                 outputDir,
                 'aura.js.atom.cson'
+            )
+        );
+    },
+    updateHelper: function(helperDictionary, outputDir){
+        console.log('Updating JS File: Component Helper JS:'.bold.magenta.underline);
+
+        //consolidate sublime text format
+        self.writeToFile(
+            consolidatorSublime.consolidate_helperjs(helperDictionary),
+            path.join(
+                outputDir,
+                'aura.helper.js.sublime-completions'
+            )
+        );
+
+
+        //consolidate atom files
+        self.writeToFile(
+            consolidatorAtom.consolidate_helperjs(helperDictionary),
+            path.join(
+                outputDir,
+                'aura.helper.js.atom.cson'
             )
         );
     },

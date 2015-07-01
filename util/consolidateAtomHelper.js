@@ -40,6 +40,11 @@ var self = {
     },
 
 
+    consolidate_helperjs: function(helperDictionary){
+
+    },
+
+
     /**
         [...
             {

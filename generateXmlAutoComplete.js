@@ -59,6 +59,7 @@ function processParser(baseDir, outputDir){
 	var arrayComponents = [];
 	var arrayEvents = [];
 	var arrayAttributes = [];
+	var helperDictionary = {};
 
 	//find all cmp files in nested structures
 	var componentFileNames = parseHelper.listDir(componentBaseDir);
@@ -183,7 +184,66 @@ function processParser(baseDir, outputDir){
 
 		arrayComponents.push(componentObj);
 	});
+	
 
+	
+	//look up the helper
+	componentFileNames.helperjs.forEach(function(fileName){
+		var fileBreakups = parseHelper.getComponentBreakup(fileName);
+		var namespace = fileBreakups[0];
+		var componentName = fileBreakups[1];
+		var fullCompName = namespace + ':' + componentName;
+		var componentHelpers = [];
+		
+		helperDictionary[fullCompName] = {
+			namespace : namespace,
+			componentName : componentName,
+			fullCompName : fullCompName,
+			helpers: componentHelpers
+		}
+
+		var fileContent = parseHelper.readFromFile(
+			fileName,
+			true
+		);
+
+
+
+		//attached custom js for parser
+		//try parse
+		try{
+			var METHOD_PLACEHOLDER = {};
+			fileContent = fileContent.replace(/(?:\/\*(?:[\s\S]*?)\*\/)|(?:([\s;])+\/\/(?:.*)$)/gm, '$1');
+			fileContent = fileContent.substr(fileContent.indexOf('('));
+			fileContent = [
+				'(function MAGIC_PARSER(dummyObj){',
+				'METHOD_PLACEHOLDER = dummyObj;',
+				'})'
+			].join('\n')  + fileContent;
+
+			// console.log('fileName'.blue, fileName)
+			eval(fileContent);
+
+			for(var methodName in METHOD_PLACEHOLDER){
+				var methodDef = METHOD_PLACEHOLDER[methodName];
+				if (typeof methodDef === 'function'){
+					var methodDefStr = methodDef.toString();
+					var paramsStr = parseHelper.getParamsFromFuncDef(methodDefStr);
+					var params = self.getParamsArrayFromStr(paramsStr);
+
+					var parsedStuffs = parseFunctions(methodName, methodDef, fullCompName)
+
+					helperDictionary.push({
+						annotatedValue: parsedStuffs[1],
+						origValue : parsedStuffs[2]
+					});
+				}
+			}
+		}
+		catch(e){
+			// console.log('fileName contains invalid escaper'.red, fileName)
+		}
+	})
 
 
 	//consolidate events
@@ -192,4 +252,5 @@ function processParser(baseDir, outputDir){
 	parseHelper.updateEvt(arrayEvents, outputDir);
 	parseHelper.updateTag(arrayComponents, outputDir);
 	parseHelper.updateTagAttr(arrayAttributes, outputDir);
+	parseHelper.updateHelper(helperDictionary, outputDir);
 }
