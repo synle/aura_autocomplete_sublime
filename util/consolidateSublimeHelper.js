@@ -177,7 +177,7 @@ var self = {
             var trigger = 'attr-' + attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name ;
 
             //contents
-            var contents = attributeComponent.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
+            var contents = attributeObj.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
 
 
             //sublime format
