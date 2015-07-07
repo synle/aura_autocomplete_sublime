@@ -130,7 +130,8 @@ function processParser(baseDir, outputDir){
 			// attributes : [],
 			namespace : namespace,
 			fullComponentTag: namespace + ':' + componentName,
-			implements : ''
+			implements : '',
+			attributes : []
 		}
 
 
@@ -178,6 +179,9 @@ function processParser(baseDir, outputDir){
 						component: componentObj,
 						attribute: attributeObj
 					});
+
+
+					componentObj.attributes.push(attributeObj);
 				});
 			}
 		});

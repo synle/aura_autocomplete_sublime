@@ -176,8 +176,19 @@ var self = {
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
             var trigger = 'attr-' + attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name ;
 
+
+            // console.log('attributeComponent', attributeComponent);
+            // console.log('attributeObj', attributeObj);
             //contents
-            var contents = attributeObj.name + '="${1:' + attributeComponent.fullComponentTag + '(' +attributeObj.type+')}"';
+            var contents = self._serializeAttr(
+                attributeObj.name,//attributeName
+                attributeComponent.fullComponentTag,//fullComponentTagStr
+                attributeObj.type,//atributeType
+                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                1//sublime tab index
+            );
+
+            // console.log(contents);
 
 
             //sublime format
@@ -185,11 +196,16 @@ var self = {
                 trigger: trigger,
                 contents: contents
             });
+
+            // console.log(attributeObj);
         }
 
         return JSON.stringify(sublimeFormat, null, 3);
     },
 
+    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx){
+        return  attributeName + '="${'+sublimeTabIdx+':' + fullComponentTagStr + (isRequired ? ' Required' : ' Optional') + ' - ' +atributeType+'}"';
+    },
 
     /**
      [
@@ -198,7 +214,10 @@ var self = {
             description: '',
             namespace: 'uiExamples',
             fullComponentTag: 'uiExamples:virtualDataGridKitchenSink',
-            implements: '' }
+            implements: '',
+            attributes: [...
+                { name: 'tabItemWidth', type: 'Integer', description: '' }
+            ...attributeObj] }
         ...
      ]
      */
@@ -210,19 +229,80 @@ var self = {
 
         for (var idx in arrayComponents){
             var componentObj = arrayComponents[idx];
+            var attributeArray = componentObj.attributes;
 
             //triggers
             var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name + '\t$A.Tag' ;
 
             //contents
+            // var contents = [
+            //     componentObj.fullComponentTag + '$1>${2:',
+            //     componentObj.implements.length > 0 ? '\nImplements '+componentObj.implements + '.\n' : '',
+            //     componentObj.description,
+            //     '}</'+componentObj.fullComponentTag+'>'
+            // ].join('');
+
             var contents = [
-                componentObj.fullComponentTag + '$1>${2:',
-                componentObj.implements.length > 0 ? '\nImplements '+componentObj.implements + '.\n' : '',
-                componentObj.description,
-                '}</'+componentObj.fullComponentTag+'>'
-            ].join('');
+                componentObj.fullComponentTag,
+            ];
+
+            var sublimeTabIdx = 1;
 
 
+            //required attributes
+            _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
+                if(attributeObj.required === true || attributeObj.required === 'true'){
+                    sublimeTabIdx = attributeArrayIdx + 1;
+
+                    // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                    contents.push(
+                        ' ' + self._serializeAttr(
+                            attributeObj.name,//attributeName
+                            componentObj.fullComponentTag,//fullComponentTagStr
+                            attributeObj.type,//atributeType
+                            attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                            sublimeTabIdx//sublime tab index
+                        )
+                    );
+
+                    // console.log(componentObj.fullComponentTag)
+                }
+            });
+
+
+            //optional attributes
+            _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
+                if(attributeObj.required !== true && attributeObj.required !== 'true'){
+                    sublimeTabIdx = attributeArrayIdx + 1;
+
+                    // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                    contents.push(
+                        ' ' + self._serializeAttr(
+                            attributeObj.name,//attributeName
+                            componentObj.fullComponentTag,//fullComponentTagStr
+                            attributeObj.type,//atributeType
+                            attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                            sublimeTabIdx//sublime tab index
+                        )
+                    );
+
+                    // console.log(componentObj.fullComponentTag)
+                }
+            });
+
+
+            //increment tab index
+            sublimeTabIdx = sublimeTabIdx + 1;
+
+            contents.push( '>')
+            contents.push( '${'+ (sublimeTabIdx) + ':')
+            contents.push( componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\n' : '')
+            contents.push( componentObj.description)
+            contents.push( '}</'+componentObj.fullComponentTag+'>')
+
+
+            contents = contents.join('');
+            // console.log(componentObj.name, attributeArray.length)
             // console.log(componentObj);
 
 
