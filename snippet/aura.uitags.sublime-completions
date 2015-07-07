@@ -3,7 +3,7 @@
    "completions": [
       {
          "trigger": "tag-aura-component\t$A.Tag",
-         "contents": "aura:component body=\"${1:aura:component - Optional - Aura.Component[]}\">${1:Implements aura:rootComponent.\nThe root of the component hierarchy. Provides a default rendering implementation.}</aura:component>"
+         "contents": "aura:component body=\"${1:aura:component - Optional - Aura.Component[]}\">${2:Implements aura:rootComponent.\nThe root of the component hierarchy. Provides a default rendering implementation.}</aura:component>"
       },
       {
          "trigger": "tag-aura-debug\t$A.Tag",
@@ -15,19 +15,19 @@
       },
       {
          "trigger": "tag-aura-expression\t$A.Tag",
-         "contents": "aura:expression value=\"${1:aura:expression - Optional - String}\">${1:Implements aura:rootComponent.\nRenders the value to which an expression evaluates. Creates an instance of this component which renders the\n                        referenced \"property reference value\" set to the value attribute when expressions are found in free text or markup.}</aura:expression>"
+         "contents": "aura:expression value=\"${1:aura:expression - Optional - String}\">${2:Implements aura:rootComponent.\nRenders the value to which an expression evaluates. Creates an instance of this component which renders the\n                        referenced \"property reference value\" set to the value attribute when expressions are found in free text or markup.}</aura:expression>"
       },
       {
          "trigger": "tag-aura-html\t$A.Tag",
-         "contents": "aura:html body=\"${1:aura:html - Optional - Aura.Component[]}\" tag=\"${2:aura:html - Optional - String}\" HTMLAttributes=\"${3:aura:html - Optional - Map}\">${3:Implements aura:rootComponent.\nA meta component that represents all html elements.  Any html found in your markup causes the creation of one of these.}</aura:html>"
+         "contents": "aura:html body=\"${1:aura:html - Optional - Aura.Component[]}\" tag=\"${2:aura:html - Optional - String}\" HTMLAttributes=\"${3:aura:html - Optional - Map}\">${4:Implements aura:rootComponent.\nA meta component that represents all html elements.  Any html found in your markup causes the creation of one of these.}</aura:html>"
       },
       {
          "trigger": "tag-aura-if\t$A.Tag",
-         "contents": "aura:if isTrue=\"${1:aura:if - Required - Boolean}\" body=\"${2:aura:if - Required - Aura.ComponentDefRef[]}\" else=\"${3:aura:if - Optional - Aura.ComponentDefRef[]}\">${3:Implements aura:rootComponent.\nConditionally instantiates and renders either the body or the components in the else attribute.}</aura:if>"
+         "contents": "aura:if isTrue=\"${1:aura:if - Required - Boolean}\" body=\"${2:aura:if - Required - Aura.ComponentDefRef[]}\" else=\"${3:aura:if - Optional - Aura.ComponentDefRef[]}\">${4:Implements aura:rootComponent.\nConditionally instantiates and renders either the body or the components in the else attribute.}</aura:if>"
       },
       {
          "trigger": "tag-aura-include\t$A.Tag",
-         "contents": "aura:include name=\"${1:aura:include - Required - String}\" imports=\"${2:aura:include - Required - String}\">${2:Only usable in the body of aura:library (.lib) files. This attribute is used to specifiy the Javascript files that are loaded by the library and which file depend on which.}</aura:include>"
+         "contents": "aura:include name=\"${1:aura:include - Required - String}\" imports=\"${2:aura:include - Required - String}\">${3:Only usable in the body of aura:library (.lib) files. This attribute is used to specifiy the Javascript files that are loaded by the library and which file depend on which.}</aura:include>"
       },
       {
          "trigger": "tag-aura-integrationServiceTemplate\t$A.Tag",
@@ -35,7 +35,7 @@
       },
       {
          "trigger": "tag-aura-iteration\t$A.Tag",
-         "contents": "aura:iteration items=\"${1:aura:iteration - Required - List}\" var=\"${2:aura:iteration - Required - String}\" body=\"${3:aura:iteration - Required - Aura.ComponentDefRef[]}\" indexVar=\"${4:aura:iteration - Optional - String}\" start=\"${5:aura:iteration - Optional - Integer}\" end=\"${6:aura:iteration - Optional - Integer}\" loaded=\"${7:aura:iteration - Optional - Boolean}\" template=\"${8:aura:iteration - Optional - Aura.ComponentDefRef[]}\">${8:Implements aura:rootComponent.\nRenders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.}</aura:iteration>"
+         "contents": "aura:iteration items=\"${1:aura:iteration - Required - List}\" var=\"${2:aura:iteration - Required - String}\" body=\"${3:aura:iteration - Required - Aura.ComponentDefRef[]}\" indexVar=\"${4:aura:iteration - Optional - String}\" start=\"${5:aura:iteration - Optional - Integer}\" end=\"${6:aura:iteration - Optional - Integer}\" loaded=\"${7:aura:iteration - Optional - Boolean}\" template=\"${8:aura:iteration - Optional - Aura.ComponentDefRef[]}\">${9:Implements aura:rootComponent.\nRenders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.}</aura:iteration>"
       },
       {
          "trigger": "tag-aura-label\t$A.Tag",
@@ -47,19 +47,19 @@
       },
       {
          "trigger": "tag-aura-renderIf\t$A.Tag",
-         "contents": "aura:renderIf isTrue=\"${1:aura:renderIf - Required - Boolean}\" else=\"${2:aura:renderIf - Optional - Aura.Component[]}\">${2:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
+         "contents": "aura:renderIf isTrue=\"${1:aura:renderIf - Required - Boolean}\" else=\"${2:aura:renderIf - Optional - Aura.Component[]}\">${3:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
       },
       {
          "trigger": "tag-aura-template\t$A.Tag",
-         "contents": "aura:template title=\"${1:aura:template - Optional - String}\" doctype=\"${2:aura:template - Optional - String}\" loadingText=\"${3:aura:template - Optional - String}\" errorTitle=\"${4:aura:template - Optional - String}\" errorMessage=\"${5:aura:template - Optional - String}\" defaultBodyClass=\"${6:aura:template - Optional - String}\" bodyClass=\"${7:aura:template - Optional - String}\">${7:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
+         "contents": "aura:template title=\"${1:aura:template - Optional - String}\" doctype=\"${2:aura:template - Optional - String}\" loadingText=\"${3:aura:template - Optional - String}\" errorTitle=\"${4:aura:template - Optional - String}\" errorMessage=\"${5:aura:template - Optional - String}\" defaultBodyClass=\"${6:aura:template - Optional - String}\" bodyClass=\"${7:aura:template - Optional - String}\">${8:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
       },
       {
          "trigger": "tag-aura-text\t$A.Tag",
-         "contents": "aura:text value=\"${1:aura:text - Optional - String}\">${1:Implements aura:rootComponent.\nRenders plain text.  When any free text (not a tag or attribute value) is found in markup, an instance of this component is created with the value attribute set to the text found in the markup.}</aura:text>"
+         "contents": "aura:text value=\"${1:aura:text - Optional - String}\">${2:Implements aura:rootComponent.\nRenders plain text.  When any free text (not a tag or attribute value) is found in markup, an instance of this component is created with the value attribute set to the text found in the markup.}</aura:text>"
       },
       {
          "trigger": "tag-aura-unescapedHtml\t$A.Tag",
-         "contents": "aura:unescapedHtml body=\"${1:aura:unescapedHtml - Optional - Aura.Component[]}\" value=\"${2:aura:unescapedHtml - Optional - String}\">${2:The value assigned to this component will be rendered as-is, without altering its contents. It's intended for outputting pre-formatted HTML, for example, where the formatting is arbitrary, or expensive to calculate. The body of this component is ignored, and won't be rendered. Warning: this component outputs value as unescaped HTML, which introduces the possibility of security vulnerabilities in your code. You must sanitize user input before rendering it unescaped, or you will create a cross-site scripting (XSS) vulnerability. Only use <aura:unescapedHtml> with trusted or sanitized sources of data.}</aura:unescapedHtml>"
+         "contents": "aura:unescapedHtml body=\"${1:aura:unescapedHtml - Optional - Aura.Component[]}\" value=\"${2:aura:unescapedHtml - Optional - String}\">${3:The value assigned to this component will be rendered as-is, without altering its contents. It's intended for outputting pre-formatted HTML, for example, where the formatting is arbitrary, or expensive to calculate. The body of this component is ignored, and won't be rendered. Warning: this component outputs value as unescaped HTML, which introduces the possibility of security vulnerabilities in your code. You must sanitize user input before rendering it unescaped, or you will create a cross-site scripting (XSS) vulnerability. Only use <aura:unescapedHtml> with trusted or sanitized sources of data.}</aura:unescapedHtml>"
       },
       {
          "trigger": "tag-auraStorage-fuelGauge\t$A.Tag",
@@ -419,7 +419,7 @@
       },
       {
          "trigger": "tag-auradocs-example\t$A.Tag",
-         "contents": "auradocs:example label=\"${1:auradocs:example - Required - String}\" description=\"${2:auradocs:example - Required - String}\" descriptor=\"${3:auradocs:example - Required - String}\">${3:}</auradocs:example>"
+         "contents": "auradocs:example label=\"${1:auradocs:example - Required - String}\" description=\"${2:auradocs:example - Required - String}\" descriptor=\"${3:auradocs:example - Required - String}\">${4:}</auradocs:example>"
       },
       {
          "trigger": "tag-auradocs-examplesTemplate\t$A.Tag",
@@ -551,7 +551,7 @@
       },
       {
          "trigger": "tag-auradocs-viewer\t$A.Tag",
-         "contents": "auradocs:viewer descriptor=\"${1:auradocs:viewer - Required - String}\">${1:}</auradocs:viewer>"
+         "contents": "auradocs:viewer descriptor=\"${1:auradocs:viewer - Required - String}\">${2:}</auradocs:viewer>"
       },
       {
          "trigger": "tag-auradocs-warning\t$A.Tag",
@@ -595,7 +595,7 @@
       },
       {
          "trigger": "tag-ui-actionMenuItem\t$A.Tag",
-         "contents": "ui:actionMenuItem hideMenuAfterSelected=\"${1:ui:actionMenuItem - Optional - Boolean}\">${1:​A menu item that triggers an action. This component is nested in a ui:menu component.}</ui:actionMenuItem>"
+         "contents": "ui:actionMenuItem hideMenuAfterSelected=\"${1:ui:actionMenuItem - Optional - Boolean}\">${2:​A menu item that triggers an action. This component is nested in a ui:menu component.}</ui:actionMenuItem>"
       },
       {
          "trigger": "tag-ui-asyncComponentManager\t$A.Tag",
@@ -623,7 +623,7 @@
       },
       {
          "trigger": "tag-ui-button\t$A.Tag",
-         "contents": "ui:button label=\"${1:ui:button - Required - String}\" buttonTitle=\"${2:ui:button - Optional - String}\" buttonType=\"${3:ui:button - Optional - String}\" class=\"${4:ui:button - Optional - String}\" labelClass=\"${5:ui:button - Optional - String}\" disabled=\"${6:ui:button - Optional - Boolean}\" accesskey=\"${7:ui:button - Optional - String}\">${7:Represents a button element.}</ui:button>"
+         "contents": "ui:button label=\"${1:ui:button - Required - String}\" buttonTitle=\"${2:ui:button - Optional - String}\" buttonType=\"${3:ui:button - Optional - String}\" class=\"${4:ui:button - Optional - String}\" labelClass=\"${5:ui:button - Optional - String}\" disabled=\"${6:ui:button - Optional - Boolean}\" accesskey=\"${7:ui:button - Optional - String}\">${8:Represents a button element.}</ui:button>"
       },
       {
          "trigger": "tag-ui-calendar\t$A.Tag",
@@ -771,11 +771,11 @@
       },
       {
          "trigger": "tag-ui-input\t$A.Tag",
-         "contents": "ui:input required=\"${1:ui:input - Optional - Boolean}\" updateOn=\"${2:ui:input - Optional - String}\" value=\"${3:ui:input - Optional - String}\" label=\"${4:ui:input - Optional - String}\" labelClass=\"${5:ui:input - Optional - String}\" requiredIndicatorClass=\"${6:ui:input - Optional - String}\" disabled=\"${7:ui:input - Optional - Boolean}\">${7:Implements ui:visible, ui:uiEvents.\nAn abstract class that is extended by input components such as ui:inputCheckbox and ui:inputText.}</ui:input>"
+         "contents": "ui:input required=\"${1:ui:input - Optional - Boolean}\" updateOn=\"${2:ui:input - Optional - String}\" value=\"${3:ui:input - Optional - String}\" label=\"${4:ui:input - Optional - String}\" labelClass=\"${5:ui:input - Optional - String}\" requiredIndicatorClass=\"${6:ui:input - Optional - String}\" disabled=\"${7:ui:input - Optional - Boolean}\">${8:Implements ui:visible, ui:uiEvents.\nAn abstract class that is extended by input components such as ui:inputCheckbox and ui:inputText.}</ui:input>"
       },
       {
          "trigger": "tag-ui-inputCheckbox\t$A.Tag",
-         "contents": "ui:inputCheckbox updateOn=\"${1:ui:inputCheckbox - Optional - String}\">${1:Implements ui:inputBaseOption.\nRepresents a checkbox. Its behavior can be configured using events such as click and change.}</ui:inputCheckbox>"
+         "contents": "ui:inputCheckbox updateOn=\"${1:ui:inputCheckbox - Optional - String}\">${2:Implements ui:inputBaseOption.\nRepresents a checkbox. Its behavior can be configured using events such as click and change.}</ui:inputCheckbox>"
       },
       {
          "trigger": "tag-ui-inputCurrency\t$A.Tag",
@@ -791,7 +791,7 @@
       },
       {
          "trigger": "tag-ui-inputDateTime\t$A.Tag",
-         "contents": "ui:inputDateTime value=\"${1:ui:inputDateTime - Optional - String}\">${1:Implements ui:inputDateComponent.\nAn input field for entering a date and time.}</ui:inputDateTime>"
+         "contents": "ui:inputDateTime value=\"${1:ui:inputDateTime - Optional - String}\">${2:Implements ui:inputDateComponent.\nAn input field for entering a date and time.}</ui:inputDateTime>"
       },
       {
          "trigger": "tag-ui-inputDateTrigger\t$A.Tag",
@@ -799,7 +799,7 @@
       },
       {
          "trigger": "tag-ui-inputDefaultError\t$A.Tag",
-         "contents": "ui:inputDefaultError value=\"${1:ui:inputDefaultError - Optional - String[]}\">${1:Implements ui:visible.\nThe default implementation of field-level errors, which iterates over the value and displays the message.}</ui:inputDefaultError>"
+         "contents": "ui:inputDefaultError value=\"${1:ui:inputDefaultError - Optional - String[]}\">${2:Implements ui:visible.\nThe default implementation of field-level errors, which iterates over the value and displays the message.}</ui:inputDefaultError>"
       },
       {
          "trigger": "tag-ui-inputEmail\t$A.Tag",
@@ -827,7 +827,7 @@
       },
       {
          "trigger": "tag-ui-inputRadio\t$A.Tag",
-         "contents": "ui:inputRadio disabled=\"${1:ui:inputRadio - Optional - Boolean}\">${1:Implements ui:inputBaseOption.\nThe radio button used in the input.}</ui:inputRadio>"
+         "contents": "ui:inputRadio disabled=\"${1:ui:inputRadio - Optional - Boolean}\">${2:Implements ui:inputBaseOption.\nThe radio button used in the input.}</ui:inputRadio>"
       },
       {
          "trigger": "tag-ui-inputRange\t$A.Tag",
@@ -835,7 +835,7 @@
       },
       {
          "trigger": "tag-ui-inputRichText\t$A.Tag",
-         "contents": "ui:inputRichText width=\"${1:ui:inputRichText - Optional - String}\" height=\"${2:ui:inputRichText - Optional - String}\">${2:An input field for entering rich text.}</ui:inputRichText>"
+         "contents": "ui:inputRichText width=\"${1:ui:inputRichText - Optional - String}\" height=\"${2:ui:inputRichText - Optional - String}\">${3:An input field for entering rich text.}</ui:inputRichText>"
       },
       {
          "trigger": "tag-ui-inputSearch\t$A.Tag",
@@ -847,7 +847,7 @@
       },
       {
          "trigger": "tag-ui-inputSelect\t$A.Tag",
-         "contents": "ui:inputSelect options=\"${1:ui:inputSelect - Optional - List}\" multiple=\"${2:ui:inputSelect - Optional - Boolean}\">${2:Represents a drop-down list with options.}</ui:inputSelect>"
+         "contents": "ui:inputSelect options=\"${1:ui:inputSelect - Optional - List}\" multiple=\"${2:ui:inputSelect - Optional - Boolean}\">${3:Represents a drop-down list with options.}</ui:inputSelect>"
       },
       {
          "trigger": "tag-ui-inputSelectOption\t$A.Tag",
@@ -863,7 +863,7 @@
       },
       {
          "trigger": "tag-ui-inputTextArea\t$A.Tag",
-         "contents": "ui:inputTextArea rows=\"${1:ui:inputTextArea - Optional - Integer}\" cols=\"${2:ui:inputTextArea - Optional - Integer}\" readonly=\"${3:ui:inputTextArea - Optional - Boolean}\" placeholder=\"${4:ui:inputTextArea - Optional - String}\" resizable=\"${5:ui:inputTextArea - Optional - Boolean}\" maxlength=\"${6:ui:inputTextArea - Optional - Integer}\">${6:An HTML textarea element that can be editable or read-only. Scroll bars may not appear on Chrome browsers in Android devices, but you can select focus in the textarea to activate scrolling.}</ui:inputTextArea>"
+         "contents": "ui:inputTextArea rows=\"${1:ui:inputTextArea - Optional - Integer}\" cols=\"${2:ui:inputTextArea - Optional - Integer}\" readonly=\"${3:ui:inputTextArea - Optional - Boolean}\" placeholder=\"${4:ui:inputTextArea - Optional - String}\" resizable=\"${5:ui:inputTextArea - Optional - Boolean}\" maxlength=\"${6:ui:inputTextArea - Optional - Integer}\">${7:An HTML textarea element that can be editable or read-only. Scroll bars may not appear on Chrome browsers in Android devices, but you can select focus in the textarea to activate scrolling.}</ui:inputTextArea>"
       },
       {
          "trigger": "tag-ui-inputTextAreaForAutocomplete\t$A.Tag",
@@ -879,7 +879,7 @@
       },
       {
          "trigger": "tag-ui-interactive\t$A.Tag",
-         "contents": "ui:interactive disabled=\"${1:ui:interactive - Optional - Boolean}\">${1:Implements ui:visible.\nAn abstract component which capsulates common events.}</ui:interactive>"
+         "contents": "ui:interactive disabled=\"${1:ui:interactive - Optional - Boolean}\">${2:Implements ui:visible.\nAn abstract component which capsulates common events.}</ui:interactive>"
       },
       {
          "trigger": "tag-ui-label\t$A.Tag",
@@ -943,7 +943,7 @@
       },
       {
          "trigger": "tag-ui-menuItem\t$A.Tag",
-         "contents": "ui:menuItem selected=\"${1:ui:menuItem - Optional - Boolean}\" type=\"${2:ui:menuItem - Optional - String}\" hideMenuAfterSelected=\"${3:ui:menuItem - Optional - Boolean}\" label=\"${4:ui:menuItem - Optional - String}\">${4:A UI menu item in a ui:menuList component.}</ui:menuItem>"
+         "contents": "ui:menuItem selected=\"${1:ui:menuItem - Optional - Boolean}\" type=\"${2:ui:menuItem - Optional - String}\" hideMenuAfterSelected=\"${3:ui:menuItem - Optional - Boolean}\" label=\"${4:ui:menuItem - Optional - String}\">${5:A UI menu item in a ui:menuList component.}</ui:menuItem>"
       },
       {
          "trigger": "tag-ui-menuItemSeparator\t$A.Tag",
@@ -951,7 +951,7 @@
       },
       {
          "trigger": "tag-ui-menuList\t$A.Tag",
-         "contents": "ui:menuList menuItems=\"${1:ui:menuList - Optional - List}\" visible=\"${2:ui:menuList - Optional - Boolean}\">${2:Implements ui:visible.\nA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+         "contents": "ui:menuList menuItems=\"${1:ui:menuList - Optional - List}\" visible=\"${2:ui:menuList - Optional - Boolean}\">${3:Implements ui:visible.\nA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
       },
       {
          "trigger": "tag-ui-menuTrigger\t$A.Tag",
@@ -959,11 +959,11 @@
       },
       {
          "trigger": "tag-ui-menuTriggerLink\t$A.Tag",
-         "contents": "ui:menuTriggerLink label=\"${1:ui:menuTriggerLink - Optional - String}\">${1:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
+         "contents": "ui:menuTriggerLink label=\"${1:ui:menuTriggerLink - Optional - String}\">${2:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
       },
       {
          "trigger": "tag-ui-message\t$A.Tag",
-         "contents": "ui:message title=\"${1:ui:message - Optional - String}\" severity=\"${2:ui:message - Optional - String}\" closable=\"${3:ui:message - Optional - Boolean}\">${3:Implements ui:visible.\nRepresents a message of varying severity levels}</ui:message>"
+         "contents": "ui:message title=\"${1:ui:message - Optional - String}\" severity=\"${2:ui:message - Optional - String}\" closable=\"${3:ui:message - Optional - Boolean}\">${4:Implements ui:visible.\nRepresents a message of varying severity levels}</ui:message>"
       },
       {
          "trigger": "tag-ui-modal\t$A.Tag",
@@ -971,27 +971,27 @@
       },
       {
          "trigger": "tag-ui-output\t$A.Tag",
-         "contents": "ui:output value=\"${1:ui:output - Required - Object}\">${1:The base component of most output components.}</ui:output>"
+         "contents": "ui:output value=\"${1:ui:output - Required - Object}\">${2:The base component of most output components.}</ui:output>"
       },
       {
          "trigger": "tag-ui-outputCheckbox\t$A.Tag",
-         "contents": "ui:outputCheckbox value=\"${1:ui:outputCheckbox - Required - Boolean}\" altChecked=\"${2:ui:outputCheckbox - Optional - String}\" altUnchecked=\"${3:ui:outputCheckbox - Optional - String}\">${3:Implements ui:visible.\nDisplays a checkbox in a checked or unchecked state.}</ui:outputCheckbox>"
+         "contents": "ui:outputCheckbox value=\"${1:ui:outputCheckbox - Required - Boolean}\" altChecked=\"${2:ui:outputCheckbox - Optional - String}\" altUnchecked=\"${3:ui:outputCheckbox - Optional - String}\">${4:Implements ui:visible.\nDisplays a checkbox in a checked or unchecked state.}</ui:outputCheckbox>"
       },
       {
          "trigger": "tag-ui-outputCurrency\t$A.Tag",
-         "contents": "ui:outputCurrency value=\"${1:ui:outputCurrency - Required - Decimal}\" format=\"${2:ui:outputCurrency - Optional - String}\" currencyCode=\"${3:ui:outputCurrency - Optional - String}\" currencySymbol=\"${4:ui:outputCurrency - Optional - String}\">${4:Implements ui:visible.\nDisplays the currency in the default or specified format, such as with specific currency code or decimal places.}</ui:outputCurrency>"
+         "contents": "ui:outputCurrency value=\"${1:ui:outputCurrency - Required - Decimal}\" format=\"${2:ui:outputCurrency - Optional - String}\" currencyCode=\"${3:ui:outputCurrency - Optional - String}\" currencySymbol=\"${4:ui:outputCurrency - Optional - String}\">${5:Implements ui:visible.\nDisplays the currency in the default or specified format, such as with specific currency code or decimal places.}</ui:outputCurrency>"
       },
       {
          "trigger": "tag-ui-outputDate\t$A.Tag",
-         "contents": "ui:outputDate value=\"${1:ui:outputDate - Required - String}\">${1:Implements ui:outputDateComponent, ui:visible.\nDisplays a date in the default or specified format based on the user's locale.}</ui:outputDate>"
+         "contents": "ui:outputDate value=\"${1:ui:outputDate - Required - String}\">${2:Implements ui:outputDateComponent, ui:visible.\nDisplays a date in the default or specified format based on the user's locale.}</ui:outputDate>"
       },
       {
          "trigger": "tag-ui-outputDateTime\t$A.Tag",
-         "contents": "ui:outputDateTime value=\"${1:ui:outputDateTime - Required - String}\" timezone=\"${2:ui:outputDateTime - Optional - String}\">${2:Implements ui:outputDateComponent, ui:visible.\nDisplays a date, time in a specified or default format based on the user's locale.}</ui:outputDateTime>"
+         "contents": "ui:outputDateTime value=\"${1:ui:outputDateTime - Required - String}\" timezone=\"${2:ui:outputDateTime - Optional - String}\">${3:Implements ui:outputDateComponent, ui:visible.\nDisplays a date, time in a specified or default format based on the user's locale.}</ui:outputDateTime>"
       },
       {
          "trigger": "tag-ui-outputEmail\t$A.Tag",
-         "contents": "ui:outputEmail value=\"${1:ui:outputEmail - Required - String}\">${1:Implements ui:visible.\nDisplays an email address in an HTML anchor (<a>) element. The leading and trailing space are trimmed.}</ui:outputEmail>"
+         "contents": "ui:outputEmail value=\"${1:ui:outputEmail - Required - String}\">${2:Implements ui:visible.\nDisplays an email address in an HTML anchor (<a>) element. The leading and trailing space are trimmed.}</ui:outputEmail>"
       },
       {
          "trigger": "tag-ui-outputLabel\t$A.Tag",
@@ -1003,7 +1003,7 @@
       },
       {
          "trigger": "tag-ui-outputNumber\t$A.Tag",
-         "contents": "ui:outputNumber value=\"${1:ui:outputNumber - Required - Decimal}\" format=\"${2:ui:outputNumber - Optional - String}\">${2:Implements ui:visible.\nDisplays the number in the default or specified format. Supports up to 18 digits before the decimal place.}</ui:outputNumber>"
+         "contents": "ui:outputNumber value=\"${1:ui:outputNumber - Required - Decimal}\" format=\"${2:ui:outputNumber - Optional - String}\">${3:Implements ui:visible.\nDisplays the number in the default or specified format. Supports up to 18 digits before the decimal place.}</ui:outputNumber>"
       },
       {
          "trigger": "tag-ui-outputPercent\t$A.Tag",
@@ -1011,7 +1011,7 @@
       },
       {
          "trigger": "tag-ui-outputPhone\t$A.Tag",
-         "contents": "ui:outputPhone value=\"${1:ui:outputPhone - Required - String}\">${1:Implements ui:visible.\nDisplays the phone number in a URL link format.}</ui:outputPhone>"
+         "contents": "ui:outputPhone value=\"${1:ui:outputPhone - Required - String}\">${2:Implements ui:visible.\nDisplays the phone number in a URL link format.}</ui:outputPhone>"
       },
       {
          "trigger": "tag-ui-outputRadio\t$A.Tag",
@@ -1019,7 +1019,7 @@
       },
       {
          "trigger": "tag-ui-outputRichText\t$A.Tag",
-         "contents": "ui:outputRichText value=\"${1:ui:outputRichText - Optional - String}\">${1:Implements ui:visible.\nDisplays richly-formatted text including tags such as paragraph, image, and hyperlink, as specified in the value attribute.}</ui:outputRichText>"
+         "contents": "ui:outputRichText value=\"${1:ui:outputRichText - Optional - String}\">${2:Implements ui:visible.\nDisplays richly-formatted text including tags such as paragraph, image, and hyperlink, as specified in the value attribute.}</ui:outputRichText>"
       },
       {
          "trigger": "tag-ui-outputSelect\t$A.Tag",
@@ -1027,15 +1027,15 @@
       },
       {
          "trigger": "tag-ui-outputText\t$A.Tag",
-         "contents": "ui:outputText value=\"${1:ui:outputText - Required - String}\">${1:Implements ui:visible.\nDisplays text as specified by the value attribute.}</ui:outputText>"
+         "contents": "ui:outputText value=\"${1:ui:outputText - Required - String}\">${2:Implements ui:visible.\nDisplays text as specified by the value attribute.}</ui:outputText>"
       },
       {
          "trigger": "tag-ui-outputTextArea\t$A.Tag",
-         "contents": "ui:outputTextArea value=\"${1:ui:outputTextArea - Required - String}\">${1:Implements ui:visible.\nDisplays the text area as specified by the value attribute.}</ui:outputTextArea>"
+         "contents": "ui:outputTextArea value=\"${1:ui:outputTextArea - Required - String}\">${2:Implements ui:visible.\nDisplays the text area as specified by the value attribute.}</ui:outputTextArea>"
       },
       {
          "trigger": "tag-ui-outputURL\t$A.Tag",
-         "contents": "ui:outputURL value=\"${1:ui:outputURL - Required - String}\" iconClass=\"${2:ui:outputURL - Optional - String}\" title=\"${3:ui:outputURL - Optional - String}\" target=\"${4:ui:outputURL - Optional - String}\" alt=\"${5:ui:outputURL - Optional - String}\" label=\"${6:ui:outputURL - Optional - String}\" disabled=\"${7:ui:outputURL - Optional - Boolean}\">${7:Implements ui:visible.\nDisplays a link to a URL as specified by the value attribute, rendered on a given text (label attribute) and image, if any.}</ui:outputURL>"
+         "contents": "ui:outputURL value=\"${1:ui:outputURL - Required - String}\" iconClass=\"${2:ui:outputURL - Optional - String}\" title=\"${3:ui:outputURL - Optional - String}\" target=\"${4:ui:outputURL - Optional - String}\" alt=\"${5:ui:outputURL - Optional - String}\" label=\"${6:ui:outputURL - Optional - String}\" disabled=\"${7:ui:outputURL - Optional - Boolean}\">${8:Implements ui:visible.\nDisplays a link to a URL as specified by the value attribute, rendered on a given text (label attribute) and image, if any.}</ui:outputURL>"
       },
       {
          "trigger": "tag-ui-pager\t$A.Tag",
@@ -1095,11 +1095,11 @@
       },
       {
          "trigger": "tag-ui-popupTarget\t$A.Tag",
-         "contents": "ui:popupTarget closeOnTabKey=\"${1:ui:popupTarget - Optional - Boolean}\" autoPosition=\"${2:ui:popupTarget - Optional - Boolean}\" curtain=\"${3:ui:popupTarget - Optional - Boolean}\" closeOnClickOutside=\"${4:ui:popupTarget - Optional - Boolean}\">${4:Implements ui:visible.\nA container that is displayed in response to a trigger event. If used in a mobile context, it is recommended that curtain be set to true to prevent nested iframes from consuming the closeOnClickOutside event.}</ui:popupTarget>"
+         "contents": "ui:popupTarget closeOnTabKey=\"${1:ui:popupTarget - Optional - Boolean}\" autoPosition=\"${2:ui:popupTarget - Optional - Boolean}\" curtain=\"${3:ui:popupTarget - Optional - Boolean}\" closeOnClickOutside=\"${4:ui:popupTarget - Optional - Boolean}\">${5:Implements ui:visible.\nA container that is displayed in response to a trigger event. If used in a mobile context, it is recommended that curtain be set to true to prevent nested iframes from consuming the closeOnClickOutside event.}</ui:popupTarget>"
       },
       {
          "trigger": "tag-ui-popupTrigger\t$A.Tag",
-         "contents": "ui:popupTrigger title=\"${1:ui:popupTrigger - Optional - String}\">${1:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:popupTrigger>"
+         "contents": "ui:popupTrigger title=\"${1:ui:popupTrigger - Optional - String}\">${2:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:popupTrigger>"
       },
       {
          "trigger": "tag-ui-radioMenuItem\t$A.Tag",
@@ -1123,7 +1123,7 @@
       },
       {
          "trigger": "tag-ui-spinner\t$A.Tag",
-         "contents": "ui:spinner isVisible=\"${1:ui:spinner - Optional - Boolean}\">${1:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
+         "contents": "ui:spinner isVisible=\"${1:ui:spinner - Optional - Boolean}\">${2:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
       },
       {
          "trigger": "tag-ui-stamp\t$A.Tag",
@@ -1163,7 +1163,7 @@
       },
       {
          "trigger": "tag-ui-tooltip\t$A.Tag",
-         "contents": "ui:tooltip tooltipBody=\"${1:ui:tooltip - Optional - String}\" disabled=\"${2:ui:tooltip - Optional - Boolean}\" advanced=\"${3:ui:tooltip - Optional - Boolean}\" trigger=\"${4:ui:tooltip - Optional - String}\" triggerClass=\"${5:ui:tooltip - Optional - String}\" isVisible=\"${6:ui:tooltip - Optional - Boolean}\" fadeOut=\"${7:ui:tooltip - Optional - Boolean}\" fadeIn=\"${8:ui:tooltip - Optional - Boolean}\" fadeOutDuration=\"${9:ui:tooltip - Optional - Integer}\" fadeInDuration=\"${10:ui:tooltip - Optional - Integer}\" delay=\"${11:ui:tooltip - Optional - Integer}\" class=\"${12:ui:tooltip - Optional - String}\" tabIndex=\"${13:ui:tooltip - Optional - Integer}\" direction=\"${14:ui:tooltip - Optional - String}\" domId=\"${15:ui:tooltip - Optional - String}\">${15:}</ui:tooltip>"
+         "contents": "ui:tooltip tooltipBody=\"${1:ui:tooltip - Optional - String}\" disabled=\"${2:ui:tooltip - Optional - Boolean}\" advanced=\"${3:ui:tooltip - Optional - Boolean}\" trigger=\"${4:ui:tooltip - Optional - String}\" triggerClass=\"${5:ui:tooltip - Optional - String}\" isVisible=\"${6:ui:tooltip - Optional - Boolean}\" fadeOut=\"${7:ui:tooltip - Optional - Boolean}\" fadeIn=\"${8:ui:tooltip - Optional - Boolean}\" fadeOutDuration=\"${9:ui:tooltip - Optional - Integer}\" fadeInDuration=\"${10:ui:tooltip - Optional - Integer}\" delay=\"${11:ui:tooltip - Optional - Integer}\" class=\"${12:ui:tooltip - Optional - String}\" tabIndex=\"${13:ui:tooltip - Optional - Integer}\" direction=\"${14:ui:tooltip - Optional - String}\" domId=\"${15:ui:tooltip - Optional - String}\">${16:}</ui:tooltip>"
       },
       {
          "trigger": "tag-ui-tree\t$A.Tag",

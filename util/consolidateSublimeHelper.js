@@ -301,6 +301,10 @@ var self = {
             if(includedAttributeCount === 0){
                 includedAttributeCount = 1;//special case where no index found
             }
+            else{
+                //increment it
+                includedAttributeCount++;
+            }
 
             contents.push( '>')
             contents.push( '${'+ (includedAttributeCount) + ':')
