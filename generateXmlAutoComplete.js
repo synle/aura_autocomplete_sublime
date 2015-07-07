@@ -11,42 +11,11 @@ var config = require('./config');
 var promptSchema = config.prompt;
 
 
-
-console.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
-
-if(process.argv[2]){
-	//if passed in command line via
-	//node generateJsAutoComplete.js /path/to/auragit
-	var baseDir;
-	if (process.argv[2] === '--silent'){
-		console.log('Silent mode: assumed path: '.bold.red, config.baseDir);
-		baseDir = config.baseDir;
-	}
-	else{
-		baseDir = process.argv[2];	
-	}
-
-	processParser( 
-		baseDir,
-		config.outputDir
-	);
-}
-else{
-	//via prompt
-	prompt.start();
-
-	prompt.get(promptSchema, function (err, result) {
-		processParser (
-			result.baseDir,
-			config.outputDir
-		);
-	});
-}
-
-
 //base path (parsed form command line or default to my git folder)
 //outputDir where to store the snippet
-function processParser(baseDir, outputDir){
+module.exports = function processParser(baseDir, outputDir){
+	console.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
+
 	//read content files
 	var componentBaseDir = path.join(
 		baseDir,
