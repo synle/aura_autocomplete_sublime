@@ -168,6 +168,7 @@ var self = {
     consolidate_attributes: function(arrayAttributes){
         var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
 
+        // var access = {};
         for (var attributeIdx in arrayAttributes){
             var attributeComponent = arrayAttributes[attributeIdx].component;
             var attributeObj = arrayAttributes[attributeIdx].attribute;
@@ -199,12 +200,13 @@ var self = {
 
             // console.log(attributeObj);
         }
+        // console.log(access);
 
         return JSON.stringify(sublimeFormat, null, 3);
     },
 
     _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx){
-        return  attributeName + '="${'+sublimeTabIdx+':' + fullComponentTagStr + (isRequired ? ' Required' : ' Optional') + ' - ' +atributeType+'}"';
+        return  attributeName + '="${'+sublimeTabIdx+':' + fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + ' - ' +atributeType+'}"';
     },
 
     /**
@@ -246,56 +248,62 @@ var self = {
                 componentObj.fullComponentTag,
             ];
 
-            var sublimeTabIdx = 1;
+            var includedAttributeCount = 0;
 
 
             //required attributes
             _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
-                if(attributeObj.required === true || attributeObj.required === 'true'){
-                    sublimeTabIdx = attributeArrayIdx + 1;
+                if (attributeObj.access && attributeObj.access.toLowerCase() !== 'private'){
+                    if(attributeObj.required === true || attributeObj.required === 'true'){
+                        includedAttributeCount++;
 
-                    // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
-                    contents.push(
-                        ' ' + self._serializeAttr(
-                            attributeObj.name,//attributeName
-                            componentObj.fullComponentTag,//fullComponentTagStr
-                            attributeObj.type,//atributeType
-                            attributeObj.required === 'true' || attributeObj.required === true,//isRequired
-                            sublimeTabIdx//sublime tab index
-                        )
-                    );
+                        // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                        contents.push(
+                            ' ' + self._serializeAttr(
+                                attributeObj.name,//attributeName
+                                componentObj.fullComponentTag,//fullComponentTagStr
+                                attributeObj.type,//atributeType
+                                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                                includedAttributeCount//sublime tab index
+                            )
+                        );
 
-                    // console.log(componentObj.fullComponentTag)
+                        // console.log(componentObj.fullComponentTag)
+                    }
                 }
             });
 
 
             //optional attributes
             _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
-                if(attributeObj.required !== true && attributeObj.required !== 'true'){
-                    sublimeTabIdx = attributeArrayIdx + 1;
+                if (attributeObj.access && attributeObj.access.toLowerCase() !== 'private'){
+                    if(attributeObj.required !== true && attributeObj.required !== 'true'){
+                        includedAttributeCount++;
 
-                    // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
-                    contents.push(
-                        ' ' + self._serializeAttr(
-                            attributeObj.name,//attributeName
-                            componentObj.fullComponentTag,//fullComponentTagStr
-                            attributeObj.type,//atributeType
-                            attributeObj.required === 'true' || attributeObj.required === true,//isRequired
-                            sublimeTabIdx//sublime tab index
-                        )
-                    );
+                        // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                        contents.push(
+                            ' ' + self._serializeAttr(
+                                attributeObj.name,//attributeName
+                                componentObj.fullComponentTag,//fullComponentTagStr
+                                attributeObj.type,//atributeType
+                                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                                includedAttributeCount//sublime tab index
+                            )
+                        );
 
-                    // console.log(componentObj.fullComponentTag)
+                        // console.log(componentObj.fullComponentTag)
+                    }
                 }
             });
 
 
             //increment tab index
-            sublimeTabIdx = sublimeTabIdx + 1;
+            if(includedAttributeCount === 0){
+                includedAttributeCount = 1;//special case where no index found
+            }
 
             contents.push( '>')
-            contents.push( '${'+ (sublimeTabIdx) + ':')
+            contents.push( '${'+ (includedAttributeCount) + ':')
             contents.push( componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\n' : '')
             contents.push( componentObj.description)
             contents.push( '}</'+componentObj.fullComponentTag+'>')
