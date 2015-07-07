@@ -233,16 +233,34 @@ var self = {
             var componentObj = arrayComponents[idx];
             var attributeArray = componentObj.attributes;
 
-            //triggers
-            var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name + '\t$A.Tag' ;
 
+            //
+            //
+            //simplify content
+            //triggers
+            //
+            var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tSimple';
+
+
+            //not
             //contents
-            // var contents = [
-            //     componentObj.fullComponentTag + '$1>${2:',
-            //     componentObj.implements.length > 0 ? '\nImplements '+componentObj.implements + '.\n' : '',
-            //     componentObj.description,
-            //     '}</'+componentObj.fullComponentTag+'>'
-            // ].join('');
+            var contents = [
+                componentObj.fullComponentTag + '$1>${2:',
+                componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\t' : '',
+                componentObj.description,
+                '}</'+componentObj.fullComponentTag+'>'
+            ].join('');
+            
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+
+
+            // 
+            //expanded content
+            //
+            var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tFull';
 
             var contents = [
                 componentObj.fullComponentTag,
@@ -253,7 +271,7 @@ var self = {
 
             //required attributes
             _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
-                if (attributeObj.access && attributeObj.access.toLowerCase() !== 'private'){
+                if ((attributeObj.access || '').toLowerCase() !== 'private' && attributeObj.name.indexOf('_') !== 0){
                     if(attributeObj.required === true || attributeObj.required === 'true'){
                         includedAttributeCount++;
 
@@ -276,7 +294,7 @@ var self = {
 
             //optional attributes
             _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
-                if (attributeObj.access && attributeObj.access.toLowerCase() !== 'private'){
+                if ((attributeObj.access || '').toLowerCase() !== 'private' && attributeObj.name.indexOf('_') !== 0){
                     if(attributeObj.required !== true && attributeObj.required !== 'true'){
                         includedAttributeCount++;
 
@@ -308,7 +326,7 @@ var self = {
 
             contents.push( '>')
             contents.push( '${'+ (includedAttributeCount) + ':')
-            contents.push( componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\n' : '')
+            contents.push( componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\t' : '')
             contents.push( componentObj.description)
             contents.push( '}</'+componentObj.fullComponentTag+'>')
 
