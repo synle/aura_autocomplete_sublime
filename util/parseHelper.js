@@ -3,8 +3,9 @@ var fs = require('fs');
 var path = require('path');
 
 //internal
-var consolidatorSublime = require('./consolidateSublimeHelper');
-var consolidatorAtom =  require('./consolidateAtomHelper');
+var sublimeSerializer = require('./serializers/serializerAtomHelper');
+var atomSerializer =  require('./serializers/serializerSublimeHelper');
+
 
 //definitions
 var self = {
@@ -116,7 +117,7 @@ var self = {
 
         //consolidate sublime text format
         self.writeToFile(
-            consolidatorSublime.consolidate_js(dictionary),
+            sublimeSerializer.consolidate_js(dictionary),
             path.join(
                 outputDir,
                 'aura.js.sublime-completions'
@@ -126,7 +127,7 @@ var self = {
 
         //consolidate atom files
         self.writeToFile(
-            consolidatorAtom.consolidate_js(dictionary),
+            atomSerializer.consolidate_js(dictionary),
             path.join(
                 outputDir,
                 'aura.js.atom.cson'
@@ -138,7 +139,7 @@ var self = {
 
         //consolidate sublime text format
         self.writeToFile(
-            consolidatorSublime.consolidate_helperjs(helperDictionary),
+            sublimeSerializer.consolidate_helperjs(helperDictionary),
             path.join(
                 outputDir,
                 'aura.helper.js.sublime-completions'
@@ -148,7 +149,7 @@ var self = {
 
         //consolidate atom files
         self.writeToFile(
-            consolidatorAtom.consolidate_helperjs(helperDictionary),
+            atomSerializer.consolidate_helperjs(helperDictionary),
             path.join(
                 outputDir,
                 'aura.helper.js.atom.cson'
@@ -160,7 +161,7 @@ var self = {
 
         //consolidate js evt
         self.writeToFile(
-            consolidatorSublime.consolidate_evt(arrayEvents),
+            sublimeSerializer.consolidate_evt(arrayEvents),
             path.join(
                 outputDir,
                 'aura.event.js.sublime-completions'
@@ -170,7 +171,7 @@ var self = {
 
         //consolidate js evt
         self.writeToFile(
-            consolidatorAtom.consolidate_evt(arrayEvents),
+            atomSerializer.consolidate_evt(arrayEvents),
             path.join(
                 outputDir,
                 'aura.event.js.atom.cson'
@@ -182,7 +183,7 @@ var self = {
 
         //consolidate component tags
         self.writeToFile(
-            consolidatorSublime.consolidate_uitags(arrayComponents),
+            sublimeSerializer.consolidate_uitags(arrayComponents),
             path.join(
                 outputDir,
                 'aura.uitags.sublime-completions'
@@ -192,7 +193,7 @@ var self = {
 
         //consolidate js evt
         self.writeToFile(
-            consolidatorAtom.consolidate_uitags(arrayComponents),
+            atomSerializer.consolidate_uitags(arrayComponents),
             path.join(
                 outputDir,
                 'aura.uitags.atom.cson'
@@ -203,7 +204,7 @@ var self = {
         //consolidate component attribute
         console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         self.writeToFile(
-            consolidatorSublime.consolidate_attributes(arrayAttributes),
+            sublimeSerializer.consolidate_attributes(arrayAttributes),
             path.join(
                 outputDir,
                 'aura.attributes.sublime-completions'
@@ -214,7 +215,7 @@ var self = {
         //consolidate js evt
         console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         self.writeToFile(
-            consolidatorAtom.consolidate_attributes(arrayAttributes),
+            atomSerializer.consolidate_attributes(arrayAttributes),
             path.join(
                 outputDir,
                 'aura.attributes.atom.cson'
