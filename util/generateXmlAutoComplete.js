@@ -1,14 +1,10 @@
 //depdencies
 var path = require('path');
-var fs = require('fs');
 var colors = require('colors');
-var prompt = require('prompt');
 var parseString = require('xml2js').parseString;
 
 //internal dependencies
-var parseHelper = require('./util/parseHelper');
-var config = require('./config');
-var promptSchema = config.prompt;
+var parseHelper = require('./parseHelper');
 
 
 //base path (parsed form command line or default to my git folder)

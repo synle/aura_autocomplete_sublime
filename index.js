@@ -12,8 +12,8 @@ var promptSchema = config.prompt;
 
 
 //internal dependencies
-var generateXmlAutoComplete = require('./generateXmlAutoComplete');
-var generateJsAutoComplete = require('./generateJsAutoComplete');
+var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
+var generateJsAutoComplete = require('./util/generateJsAutoComplete');
 
 if(process.argv[2]){
 	//if passed in command line via
