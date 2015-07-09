@@ -4,12 +4,13 @@ var colors = require('colors');
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
+var logger = require('./logger');//internal logger
 
 
 //base path (parsed form command line or default to my git folder)
 //outputDir where to store the snippet
 module.exports = function processParser(baseDir, outputDir){
-	console.log('    Parsing Aura JS Files    '.rainbow.cyan.underline.bgBlack);
+	logger.log('    Parsing Aura JS Files    '.rainbow.cyan.underline.bgBlack);
 
 	//init Aura global obejct
 	var Aura = {

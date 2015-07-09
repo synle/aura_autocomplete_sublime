@@ -7,6 +7,7 @@ var parseString = require('xml2js').parseString;
 
 //internal dependencies
 var parseHelper = require('./util/parseHelper');
+var logger = require('./util/logger');//internal logger
 var config = require('./config');
 var promptSchema = config.prompt;
 
@@ -18,7 +19,7 @@ var generateJsAutoComplete = require('./util/generateJsAutoComplete');
 if (process.env.baseDir !== undefined){
 	//when start with environment variables
 	//baseDir=/Users/sle/blt/app/main/core npm start
-	console.log('Retrived baseDir from Environment Variable');
+	logger.debug('Retrived baseDir from Environment Variable');
 	processParser( 
 		process.env.baseDir,
 		config.outputDir
@@ -29,7 +30,7 @@ else if(process.argv[2]){
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
 	if (process.argv[2] === '--silent'){
-		console.log('Silent mode: assumed path: '.bold.red, config.baseDir);
+		logger.debug('Silent mode: assumed path: '.bold.red, config.baseDir);
 		baseDir = config.baseDir;
 	}
 	else{
@@ -64,8 +65,14 @@ function processParser(baseDir, outputDir){
 		baseDir,//base input dir
 		outputDir//base output dir , snippet
 	);
-	generateJsAutoComplete(
-		baseDir,//base input dir
-		outputDir//base output dir , snippet
-	);
+
+	try{
+		generateJsAutoComplete(
+			baseDir,//base input dir
+			outputDir//base output dir , snippet
+		);	
+	}
+	catch(ex){
+		logger.error('Issue trying to parse JS files', ex);
+	}
 }

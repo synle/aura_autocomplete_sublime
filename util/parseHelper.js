@@ -5,15 +5,13 @@ var path = require('path');
 //internal
 var consolidatorAtom = require('./serializer/serializerAtomHelper');
 var consolidatorSublime =  require('./serializer/serializerSublimeHelper');
-
+var logger = require('./logger');//internal logger
 
 //definitions
 var self = {
     readFromFile: function(path, silent) {
-        if (silent !== true) {
-            console.log('Reading file...'.magenta.bold);
-            console.log(path.yellow);
-        }
+        logger.debug('Reading file...'.magenta.bold);
+        logger.debug(path.yellow);
         return fs.readFileSync(path, 'utf-8');
     },
     listDir: function listDir(dir, res) {
@@ -113,7 +111,7 @@ var self = {
         return str;
     },
     updateJs:function(dictionary, outputDir){
-        console.log('Updating JS File: Util and Test JS:'.bold.magenta.underline);
+        logger.debug('Updating JS File: Util and Test JS:'.bold.magenta.underline);
 
         //consolidate sublime text format
         self.writeToFile(
@@ -135,7 +133,7 @@ var self = {
         );
     },
     updateHelper: function(helperDictionary, outputDir){
-        console.log('Updating JS File: Component Helper JS:'.bold.magenta.underline);
+        logger.debug('Updating JS File: Component Helper JS:'.bold.magenta.underline);
 
         //consolidate sublime text format
         self.writeToFile(
@@ -157,7 +155,7 @@ var self = {
         );
     },
     updateEvt: function(arrayEvents, outputDir){
-        console.log('Updating Sublime File: Component Events'.bold.magenta.underline);
+        logger.debug('Updating Sublime File: Component Events'.bold.magenta.underline);
 
         //consolidate js evt
         self.writeToFile(
@@ -179,7 +177,7 @@ var self = {
         );
     },
     updateTag: function(arrayComponents, outputDir){
-        console.log('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
+        logger.debug('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
 
         //consolidate component tags
         self.writeToFile(
@@ -202,7 +200,7 @@ var self = {
     },
     updateTagAttr: function(arrayAttributes, outputDir){
         //consolidate component attribute
-        console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         self.writeToFile(
             consolidatorSublime.consolidate_attributes(arrayAttributes),
             path.join(
@@ -213,7 +211,7 @@ var self = {
 
 
         //consolidate js evt
-        console.log('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         self.writeToFile(
             consolidatorAtom.consolidate_attributes(arrayAttributes),
             path.join(
@@ -229,7 +227,7 @@ var self = {
         };
     },
     writeToFile: function(string, path) {
-        console.log(path.yellow);
+        logger.debug(path.yellow);
         fs.writeFileSync(path, string);
     },
     getBaseFileNameWithoutExtension: function(fileName){

@@ -5,12 +5,13 @@ var parseString = require('xml2js').parseString;
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
+var logger = require('./logger');//internal logger
 
 
 //base path (parsed form command line or default to my git folder)
 //outputDir where to store the snippet
 module.exports = function processParser(baseDir, outputDir){
-	console.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
+	logger.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
 
 	//read content files
 	var componentBaseDir = path.join(
@@ -30,9 +31,9 @@ module.exports = function processParser(baseDir, outputDir){
 	var componentFileNames = parseHelper.listDir(componentBaseDir);
 
 
-	console.log('Statistics'.bold.underline.bgBlue.white);
-	console.log('.evt Files:'.bold, componentFileNames.evt.length);
-	console.log('.cmp Files:'.bold, componentFileNames.cmp.length);
+	logger.log('Statistics'.bold.underline.bgBlue.white);
+	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
 
 	//events stuffs
 	//reading and parsing the events
@@ -65,9 +66,9 @@ module.exports = function processParser(baseDir, outputDir){
 			//save it to the dictionary
 			var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
 			if(eventDictionary[evtNameKey]){
-				console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
-				console.log('newfile'.bold.red, fileName.blue);
-				console.log('existed'.bold.red, JSON.stringify(eventDictionary[evtName]));
+				logger.error('Error!'.bold.red, evtName.yellow, ' is a duplicate');
+				logger.error('newfile'.bold.red, fileName.blue);
+				logger.error('existed'.bold.red, JSON.stringify(eventDictionary[evtName]));
 			}
 			else{
 				eventDictionary[evtNameKey] = {
@@ -126,8 +127,7 @@ module.exports = function processParser(baseDir, outputDir){
 					// console.log('component used'.red, evtObj.type);
 
 					if (matchingEvtDef === undefined){
-						console.log('Error : cant find in dictionary'.bold.red,evtObj.type);
-						console.log(matchingEvtDef);
+						logger.error('Error! cant find in dictionary'.bold.red,evtObj.type, matchingEvtDef);
 						return;	
 					}
 					
@@ -220,7 +220,7 @@ module.exports = function processParser(baseDir, outputDir){
 			}
 		}
 		catch(e){
-			console.log('ERR! error processing the file'.bold.underline.red , fileName.blue , e.toString());
+			logger.error('Error! Problem processing the file'.bold.underline.red , fileName.blue , e.toString());
 		}
 	})
 
