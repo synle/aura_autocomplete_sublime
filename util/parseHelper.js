@@ -119,8 +119,10 @@ var self = {
         logger.debug('Updating JS File: Util and Test JS:'.bold.magenta.underline);
 
         //consolidate sublime text format
+        var snippetData = consolidatorSublime.consolidate_js(dictionary);
+        logger.info('updateJs.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
-            consolidatorSublime.consolidate_js(dictionary),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.js.sublime-completions'
@@ -129,8 +131,9 @@ var self = {
 
 
         //consolidate atom files
+        var snippetData = consolidatorAtom.consolidate_js(dictionary);
         self.writeToFile(
-            consolidatorAtom.consolidate_js(dictionary),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.js.atom.cson'
@@ -141,8 +144,10 @@ var self = {
         logger.debug('Updating JS File: Component Helper JS:'.bold.magenta.underline);
 
         //consolidate sublime text format
+        var snippetData = consolidatorSublime.consolidate_helperjs(helperDictionary);
+        logger.info('updateHelper.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
-            consolidatorSublime.consolidate_helperjs(helperDictionary),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.helper.js.sublime-completions'
@@ -151,8 +156,9 @@ var self = {
 
 
         //consolidate atom files
+        var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
         self.writeToFile(
-            consolidatorAtom.consolidate_helperjs(helperDictionary),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.helper.js.atom.cson'
@@ -163,8 +169,10 @@ var self = {
         logger.debug('Updating Sublime File: Component Events'.bold.magenta.underline);
 
         //consolidate js evt
+        var snippetData = consolidatorSublime.consolidate_evt(arrayEvents);
+        logger.info('updateEvt.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
-            consolidatorSublime.consolidate_evt(arrayEvents),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.event.js.sublime-completions'
@@ -173,8 +181,9 @@ var self = {
 
 
         //consolidate js evt
+        var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
         self.writeToFile(
-            consolidatorAtom.consolidate_evt(arrayEvents),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.event.js.atom.cson'
@@ -185,8 +194,10 @@ var self = {
         logger.debug('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
 
         //consolidate component tags
+        var snippetData = consolidatorSublime.consolidate_uitags(arrayComponents);
+        logger.info('updateTag.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
-            consolidatorSublime.consolidate_uitags(arrayComponents),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.uitags.sublime-completions'
@@ -195,8 +206,9 @@ var self = {
 
 
         //consolidate js evt
+        var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
         self.writeToFile(
-            consolidatorAtom.consolidate_uitags(arrayComponents),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.uitags.atom.cson'
@@ -206,8 +218,10 @@ var self = {
     updateTagAttr: function(arrayAttributes, outputDir){
         //consolidate component attribute
         logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        var snippetData = consolidatorSublime.consolidate_attributes(arrayAttributes);
+        logger.info('updateTagAttr'.bold.sublime, snippetData.completions.length);
         self.writeToFile(
-            consolidatorSublime.consolidate_attributes(arrayAttributes),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.attributes.sublime-completions'
@@ -217,8 +231,9 @@ var self = {
 
         //consolidate js evt
         logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
         self.writeToFile(
-            consolidatorAtom.consolidate_attributes(arrayAttributes),
+            JSON.stringify(snippetData, null, 2),
             path.join(
                 outputDir,
                 'aura.attributes.atom.cson'
@@ -241,7 +256,7 @@ var self = {
     },
     getComponentBreakup: function(fileName){
         var splits = fileName.split('/');
-        return [splits[splits.length - 3], splits[splits.length - 2]]
+        return [splits[splits.length - 3], splits[splits.length - 2]];
     }
 };
 module.exports = self;
