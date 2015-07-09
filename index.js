@@ -47,6 +47,10 @@ else{
 
 
 function processParser(baseDir, outputDir){
+	//trim whitespace
+	baseDir = baseDir.trim();
+	outputDir = outputDir.trim();
+	
 	generateXmlAutoComplete(
 		baseDir,//base input dir
 		outputDir//base output dir , snippet
