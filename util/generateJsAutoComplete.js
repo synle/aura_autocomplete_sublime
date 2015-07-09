@@ -75,7 +75,6 @@ module.exports = function processParser(componentFileNames, outputDir){
 		var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
 		if(parsedStuffs.length >0){
 			var functionName = parsedStuffs[0];
-
 			masterDictionary[functionName] = {
 				annotatedValue: parsedStuffs[1],
 				origValue : parsedStuffs[2]

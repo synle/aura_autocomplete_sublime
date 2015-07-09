@@ -1,297 +1,297 @@
 {
-   "scope": "source.js",
-   "completions": [
-      {
-         "trigger": "evt-auradev-quickFixButton-showUI",
-         "contents": "//component=quickFixButton\n//evtName=showUI\n//evtType=auradev:showQuickFixUI\n\nvar e = cmp.find(\"${1:quickFixButton}\").get(\"e.showUI\");\ne.setParams({\n\tui: \"${2:Aura.Component}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-auradocs-editorPanel-open",
-         "contents": "//component=editorPanel\n//evtName=open\n//evtType=auradocs:openDef\n\nvar e = cmp.find(\"${1:editorPanel}\").get(\"e.open\");\ne.setParams({\n\tdescriptor: \"${2:String}\",\n\tdefType: \"${3:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-aurajstest-jstestCase-done",
-         "contents": "//component=jstestCase\n//evtName=done\n//evtType=aurajstest:testStatus\n\nvar e = cmp.find(\"${1:jstestCase}\").get(\"e.done\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-button-keydown",
-         "contents": "//component=button\n//evtName=keydown\n//evtType=ui:keydown\n//The controller method that runs when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-button-press",
-         "contents": "//component=button\n//evtName=press\n//evtType=ui:press\n//The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselDeprecated-selectDefaultPage",
-         "contents": "//component=carouselDeprecated\n//evtName=selectDefaultPage\n//evtType=ui:carouselPageEvent\n//The event fired when the default page is selected.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.selectDefaultPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselDeprecated-pageSelected",
-         "contents": "//component=carouselDeprecated\n//evtName=pageSelected\n//evtType=ui:carouselPageEvent\n//The event fired when the page is selected.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselDeprecated-loadPage",
-         "contents": "//component=carouselDeprecated\n//evtName=loadPage\n//evtType=ui:carouselPageEvent\n//The event fired when the page is loaded.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.loadPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselDeprecated-scrollEnd",
-         "contents": "//component=carouselDeprecated\n//evtName=scrollEnd\n//evtType=ui:scrollEnd\n//The event fired when the end of the scroller is reached.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.scrollEnd\");\ne.setParams({\n\tcurrentPageX: \"${2:Integer}\",// The desired page to be set.\n\tcurrentPageY: \"${3:Integer}\",// The desired page to be set.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselDeprecated-refreshCurrentPage",
-         "contents": "//component=carouselDeprecated\n//evtName=refreshCurrentPage\n//evtType=ui:carouselPageEvent\n//Fire this event to refresh the current carousel page.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.refreshCurrentPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselIndicator-pagerClicked",
-         "contents": "//component=carouselIndicator\n//evtName=pagerClicked\n//evtType=ui:pagerClicked\n//The event fired when the pager is clicked\nvar e = cmp.find(\"${1:carouselIndicator}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageDeprecated-pageSelected",
-         "contents": "//component=carouselPageDeprecated\n//evtName=pageSelected\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is selected.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageDeprecated-update",
-         "contents": "//component=carouselPageDeprecated\n//evtName=update\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is updated.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.update\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageDeprecated-show",
-         "contents": "//component=carouselPageDeprecated\n//evtName=show\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is displayed.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.show\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageDeprecated-hide",
-         "contents": "//component=carouselPageDeprecated\n//evtName=hide\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is hidden.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.hide\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageDeprecated-updateSize",
-         "contents": "//component=carouselPageDeprecated\n//evtName=updateSize\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is resized.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.updateSize\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicator-pagerClicked",
-         "contents": "//component=carouselPageIndicator\n//evtName=pagerClicked\n//evtType=ui:pagerClicked\n//The event fired when the page indicator is clicked.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicator-pagerKeyed",
-         "contents": "//component=carouselPageIndicator\n//evtName=pagerKeyed\n//evtType=ui:pagerKeyed\n//The event fired when the page indicator is keyed.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pagerKeyed\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n\tevent: \"${3:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicator-pageSelected",
-         "contents": "//component=carouselPageIndicator\n//evtName=pageSelected\n//evtType=ui:carouselPageEvent\n//The event fired when the carousel page is selected.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicatorItem-pagerClicked",
-         "contents": "//component=carouselPageIndicatorItem\n//evtName=pagerClicked\n//evtType=ui:pagerClicked\n//The event fired when the pager is clicked.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicatorItem-pagerKeyed",
-         "contents": "//component=carouselPageIndicatorItem\n//evtName=pagerKeyed\n//evtType=ui:pagerKeyed\n//The event fired when the pager is keyed.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pagerKeyed\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n\tevent: \"${3:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-carouselPageIndicatorItem-pageSelected",
-         "contents": "//component=carouselPageIndicatorItem\n//evtName=pageSelected\n//evtType=ui:carouselPageEvent\n//The event fired when the page is selected.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-dataGrid-updateRowAttributes",
-         "contents": "//component=dataGrid\n//evtName=updateRowAttributes\n//evtType=ui:updateGridRow\n\nvar e = cmp.find(\"${1:dataGrid}\").get(\"e.updateRowAttributes\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Index of the row to update\n\tclassName: \"${3:String}\",// Class attribute to update. An undefined or null value will leave the class attribute unchanged\n\tclassOp: \"${4:String}\",// Operation to do for the class: add, remove, toggle. Any other value will leave the class attribute unchanged.\n\tattributes: \"${5:List}\",// Attributes to update on the row. Each item in the list should be of the form {name: attrName, value: attrValue}. Currently, only the 'disabled' attribute is supported\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-dataTableRow-rowPress",
-         "contents": "//component=dataTableRow\n//evtName=rowPress\n//evtType=ui:rowPress\n//The event fired when the row is pressed down. The element that is clicked on is checked before the event is fired.\nvar e = cmp.find(\"${1:dataTableRow}\").get(\"e.rowPress\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePicker-selectDate",
-         "contents": "//component=datePicker\n//evtName=selectDate\n//evtType=ui:selectDate\n//The event fired when a date is selected.\nvar e = cmp.find(\"${1:datePicker}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePickerGrid-hide",
-         "contents": "//component=datePickerGrid\n//evtName=hide\n//evtType=ui:change\n//The event fired when the date picker is hidden from view.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.hide\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePickerGrid-focus",
-         "contents": "//component=datePickerGrid\n//evtName=focus\n//evtType=ui:focus\n//The event fired when a date is focused.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePickerGrid-selectDate",
-         "contents": "//component=datePickerGrid\n//evtName=selectDate\n//evtType=ui:selectDate\n//The event fired when a date is selected.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePickerGrid-updateCalendar",
-         "contents": "//component=datePickerGrid\n//evtName=updateCalendar\n//evtType=ui:updateCalendar\n//The event fired when the calendar is updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendar\");\ne.setParams({\n\tmonthChange: \"${2:Integer}\",\n\tyearChange: \"${3:Integer}\",\n\tsetFocus: \"${4:Boolean}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-datePickerGrid-updateCalendarTitle",
-         "contents": "//component=datePickerGrid\n//evtName=updateCalendarTitle\n//evtType=ui:updateCalendarTitle\n//The event fired when the calendar month and year are updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendarTitle\");\ne.setParams({\n\tmonth: \"${2:Integer}\",\n\tyear: \"${3:Integer}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-inputSearch-search",
-         "contents": "//component=inputSearch\n//evtName=search\n//evtType=ui:searchEvent\n//The event fired when the user runs a search.\nvar e = cmp.find(\"${1:inputSearch}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-menuItem-menuSelect",
-         "contents": "//component=menuItem\n//evtName=menuSelect\n//evtType=ui:menuSelect\n//The event that is fired when the menu item is selected.\nvar e = cmp.find(\"${1:menuItem}\").get(\"e.menuSelect\");\ne.setParams({\n\tselectedItem: \"${2:Aura.Component[]}\",// The menu item which is selected.\n\thideMenu: \"${3:Boolean}\",// Hide menu if set to true.\n\tdeselectSiblings: \"${4:Boolean}\",// Deselect the siblings of the currently selected menu item.\n\tfocusTrigger: \"${5:Boolean}\",// Set focus to menuTrigger.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-menuTrigger-menuTriggerPress",
-         "contents": "//component=menuTrigger\n//evtName=menuTriggerPress\n//evtType=ui:menuTriggerPress\n//The event that is fired when the trigger is clicked.\nvar e = cmp.find(\"${1:menuTrigger}\").get(\"e.menuTriggerPress\");\ne.setParams({\n\tfocusItemIndex: \"${2:Integer}\",// The index of the item which should be on focus when the menu displays.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-pill-onHandledEvent",
-         "contents": "//component=pill\n//evtName=onHandledEvent\n//evtType=ui:response\n//The event fired when the user interactions with this component which it should be handled by the pillContainer (i.e left and right arrow, Enter, and Backspace)\nvar e = cmp.find(\"${1:pill}\").get(\"e.onHandledEvent\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-pillContainer-pillInserted",
-         "contents": "//component=pillContainer\n//evtName=pillInserted\n//evtType=ui:response\n//Event fired when a pill is inserted in this container.\nvar e = cmp.find(\"${1:pillContainer}\").get(\"e.pillInserted\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-pillContainer-pillRemoved",
-         "contents": "//component=pillContainer\n//evtName=pillRemoved\n//evtType=ui:response\n//Event fired when a pill is removed from this container.\nvar e = cmp.find(\"${1:pillContainer}\").get(\"e.pillRemoved\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tab-beforeActivate",
-         "contents": "//component=tab\n//evtName=beforeActivate\n//evtType=ui:tabsetEvent\n//The event is triggered before the tab is activated. Can be canceled to prevent the tab from activating.\nvar e = cmp.find(\"${1:tab}\").get(\"e.beforeActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-setActive",
-         "contents": "//component=tabBar\n//evtName=setActive\n//evtType=ui:tabsetEvent\n//This event is fired from parent component to activate a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.setActive\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-addTab",
-         "contents": "//component=tabBar\n//evtName=addTab\n//evtType=ui:tabsetEvent\n//This event is fired from parent component to add a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-closeTab",
-         "contents": "//component=tabBar\n//evtName=closeTab\n//evtType=ui:tabsetEvent\n//This event is fired from parent component to close a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.closeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-onTabClosed",
-         "contents": "//component=tabBar\n//evtName=onTabClosed\n//evtType=ui:tabsetEvent\n//This event is fired when the close icon is clicked.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabClosed\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-onTabActivated",
-         "contents": "//component=tabBar\n//evtName=onTabActivated\n//evtType=ui:tabsetEvent\n//This event is fired when the tab item is clicked.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabActivated\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-onTabHover",
-         "contents": "//component=tabBar\n//evtName=onTabHover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabBar-onTabUnhover",
-         "contents": "//component=tabBar\n//evtName=onTabUnhover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabItem-onActivate",
-         "contents": "//component=tabItem\n//evtName=onActivate\n//evtType=ui:tabsetEvent\n//The event is fired when the tab is clicked to activate.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabItem-onClose",
-         "contents": "//component=tabItem\n//evtName=onClose\n//evtType=ui:tabsetEvent\n//The event is fired when the close icon is clicked to close the tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onClose\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabItem-onTabHover",
-         "contents": "//component=tabItem\n//evtName=onTabHover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabItem-onTabUnhover",
-         "contents": "//component=tabItem\n//evtName=onTabUnhover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabOverflowMenuItem-onTabHover",
-         "contents": "//component=tabOverflowMenuItem\n//evtName=onTabHover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabOverflowMenuItem-onTabUnhover",
-         "contents": "//component=tabOverflowMenuItem\n//evtName=onTabUnhover\n//evtType=ui:onTabHover\n//The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-addTab",
-         "contents": "//component=tabset\n//evtName=addTab\n//evtType=ui:tabsetEvent\n//Add new tab to the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-removeTab",
-         "contents": "//component=tabset\n//evtName=removeTab\n//evtType=ui:tabsetEvent\n//Remove a tab from the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.removeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-activateTab",
-         "contents": "//component=tabset\n//evtName=activateTab\n//evtType=ui:tabsetEvent\n//Activate a tab.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-getActiveTab",
-         "contents": "//component=tabset\n//evtName=getActiveTab\n//evtType=ui:tabsetEvent\n//Get the currently active tab.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.getActiveTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-beforeActivate",
-         "contents": "//component=tabset\n//evtName=beforeActivate\n//evtType=ui:tabsetEvent\n//The event is triggered before the tab is activated. Can be canceled to prevent the tab from activating.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.beforeActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-ui-tabset-onActivate",
-         "contents": "//component=tabset\n//evtName=onActivate\n//evtType=ui:tabsetEvent\n//The event is triggered when the tab is activated.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-actionsTest-chainBoundaryCases-press",
-         "contents": "//component=chainBoundaryCases\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-actionsTest-chainExternalActions-press",
-         "contents": "//component=chainExternalActions\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainExternalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-actionsTest-chainLocalActions-press",
-         "contents": "//component=chainLocalActions\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-auratest-test_button-press",
-         "contents": "//component=test_button\n//evtName=press\n//evtType=auratest:test_press\n\nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-handlerWithNameAndEvent-somename",
-         "contents": "//component=handlerWithNameAndEvent\n//evtName=somename\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlerWithNameAndEvent}\").get(\"e.somename\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-handlerWithNameForApplicationEvent-anApplicationEvent",
-         "contents": "//component=handlerWithNameForApplicationEvent\n//evtName=anApplicationEvent\n//evtType=handleEventTest:applicationEvent\n\nvar e = cmp.find(\"${1:handlerWithNameForApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-handlesABAppEvents-A",
-         "contents": "//component=handlesABAppEvents\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-handlesABAppEvents-B",
-         "contents": "//component=handlesABAppEvents\n//evtName=B\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.B\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-multipleHandlersForEvent-A",
-         "contents": "//component=multipleHandlersForEvent\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:multipleHandlersForEvent}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-handleEventTest-registersApplicationEvent-anApplicationEvent",
-         "contents": "//component=registersApplicationEvent\n//evtName=anApplicationEvent\n//evtType=handleEventTest:applicationEvent\n\nvar e = cmp.find(\"${1:registersApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-renderingTest-testEventHandlerChain-A",
-         "contents": "//component=testEventHandlerChain\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-test-parentComponent-parentEvent",
-         "contents": "//component=parentComponent\n//evtName=parentEvent\n//evtType=test:parentEvent\n//The Description\nvar e = cmp.find(\"${1:parentComponent}\").get(\"e.parentEvent\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-test-test_Events_BiggerComponentForEvent-testBiggerPress",
-         "contents": "//component=test_Events_BiggerComponentForEvent\n//evtName=testBiggerPress\n//evtType=test:test_Events_Event2\n\nvar e = cmp.find(\"${1:test_Events_BiggerComponentForEvent}\").get(\"e.testBiggerPress\");\ne.setParams({\n\ttestEvent2: \"${2:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-test-test_Events_ComponentForEvent-testPress",
-         "contents": "//component=test_Events_ComponentForEvent\n//evtName=testPress\n//evtType=test:test_Events_Event\n\nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testPress\");\ne.setParams({\n\ttestEvent: \"${2:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-test-test_Events_ComponentForEvent-testMouseOver",
-         "contents": "//component=test_Events_ComponentForEvent\n//evtName=testMouseOver\n//evtType=test:test_Events_ParentEvent\n\nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testMouseOver\");\ne.setParams({\n\ttestParentEvent: \"${2:String}\",\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-test-test_button-press",
-         "contents": "//component=test_button\n//evtName=press\n//evtType=test:test_press\n\nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
-      },
-      {
-         "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
-         "contents": "//component=popupTestTriggerElement\n//evtName=popupTargetToggle\n//evtType=ui:popupTargetToggle\n\nvar e = cmp.find(\"${1:popupTestTriggerElement}\").get(\"e.popupTargetToggle\");\ne.setParams({\n\tcomponent: \"${2:Aura.Component[]}\",// The custom popup trigger.\n\tshow: \"${3:Boolean}\",// Whether to show or hide the target.\n});\ne.fire();"
-      }
-   ]
+  "scope": "source.js",
+  "completions": [
+    {
+      "trigger": "evt-auradev-quickFixButton-showUI",
+      "contents": "//  component: quickFixButton\n//    evtName: showUI\n//    evtType: auradev:showQuickFixUI\n//description: \nvar e = cmp.find(\"${1:quickFixButton}\").get(\"e.showUI\");\ne.setParams({\n\tui: \"${2:Aura.Component}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auradocs-editorPanel-open",
+      "contents": "//  component: editorPanel\n//    evtName: open\n//    evtType: auradocs:openDef\n//description: \nvar e = cmp.find(\"${1:editorPanel}\").get(\"e.open\");\ne.setParams({\n\tdescriptor: \"${2:String}\",\n\tdefType: \"${3:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-aurajstest-jstestCase-done",
+      "contents": "//  component: jstestCase\n//    evtName: done\n//    evtType: aurajstest:testStatus\n//description: \nvar e = cmp.find(\"${1:jstestCase}\").get(\"e.done\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-button-keydown",
+      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The controller method that runs when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-button-press",
+      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselDeprecated-selectDefaultPage",
+      "contents": "//  component: carouselDeprecated\n//    evtName: selectDefaultPage\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the default page is selected.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.selectDefaultPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselDeprecated-pageSelected",
+      "contents": "//  component: carouselDeprecated\n//    evtName: pageSelected\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the page is selected.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselDeprecated-loadPage",
+      "contents": "//  component: carouselDeprecated\n//    evtName: loadPage\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the page is loaded.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.loadPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselDeprecated-scrollEnd",
+      "contents": "//  component: carouselDeprecated\n//    evtName: scrollEnd\n//    evtType: ui:scrollEnd\n//description: The event fired when the end of the scroller is reached.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.scrollEnd\");\ne.setParams({\n\tcurrentPageX: \"${2:Integer}\",// The desired page to be set.\n\tcurrentPageY: \"${3:Integer}\",// The desired page to be set.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselDeprecated-refreshCurrentPage",
+      "contents": "//  component: carouselDeprecated\n//    evtName: refreshCurrentPage\n//    evtType: ui:carouselPageEvent\n//description: Fire this event to refresh the current carousel page.\nvar e = cmp.find(\"${1:carouselDeprecated}\").get(\"e.refreshCurrentPage\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselIndicator-pagerClicked",
+      "contents": "//  component: carouselIndicator\n//    evtName: pagerClicked\n//    evtType: ui:pagerClicked\n//description: The event fired when the pager is clicked\nvar e = cmp.find(\"${1:carouselIndicator}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageDeprecated-pageSelected",
+      "contents": "//  component: carouselPageDeprecated\n//    evtName: pageSelected\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is selected.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageDeprecated-update",
+      "contents": "//  component: carouselPageDeprecated\n//    evtName: update\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is updated.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.update\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageDeprecated-show",
+      "contents": "//  component: carouselPageDeprecated\n//    evtName: show\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is displayed.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.show\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageDeprecated-hide",
+      "contents": "//  component: carouselPageDeprecated\n//    evtName: hide\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is hidden.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.hide\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageDeprecated-updateSize",
+      "contents": "//  component: carouselPageDeprecated\n//    evtName: updateSize\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is resized.\nvar e = cmp.find(\"${1:carouselPageDeprecated}\").get(\"e.updateSize\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicator-pagerClicked",
+      "contents": "//  component: carouselPageIndicator\n//    evtName: pagerClicked\n//    evtType: ui:pagerClicked\n//description: The event fired when the page indicator is clicked.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicator-pagerKeyed",
+      "contents": "//  component: carouselPageIndicator\n//    evtName: pagerKeyed\n//    evtType: ui:pagerKeyed\n//description: The event fired when the page indicator is keyed.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pagerKeyed\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n\tevent: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicator-pageSelected",
+      "contents": "//  component: carouselPageIndicator\n//    evtName: pageSelected\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the carousel page is selected.\nvar e = cmp.find(\"${1:carouselPageIndicator}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicatorItem-pagerClicked",
+      "contents": "//  component: carouselPageIndicatorItem\n//    evtName: pagerClicked\n//    evtType: ui:pagerClicked\n//description: The event fired when the pager is clicked.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pagerClicked\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicatorItem-pagerKeyed",
+      "contents": "//  component: carouselPageIndicatorItem\n//    evtName: pagerKeyed\n//    evtType: ui:pagerKeyed\n//description: The event fired when the pager is keyed.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pagerKeyed\");\ne.setParams({\n\tpageIndex: \"${2:Integer}\",\n\tevent: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-carouselPageIndicatorItem-pageSelected",
+      "contents": "//  component: carouselPageIndicatorItem\n//    evtName: pageSelected\n//    evtType: ui:carouselPageEvent\n//description: The event fired when the page is selected.\nvar e = cmp.find(\"${1:carouselPageIndicatorItem}\").get(\"e.pageSelected\");\ne.setParams({\n\tpageModel: \"${2:Object}\",\n\tpageComponent: \"${3:Object}\",\n\tpageIndex: \"${4:Integer}\",\n\tpageId: \"${5:String}\",\n\tpageSize: \"${6:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataGrid-updateRowAttributes",
+      "contents": "//  component: dataGrid\n//    evtName: updateRowAttributes\n//    evtType: ui:updateGridRow\n//description: \nvar e = cmp.find(\"${1:dataGrid}\").get(\"e.updateRowAttributes\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Index of the row to update\n\tclassName: \"${3:String}\",// Class attribute to update. An undefined or null value will leave the class attribute unchanged\n\tclassOp: \"${4:String}\",// Operation to do for the class: add, remove, toggle. Any other value will leave the class attribute unchanged.\n\tattributes: \"${5:List}\",// Attributes to update on the row. Each item in the list should be of the form {name: attrName, value: attrValue}. Currently, only the 'disabled' attribute is supported\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataTableRow-rowPress",
+      "contents": "//  component: dataTableRow\n//    evtName: rowPress\n//    evtType: ui:rowPress\n//description: The event fired when the row is pressed down. The element that is clicked on is checked before the event is fired.\nvar e = cmp.find(\"${1:dataTableRow}\").get(\"e.rowPress\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePicker-selectDate",
+      "contents": "//  component: datePicker\n//    evtName: selectDate\n//    evtType: ui:selectDate\n//description: The event fired when a date is selected.\nvar e = cmp.find(\"${1:datePicker}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePickerGrid-hide",
+      "contents": "//  component: datePickerGrid\n//    evtName: hide\n//    evtType: ui:change\n//description: The event fired when the date picker is hidden from view.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.hide\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePickerGrid-focus",
+      "contents": "//  component: datePickerGrid\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when a date is focused.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePickerGrid-selectDate",
+      "contents": "//  component: datePickerGrid\n//    evtName: selectDate\n//    evtType: ui:selectDate\n//description: The event fired when a date is selected.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePickerGrid-updateCalendar",
+      "contents": "//  component: datePickerGrid\n//    evtName: updateCalendar\n//    evtType: ui:updateCalendar\n//description: The event fired when the calendar is updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendar\");\ne.setParams({\n\tmonthChange: \"${2:Integer}\",\n\tyearChange: \"${3:Integer}\",\n\tsetFocus: \"${4:Boolean}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-datePickerGrid-updateCalendarTitle",
+      "contents": "//  component: datePickerGrid\n//    evtName: updateCalendarTitle\n//    evtType: ui:updateCalendarTitle\n//description: The event fired when the calendar month and year are updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendarTitle\");\ne.setParams({\n\tmonth: \"${2:Integer}\",\n\tyear: \"${3:Integer}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputSearch-search",
+      "contents": "//  component: inputSearch\n//    evtName: search\n//    evtType: ui:searchEvent\n//description: The event fired when the user runs a search.\nvar e = cmp.find(\"${1:inputSearch}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuItem-menuSelect",
+      "contents": "//  component: menuItem\n//    evtName: menuSelect\n//    evtType: ui:menuSelect\n//description: The event that is fired when the menu item is selected.\nvar e = cmp.find(\"${1:menuItem}\").get(\"e.menuSelect\");\ne.setParams({\n\tselectedItem: \"${2:Aura.Component[]}\",// The menu item which is selected.\n\thideMenu: \"${3:Boolean}\",// Hide menu if set to true.\n\tdeselectSiblings: \"${4:Boolean}\",// Deselect the siblings of the currently selected menu item.\n\tfocusTrigger: \"${5:Boolean}\",// Set focus to menuTrigger.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuTrigger-menuTriggerPress",
+      "contents": "//  component: menuTrigger\n//    evtName: menuTriggerPress\n//    evtType: ui:menuTriggerPress\n//description: The event that is fired when the trigger is clicked.\nvar e = cmp.find(\"${1:menuTrigger}\").get(\"e.menuTriggerPress\");\ne.setParams({\n\tfocusItemIndex: \"${2:Integer}\",// The index of the item which should be on focus when the menu displays.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pill-onHandledEvent",
+      "contents": "//  component: pill\n//    evtName: onHandledEvent\n//    evtType: ui:response\n//description: The event fired when the user interactions with this component which it should be handled by the pillContainer (i.e left and right arrow, Enter, and Backspace)\nvar e = cmp.find(\"${1:pill}\").get(\"e.onHandledEvent\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pillContainer-pillInserted",
+      "contents": "//  component: pillContainer\n//    evtName: pillInserted\n//    evtType: ui:response\n//description: Event fired when a pill is inserted in this container.\nvar e = cmp.find(\"${1:pillContainer}\").get(\"e.pillInserted\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pillContainer-pillRemoved",
+      "contents": "//  component: pillContainer\n//    evtName: pillRemoved\n//    evtType: ui:response\n//description: Event fired when a pill is removed from this container.\nvar e = cmp.find(\"${1:pillContainer}\").get(\"e.pillRemoved\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tab-beforeActivate",
+      "contents": "//  component: tab\n//    evtName: beforeActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered before the tab is activated. Can be canceled to prevent the tab from activating.\nvar e = cmp.find(\"${1:tab}\").get(\"e.beforeActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-setActive",
+      "contents": "//  component: tabBar\n//    evtName: setActive\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to activate a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.setActive\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-addTab",
+      "contents": "//  component: tabBar\n//    evtName: addTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to add a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-closeTab",
+      "contents": "//  component: tabBar\n//    evtName: closeTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to close a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.closeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-onTabClosed",
+      "contents": "//  component: tabBar\n//    evtName: onTabClosed\n//    evtType: ui:tabsetEvent\n//description: This event is fired when the close icon is clicked.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabClosed\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-onTabActivated",
+      "contents": "//  component: tabBar\n//    evtName: onTabActivated\n//    evtType: ui:tabsetEvent\n//description: This event is fired when the tab item is clicked.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabActivated\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-onTabHover",
+      "contents": "//  component: tabBar\n//    evtName: onTabHover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-onTabUnhover",
+      "contents": "//  component: tabBar\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabItem-onActivate",
+      "contents": "//  component: tabItem\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is fired when the tab is clicked to activate.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabItem-onClose",
+      "contents": "//  component: tabItem\n//    evtName: onClose\n//    evtType: ui:tabsetEvent\n//description: The event is fired when the close icon is clicked to close the tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onClose\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabItem-onTabHover",
+      "contents": "//  component: tabItem\n//    evtName: onTabHover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabItem-onTabUnhover",
+      "contents": "//  component: tabItem\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabOverflowMenuItem-onTabHover",
+      "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabHover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabOverflowMenuItem-onTabUnhover",
+      "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-addTab",
+      "contents": "//  component: tabset\n//    evtName: addTab\n//    evtType: ui:tabsetEvent\n//description: Add new tab to the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-removeTab",
+      "contents": "//  component: tabset\n//    evtName: removeTab\n//    evtType: ui:tabsetEvent\n//description: Remove a tab from the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.removeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-activateTab",
+      "contents": "//  component: tabset\n//    evtName: activateTab\n//    evtType: ui:tabsetEvent\n//description: Activate a tab.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-getActiveTab",
+      "contents": "//  component: tabset\n//    evtName: getActiveTab\n//    evtType: ui:tabsetEvent\n//description: Get the currently active tab.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.getActiveTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-beforeActivate",
+      "contents": "//  component: tabset\n//    evtName: beforeActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered before the tab is activated. Can be canceled to prevent the tab from activating.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.beforeActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-onActivate",
+      "contents": "//  component: tabset\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered when the tab is activated.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-actionsTest-chainBoundaryCases-press",
+      "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-actionsTest-chainExternalActions-press",
+      "contents": "//  component: chainExternalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainExternalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-actionsTest-chainLocalActions-press",
+      "contents": "//  component: chainLocalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-test_button-press",
+      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: auratest:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-handlerWithNameAndEvent-somename",
+      "contents": "//  component: handlerWithNameAndEvent\n//    evtName: somename\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlerWithNameAndEvent}\").get(\"e.somename\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-handlerWithNameForApplicationEvent-anApplicationEvent",
+      "contents": "//  component: handlerWithNameForApplicationEvent\n//    evtName: anApplicationEvent\n//    evtType: handleEventTest:applicationEvent\n//description: \nvar e = cmp.find(\"${1:handlerWithNameForApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-handlesABAppEvents-A",
+      "contents": "//  component: handlesABAppEvents\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-handlesABAppEvents-B",
+      "contents": "//  component: handlesABAppEvents\n//    evtName: B\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.B\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-multipleHandlersForEvent-A",
+      "contents": "//  component: multipleHandlersForEvent\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:multipleHandlersForEvent}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-registersApplicationEvent-anApplicationEvent",
+      "contents": "//  component: registersApplicationEvent\n//    evtName: anApplicationEvent\n//    evtType: handleEventTest:applicationEvent\n//description: \nvar e = cmp.find(\"${1:registersApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-renderingTest-testEventHandlerChain-A",
+      "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-parentComponent-parentEvent",
+      "contents": "//  component: parentComponent\n//    evtName: parentEvent\n//    evtType: test:parentEvent\n//description: The Description\nvar e = cmp.find(\"${1:parentComponent}\").get(\"e.parentEvent\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-test_Events_BiggerComponentForEvent-testBiggerPress",
+      "contents": "//  component: test_Events_BiggerComponentForEvent\n//    evtName: testBiggerPress\n//    evtType: test:test_Events_Event2\n//description: \nvar e = cmp.find(\"${1:test_Events_BiggerComponentForEvent}\").get(\"e.testBiggerPress\");\ne.setParams({\n\ttestEvent2: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-test_Events_ComponentForEvent-testPress",
+      "contents": "//  component: test_Events_ComponentForEvent\n//    evtName: testPress\n//    evtType: test:test_Events_Event\n//description: \nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testPress\");\ne.setParams({\n\ttestEvent: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-test_Events_ComponentForEvent-testMouseOver",
+      "contents": "//  component: test_Events_ComponentForEvent\n//    evtName: testMouseOver\n//    evtType: test:test_Events_ParentEvent\n//description: \nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testMouseOver\");\ne.setParams({\n\ttestParentEvent: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-test_button-press",
+      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: test:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
+      "contents": "//  component: popupTestTriggerElement\n//    evtName: popupTargetToggle\n//    evtType: ui:popupTargetToggle\n//description: \nvar e = cmp.find(\"${1:popupTestTriggerElement}\").get(\"e.popupTargetToggle\");\ne.setParams({\n\tcomponent: \"${2:Aura.Component[]}\",// The custom popup trigger.\n\tshow: \"${3:Boolean}\",// Whether to show or hide the target.\n});\ne.fire();"
+    }
+  ]
 }
