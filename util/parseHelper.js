@@ -219,7 +219,7 @@ var self = {
         //consolidate component attribute
         logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         var snippetData = consolidatorSublime.consolidate_attributes(arrayAttributes);
-        logger.info('updateTagAttr'.bold.sublime, snippetData.completions.length);
+        logger.info('updateTagAttr.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
             JSON.stringify(snippetData, null, 2),
             path.join(
