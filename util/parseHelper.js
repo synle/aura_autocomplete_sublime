@@ -28,6 +28,11 @@ var self = {
             if (fs.lstatSync(newDir).isDirectory()) {
                 listDir(newDir, res);
             } else {
+                //if this dir contain /target/, then ignore it
+                if(newDir.indexOf('/target/') >= 0){
+                    continue;
+                }
+
                 //is a file
                 var extension = path.extname(newDir);
 
