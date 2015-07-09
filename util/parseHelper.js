@@ -1,6 +1,7 @@
 //depdencies
 var fs = require('fs');
 var path = require('path');
+var _ = require('lodash');
 
 //internal
 var consolidatorAtom = require('./serializer/serializerAtomHelper');
@@ -10,15 +11,16 @@ var logger = require('./logger');//internal logger
 //definitions
 var self = {
     readFromFile: function(path, silent) {
-        logger.debug('Reading file...'.magenta.bold);
-        logger.debug(path.yellow);
+        logger.info('Reading file...'.magenta.bold);
+        logger.info(path.yellow);
         return fs.readFileSync(path, 'utf-8');
     },
     listDir: function listDir(dir, res) {
         res = res || {
             cmp: [],
             evt: [],
-            helperjs: []
+            helperjs: [],
+            js: []
         };
         var dirs = fs.readdirSync(dir);
         for (var i = 0; i < dirs.length; i++) {
@@ -44,7 +46,10 @@ var self = {
                     case '.evt':
                         res.evt.push(newDir);
                         break;
-                    default:
+                    case '.js':
+                        res.js.push(newDir);
+
+                        //special helper js
                         if(newDir.indexOf('Helper.js') >= 0){
                             res.helperjs.push(newDir);    
                         }
@@ -227,7 +232,7 @@ var self = {
         };
     },
     writeToFile: function(string, path) {
-        logger.debug(path.yellow);
+        logger.info(path.yellow);
         fs.writeFileSync(path, string);
     },
     getBaseFileNameWithoutExtension: function(fileName){

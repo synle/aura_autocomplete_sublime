@@ -1,16 +1,42 @@
 //depdencies
 var path = require('path');
 var colors = require('colors');
+var _ = require('lodash');
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
 var logger = require('./logger');//internal logger
 
 
-//base path (parsed form command line or default to my git folder)
-//outputDir where to store the snippet
-module.exports = function processParser(baseDir, outputDir){
+//componentFileNames: dictionary containing all js, evt and cmp files
+//outputDir: where to store the snippet
+module.exports = function processParser(componentFileNames, outputDir){
 	logger.log('    Parsing Aura JS Files    '.rainbow.cyan.underline.bgBlack);
+
+	//searching through for the files
+	var testJsPath;
+	var utilJsPath;
+
+
+	_.forEach(componentFileNames.js, function(jsFileFullPath){
+		if(jsFileFullPath.indexOf('src/main/resources/aura/test/Test.js') >= 0){
+			testJsPath = jsFileFullPath;
+		}
+		else if(jsFileFullPath.indexOf('src/main/resources/aura/util/Util.js') >= 0){
+			utilJsPath = jsFileFullPath;
+		}
+	});
+		
+
+	//needs to be defined
+	if (testJsPath === undefined || utilJsPath === undefined){
+		logger.error('Error! testJsPath or utilJsPath is undefined');
+		logger.error('testJsPath', testJsPath);
+		logger.error('utilJsPath', utilJsPath);
+		return;
+	}
+	
+
 
 	//init Aura global obejct
 	var Aura = {
@@ -35,11 +61,6 @@ module.exports = function processParser(baseDir, outputDir){
 
 	//AURA TEST JS FILE
 	//generarte path for the test and util js file
-	var testJsPath = path.join(
-		baseDir,
-		'/aura-impl/src/main/resources/aura/test/Test.js'
-	);
-
 	//read content files
 	var fileContent = parseHelper.readFromFile(
 		testJsPath,
@@ -65,11 +86,6 @@ module.exports = function processParser(baseDir, outputDir){
 
 
 	//AURA UTILS JS FILE
-	var utilJsPath = path.join(
-		baseDir,
-		'aura-impl/src/main/resources/aura/util/Util.js'
-	);
-
 	//read content files
 	var fileContent = parseHelper.readFromFile(
 		utilJsPath,

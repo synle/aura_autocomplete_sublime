@@ -2,23 +2,17 @@
 var path = require('path');
 var colors = require('colors');
 var parseString = require('xml2js').parseString;
+var _ = require('lodash');
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
 var logger = require('./logger');//internal logger
 
 
-//base path (parsed form command line or default to my git folder)
-//outputDir where to store the snippet
-module.exports = function processParser(baseDir, outputDir){
+//componentFileNames: dictionary containing all js, evt and cmp files
+//outputDir: where to store the snippet
+module.exports = function processParser(componentFileNames, outputDir){
 	logger.log('   Parsing Aura XML Files   '.rainbow.cyan.underline.bgBlack);
-
-	//read content files
-	var componentBaseDir = path.join(
-		baseDir,
-		'/'
-	);
-
 
 	// global dictionary
 	var eventDictionary = {};//being used only as a quick look up
@@ -26,14 +20,6 @@ module.exports = function processParser(baseDir, outputDir){
 	var arrayEvents = [];
 	var arrayAttributes = [];
 	var helperDictionary = {};
-
-	//find all cmp files in nested structures
-	var componentFileNames = parseHelper.listDir(componentBaseDir);
-
-
-	logger.log('Statistics'.bold.underline.bgBlue.white);
-	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
-	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
 
 	//events stuffs
 	//reading and parsing the events
@@ -108,9 +94,10 @@ module.exports = function processParser(baseDir, outputDir){
 
 		//parsing xml
 		parseString(fileContent, {async: true}, function (err, result) {
-			if (result === undefined || result['aura:component'] === undefined ){
+			if (result === undefined || result === null || result['aura:component'] === undefined){
 				return;
 			}
+
 			var componentParsedXml = result['aura:component'];
 			var componentParsedObj = componentParsedXml.$ || {};
 
