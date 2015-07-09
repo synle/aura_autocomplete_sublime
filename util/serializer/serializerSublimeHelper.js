@@ -39,7 +39,7 @@ var self = {
                 contents: contents
             });
         }
-        return JSON.stringify(sublimeFormat, null, 3);
+        return sublimeFormat;
     },
 
     /**
@@ -78,7 +78,7 @@ var self = {
                 });
             });
         });
-        return JSON.stringify(sublimeFormat, null, 3);
+        return sublimeFormat;
     },
 
     /**
@@ -114,10 +114,10 @@ var self = {
             // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
             var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.namespace + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name ;
             var contents = [
-                '//' + 'component=' + evtObj.component,
-                '//' + 'evtName=' + actualEvt.name,
-                '//' + 'evtType='+ actualEvt.type,
-                actualEvt.description ? '//' + actualEvt.description : '',
+                '//' + '  component: ' + evtObj.component,
+                '//' + '    evtName: ' + actualEvt.name,
+                '//' + '    evtType: '+ actualEvt.type,
+                '//' + 'description: ' + (actualEvt.description || ''),
                 'var e = cmp.find("${1:' + evtObj.component + '}").get("e.' + actualEvt.name + '");',
                 'e.setParams({'
             ];
@@ -144,7 +144,7 @@ var self = {
             });
         };
 
-        return JSON.stringify(sublimeFormat, null, 3);
+        return sublimeFormat;
     },
 
 
@@ -202,7 +202,7 @@ var self = {
         }
         // console.log(access);
 
-        return JSON.stringify(sublimeFormat, null, 3);
+        return sublimeFormat;
     },
 
     _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx){
@@ -344,7 +344,7 @@ var self = {
         }
 
 
-        return JSON.stringify(sublimeFormat, null, 3);
+        return sublimeFormat;
     },
 
     _getDefaultSublimeJSObject: function(incomingScope) {

@@ -16,9 +16,10 @@ var promptSchema = config.prompt;
 var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
 var generateJsAutoComplete = require('./util/generateJsAutoComplete');
 
+//setting debug=2 will trigger full logging mode
 if (process.env.baseDir !== undefined){
 	//when start with environment variables
-	//baseDir=/Users/sle/blt/app/main/core npm start
+	//debug=2 baseDir=/Users/sle/blt/app/main/core npm start
 	logger.debug('Retrived baseDir from Environment Variable');
 	processParser( 
 		process.env.baseDir,
@@ -60,15 +61,34 @@ function processParser(baseDir, outputDir){
 	//trim whitespace
 	baseDir = baseDir.trim();
 	outputDir = outputDir.trim();
-	
+
+
+	//get a list of all files
+	//read content files
+	var componentBaseDir = path.join(
+		baseDir,
+		'/'
+	);
+
+	//find all cmp files in nested structures
+	var componentFileNames = parseHelper.listDir(componentBaseDir);
+
+
+	//print stats
+	logger.log('Statistics'.bold.underline.bgBlue.white);
+	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
+	logger.log('Helper.js Files:'.bold, componentFileNames.helperjs.length);
+	logger.log('js Files:'.bold, componentFileNames.js.length);
+		
 	generateXmlAutoComplete(
-		baseDir,//base input dir
+		componentFileNames,//dictionary containing all js, evt and cmp files
 		outputDir//base output dir , snippet
 	);
 
 	try{
 		generateJsAutoComplete(
-			baseDir,//base input dir
+			componentFileNames,//dictionary containing all js, evt and cmp files
 			outputDir//base output dir , snippet
 		);	
 	}

@@ -7,12 +7,12 @@ module.exports = {
 		//write error to files
 	},
 	info: function(){
-		if (process.env.debug){
+		if (parseInt(process.env.debug) >= 1){
 			console.log.apply(this, arguments);	
 		}
 	},
 	debug: function(){
-		if (process.env.debug){
+		if (parseInt(process.env.debug) >= 2){
 			console.log.apply(this, arguments);
 		}
 	},
