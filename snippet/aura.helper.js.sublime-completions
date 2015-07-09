@@ -3700,6 +3700,802 @@
       {
          "trigger": "helper-uiExamples-virtualDataGridKitchenSink-generateColumnConfigs",
          "contents": "cmp.getDef().getHelper().generateColumnConfigs(${1:cmp})"
+      },
+      {
+         "trigger": "helper-actionsTest-deferredServerAction-getSuccess",
+         "contents": "cmp.getDef().getHelper().getSuccess(${1:cmp})"
+      },
+      {
+         "trigger": "helper-actionsTest-deferredServerAction-getError",
+         "contents": "cmp.getDef().getHelper().getError(${1:cmp})"
+      },
+      {
+         "trigger": "helper-actionsTest-transactions-insertResponse",
+         "contents": "cmp.getDef().getHelper().insertResponse(${1:cmp},${2:a})"
+      },
+      {
+         "trigger": "helper-actionsTest-transactions-handleCb",
+         "contents": "cmp.getDef().getHelper().handleCb(${1:cmp},${2:action},${3:callback})"
+      },
+      {
+         "trigger": "helper-actionsTest-transactions-sendAction",
+         "contents": "cmp.getDef().getHelper().sendAction(${1:cmp},${2:abortable},${3:transactionId},${4:callback})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-indexedDBStorageTest-appendLine",
+         "contents": "cmp.getDef().getHelper().appendLine(${1:cmp},${2:text})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-initTest-resetCounters",
+         "contents": "cmp.getDef().getHelper().resetCounters(${1:cmp},${2:_testName})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-initTest-executeAction",
+         "contents": "cmp.getDef().getHelper().executeAction(${1:cmp},${2:actionName},${3:actionParam},${4:additionalProperties},${5:extraCallback})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-initTest-findAndSetText",
+         "contents": "cmp.getDef().getHelper().findAndSetText(${1:cmp},${2:targetCmpId},${3:msg})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-resetCounters",
+         "contents": "cmp.getDef().getHelper().resetCounters(${1:cmp},${2:_testName})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-setCounter",
+         "contents": "cmp.getDef().getHelper().setCounter(${1:cmp},${2:newValue})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-getTeamAndPlayers",
+         "contents": "cmp.getDef().getHelper().getTeamAndPlayers(${1:cmp},${2:storable})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-getTeamOnly",
+         "contents": "cmp.getDef().getHelper().getTeamOnly(${1:cmp,storable})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-getPlayersOnly",
+         "contents": "cmp.getDef().getHelper().getPlayersOnly(${1:cmp,storable})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-findAndSetText",
+         "contents": "cmp.getDef().getHelper().findAndSetText(${1:cmp},${2:targetCmpId},${3:msg})"
+      },
+      {
+         "trigger": "helper-auraStorageTest-newComponent-findAndAppendText",
+         "contents": "cmp.getDef().getHelper().findAndAppendText(${1:cmp},${2:targetCmpId},${3:msg})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassChild-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassClientProvider-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassGrandChildClientProvider-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassGrandChildServerProvider-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassParent-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
+      },
+      {
+         "trigger": "helper-auratest-componentClassServerProvider-getDelimiter",
+         "contents": "cmp.getDef().getHelper().getDelimiter(${1:})"
+      },
+      {
+         "trigger": "helper-auratest-fastClickDomEvents-setOutput",
+         "contents": "cmp.getDef().getHelper().setOutput(${1:c},${2:evt},${3:field})"
+      },
+      {
+         "trigger": "helper-auratest-require-updateVersion",
+         "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
+      },
+      {
+         "trigger": "helper-auratest-require-updateComponentExist",
+         "contents": "cmp.getDef().getHelper().updateComponentExist(${1:cmp},${2:exist})"
+      },
+      {
+         "trigger": "helper-auratest-requireWithModel-updateVersion",
+         "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunner-method",
+         "contents": "cmp.getDef().getHelper().method(${1:})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-_parseTestName",
+         "contents": "cmp.getDef().getHelper()._parseTestName(${1:name})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-_parseTestNameSpace",
+         "contents": "cmp.getDef().getHelper()._parseTestNameSpace(${1:ns})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-_parseStatus",
+         "contents": "cmp.getDef().getHelper()._parseStatus(${1:status})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-createRow",
+         "contents": "cmp.getDef().getHelper().createRow(${1:t})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-buildDOM",
+         "contents": "cmp.getDef().getHelper().buildDOM(${1:testArray})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-renderTests",
+         "contents": "cmp.getDef().getHelper().renderTests(${1:testArray},${2:parent})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-attachEvents",
+         "contents": "cmp.getDef().getHelper().attachEvents(${1:cmp},${2:dom})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-showAllSections",
+         "contents": "cmp.getDef().getHelper().showAllSections(${1:})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-toggleIntegrationTests",
+         "contents": "cmp.getDef().getHelper().toggleIntegrationTests(${1:button},${2:dom},${3:e})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-toggleFailTests",
+         "contents": "cmp.getDef().getHelper().toggleFailTests(${1:cmp},${2:button},${3:dom},${4:e})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-toggleSelection",
+         "contents": "cmp.getDef().getHelper().toggleSelection(${1:button},${2:dom},${3:e})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-_updateSelectedTestCount",
+         "contents": "cmp.getDef().getHelper()._updateSelectedTestCount(${1:dom},${2:count})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-calcOrOperators",
+         "contents": "cmp.getDef().getHelper().calcOrOperators(${1:regexp},${2:name})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-calcAndOperators",
+         "contents": "cmp.getDef().getHelper().calcAndOperators(${1:regexp},${2:name})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-filterTests",
+         "contents": "cmp.getDef().getHelper().filterTests(${1:dom},${2:query},${3:logicOps},${4:isCaseSensitive},${5:test_integ},${6:test_unit})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-_getLiFromInput",
+         "contents": "cmp.getDef().getHelper()._getLiFromInput(${1:input})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-runTests",
+         "contents": "cmp.getDef().getHelper().runTests(${1:cmp},${2:dom},${3:e})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-updateStatus",
+         "contents": "cmp.getDef().getHelper().updateStatus(${1:status})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-updateTests",
+         "contents": "cmp.getDef().getHelper().updateTests(${1:result},${2:dom})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-finishTestRun",
+         "contents": "cmp.getDef().getHelper().finishTestRun(${1:cmp},${2:actionResult},${3:dom},${4:success})"
+      },
+      {
+         "trigger": "helper-auratest-testPerfRunnerContainer-pollTestResults",
+         "contents": "cmp.getDef().getHelper().pollTestResults(${1:cmp},${2:containerDOM},${3:previousPollActionForThisTestRunnerAction},${4:testRunnerActionCurrent})"
+      },
+      {
+         "trigger": "helper-componentTest-componentBodyWithChanges-newComponent",
+         "contents": "cmp.getDef().getHelper().newComponent(${1:cmp},${2:item})"
+      },
+      {
+         "trigger": "helper-componentTest-componentBodyWithChanges-newComponentList",
+         "contents": "cmp.getDef().getHelper().newComponentList(${1:cmp},${2:items})"
+      },
+      {
+         "trigger": "helper-componentTest-versionInServer-updateVersion",
+         "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
+      },
+      {
+         "trigger": "helper-componentTest-versioning-updateVersion",
+         "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
+      },
+      {
+         "trigger": "helper-expressionTest-bodyAttribute-clearCmpBody",
+         "contents": "cmp.getDef().getHelper().clearCmpBody(${1:cmp},${2:id})"
+      },
+      {
+         "trigger": "helper-expressionTest-bodyAttribute-setCmpBody",
+         "contents": "cmp.getDef().getHelper().setCmpBody(${1:cmp},${2:id})"
+      },
+      {
+         "trigger": "helper-expressionTest-bodyAttribute-addCmpBody",
+         "contents": "cmp.getDef().getHelper().addCmpBody(${1:cmp},${2:id})"
+      },
+      {
+         "trigger": "helper-expressionTest-suite-checkForErrors",
+         "contents": "cmp.getDef().getHelper().checkForErrors(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-someDummyHelperFunction1",
+         "contents": "cmp.getDef().getHelper().someDummyHelperFunction1(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-someDummyHelperFunction2",
+         "contents": "cmp.getDef().getHelper().someDummyHelperFunction2(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-someDummyHelperFunction3",
+         "contents": "cmp.getDef().getHelper().someDummyHelperFunction3(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-someDummyHelperFunction4",
+         "contents": "cmp.getDef().getHelper().someDummyHelperFunction4(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-someDummyHelperFunction5",
+         "contents": "cmp.getDef().getHelper().someDummyHelperFunction5(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-curiousCaseOfBenjamin",
+         "contents": "cmp.getDef().getHelper().curiousCaseOfBenjamin(${1:cmp})"
+      },
+      {
+         "trigger": "helper-gvpTest-parseLabels-anotherCuriousCase",
+         "contents": "cmp.getDef().getHelper().anotherCuriousCase(${1:})"
+      },
+      {
+         "trigger": "helper-loadLevelTest-lazyLoadHelper-verifyLazyLoading",
+         "contents": "cmp.getDef().getHelper().verifyLazyLoading(${1:cmp},${2:lazyCmpId_qualifiedName_map},${3:waitIds},${4:callbackAfterLoad})"
+      },
+      {
+         "trigger": "helper-loadLevelTest-lazyLoadHelper-resumeGateId",
+         "contents": "cmp.getDef().getHelper().resumeGateId(${1:cmp},${2:waitId})"
+      },
+      {
+         "trigger": "helper-loadLevelTest-newCmpWithValueProvider-createComponentAndPushToBody",
+         "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config},${3:attributeValueProvider},${4:localCreation},${5:doForce},${6:forceServer})"
+      },
+      {
+         "trigger": "helper-miscTest-myDataProvider-provide",
+         "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-miscTest-newComponent-createComponentAndPushToBody",
+         "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-miscTest-newComponent-createComponentAndPushToBodyDeprecated",
+         "contents": "cmp.getDef().getHelper().createComponentAndPushToBodyDeprecated(${1:cmp},${2:config})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-_rafPolyfill",
+         "contents": "cmp.getDef().getHelper()._rafPolyfill(${1:})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-bootstrapPerfFramework",
+         "contents": "cmp.getDef().getHelper().bootstrapPerfFramework(${1:component})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-getCmpDef",
+         "contents": "cmp.getDef().getHelper().getCmpDef(${1:obj})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-fetchServerSideDependencies",
+         "contents": "cmp.getDef().getHelper().fetchServerSideDependencies(${1:cmp},${2:rawCmp},${3:callback})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-parseObjectFromUrl",
+         "contents": "cmp.getDef().getHelper().parseObjectFromUrl(${1:})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-isStatsMode",
+         "contents": "cmp.getDef().getHelper().isStatsMode(${1:})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-perfCreateComponent",
+         "contents": "cmp.getDef().getHelper().perfCreateComponent(${1:appCmp},${2:cmp},${3:callback})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-beforeCreateComponent",
+         "contents": "cmp.getDef().getHelper().beforeCreateComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-afterCreateComponent",
+         "contents": "cmp.getDef().getHelper().afterCreateComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-createComponent",
+         "contents": "cmp.getDef().getHelper().createComponent(${1:componentDef},${2:attributeValues},${3:callback})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-perfRenderComponent",
+         "contents": "cmp.getDef().getHelper().perfRenderComponent(${1:appCmp},${2:newCmp},${3:callback})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-beforeRenderComponent",
+         "contents": "cmp.getDef().getHelper().beforeRenderComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-afterRenderComponent",
+         "contents": "cmp.getDef().getHelper().afterRenderComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-renderComponent",
+         "contents": "cmp.getDef().getHelper().renderComponent(${1:container},${2:newCmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-unrenderCmp",
+         "contents": "cmp.getDef().getHelper().unrenderCmp(${1:cmp})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-perfAfterRender",
+         "contents": "cmp.getDef().getHelper().perfAfterRender(${1:appCmp},${2:newCmp},${3:callback})"
+      },
+      {
+         "trigger": "helper-perfTest-perf-afterRender",
+         "contents": "cmp.getDef().getHelper().afterRender(${1:appCmp},${2:newCmp})"
+      },
+      {
+         "trigger": "helper-performance-runner-urlToJson",
+         "contents": "cmp.getDef().getHelper().urlToJson(${1:historyConfig})"
+      },
+      {
+         "trigger": "helper-performance-runner-queryStringToJson",
+         "contents": "cmp.getDef().getHelper().queryStringToJson(${1:queryString})"
+      },
+      {
+         "trigger": "helper-renderingTest-cmpWithRenderer-plusOne",
+         "contents": "cmp.getDef().getHelper().plusOne(${1:component},${2:attributeName})"
+      },
+      {
+         "trigger": "helper-renderingTest-renderCounter-updateMetrics",
+         "contents": "cmp.getDef().getHelper().updateMetrics(${1:component},${2:attributeName})"
+      },
+      {
+         "trigger": "helper-test-UIPerfActionMarksTest-getAction",
+         "contents": "cmp.getDef().getHelper().getAction(${1:cmp},${2:name},${3:msg})"
+      },
+      {
+         "trigger": "helper-test-basicCspTest-request",
+         "contents": "cmp.getDef().getHelper().request(${1:cmp},${2:url})"
+      },
+      {
+         "trigger": "helper-test-kitchenSink-createComponent",
+         "contents": "cmp.getDef().getHelper().createComponent(${1:cmp})"
+      },
+      {
+         "trigger": "helper-test-kitchenSink-returnAString",
+         "contents": "cmp.getDef().getHelper().returnAString(${1:cmp})"
+      },
+      {
+         "trigger": "helper-test-testActionCallbacks-runTest",
+         "contents": "cmp.getDef().getHelper().runTest(${1:component},${2:action},${3:callback},${4:expected})"
+      },
+      {
+         "trigger": "helper-test-testJSHelper-a",
+         "contents": "cmp.getDef().getHelper().a(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelper-b",
+         "contents": "cmp.getDef().getHelper().b(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelper-methodWithArgs",
+         "contents": "cmp.getDef().getHelper().methodWithArgs(${1:arg1})"
+      },
+      {
+         "trigger": "helper-test-testJSHelper-setFocus",
+         "contents": "cmp.getDef().getHelper().setFocus(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperExplicit-localMethodFortestJSHelperExplicit",
+         "contents": "cmp.getDef().getHelper().localMethodFortestJSHelperExplicit(${1:arg1})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperMethodOverloading-superSuperZ",
+         "contents": "cmp.getDef().getHelper().superSuperZ(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperMethodOverloading-superSuperY",
+         "contents": "cmp.getDef().getHelper().superSuperY(${1:arg1})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperMethodOverloading-localX",
+         "contents": "cmp.getDef().getHelper().localX(${1:arg1},${2:arg2})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperSuper-z",
+         "contents": "cmp.getDef().getHelper().z(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperSuperSuper-superSuperZ",
+         "contents": "cmp.getDef().getHelper().superSuperZ(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSHelperSuperSuper-superSuperY",
+         "contents": "cmp.getDef().getHelper().superSuperY(${1:})"
+      },
+      {
+         "trigger": "helper-test-testJSRendererUsingHelper-renderHelper",
+         "contents": "cmp.getDef().getHelper().renderHelper(${1:component})"
+      },
+      {
+         "trigger": "helper-test-testJSRendererUsingHelper-rerenderHelper",
+         "contents": "cmp.getDef().getHelper().rerenderHelper(${1:component})"
+      },
+      {
+         "trigger": "helper-test-testJSRendererUsingHelperApp-renderHelper",
+         "contents": "cmp.getDef().getHelper().renderHelper(${1:component})"
+      },
+      {
+         "trigger": "helper-test-testJSRendererUsingHelperApp-rerenderHelper",
+         "contents": "cmp.getDef().getHelper().rerenderHelper(${1:component})"
+      },
+      {
+         "trigger": "helper-test-testVirtualListDataProvider-bar",
+         "contents": "cmp.getDef().getHelper().bar(${1:})"
+      },
+      {
+         "trigger": "helper-test-test_SimpleHelper-methodAOfSimpleHelper",
+         "contents": "cmp.getDef().getHelper().methodAOfSimpleHelper(${1:arg1})"
+      },
+      {
+         "trigger": "helper-test-test_SimpleHelper-methodBOfSimpleHelper",
+         "contents": "cmp.getDef().getHelper().methodBOfSimpleHelper(${1:arg1},${2:arg2})"
+      },
+      {
+         "trigger": "helper-uitest-LocalizationService_Test-verifyDateAndTime",
+         "contents": "cmp.getDef().getHelper().verifyDateAndTime(${1:component,testCmpId,expected})"
+      },
+      {
+         "trigger": "helper-uitest-LocalizationService_Test-testInvalidDateAndTime",
+         "contents": "cmp.getDef().getHelper().testInvalidDateAndTime(${1:func},${2:dateAndTime},${3:format},${4:lang},${5:expectedErrorMsg},${6:errorOutMsg})"
+      },
+      {
+         "trigger": "helper-uitest-accessibilityTool-injectCmp",
+         "contents": "cmp.getDef().getHelper().injectCmp(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_CustomOption-setVisible",
+         "contents": "cmp.getDef().getHelper().setVisible(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_CustomTemplate-setVisible",
+         "contents": "cmp.getDef().getHelper().setVisible(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_Test-handleInputChange",
+         "contents": "cmp.getDef().getHelper().handleInputChange(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_Test-handleSelectOption",
+         "contents": "cmp.getDef().getHelper().handleSelectOption(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_Test-handleMatchDone",
+         "contents": "cmp.getDef().getHelper().handleMatchDone(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_Test-matchFuncShowAll",
+         "contents": "cmp.getDef().getHelper().matchFuncShowAll(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-autoComplete_Test-handleToggleAction",
+         "contents": "cmp.getDef().getHelper().handleToggleAction(${1:cmp},${2:event},${3:autoCompleteCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-autocomplete_TestDataProvider-provide",
+         "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-uitest-dataGridPureHtmlTest-renderTrs",
+         "contents": "cmp.getDef().getHelper().renderTrs(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_Actions-changeRowDisabled",
+         "contents": "cmp.getDef().getHelper().changeRowDisabled(${1:cmp},${2:index},${3:disable})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_Actions-changeRowClass",
+         "contents": "cmp.getDef().getHelper().changeRowClass(${1:cmp},${2:index},${3:className},${4:op})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_ColumnsTest-getColumnJson",
+         "contents": "cmp.getDef().getHelper().getColumnJson(${1:colStart},${2:amount},${3:useGroup})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_ColumnsTest-addColumns",
+         "contents": "cmp.getDef().getHelper().addColumns(${1:cmp},${2:colJson},${3:which2use})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_ColumnsTest-createColumns",
+         "contents": "cmp.getDef().getHelper().createColumns(${1:colInfo},${2:funcToUse})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_Test-fireAddRemove",
+         "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_TestDataProvider-sort",
+         "contents": "cmp.getDef().getHelper().sort(${1:items},${2:column},${3:ascending})"
+      },
+      {
+         "trigger": "helper-uitest-dataGrid_TestDataProvider-createTasks",
+         "contents": "cmp.getDef().getHelper().createTasks(${1:cmp},${2:currentPage},${3:pageSize})"
+      },
+      {
+         "trigger": "helper-uitest-image_ErrorTest-hideImage",
+         "contents": "cmp.getDef().getHelper().hideImage(${1:cmp},${2:imageName})"
+      },
+      {
+         "trigger": "helper-uitest-infiniteList_ScrollerTest-refresh",
+         "contents": "cmp.getDef().getHelper().refresh(${1:component},${2:listName})"
+      },
+      {
+         "trigger": "helper-uitest-infiniteList_ScrollerTest-showMore",
+         "contents": "cmp.getDef().getHelper().showMore(${1:component},${2:listName})"
+      },
+      {
+         "trigger": "helper-uitest-inputDefaultError_Test-addErrorsToCmp",
+         "contents": "cmp.getDef().getHelper().addErrorsToCmp(${1:invalidCmp},${2:errors})"
+      },
+      {
+         "trigger": "helper-uitest-inputDefaultError_Test-createNewCmp",
+         "contents": "cmp.getDef().getHelper().createNewCmp(${1:cmp},${2:lblAide})"
+      },
+      {
+         "trigger": "helper-uitest-inputRichText_ExtendedTest-getEditorConfig",
+         "contents": "cmp.getDef().getHelper().getEditorConfig(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-listSorter_Test-handleApplyPressed",
+         "contents": "cmp.getDef().getHelper().handleApplyPressed(${1:cmp},${2:list},${3:outCmpName})"
+      },
+      {
+         "trigger": "helper-uitest-list_MultipleDataProvidersTest-refresh",
+         "contents": "cmp.getDef().getHelper().refresh(${1:cmp},${2:index})"
+      },
+      {
+         "trigger": "helper-uitest-localizationComponent_Test-incermentSubmitCount",
+         "contents": "cmp.getDef().getHelper().incermentSubmitCount(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-localizationComponent_Test-goToServer",
+         "contents": "cmp.getDef().getHelper().goToServer(${1:controller},${2:component},${3:event},${4:cmpName},${5:inValue})"
+      },
+      {
+         "trigger": "helper-uitest-localization_Test-incermentSubmitCount",
+         "contents": "cmp.getDef().getHelper().incermentSubmitCount(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-localization_Test-goToServer",
+         "contents": "cmp.getDef().getHelper().goToServer(${1:controller},${2:component},${3:event},${4:cmpName},${5:inValue})"
+      },
+      {
+         "trigger": "helper-uitest-menu_AttachToBodyTest-handleUpdateTriggerLabel",
+         "contents": "cmp.getDef().getHelper().handleUpdateTriggerLabel(${1:cmp},${2:event},${3:helper,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_EventBubbling-handleUpdateTriggerLabel",
+         "contents": "cmp.getDef().getHelper().handleUpdateTriggerLabel(${1:cmp},${2:event},${3:helper,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_MetadataTest-handleUpdateTriggerLabel",
+         "contents": "cmp.getDef().getHelper().handleUpdateTriggerLabel(${1:cmp},${2:event,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_MetadataTest-menuSelect",
+         "contents": "cmp.getDef().getHelper().menuSelect(${1:cmp},${2:event,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_Test-handleUpdateTriggerLabel",
+         "contents": "cmp.getDef().getHelper().handleUpdateTriggerLabel(${1:cmp},${2:event,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_Test-menuSelect",
+         "contents": "cmp.getDef().getHelper().menuSelect(${1:cmp},${2:event,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-menu_extendMenuList-handleUpdateTriggerLabel",
+         "contents": "cmp.getDef().getHelper().handleUpdateTriggerLabel(${1:cmp},${2:event},${3:helper,triggerId})"
+      },
+      {
+         "trigger": "helper-uitest-outputDateTime_OverriddenFormatDateTime-formatDateTime",
+         "contents": "cmp.getDef().getHelper().formatDateTime(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-outputDateTime_OverriddenGetFormat-getFormat",
+         "contents": "cmp.getDef().getHelper().getFormat(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-outputDateTime_OverriddenGetFormat-displayDateTime",
+         "contents": "cmp.getDef().getHelper().displayDateTime(${1:component},${2:displayValue})"
+      },
+      {
+         "trigger": "helper-uitest-outputDateTime_OverriddenGetTimeZone-getTimeZone",
+         "contents": "cmp.getDef().getHelper().getTimeZone(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-outputDateTime_OverriddenGetTimeZone-displayDateTime",
+         "contents": "cmp.getDef().getHelper().displayDateTime(${1:component},${2:displayValue})"
+      },
+      {
+         "trigger": "helper-uitest-outputDate_OverriddenFormatDate-formatDate",
+         "contents": "cmp.getDef().getHelper().formatDate(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-outputURL_LocationChange-clickFruit",
+         "contents": "cmp.getDef().getHelper().clickFruit(${1:cmp},${2:fruit})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-init",
+         "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-hide",
+         "contents": "cmp.getDef().getHelper().hide(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-show",
+         "contents": "cmp.getDef().getHelper().show(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-update",
+         "contents": "cmp.getDef().getHelper().update(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-close",
+         "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-notify",
+         "contents": "cmp.getDef().getHelper().notify(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-panel2-setActive",
+         "contents": "cmp.getDef().getHelper().setActive(${1:cmp},${2:active})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-init",
+         "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-hide",
+         "contents": "cmp.getDef().getHelper().hide(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-show",
+         "contents": "cmp.getDef().getHelper().show(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-beforeTransitionEnd",
+         "contents": "cmp.getDef().getHelper().beforeTransitionEnd(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-position",
+         "contents": "cmp.getDef().getHelper().position(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-getModalGlassElement",
+         "contents": "cmp.getDef().getHelper().getModalGlassElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-getPanelElement",
+         "contents": "cmp.getDef().getHelper().getPanelElement(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-close",
+         "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-_findContainedComponent",
+         "contents": "cmp.getDef().getHelper()._findContainedComponent(${1:cmp},${2:localId})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-getPrefix",
+         "contents": "cmp.getDef().getHelper().getPrefix(${1:})"
+      },
+      {
+         "trigger": "helper-uitest-panel2Content-getAnimationEndEventName",
+         "contents": "cmp.getDef().getHelper().getAnimationEndEventName(${1:})"
+      },
+      {
+         "trigger": "helper-uitest-panel2_Tester-createHeaderFooterInstance",
+         "contents": "cmp.getDef().getHelper().createHeaderFooterInstance(${1:cmp},${2:forceCreate})"
+      },
+      {
+         "trigger": "helper-uitest-panelTest-getConfig",
+         "contents": "cmp.getDef().getHelper().getConfig(${1:cmp},${2:mode})"
+      },
+      {
+         "trigger": "helper-uitest-pillContainerAutoCompleteDataProvider-provide",
+         "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-uitest-pillContainer_WithAutoCompleteHeader-updateSelectValue",
+         "contents": "cmp.getDef().getHelper().updateSelectValue(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-popupTestExtendedTarget-handleKeyboardEvent",
+         "contents": "cmp.getDef().getHelper().handleKeyboardEvent(${1:component},${2:event})"
+      },
+      {
+         "trigger": "helper-uitest-scrollerNative-makeDOM",
+         "contents": "cmp.getDef().getHelper().makeDOM(${1:resultSet},${2:cssClassName})"
+      },
+      {
+         "trigger": "helper-uitest-scroller_BidirectionalTest-handleScrollTo",
+         "contents": "cmp.getDef().getHelper().handleScrollTo(${1:scrollEvt},${2:dest},${3:time},${4:x},${5:y})"
+      },
+      {
+         "trigger": "helper-uitest-scroller_BidirectionalTest-handleScrollBy",
+         "contents": "cmp.getDef().getHelper().handleScrollBy(${1:scrollEvt},${2:deltaX},${3:deltaY},${4:time})"
+      },
+      {
+         "trigger": "helper-uitest-scroller_Test-handleScrollTo",
+         "contents": "cmp.getDef().getHelper().handleScrollTo(${1:scrollEvt},${2:dest},${3:time},${4:x},${5:y})"
+      },
+      {
+         "trigger": "helper-uitest-scroller_Test-handleScrollBy",
+         "contents": "cmp.getDef().getHelper().handleScrollBy(${1:scrollEvt},${2:deltaX},${3:deltaY},${4:time})"
+      },
+      {
+         "trigger": "helper-uitest-scroller_basic-makeDOM",
+         "contents": "cmp.getDef().getHelper().makeDOM(${1:resultSet},${2:cssClassName})"
+      },
+      {
+         "trigger": "helper-uitest-tabset_overflowTest-addTab",
+         "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:title},${3:content},${4:closable},${5:active})"
+      },
+      {
+         "trigger": "helper-uitest-testApp-incermentSubmitCount",
+         "contents": "cmp.getDef().getHelper().incermentSubmitCount(${1:component})"
+      },
+      {
+         "trigger": "helper-uitest-testApp-goToServer",
+         "contents": "cmp.getDef().getHelper().goToServer(${1:controller},${2:component},${3:event},${4:cmpName},${5:inValue})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGridItem-fireAddRemove",
+         "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGridProvider_test-init",
+         "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGridProvider_test-provide",
+         "contents": "cmp.getDef().getHelper().provide(${1:cmp},${2:event},${3:helper})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGrid_columnsTests-generateColumnConfigs",
+         "contents": "cmp.getDef().getHelper().generateColumnConfigs(${1:cmp})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGrid_dataProvider-provide",
+         "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGrid_dataProvider-compare",
+         "contents": "cmp.getDef().getHelper().compare(${1:sortBy})"
+      },
+      {
+         "trigger": "helper-uitest-virtualDataGrid_test-fireAddRemove",
+         "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
+      },
+      {
+         "trigger": "helper-uitest-virtualList_TestDataProvider-createItems",
+         "contents": "cmp.getDef().getHelper().createItems(${1:cmp},${2:currentPage},${3:pageSize})"
       }
    ]
 }

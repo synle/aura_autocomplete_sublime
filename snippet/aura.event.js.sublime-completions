@@ -224,6 +224,74 @@
       {
          "trigger": "evt-ui-tabset-onActivate",
          "contents": "//component=tabset\n//evtName=onActivate\n//evtType=ui:tabsetEvent\n//The event is triggered when the tab is activated.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-actionsTest-chainBoundaryCases-press",
+         "contents": "//component=chainBoundaryCases\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-actionsTest-chainExternalActions-press",
+         "contents": "//component=chainExternalActions\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainExternalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-actionsTest-chainLocalActions-press",
+         "contents": "//component=chainLocalActions\n//evtName=press\n//evtType=ui:press\n\nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-auratest-test_button-press",
+         "contents": "//component=test_button\n//evtName=press\n//evtType=auratest:test_press\n\nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-handlerWithNameAndEvent-somename",
+         "contents": "//component=handlerWithNameAndEvent\n//evtName=somename\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlerWithNameAndEvent}\").get(\"e.somename\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-handlerWithNameForApplicationEvent-anApplicationEvent",
+         "contents": "//component=handlerWithNameForApplicationEvent\n//evtName=anApplicationEvent\n//evtType=handleEventTest:applicationEvent\n\nvar e = cmp.find(\"${1:handlerWithNameForApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-handlesABAppEvents-A",
+         "contents": "//component=handlesABAppEvents\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-handlesABAppEvents-B",
+         "contents": "//component=handlesABAppEvents\n//evtName=B\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.B\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-multipleHandlersForEvent-A",
+         "contents": "//component=multipleHandlersForEvent\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:multipleHandlersForEvent}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-handleEventTest-registersApplicationEvent-anApplicationEvent",
+         "contents": "//component=registersApplicationEvent\n//evtName=anApplicationEvent\n//evtType=handleEventTest:applicationEvent\n\nvar e = cmp.find(\"${1:registersApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-renderingTest-testEventHandlerChain-A",
+         "contents": "//component=testEventHandlerChain\n//evtName=A\n//evtType=handleEventTest:event\n\nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-test-parentComponent-parentEvent",
+         "contents": "//component=parentComponent\n//evtName=parentEvent\n//evtType=test:parentEvent\n//The Description\nvar e = cmp.find(\"${1:parentComponent}\").get(\"e.parentEvent\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-test-test_Events_BiggerComponentForEvent-testBiggerPress",
+         "contents": "//component=test_Events_BiggerComponentForEvent\n//evtName=testBiggerPress\n//evtType=test:test_Events_Event2\n\nvar e = cmp.find(\"${1:test_Events_BiggerComponentForEvent}\").get(\"e.testBiggerPress\");\ne.setParams({\n\ttestEvent2: \"${2:String}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-test-test_Events_ComponentForEvent-testPress",
+         "contents": "//component=test_Events_ComponentForEvent\n//evtName=testPress\n//evtType=test:test_Events_Event\n\nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testPress\");\ne.setParams({\n\ttestEvent: \"${2:String}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-test-test_Events_ComponentForEvent-testMouseOver",
+         "contents": "//component=test_Events_ComponentForEvent\n//evtName=testMouseOver\n//evtType=test:test_Events_ParentEvent\n\nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testMouseOver\");\ne.setParams({\n\ttestParentEvent: \"${2:String}\",\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-test-test_button-press",
+         "contents": "//component=test_button\n//evtName=press\n//evtType=test:test_press\n\nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      },
+      {
+         "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
+         "contents": "//component=popupTestTriggerElement\n//evtName=popupTargetToggle\n//evtType=ui:popupTargetToggle\n\nvar e = cmp.find(\"${1:popupTestTriggerElement}\").get(\"e.popupTargetToggle\");\ne.setParams({\n\tcomponent: \"${2:Aura.Component[]}\",// The custom popup trigger.\n\tshow: \"${3:Boolean}\",// Whether to show or hide the target.\n});\ne.fire();"
       }
    ]
 }

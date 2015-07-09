@@ -3944,6 +3944,4082 @@
       {
          "trigger": "attr-uiExamples-virtualDataGridKitchenSink-provideNoData",
          "contents": "provideNoData=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-actionsTest-beanActionModel-counter",
+         "contents": "counter=\"${1:actionsTest:beanActionModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-beanActionModelChild-childCounter",
+         "contents": "childCounter=\"${1:actionsTest:beanActionModelChild - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-chainBoundaryCases-responseOrder",
+         "contents": "responseOrder=\"${1:actionsTest:chainBoundaryCases - Optional - String}\""
+      },
+      {
+         "trigger": "attr-actionsTest-chainBoundaryCases-callbackCount",
+         "contents": "callbackCount=\"${1:actionsTest:chainBoundaryCases - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-actionsTest-chainLocalActions-responseOrder",
+         "contents": "responseOrder=\"${1:actionsTest:chainLocalActions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-actionsTest-clientAction-value",
+         "contents": "value=\"${1:actionsTest:clientAction - Optional - String}\""
+      },
+      {
+         "trigger": "attr-actionsTest-deferredServerAction-result",
+         "contents": "result=\"${1:actionsTest:deferredServerAction - Optional - String}\""
+      },
+      {
+         "trigger": "attr-actionsTest-deferredServerAction-error",
+         "contents": "error=\"${1:actionsTest:deferredServerAction - Optional - String}\""
+      },
+      {
+         "trigger": "attr-actionsTest-serverAction-errorMessage",
+         "contents": "errorMessage=\"${1:actionsTest:serverAction - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-transactions-transactionId",
+         "contents": "transactionId=\"${1:actionsTest:transactions - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-transactionsEntry-transactionId",
+         "contents": "transactionId=\"${1:actionsTest:transactionsEntry - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-transactionsEntry-actionId",
+         "contents": "actionId=\"${1:actionsTest:transactionsEntry - Optional - string}\""
+      },
+      {
+         "trigger": "attr-actionsTest-transactionsEntry-state",
+         "contents": "state=\"${1:actionsTest:transactionsEntry - Optional - string}\""
+      },
+      {
+         "trigger": "attr-appCache-slate-output",
+         "contents": "output=\"${1:appCache:slate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeMap",
+         "contents": "typeMap=\"${1:attributesTest:attributeTypes - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeInteger",
+         "contents": "typeInteger=\"${1:attributesTest:attributeTypes - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeString",
+         "contents": "typeString=\"${1:attributesTest:attributeTypes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeList",
+         "contents": "typeList=\"${1:attributesTest:attributeTypes - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeStringList",
+         "contents": "typeStringList=\"${1:attributesTest:attributeTypes - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeMapList",
+         "contents": "typeMapList=\"${1:attributesTest:attributeTypes - Optional - Map[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-attributeTypes-typeSet",
+         "contents": "typeSet=\"${1:attributesTest:attributeTypes - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-attributesTest-customAttributeType-pairAttr",
+         "contents": "pairAttr=\"${1:attributesTest:customAttributeType - Optional - java://org.auraframework.util.type.CustomPairType}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-strAttributeWithNoDefaultValue",
+         "contents": "strAttributeWithNoDefaultValue=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-strAttributeWithDefaultValue",
+         "contents": "strAttributeWithDefaultValue=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-objAttributeWithNoDefaultValue",
+         "contents": "objAttributeWithNoDefaultValue=\"${1:attributesTest:defaultValue - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-objAttributeWithDefaultValue",
+         "contents": "objAttributeWithDefaultValue=\"${1:attributesTest:defaultValue - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-listAttributeWithNoDefaultValue",
+         "contents": "listAttributeWithNoDefaultValue=\"${1:attributesTest:defaultValue - Optional - Boolean[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-listAttributeWithDefaultValue",
+         "contents": "listAttributeWithDefaultValue=\"${1:attributesTest:defaultValue - Optional - Boolean[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-mapAttributeWithNoDefaultValue",
+         "contents": "mapAttributeWithNoDefaultValue=\"${1:attributesTest:defaultValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-mapAttributeWithDefaultValue",
+         "contents": "mapAttributeWithDefaultValue=\"${1:attributesTest:defaultValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-componentDefault",
+         "contents": "componentDefault=\"${1:attributesTest:defaultValue - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithNoValue",
+         "contents": "booleanDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithStringTrue",
+         "contents": "booleanDefaultWithStringTrue=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithStringFalse",
+         "contents": "booleanDefaultWithStringFalse=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithLiteralExpTrue",
+         "contents": "booleanDefaultWithLiteralExpTrue=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithLiteralExpFalse",
+         "contents": "booleanDefaultWithLiteralExpFalse=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithViewExpTrue",
+         "contents": "booleanDefaultWithViewExpTrue=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-booleanDefaultWithViewExpFalse",
+         "contents": "booleanDefaultWithViewExpFalse=\"${1:attributesTest:defaultValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateDefaultWithNoValue",
+         "contents": "dateDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateDefaultWithString",
+         "contents": "dateDefaultWithString=\"${1:attributesTest:defaultValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateDefaultWithLiteralExp",
+         "contents": "dateDefaultWithLiteralExp=\"${1:attributesTest:defaultValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateDefaultWithTimeString",
+         "contents": "dateDefaultWithTimeString=\"${1:attributesTest:defaultValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateDefaultWithTimeLiteralExp",
+         "contents": "dateDefaultWithTimeLiteralExp=\"${1:attributesTest:defaultValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateTimeDefaultWithNoValue",
+         "contents": "dateTimeDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - DateTime}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateTimeDefaultZero",
+         "contents": "dateTimeDefaultZero=\"${1:attributesTest:defaultValue - Optional - DateTime}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateTimeDefaultWithString",
+         "contents": "dateTimeDefaultWithString=\"${1:attributesTest:defaultValue - Optional - DateTime}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-dateTimeDefaultWithLiteralExp",
+         "contents": "dateTimeDefaultWithLiteralExp=\"${1:attributesTest:defaultValue - Optional - DateTime}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithNoValue",
+         "contents": "decimalDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithStringPositiveInt",
+         "contents": "decimalDefaultWithStringPositiveInt=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithStringNegativeInt",
+         "contents": "decimalDefaultWithStringNegativeInt=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithStringPositiveDecimal",
+         "contents": "decimalDefaultWithStringPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithStringNegativeDecimal",
+         "contents": "decimalDefaultWithStringNegativeDecimal=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithLiteralExpPositiveInt",
+         "contents": "decimalDefaultWithLiteralExpPositiveInt=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithLiteralExpNegativeInt",
+         "contents": "decimalDefaultWithLiteralExpNegativeInt=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithLiteralExpPositiveDecimal",
+         "contents": "decimalDefaultWithLiteralExpPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithLiteralExpNegativeDecimal",
+         "contents": "decimalDefaultWithLiteralExpNegativeDecimal=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithExpView",
+         "contents": "decimalDefaultWithExpView=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-decimalDefaultWithExpression",
+         "contents": "decimalDefaultWithExpression=\"${1:attributesTest:defaultValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithNoValue",
+         "contents": "doubleDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithStringPositiveInt",
+         "contents": "doubleDefaultWithStringPositiveInt=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithStringNegativeInt",
+         "contents": "doubleDefaultWithStringNegativeInt=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithStringPositiveDecimal",
+         "contents": "doubleDefaultWithStringPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithStringNegativeDecimal",
+         "contents": "doubleDefaultWithStringNegativeDecimal=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithLiteralExpPositiveInt",
+         "contents": "doubleDefaultWithLiteralExpPositiveInt=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithLiteralExpNegativeInt",
+         "contents": "doubleDefaultWithLiteralExpNegativeInt=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithLiteralExpPositiveDecimal",
+         "contents": "doubleDefaultWithLiteralExpPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithLiteralExpNegativeDecimal",
+         "contents": "doubleDefaultWithLiteralExpNegativeDecimal=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithExpView",
+         "contents": "doubleDefaultWithExpView=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-doubleDefaultWithExpression",
+         "contents": "doubleDefaultWithExpression=\"${1:attributesTest:defaultValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithNoValue",
+         "contents": "integerDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithStringPositiveInt",
+         "contents": "integerDefaultWithStringPositiveInt=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithStringNegativeInt",
+         "contents": "integerDefaultWithStringNegativeInt=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithStringPositiveDecimal",
+         "contents": "integerDefaultWithStringPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithLiteralExpPositiveInt",
+         "contents": "integerDefaultWithLiteralExpPositiveInt=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithLiteralExpNegativeInt",
+         "contents": "integerDefaultWithLiteralExpNegativeInt=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithExpView",
+         "contents": "integerDefaultWithExpView=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-integerDefaultWithExpression",
+         "contents": "integerDefaultWithExpression=\"${1:attributesTest:defaultValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithNoValue",
+         "contents": "longDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithStringPositiveInt",
+         "contents": "longDefaultWithStringPositiveInt=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithStringNegativeInt",
+         "contents": "longDefaultWithStringNegativeInt=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithStringPositiveDecimal",
+         "contents": "longDefaultWithStringPositiveDecimal=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithLiteralExpPositiveInt",
+         "contents": "longDefaultWithLiteralExpPositiveInt=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithLiteralExpNegativeInt",
+         "contents": "longDefaultWithLiteralExpNegativeInt=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithExpView",
+         "contents": "longDefaultWithExpView=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-longDefaultWithExpression",
+         "contents": "longDefaultWithExpression=\"${1:attributesTest:defaultValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithNoValue",
+         "contents": "stringDefaultWithNoValue=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithString",
+         "contents": "stringDefaultWithString=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithStringEmptyString",
+         "contents": "stringDefaultWithStringEmptyString=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithLiteralExp",
+         "contents": "stringDefaultWithLiteralExp=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithLiteralExpEmptyString",
+         "contents": "stringDefaultWithLiteralExpEmptyString=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithExpView",
+         "contents": "stringDefaultWithExpView=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithExpression",
+         "contents": "stringDefaultWithExpression=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-stringDefaultWithExpGVP",
+         "contents": "stringDefaultWithExpGVP=\"${1:attributesTest:defaultValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-setDefaultWithEmpty",
+         "contents": "setDefaultWithEmpty=\"${1:attributesTest:defaultValue - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-setDefaultWithString",
+         "contents": "setDefaultWithString=\"${1:attributesTest:defaultValue - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-setDefaultWithBracketString",
+         "contents": "setDefaultWithBracketString=\"${1:attributesTest:defaultValue - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValue-setDefaultWithStringContainBracket",
+         "contents": "setDefaultWithStringContainBracket=\"${1:attributesTest:defaultValue - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-booleanDefaultInherit",
+         "contents": "booleanDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-decimalDefaultInherit",
+         "contents": "decimalDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-doubleDefaultInherit",
+         "contents": "doubleDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-integerDefaultInherit",
+         "contents": "integerDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-longDefaultInherit",
+         "contents": "longDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-stringDefaultInherit",
+         "contents": "stringDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-objectDefaultInherit",
+         "contents": "objectDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-mapDefaultInherit",
+         "contents": "mapDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-defaultValueChild-listDefaultInherit",
+         "contents": "listDefaultInherit=\"${1:attributesTest:defaultValueChild - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-parent-SimpleAttribute",
+         "contents": "SimpleAttribute=\"${1:attributesTest:parent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReference-stringByReference",
+         "contents": "stringByReference=\"${1:attributesTest:passByReference - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReference-intByReference",
+         "contents": "intByReference=\"${1:attributesTest:passByReference - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReference-listByReference",
+         "contents": "listByReference=\"${1:attributesTest:passByReference - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReference-mapByReference",
+         "contents": "mapByReference=\"${1:attributesTest:passByReference - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReference-objectWithList",
+         "contents": "objectWithList=\"${1:attributesTest:passByReference - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReferenceInner-intAttribute",
+         "contents": "intAttribute=\"${1:attributesTest:passByReferenceInner - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReferenceInner-listAttribute",
+         "contents": "listAttribute=\"${1:attributesTest:passByReferenceInner - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReferenceInner-mapAttribute",
+         "contents": "mapAttribute=\"${1:attributesTest:passByReferenceInner - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByReferenceInner-objectAttribute",
+         "contents": "objectAttribute=\"${1:attributesTest:passByReferenceInner - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-initValue",
+         "contents": "initValue=\"${1:attributesTest:passByValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-booleanValue",
+         "contents": "booleanValue=\"${1:attributesTest:passByValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-numberValue",
+         "contents": "numberValue=\"${1:attributesTest:passByValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-stringValue",
+         "contents": "stringValue=\"${1:attributesTest:passByValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-listValue",
+         "contents": "listValue=\"${1:attributesTest:passByValue - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-mapValue",
+         "contents": "mapValue=\"${1:attributesTest:passByValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-changeEventTriggered",
+         "contents": "changeEventTriggered=\"${1:attributesTest:passByValue - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValue-pairAttr",
+         "contents": "pairAttr=\"${1:attributesTest:passByValue - Optional - java://org.auraframework.util.type.CustomPairType}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-renderCount",
+         "contents": "renderCount=\"${1:attributesTest:passByValueInner - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-rerenderCount",
+         "contents": "rerenderCount=\"${1:attributesTest:passByValueInner - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-booleanValue",
+         "contents": "booleanValue=\"${1:attributesTest:passByValueInner - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-numberValue",
+         "contents": "numberValue=\"${1:attributesTest:passByValueInner - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-stringValue",
+         "contents": "stringValue=\"${1:attributesTest:passByValueInner - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-listValue",
+         "contents": "listValue=\"${1:attributesTest:passByValueInner - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-mapValue",
+         "contents": "mapValue=\"${1:attributesTest:passByValueInner - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-changeEventTriggered",
+         "contents": "changeEventTriggered=\"${1:attributesTest:passByValueInner - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-passByValueInner-pairAttr",
+         "contents": "pairAttr=\"${1:attributesTest:passByValueInner - Optional - java://org.auraframework.util.type.CustomPairType}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-both",
+         "contents": "both=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-server",
+         "contents": "server=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-none",
+         "contents": "none=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-bothDefault",
+         "contents": "bothDefault=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-serverDefault",
+         "contents": "serverDefault=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-serializeTo-noneDefault",
+         "contents": "noneDefault=\"${1:attributesTest:serializeTo - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-componentDefault",
+         "contents": "componentDefault=\"${1:attributesTest:setValue - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-componentDefault2",
+         "contents": "componentDefault2=\"${1:attributesTest:setValue - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-mapAttributeWithDefaultValue",
+         "contents": "mapAttributeWithDefaultValue=\"${1:attributesTest:setValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-objAttributeWithDefaultValue",
+         "contents": "objAttributeWithDefaultValue=\"${1:attributesTest:setValue - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-listAttributeWithDefaultValue",
+         "contents": "listAttributeWithDefaultValue=\"${1:attributesTest:setValue - Optional - List}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-arrayAttributeWithDefaultValue",
+         "contents": "arrayAttributeWithDefaultValue=\"${1:attributesTest:setValue - Optional - Boolean[]}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-longDefaultWithStringPositiveInt",
+         "contents": "longDefaultWithStringPositiveInt=\"${1:attributesTest:setValue - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-integerDefaultWithStringPositiveInt",
+         "contents": "integerDefaultWithStringPositiveInt=\"${1:attributesTest:setValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-doubleDefaultWithStringPositiveInt",
+         "contents": "doubleDefaultWithStringPositiveInt=\"${1:attributesTest:setValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-decimalDefaultWithStringPositiveInt",
+         "contents": "decimalDefaultWithStringPositiveInt=\"${1:attributesTest:setValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-dateTimeDefaultWithString",
+         "contents": "dateTimeDefaultWithString=\"${1:attributesTest:setValue - Optional - DateTime}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-dateDefaultWithString",
+         "contents": "dateDefaultWithString=\"${1:attributesTest:setValue - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-stringDefaultWithString",
+         "contents": "stringDefaultWithString=\"${1:attributesTest:setValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-setValue-booleanDefaultWithStringFalse",
+         "contents": "booleanDefaultWithStringFalse=\"${1:attributesTest:setValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-attributesTest-simpleValue-strAttribute",
+         "contents": "strAttribute=\"${1:attributesTest:simpleValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-attributesTest-simpleValue-intAttribute",
+         "contents": "intAttribute=\"${1:attributesTest:simpleValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-actionsStorageTest-actionsStorageOn",
+         "contents": "actionsStorageOn=\"${1:auraStorageTest:actionsStorageTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-indexedDBCmp-key",
+         "contents": "key=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-indexedDBCmp-value",
+         "contents": "value=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-indexedDBCmp-return",
+         "contents": "return=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-indexedDBCmp-status",
+         "contents": "status=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-clearStorageOnInit",
+         "contents": "clearStorageOnInit=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-defaultExpiration",
+         "contents": "defaultExpiration=\"${1:auraStorageTest:initTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-defaultAutoRefreshInterval",
+         "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:initTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-requireUseStorageQueryParam",
+         "contents": "requireUseStorageQueryParam=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-persistent",
+         "contents": "persistent=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-version",
+         "contents": "version=\"${1:auraStorageTest:initTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-host",
+         "contents": "host=\"${1:auraStorageTest:initTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-actionStatus",
+         "contents": "actionStatus=\"${1:auraStorageTest:initTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-initTest-dupNamedStorage",
+         "contents": "dupNamedStorage=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-newComponent-defaultExpiration",
+         "contents": "defaultExpiration=\"${1:auraStorageTest:newComponent - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-newComponent-defaultAutoRefreshInterval",
+         "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:newComponent - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-playerFacet-name",
+         "contents": "name=\"${1:auraStorageTest:playerFacet - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-playerFacet-nickName",
+         "contents": "nickName=\"${1:auraStorageTest:playerFacet - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-serverStorableTest-responseOrder",
+         "contents": "responseOrder=\"${1:auraStorageTest:serverStorableTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-serverStorableTest-defaultExpiration",
+         "contents": "defaultExpiration=\"${1:auraStorageTest:serverStorableTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-serverStorableTest-defaultAutoRefreshInterval",
+         "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:serverStorableTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-teamFacet-name",
+         "contents": "name=\"${1:auraStorageTest:teamFacet - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auraStorageTest-teamFacet-city",
+         "contents": "city=\"${1:auraStorageTest:teamFacet - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-access-currentTest",
+         "contents": "currentTest=\"${1:auratest:access - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-access-Private",
+         "contents": "Private=\"${1:auratest:access - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-access-Public",
+         "contents": "Public=\"${1:auratest:access - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-access-Internal",
+         "contents": "Internal=\"${1:auratest:access - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-access-Global",
+         "contents": "Global=\"${1:auratest:access - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-auraMethod-outputStringAttr",
+         "contents": "outputStringAttr=\"${1:auratest:auraMethod - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-baseInputTest-cmpType",
+         "contents": "cmpType=\"${1:auratest:baseInputTest - Optional - string}\""
+      },
+      {
+         "trigger": "attr-auratest-baseInputTest-ref",
+         "contents": "ref=\"${1:auratest:baseInputTest - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassChild-errorOutFromHelper_Child",
+         "contents": "errorOutFromHelper_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassChild-errorOutFromRender_Child",
+         "contents": "errorOutFromRender_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassChild-errorOutFromAfterRender_Child",
+         "contents": "errorOutFromAfterRender_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassChild-errorOutFromReRender_Child",
+         "contents": "errorOutFromReRender_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassChild-errorOutFromUnRender_Child",
+         "contents": "errorOutFromUnRender_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testParent",
+         "contents": "testParent=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testParentInIteration",
+         "contents": "testParentInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testChild",
+         "contents": "testChild=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testChildInIteration",
+         "contents": "testChildInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testGrandChildServer",
+         "contents": "testGrandChildServer=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testGrandChildServerInIteration",
+         "contents": "testGrandChildServerInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testGrandChildClient",
+         "contents": "testGrandChildClient=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testGrandChildClientInIteration",
+         "contents": "testGrandChildClientInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderGrandChildClientProvider",
+         "contents": "testServerProviderGrandChildClientProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testClientProviderGrandChildClientProvider",
+         "contents": "testClientProviderGrandChildClientProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testClientProviderGrandChildClientProviderInIteration",
+         "contents": "testClientProviderGrandChildClientProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderGrandChildClientProviderInIteration",
+         "contents": "testServerProviderGrandChildClientProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderClientProviderGrandChildClientProvider",
+         "contents": "testServerProviderClientProviderGrandChildClientProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderClientProviderGrandChildClientProviderInIteration",
+         "contents": "testServerProviderClientProviderGrandChildClientProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderGrandChildServerProvider",
+         "contents": "testServerProviderGrandChildServerProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testClientProviderGrandChildServerProvider",
+         "contents": "testClientProviderGrandChildServerProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderGrandChildServerProviderInIteration",
+         "contents": "testServerProviderGrandChildServerProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testClientProviderGrandChildServerProviderInIteration",
+         "contents": "testClientProviderGrandChildServerProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderClientProviderGrandChildServerProvider",
+         "contents": "testServerProviderClientProviderGrandChildServerProvider=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-testServerProviderClientProviderGrandChildServerProviderInIteration",
+         "contents": "testServerProviderClientProviderGrandChildServerProviderInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-shouldRender",
+         "contents": "shouldRender=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-shouldCreate",
+         "contents": "shouldCreate=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-iterationItems",
+         "contents": "iterationItems=\"${1:auratest:componentClassLifecycleTest - Optional - List}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-iterationForceServer",
+         "contents": "iterationForceServer=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-cmpDef",
+         "contents": "cmpDef=\"${1:auratest:componentClassLifecycleTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-errorOutFrom",
+         "contents": "errorOutFrom=\"${1:auratest:componentClassLifecycleTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassLifecycleTest-logFilter",
+         "contents": "logFilter=\"${1:auratest:componentClassLifecycleTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-id",
+         "contents": "id=\"${1:auratest:componentClassParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-value",
+         "contents": "value=\"${1:auratest:componentClassParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-errorOutFromHelper_Parent",
+         "contents": "errorOutFromHelper_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-errorOutFromRender_Parent",
+         "contents": "errorOutFromRender_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-errorOutFromAfterRender_Parent",
+         "contents": "errorOutFromAfterRender_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-errorOutFromReRender_Parent",
+         "contents": "errorOutFromReRender_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassParent-errorOutFromUnRender_Parent",
+         "contents": "errorOutFromUnRender_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-iterationForceServer",
+         "contents": "iterationForceServer=\"${1:auratest:componentClassServerProviderIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-shouldCreate1",
+         "contents": "shouldCreate1=\"${1:auratest:componentClassServerProviderIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-shouldCreate2",
+         "contents": "shouldCreate2=\"${1:auratest:componentClassServerProviderIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-shouldCreate3",
+         "contents": "shouldCreate3=\"${1:auratest:componentClassServerProviderIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-shouldCreate4",
+         "contents": "shouldCreate4=\"${1:auratest:componentClassServerProviderIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-componentClassServerProviderIteration-iterationItems",
+         "contents": "iterationItems=\"${1:auratest:componentClassServerProviderIteration - Optional - List}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-renderCount",
+         "contents": "renderCount=\"${1:auratest:eventCounter - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-rerenderCount",
+         "contents": "rerenderCount=\"${1:auratest:eventCounter - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-unrenderCount",
+         "contents": "unrenderCount=\"${1:auratest:eventCounter - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-passthrough",
+         "contents": "passthrough=\"${1:auratest:eventCounter - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-passthroughObj",
+         "contents": "passthroughObj=\"${1:auratest:eventCounter - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-auratest-eventCounter-dirty",
+         "contents": "dirty=\"${1:auratest:eventCounter - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-fastClickDomEvents-outterEvent",
+         "contents": "outterEvent=\"${1:auratest:fastClickDomEvents - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-fastClickDomEvents-middleEvent",
+         "contents": "middleEvent=\"${1:auratest:fastClickDomEvents - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-fastClickDomEvents-innerEvent",
+         "contents": "innerEvent=\"${1:auratest:fastClickDomEvents - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-html-clickCount",
+         "contents": "clickCount=\"${1:auratest:html - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-html-classValue",
+         "contents": "classValue=\"${1:auratest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-html-mouseOverEvent",
+         "contents": "mouseOverEvent=\"${1:auratest:html - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-html-mouseOutEvent",
+         "contents": "mouseOutEvent=\"${1:auratest:html - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-html-type",
+         "contents": "type=\"${1:auratest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-html-style",
+         "contents": "style=\"${1:auratest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-html-dataName",
+         "contents": "dataName=\"${1:auratest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-html-href",
+         "contents": "href=\"${1:auratest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-htmlComponent-testUndefinedTagAttr",
+         "contents": "testUndefinedTagAttr=\"${1:auratest:htmlComponent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-htmlComponent-testNoTagAttr",
+         "contents": "testNoTagAttr=\"${1:auratest:htmlComponent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-jsmock-providedAttribute",
+         "contents": "providedAttribute=\"${1:auratest:jsmock - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-label-value",
+         "contents": "value=\"${1:auratest:label - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-label-string",
+         "contents": "string=\"${1:auratest:label - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-label-boolean",
+         "contents": "boolean=\"${1:auratest:label - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-label-double",
+         "contents": "double=\"${1:auratest:label - Optional - double}\""
+      },
+      {
+         "trigger": "attr-auratest-label-undef",
+         "contents": "undef=\"${1:auratest:label - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-auratest-label-noll",
+         "contents": "noll=\"${1:auratest:label - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-auratest-logPanel-logs",
+         "contents": "logs=\"${1:auratest:logPanel - Optional - List}\""
+      },
+      {
+         "trigger": "attr-auratest-logPanel-filter",
+         "contents": "filter=\"${1:auratest:logPanel - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-require-version",
+         "contents": "version=\"${1:auratest:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-require-cmpExist",
+         "contents": "cmpExist=\"${1:auratest:require - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-require-versionInRender",
+         "contents": "versionInRender=\"${1:auratest:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-require-versionInAfterRender",
+         "contents": "versionInAfterRender=\"${1:auratest:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-require-versionInRerender",
+         "contents": "versionInRerender=\"${1:auratest:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-requireConsumer-consumedCmp",
+         "contents": "consumedCmp=\"${1:auratest:requireConsumer - Optional - Aura.Component}\""
+      },
+      {
+         "trigger": "attr-auratest-requireConsumer-versionInConsumedCmp",
+         "contents": "versionInConsumedCmp=\"${1:auratest:requireConsumer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-requireConsumer-actionDone",
+         "contents": "actionDone=\"${1:auratest:requireConsumer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-requireWithModel-actionDone",
+         "contents": "actionDone=\"${1:auratest:requireWithModel - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-requireWithModel-version",
+         "contents": "version=\"${1:auratest:requireWithModel - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderAbstract-toggleAbstract",
+         "contents": "toggleAbstract=\"${1:auratest:rerenderAbstract - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderChild-title",
+         "contents": "title=\"${1:auratest:rerenderChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderChild-toggleChild",
+         "contents": "toggleChild=\"${1:auratest:rerenderChild - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderChild-ownRenderCounter",
+         "contents": "ownRenderCounter=\"${1:auratest:rerenderChild - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderCounter-count",
+         "contents": "count=\"${1:auratest:rerenderCounter - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-rerenderParent-toggleParent",
+         "contents": "toggleParent=\"${1:auratest:rerenderParent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-testComponent1-myString",
+         "contents": "myString=\"${1:auratest:testComponent1 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-testComponent2-myInteger",
+         "contents": "myInteger=\"${1:auratest:testComponent2 - Required - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-testComponent3-myBoolean",
+         "contents": "myBoolean=\"${1:auratest:testComponent3 - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-testForEachDefChild-numbers",
+         "contents": "numbers=\"${1:auratest:testForEachDefChild - Optional - Account}\""
+      },
+      {
+         "trigger": "attr-auratest-testPerfRunnerContainer-scope",
+         "contents": "scope=\"${1:auratest:testPerfRunnerContainer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-testPerfRunnerContainer-keyword",
+         "contents": "keyword=\"${1:auratest:testPerfRunnerContainer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_CompoundFormula_NonString-NameString",
+         "contents": "NameString=\"${1:auratest:test_CompoundFormula_NonString - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_CompoundFormula_NonString-Acc",
+         "contents": "Acc=\"${1:auratest:test_CompoundFormula_NonString - Optional - Account}\""
+      },
+      {
+         "trigger": "attr-auratest-test_InfiniteListButton-item",
+         "contents": "item=\"${1:auratest:test_InfiniteListButton - Required - Object}\""
+      },
+      {
+         "trigger": "attr-auratest-test_Labels_Positive-labelSection",
+         "contents": "labelSection=\"${1:auratest:test_Labels_Positive - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_Model_Parent-attrInParent",
+         "contents": "attrInParent=\"${1:auratest:test_Model_Parent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_Relationship_Query1-contactAttr",
+         "contents": "contactAttr=\"${1:auratest:test_Relationship_Query1 - Optional - Contact}\""
+      },
+      {
+         "trigger": "attr-auratest-test_Relationship_Query2-contactId",
+         "contents": "contactId=\"${1:auratest:test_Relationship_Query2 - Optional - Id}\""
+      },
+      {
+         "trigger": "attr-auratest-test_button-label",
+         "contents": "label=\"${1:auratest:test_button - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_button-class",
+         "contents": "class=\"${1:auratest:test_button - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_css_a-content",
+         "contents": "content=\"${1:auratest:test_css_a - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_css_b-content",
+         "contents": "content=\"${1:auratest:test_css_b - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_css_c-content",
+         "contents": "content=\"${1:auratest:test_css_c - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-test_css_d-content",
+         "contents": "content=\"${1:auratest:test_css_d - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-text-value",
+         "contents": "value=\"${1:auratest:text - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-text-truncate",
+         "contents": "truncate=\"${1:auratest:text - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-auratest-text-ellipsis",
+         "contents": "ellipsis=\"${1:auratest:text - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-text-truncateByWord",
+         "contents": "truncateByWord=\"${1:auratest:text - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-auratest-unescapedHtml-value",
+         "contents": "value=\"${1:auratest:unescapedHtml - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-unrenderComponent-name",
+         "contents": "name=\"${1:auratest:unrenderComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-auratest-versioningSuper-versionInSuperCmp",
+         "contents": "versionInSuperCmp=\"${1:auratest:versioningSuper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-clientApiTest-arrayIndexOf-array",
+         "contents": "array=\"${1:clientApiTest:arrayIndexOf - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-clientApiTest-eventBinding-focusEvent",
+         "contents": "focusEvent=\"${1:clientApiTest:eventBinding - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-clientApiTest-eventBinding-blurEvent",
+         "contents": "blurEvent=\"${1:clientApiTest:eventBinding - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-clientApiTest-eventBinding-clickCount",
+         "contents": "clickCount=\"${1:clientApiTest:eventBinding - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-clientServiceTest-enqueueAction-log",
+         "contents": "log=\"${1:clientServiceTest:enqueueAction - Optional - List}\""
+      },
+      {
+         "trigger": "attr-componentTest-appendComponent-descriptor",
+         "contents": "descriptor=\"${1:componentTest:appendComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-appendComponent-value",
+         "contents": "value=\"${1:componentTest:appendComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-appendComponent-output",
+         "contents": "output=\"${1:componentTest:appendComponent - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-clientComponent-outputValue",
+         "contents": "outputValue=\"${1:componentTest:clientComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-componentBodyWithChanges-colors",
+         "contents": "colors=\"${1:componentTest:componentBodyWithChanges - Optional - List}\""
+      },
+      {
+         "trigger": "attr-componentTest-createComponent-handledEvent",
+         "contents": "handledEvent=\"${1:componentTest:createComponent - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-destroy-cmpDestroyed",
+         "contents": "cmpDestroyed=\"${1:componentTest:destroy - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-destroy-childCmpDestroyed",
+         "contents": "childCmpDestroyed=\"${1:componentTest:destroy - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-destroy-cmpAttribute",
+         "contents": "cmpAttribute=\"${1:componentTest:destroy - Optional - Aura.Component}\""
+      },
+      {
+         "trigger": "attr-componentTest-destroy-cmpArrayAttribute",
+         "contents": "cmpArrayAttribute=\"${1:componentTest:destroy - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-destroy-objWithDestroy",
+         "contents": "objWithDestroy=\"${1:componentTest:destroy - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-componentTest-findWithDefRefs-singleElement",
+         "contents": "singleElement=\"${1:componentTest:findWithDefRefs - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-findWithDefRefs-dupElement",
+         "contents": "dupElement=\"${1:componentTest:findWithDefRefs - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-getComponent-cmpGlobalId",
+         "contents": "cmpGlobalId=\"${1:componentTest:getComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-hasModel-value",
+         "contents": "value=\"${1:componentTest:hasModel - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-hasModel-headerComponents",
+         "contents": "headerComponents=\"${1:componentTest:hasModel - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-hasModel-innerComponents",
+         "contents": "innerComponents=\"${1:componentTest:hasModel - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-hasModel-footerComponents",
+         "contents": "footerComponents=\"${1:componentTest:hasModel - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-knowParent-parent",
+         "contents": "parent=\"${1:componentTest:knowParent - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-labelTest-pattern",
+         "contents": "pattern=\"${1:componentTest:labelTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-labelTest-date",
+         "contents": "date=\"${1:componentTest:labelTest - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-componentTest-labelTest-userId",
+         "contents": "userId=\"${1:componentTest:labelTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-labelTest-userName",
+         "contents": "userName=\"${1:componentTest:labelTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-require-version",
+         "contents": "version=\"${1:componentTest:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-simpleExtends-title",
+         "contents": "title=\"${1:componentTest:simpleExtends - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorFromRender",
+         "contents": "throwErrorFromRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorFromReRender",
+         "contents": "throwErrorFromReRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorFromUnRender",
+         "contents": "throwErrorFromUnRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-outputValue",
+         "contents": "outputValue=\"${1:componentTest:throwError - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorInnerFromRender",
+         "contents": "throwErrorInnerFromRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorInnerFromReRender",
+         "contents": "throwErrorInnerFromReRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-throwErrorInnerFromUnRender",
+         "contents": "throwErrorInnerFromUnRender=\"${1:componentTest:throwError - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwError-newCmp",
+         "contents": "newCmp=\"${1:componentTest:throwError - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwErrorInner-throwErrorFromRender",
+         "contents": "throwErrorFromRender=\"${1:componentTest:throwErrorInner - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwErrorInner-throwErrorFromReRender",
+         "contents": "throwErrorFromReRender=\"${1:componentTest:throwErrorInner - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwErrorInner-throwErrorFromUnRender",
+         "contents": "throwErrorFromUnRender=\"${1:componentTest:throwErrorInner - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-throwErrorInner-outputValue",
+         "contents": "outputValue=\"${1:componentTest:throwErrorInner - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-versionInServer-actionDone",
+         "contents": "actionDone=\"${1:componentTest:versionInServer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-componentTest-versionInServer-version",
+         "contents": "version=\"${1:componentTest:versionInServer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-versioning-version",
+         "contents": "version=\"${1:componentTest:versioning - Optional - String}\""
+      },
+      {
+         "trigger": "attr-componentTest-versioning-actionDone",
+         "contents": "actionDone=\"${1:componentTest:versioning - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrayValue-first",
+         "contents": "first=\"${1:expressionTest:arrayValue - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrayValue-second",
+         "contents": "second=\"${1:expressionTest:arrayValue - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrayValue-firstArrayLen",
+         "contents": "firstArrayLen=\"${1:expressionTest:arrayValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrayValue-secondArrayLen",
+         "contents": "secondArrayLen=\"${1:expressionTest:arrayValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-isNotSet",
+         "contents": "isNotSet=\"${1:expressionTest:arrays - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-stringArray",
+         "contents": "stringArray=\"${1:expressionTest:arrays - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-arrayAsObject",
+         "contents": "arrayAsObject=\"${1:expressionTest:arrays - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-componentArray",
+         "contents": "componentArray=\"${1:expressionTest:arrays - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-passedInArray",
+         "contents": "passedInArray=\"${1:expressionTest:arrays - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-expressionTest-arrays-passedInArrayLength",
+         "contents": "passedInArrayLength=\"${1:expressionTest:arrays - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-expressionTest-byValue-initValue",
+         "contents": "initValue=\"${1:expressionTest:byValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-byValue-booleanValue",
+         "contents": "booleanValue=\"${1:expressionTest:byValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-expressionTest-byValue-numberValue",
+         "contents": "numberValue=\"${1:expressionTest:byValue - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-expressionTest-byValue-stringValue",
+         "contents": "stringValue=\"${1:expressionTest:byValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-integer",
+         "contents": "integer=\"${1:expressionTest:functions - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-double",
+         "contents": "double=\"${1:expressionTest:functions - Optional - double}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-doubleString",
+         "contents": "doubleString=\"${1:expressionTest:functions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-string",
+         "contents": "string=\"${1:expressionTest:functions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-emptyString",
+         "contents": "emptyString=\"${1:expressionTest:functions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-Infinity",
+         "contents": "Infinity=\"${1:expressionTest:functions - Optional - double}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-NegativeInfinity",
+         "contents": "NegativeInfinity=\"${1:expressionTest:functions - Optional - double}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-NaN",
+         "contents": "NaN=\"${1:expressionTest:functions - Optional - double}\""
+      },
+      {
+         "trigger": "attr-expressionTest-functions-object",
+         "contents": "object=\"${1:expressionTest:functions - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-expressionTest-mapValue-map",
+         "contents": "map=\"${1:expressionTest:mapValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-expressionTest-mapValue-triggers",
+         "contents": "triggers=\"${1:expressionTest:mapValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-expressionTest-mapValue-triggers2",
+         "contents": "triggers2=\"${1:expressionTest:mapValue - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-expressionTest-mapValue-fribble",
+         "contents": "fribble=\"${1:expressionTest:mapValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-expressionTest-null-isNull",
+         "contents": "isNull=\"${1:expressionTest:null - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-simpleValue-booleanValue",
+         "contents": "booleanValue=\"${1:expressionTest:simpleValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-expressionTest-simpleValue-integerValue",
+         "contents": "integerValue=\"${1:expressionTest:simpleValue - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-expressionTest-simpleValue-stringValue",
+         "contents": "stringValue=\"${1:expressionTest:simpleValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-test-expression",
+         "contents": "expression=\"${1:expressionTest:test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-expressionTest-test-exprText",
+         "contents": "exprText=\"${1:expressionTest:test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-expressionTest-test-expected",
+         "contents": "expected=\"${1:expressionTest:test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-expressionTest-undefined-isNotSet",
+         "contents": "isNotSet=\"${1:expressionTest:undefined - Optional - String}\""
+      },
+      {
+         "trigger": "attr-flavorTest-bug_flavorMisappliedToInner-count",
+         "contents": "count=\"${1:flavorTest:bug_flavorMisappliedToInner - Required - String}\""
+      },
+      {
+         "trigger": "attr-flavorTest-dynamically_flavorable_rerender-count",
+         "contents": "count=\"${1:flavorTest:dynamically_flavorable_rerender - Required - String}\""
+      },
+      {
+         "trigger": "attr-flavorTest-expressions-flav",
+         "contents": "flav=\"${1:flavorTest:expressions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-basicDataType-string",
+         "contents": "string=\"${1:forEachDefTest:basicDataType - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-basicDataType-number",
+         "contents": "number=\"${1:forEachDefTest:basicDataType - Optional - Integer[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-basicDataType-bool",
+         "contents": "bool=\"${1:forEachDefTest:basicDataType - Optional - Boolean[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-collectionDataType-listofList",
+         "contents": "listofList=\"${1:forEachDefTest:collectionDataType - Optional - List}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-collectionDataType-Objects",
+         "contents": "Objects=\"${1:forEachDefTest:collectionDataType - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-emptyLists-string",
+         "contents": "string=\"${1:forEachDefTest:emptyLists - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-emptyLists-number",
+         "contents": "number=\"${1:forEachDefTest:emptyLists - Optional - Integer[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-emptyLists-bool",
+         "contents": "bool=\"${1:forEachDefTest:emptyLists - Optional - Boolean[]}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-string",
+         "contents": "string=\"${1:forEachDefTest:forEachDefDisplay - Optional - String}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-number",
+         "contents": "number=\"${1:forEachDefTest:forEachDefDisplay - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-bool",
+         "contents": "bool=\"${1:forEachDefTest:forEachDefDisplay - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-obj",
+         "contents": "obj=\"${1:forEachDefTest:forEachDefDisplay - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-map",
+         "contents": "map=\"${1:forEachDefTest:forEachDefDisplay - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-forEachDefTest-forEachDefDisplay-list",
+         "contents": "list=\"${1:forEachDefTest:forEachDefDisplay - Optional - List}\""
+      },
+      {
+         "trigger": "attr-gvpTest-customGVPTemplate-stringValue",
+         "contents": "stringValue=\"${1:gvpTest:customGVPTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-gvpTest-labelProvider-simplevalue1",
+         "contents": "simplevalue1=\"${1:gvpTest:labelProvider - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-gvpTest-labelProvider-simplevalue2",
+         "contents": "simplevalue2=\"${1:gvpTest:labelProvider - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-gvpTest-labelProvider-simplevalue3",
+         "contents": "simplevalue3=\"${1:gvpTest:labelProvider - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-gvpTest-labelProvider-simplevalue4",
+         "contents": "simplevalue4=\"${1:gvpTest:labelProvider - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-gvpTest-parseLabels-xxx",
+         "contents": "xxx=\"${1:gvpTest:parseLabels - Optional - String}\""
+      },
+      {
+         "trigger": "attr-gvpTest-parseLabels-yyy",
+         "contents": "yyy=\"${1:gvpTest:parseLabels - Optional - String}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIf-thang",
+         "contents": "thang=\"${1:ifTest:testIf - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfElse-thang",
+         "contents": "thang=\"${1:ifTest:testIfElse - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfNested-outer",
+         "contents": "outer=\"${1:ifTest:testIfNested - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfNested-inner",
+         "contents": "inner=\"${1:ifTest:testIfNested - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfServer-thang",
+         "contents": "thang=\"${1:ifTest:testIfServer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfWithIterationInside-bool1",
+         "contents": "bool1=\"${1:ifTest:testIfWithIterationInside - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testIfWithModel-attr",
+         "contents": "attr=\"${1:ifTest:testIfWithModel - Optional - String}\""
+      },
+      {
+         "trigger": "attr-ifTest-testRenderIfNested-outer",
+         "contents": "outer=\"${1:ifTest:testRenderIfNested - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-ifTest-testRenderIfNested-inner",
+         "contents": "inner=\"${1:ifTest:testRenderIfNested - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-integrationService-noHistoryService-txt",
+         "contents": "txt=\"${1:integrationService:noHistoryService - Optional - String}\""
+      },
+      {
+         "trigger": "attr-integrationService-simpleStub-placeholder",
+         "contents": "placeholder=\"${1:integrationService:simpleStub - Optional - String}\""
+      },
+      {
+         "trigger": "attr-integrationService-simpleStub-localId",
+         "contents": "localId=\"${1:integrationService:simpleStub - Optional - String}\""
+      },
+      {
+         "trigger": "attr-integrationService-simpleStub-desc",
+         "contents": "desc=\"${1:integrationService:simpleStub - Optional - String}\""
+      },
+      {
+         "trigger": "attr-integrationService-simpleStub-attrMap",
+         "contents": "attrMap=\"${1:integrationService:simpleStub - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-iterationTest-arrayIteration-newCmp",
+         "contents": "newCmp=\"${1:iterationTest:arrayIteration - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-arrayIterationNotPreloaded-value",
+         "contents": "value=\"${1:iterationTest:arrayIterationNotPreloaded - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-arrayIterationPreloaded-value",
+         "contents": "value=\"${1:iterationTest:arrayIterationPreloaded - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-showIteration",
+         "contents": "showIteration=\"${1:iterationTest:basicIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-items",
+         "contents": "items=\"${1:iterationTest:basicIteration - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-start",
+         "contents": "start=\"${1:iterationTest:basicIteration - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-end",
+         "contents": "end=\"${1:iterationTest:basicIteration - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-iterationCompleteFired",
+         "contents": "iterationCompleteFired=\"${1:iterationTest:basicIteration - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-iterationTest-basicIteration-iterationCompleteOperation",
+         "contents": "iterationCompleteOperation=\"${1:iterationTest:basicIteration - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-cmpWithDefaultAtt-messages",
+         "contents": "messages=\"${1:iterationTest:cmpWithDefaultAtt - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-cmpWithDefaultAtt-color",
+         "contents": "color=\"${1:iterationTest:cmpWithDefaultAtt - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-cmpWithDefaultAtt2-messages",
+         "contents": "messages=\"${1:iterationTest:cmpWithDefaultAtt2 - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-cmpWithDefaultAtt2-color",
+         "contents": "color=\"${1:iterationTest:cmpWithDefaultAtt2 - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-componentIteration-start",
+         "contents": "start=\"${1:iterationTest:componentIteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-componentIteration-end",
+         "contents": "end=\"${1:iterationTest:componentIteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-componentIteration-cmps",
+         "contents": "cmps=\"${1:iterationTest:componentIteration - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-diffTypeOfChildren-start",
+         "contents": "start=\"${1:iterationTest:diffTypeOfChildren - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-diffTypeOfChildren-end",
+         "contents": "end=\"${1:iterationTest:diffTypeOfChildren - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-listdata",
+         "contents": "listdata=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-listdata",
+         "contents": "listdata=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromAttribute_PassThroughValue-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ArrayFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ArrayFromModel_PassThroughValue-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ArrayFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-mapdata",
+         "contents": "mapdata=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-mapdata",
+         "contents": "mapdata=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromAttribute_PassThroughValue-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ObjectFromAttribute_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-start",
+         "contents": "start=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-end",
+         "contents": "end=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-indexToChange",
+         "contents": "indexToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-newValueToChange",
+         "contents": "newValueToChange=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-indexToInsert",
+         "contents": "indexToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-newValueToInsert",
+         "contents": "newValueToInsert=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationArrayValueChange_ObjectFromModel_PassThroughValue-indexToDelete",
+         "contents": "indexToDelete=\"${1:iterationTest:iterationArrayValueChange_ObjectFromModel_PassThroughValue - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationChildWJSProvider-strAttribute",
+         "contents": "strAttribute=\"${1:iterationTest:iterationChildWJSProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationChildWJSProvider-newStrAttribute",
+         "contents": "newStrAttribute=\"${1:iterationTest:iterationChildWJSProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationChildWithModel-fromiteration",
+         "contents": "fromiteration=\"${1:iterationTest:iterationChildWithModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationChildWithModel-fromparent",
+         "contents": "fromparent=\"${1:iterationTest:iterationChildWithModel - Optional - string}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWJSProviderOnly-cmpDescriptorName",
+         "contents": "cmpDescriptorName=\"${1:iterationTest:iterationWJSProviderOnly - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWJSProviderOnlyList-items",
+         "contents": "items=\"${1:iterationTest:iterationWJSProviderOnlyList - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithBodyTemplate-items",
+         "contents": "items=\"${1:iterationTest:iterationWithBodyTemplate - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithBodyTemplate-stringAttr",
+         "contents": "stringAttr=\"${1:iterationTest:iterationWithBodyTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithBodyTemplate-itemTemplate",
+         "contents": "itemTemplate=\"${1:iterationTest:iterationWithBodyTemplate - Required - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithBodyTemplateConsumer-stringAttr",
+         "contents": "stringAttr=\"${1:iterationTest:iterationWithBodyTemplateConsumer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithIfInside-list",
+         "contents": "list=\"${1:iterationTest:iterationWithIfInside - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithIfInside-start",
+         "contents": "start=\"${1:iterationTest:iterationWithIfInside - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithIfInside-end",
+         "contents": "end=\"${1:iterationTest:iterationWithIfInside - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithIfInside-showEven",
+         "contents": "showEven=\"${1:iterationTest:iterationWithIfInside - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithLabelInside-data",
+         "contents": "data=\"${1:iterationTest:iterationWithLabelInside - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithLabelInside-className",
+         "contents": "className=\"${1:iterationTest:iterationWithLabelInside - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWithModelInnerCmp-value",
+         "contents": "value=\"${1:iterationTest:iterationWithModelInnerCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-iterationWrapper-value",
+         "contents": "value=\"${1:iterationTest:iterationWrapper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-modifyDefRef-items",
+         "contents": "items=\"${1:iterationTest:modifyDefRef - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-modifyDefRef-cdr",
+         "contents": "cdr=\"${1:iterationTest:modifyDefRef - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-iterationTest-resetIteration-data",
+         "contents": "data=\"${1:iterationTest:resetIteration - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-resetIteration-innerClassName",
+         "contents": "innerClassName=\"${1:iterationTest:resetIteration - Optional - String}\""
+      },
+      {
+         "trigger": "attr-iterationTest-startAndEndIndexWithDefaults-items",
+         "contents": "items=\"${1:iterationTest:startAndEndIndexWithDefaults - Optional - List}\""
+      },
+      {
+         "trigger": "attr-iterationTest-startAndEndIndexWithDefaults-setIndexesInInit",
+         "contents": "setIndexesInInit=\"${1:iterationTest:startAndEndIndexWithDefaults - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-iterationTest-startAndEndIndexWithDefaults-start",
+         "contents": "start=\"${1:iterationTest:startAndEndIndexWithDefaults - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-startAndEndIndexWithDefaults-end",
+         "contents": "end=\"${1:iterationTest:startAndEndIndexWithDefaults - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-iterationTest-withLazyComponents-start",
+         "contents": "start=\"${1:iterationTest:withLazyComponents - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-withLazyComponents-end",
+         "contents": "end=\"${1:iterationTest:withLazyComponents - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-iterationTest-withLazyComponents-slowFacet",
+         "contents": "slowFacet=\"${1:iterationTest:withLazyComponents - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-iterationTest-withLazyComponents-fastFacet",
+         "contents": "fastFacet=\"${1:iterationTest:withLazyComponents - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-listTest-testListAttrItemTemplate-itemFromDataProvider",
+         "contents": "itemFromDataProvider=\"${1:listTest:testListAttrItemTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-listTest-testListAttrItemTemplate-itemFromThisComp",
+         "contents": "itemFromThisComp=\"${1:listTest:testListAttrItemTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-listTest-testListAttributeEvaluation-extraString",
+         "contents": "extraString=\"${1:listTest:testListAttributeEvaluation - Required - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-NonPreloadedServerComponent-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:NonPreloadedServerComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-NonPreloadedServerComponent-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:NonPreloadedServerComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientComponent-first",
+         "contents": "first=\"${1:loadLevelTest:clientComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientComponent-last",
+         "contents": "last=\"${1:loadLevelTest:clientComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientComponent-arrayOfMaps",
+         "contents": "arrayOfMaps=\"${1:loadLevelTest:clientComponent - Optional - List}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientProvidesServerCmp-value",
+         "contents": "value=\"${1:loadLevelTest:clientProvidesServerCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientWithLazyClientChild-status",
+         "contents": "status=\"${1:loadLevelTest:clientWithLazyClientChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-clientWithServerChild-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:clientWithServerChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-createNewCmp-testAttr",
+         "contents": "testAttr=\"${1:loadLevelTest:createNewCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-createNewCmp-testAttr2",
+         "contents": "testAttr2=\"${1:loadLevelTest:createNewCmp - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-createNewCmp-arrayOfMaps",
+         "contents": "arrayOfMaps=\"${1:loadLevelTest:createNewCmp - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-displayBoolean-bool",
+         "contents": "bool=\"${1:loadLevelTest:displayBoolean - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-displayMap-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:displayMap - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-displayMap-map",
+         "contents": "map=\"${1:loadLevelTest:displayMap - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-displayNumber-number",
+         "contents": "number=\"${1:loadLevelTest:displayNumber - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-displayStringArray-StringArray",
+         "contents": "StringArray=\"${1:loadLevelTest:displayStringArray - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-lazyLoadBasicTypes-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:lazyLoadBasicTypes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-lazyLoadBasicTypes-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:lazyLoadBasicTypes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-lazyLoadInRenderIf-flip",
+         "contents": "flip=\"${1:loadLevelTest:lazyLoadInRenderIf - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadLevel-testLazy",
+         "contents": "testLazy=\"${1:loadLevelTest:loadLevel - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadLevel-testExclusive",
+         "contents": "testExclusive=\"${1:loadLevelTest:loadLevel - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadLevel-testNestedLazy",
+         "contents": "testNestedLazy=\"${1:loadLevelTest:loadLevel - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadLevel-testMissingRequiredAttribute",
+         "contents": "testMissingRequiredAttribute=\"${1:loadLevelTest:loadLevel - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadSimpleAttributes-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:loadSimpleAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadSimpleAttributes-integerAttribute",
+         "contents": "integerAttribute=\"${1:loadLevelTest:loadSimpleAttributes - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadSimpleAttributes-booleanAttribute",
+         "contents": "booleanAttribute=\"${1:loadLevelTest:loadSimpleAttributes - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-loadSimpleAttributes-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:loadSimpleAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpHalfLoad-receiverCmp",
+         "contents": "receiverCmp=\"${1:loadLevelTest:newCmpHalfLoad - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpHalfLoad-receiverCmpAuraId",
+         "contents": "receiverCmpAuraId=\"${1:loadLevelTest:newCmpHalfLoad - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpHalfLoad-controllerFuncToCreateCmp",
+         "contents": "controllerFuncToCreateCmp=\"${1:loadLevelTest:newCmpHalfLoad - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpWithValueProvider-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:newCmpWithValueProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpWithValueProvider-nameAttribute",
+         "contents": "nameAttribute=\"${1:loadLevelTest:newCmpWithValueProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-newCmpWithValueProvider-numberAttribute",
+         "contents": "numberAttribute=\"${1:loadLevelTest:newCmpWithValueProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-serverComponent-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:serverComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-serverComponent-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:serverComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-serverComponentWReqAttr-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:serverComponentWReqAttr - Optional - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-serverComponentWReqAttr-stringAttribute",
+         "contents": "stringAttribute=\"${1:loadLevelTest:serverComponentWReqAttr - Required - String}\""
+      },
+      {
+         "trigger": "attr-loadLevelTest-serverWithLazyChild-waitId",
+         "contents": "waitId=\"${1:loadLevelTest:serverWithLazyChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_if-branch",
+         "contents": "branch=\"${1:miscTest:aura_if - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_if-enabled",
+         "contents": "enabled=\"${1:miscTest:aura_if - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_iteration-tochange",
+         "contents": "tochange=\"${1:miscTest:aura_iteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_iteration-newvalue",
+         "contents": "newvalue=\"${1:miscTest:aura_iteration - Optional - string}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_iteration-newEndIndex",
+         "contents": "newEndIndex=\"${1:miscTest:aura_iteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_iteration-inputValue",
+         "contents": "inputValue=\"${1:miscTest:aura_iteration - Optional - string}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_iteration-count",
+         "contents": "count=\"${1:miscTest:aura_iteration - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_renderif-count",
+         "contents": "count=\"${1:miscTest:aura_renderif - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-aura_renderif-nestedCount",
+         "contents": "nestedCount=\"${1:miscTest:aura_renderif - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-child-teamName",
+         "contents": "teamName=\"${1:miscTest:child - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-child-manager",
+         "contents": "manager=\"${1:miscTest:child - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-child-generalManager",
+         "contents": "generalManager=\"${1:miscTest:child - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-child-stadium",
+         "contents": "stadium=\"${1:miscTest:child - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-deepIteration-color",
+         "contents": "color=\"${1:miscTest:deepIteration - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-deepIteration-players",
+         "contents": "players=\"${1:miscTest:deepIteration - Optional - List}\""
+      },
+      {
+         "trigger": "attr-miscTest-deepIteration-start",
+         "contents": "start=\"${1:miscTest:deepIteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-deepIteration-end",
+         "contents": "end=\"${1:miscTest:deepIteration - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-grandParent-league",
+         "contents": "league=\"${1:miscTest:grandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-grandParent-startYear",
+         "contents": "startYear=\"${1:miscTest:grandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-grandParent-endYear",
+         "contents": "endYear=\"${1:miscTest:grandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-grandParent-president",
+         "contents": "president=\"${1:miscTest:grandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-color",
+         "contents": "color=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-city",
+         "contents": "city=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-country",
+         "contents": "country=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-state",
+         "contents": "state=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-nickname",
+         "contents": "nickname=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-greatGrandParent-geoLocation",
+         "contents": "geoLocation=\"${1:miscTest:greatGrandParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-htmlMarkup-color",
+         "contents": "color=\"${1:miscTest:htmlMarkup - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-infinitePerfDataProvider-listType",
+         "contents": "listType=\"${1:miscTest:infinitePerfDataProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-infinitePerfDataProvider-getDataFromServer",
+         "contents": "getDataFromServer=\"${1:miscTest:infinitePerfDataProvider - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-miscTest-infinitePerfDataProvider-multiplier",
+         "contents": "multiplier=\"${1:miscTest:infinitePerfDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-inheritance-color",
+         "contents": "color=\"${1:miscTest:inheritance - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateBasicData-color",
+         "contents": "color=\"${1:miscTest:iterateBasicData - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateBasicData-rowNumber",
+         "contents": "rowNumber=\"${1:miscTest:iterateBasicData - Optional - List}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateBasicData-start",
+         "contents": "start=\"${1:miscTest:iterateBasicData - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateBasicData-end",
+         "contents": "end=\"${1:miscTest:iterateBasicData - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateComponents-color",
+         "contents": "color=\"${1:miscTest:iterateComponents - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateComponents-start",
+         "contents": "start=\"${1:miscTest:iterateComponents - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateComponents-end",
+         "contents": "end=\"${1:miscTest:iterateComponents - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-iterateComponents-cmps",
+         "contents": "cmps=\"${1:miscTest:iterateComponents - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-miscTest-parent-division",
+         "contents": "division=\"${1:miscTest:parent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-parent-shortName",
+         "contents": "shortName=\"${1:miscTest:parent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-parent-founded",
+         "contents": "founded=\"${1:miscTest:parent - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-parent-mostTitles",
+         "contents": "mostTitles=\"${1:miscTest:parent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-registeredComponentsItem-item",
+         "contents": "item=\"${1:miscTest:registeredComponentsItem - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-miscTest-registeredComponentsItem-readonly",
+         "contents": "readonly=\"${1:miscTest:registeredComponentsItem - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_button-changeCount",
+         "contents": "changeCount=\"${1:miscTest:ui_button - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_infiniteList-multiplier",
+         "contents": "multiplier=\"${1:miscTest:ui_infiniteList - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDate-myDate",
+         "contents": "myDate=\"${1:miscTest:ui_inputDate - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate",
+         "contents": "myDate=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate1",
+         "contents": "myDate1=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate2",
+         "contents": "myDate2=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate3",
+         "contents": "myDate3=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate4",
+         "contents": "myDate4=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate5",
+         "contents": "myDate5=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate6",
+         "contents": "myDate6=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate7",
+         "contents": "myDate7=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate8",
+         "contents": "myDate8=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-myDate9",
+         "contents": "myDate9=\"${1:miscTest:ui_inputDateTime - Optional - Date}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputDateTime-count",
+         "contents": "count=\"${1:miscTest:ui_inputDateTime - Optional - int}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputSelect-count",
+         "contents": "count=\"${1:miscTest:ui_inputSelect - Optional - int}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_inputSelect-componentCount",
+         "contents": "componentCount=\"${1:miscTest:ui_inputSelect - Optional - int}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_list_template-label",
+         "contents": "label=\"${1:miscTest:ui_list_template - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_outputCheckbox-count",
+         "contents": "count=\"${1:miscTest:ui_outputCheckbox - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_outputEmail-count",
+         "contents": "count=\"${1:miscTest:ui_outputEmail - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_outputNumber-count",
+         "contents": "count=\"${1:miscTest:ui_outputNumber - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_outputPhone-count",
+         "contents": "count=\"${1:miscTest:ui_outputPhone - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_outputText-count",
+         "contents": "count=\"${1:miscTest:ui_outputText - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_tabset-caseToRender",
+         "contents": "caseToRender=\"${1:miscTest:ui_tabset - Optional - String}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_tabset-items",
+         "contents": "items=\"${1:miscTest:ui_tabset - Optional - List}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_tabset-endIndex",
+         "contents": "endIndex=\"${1:miscTest:ui_tabset - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-miscTest-ui_tabset-lazyRenderTabs",
+         "contents": "lazyRenderTabs=\"${1:miscTest:ui_tabset - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-perfTest-registeredComponentsItem-item",
+         "contents": "item=\"${1:perfTest:registeredComponentsItem - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-perfTest-registeredComponentsItem-readonly",
+         "contents": "readonly=\"${1:perfTest:registeredComponentsItem - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-performanceTest-runnerExample-loaded",
+         "contents": "loaded=\"${1:performanceTest:runnerExample - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-performanceTest-runnerExample2-loaded",
+         "contents": "loaded=\"${1:performanceTest:runnerExample2 - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-preloadTest-test_dynamicNamespace-whatToDo",
+         "contents": "whatToDo=\"${1:preloadTest:test_dynamicNamespace - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-clientProvider-value",
+         "contents": "value=\"${1:provider:clientProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-cmpWithModel-value",
+         "contents": "value=\"${1:provider:cmpWithModel - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-providerA-attA",
+         "contents": "attA=\"${1:provider:providerA - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-provider-providerA-type",
+         "contents": "type=\"${1:provider:providerA - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-providerB-attB",
+         "contents": "attB=\"${1:provider:providerB - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-provider-providerB-new1",
+         "contents": "new1=\"${1:provider:providerB - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-providerB-new2",
+         "contents": "new2=\"${1:provider:providerB - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-providerB-new3",
+         "contents": "new3=\"${1:provider:providerB - Optional - String}\""
+      },
+      {
+         "trigger": "attr-provider-providerBase-type",
+         "contents": "type=\"${1:provider:providerBase - Optional - String}\""
+      },
+      {
+         "trigger": "attr-renderingTest-arrayValues-simpleValueArray",
+         "contents": "simpleValueArray=\"${1:renderingTest:arrayValues - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-renderingTest-arrayValues-componentArray",
+         "contents": "componentArray=\"${1:renderingTest:arrayValues - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRenderer-renderCounter",
+         "contents": "renderCounter=\"${1:renderingTest:cmpWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRenderer-rerenderCounter",
+         "contents": "rerenderCounter=\"${1:renderingTest:cmpWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRenderer-unrenderCounter",
+         "contents": "unrenderCounter=\"${1:renderingTest:cmpWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRendererExtendWithRenderer-extendRenderCounter",
+         "contents": "extendRenderCounter=\"${1:renderingTest:cmpWithRendererExtendWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRendererExtendWithRenderer-extendRerenderCounter",
+         "contents": "extendRerenderCounter=\"${1:renderingTest:cmpWithRendererExtendWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-cmpWithRendererExtendWithRenderer-extendUnrenderCounter",
+         "contents": "extendUnrenderCounter=\"${1:renderingTest:cmpWithRendererExtendWithRenderer - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-conditionalRendering-stuffToRender",
+         "contents": "stuffToRender=\"${1:renderingTest:conditionalRendering - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-renderingTest-html-styleClass",
+         "contents": "styleClass=\"${1:renderingTest:html - Optional - String}\""
+      },
+      {
+         "trigger": "attr-renderingTest-renderCounter-index",
+         "contents": "index=\"${1:renderingTest:renderCounter - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-renderCounter-renderCount",
+         "contents": "renderCount=\"${1:renderingTest:renderCounter - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-renderCounter-rerenderCount",
+         "contents": "rerenderCount=\"${1:renderingTest:renderCounter - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-renderCounter-unrenderCount",
+         "contents": "unrenderCount=\"${1:renderingTest:renderCounter - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-renderCounter-onloadCount",
+         "contents": "onloadCount=\"${1:renderingTest:renderCounter - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-renderingTest-test-stringAttribute",
+         "contents": "stringAttribute=\"${1:renderingTest:test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-renderingTest-test-flag",
+         "contents": "flag=\"${1:renderingTest:test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-renderingTest-test-cmps",
+         "contents": "cmps=\"${1:renderingTest:test - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-renderingTest-testEventHandlerChain-stringValue",
+         "contents": "stringValue=\"${1:renderingTest:testEventHandlerChain - Optional - String}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-abstract-SimpleAttribute",
+         "contents": "SimpleAttribute=\"${1:setAttributesTest:abstract - Optional - string}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-attributesParent-city",
+         "contents": "city=\"${1:setAttributesTest:attributesParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-attributesParent-state",
+         "contents": "state=\"${1:setAttributesTest:attributesParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-attributesParent-address",
+         "contents": "address=\"${1:setAttributesTest:attributesParent - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-grandparent-SimpleAttribute",
+         "contents": "SimpleAttribute=\"${1:setAttributesTest:grandparent - Optional - java://String}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-grandparent-ComponentTypeAttribute",
+         "contents": "ComponentTypeAttribute=\"${1:setAttributesTest:grandparent - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-typeCoercion-stringAttribute",
+         "contents": "stringAttribute=\"${1:setAttributesTest:typeCoercion - Optional - String}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-typeCoercion-stringArrayAttribute",
+         "contents": "stringArrayAttribute=\"${1:setAttributesTest:typeCoercion - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-setAttributesTest-typeCoercion-listAttribute",
+         "contents": "listAttribute=\"${1:setAttributesTest:typeCoercion - Optional - List}\""
+      },
+      {
+         "trigger": "attr-test-accessAttributes-Private",
+         "contents": "Private=\"${1:test:accessAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-accessAttributes-Public",
+         "contents": "Public=\"${1:test:accessAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-accessAttributes-Internal",
+         "contents": "Internal=\"${1:test:accessAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-accessAttributes-Global",
+         "contents": "Global=\"${1:test:accessAttributes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-child1-attr",
+         "contents": "attr=\"${1:test:child1 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-componentDefRefArrayAttribute-cdrs",
+         "contents": "cdrs=\"${1:test:componentDefRefArrayAttribute - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-test-facetAttribute-atf",
+         "contents": "atf=\"${1:test:facetAttribute - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-test-facetAttributePassthrough-tf",
+         "contents": "tf=\"${1:test:facetAttributePassthrough - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-test-facetAttributePassthroughParent-something",
+         "contents": "something=\"${1:test:facetAttributePassthroughParent - Optional - string}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesign-something",
+         "contents": "something=\"${1:test:fakeDesign - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesign-else",
+         "contents": "else=\"${1:test:fakeDesign - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesign-entities",
+         "contents": "entities=\"${1:test:fakeDesign - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesignNonExistentInterface-something",
+         "contents": "something=\"${1:test:fakeDesignNonExistentInterface - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesignNonExistentInterface-else",
+         "contents": "else=\"${1:test:fakeDesignNonExistentInterface - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-fakeDesignNonExistentInterface-entities",
+         "contents": "entities=\"${1:test:fakeDesignNonExistentInterface - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-kitchenSink-strAttribute",
+         "contents": "strAttribute=\"${1:test:kitchenSink - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-kitchenSink-valueFromJSProvider",
+         "contents": "valueFromJSProvider=\"${1:test:kitchenSink - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-kitchenSink-valueFromJavaProvider",
+         "contents": "valueFromJavaProvider=\"${1:test:kitchenSink - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-parentComponent-parentAttribute",
+         "contents": "parentAttribute=\"${1:test:parentComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-require-version",
+         "contents": "version=\"${1:test:require - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-requireConsumer-consumedCmp",
+         "contents": "consumedCmp=\"${1:test:requireConsumer - Optional - Aura.Component}\""
+      },
+      {
+         "trigger": "attr-test-requireConsumer-versionInConsumedCmp",
+         "contents": "versionInConsumedCmp=\"${1:test:requireConsumer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionCallbacks-cbComplete",
+         "contents": "cbComplete=\"${1:test:testActionCallbacks - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionCallbacks-cbName",
+         "contents": "cbName=\"${1:test:testActionCallbacks - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionCallbacks-cbExpected",
+         "contents": "cbExpected=\"${1:test:testActionCallbacks - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionCallbacks-cbResult",
+         "contents": "cbResult=\"${1:test:testActionCallbacks - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionCallbacks-cbState",
+         "contents": "cbState=\"${1:test:testActionCallbacks - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-eventName",
+         "contents": "eventName=\"${1:test:testActionEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-eventParamName",
+         "contents": "eventParamName=\"${1:test:testActionEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-eventParamValue",
+         "contents": "eventParamValue=\"${1:test:testActionEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-response",
+         "contents": "response=\"${1:test:testActionEvent - Optional - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-data",
+         "contents": "data=\"${1:test:testActionEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionEvent-event",
+         "contents": "event=\"${1:test:testActionEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionExceptions-throwableClass",
+         "contents": "throwableClass=\"${1:test:testActionExceptions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionExceptions-throwableCause",
+         "contents": "throwableCause=\"${1:test:testActionExceptions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testActionExceptions-response",
+         "contents": "response=\"${1:test:testActionExceptions - Optional - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testActionExpressionChaining-push",
+         "contents": "push=\"${1:test:testActionExpressionChaining - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testActionExpressionChainingFixture-press",
+         "contents": "press=\"${1:test:testActionExpressionChainingFixture - Required - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testActionRef-pants",
+         "contents": "pants=\"${1:test:testActionRef - Optional - integer}\""
+      },
+      {
+         "trigger": "attr-test-testActionRefChild-put",
+         "contents": "put=\"${1:test:testActionRefChild - Optional - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testActionRefContainer-myActionRef",
+         "contents": "myActionRef=\"${1:test:testActionRefContainer - Optional - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-intName",
+         "contents": "intName=\"${1:test:testAuraTypes - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-longName",
+         "contents": "longName=\"${1:test:testAuraTypes - Optional - Long}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-doubleName",
+         "contents": "doubleName=\"${1:test:testAuraTypes - Optional - Double}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-decimalName",
+         "contents": "decimalName=\"${1:test:testAuraTypes - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-boolName",
+         "contents": "boolName=\"${1:test:testAuraTypes - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-stringName",
+         "contents": "stringName=\"${1:test:testAuraTypes - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-objectName",
+         "contents": "objectName=\"${1:test:testAuraTypes - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-mapName",
+         "contents": "mapName=\"${1:test:testAuraTypes - Optional - Map}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-listName",
+         "contents": "listName=\"${1:test:testAuraTypes - Optional - List}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-setName",
+         "contents": "setName=\"${1:test:testAuraTypes - Optional - Set}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-componentArrayName",
+         "contents": "componentArrayName=\"${1:test:testAuraTypes - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-componentName",
+         "contents": "componentName=\"${1:test:testAuraTypes - Optional - Aura.Component}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-componentDefRefArrayName",
+         "contents": "componentDefRefArrayName=\"${1:test:testAuraTypes - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-test-testAuraTypes-actionName",
+         "contents": "actionName=\"${1:test:testAuraTypes - Optional - Aura.Action}\""
+      },
+      {
+         "trigger": "attr-test-testDuplicateJSController-name",
+         "contents": "name=\"${1:test:testDuplicateJSController - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testEventBubbling-iterationIds",
+         "contents": "iterationIds=\"${1:test:testEventBubbling - Optional - List}\""
+      },
+      {
+         "trigger": "attr-test-testJSHelper-dirty",
+         "contents": "dirty=\"${1:test:testJSHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJSHelperSuperSuper-attr",
+         "contents": "attr=\"${1:test:testJSHelperSuperSuper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJSRenderer-label",
+         "contents": "label=\"${1:test:testJSRenderer - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJSRendererUsingHelper-label",
+         "contents": "label=\"${1:test:testJSRendererUsingHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJSTestSuite-num",
+         "contents": "num=\"${1:test:testJSTestSuite - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-test-testJSTestSuite-alpha",
+         "contents": "alpha=\"${1:test:testJSTestSuite - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJSTestSuiteWithoutAttributes-num",
+         "contents": "num=\"${1:test:testJSTestSuiteWithoutAttributes - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValues-a1",
+         "contents": "a1=\"${1:test:testJavaProviderSettingAttributeValues - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValues-a3",
+         "contents": "a3=\"${1:test:testJavaProviderSettingAttributeValues - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValues-a2",
+         "contents": "a2=\"${1:test:testJavaProviderSettingAttributeValues - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValues-value",
+         "contents": "value=\"${1:test:testJavaProviderSettingAttributeValues - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-a1",
+         "contents": "a1=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-a2",
+         "contents": "a2=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-ar1",
+         "contents": "ar1=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-b1",
+         "contents": "b1=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-b2",
+         "contents": "b2=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesHelper-value",
+         "contents": "value=\"${1:test:testJavaProviderSettingAttributeValuesHelper - Required - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfig-a1",
+         "contents": "a1=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfig - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfig-a2",
+         "contents": "a2=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfig - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfig-a3",
+         "contents": "a3=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfig - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfig-value",
+         "contents": "value=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfig - Required - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfigHelper-ar1",
+         "contents": "ar1=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfigHelper - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfigHelper-b1",
+         "contents": "b1=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfigHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfigHelper-b2",
+         "contents": "b2=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfigHelper - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testJavaProviderSettingAttributeValuesViaComponentConfigHelper-facet",
+         "contents": "facet=\"${1:test:testJavaProviderSettingAttributeValuesViaComponentConfigHelper - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-test-testNullExpressionAddition-dontset",
+         "contents": "dontset=\"${1:test:testNullExpressionAddition - Optional - string}\""
+      },
+      {
+         "trigger": "attr-test-testNullExpressionAddition-dontset2",
+         "contents": "dontset2=\"${1:test:testNullExpressionAddition - Optional - string}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIf-thang",
+         "contents": "thang=\"${1:test:testRenderIf - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIfElse-thang",
+         "contents": "thang=\"${1:test:testRenderIfElse - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIfElseLiteral-thang",
+         "contents": "thang=\"${1:test:testRenderIfElseLiteral - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIfEmptyBody-thang",
+         "contents": "thang=\"${1:test:testRenderIfEmptyBody - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIfUninitializedBody-thang",
+         "contents": "thang=\"${1:test:testRenderIfUninitializedBody - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-testRenderIfUninitializedBody-uninitializedBody",
+         "contents": "uninitializedBody=\"${1:test:testRenderIfUninitializedBody - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-test-testSingleBodyFacetParent-attr",
+         "contents": "attr=\"${1:test:testSingleBodyFacetParent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualList-template",
+         "contents": "template=\"${1:test:testVirtualList - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-id",
+         "contents": "id=\"${1:test:testVirtualListTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-index",
+         "contents": "index=\"${1:test:testVirtualListTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-name",
+         "contents": "name=\"${1:test:testVirtualListTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-balance",
+         "contents": "balance=\"${1:test:testVirtualListTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-friends",
+         "contents": "friends=\"${1:test:testVirtualListTemplate - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplate-counter",
+         "contents": "counter=\"${1:test:testVirtualListTemplate - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-test-testVirtualListTemplateChild-name",
+         "contents": "name=\"${1:test:testVirtualListTemplateChild - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_CompoundCntrlr-label",
+         "contents": "label=\"${1:test:test_CompoundCntrlr - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Events_ComponentForEvent-label",
+         "contents": "label=\"${1:test:test_Events_ComponentForEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Events_ComponentForEvent-classIdentifier",
+         "contents": "classIdentifier=\"${1:test:test_Events_ComponentForEvent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_IfToggle-check",
+         "contents": "check=\"${1:test:test_IfToggle - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-test-test_Preload_BadCmp-dup",
+         "contents": "dup=\"${1:test:test_Preload_BadCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Preload_BadCmp-dup",
+         "contents": "dup=\"${1:test:test_Preload_BadCmp - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_Abstract1-implNumber",
+         "contents": "implNumber=\"${1:test:test_Provider_Abstract1 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_Abstract2-implNumber",
+         "contents": "implNumber=\"${1:test:test_Provider_Abstract2 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_Concrete-whatToDo",
+         "contents": "whatToDo=\"${1:test:test_Provider_Concrete - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_Concrete-name",
+         "contents": "name=\"${1:test:test_Provider_Concrete - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_providerImpl1-ComponentSpecificAttr",
+         "contents": "ComponentSpecificAttr=\"${1:test:test_Provider_providerImpl1 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_providerImpl4-implNumber",
+         "contents": "implNumber=\"${1:test:test_Provider_providerImpl4 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_Provider_providerImplOverrideAttr-implNumber",
+         "contents": "implNumber=\"${1:test:test_Provider_providerImplOverrideAttr - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_button-label",
+         "contents": "label=\"${1:test:test_button - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-test_button-class",
+         "contents": "class=\"${1:test:test_button - Optional - String}\""
+      },
+      {
+         "trigger": "attr-test-text-value",
+         "contents": "value=\"${1:test:text - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-InputSelect_OptionsAttributeInitValue-whichToRender",
+         "contents": "whichToRender=\"${1:uitest:InputSelect_OptionsAttributeInitValue - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-accessibilityTool-caseToRender",
+         "contents": "caseToRender=\"${1:uitest:accessibilityTool - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-asyncImage_Test-defaultSrc",
+         "contents": "defaultSrc=\"${1:uitest:asyncImage_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-autoComplete_CustomOption-visible",
+         "contents": "visible=\"${1:uitest:autoComplete_CustomOption - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-autoComplete_CustomTemplate-value",
+         "contents": "value=\"${1:uitest:autoComplete_CustomTemplate - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-autoComplete_CustomTemplate-visible",
+         "contents": "visible=\"${1:uitest:autoComplete_CustomTemplate - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-autocomplete_TestDataProvider-dataType",
+         "contents": "dataType=\"${1:uitest:autocomplete_TestDataProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-badRenderer-skipRender",
+         "contents": "skipRender=\"${1:uitest:badRenderer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-badRenderer-skipAfterRender",
+         "contents": "skipAfterRender=\"${1:uitest:badRenderer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-badRenderer-skipRerender",
+         "contents": "skipRerender=\"${1:uitest:badRenderer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-badRenderer-skipUnrerender",
+         "contents": "skipUnrerender=\"${1:uitest:badRenderer - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-button_Test-iconAndLabelButtonPressedMessage",
+         "contents": "iconAndLabelButtonPressedMessage=\"${1:uitest:button_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-button_Test-labelOnlyButtonPressedMessage",
+         "contents": "labelOnlyButtonPressedMessage=\"${1:uitest:button_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-button_Test-iconOnlyButtonPressedMessage",
+         "contents": "iconOnlyButtonPressedMessage=\"${1:uitest:button_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-button_Test-isDomEventSet",
+         "contents": "isDomEventSet=\"${1:uitest:button_Test - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-carousel_Test-isPageChangeActionCalled",
+         "contents": "isPageChangeActionCalled=\"${1:uitest:carousel_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGridPureHtmlTest-total",
+         "contents": "total=\"${1:uitest:dataGridPureHtmlTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-pageSize",
+         "contents": "pageSize=\"${1:uitest:dataGrid_Actions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-currentPage",
+         "contents": "currentPage=\"${1:uitest:dataGrid_Actions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-totalPages",
+         "contents": "totalPages=\"${1:uitest:dataGrid_Actions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-sortBy",
+         "contents": "sortBy=\"${1:uitest:dataGrid_Actions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-totalItems",
+         "contents": "totalItems=\"${1:uitest:dataGrid_Actions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Actions-mode",
+         "contents": "mode=\"${1:uitest:dataGrid_Actions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-pageSize",
+         "contents": "pageSize=\"${1:uitest:dataGrid_ColumnsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-currentPage",
+         "contents": "currentPage=\"${1:uitest:dataGrid_ColumnsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-totalPages",
+         "contents": "totalPages=\"${1:uitest:dataGrid_ColumnsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-colCount",
+         "contents": "colCount=\"${1:uitest:dataGrid_ColumnsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-useSecondColumnType",
+         "contents": "useSecondColumnType=\"${1:uitest:dataGrid_ColumnsTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-appendOrOverwrite",
+         "contents": "appendOrOverwrite=\"${1:uitest:dataGrid_ColumnsTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-useDynamicColumns",
+         "contents": "useDynamicColumns=\"${1:uitest:dataGrid_ColumnsTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-sortBy",
+         "contents": "sortBy=\"${1:uitest:dataGrid_ColumnsTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_ColumnsTest-totalItems",
+         "contents": "totalItems=\"${1:uitest:dataGrid_ColumnsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-pageSize",
+         "contents": "pageSize=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-currentPage",
+         "contents": "currentPage=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-totalPages",
+         "contents": "totalPages=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-sortBy",
+         "contents": "sortBy=\"${1:uitest:dataGrid_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-numItems2Create",
+         "contents": "numItems2Create=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-currentRandNum",
+         "contents": "currentRandNum=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-totalItems",
+         "contents": "totalItems=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-mode",
+         "contents": "mode=\"${1:uitest:dataGrid_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-index",
+         "contents": "index=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_Test-count",
+         "contents": "count=\"${1:uitest:dataGrid_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_TestDataProvider-sortBy",
+         "contents": "sortBy=\"${1:uitest:dataGrid_TestDataProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_TestDataProvider-currentPage",
+         "contents": "currentPage=\"${1:uitest:dataGrid_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_TestDataProvider-pageSize",
+         "contents": "pageSize=\"${1:uitest:dataGrid_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_TestDataProvider-loadData",
+         "contents": "loadData=\"${1:uitest:dataGrid_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-dataGrid_TestDataProvider-totalPages",
+         "contents": "totalPages=\"${1:uitest:dataGrid_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-datePickerGrid_FirstWeekDayTest-firstDayOfWeek",
+         "contents": "firstDayOfWeek=\"${1:uitest:datePickerGrid_FirstWeekDayTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-datePickerGrid_FirstWeekDayTest-namesOfWeekdaysStr",
+         "contents": "namesOfWeekdaysStr=\"${1:uitest:datePickerGrid_FirstWeekDayTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-datePickerGrid_FirstWeekDayTest-totalWeekdays",
+         "contents": "totalWeekdays=\"${1:uitest:datePickerGrid_FirstWeekDayTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-datePickerManager_Test-value",
+         "contents": "value=\"${1:uitest:datePickerManager_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-datePicker_TodayButtonTest-showToday",
+         "contents": "showToday=\"${1:uitest:datePicker_TodayButtonTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-datePicker_TodayButtonTest-selectedDate",
+         "contents": "selectedDate=\"${1:uitest:datePicker_TodayButtonTest - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-demoMenuTrigger-label",
+         "contents": "label=\"${1:uitest:demoMenuTrigger - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-demoMenuTriggerDefault-label",
+         "contents": "label=\"${1:uitest:demoMenuTriggerDefault - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_dropzoneContext1",
+         "contents": "_dropzoneContext1=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_dropzoneContext2",
+         "contents": "_dropzoneContext2=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_dropzoneContext3",
+         "contents": "_dropzoneContext3=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_dropzoneContext4",
+         "contents": "_dropzoneContext4=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_draggableContext1",
+         "contents": "_draggableContext1=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_draggableContext2",
+         "contents": "_draggableContext2=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_draggableContext3",
+         "contents": "_draggableContext3=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_draggableContext4",
+         "contents": "_draggableContext4=\"${1:uitest:dragAndDrop_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_Test-_accessibilityComponent",
+         "contents": "_accessibilityComponent=\"${1:uitest:dragAndDrop_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_TestProvider-prefix",
+         "contents": "prefix=\"${1:uitest:dragAndDrop_TestProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-dragAndDrop_TestProvider-count",
+         "contents": "count=\"${1:uitest:dragAndDrop_TestProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider-listType",
+         "contents": "listType=\"${1:uitest:infiniteDataProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider-getDataFromServer",
+         "contents": "getDataFromServer=\"${1:uitest:infiniteDataProvider - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider_StorableActions-cachedDataRows",
+         "contents": "cachedDataRows=\"${1:uitest:infiniteDataProvider_StorableActions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider_StorableActions-serverDataRows",
+         "contents": "serverDataRows=\"${1:uitest:infiniteDataProvider_StorableActions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider_StorableActions-cachedTargetPage",
+         "contents": "cachedTargetPage=\"${1:uitest:infiniteDataProvider_StorableActions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteDataProvider_StorableActions-serverTargetPage",
+         "contents": "serverTargetPage=\"${1:uitest:infiniteDataProvider_StorableActions - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteListCscc_Test-isDoneRendering",
+         "contents": "isDoneRendering=\"${1:uitest:infiniteListCscc_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteListCscc_Test-isGetDataFromServer",
+         "contents": "isGetDataFromServer=\"${1:uitest:infiniteListCscc_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_ScrollerTest-extendedPullAtrib",
+         "contents": "extendedPullAtrib=\"${1:uitest:infiniteList_ScrollerTest - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_StorableActionsTest-cachedDataRows",
+         "contents": "cachedDataRows=\"${1:uitest:infiniteList_StorableActionsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_StorableActionsTest-serverDataRows",
+         "contents": "serverDataRows=\"${1:uitest:infiniteList_StorableActionsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_StorableActionsTest-cachedTargetPage",
+         "contents": "cachedTargetPage=\"${1:uitest:infiniteList_StorableActionsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_StorableActionsTest-serverTargetPage",
+         "contents": "serverTargetPage=\"${1:uitest:infiniteList_StorableActionsTest - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_Test-showMoreCallback",
+         "contents": "showMoreCallback=\"${1:uitest:infiniteList_Test - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_Test-refreshCallBack",
+         "contents": "refreshCallBack=\"${1:uitest:infiniteList_Test - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-infiniteList_Test-loaded",
+         "contents": "loaded=\"${1:uitest:infiniteList_Test - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDateRange_Test-startDate",
+         "contents": "startDate=\"${1:uitest:inputDateRange_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDateRange_Test-endDate",
+         "contents": "endDate=\"${1:uitest:inputDateRange_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDateTime_Test-value",
+         "contents": "value=\"${1:uitest:inputDateTime_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDateTime_Test-format",
+         "contents": "format=\"${1:uitest:inputDateTime_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDate_Test-value",
+         "contents": "value=\"${1:uitest:inputDate_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDate_TestCreation-addl",
+         "contents": "addl=\"${1:uitest:inputDate_TestCreation - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDate_TestCreation-count",
+         "contents": "count=\"${1:uitest:inputDate_TestCreation - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDefaultErrorDynamic_test-label",
+         "contents": "label=\"${1:uitest:inputDefaultErrorDynamic_test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDefaultErrorDynamic_test-name",
+         "contents": "name=\"${1:uitest:inputDefaultErrorDynamic_test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDefaultErrorDynamic_test-value",
+         "contents": "value=\"${1:uitest:inputDefaultErrorDynamic_test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDefaultErrorDynamic_test-newClass",
+         "contents": "newClass=\"${1:uitest:inputDefaultErrorDynamic_test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputDefaultError_Test-caseToRender",
+         "contents": "caseToRender=\"${1:uitest:inputDefaultError_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputErrorComponent-errors",
+         "contents": "errors=\"${1:uitest:inputErrorComponent - Optional - Object[]}\""
+      },
+      {
+         "trigger": "attr-uitest-inputErrorComponent-ariaDescribedBy",
+         "contents": "ariaDescribedBy=\"${1:uitest:inputErrorComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputErrorComponent-domId",
+         "contents": "domId=\"${1:uitest:inputErrorComponent - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputError_CustomTest-errorMessage",
+         "contents": "errorMessage=\"${1:uitest:inputError_CustomTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputLocalizedNumber_Test-cmpType",
+         "contents": "cmpType=\"${1:uitest:inputLocalizedNumber_Test - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputLocalizedNumber_Test-ref",
+         "contents": "ref=\"${1:uitest:inputLocalizedNumber_Test - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-inputMultiSelect_NestedOptionsTest-testCmpName",
+         "contents": "testCmpName=\"${1:uitest:inputMultiSelect_NestedOptionsTest - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputMultiSelect_OverridingDefBehaviorTest-testCmpName",
+         "contents": "testCmpName=\"${1:uitest:inputMultiSelect_OverridingDefBehaviorTest - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputMultiSelect_Test-testCmpName",
+         "contents": "testCmpName=\"${1:uitest:inputMultiSelect_Test - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputNumber_Test-testCmpName",
+         "contents": "testCmpName=\"${1:uitest:inputNumber_Test - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputRadio_Test-myValueString",
+         "contents": "myValueString=\"${1:uitest:inputRadio_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputRadio_Test-myValueBoolean",
+         "contents": "myValueBoolean=\"${1:uitest:inputRadio_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputRichText_ExtendedTest-value",
+         "contents": "value=\"${1:uitest:inputRichText_ExtendedTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputRichText_Test-testCmpName",
+         "contents": "testCmpName=\"${1:uitest:inputRichText_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputRichText_Test-testContent",
+         "contents": "testContent=\"${1:uitest:inputRichText_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSearch_HandlingSearchEvent-searched",
+         "contents": "searched=\"${1:uitest:inputSearch_HandlingSearchEvent - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSearch_HandlingSearchEvent-value",
+         "contents": "value=\"${1:uitest:inputSearch_HandlingSearchEvent - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSearch_HandlingSearchEvent-showClear",
+         "contents": "showClear=\"${1:uitest:inputSearch_HandlingSearchEvent - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_CheckWarnings-case",
+         "contents": "case=\"${1:uitest:inputSelect_CheckWarnings - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_DynamicOptions-whichOption",
+         "contents": "whichOption=\"${1:uitest:inputSelect_DynamicOptions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_OptionsInBodySetValue-cities",
+         "contents": "cities=\"${1:uitest:inputSelect_OptionsInBodySetValue - Optional - String[]}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_OptionsInBodySetValue-condition",
+         "contents": "condition=\"${1:uitest:inputSelect_OptionsInBodySetValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_OptionsInBodySetValue-multi",
+         "contents": "multi=\"${1:uitest:inputSelect_OptionsInBodySetValue - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputSelect_SemiColonOptions-selectedValue",
+         "contents": "selectedValue=\"${1:uitest:inputSelect_SemiColonOptions - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputTextArea_MaxLength-maxlength",
+         "contents": "maxlength=\"${1:uitest:inputTextArea_MaxLength - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-inputTextArea_UpdateOnValueChange-value",
+         "contents": "value=\"${1:uitest:inputTextArea_UpdateOnValueChange - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_CutCopyPasteEventTest-copyEventFired",
+         "contents": "copyEventFired=\"${1:uitest:inputText_CutCopyPasteEventTest - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_CutCopyPasteEventTest-cutEventFired",
+         "contents": "cutEventFired=\"${1:uitest:inputText_CutCopyPasteEventTest - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_CutCopyPasteEventTest-pasteEventFired",
+         "contents": "pasteEventFired=\"${1:uitest:inputText_CutCopyPasteEventTest - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_CutCopyPasteEventTest-value",
+         "contents": "value=\"${1:uitest:inputText_CutCopyPasteEventTest - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_updateOnTest-isDomEventSet",
+         "contents": "isDomEventSet=\"${1:uitest:inputText_updateOnTest - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-inputText_updateOnWithLabelTest-isDomEventSet",
+         "contents": "isDomEventSet=\"${1:uitest:inputText_updateOnWithLabelTest - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-label_Test-whichPosition",
+         "contents": "whichPosition=\"${1:uitest:label_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-label_Test-labelTitle",
+         "contents": "labelTitle=\"${1:uitest:label_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-listSorterDataProvider-dataType",
+         "contents": "dataType=\"${1:uitest:listSorterDataProvider - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-listSorter_Test-cancelEventFired",
+         "contents": "cancelEventFired=\"${1:uitest:listSorter_Test - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-listSorter_Test-title",
+         "contents": "title=\"${1:uitest:listSorter_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-localStorageFiller-message",
+         "contents": "message=\"${1:uitest:localStorageFiller - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-menuItem_extend-zclass",
+         "contents": "zclass=\"${1:uitest:menuItem_extend - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-menuItem_extend-zlabel",
+         "contents": "zlabel=\"${1:uitest:menuItem_extend - Optional - string}\""
+      },
+      {
+         "trigger": "attr-uitest-outputNumber_BlankValue-noVal",
+         "contents": "noVal=\"${1:uitest:outputNumber_BlankValue - Optional - Decimal}\""
+      },
+      {
+         "trigger": "attr-uitest-output_themeingTest-item",
+         "contents": "item=\"${1:uitest:output_themeingTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2-instanceId",
+         "contents": "instanceId=\"${1:uitest:panel2 - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2-alias",
+         "contents": "alias=\"${1:uitest:panel2 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2-title",
+         "contents": "title=\"${1:uitest:panel2 - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2-visible",
+         "contents": "visible=\"${1:uitest:panel2 - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2-active",
+         "contents": "active=\"${1:uitest:panel2 - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2Content-counter",
+         "contents": "counter=\"${1:uitest:panel2Content - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-panelType",
+         "contents": "panelType=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-title",
+         "contents": "title=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-titleDisplay",
+         "contents": "titleDisplay=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-class",
+         "contents": "class=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-flavor",
+         "contents": "flavor=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-isVisible",
+         "contents": "isVisible=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-startOfDialogLabel",
+         "contents": "startOfDialogLabel=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-closeOnClickOut",
+         "contents": "closeOnClickOut=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-showCloseButton",
+         "contents": "showCloseButton=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-closeDialogLabel",
+         "contents": "closeDialogLabel=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-useTransition",
+         "contents": "useTransition=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-animation",
+         "contents": "animation=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-autoFocus",
+         "contents": "autoFocus=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-direction",
+         "contents": "direction=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-showPointer",
+         "contents": "showPointer=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-referenceElement",
+         "contents": "referenceElement=\"${1:uitest:panel2_Tester - Optional - Object}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-useReferenceElement",
+         "contents": "useReferenceElement=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-referenceElementSelector",
+         "contents": "referenceElementSelector=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-useHeader",
+         "contents": "useHeader=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-useFooter",
+         "contents": "useFooter=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-panelHeader",
+         "contents": "panelHeader=\"${1:uitest:panel2_Tester - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-panelFooter",
+         "contents": "panelFooter=\"${1:uitest:panel2_Tester - Optional - Aura.Component[]}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-makeScrollable",
+         "contents": "makeScrollable=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-nonScrollable",
+         "contents": "nonScrollable=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-customizeCloseAction",
+         "contents": "customizeCloseAction=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-panel2_Tester-closeActionCalled",
+         "contents": "closeActionCalled=\"${1:uitest:panel2_Tester - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-panelTest-autoFocus",
+         "contents": "autoFocus=\"${1:uitest:panelTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_AsOutputField-maxAllowed",
+         "contents": "maxAllowed=\"${1:uitest:pillContainer_AsOutputField - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_Bubbling-maxAllowed",
+         "contents": "maxAllowed=\"${1:uitest:pillContainer_Bubbling - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_WithAutoComplete-flavor",
+         "contents": "flavor=\"${1:uitest:pillContainer_WithAutoComplete - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_WithAutoComplete-maxLines",
+         "contents": "maxLines=\"${1:uitest:pillContainer_WithAutoComplete - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_WithAutoComplete-maxAllowed",
+         "contents": "maxAllowed=\"${1:uitest:pillContainer_WithAutoComplete - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_WithTextInput-pillInsertFired",
+         "contents": "pillInsertFired=\"${1:uitest:pillContainer_WithTextInput - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-pillContainer_WithTextInput-pillRemovedFired",
+         "contents": "pillRemovedFired=\"${1:uitest:pillContainer_WithTextInput - Optional - boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-popupTestFrame-frameId",
+         "contents": "frameId=\"${1:uitest:popupTestFrame - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-scroller_BidirectionalTest-scrollerId",
+         "contents": "scrollerId=\"${1:uitest:scroller_BidirectionalTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-scroller_Test-scrollToBottomCount",
+         "contents": "scrollToBottomCount=\"${1:uitest:scroller_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-scroller_basic-enabled",
+         "contents": "enabled=\"${1:uitest:scroller_basic - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-scroller_basicPerf-rows",
+         "contents": "rows=\"${1:uitest:scroller_basicPerf - Optional - List}\""
+      },
+      {
+         "trigger": "attr-uitest-tab_lazyCustomTab-rendered",
+         "contents": "rendered=\"${1:uitest:tab_lazyCustomTab - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_RegressionTest-renderItem",
+         "contents": "renderItem=\"${1:uitest:tabset_RegressionTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_RegressionTest-_extra",
+         "contents": "_extra=\"${1:uitest:tabset_RegressionTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_Test-renderItem",
+         "contents": "renderItem=\"${1:uitest:tabset_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_Test-lazyRender",
+         "contents": "lazyRender=\"${1:uitest:tabset_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_Test-closable",
+         "contents": "closable=\"${1:uitest:tabset_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_Test-conditionalShow",
+         "contents": "conditionalShow=\"${1:uitest:tabset_Test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_overflowTest-renderItem",
+         "contents": "renderItem=\"${1:uitest:tabset_overflowTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_overflowTest-newTabCloseable",
+         "contents": "newTabCloseable=\"${1:uitest:tabset_overflowTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tabset_overflowTest-newTabActive",
+         "contents": "newTabActive=\"${1:uitest:tabset_overflowTest - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-tooltipTest-renderItem",
+         "contents": "renderItem=\"${1:uitest:tooltipTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-tooltip_Test-renderItem",
+         "contents": "renderItem=\"${1:uitest:tooltip_Test - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGridItem-value",
+         "contents": "value=\"${1:uitest:virtualDataGridItem - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-sortBy",
+         "contents": "sortBy=\"${1:uitest:virtualDataGrid_columnsTests - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-pageSize",
+         "contents": "pageSize=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-currentPage",
+         "contents": "currentPage=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-totalItems",
+         "contents": "totalItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-index",
+         "contents": "index=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-count",
+         "contents": "count=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-className",
+         "contents": "className=\"${1:uitest:virtualDataGrid_columnsTests - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-rowIndex",
+         "contents": "rowIndex=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-gridItems",
+         "contents": "gridItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - List}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-gridSelectedItems",
+         "contents": "gridSelectedItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - List}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_columnsTests-provideNoData",
+         "contents": "provideNoData=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_onSortTest-sortBy",
+         "contents": "sortBy=\"${1:uitest:virtualDataGrid_onSortTest - Optional - String}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualDataGrid_test-testFixedHeader",
+         "contents": "testFixedHeader=\"${1:uitest:virtualDataGrid_test - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_Test-pageSize",
+         "contents": "pageSize=\"${1:uitest:virtualList_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_Test-currentPage",
+         "contents": "currentPage=\"${1:uitest:virtualList_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_Test-totalPages",
+         "contents": "totalPages=\"${1:uitest:virtualList_Test - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_Test-template",
+         "contents": "template=\"${1:uitest:virtualList_Test - Optional - Aura.ComponentDefRef[]}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_TestDataProvider-currentPage",
+         "contents": "currentPage=\"${1:uitest:virtualList_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_TestDataProvider-pageSize",
+         "contents": "pageSize=\"${1:uitest:virtualList_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_TestDataProvider-loadData",
+         "contents": "loadData=\"${1:uitest:virtualList_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_TestDataProvider-totalPages",
+         "contents": "totalPages=\"${1:uitest:virtualList_TestDataProvider - Optional - Integer}\""
+      },
+      {
+         "trigger": "attr-uitest-virtualList_TestDataProvider-empty",
+         "contents": "empty=\"${1:uitest:virtualList_TestDataProvider - Optional - Boolean}\""
+      },
+      {
+         "trigger": "attr-updateTest-updateWithoutHandling-text",
+         "contents": "text=\"${1:updateTest:updateWithoutHandling - Optional - string}\""
+      },
+      {
+         "trigger": "attr-valueChange-componentInit-strAttribute",
+         "contents": "strAttribute=\"${1:valueChange:componentInit - Optional - String}\""
+      },
+      {
+         "trigger": "attr-valueChange-simpleValueChange-observed",
+         "contents": "observed=\"${1:valueChange:simpleValueChange - Optional - String}\""
+      },
+      {
+         "trigger": "attr-valueChange-simpleValueChange-observedB",
+         "contents": "observedB=\"${1:valueChange:simpleValueChange - Optional - string}\""
+      },
+      {
+         "trigger": "attr-valueChange-simpleValueChange-observedC",
+         "contents": "observedC=\"${1:valueChange:simpleValueChange - Optional - string}\""
       }
    ]
 }
