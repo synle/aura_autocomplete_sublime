@@ -53,8 +53,8 @@ module.exports = function processParser(componentFileNames, outputDir){
 			var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
 			if(eventDictionary[evtNameKey]){
 				logger.error('Error!'.bold.red, evtName.yellow, ' is a duplicate');
-				logger.error('newfile'.bold.red, fileName.blue);
-				logger.error('existed'.bold.red, JSON.stringify(eventDictionary[evtName]));
+				logger.error('\tNewfile:'.underline.bold.red, fileName);
+				logger.error('\tExisted:'.underline.bold.red, eventDictionary[evtNameKey].fileName );
 			}
 			else{
 				eventDictionary[evtNameKey] = {

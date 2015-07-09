@@ -11,8 +11,8 @@ var logger = require('./logger');//internal logger
 //definitions
 var self = {
     readFromFile: function(path, silent) {
-        logger.info('Reading file...'.magenta.bold);
-        logger.info(path.yellow);
+        logger.debug('Reading file...'.magenta.bold);
+        logger.debug(path.yellow);
         return fs.readFileSync(path, 'utf-8');
     },
     listDir: function listDir(dir, res) {
@@ -232,7 +232,7 @@ var self = {
         };
     },
     writeToFile: function(string, path) {
-        logger.info(path.yellow);
+        logger.debug(path.yellow);
         fs.writeFileSync(path, string);
     },
     getBaseFileNameWithoutExtension: function(fileName){
