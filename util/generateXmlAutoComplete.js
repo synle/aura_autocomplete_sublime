@@ -15,7 +15,7 @@ module.exports = function processParser(baseDir, outputDir){
 	//read content files
 	var componentBaseDir = path.join(
 		baseDir,
-		'/aura-components/src/main/components'
+		'/'
 	);
 
 
@@ -28,6 +28,11 @@ module.exports = function processParser(baseDir, outputDir){
 
 	//find all cmp files in nested structures
 	var componentFileNames = parseHelper.listDir(componentBaseDir);
+
+
+	console.log('Statistics'.bold.underline.bgBlue.white);
+	console.log('evt', componentFileNames.evt.length);
+	console.log('cmp', componentFileNames.cmp.length);
 
 	//events stuffs
 	//reading and parsing the events
@@ -61,8 +66,8 @@ module.exports = function processParser(baseDir, outputDir){
 			var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
 			if(eventDictionary[evtNameKey]){
 				console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
-				console.log('newfile'.bold.red, fileName.blue);
-				console.log('existed'.bold.red, eventDictionary[evtName].fileName.blue);
+				console.log('newfile'.bold.red, fileName.blue.bgWhite);
+				console.log('existed'.bold.red, JSON.stringify(eventDictionary[evtName]).bgWhite.blue);
 			}
 			else{
 				eventDictionary[evtNameKey] = {
@@ -102,6 +107,9 @@ module.exports = function processParser(baseDir, outputDir){
 
 		//parsing xml
 		parseString(fileContent, {async: true}, function (err, result) {
+			if (result === undefined || result['aura:component'] === undefined ){
+				return;
+			}
 			var componentParsedXml = result['aura:component'];
 			var componentParsedObj = componentParsedXml.$ || {};
 
