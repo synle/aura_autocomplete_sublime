@@ -31,8 +31,8 @@ module.exports = function processParser(baseDir, outputDir){
 
 
 	console.log('Statistics'.bold.underline.bgBlue.white);
-	console.log('evt', componentFileNames.evt.length);
-	console.log('cmp', componentFileNames.cmp.length);
+	console.log('.evt Files:'.bold, componentFileNames.evt.length);
+	console.log('.cmp Files:'.bold, componentFileNames.cmp.length);
 
 	//events stuffs
 	//reading and parsing the events
@@ -66,8 +66,8 @@ module.exports = function processParser(baseDir, outputDir){
 			var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
 			if(eventDictionary[evtNameKey]){
 				console.log('Error'.bold.red, evtName.yellow, ' is a duplicate');
-				console.log('newfile'.bold.red, fileName.blue.bgWhite);
-				console.log('existed'.bold.red, JSON.stringify(eventDictionary[evtName]).bgWhite.blue);
+				console.log('newfile'.bold.red, fileName.blue);
+				console.log('existed'.bold.red, JSON.stringify(eventDictionary[evtName]));
 			}
 			else{
 				eventDictionary[evtNameKey] = {
@@ -232,4 +232,7 @@ module.exports = function processParser(baseDir, outputDir){
 	parseHelper.updateTag(arrayComponents, outputDir);
 	parseHelper.updateTagAttr(arrayAttributes, outputDir);
 	parseHelper.updateHelper(helperDictionary, outputDir);
+
+
+
 }

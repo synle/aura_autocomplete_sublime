@@ -15,7 +15,16 @@ var promptSchema = config.prompt;
 var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
 var generateJsAutoComplete = require('./util/generateJsAutoComplete');
 
-if(process.argv[2]){
+if (process.env.baseDir !== undefined){
+	//when start with environment variables
+	//baseDir=/Users/sle/blt/app/main/core npm start
+	console.log('Retrived baseDir from Environment Variable');
+	processParser( 
+		process.env.baseDir,
+		config.outputDir
+	);
+}
+else if(process.argv[2]){
 	//if passed in command line via
 	//node generateJsAutoComplete.js /path/to/auragit
 	var baseDir;
