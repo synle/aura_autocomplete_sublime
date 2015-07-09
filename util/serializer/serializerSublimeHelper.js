@@ -117,7 +117,7 @@ var self = {
                 '//' + '  component: ' + evtObj.component,
                 '//' + '    evtName: ' + actualEvt.name,
                 '//' + '    evtType: '+ actualEvt.type,
-                '//' + 'description: ' + actualEvt.description || '',
+                '//' + 'description: ' + (actualEvt.description || ''),
                 'var e = cmp.find("${1:' + evtObj.component + '}").get("e.' + actualEvt.name + '");',
                 'e.setParams({'
             ];
