@@ -1,4 +1,7 @@
+var m = {};
+
 //depdencies
+var cheerio = require('cheerio')
 var path = require('path');
 var colors = require('colors');
 var parseString = require('xml2js').parseString;
@@ -64,49 +67,36 @@ module.exports = function processParser(componentFileNames, outputDir) {
 
     // logger.info('mappings'.red.bold, mappings)
     // logger.info('reverseMappings'.blue.bold, reverseMappings)
-
+    
+    
     parseHelper.writeToFile(JSON.stringify(mappings, null, 1), 		  'mappings.orig.json');
     parseHelper.writeToFile(JSON.stringify(reverseMappings, null, 1), 'mappings.reverse.json');
 
-
+    console.log(JSON.stringify(m, null, 2));
 
 
     //helpers
     function parseComponentsUsed(type, fileName, namespace, componentName, fileContent) {
         logger.debug(type.red.bold, namespace.red.bold, componentName.red.bold, fileName)
-        parseString(fileContent, {
-            async: true
-        }, function(err, result) {
-            parseRecursiveComponent(type, namespace, componentName, result);
+        
+        var myFormattedName = getFormattedName(type, namespace, componentName);
+
+        $ = cheerio.load( fileContent );
+        var tags = $('*');
+        _.forEach(tags, function(tag){
+            var tagName = tag.tagName;
+            if (tagName.indexOf(':') >= 0){
+                var curChildFormattedName = getFormattedNameFromString(tagName);
+
+                //bump the reverse tagName mappings
+                reverseMappings[tagName] = reverseMappings[tagName] || 0;
+                reverseMappings[tagName]++;
+
+                //increase my own count
+                mappings[myFormattedName][curChildFormattedName] = mappings[myFormattedName][curChildFormattedName] || 0;
+                mappings[myFormattedName][curChildFormattedName]++;
+            }
         });
-    }
-
-    function parseRecursiveComponent(type, namespace, componentName, obj) {
-    	var myFormattedName = getFormattedName(type, namespace, componentName);
-    	// logger.log(myFormattedName.red, obj);
-
-        //should we directly change the mappings
-        for (var k in obj){
-        	if (k.indexOf(':') >= 0){
-        		//hooks it up
-	        	var curChildFormattedName = getFormattedNameFromString(k);
-
-	        	//set default value for reverse maping
-	        	reverseMappings[curChildFormattedName] = reverseMappings[curChildFormattedName] || 0;
-
-	        	//increase count
-	        	if (_.isArray(obj[k])){
-	        		mappings[myFormattedName][curChildFormattedName] = obj[k].length;
-	        		reverseMappings[curChildFormattedName] += obj[k].length;
-	        	}
-        		else{
-        			//parse further
-	        		mappings[myFormattedName][curChildFormattedName] = 1;
-	        		reverseMappings[curChildFormattedName] += 1;
-        			parseRecursiveComponent(type, namespace, componentName, obj[k])
-        		}
-        	}
-        }
     }
 
     function getFormattedName(type, namespace, componentName) {
