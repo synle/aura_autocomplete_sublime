@@ -116,11 +116,12 @@ module.exports = function processParser(componentFileNames, outputDir) {
     }
 
     function getFormattedName(type, namespace, componentName) {
-        return type + '.' + namespace + '.' + componentName;
+        return type + '.' + namespace + ':' + componentName;
     }
 
     function getFormattedNameFromString(str){
-    	var splits = str.split(':');
-    	return 'cmp.' + splits[0] + '.' + splits[1];
+        return str;
+    	// var splits = str.split(':');
+    	// return splits[0] + '.' + splits[1];
     }
 };
