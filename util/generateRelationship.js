@@ -1,5 +1,3 @@
-var m = {};
-
 //depdencies
 var cheerio = require('cheerio')
 var path = require('path');
@@ -71,8 +69,6 @@ module.exports = function processParser(componentFileNames, outputDir) {
     
     parseHelper.writeToFile(JSON.stringify(mappings, null, 1), 		  'mappings.orig.json');
     parseHelper.writeToFile(JSON.stringify(reverseMappings, null, 1), 'mappings.reverse.json');
-
-    console.log(JSON.stringify(m, null, 2));
 
 
     //helpers
