@@ -15,6 +15,7 @@ var promptSchema = config.prompt;
 //internal dependencies
 var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
 var generateJsAutoComplete = require('./util/generateJsAutoComplete');
+var generateRelationship = require('./util/generateRelationship');
 
 //setting debug=2 will trigger full logging mode
 if (process.env.baseDir !== undefined){
@@ -80,6 +81,13 @@ function processParser(baseDir, outputDir){
 	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
 	logger.log('Helper.js Files:'.bold, componentFileNames.helperjs.length);
 	logger.log('js Files:'.bold, componentFileNames.js.length);
+
+
+	generateRelationship(
+		componentFileNames,
+		outputDir
+	);
+	return;
 		
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files
