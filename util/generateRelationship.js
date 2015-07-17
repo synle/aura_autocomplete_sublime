@@ -10,7 +10,8 @@ var logger = require('./logger'); //internal logger
 //outputDir: where to store the snippet
 module.exports = function processParser(componentFileNames, outputDir) {
     logger.log('   Parsing Relationship   '.rainbow.cyan.underline.bgBlack);
-    var mappings = {}; //from, to
+    var mappings = {}; //has-a mapping
+    var reverseMappings = {}; //uses-in mapping
     _.forEach(componentFileNames.app, function(fileName, idx) {
         var fileBreakups = parseHelper.getComponentBreakup(fileName);
         var namespace = fileBreakups[0];
@@ -61,7 +62,13 @@ module.exports = function processParser(componentFileNames, outputDir) {
     });
 
 
-    logger.info(mappings)
+    // logger.info('mappings'.red.bold, mappings)
+    // logger.info('reverseMappings'.blue.bold, reverseMappings)
+
+    parseHelper.writeToFile(JSON.stringify(mappings, null, 1), 		  'mappings.orig.json');
+    parseHelper.writeToFile(JSON.stringify(reverseMappings, null, 1), 'mappings.reverse.json');
+
+
 
 
     //helpers
@@ -84,13 +91,18 @@ module.exports = function processParser(componentFileNames, outputDir) {
         		//hooks it up
 	        	var curChildFormattedName = getFormattedNameFromString(k);
 
+	        	//set default value for reverse maping
+	        	reverseMappings[curChildFormattedName] = reverseMappings[curChildFormattedName] || 0;
+
 	        	//increase count
 	        	if (_.isArray(obj[k])){
 	        		mappings[myFormattedName][curChildFormattedName] = obj[k].length;
+	        		reverseMappings[curChildFormattedName] += obj[k].length;
 	        	}
         		else{
         			//parse further
 	        		mappings[myFormattedName][curChildFormattedName] = 1;
+	        		reverseMappings[curChildFormattedName] += 1;
         			parseRecursiveComponent(type, namespace, componentName, obj[k])
         		}
         	}
