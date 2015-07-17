@@ -1,0 +1,5596 @@
+{
+ "app.__artifactId__.__artifactId__": {
+  "cmp.aura.application": 1
+ },
+ "app.aura.application": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.aura.integrationServiceApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 3
+ },
+ "app.auraadmin.admin": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.auraadmin.catalog": {
+  "cmp.aura.application": 1
+ },
+ "app.auraadmin.unused": {
+  "cmp.aura.application": 1
+ },
+ "app.auradev.autocompleteExample": {
+  "cmp.aura.application": 1,
+  "cmp.ui.autocomplete": 1
+ },
+ "app.auradev.dependencies": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.auradev.showDependencies": 1
+ },
+ "app.auradev.lint": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.message": 1,
+  "cmp.auradev.lintc": 1
+ },
+ "app.auradev.serializeRegistry": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 1
+ },
+ "app.auradocs.docs": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 2,
+  "cmp.aura.handler": 4
+ },
+ "app.auradocs.examples": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.message": 1,
+  "cmp.auradocs.examplesc": 1
+ },
+ "app.auradocs.outputViewer": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auradocs.outputViewerc": 1
+ },
+ "app.auradocs.reference": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 2,
+  "cmp.aura.handler": 4
+ },
+ "app.auraide.ide": {
+  "cmp.aura.application": 1
+ },
+ "app.aurajstest.blank": {
+  "cmp.aura.application": 1
+ },
+ "app.aurajstest.inject": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 3
+ },
+ "app.aurajstest.jstest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.tabset": 1
+ },
+ "app.aurajstest.jstestAis": {
+  "cmp.aura.application": 1,
+  "cmp.aura.if": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.ui.tabset": 1
+ },
+ "app.uiExamples.panelExamples": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 5
+ },
+ "app.uiExamples.panelsTooltipsDemo": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 5
+ },
+ "app.appCache.additionalUrls": {
+  "cmp.aura.application": 1
+ },
+ "app.appCache.appCacheEvents": {
+  "cmp.aura.application": 1
+ },
+ "app.appCache.nopreload": {
+  "cmp.aura.application": 1
+ },
+ "app.appCache.testApp": {
+  "cmp.aura.application": 1
+ },
+ "app.appCache.withpreload": {
+  "cmp.aura.application": 1,
+  "cmp.appcache.slate": 1
+ },
+ "app.attributesTest.caseSensitivity": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.outputText": 1
+ },
+ "app.auraStorageTest.applicationTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 2,
+  "cmp.aura.method": 1
+ },
+ "app.auraStorageTest.indexedDBStorageTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.handler": 1
+ },
+ "app.auratest.aisAsyncApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.auratest.createInnerCmpQuickFixApp": {
+  "cmp.aura.application": 1,
+  "cmp.auratest.innerCmpThatDoesntExist": 1
+ },
+ "app.auratest.excludedTestsList": {
+  "cmp.aura.application": 1,
+  "cmp.aura.iteration": 1
+ },
+ "app.auratest.rerender": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.outputURL": 3,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 5,
+  "cmp.auratest.rerenderChild": 3
+ },
+ "app.auratest.testApplication1": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.testComponent2": 1
+ },
+ "app.auratest.testApplication3": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.auratest.testLayoutMatch": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.outputUrl": 2
+ },
+ "app.auratest.testLayoutsWithJavaController": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1
+ },
+ "app.auratest.testPerfRunner": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2
+ },
+ "app.auratest.testTitleChangeEvent": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 2
+ },
+ "app.auratest.test_Preload_ScrapNamespace": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.auratest.test_button": 1
+ },
+ "app.auratest.test_Preload_SimpleCmp": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 1
+ },
+ "app.auratest.test_ServerRendering": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.auratest.test_SimpleServerRenderedPage": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 4,
+  "cmp.test.test_JavaRndr_Component": 1
+ },
+ "app.clientApiTest.auraError": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 4
+ },
+ "app.clientLibraryTest.clientLibraryTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.clientLibrary": 5
+ },
+ "app.clientLibraryTest.testDependencies": {
+  "cmp.aura.application": 1,
+  "cmp.aura.clientLibrary": 4,
+  "cmp.clientLibraryTest.testChild": 1,
+  "cmp.clientLibraryTest.testInterface": 1,
+  "cmp.clientLibraryTest.testFacet": 2
+ },
+ "app.clientServiceTest.actionStorage": {
+  "cmp.aura.application": 1,
+  "cmp.auraStorage.init": 1
+ },
+ "app.clientServiceTest.connectivity": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 6,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 3,
+  "cmp.ui.outputUrl": 2,
+  "cmp.ui.outputText": 3
+ },
+ "app.clientServiceTest.csrfTokenStorage": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1
+ },
+ "app.clientServiceTest.refreshDuringLocationChange": {
+  "cmp.aura.application": 1,
+  "cmp.ui.outputURL": 1
+ },
+ "app.componentTest.creationPath": {
+  "cmp.aura.application": 1,
+  "cmp.componentTest.hasBody": 1,
+  "cmp.componentTest.hasModel": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.if": 1,
+  "cmp.aura.iteration": 1,
+  "cmp.aura.handler": 1
+ },
+ "app.flavorTest.async_override": {
+  "cmp.aura.application": 1
+ },
+ "app.flavorTest.overrides_changeDefault": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.overrides_x_onlyImplicitDefault": 1,
+  "cmp.flavorTest.overrides_x_onlyFlavorA": 1,
+  "cmp.flavorTest.overrides_x_onlyFlavorB": 1,
+  "cmp.flavorTest.overrides_x_onlyFlavorC": 1,
+  "cmp.flavorTest.overrides_x_all": 1
+ },
+ "app.flavorTest.overrides_changeDefaultToMultiple": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.x_sample": 2
+ },
+ "app.flavorTest.overrides_changeDefaultToNew": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.overrides_x_all": 1
+ },
+ "app.flavorTest.overrides_replaceViaUse": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.overrides_x_onlyImplicitDefault": 1
+ },
+ "app.flavorTest.removal_all": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.x_sampleWithDefault": 1,
+  "cmp.flavorTest.overrides_x_onlyImplicitDefault": 1
+ },
+ "app.flavorTest.removal_allFromNs": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.x_sampleWithDefault": 1,
+  "cmp.flavorTest.overrides_x_onlyImplicitDefault": 1
+ },
+ "app.flavorTest.removal_singleCmp": {
+  "cmp.aura.application": 1,
+  "cmp.flavorTest.x_sampleWithDefault": 1,
+  "cmp.flavorTest.overrides_x_onlyImplicitDefault": 1
+ },
+ "app.handleEventTest.fireFromServer": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 6,
+  "cmp.ui.button": 5
+ },
+ "app.handleEventTest.handleLocationChangeEvent": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1,
+  "cmp.aura.iteration": 1,
+  "cmp.ui.outputURL": 1
+ },
+ "app.layoutServiceTest.multipleLayoutItems": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 2,
+  "cmp.ui.button": 3
+ },
+ "app.loadLevelTest.lazyLoadWithLayouts": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.loadLevelTest.serverComponent": 3
+ },
+ "app.miscTest.nonpreloadedPerfApp": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 1
+ },
+ "app.miscTest.perfApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.button": 8,
+  "cmp.miscTest.htmlMarkup": 1,
+  "cmp.miscTest.inheritance": 1
+ },
+ "app.miscTest.perfComponentsApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.miscTest.preloadPerfApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.button": 1
+ },
+ "app.perfTest.perf": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 3,
+  "cmp.aura.handler": 2
+ },
+ "app.performance.runner": {
+  "cmp.aura.application": 1,
+  "cmp.aura.handler": 3,
+  "cmp.aura.method": 2,
+  "cmp.aura.import": 1
+ },
+ "app.preloadTest.dependenciesApp": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 1,
+  "cmp.preloadTest.test_SpecialCharacter": 1,
+  "cmp.test.test_button": 1,
+  "cmp.auratest.test_button": 1
+ },
+ "app.preloadTest.test_Preload_Cmp_SameNameSpace": {
+  "cmp.aura.application": 1,
+  "cmp.auratest.test_button": 1
+ },
+ "app.preloadTest.test_SimpleApplication": {
+  "cmp.aura.application": 1,
+  "cmp.preloadTest.test_SpecialCharacter": 1
+ },
+ "app.provider.newComponent": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 3,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 1
+ },
+ "app.styleServiceTest.applyThemesTest": {
+  "cmp.aura.application": 1,
+  "cmp.styleServiceTest.colors": 1
+ },
+ "app.styleServiceTest.crossReferenceTest": {
+  "cmp.aura.application": 1
+ },
+ "app.styleServiceTest.debug": {
+  "cmp.aura.application": 1,
+  "cmp.styleServiceTest.colors": 1
+ },
+ "app.test.basicCspTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.if": 5
+ },
+ "app.test.fakeApplication": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.test.fakeThemeApp": {
+  "cmp.aura.application": 1
+ },
+ "app.test.laxSecurity": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layoutNoLayout": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layouts": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layouts2": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layoutsNoDefault": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layoutsNonExistCatchall": {
+  "cmp.aura.application": 1
+ },
+ "app.test.layoutsNonExistDefault": {
+  "cmp.aura.application": 1
+ },
+ "app.test.styleTest": {
+  "cmp.aura.application": 1,
+  "cmp.ui.message": 1
+ },
+ "app.test.testJSRendererApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.test.testJSRendererUsingHelperApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1
+ },
+ "app.test.test_CompoundCntrlrApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.test_button": 1
+ },
+ "app.test.test_Layouts": {
+  "cmp.aura.application": 1
+ },
+ "app.test.test_LocChng_CompositeComponent": {
+  "cmp.aura.application": 1,
+  "cmp.test.test_button": 1,
+  "cmp.aura.handler": 1
+ },
+ "app.test.test_LocChng_Navigation": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 3,
+  "cmp.aura.handler": 1,
+  "cmp.ui.outputText": 2,
+  "cmp.aura.attribute": 1
+ },
+ "app.test.test_LocChng_NoExtends": {
+  "cmp.aura.application": 1
+ },
+ "app.test.test_LocChng_NoHandler": {
+  "cmp.aura.application": 1,
+  "cmp.test.test_button": 1
+ },
+ "app.test.test_LocChng_SimpleComponent": {
+  "cmp.aura.application": 1,
+  "cmp.test.test_button": 1,
+  "cmp.aura.handler": 3
+ },
+ "app.test.test_Preload_CustomNameSpaces": {
+  "cmp.aura.application": 1
+ },
+ "app.themeSanityTest.usingOverride": {
+  "cmp.aura.application": 1,
+  "cmp.themeSanityTest.header": 1,
+  "cmp.themeSanityTest.header2": 1
+ },
+ "app.uitest.listView_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.listView": 10
+ },
+ "app.uitest.localizationComponent_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerevent": 1,
+  "cmp.ui.message": 6,
+  "cmp.aura.iteration": 6
+ },
+ "app.uitest.localization_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputDate": 1,
+  "cmp.ui.button": 5,
+  "cmp.ui.outputDate": 1,
+  "cmp.ui.inputDateTime": 1,
+  "cmp.ui.outputDateTime": 1,
+  "cmp.ui.inputNumber": 1,
+  "cmp.ui.outputNumber": 1,
+  "cmp.ui.inputPercent": 1,
+  "cmp.ui.outputPercent": 1,
+  "cmp.ui.outputCurrency": 1
+ },
+ "app.uitest.menu_AttachToBodyTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.block": 1
+ },
+ "app.uitest.menu_EventBubbling": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.outputText": 1,
+  "cmp.ui.button": 1
+ },
+ "app.uitest.menu_MetadataTest": {
+  "cmp.aura.application": 1,
+  "cmp.aura.dependency": 1
+ },
+ "app.uitest.menu_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 5
+ },
+ "app.uitest.menu_extendMenuItem": {
+  "cmp.aura.application": 1
+ },
+ "app.uitest.menu_extendMenuList": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 2
+ },
+ "app.uitest.outputURL_LocationChange": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1,
+  "cmp.ui.outputURL": 4
+ },
+ "app.uitest.panel2_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 25,
+  "cmp.ui.block": 1,
+  "cmp.uitest.panel2_Tester": 1,
+  "cmp.ui.panelManager2": 1
+ },
+ "app.uitest.panelManager_Test": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 1
+ },
+ "app.uitest.popupTest": {
+  "cmp.aura.application": 1,
+  "cmp.ui.button": 1
+ },
+ "app.uitest.testApp": {
+  "cmp.aura.application": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputCheckbox": 1,
+  "cmp.ui.button": 17,
+  "cmp.ui.outputText": 17,
+  "cmp.ui.inputCurrency": 1,
+  "cmp.ui.inputDate": 1,
+  "cmp.ui.inputDateTime": 1,
+  "cmp.ui.inputEmail": 1,
+  "cmp.ui.inputNumber": 1,
+  "cmp.ui.inputOption": 1,
+  "cmp.ui.inputPercent": 1,
+  "cmp.ui.inputPhone": 1,
+  "cmp.ui.inputSearch": 1,
+  "cmp.ui.inputSecret": 1,
+  "cmp.ui.inputSelect": 2,
+  "cmp.ui.inputSelectOption": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.inputTextArea": 1,
+  "cmp.ui.inputURL": 1
+ },
+ "app.updateTest.updateBase": {
+  "cmp.aura.application": 1
+ },
+ "app.updateTest.updateWithPreload": {
+  "cmp.aura.application": 1
+ },
+ "app.updateTest.updateWithoutPreload": {
+  "cmp.aura.application": 1,
+  "cmp.updateTest.updateable": 1,
+  "cmp.updateTest.updateableAlso": 1
+ },
+ "app.utilTest.defaultUtils": {
+  "cmp.aura.application": 1
+ },
+ "app.results.AuraArchetypeSimpleTest": {
+  "cmp.aura.application": 1
+ },
+ "cmp.aura.component": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 1,
+  "cmp.aura.dependency": 27,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.aura.debug": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.handler": 3
+ },
+ "cmp.aura.embeddedTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.aura.expression": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.aura.html": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.aura.if": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 2
+ },
+ "cmp.aura.include": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.aura.integrationServiceTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.aura.iteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.handler": 5,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.aura.label": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.aura.placeholder": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.aura.renderIf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 4,
+  "cmp.aura.expression": 1
+ },
+ "cmp.aura.template": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 29
+ },
+ "cmp.aura.text": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.aura.unescapedHtml": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auraStorage.fuelGauge": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.auraStorage.init": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 10,
+  "cmp.aura.handler": 3
+ },
+ "cmp.auraadmin.cacheView": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.renderIf": 1
+ },
+ "cmp.auraadmin.cachingRegistryView": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.set": 1,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.auraadmin.counterBeans": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auraadmin.registryView": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradev.blankTemplate": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradev.componentClass": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.if": 2,
+  "cmp.aura.iteration": 2
+ },
+ "cmp.auradev.createApplicationDefQuickFix": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradev.createAttributeDefQuickFix": {
+  "cmp.aura.component": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.auradev.createBaseComponentDefQuickFix": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.createComponentDefQuickFix": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradev.createThemeDefQuickFix": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradev.createThemeVarDefQuickFix": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradev.dependencyItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.auradev.lintc": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.quickFix": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auradev.quickFixButton": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auradev.quickFixException": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 3,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradev.quickFixTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 3
+ },
+ "cmp.auradev.removeAttributeDefQuickFix": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradev.removeBodyDefQuickFix": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradev.saveApplication": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.saveComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.saveComponentJava": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.saveStyle": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.saveTheme": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.showDependencies": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradev.testDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradev.testDataProvider2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.about": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.api": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.apiParam": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.apiParams": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.apiSymbol": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.apiSymbols": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.apiTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 3,
+  "cmp.auradocs.apiSymbols": 2
+ },
+ "cmp.auradocs.codeblock": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.contentsNode": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.set": 2
+ },
+ "cmp.auradocs.def": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.set": 6,
+  "cmp.ui.tabSet": 1
+ },
+ "cmp.auradocs.defDependencies": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.defDescription": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.defLayout": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5
+ },
+ "cmp.auradocs.defLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.defMemberList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.defOverview": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.demoAuraError": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.auradocs.demoAutocomplete": {
+  "cmp.aura.component": 1,
+  "cmp.ui.autocomplete": 3,
+  "cmp.ui.outputText": 3
+ },
+ "cmp.auradocs.demoAutocompleteProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.demoCarousel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.demoCss": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.auradocs.demoDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.demoDialog": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.auradocs.demoEvents": {
+  "cmp.aura.component": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.auradocs.demoForm": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.demoFriendlyError": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.auradocs.demoInputRT": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputRichText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputRichText": 1
+ },
+ "cmp.auradocs.demoLabel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.auradocs.demoLabelDyn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auradocs.demoLangLocale": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDateTime": 1
+ },
+ "cmp.auradocs.demoList": {
+  "cmp.aura.component": 1,
+  "cmp.ui.scroller": 1
+ },
+ "cmp.auradocs.demoListTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.demoLocale": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.demoMenu": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.menu": 3
+ },
+ "cmp.auradocs.demoMenuMeta": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.demoMessage": {
+  "cmp.aura.component": 1,
+  "cmp.ui.message": 4
+ },
+ "cmp.auradocs.demoModal": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.auradocs.demoPanel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.demoScroller": {
+  "cmp.aura.component": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.auradocs.demoSelect": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.demoSpinner": {
+  "cmp.aura.component": 1,
+  "cmp.ui.spinner": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auradocs.demoStamp": {
+  "cmp.aura.component": 1,
+  "cmp.ui.stamp": 6
+ },
+ "cmp.auradocs.demoSubmitForm": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.demoTab": {
+  "cmp.aura.component": 1,
+  "cmp.ui.tabset": 1
+ },
+ "cmp.auradocs.demoTable": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dataTable": 1
+ },
+ "cmp.auradocs.demoTodo": {
+  "cmp.aura.component": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.auradocs.demoToolbar": {
+  "cmp.aura.component": 1,
+  "cmp.ui.toolbar": 1
+ },
+ "cmp.auradocs.demoTooltip": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.demoVbox": {
+  "cmp.aura.component": 1,
+  "cmp.ui.vbox": 1
+ },
+ "cmp.auradocs.demoVdatagrid": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.virtualDataGrid": 1
+ },
+ "cmp.auradocs.demos": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.demosNode": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.set": 2
+ },
+ "cmp.auradocs.descriptorLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.docTestRef": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auradocs.doctabs": {
+  "cmp.aura.component": 1,
+  "cmp.ui.tabset": 1
+ },
+ "cmp.auradocs.download": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.editorPanel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.registerevent": 1,
+  "cmp.ui.tab": 1
+ },
+ "cmp.auradocs.empty": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.error": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.example": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.auradocs.examplesTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.examplesc": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.helloAttributes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.helpPanel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.home": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.htmlTags": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.htmlTagsTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.auradocs.htmlTags": 1
+ },
+ "cmp.auradocs.info": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.nav": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.navLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.openTopicTree": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 3
+ },
+ "cmp.auradocs.outputViewerc": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.prefixerTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.auradocs.codeblock": 3
+ },
+ "cmp.auradocs.referenceTabTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.referenceTopicLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.referenceTree": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.set": 1,
+  "cmp.auradocs.openTopicTree": 1,
+  "cmp.auradocs.searchFilterTree": 1,
+  "cmp.ui.tree": 1
+ },
+ "cmp.auradocs.referenceTreeSection": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auradocs.sampleUnescape": {
+  "cmp.aura.component": 1,
+  "cmp.aura.unescapedHTML": 1
+ },
+ "cmp.auradocs.searchFilterTree": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.sidebar": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.simpledragdrop": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auradocs.spinnerTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.auradocs.viewer": 1,
+  "cmp.auradocs.info": 1
+ },
+ "cmp.auradocs.stretchEditorPanel": {
+  "cmp.aura.component": 1,
+  "cmp.auradocs.stretchTab": 1
+ },
+ "cmp.auradocs.stretchTab": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.tableDemo": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.auradocs.demoTable": 1
+ },
+ "cmp.auradocs.template": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 4
+ },
+ "cmp.auradocs.topic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.topicExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.iteration": 2
+ },
+ "cmp.auradocs.topicLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auradocs.topicList": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auradocs.topicPanel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.topics": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.auradocs.viewer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.tabset": 1
+ },
+ "cmp.auradocs.warning": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auradocs.welcomeTopic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.aurajstest.emptyTemplate": {
+  "cmp.aura.component": 1
+ },
+ "cmp.aurajstest.jstestCase": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.set": 4,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.abstractDataGrid": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 5
+ },
+ "cmp.ui.abstractList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.registerEvent": 4,
+  "cmp.aura.handler": 4
+ },
+ "cmp.ui.action": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.actionButton": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.ui.actionCheckbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputCheckbox": 1
+ },
+ "cmp.ui.actionDelegate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.actionMenuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.asyncComponentManager": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.asyncImage": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 2
+ },
+ "cmp.ui.autocomplete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14,
+  "cmp.aura.registerEvent": 5,
+  "cmp.aura.handler": 3,
+  "cmp.aura.set": 1,
+  "cmp.aura.if": 1,
+  "cmp.ui.autocompleteList": 1
+ },
+ "cmp.ui.autocompleteList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.registerEvent": 6,
+  "cmp.aura.handler": 5
+ },
+ "cmp.ui.autocompleteOption": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 3
+ },
+ "cmp.ui.block": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.html": 1
+ },
+ "cmp.ui.button": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 13,
+  "cmp.aura.registerevent": 2
+ },
+ "cmp.ui.calendar": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.carousel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 18
+ },
+ "cmp.ui.carouselDeprecated": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 17,
+  "cmp.aura.registerevent": 5,
+  "cmp.aura.handler": 4,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.ui.carouselIndicator": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.ui.carouselPage": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.carouselPageDeprecated": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 15,
+  "cmp.aura.registerevent": 5,
+  "cmp.aura.handler": 6
+ },
+ "cmp.ui.carouselPageIndicator": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.registerevent": 3,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.carouselPageIndicatorItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 10,
+  "cmp.aura.registerevent": 3,
+  "cmp.aura.handler": 3
+ },
+ "cmp.ui.checkboxMenuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.column": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.dataGrid": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 4
+ },
+ "cmp.ui.dataGridActionColumn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.dataGridColumn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14,
+  "cmp.aura.handler": 3
+ },
+ "cmp.ui.dataGridSelectionColumn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.set": 1
+ },
+ "cmp.ui.dataGridSummaryCell": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.dataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 3
+ },
+ "cmp.ui.dataTable": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.dataTableColumn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.dataTableRow": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.ui.dataWriter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.registerEvent": 3,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.datePicker": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 15,
+  "cmp.aura.method": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.datePickerGrid": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 12,
+  "cmp.aura.registerevent": 5,
+  "cmp.aura.handler": 3
+ },
+ "cmp.ui.datePickerManager": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.datePicker": 1
+ },
+ "cmp.ui.dayInMonthCell": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.dialog": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.dialogButtons": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.handler": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.ui.dialogManager": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.dragAndDropAccessibility": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.ui.dragAndDropAccessibilityMenu": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.draggable": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.registerEvent": 3,
+  "cmp.aura.handler": 1,
+  "cmp.aura.method": 2
+ },
+ "cmp.ui.dropzone": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 7,
+  "cmp.aura.registerEvent": 4,
+  "cmp.aura.method": 5
+ },
+ "cmp.ui.fieldLabel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.header": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 2
+ },
+ "cmp.ui.image": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.infiniteList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.infiniteListRow": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.input": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.dependency": 2,
+  "cmp.aura.attribute": 16,
+  "cmp.aura.registerEvent": 8,
+  "cmp.aura.handler": 5
+ },
+ "cmp.ui.inputCheckbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.inputCurrency": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.ui.inputDate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 2,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.if": 3
+ },
+ "cmp.ui.inputDateRange": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.ui.datePicker": 1
+ },
+ "cmp.ui.inputDateTime": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 2,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.if": 2,
+  "cmp.ui.datePicker": 1
+ },
+ "cmp.ui.inputDateTrigger": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.set": 2
+ },
+ "cmp.ui.inputDefaultError": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.inputEmail": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.inputFile": {
+  "cmp.aura.component": 1,
+  "cmp.ui.underConstruction": 1
+ },
+ "cmp.ui.inputNumber": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.ui.inputOption": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.inputPercent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.ui.inputPhone": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.inputRadio": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.inputRange": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.ui.inputRichText": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.inputSearch": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.inputSecret": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.inputSelect": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 3
+ },
+ "cmp.ui.inputSelectOption": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.inputSelectOptionGroup": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.inputText": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.inputTextArea": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.inputTextAreaForAutocomplete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.inputTextForAutocomplete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.inputURL": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.interactive": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerEvent": 6
+ },
+ "cmp.ui.label": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.ui.list": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.listSorter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 18,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 3,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.ui.listView": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.registerEvent": 50,
+  "cmp.aura.handler": 5
+ },
+ "cmp.ui.listViewColumn": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5
+ },
+ "cmp.ui.listViewColumnCell": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.listViewColumnCheckbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.listViewColumnEmail": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.listViewColumnHeader": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.listViewColumnHtml": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.unescapedHtml": 1
+ },
+ "cmp.ui.listViewColumnIndex": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.listViewColumnLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.listViewRow": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.manifest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.menu": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.menuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.menuItemSeparator": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.menuList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.registerEvent": 5,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.menuTrigger": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.ui.menuTriggerLink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.message": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.modal": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.handler": 2,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.ui.output": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.outputCheckbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.image": 1
+ },
+ "cmp.ui.outputCurrency": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.ui.outputDate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.outputDateTime": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.outputEmail": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.outputLabel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.outputMultiSelect": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.outputNumber": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.outputPercent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.outputPhone": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.outputRadio": {
+  "cmp.aura.component": 1,
+  "cmp.ui.underConstruction": 1
+ },
+ "cmp.ui.outputRichText": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.outputSelect": {
+  "cmp.aura.component": 1
+ },
+ "cmp.ui.outputText": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.outputTextArea": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.outputURL": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 10,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.pager": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 4
+ },
+ "cmp.ui.pagerJumpToPage": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.pagerNextPrevious": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.ui.pagerPageInfo": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.pagerPageSize": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ui.panel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 2,
+  "cmp.aura.attribute": 17,
+  "cmp.aura.handler": 2,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.ui.panelDialog": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 17,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 3
+ },
+ "cmp.ui.panelManager": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 7,
+  "cmp.aura.dependency": 3
+ },
+ "cmp.ui.panelManager2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 5
+ },
+ "cmp.ui.pill": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.pillContainer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.registerevent": 2,
+  "cmp.aura.method": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.pillContainerAutoComplete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.pillContainerAutoCompleteOption": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.image": 1
+ },
+ "cmp.ui.popup": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 5,
+  "cmp.aura.handler": 6
+ },
+ "cmp.ui.popupTarget": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 10,
+  "cmp.aura.registerEvent": 4,
+  "cmp.aura.handler": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.popupTrigger": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.registerEvent": 4,
+  "cmp.aura.handler": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.ui.radioMenuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.radioToggleMenuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.resizeObserver": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.scroller": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 2,
+  "cmp.aura.attribute": 51,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 6,
+  "cmp.ui.resizeObserver": 1
+ },
+ "cmp.ui.scrollerDeprecated": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 32,
+  "cmp.aura.registerEvent": 3,
+  "cmp.aura.handler": 4,
+  "cmp.ui.resizeObserver": 1
+ },
+ "cmp.ui.spinner": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.stamp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.tab": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.tabBar": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7,
+  "cmp.aura.registerevent": 7,
+  "cmp.aura.handler": 3,
+  "cmp.aura.dependency": 4
+ },
+ "cmp.ui.tabItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.registerevent": 4,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.tabOverflowMenuItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.registerevent": 2,
+  "cmp.aura.handler": 2
+ },
+ "cmp.ui.tabOverflowMenuList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 2
+ },
+ "cmp.ui.tabset": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.registerevent": 6,
+  "cmp.aura.handler": 5,
+  "cmp.aura.dependency": 2
+ },
+ "cmp.ui.timePicker": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1
+ },
+ "cmp.ui.toolbar": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ui.tooltip": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.attribute": 15,
+  "cmp.aura.method": 2,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.tree": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 2,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.ui.treeNode": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.aura.handler": 3,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.underConstruction": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.ui.vbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.ui.virtualDataGrid": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.handler": 4,
+  "cmp.aura.registerEvent": 2,
+  "cmp.aura.method": 2
+ },
+ "cmp.ui.virtualList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.method": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uiExamples.autocompleteDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uiExamples.autocompleteExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.autocompleteOptionExample": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.autocompleteOptionExampleExtended": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.buttonExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uiExamples.checkbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputCheckbox": 1,
+  "cmp.ui.outputCheckbox": 1
+ },
+ "cmp.uiExamples.currency": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputCurrency": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.dataGridDynamicColumns": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 6,
+  "cmp.ui.dataGrid": 1,
+  "cmp.ui.pagerNextPrevious": 1,
+  "cmp.ui.pagerPageInfo": 1
+ },
+ "cmp.uiExamples.dataGridKitchenSink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 12,
+  "cmp.ui.inputText": 4,
+  "cmp.ui.dataGrid": 1,
+  "cmp.ui.pagerNextPrevious": 1,
+  "cmp.ui.pagerPageInfo": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.uiExamples.dataGridKitchenSinkDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uiExamples.dataProviderExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.list": 1
+ },
+ "cmp.uiExamples.date": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputDate": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.datePicker": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.datePicker": 1,
+  "cmp.ui.datePickerManager": 1
+ },
+ "cmp.uiExamples.datetime": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputDateTime": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.detailPopover": {
+  "cmp.aura.component": 1,
+  "cmp.ui.block": 1
+ },
+ "cmp.uiExamples.dragAndDropExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.ui.dragAndDropAccessibilityMenu": 1
+ },
+ "cmp.uiExamples.dragAndDropProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uiExamples.email": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputEmail": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.infiniteDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uiExamples.infiniteList": {
+  "cmp.aura.component": 1,
+  "cmp.uiExamples.mobileViewport": 1
+ },
+ "cmp.uiExamples.infiniteListDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uiExamples.infiniteListRow": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.uiExamples.inputExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uiExamples.inputNumberExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputNumber": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputNumber": 1
+ },
+ "cmp.uiExamples.inputTextExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uiExamples.iterationExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.uiExamples.libraryExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uiExamples.mobileViewport": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.modalContent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.outputExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.panelContent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uiExamples.panelDialogExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.panelManager": 1
+ },
+ "cmp.uiExamples.panelFooter": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.panelHeader": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.uiExamples.panelPositioningExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.uiExamples.phone": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputPhone": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.popupExample": {
+  "cmp.aura.component": 1,
+  "cmp.ui.popup": 3
+ },
+ "cmp.uiExamples.radio": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1,
+  "cmp.ui.inputRadio": 4
+ },
+ "cmp.uiExamples.renderIfExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.uiExamples.secret": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputSecret": 1
+ },
+ "cmp.uiExamples.tabsetExample": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.text": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.textarea": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputTextArea": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.tooltipExample": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uiExamples.url": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputURL": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uiExamples.virtualDataGridKitchenSink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.handler": 2
+ },
+ "cmp.actionsTest.beanActionModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.actionsTest.beanActionModelChild": 1
+ },
+ "cmp.actionsTest.beanActionModelChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.actionsTest.chainBoundaryCases": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.actionsTest.chainExternalActions": {
+  "cmp.aura.component": 1,
+  "cmp.actionsTest.chainLocalActions": 1,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.actionsTest.chainLocalActions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 2,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.actionsTest.clientAction": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 3
+ },
+ "cmp.actionsTest.deferredServerAction": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 5
+ },
+ "cmp.actionsTest.serverAction": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auraStorage.init": 1,
+  "cmp.ui.button": 5
+ },
+ "cmp.actionsTest.transactions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.button": 4
+ },
+ "cmp.actionsTest.transactionsEntry": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.appCache.slate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.appCache.unsupportedUrls": {
+  "cmp.aura.component": 1
+ },
+ "cmp.attributesTest.attributeTypes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.attributesTest.caseInsensitiveChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.attributesTest.customAttributeType": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.attributesTest.defaultValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 75
+ },
+ "cmp.attributesTest.defaultValueChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9
+ },
+ "cmp.attributesTest.newCmpFromServerWDefaultAttrValues": {
+  "cmp.aura.component": 1
+ },
+ "cmp.attributesTest.parent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.attributesTest.passByReference": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.button": 17,
+  "cmp.attributesTest.passByReferenceInner": 1
+ },
+ "cmp.attributesTest.passByReferenceInner": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.attributesTest.passByValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.attribute": 8,
+  "cmp.ui.button": 1
+ },
+ "cmp.attributesTest.passByValueInner": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.handler": 1
+ },
+ "cmp.attributesTest.passByValueOuter": {
+  "cmp.aura.component": 1,
+  "cmp.attributesTest.passByValue": 1
+ },
+ "cmp.attributesTest.passByValue_model": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.attributesTest.serializeTo": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.ui.button": 1
+ },
+ "cmp.attributesTest.serializeToContainer": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.attributesTest.setValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14
+ },
+ "cmp.attributesTest.setValueChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 13
+ },
+ "cmp.attributesTest.setValueEmpty": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 13
+ },
+ "cmp.attributesTest.setValueGrandchild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.attributesTest.simpleValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 1
+ },
+ "cmp.auraStorageTest.actionsStorageTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auraStorageTest.actionsStorageTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.auraStorageTest.adapterSelectionTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auraStorageTest.failedStorageTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auraStorageTest.failedStorageTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auraStorageTest.fuelGaugeTestStub": {
+  "cmp.aura.component": 1,
+  "cmp.auraStorage.fuelGauge": 6
+ },
+ "cmp.auraStorageTest.indexedDBCmp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.aura.method": 4
+ },
+ "cmp.auraStorageTest.indexedDBtemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auraStorageTest.initTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.auraStorage.init": 3,
+  "cmp.ui.button": 5,
+  "cmp.aura.handler": 7,
+  "cmp.ui.inputText": 1,
+  "cmp.aura.if": 1
+ },
+ "cmp.auraStorageTest.memoryAdapterTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auraStorageTest.namedStorageTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auraStorageTest.namedStorageTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auraStorageTest.newComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.auraStorage.init": 1,
+  "cmp.ui.button": 7
+ },
+ "cmp.auraStorageTest.playerFacet": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.Button": 1
+ },
+ "cmp.auraStorageTest.serverStorableTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.auraStorage.init": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auraStorageTest.teamFacet": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.Button": 1
+ },
+ "cmp.auratest.access": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.registerEvent": 9,
+  "cmp.test.accessAttributes": 1,
+  "cmp.ui.button": 4
+ },
+ "cmp.auratest.aisAsyncTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.auratest.auraMethod": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 6
+ },
+ "cmp.auratest.auraMethodChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.auratest.auraMethodContainer": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.auraMethod": 1,
+  "cmp.auratest.auraMethodChild": 1
+ },
+ "cmp.auratest.auraMethodError": {
+  "cmp.aura.component": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.auratest.auraMethodProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.method": 2
+ },
+ "cmp.auratest.baseInputTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.auratest.cmpBackRefTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.renderIf": 2,
+  "cmp.ui.block": 1
+ },
+ "cmp.auratest.componentClassChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 2,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.componentClassClientProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.componentClassGrandChildClientProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.componentClassGrandChildServerProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.componentClassLifecycleTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 27
+ },
+ "cmp.auratest.componentClassParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7,
+  "cmp.aura.handler": 2,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1,
+  "cmp.aura.text": 1
+ },
+ "cmp.auratest.componentClassSerialization": {
+  "cmp.aura.component": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.auratest.componentClassServerProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.componentClassServerProviderIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.auratest.componentInstanceOf": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.testInterfaceImpl": 1,
+  "cmp.auratest.testInterfaceChildImpl": 1,
+  "cmp.auratest.testInterfaceGrandchildImpl": 1,
+  "cmp.auratest.testInterfaceChildImplChild": 1,
+  "cmp.auratest.testInterfaceChildImplGrandchild": 1,
+  "cmp.auratest.testInterfaceMultipleImpl": 1,
+  "cmp.auratest.test_Component_NoModel": 1
+ },
+ "cmp.auratest.context": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.auratest.createAttributeQuickFix": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.createAttributeQuickFix_child": 1
+ },
+ "cmp.auratest.createInnerCmpQuickFixCmp": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.innerCmpThatDoesntExist": 1
+ },
+ "cmp.auratest.eventCounter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.auratest.fastClickDomEvents": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.outputText": 3,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.html": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8,
+  "cmp.ui.image": 1
+ },
+ "cmp.auratest.htmlComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.html": 3,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.if": 2
+ },
+ "cmp.auratest.htmlEntity": {
+  "cmp.aura.component": 1,
+  "cmp.aura.text": 20,
+  "cmp.ui.outputText": 20
+ },
+ "cmp.auratest.invalidCss": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.jsmock": {
+  "cmp.aura.component": 1,
+  "cmp.auraStorage.init": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.label": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.auratest.logPanel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.method": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.auratest.parseError": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.test_button": 1
+ },
+ "cmp.auratest.require": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.if": 2,
+  "cmp.aura.text": 2,
+  "cmp.aura.method": 7,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auratest.requireConsumer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.method": 3,
+  "cmp.aura.require": 2,
+  "cmp.test.require": 1,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.auratest.requireWithModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.text": 1,
+  "cmp.aura.method": 4,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.auratest.rerenderAbstract": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.rerenderChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.auratest.rerenderCounter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.rerenderParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.testComponent1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.testComponent2": 1
+ },
+ "cmp.auratest.testComponent2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.testComponent3": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.testForEachDefChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.testInterfaceChildImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testInterfaceChildImplChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testInterfaceChildImplGrandchild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testInterfaceGrandchildImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testInterfaceImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testInterfaceMultipleImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testModelThatThrows": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testModelThatThrowsInRenderer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.testPerfRunnerContainer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.auratest.test_Abstract": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Abstract_Impl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_BrowserInfo": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Component_NoModel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_CompoundCntrlr": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.test_button": 3
+ },
+ "cmp.auratest.test_CompoundFormula_NonString": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.auratest.test_button": 1
+ },
+ "cmp.auratest.test_HtmlEntities": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_InfiniteListButton": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.auratest.test_InfiniteListCscc": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.infiniteList": 1
+ },
+ "cmp.auratest.test_InfiniteListDataProvider": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Instantiate_Component": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Labels_Concatenation": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Labels_NonExisting": {
+  "cmp.aura.component": 1,
+  "cmp.auratest.test_button": 1
+ },
+ "cmp.auratest.test_Labels_Positive": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.test_button": 3
+ },
+ "cmp.auratest.test_Model_Child2": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Model_Parent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.test_NumberFormatting": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_Relationship_Query": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.auratest.test_Relationship_Query1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.test_Relationship_Query2": 1
+ },
+ "cmp.auratest.test_Relationship_Query2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.test_TokenValidation": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_button": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.auratest.test_css_a": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.test_css_b": 1,
+  "cmp.auratest.test_css_c": 1
+ },
+ "cmp.auratest.test_css_b": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.test_css_c": 1
+ },
+ "cmp.auratest.test_css_c": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.auratest.test_css_d": 1
+ },
+ "cmp.auratest.test_css_child": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_css_d": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.test_css_grandParent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.test_css_parent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.auratest.text": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.text": 1
+ },
+ "cmp.auratest.unescapedHtml": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1,
+  "cmp.aura.unescapedHtml": 2
+ },
+ "cmp.auratest.unrender": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.auratest.unrenderComponent": 2
+ },
+ "cmp.auratest.unrenderComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.auratest.versioningSuper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.clientApiTest.arrayIndexOf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.clientApiTest.assertTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientApiTest.auraWarningTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.clientApiTest.cssStyleTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.test.testValidCSS": 1
+ },
+ "cmp.clientApiTest.errorTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientApiTest.eventBinding": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.clientApiTest.jsonMethodExposure": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientApiTest.removeElement": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientApiTest.timeoutCallback": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientApiTest.utilTests": {
+  "cmp.aura.component": 1
+ },
+ "cmp.clientLibraryTest.testChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 3
+ },
+ "cmp.clientLibraryTest.testFacet": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 3
+ },
+ "cmp.clientLibraryTest.testInterfaceImpl1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 1
+ },
+ "cmp.clientLibraryTest.testInterfaceImpl2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 1
+ },
+ "cmp.clientLibraryTest.testParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.clientLibrary": 3
+ },
+ "cmp.clientServiceTest.enqueueAction": {
+  "cmp.aura.component": 1,
+  "cmp.auraStorage.init": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.clientServiceTest.resetToken": {
+  "cmp.aura.component": 1,
+  "cmp.auraStorage.init": 1
+ },
+ "cmp.clientServiceTest.runActions": {
+  "cmp.aura.component": 1
+ },
+ "cmp.cmpQueryLanguage.query": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.componentTest.appendComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.inputText": 2,
+  "cmp.ui.button": 1
+ },
+ "cmp.componentTest.associateElement": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.builderContainer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.builderInjected": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.builderStaticContainer": {
+  "cmp.aura.component": 1,
+  "cmp.componentTest.builderInjected": 1
+ },
+ "cmp.componentTest.clientComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.componentTest.cmpWithDestroyHandler": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.componentTest.cmpWithDestroyHandlerWrapper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.componentTest.cmpWithDestroyHandler": 1
+ },
+ "cmp.componentTest.componentBodyWithChanges": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 3
+ },
+ "cmp.componentTest.createComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.componentTest.destroy": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.componentTest.informFacetOfParent": 1,
+  "cmp.componentTest.cmpWithDestroyHandlerWrapper": 1
+ },
+ "cmp.componentTest.findUsingInstanceOf": {
+  "cmp.aura.component": 1,
+  "cmp.componentTest.stubComponent": 1
+ },
+ "cmp.componentTest.findWithDefRefs": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.if": 2,
+  "cmp.ui.button": 2,
+  "cmp.aura.text": 1
+ },
+ "cmp.componentTest.getComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.text": 2
+ },
+ "cmp.componentTest.hasBody": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.hasModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.componentTest.informFacetOfParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.componentTest.knowParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.componentTest.labelTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.label": 1
+ },
+ "cmp.componentTest.renderNestedComponents": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.require": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.componentTest.simpleExtends": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.expression": 1
+ },
+ "cmp.componentTest.stubComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.throwError": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 8
+ },
+ "cmp.componentTest.throwErrorInner": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.componentTest.toJSON": {
+  "cmp.aura.component": 1
+ },
+ "cmp.componentTest.usesBody": {
+  "cmp.aura.component": 1,
+  "cmp.componentTest.hasBody": 1
+ },
+ "cmp.componentTest.versionInServer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.auratest.requireWithModel": 1,
+  "cmp.auratest.requireConsumer": 1,
+  "cmp.aura.require": 1
+ },
+ "cmp.componentTest.versioning": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.auratest.require": 1,
+  "cmp.componentTest.require": 1,
+  "cmp.test.require": 1,
+  "cmp.auratest.requireConsumer": 1,
+  "cmp.test.requireConsumer": 1,
+  "cmp.aura.require": 1
+ },
+ "cmp.definitionServiceImplTest.targetComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.docstest.searchFilterTreeTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.auradocs.searchFilterTree": 1
+ },
+ "cmp.expressionTest.arrayValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 2,
+  "cmp.expressionTest.arrays": 1
+ },
+ "cmp.expressionTest.arrays": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.handler": 1,
+  "cmp.expressionTest.test": 53
+ },
+ "cmp.expressionTest.bodyAttribute": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 6,
+  "cmp.expressionTest.bodyAttributeOfFacet": 1
+ },
+ "cmp.expressionTest.bodyAttributeOfFacet": {
+  "cmp.aura.component": 1
+ },
+ "cmp.expressionTest.byValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.expressionTest.functions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.expressionTest.test": 290
+ },
+ "cmp.expressionTest.mapValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 5,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.expressionTest.null": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.expressionTest.test": 67
+ },
+ "cmp.expressionTest.simpleValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 3
+ },
+ "cmp.expressionTest.suite": {
+  "cmp.aura.component": 1
+ },
+ "cmp.expressionTest.test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.expressionTest.undefined": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.expressionTest.test": 50
+ },
+ "cmp.flavorTest.async": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.async_x_wrapper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.async_x_wrapper_child": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.basic_ifBlock": {
+  "cmp.aura.component": 1,
+  "cmp.aura.if": 4
+ },
+ "cmp.flavorTest.basic_iterationBlock": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.flavorTest.basic_multipleExplicitFlavors": {
+  "cmp.aura.component": 1,
+  "cmp.flavorTest.x_sample": 1
+ },
+ "cmp.flavorTest.basic_nested": {
+  "cmp.aura.component": 1,
+  "cmp.flavorTest.x_sample": 2,
+  "cmp.flavorTest.x_sampleNested": 1
+ },
+ "cmp.flavorTest.basic_usesDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.bug_flavorMisappliedToInner": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.flavorTest.default_changeParentFromExplicitDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_changeParentFromImplicitDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_multiple": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_noChangeToParentDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_setForBothLevels": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_setParentDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_x_extensibleExplicitDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_x_extensibleImplicitDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.default_x_extensibleNoDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_changeFlavorDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_changeFlavorDefaultMulti": {
+  "cmp.aura.component": 1,
+  "cmp.flavorTest.dynamically_flavorable_x_childChangeFlavor": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_childFlavorableInner": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_childFlavorableOuter": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_multi": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_rerender": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_setFlavorOnInstance": {
+  "cmp.aura.component": 1,
+  "cmp.flavorTest.dynamically_flavorable_x_child": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_textOnly": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_x_child": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_x_childChangeFlavor": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.dynamically_flavorable_x_parent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.expressions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.flavorTest.inheritance": {
+  "cmp.aura.component": 1,
+  "cmp.flavorTest.inheritance_x_extensibleWrapper_bareChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleWrapper_markupChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleBare_child": 1,
+  "cmp.flavorTest.inheritance_x_extensibleWrapper_child": 1,
+  "cmp.flavorTest.inheritance_x_extensibleWrapper_textChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_flatChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_outerChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_innerChild": 1,
+  "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_peersChild": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleBare": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleBare_child": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_flatChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_innerChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_outerChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleMarkupWrapper_peersChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleWrapper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleWrapper_bareChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleWrapper_child": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleWrapper_markupChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.inheritance_x_extensibleWrapper_textChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.overrides_x_all": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.overrides_x_onlyFlavorA": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.overrides_x_onlyFlavorB": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.overrides_x_onlyFlavorC": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.overrides_x_onlyImplicitDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.x_landmark": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.x_sample": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.x_sampleNested": {
+  "cmp.aura.component": 1
+ },
+ "cmp.flavorTest.x_sampleWithDefault": {
+  "cmp.aura.component": 1
+ },
+ "cmp.forEachDefTest.basicDataType": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.iteration": 6
+ },
+ "cmp.forEachDefTest.collectionDataType": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.iteration": 3
+ },
+ "cmp.forEachDefTest.emptyLists": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.forEachDefTest.forEachDefDisplay": 2,
+  "cmp.aura.iteration": 6
+ },
+ "cmp.forEachDefTest.forEachDefDisplay": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.forEachDefTest.forEachDefParent": {
+  "cmp.aura.component": 1,
+  "cmp.forEachDefTest.basicDataType": 1,
+  "cmp.forEachDefTest.collectionDataType": 1
+ },
+ "cmp.forEachDefTest.nonListDataType": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.forEachDefTest.singleComponentAttribute": {
+  "cmp.aura.component": 1
+ },
+ "cmp.forEachDefTest.singleComponentInForEach": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.gvpTest.basicTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.browserProvider": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.contextGVPTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.customGVPTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.gvpTest.customGVPTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.dynamicLabels": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.dynamicTypeTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.innerCmpWithLabel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.labelProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.gvpTest.loadFromStorage": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.loadFromStorageTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.gvpTest.newLabels": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.gvpTest.innerCmpWithLabel": 1
+ },
+ "cmp.gvpTest.parseLabels": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.import": 1
+ },
+ "cmp.gvpTest.voiceOverTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.gvpTest.withPersistentStorage": {
+  "cmp.aura.component": 1
+ },
+ "cmp.handleEventTest.aHandlesEventFromA": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.attachEventsInModel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.handleEventTest.bHandlesEventFromA": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.handleEventTest.cHandlesEventFromAandB": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.eventScope": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.handleEventTest.handlesABAppEvents": 1
+ },
+ "cmp.handleEventTest.handlerWithEventForComponentEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithInvalidEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithNameAndEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithNameForApplicationEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithNameForParentsApplicationEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithUnregisteredName": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlerWithoutNameOrEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.handleEventTest.handlesABAppEvents": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 2,
+  "cmp.aura.handler": 3
+ },
+ "cmp.handleEventTest.multipleHandlersForEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 4
+ },
+ "cmp.handleEventTest.registersApplicationEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.ifTest.testIf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ifTest.testIfElse": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ifTest.testIfNested": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.ifTest.testIfServer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ifTest.testIfWithIterationInside": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.ifTest.testIfWithModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.ifTest.testRenderIfNested": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.integrationService.noHistoryService": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.integrationService.simpleStub": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.iterationTest.arrayIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.iterationTest.arrayIterationNotPreloaded": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.arrayIterationPreloaded": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.basicIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.renderIf": 1
+ },
+ "cmp.iterationTest.cmpWithDefaultAtt": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.iterationTest.cmpWithDefaultAtt2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.iterationTest.componentIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.diffTypeOfChildren": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ArrayFromAttribute": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 8
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ArrayFromAttribute_PassThroughValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 8
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ArrayFromModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ArrayFromModel_PassThroughValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ObjectFromAttribute": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 8
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ObjectFromAttribute_PassThroughValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 8
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ObjectFromModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.iterationTest.iterationArrayValueChange_ObjectFromModel_PassThroughValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 7
+ },
+ "cmp.iterationTest.iterationChildWJSProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.iterationTest.iterationChildWithModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.iterationTest.iterationOfCmpWithDefaultAtt": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1,
+  "cmp.iterationTest.cmpWithDefaultAtt": 1,
+  "cmp.iterationTest.cmpWithDefaultAtt2": 2
+ },
+ "cmp.iterationTest.iterationWJSProviderOnly": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.iterationTest.iterationWJSProviderOnlyList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.iterationWithBodyTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.iterationTest.iterationWithBodyTemplateConsumer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.iterationTest.iterationWithBodyTemplate": 2
+ },
+ "cmp.iterationTest.iterationWithIfInside": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.button": 1
+ },
+ "cmp.iterationTest.iterationWithLabelInside": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 2
+ },
+ "cmp.iterationTest.iterationWithModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 2
+ },
+ "cmp.iterationTest.iterationWithModelInnerCmp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.iterationTest.iterationWrapper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.iterationTest.modifyDefRef": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.iterationTest.nestedIteration": {
+  "cmp.aura.component": 1
+ },
+ "cmp.iterationTest.nestedIterationServer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.iterationTest.resetIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.if": 1
+ },
+ "cmp.iterationTest.simpleIteration": {
+  "cmp.aura.component": 1
+ },
+ "cmp.iterationTest.simpleIterationServer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.iterationTest.startAndEndIndexWithDefaults": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.iterationTest.typeIteration": {
+  "cmp.aura.component": 1
+ },
+ "cmp.iterationTest.withLazyComponents": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.if": 2
+ },
+ "cmp.lintTest.basic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.listTest.listDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.listTest.testListAttrItemTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.listTest.testListAttributeEvaluation": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.list": 1
+ },
+ "cmp.loadLevelTest.NonPreloadedServerComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.loadLevelTest.clientComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.loadLevelTest.clientProvidesServerCmp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.dependency": 1
+ },
+ "cmp.loadLevelTest.clientWithLazyClientChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 3
+ },
+ "cmp.loadLevelTest.clientWithServerChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.loadLevelTest.NonPreloadedServerComponent": 1
+ },
+ "cmp.loadLevelTest.createNewCmp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 1,
+  "cmp.aura.dependency": 5
+ },
+ "cmp.loadLevelTest.displayBoolean": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.renderIf": 1
+ },
+ "cmp.loadLevelTest.displayMap": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.outputText": 2
+ },
+ "cmp.loadLevelTest.displayNumber": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.loadLevelTest.displayStringArray": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.loadLevelTest.lazyLoadBasicTypes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.loadLevelTest.serverComponent": 1,
+  "cmp.aura.label": 1,
+  "cmp.aura.text": 1
+ },
+ "cmp.loadLevelTest.lazyLoadForEach": {
+  "cmp.aura.component": 1,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.loadLevelTest.lazyLoadHelper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.loadLevelTest.lazyLoadInRenderIf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.renderIf": 1
+ },
+ "cmp.loadLevelTest.loadLevel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.renderIf": 4,
+  "cmp.loadLevelTest.clientComponent": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.loadLevelTest.loadSimpleAttributes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.expression": 1,
+  "cmp.loadLevelTest.serverComponent": 1,
+  "cmp.loadLevelTest.displayNumber": 1
+ },
+ "cmp.loadLevelTest.newCmpHalfLoad": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.loadLevelTest.newCmpWithValueProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.loadLevelTest.serverComponent": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.loadLevelTest.serverComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.loadLevelTest.serverComponentWReqAttr": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.loadLevelTest.serverWithInnerServerCmp": {
+  "cmp.aura.component": 1,
+  "cmp.loadLevelTest.clientWithServerChild": 1
+ },
+ "cmp.loadLevelTest.serverWithLazyChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.loadLevelTest.serverComponent": 1
+ },
+ "cmp.loadLevelTest.simpleImplementation1": {
+  "cmp.aura.component": 1
+ },
+ "cmp.loadLevelTest.simpleImplementation2": {
+  "cmp.aura.component": 1
+ },
+ "cmp.loadLevelTest.sleepyServerComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.metricsPluginTest.auraContextPlugin": {
+  "cmp.aura.component": 1
+ },
+ "cmp.metricsPluginTest.clientService": {
+  "cmp.aura.component": 1
+ },
+ "cmp.metricsPluginTest.componentService": {
+  "cmp.aura.component": 1
+ },
+ "cmp.metricsPluginTest.registerNewPlugin": {
+  "cmp.aura.component": 1
+ },
+ "cmp.miscTest.aura_if": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.if": 1
+ },
+ "cmp.miscTest.aura_iteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.miscTest.aura_renderif": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.renderif": 300
+ },
+ "cmp.miscTest.baseBall": {
+  "cmp.aura.component": 1
+ },
+ "cmp.miscTest.basketBall": {
+  "cmp.aura.component": 1
+ },
+ "cmp.miscTest.child": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.miscTest.deepIteration": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.miscTest.grandParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.miscTest.greatGrandParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.miscTest.htmlMarkup": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.miscTest.infinitePerfDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 1
+ },
+ "cmp.miscTest.inheritance": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.miscTest.child": 1
+ },
+ "cmp.miscTest.iterateBasicData": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.miscTest.iterateComponents": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.iteration": 1
+ },
+ "cmp.miscTest.myDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.miscTest.newComponent": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.miscTest.parent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.miscTest.registeredComponents": {
+  "cmp.aura.component": 1
+ },
+ "cmp.miscTest.registeredComponentsDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.miscTest.registeredComponentsItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.miscTest.ui_button": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.miscTest.ui_datePicker": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.datePicker": 1
+ },
+ "cmp.miscTest.ui_infiniteList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.infiniteList": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.miscTest.ui_inputDate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputDate": 1
+ },
+ "cmp.miscTest.ui_inputDateTime": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.ui.inputDateTime": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_inputSelect": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.inputSelect": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_inputText": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1
+ },
+ "cmp.miscTest.ui_list": {
+  "cmp.aura.component": 1,
+  "cmp.ui.list": 1
+ },
+ "cmp.miscTest.ui_list_template": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.miscTest.ui_menu_actionMenu": {
+  "cmp.aura.component": 1,
+  "cmp.ui.menu": 1
+ },
+ "cmp.miscTest.ui_menu_checkBox": {
+  "cmp.aura.component": 1,
+  "cmp.ui.menu": 1
+ },
+ "cmp.miscTest.ui_menu_radioMenu": {
+  "cmp.aura.component": 1,
+  "cmp.ui.menu": 1
+ },
+ "cmp.miscTest.ui_outputCheckbox": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_outputCurrency": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputCurrency": 1
+ },
+ "cmp.miscTest.ui_outputDate": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDate": 1
+ },
+ "cmp.miscTest.ui_outputEmail": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_outputNumber": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_outputPhone": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_outputText": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.miscTest.ui_tabset": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.if": 4
+ },
+ "cmp.namespaceDefTest.testStyleTokens": {
+  "cmp.aura.component": 1
+ },
+ "cmp.perfTest.dummyPerf": {
+  "cmp.aura.component": 1
+ },
+ "cmp.perfTest.registeredComponents": {
+  "cmp.aura.component": 1
+ },
+ "cmp.perfTest.registeredComponentsDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.perfTest.registeredComponentsItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.performanceTest.runnerExample": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.performanceTest.runnerExample2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.preloadTest.test_SpecialCharacter": {
+  "cmp.aura.component": 1
+ },
+ "cmp.preloadTest.test_dynamicNamespace": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.provider.beanProvider": {
+  "cmp.aura.component": 1
+ },
+ "cmp.provider.clientProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.provider.cmpWithModel": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.provider.providerA": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.provider.providerB": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.provider.providerBase": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.provider.providerC": {
+  "cmp.aura.component": 1,
+  "cmp.provider.providerA": 1,
+  "cmp.provider.providerBase": 1,
+  "cmp.provider.providerB": 1
+ },
+ "cmp.provider.stubWithClientProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 3,
+  "cmp.provider.clientProvider": 2
+ },
+ "cmp.renderingTest.arrayValues": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.renderingTest.bodyRendering": {
+  "cmp.aura.component": 1
+ },
+ "cmp.renderingTest.cmpWithRenderer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.renderingTest.cmpWithRendererExtendWithRenderer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.renderingTest.cmpWithRendererExtendWithoutRenderer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.renderingTest.conditionalRendering": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.renderingTest.exception": {
+  "cmp.aura.component": 1
+ },
+ "cmp.renderingTest.html": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.renderingTest.renderCounter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5
+ },
+ "cmp.renderingTest.test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.renderingTest.arrayValues": 1,
+  "cmp.renderingTest.conditionalRendering": 1
+ },
+ "cmp.renderingTest.testEventHandlerChain": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 3,
+  "cmp.renderingTest.arrayValues": 1
+ },
+ "cmp.setAttributesTest.abstract": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.setAttributesTest.abstractCmpExtension": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.setAttributesTest.anotherChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.setAttributesTest.attributesChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 3
+ },
+ "cmp.setAttributesTest.attributesParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.setAttributesTest.child": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.setAttributesTest.cmpTotestAbstractCmp": {
+  "cmp.aura.component": 1,
+  "cmp.setAttributesTest.abstract": 1
+ },
+ "cmp.setAttributesTest.cmpTotestInterface": {
+  "cmp.aura.component": 1,
+  "cmp.setAttributesTest.interface": 1
+ },
+ "cmp.setAttributesTest.grandparent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.setAttributesTest.implementation": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.setAttributesTest.parent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.setAttributesTest.typeCoercion": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.styleServiceTest.asyncLoaded": {
+  "cmp.aura.component": 1
+ },
+ "cmp.styleServiceTest.colors": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.UIPerfActionMarksTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 3,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.test.accessAttributes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.test.ballot": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.basicCspCmpExtendsTemplate": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.basicCspTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 2
+ },
+ "cmp.test.child1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.child2": 1
+ },
+ "cmp.test.child2": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.componentDefRefArrayAttribute": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.extendsChild": {
+  "cmp.aura.component": 1,
+  "cmp.test.child1": 1
+ },
+ "cmp.test.extendsParent": {
+  "cmp.aura.component": 1,
+  "cmp.test.child1": 1
+ },
+ "cmp.test.facetAttribute": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.facetAttributePassthrough": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.facetAttribute": 1
+ },
+ "cmp.test.facetAttributePassthroughParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.facetAttributePassthrough": 1
+ },
+ "cmp.test.fakeAbstract": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeAbstractChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeAbstractParent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeComponentChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeComponentParent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.fakeDesign": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.test.fakeDesignNonExistentInterface": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.test.fakeImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.flavorableFakeComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.flavorsSerializationTest1": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.flavorsSerializationTest2": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.jsModel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.jsModelAndJavaModel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.jsModelImplicit": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.kitchenSink": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.libraryTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 4
+ },
+ "cmp.test.parent": {
+  "cmp.aura.component": 1,
+  "cmp.test.child1": 1
+ },
+ "cmp.test.parentComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.parser": {
+  "cmp.aura.component": 1,
+  "cmp.test.parserChild": 1
+ },
+ "cmp.test.parserChild": {},
+ "cmp.test.parserFragment": {
+  "cmp.aura.parent": 1
+ },
+ "cmp.test.parserGrandChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.parserInvalid": {},
+ "cmp.test.require": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 2,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.test.requireConsumer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.method": 1,
+  "cmp.aura.require": 1
+ },
+ "cmp.test.serverModelCaseSensitivity": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.styleNameExpressionTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.styleTestTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.test.svgIsTooLarge": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testActionCallbacks": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.ui.button": 2
+ },
+ "cmp.test.testActionEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 2,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testActionExceptions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testActionExpressionChaining": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.testActionExpressionChainingFixture": 2
+ },
+ "cmp.test.testActionExpressionChainingFixture": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testActionRef": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.testActionRefChild": 1
+ },
+ "cmp.test.testActionRefChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testActionRefContainer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.testActionRef": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.test.testAfterRender": {
+  "cmp.aura.component": 1,
+  "cmp.test.testAfterRenderFixture": 1,
+  "cmp.test.testAfterRenderFixtureExtended": 1,
+  "cmp.ui.message": 3
+ },
+ "cmp.test.testAfterRenderFixture": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testAfterRenderFixtureExtended": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testAuraTypes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 14
+ },
+ "cmp.test.testCmpNoJSHelper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testDuplicateJSController": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testEvalScope": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testEventBubbling": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.set": 1,
+  "cmp.aura.handler": 2,
+  "cmp.aura.iteration": 1,
+  "cmp.test.testEventBubblingHandler": 2
+ },
+ "cmp.test.testEventBubblingEmitter": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testEventBubblingEmitterExtended": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testEventBubblingEmitterOther": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.method": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testEventBubblingHandler": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.testEventBubblingHandlerChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.testEventBubblingHandlerChildWithoutHandlers": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testEventBubblingHandlerContainer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.testEventBubblingHandlerGrandchild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.testEventBubblingHandlerGrandchildWithoutHandlers": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testEventBubblingSuper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.test.testInValidCSS": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testInvalidJSController": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testInvalidJSRenderer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSController": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSControllerChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSControllerParent": {
+  "cmp.aura.component": 1,
+  "cmp.test.testJSControllerChild": 1
+ },
+ "cmp.test.testJSHelper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testJSHelperExplicit": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSHelperExplicitInheritance": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSHelperInheritedOnly": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSHelperMethodOverloading": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.testJSHelperSuper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testJSHelperSuperSuper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.test.testJSRenderer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testJSRendererUsingHelper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testJSTestSuite": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.test.testJSTestSuiteWithoutAttributes": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testJavaProviderSettingAttributeValues": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.test.testJavaProviderSettingAttributeValuesHelper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.test.testJavaProviderSettingAttributeValuesViaComponentConfig": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.test.testJavaProviderSettingAttributeValuesViaComponentConfigHelper": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.test.testMultipleBodyFacetChild1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.test.testMultipleBodyFacetParent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testNoJSControllers": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testNonFunctionElementsInJSController": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testNullExpressionAddition": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.test.testRenderIf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testRenderIfElse": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testRenderIfElseLiteral": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.test.testRenderIfEmptyBody": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.test.testRenderIfUninitializedBody": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.renderif": 1
+ },
+ "cmp.test.testSingleBodyFacetChild1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.test.testSingleBodyFacetChild2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.test.testSingleBodyFacetChild3": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.test.testSingleBodyFacetParent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testStyleNamespaceInvalidConditions": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleNamespaceToken": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleNamespaceTokenInvalidCSS": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleNamespaceTokenValidCSS": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleNamespaceTrueConditions": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleSelectorCaseSensitivity": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleValidChild": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testStyleValidParent": {
+  "cmp.aura.component": 1,
+  "cmp.test.testStyleValidChild": 1
+ },
+ "cmp.test.testTemplateCss": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testTwoCSSFiles": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testValidCSS": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.testVirtualList": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.testVirtualListDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.test.testVirtualListTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6
+ },
+ "cmp.test.testVirtualListTemplateChild": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.label": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.test.test_ComponentWithBadHelper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_CompoundCntrlr": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.test_button": 1
+ },
+ "cmp.test.test_Events_BiggerComponentForEvent": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Events_ComponentForEvent": 1,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.test.test_Events_ClientActions": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Events_ComponentForEvent": 2
+ },
+ "cmp.test.test_Events_ComponentForEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerevent": 2
+ },
+ "cmp.test.test_Events_Properties": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Events_ComponentForEvent": 1
+ },
+ "cmp.test.test_IfToggle": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.test.test_Import": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.test.test_ImportNoLibrary": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.test.test_ImportNoProperty": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1
+ },
+ "cmp.test.test_JSController_WithComments": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JSProvider_AbstractBasic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JSProvider_Impl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JSRenderer_WithComments": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JavaRndr_Abstract": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JavaRndr_Component": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_JavaRndr_Abstract": 1
+ },
+ "cmp.test.test_JavaRndr_Impl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_JavaRndr_Override": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_NoProvider_NonAbstract_Component": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_NonExistingJavaRenderer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Parser_Comments": {
+  "cmp.aura.component": 1,
+  "cmp.test.parserChild": 1
+ },
+ "cmp.test.test_Preload_BadCmp": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.test.test_Provider_Abstract1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.test_Provider_Abstract2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.test_Provider_Abstract3": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_Abstract4": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_AbstractBasic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_AbstractBasicExtends": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_AbstractCyclic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_AbstractNoExtends": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_Component": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Provider_Interface": 1
+ },
+ "cmp.test.test_Provider_Concrete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.test.test_Provider_Concrete_Sub": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_InterfaceChainComponent": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_InterfaceCyclicComponentA": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Provider_InterfaceCyclicB": 1
+ },
+ "cmp.test.test_Provider_InterfaceCyclicComponentB": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_Provider_InterfaceCyclicA": 1
+ },
+ "cmp.test.test_Provider_NoExtends": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_NoImpl": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_NonAbstract": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_ThrowsQFE": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_providerImpl1": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.test_Provider_providerImpl3": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_Provider_providerImpl4": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.test_Provider_providerImplOverrideAttr": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.test.test_ServerRenderable": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_ServerRendererOnly": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_ServerRenderingNegative": {
+  "cmp.aura.component": 1,
+  "cmp.test.test_button": 1
+ },
+ "cmp.test.test_SimpleHelper": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_SimpleJavaRenderer": {
+  "cmp.aura.component": 1
+ },
+ "cmp.test.test_button": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.registerevent": 1
+ },
+ "cmp.test.text": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.test.parent": 2
+ },
+ "cmp.themeSanityTest.header": {
+  "cmp.aura.component": 1
+ },
+ "cmp.themeSanityTest.header2": {
+  "cmp.aura.component": 1
+ },
+ "cmp.themeSanityTest.themeVariable": {
+  "cmp.aura.component": 1,
+  "cmp.themeSanityTest.header": 1
+ },
+ "cmp.uitest.InputSelect_OptionsAttributeInitValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 9
+ },
+ "cmp.uitest.InputSelect_OptionsInBodyInitValue": {
+  "cmp.aura.component": 1,
+  "cmp.uitest.inputSelect_Extend": 9
+ },
+ "cmp.uitest.LocalizationService_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDateTime": 8,
+  "cmp.ui.outputDate": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.ui.outputNumber": 1,
+  "cmp.ui.outputPercent": 1,
+  "cmp.ui.outputCurrency": 1
+ },
+ "cmp.uitest.accessibilityTool": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.if": 42
+ },
+ "cmp.uitest.asyncImage_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.dependency": 2,
+  "cmp.ui.asyncImage": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.autoComplete_CustomOption": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.autoComplete_CustomTemplate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.autoComplete_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.autocomplete": 10,
+  "cmp.ui.outputText": 10
+ },
+ "cmp.uitest.autoComplete_updateOnTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.autocomplete": 4,
+  "cmp.ui.outputText": 5
+ },
+ "cmp.uitest.autocomplete_TestDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.badRenderer": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.uitest.block_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.block": 2
+ },
+ "cmp.uitest.button_LabelRequiredTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.button_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.button": 4,
+  "cmp.ui.outputText": 3
+ },
+ "cmp.uitest.carousel_SpinnerTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.set": 2
+ },
+ "cmp.uitest.carousel_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.carouselDeprecated": 8
+ },
+ "cmp.uitest.dataGridPureHtmlTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.dataGrid_Actions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 6,
+  "cmp.ui.dataGrid": 1
+ },
+ "cmp.uitest.dataGrid_ColumnsTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.dependency": 2,
+  "cmp.ui.button": 7,
+  "cmp.aura.if": 1
+ },
+ "cmp.uitest.dataGrid_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 10,
+  "cmp.aura.handler": 1,
+  "cmp.ui.button": 4,
+  "cmp.ui.inputText": 2,
+  "cmp.ui.dataGrid": 1,
+  "cmp.ui.pagerNextPrevious": 1,
+  "cmp.ui.pagerPageInfo": 1
+ },
+ "cmp.uitest.dataGrid_TestDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uitest.dataTable_EmptyItems": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dataTable": 1
+ },
+ "cmp.uitest.dataTable_NoHeaderValue": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dataTable": 1
+ },
+ "cmp.uitest.datePickerGrid_FirstWeekDayTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uitest.datePickerManager_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputDateTrigger": 2,
+  "cmp.ui.inputDate": 1,
+  "cmp.ui.datePickerManager": 1
+ },
+ "cmp.uitest.datePicker_TodayButtonTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.uitest.demoMenuTrigger": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.outputURL": 1
+ },
+ "cmp.uitest.demoMenuTriggerDefault": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.demoRelay": {
+  "cmp.aura.component": 1,
+  "cmp.ui.menu": 2
+ },
+ "cmp.uitest.dialog_ModalFocusTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.uitest.dialog_ModalTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.uitest.dialog_NonModalTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.uitest.dialog_NonModalWCheckboxesTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.dialogManager": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.dialog": 1
+ },
+ "cmp.uitest.dragAndDrop_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 9,
+  "cmp.aura.handler": 1,
+  "cmp.ui.dragAndDropAccessibilityMenu": 1
+ },
+ "cmp.uitest.dragAndDrop_TestProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.hasModel": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.image_ErrorTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.image": 3
+ },
+ "cmp.uitest.image_OnLoadTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.image": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.infiniteDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.infiniteDataProvider_StorableActions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.infiniteListCscc_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.infiniteList": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.infiniteListRow_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2,
+  "cmp.ui.button": 2,
+  "cmp.ui.outputText": 2
+ },
+ "cmp.uitest.infiniteList_ScrollerTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.scroller": 3
+ },
+ "cmp.uitest.infiniteList_StorableActionsTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.infiniteList": 1
+ },
+ "cmp.uitest.infiniteList_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.ui.infiniteList": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.uitest.inputCheckBox_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputCheckbox": 1,
+  "cmp.ui.outputText": 2
+ },
+ "cmp.uitest.inputCurrency_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputCurrency": 2
+ },
+ "cmp.uitest.inputDateRange_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.inputDateRange": 1
+ },
+ "cmp.uitest.inputDateTime_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.inputDateTime": 1
+ },
+ "cmp.uitest.inputDate_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.ui.label": 1,
+  "cmp.ui.inputDate": 1
+ },
+ "cmp.uitest.inputDate_TestCreation": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.inputDefaultErrorDynamic_test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputNumber": 1
+ },
+ "cmp.uitest.inputDefaultError_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.method": 1,
+  "cmp.aura.if": 14,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.inputErrorComponent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 1,
+  "cmp.aura.renderIf": 1
+ },
+ "cmp.uitest.inputError_CustomTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uitest.inputError_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uitest.inputLocalizedNumber_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.inputNumber": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uitest.inputMultiSelect_NestedOptionsTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputSelect": 1,
+  "cmp.auratest.baseInputTest": 1
+ },
+ "cmp.uitest.inputMultiSelect_OverridingDefBehaviorTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputSelect": 1
+ },
+ "cmp.uitest.inputMultiSelect_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.uitest.inputSelect_Extend": 1,
+  "cmp.auratest.baseInputTest": 1
+ },
+ "cmp.uitest.inputNumber_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputNumber": 2
+ },
+ "cmp.uitest.inputNumber_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputNumber": 2,
+  "cmp.auratest.baseInputTest": 1
+ },
+ "cmp.uitest.inputPercent_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputPercent": 2
+ },
+ "cmp.uitest.inputRadio_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.button": 2,
+  "cmp.ui.inputRadio": 4
+ },
+ "cmp.uitest.inputRichText_DisableTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.inputRichText": 1
+ },
+ "cmp.uitest.inputRichText_ExtendedTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.inputRichText_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.inputRichText": 2,
+  "cmp.auratest.baseInputTest": 1
+ },
+ "cmp.uitest.inputSearch_HandlingSearchEvent": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uitest.inputSelect_CheckWarnings": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 1,
+  "cmp.ui.inputSelect": 1
+ },
+ "cmp.uitest.inputSelect_DynamicOptions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputSelect": 2
+ },
+ "cmp.uitest.inputSelect_Extend": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uitest.inputSelect_OptionsInBody": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputSelect": 2
+ },
+ "cmp.uitest.inputSelect_OptionsInBodySetValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uitest.inputSelect_SemiColonOptions": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputSelect": 1,
+  "cmp.ui.label": 1
+ },
+ "cmp.uitest.inputSelect_UseOptionsAtribTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.inputSelect": 2
+ },
+ "cmp.uitest.inputTextArea_MaxLength": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.inputTextArea": 1
+ },
+ "cmp.uitest.inputTextArea_UpdateOnTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.inputTextArea_UpdateOnValueChange": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.inputText_CutCopyPasteEventTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uitest.inputText_MaxLength": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1
+ },
+ "cmp.uitest.inputText_NoMaxLength": {
+  "cmp.aura.component": 1,
+  "cmp.ui.inputText": 1
+ },
+ "cmp.uitest.inputText_updateOnTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.inputText_updateOnWithLabelTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.input_themeingTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.label": 9,
+  "cmp.ui.inputCheckbox": 4,
+  "cmp.ui.inputText": 2,
+  "cmp.ui.inputSearch": 2,
+  "cmp.ui.inputDefaultError": 1
+ },
+ "cmp.uitest.label_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.label": 1,
+  "cmp.aura.iteration": 1,
+  "cmp.ui.inputPercent": 2,
+  "cmp.ui.inputCurrency": 2,
+  "cmp.ui.inputCheckbox": 2,
+  "cmp.ui.inputDate": 1,
+  "cmp.ui.inputDateTime": 1,
+  "cmp.ui.inputNumber": 1,
+  "cmp.ui.inputRadio": 1,
+  "cmp.ui.inputRange": 1,
+  "cmp.ui.inputSearch": 1,
+  "cmp.ui.inputSelect": 1,
+  "cmp.ui.inputText": 1,
+  "cmp.ui.inputTextArea": 2,
+  "cmp.ui.inputPhone": 1,
+  "cmp.ui.inputEmail": 1,
+  "cmp.ui.inputSecret": 1,
+  "cmp.ui.inputURL": 1
+ },
+ "cmp.uitest.listSorterDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uitest.listSorter_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.ui.listSorter": 3,
+  "cmp.ui.outputText": 2
+ },
+ "cmp.uitest.list_MultipleDataProvidersTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.list": 1,
+  "cmp.ui.button": 5
+ },
+ "cmp.uitest.localStorageFiller": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.menuItem_extend": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.set": 2
+ },
+ "cmp.uitest.menuList_Extend": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.messagedemo": {
+  "cmp.aura.component": 1,
+  "cmp.ui.message": 5
+ },
+ "cmp.uitest.outputCmps_EmptyStringValue": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDate": 1,
+  "cmp.ui.outputCurrency": 1,
+  "cmp.ui.outputDateTime": 1,
+  "cmp.ui.outputNumber": 1,
+  "cmp.ui.outputPercent": 1
+ },
+ "cmp.uitest.outputCurrency_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputCurrency": 2
+ },
+ "cmp.uitest.outputDateTime_JavaModel": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDateTime": 4
+ },
+ "cmp.uitest.outputDateTime_NumericValueFromJavaObj": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDateTime": 1
+ },
+ "cmp.uitest.outputDateTime_OverriddenFormatDateTime": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.uitest.outputDateTime_OverriddenGetFormat": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.outputDateTime_OverriddenGetTimeZone": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.outputDate_JavaModel": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDate": 1
+ },
+ "cmp.uitest.outputDate_NonDateJavaObj": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputDate": 1
+ },
+ "cmp.uitest.outputDate_OverriddenFormatDate": {
+  "cmp.aura.component": 1,
+  "cmp.aura.set": 1
+ },
+ "cmp.uitest.outputMultiSelect_JavaModel": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputMultiSelect": 4
+ },
+ "cmp.uitest.outputNumber_BlankValue": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.outputNumber": 1
+ },
+ "cmp.uitest.outputNumber_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputNumber": 2
+ },
+ "cmp.uitest.outputPercent_FormattingWithNullOrEmptyStringTest": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputPercent": 2
+ },
+ "cmp.uitest.outputRichText_JavaModel": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputRichText": 11
+ },
+ "cmp.uitest.outputText_JavaModel": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputText": 4
+ },
+ "cmp.uitest.outputText_SettingBody": {
+  "cmp.aura.component": 1,
+  "cmp.ui.outputText": 1
+ },
+ "cmp.uitest.output_themeingTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.label": 5,
+  "cmp.ui.outputCheckbox": 2,
+  "cmp.ui.outputURL": 1,
+  "cmp.ui.outputTextArea": 1,
+  "cmp.ui.outputLabel": 1
+ },
+ "cmp.uitest.panel2": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 1,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.uitest.panel2Content": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.method": 1
+ },
+ "cmp.uitest.panel2_Tester": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 26,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.outputText": 2
+ },
+ "cmp.uitest.panelTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.dependency": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.panelManager": 1
+ },
+ "cmp.uitest.pillContainerAutoCompleteDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.pillContainer_AsOutputField": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.pillContainer": 1
+ },
+ "cmp.uitest.pillContainer_Bubbling": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.handler": 4,
+  "cmp.ui.pillContainer": 1,
+  "cmp.ui.inputText": 1
+ },
+ "cmp.uitest.pillContainer_InputText": {
+  "cmp.aura.component": 1,
+  "cmp.aura.import": 1,
+  "cmp.aura.registerEvent": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.pillContainer_WithAutoComplete": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uitest.pillContainer_WithAutoCompleteHeader": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.pillContainer_WithTextInput": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2
+ },
+ "cmp.uitest.popupTestExtendedPopup": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.popupTestExtendedTarget": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.popupTestFrame": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 1
+ },
+ "cmp.uitest.popupTestTriggerElement": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerevent": 1,
+  "cmp.ui.label": 1,
+  "cmp.ui.button": 1,
+  "cmp.ui.inputText": 1
+ },
+ "cmp.uitest.scrollerNative": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.ui.scroller": 1
+ },
+ "cmp.uitest.scroller_BidirectionalTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.outputText": 6
+ },
+ "cmp.uitest.scroller_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.button": 6
+ },
+ "cmp.uitest.scroller_basic": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.scroller": 1
+ },
+ "cmp.uitest.scroller_basicPerf": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.stampdemo": {
+  "cmp.aura.component": 1,
+  "cmp.ui.stamp": 6
+ },
+ "cmp.uitest.tab_lazyCustomTab": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.tabset_RegressionTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 2,
+  "cmp.aura.if": 2
+ },
+ "cmp.uitest.tabset_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4,
+  "cmp.aura.if": 5
+ },
+ "cmp.uitest.tabset_extendsTest": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.tabset_overflowTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3
+ },
+ "cmp.uitest.tooltipTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.tooltipTestPosition": {
+  "cmp.aura.component": 1
+ },
+ "cmp.uitest.tooltip_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.aura.if": 2
+ },
+ "cmp.uitest.treeNode_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.treeNode": 1
+ },
+ "cmp.uitest.tree_Test": {
+  "cmp.aura.component": 1,
+  "cmp.ui.tree": 2
+ },
+ "cmp.uitest.virtualDataGridItem": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.virtualDataGridProvider_test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uitest.virtualDataGrid_columnsTests": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 11,
+  "cmp.aura.handler": 2
+ },
+ "cmp.uitest.virtualDataGrid_dataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.uitest.virtualDataGrid_onSortTest": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1
+ },
+ "cmp.uitest.virtualDataGrid_test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.virtualDataGrid": 1
+ },
+ "cmp.uitest.virtualList_Test": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 4
+ },
+ "cmp.uitest.virtualList_TestDataProvider": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 5,
+  "cmp.aura.handler": 2
+ },
+ "cmp.updateTest.updateHandling": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.updateTest.updateWithoutHandling": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 1,
+  "cmp.ui.outputText": 1,
+  "cmp.ui.button": 2
+ },
+ "cmp.updateTest.updateable": {
+  "cmp.aura.component": 1,
+  "cmp.aura.registerEvent": 1
+ },
+ "cmp.updateTest.updateableAlso": {
+  "cmp.aura.component": 1
+ },
+ "cmp.updateTest.updateableOther": {
+  "cmp.aura.component": 1
+ },
+ "cmp.validationTest.basic": {
+  "cmp.aura.component": 1
+ },
+ "cmp.valueChange.componentInit": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 4,
+  "cmp.aura.attribute": 1,
+  "cmp.valueChange.facetInit": 1
+ },
+ "cmp.valueChange.facetInit": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.valueChange.newComponentInit": {
+  "cmp.aura.component": 1,
+  "cmp.aura.handler": 1
+ },
+ "cmp.valueChange.simpleValueChange": {
+  "cmp.aura.component": 1,
+  "cmp.aura.attribute": 3,
+  "cmp.aura.handler": 8,
+  "cmp.test.ballot": 1
+ },
+ "cmp.whitespaceBehaviorTest.optimizeWhitespace": {
+  "cmp.aura.component": 1
+ },
+ "cmp.whitespaceBehaviorTest.preserveWhitespace": {
+  "cmp.aura.component": 1
+ }
+}
