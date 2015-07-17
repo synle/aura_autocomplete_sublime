@@ -13,43 +13,18 @@
     <body>
     
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<div style="border:1px solid tomato">
-				<!-- <div>
-					<h2>Dependencies Table</h2>
-					<hr />
-				</div>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>Component</th>
-							<th>Dependencies</th>
-							<th>Count</th>
-						</tr>
-					</thead>
-					<tbody id="tblContentDep"></tbody>
-				</table> -->
+				<div>
+					<h1>
+						Dependencies Tree | <a href='./index.usage.html'>Usage Table</a>
+						<button id="btnExpandAll" class="btn btn-primary" style="float:right; cursor:pointer"> + Expand All</button>
 
-				<div><h2>Dependencies Tree</h2></div>
+						<button id="btnCollapseAll" class="btn" style="float:right; cursor:pointer; margin-right:20px;"> - Collapse All</button>
+					</h1>
+				</div>
 				<div><input id="searchComponent" placeholder="Component To Search" style="width:100%" /></div>
 				<div id="tree"></div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div style="border:1px solid purple">
-				<div>
-					<h2>Usage Table</h2>
-				</div>
-				<div><input id="searchComponentUsage" placeholder="Component To Search" style="width:100%" /></div>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>Component</th>
-							<th>Usage</th>
-						</tr>
-					</thead>
-					<tbody id="tblUsage"></tbody>
-				</table>
 			</div>
 		</div>
 	</div>
@@ -63,13 +38,6 @@
 	</tr>
 	</script>
 
-
-	<script id="tmplUsageRow" type="text/x-handlebars-template">
-	<tr>
-		<td>{{cmp}}</td>
-		<td>{{count}}</td>
-	</tr>
-	</script>
 
     <script>
 	$.debounce = function(ts, func){
@@ -87,19 +55,21 @@
 	}
 
     $.get('./stat/depHash.json', function(r){
-    	var source   = $("#tmplContentDepRow").html();
-    	var template = Handlebars.compile(source);
-    	var body = $('#tblContentDep');
-
     	//draw the trees
     	var treeData = [];
+    	var appNode = createTreeNode('app', true, 'lvl_0', '#FFF', '#000');
+    	var cmpNode = createTreeNode('cmp', true, 'lvl_0', '#FFF', '#000');
+
+    	treeData.push(appNode);
+    	treeData.push(cmpNode);
+
     	for (var k in r){
     		var cmpName = k;
-    		var curNode = createTreeNode(cmpName, true, 'lvl_1', '#FFF', '#000');
+    		var curNode = createTreeNode(cmpName, true, 'lvl_1', '#FFF', '#444');
     		var totalDepdenciesUse = 0;
     		for (var cmpDep in r[k]){
     			var count = r[k][cmpDep].length;
-    			var curChildNode = createTreeNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#000', '#FFF');
+    			var curChildNode = createTreeNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#FFF', '#777');
     			curNode.nodes.push(
     				curChildNode
 				);
@@ -108,36 +78,46 @@
 
 				//generate attributes in tag
 				for (var i = 0; i < r[k][cmpDep].length;i++){
-					var curGrandChildNode = createTreeNode(cmpDep + '['+i+']', true, 'lvl_3');
+					var curGrandChildNode = createTreeNode(cmpDep + '['+i+']', false, 'lvl_3', '#FFF', '#AAA');
 					curChildNode.nodes.push(
 						curGrandChildNode
 					);
 
-					$.each(r[k][cmpDep][i], function(attrName, attrVal){
-						//simple mode
-						curGrandChildNode.nodes.push(
-							createTreeNode( '<b>'+attrName+':</b> ' + attrVal, false, 'lvl_4')
-						);
+					if(Object.keys(r[k][cmpDep][i]).length > 0){
+						curGrandChildNode.nodes = [];
 
-						// //full on mode
-						// var nameNode = createTreeNode( attrName, true, 'lvl_4');
-						// var valNode = createTreeNode( attrVal, false, 'lvl_5');
-						// nameNode.nodes.push(
-						// 	valNode
-						// );
-						// nameNode.state.expanded = true;
-						// // valNode.state.expanded = true;
+						$.each(r[k][cmpDep][i], function(attrName, attrVal){
+							//simple mode
+							curGrandChildNode.nodes.push(
+								createTreeNode( '<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal, false, 'lvl_4')
+							);
 
-						// curGrandChildNode.nodes.push(
-						// 	nameNode
-						// );
-					});
+							// //full on mode
+							// var nameNode = createTreeNode( attrName, true, 'lvl_4');
+							// var valNode = createTreeNode( attrVal, false, 'lvl_5');
+							// nameNode.nodes.push(
+							// 	valNode
+							// );
+							// nameNode.state.expanded = true;
+							// // valNode.state.expanded = true;
+
+							// curGrandChildNode.nodes.push(
+							// 	nameNode
+							// );
+						});
+					}
 				}
     		}
 
-			curNode.text += " (" + totalDepdenciesUse + ")"
 
-    		treeData.push(curNode);
+			curNode.text = curNode.text.substr(4, curNode.text.length) + " (" + totalDepdenciesUse + ")"
+
+			if(cmpName.indexOf('app.') === 0){
+				appNode.nodes.push(curNode);	
+			}
+			else{
+				cmpNode.nodes.push(curNode);
+			}
     	}
 
     	function createTreeNode (name, hasChild, tag, color, bgcolor){
@@ -163,20 +143,17 @@
 		  backColor: 'green'
 		});
     });
+	
 
-    $.get('./stat/reverseCountHash.json', function(r){
-    	var source   = $("#tmplUsageRow").html();
-    	var template = Handlebars.compile(source);
-    	var body = $('#tblUsage');
+	$('#btnExpandAll').click(function(){
+		$('#tree').treeview('expandAll');		
+	});
 
-    	for (var k in r){
-    		var cmpName = k;
-    		body.append(template({
-				cmp: cmpName,
-				count : r[k]
-			}));
-    	}
-    });
+	$('#btnCollapseAll').click(function(){
+		$('#tree').treeview('collapseAll');		
+	});
+	
+
 
     $('#searchComponent').keypress(
     	$.debounce(
@@ -196,27 +173,6 @@
 		    }
 		)
 	);
-
-
-    $('#searchComponentUsage').keypress(
-    	$.debounce(
-    		500,
-    		function(){
-		    	var keyword = $('#searchComponentUsage').val();
-
-		    	$('#tblUsage tr').each(function(){
-		    		var componentName = $.trim($(this).children().first().text());
-		    		if (componentName.toLowerCase().indexOf(keyword.toLowerCase()) >= 0){
-		    			$(this).show();
-		    		}
-		    		else{
-		    			$(this).hide();
-		    		}
-		    	});
-		    }
-		)
-	);
-
     </script>
 </body>
 </html>
