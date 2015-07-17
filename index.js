@@ -77,10 +77,14 @@ function processParser(baseDir, outputDir){
 
 	//print stats
 	logger.log('Statistics'.bold.underline.bgBlue.white);
-	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	logger.log('.app Files:'.bold, componentFileNames.app.length);
 	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
-	logger.log('Helper.js Files:'.bold, componentFileNames.helperjs.length);
-	logger.log('js Files:'.bold, componentFileNames.js.length);
+	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	// logger.log('js Files:'.bold, componentFileNames.js.length);
+	logger.log('\tHelper.js Files:'.bold, componentFileNames.helperjs.length);
+	logger.log('\tController.js Files:'.bold, componentFileNames.controllerjs.length);
+	logger.log('\tRenderrer.js Files:'.bold, componentFileNames.rendererjs.length);
+
 
 
 	generateRelationship(
