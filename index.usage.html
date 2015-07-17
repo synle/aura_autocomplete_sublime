@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="dist/bootstrap-treeview.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
+        <script src="dist/bootstrap-treeview.min.js"></script>
+        <meta charset="utf-8">
+        <title>Aura</title>
+    </head>
+    <body>
+    
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<div>
+					<h2>Usage Table | <a href='./index.html'>Dependencies Tree</a></h2>
+				</div>
+				<div><input id="searchComponentUsage" placeholder="Component To Search" style="width:100%" /></div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Component</th>
+							<th>Usage</th>
+						</tr>
+					</thead>
+					<tbody id="tblUsage"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script id="tmplUsageRow" type="text/x-handlebars-template">
+	<tr>
+		<td>{{cmp}}</td>
+		<td>{{count}}</td>
+	</tr>
+	</script>
+
+    <script>
+	$.debounce = function(ts, func){
+		var timer;
+
+		return function(){
+			if(timer){
+				clearTimeout(timer);
+			}
+			
+			timer = setTimeout(function(){
+				func();
+			}, ts | 500);
+		}
+	}
+
+    $.get('./stat/reverseCountHash.json', function(r){
+    	var source   = $("#tmplUsageRow").html();
+    	var template = Handlebars.compile(source);
+    	var body = $('#tblUsage');
+
+    	for (var k in r){
+    		var cmpName = k;
+    		body.append(template({
+				cmp: cmpName,
+				count : r[k]
+			}));
+    	}
+    });
+
+    $('#searchComponent').keypress(
+    	$.debounce(
+    		500,
+    		function(){
+		    	var keyword = $('#searchComponent').val();
+		    	$('.lvl_1').each(function(){
+		    		var parentLi = $(this).closest('li');
+		    		var componentName = $.trim(parentLi.text());
+		    		if (componentName.toLowerCase().indexOf(keyword.toLowerCase()) >= 0){
+		    			parentLi.show();
+		    		}
+		    		else{
+		    			parentLi.hide();
+		    		}
+		    	});
+		    }
+		)
+	);
+
+
+    $('#searchComponentUsage').keypress(
+    	$.debounce(
+    		500,
+    		function(){
+		    	var keyword = $('#searchComponentUsage').val();
+
+		    	$('#tblUsage tr').each(function(){
+		    		var componentName = $.trim($(this).children().first().text());
+		    		if (componentName.toLowerCase().indexOf(keyword.toLowerCase()) >= 0){
+		    			$(this).show();
+		    		}
+		    		else{
+		    			$(this).hide();
+		    		}
+		    	});
+		    }
+		)
+	);
+
+    </script>
+</body>
+</html>
