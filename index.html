@@ -86,58 +86,73 @@
 		}
 	}
 
-    $.get('./mappings.orig.json', function(r){
+    $.get('./stat/depHash.json', function(r){
     	var source   = $("#tmplContentDepRow").html();
     	var template = Handlebars.compile(source);
     	var body = $('#tblContentDep');
-
-    	// for (var k in r){
-    	// 	var cmpName = k;
-    	// 	for (var cmpDep in r[k]){
-    	// 		var count = r[k][cmpDep];
-    	// 		body.append(template({
-    	// 			cmp: cmpName,
-    	// 			cmpDep: cmpDep,
-    	// 			count : count
-    	// 		}));
-    	// 	}
-    	// }
 
     	//draw the trees
     	var treeData = [];
     	for (var k in r){
     		var cmpName = k;
-    		var curNode = createTreeNode(cmpName, true);
+    		var curNode = createTreeNode(cmpName, true, 'lvl_1', '#FFF', '#000');
     		var totalDepdenciesUse = 0;
     		for (var cmpDep in r[k]){
-    			var count = r[k][cmpDep];
-
+    			var count = r[k][cmpDep].length;
+    			var curChildNode = createTreeNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#000', '#FFF');
     			curNode.nodes.push(
-    				createTreeNode( cmpDep + ' (' + count + ')' , false )
+    				curChildNode
 				);
 
 				totalDepdenciesUse++;
+
+				//generate attributes in tag
+				for (var i = 0; i < r[k][cmpDep].length;i++){
+					var curGrandChildNode = createTreeNode(cmpDep + '['+i+']', true, 'lvl_3');
+					curChildNode.nodes.push(
+						curGrandChildNode
+					);
+
+					$.each(r[k][cmpDep][i], function(attrName, attrVal){
+						//simple mode
+						curGrandChildNode.nodes.push(
+							createTreeNode( '<b>'+attrName+':</b> ' + attrVal, false, 'lvl_4')
+						);
+
+						// //full on mode
+						// var nameNode = createTreeNode( attrName, true, 'lvl_4');
+						// var valNode = createTreeNode( attrVal, false, 'lvl_5');
+						// nameNode.nodes.push(
+						// 	valNode
+						// );
+						// nameNode.state.expanded = true;
+						// // valNode.state.expanded = true;
+
+						// curGrandChildNode.nodes.push(
+						// 	nameNode
+						// );
+					});
+				}
     		}
 
-    		curNode.color = "#FFFFFF";
-			curNode.backColor = "#000000";
 			curNode.text += " (" + totalDepdenciesUse + ")"
 
     		treeData.push(curNode);
     	}
 
-    	function createTreeNode (name, hasChild){
+    	function createTreeNode (name, hasChild, tag, color, bgcolor){
     		return {
     			text : name,
     			nodes: hasChild ? [] : undefined,
-    			color: "#000000",
-  				backColor: "#FFFFFF",
+    			color: color || '#000',
+  				backColor: bgcolor || '#fff',
   				state: {
 					// checked: true,
 					// disabled: true,
 					expanded: false,
 					selected: false
-				}
+				},
+				icon: tag
     		}
     	}
 
@@ -149,7 +164,7 @@
 		});
     });
 
-    $.get('./mappings.reverse.json', function(r){
+    $.get('./stat/reverseCountHash.json', function(r){
     	var source   = $("#tmplUsageRow").html();
     	var template = Handlebars.compile(source);
     	var body = $('#tblUsage');
@@ -168,7 +183,7 @@
     		500,
     		function(){
 		    	var keyword = $('#searchComponent').val();
-		    	$('.expand-icon').each(function(){
+		    	$('.lvl_1').each(function(){
 		    		var parentLi = $(this).closest('li');
 		    		var componentName = $.trim(parentLi.text());
 		    		if (componentName.toLowerCase().indexOf(keyword.toLowerCase()) >= 0){

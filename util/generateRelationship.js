@@ -2,17 +2,21 @@
 var cheerio = require('cheerio')
 var path = require('path');
 var colors = require('colors');
-var parseString = require('xml2js').parseString;
 var _ = require('lodash');
+
+
 //internal dependencies
 var parseHelper = require('./parseHelper');
 var logger = require('./logger'); //internal logger
+
+
 //componentFileNames: dictionary containing all js, evt and cmp files
 //outputDir: where to store the snippet
 module.exports = function processParser(componentFileNames, outputDir) {
     logger.log('   Parsing Relationship   '.rainbow.cyan.underline.bgBlack);
-    var mappings = {}; //has-a mapping
-    var reverseMappings = {}; //uses-in mapping
+    var countHash = {}; //has-a mapping
+    var depHash = {};
+    var reverseCountHash = {}; //uses-in mapping
     _.forEach(componentFileNames.app, function(fileName, idx) {
         var fileBreakups = parseHelper.getComponentBreakup(fileName);
         var namespace = fileBreakups[0];
@@ -22,7 +26,8 @@ module.exports = function processParser(componentFileNames, outputDir) {
         // if(myFormattedName !== 'cmp.ui.datePicker'){
         // 	return;
         // }
-        mappings[myFormattedName] = {};
+        countHash[myFormattedName] = {};
+        depHash[myFormattedName] = {};
     });
     _.forEach(componentFileNames.cmp, function(fileName, idx) {
         var fileBreakups = parseHelper.getComponentBreakup(fileName);
@@ -33,13 +38,15 @@ module.exports = function processParser(componentFileNames, outputDir) {
         // if(myFormattedName !== 'cmp.ui.datePicker'){
         // 	return;
         // }
-        mappings[myFormattedName] = {};
+        countHash[myFormattedName] = {};
+        depHash[myFormattedName] = {};
     });
     // _.forEach(componentFileNames.evt, function(fileName, idx) {
     //     var fileBreakups = parseHelper.getComponentBreakup(fileName);
     //     var namespace = fileBreakups[0];
     //     var componentName = fileBreakups[1];
-    //     mappings[getFormattedName('evt', namespace, componentName)] = {};
+    //     countHash[getFormattedName('evt', namespace, componentName)] = {};
+    //     depHash[myFormattedName] = {};
     // });
 
     //look at the files and find hints connecting the component
@@ -61,14 +68,19 @@ module.exports = function processParser(componentFileNames, outputDir) {
         //look for all components that used here
         parseComponentsUsed('cmp', fileName, namespace, componentName, fileContent);
     });
-
-
-    // logger.info('mappings'.red.bold, mappings)
-    // logger.info('reverseMappings'.blue.bold, reverseMappings)
     
-    
-    parseHelper.writeToFile(JSON.stringify(mappings, null, 1), 		  'mappings.orig.json');
-    parseHelper.writeToFile(JSON.stringify(reverseMappings, null, 1), 'mappings.reverse.json');
+        
+    parseHelper.writeToFile(JSON.stringify(
+        countHash, null, 1),           
+        './stat/countHash.json');
+    parseHelper.writeToFile(JSON.stringify(
+        depHash, null, 1), 		  
+        './stat/depHash.json'
+    );
+    parseHelper.writeToFile(JSON.stringify(
+        reverseCountHash, null, 1), 
+        './stat/reverseCountHash.json'
+    );
 
 
     //helpers
@@ -84,15 +96,23 @@ module.exports = function processParser(componentFileNames, outputDir) {
             if (tagName.indexOf(':') >= 0){
                 var curChildFormattedName = getFormattedNameFromString(tagName);
 
-                //bump the reverse tagName mappings
-                reverseMappings[tagName] = reverseMappings[tagName] || 0;
-                reverseMappings[tagName]++;
+                //bump the reverse tagName countHash
+                reverseCountHash[tagName] = reverseCountHash[tagName] || 0;
+                reverseCountHash[tagName]++;
 
                 //increase my own count
-                mappings[myFormattedName][curChildFormattedName] = mappings[myFormattedName][curChildFormattedName] || 0;
-                mappings[myFormattedName][curChildFormattedName]++;
+                countHash[myFormattedName][curChildFormattedName] = countHash[myFormattedName][curChildFormattedName] || 0;
+                countHash[myFormattedName][curChildFormattedName]++;
+
+                //use actual count
+                depHash[myFormattedName][curChildFormattedName] = depHash[myFormattedName][curChildFormattedName] || [];
+                depHash[myFormattedName][curChildFormattedName].push(tag.attribs);
             }
         });
+    }
+
+    function getAttributeMap(){
+
     }
 
     function getFormattedName(type, namespace, componentName) {
