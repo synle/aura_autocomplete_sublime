@@ -11,6 +11,12 @@
         <title>Aura</title>
     </head>
     <body>
+
+    <style>
+	#tree li:hover{
+		border-left: 4px solid tomato !important;
+	}
+	</style>
     
 	<div class="row">
 		<div class="col-md-12">
@@ -28,7 +34,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<script id="tmplContentDepRow" type="text/x-handlebars-template">
 	<tr>
@@ -120,55 +125,66 @@
 			}
     	}
 
-    	function createTreeNode (name, hasChild, tag, color, bgcolor){
-    		return {
-    			text : name,
-    			nodes: hasChild ? [] : undefined,
-    			color: color || '#000',
-  				backColor: bgcolor || '#fff',
-  				state: {
-					// checked: true,
-					// disabled: true,
-					expanded: false,
-					selected: false
-				},
-				icon: tag
-    		}
-    	}
-
 
     	$('#tree').treeview({
 		  data: treeData,         // data is not optional
 		  levels: 5,
-		  highlightSelected: false
-		  // highlightSearchResults: false
+		  highlightSelected: false,
+		  // highlightSearchResults: false,
 		});
+
+
+    	//hook up events
+		hookupEvents();
     });
-	
+		
 
-	$('#btnExpandAll').click(function(){
-		$('#tree').treeview('expandAll');		
-	});
+	//hook up events
+	function hookupEvents(){
+		$('#btnExpandAll').click(function(){
+			$('#tree').treeview('expandAll');		
+		});
 
-	$('#btnCollapseAll').click(function(){
-		$('#tree').treeview('collapseAll');		
-	});
-	
+		$('#btnCollapseAll').click(function(){
+			$('#tree').treeview('collapseAll');		
+		});
+		
+
+		$('#tree').on('click', 'li', function(e){
+			$('#tree').treeview('toggleNodeExpanded', [ $(e.target).data('nodeid'), { silent: true } ]);
+		})
 
 
-    $('#searchComponent').keypress(
-    	$.debounce(
-    		500,
-    		function(){
-    			var keyword = $('#searchComponent').val();
-    			$('#tree').treeview( 'search' , [ keyword, {
-				  ignoreCase: true,     // case insensitive
-				  exactMatch: false,    // like or equals
-				  revealResults: true,  // reveal matching nodes
-				}]);
-		    }
-		)
-	);
+	    $('#searchComponent').keypress(
+	    	$.debounce(
+	    		500,
+	    		function(){
+	    			var keyword = $('#searchComponent').val();
+	    			$('#tree').treeview( 'search' , [ keyword, {
+					  ignoreCase: true,     // case insensitive
+					  exactMatch: false,    // like or equals
+					  revealResults: true,  // reveal matching nodes
+					}]);
+			    }
+			)
+		);
+	}
+
+	function createTreeNode (name, hasChild, tag, color, bgcolor){
+		return {
+			text : name,
+			nodes: hasChild ? [] : undefined,
+			color: color || '#000',
+				backColor: bgcolor || '#fff',
+				state: {
+				// checked: true,
+				// disabled: true,
+				expanded: false,
+				selected: false
+			},
+			icon: tag
+		}
+	}
     </script>
 </body>
 </html>
