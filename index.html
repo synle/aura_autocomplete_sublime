@@ -48,11 +48,13 @@
 		background-color:#999;
 		color:#FFF;
 		padding-left: 60px;
+		display:none;
 	}
 	.lvl_4{
 		background-color:#DDD;
 		color:#000;
 		padding-left: 90px;
+		display:none;
 	}
 
 	.lvl_4 > b {
@@ -62,6 +64,10 @@
 
 	.selected{
 		border-left:5px solid #6f5499;
+	}
+
+	.lvl_4.visible {
+		display: block;
 	}
 	</style>
     
@@ -84,6 +90,9 @@
 
 
     <script>
+    var clusterize;
+    var data = [];
+
 	$.debounce = function(ts, func){
 		var timer;
 
@@ -100,17 +109,85 @@
 
     $.get('./stat/depHash.json', function(r){
     	// drawTree(r);
-    	drawClusterized(r)
+    	drawPlainDom(r)
     });
 
-    function drawClusterized(r){
-    	var data = [];
-    	var treeContainer = $("#tree").empty().addClass('clusterize-scroll');
+    function drawPlainDom(r){
+    	$("#tree").empty();
 
-    	$(['<div id="contentArea" class="clusterize-content">',
-    		'<div class="clusterize-no-data">Loading data…</div>',
-  			'</div>'
-		].join('')).appendTo(treeContainer);
+    	for (var k in r){
+    		var cmpName = k;
+    		data.push(
+    			createDomNode(
+    				cmpName,
+    				true,
+    				'lvl_1',
+    				'#FFF',
+    				'#444'
+				)
+    		);
+    			
+    		var totalDepdenciesUse = 0;
+
+    		for (var cmpDep in r[k]){
+    			var count = r[k][cmpDep].length;
+    			data.push(
+    				createDomNode(
+    					cmpDep + ' (' + count + ')',
+    					true,
+    					'lvl_2',
+    					'#FFF',
+    					'#777'
+					)
+				)
+
+
+				totalDepdenciesUse++;
+
+				//generate attributes in tag
+				for (var i = 0; i < r[k][cmpDep].length;i++){
+					data.push(
+						createDomNode(
+							cmpDep + '['+i+']',
+							false,
+							'lvl_3',
+							'#FFF',
+							'#AAA'
+						)
+					);
+
+
+					if(Object.keys(r[k][cmpDep][i]).length > 0){
+						$.each(r[k][cmpDep][i], function(attrName, attrVal){
+							//simple mode
+							data.push(
+								createDomNode(
+									'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
+									false,
+									'lvl_4',
+									'#000',
+									'#EEE'
+								)
+							);
+						});
+					}
+				}
+    		}
+    	}
+
+
+		//hook up events
+		hookupEvents()
+    }
+
+
+    function drawClusterized(r){
+    	$("#tree").empty();
+		// var treeContainer = $("#tree").empty().addClass('clusterize-scroll');
+		//   	$(['<div id="contentArea" class="clusterize-content">',
+		//   		'<div class="clusterize-no-data">Loading data…</div>',
+		// 			'</div>'
+		// ].join('')).appendTo(treeContainer);
 
 
     	for (var k in r){
@@ -160,7 +237,7 @@
 							//simple mode
 							data.push(
 								createDomNode(
-									'<b>'+attrName+':</b> ' + attrVal,
+									'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
 									false,
 									'lvl_4',
 									'#000',
@@ -174,7 +251,7 @@
     	}
 
     	// JavaScript
-		var clusterize = new Clusterize({
+		clusterize = new Clusterize({
 		  rows: data,
 		  scrollId: 'tree',
 		  contentId: 'contentArea'
@@ -200,11 +277,39 @@
 		$('#tree').on('click', '.box', function(){
 			$(this).toggleClass('selected');
 		});
+
+
+		$('#btnExpandAll').click(function(){	
+			$('.lvl_4').addClass('visible');
+			clusterize.refresh();
+		});
+		$('#btnCollapseAll').click(function(){
+			$('.lvl_4').removeClass('visible');
+			clusterize.refresh();
+		});
+	}
+
+	var entityMap = {
+		"&": "&amp;",
+		"<": "&lt;",
+		">": "&gt;",
+		'"': '&quot;',
+		"'": '&#39;',
+		"/": '&#x2F;'
+	};
+
+	function escapeHtml(string) {
+		return String(string).replace(/[&<>"'\/]/g, function (s) {
+			return entityMap[s];
+		});
 	}
 
 
-
 	function createDomNode (name, hasChild, tag){
+		$('<div class="box '+tag+'" />').html(name).appendTo('#tree');
+	}
+
+	function createDomNode2 (name, hasChild, tag){
 		return '<div class="box '+tag+'">'+name+'</div>'
 	}
     </script>
