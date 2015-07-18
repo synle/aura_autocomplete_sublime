@@ -3,11 +3,9 @@
     <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="dist/bootstrap-treeview.min.css" rel="stylesheet" type="text/css" />
-        <link href="dist/clusterize.css" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="dist/bootstrap-treeview.min.js"></script>
-        <script src="dist/clusterize.min.js"></script>
         <meta charset="utf-8">
         <title>Aura</title>
     </head>
@@ -181,87 +179,6 @@
     }
 
 
-    function drawClusterized(r){
-    	$("#tree").empty();
-		// var treeContainer = $("#tree").empty().addClass('clusterize-scroll');
-		//   	$(['<div id="contentArea" class="clusterize-content">',
-		//   		'<div class="clusterize-no-data">Loading data…</div>',
-		// 			'</div>'
-		// ].join('')).appendTo(treeContainer);
-
-
-    	for (var k in r){
-    		var cmpName = k;
-    		data.push(
-    			createDomNode(
-    				cmpName,
-    				true,
-    				'lvl_1',
-    				'#FFF',
-    				'#444'
-				)
-    		);
-    			
-    		var totalDepdenciesUse = 0;
-
-    		for (var cmpDep in r[k]){
-    			var count = r[k][cmpDep].length;
-    			data.push(
-    				createDomNode(
-    					cmpDep + ' (' + count + ')',
-    					true,
-    					'lvl_2',
-    					'#FFF',
-    					'#777'
-					)
-				)
-
-
-				totalDepdenciesUse++;
-
-				//generate attributes in tag
-				for (var i = 0; i < r[k][cmpDep].length;i++){
-					data.push(
-						createDomNode(
-							cmpDep + '['+i+']',
-							false,
-							'lvl_3',
-							'#FFF',
-							'#AAA'
-						)
-					);
-
-
-					if(Object.keys(r[k][cmpDep][i]).length > 0){
-						$.each(r[k][cmpDep][i], function(attrName, attrVal){
-							//simple mode
-							data.push(
-								createDomNode(
-									'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
-									false,
-									'lvl_4',
-									'#000',
-									'#EEE'
-								)
-							);
-						});
-					}
-				}
-    		}
-    	}
-
-    	// JavaScript
-		clusterize = new Clusterize({
-		  rows: data,
-		  scrollId: 'tree',
-		  contentId: 'contentArea'
-		});
-
-
-		//hook up events
-		hookupEvents()
-    }
-
 	//hook up events
 	function hookupEvents(){
 	    $('#searchComponent').keypress(
@@ -307,10 +224,6 @@
 
 	function createDomNode (name, hasChild, tag){
 		$('<div class="box '+tag+'" />').html(name).appendTo('#tree');
-	}
-
-	function createDomNode2 (name, hasChild, tag){
-		return '<div class="box '+tag+'">'+name+'</div>'
 	}
     </script>
 </body>
