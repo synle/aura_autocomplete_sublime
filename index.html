@@ -24,6 +24,7 @@
  		font-size:1.2em;
  		cursor:pointer;
  		border:1px solid #EEE;
+ 		box-sizing:border-box;
 	}
 
 	.box:hover
@@ -67,30 +68,36 @@
 	.lvl_4.visible {
 		display: block;
 	}
+
+
+	#loading{
+		background-color:tomato;
+		text-align:center;
+		color:#FFF;
+		text-shadow: 1px 1px #CCC;
+		position:fixed;
+		top:0;
+	}
 	</style>
     
 	<div class="row">
 		<div class="col-md-12">
-			<div style="padding:10px;">
-				<div>
-					<h1>
-						Dependencies Tree | <a href='./index.usage.html'>Usage Table</a>
-						<button id="btnExpandAll" class="btn btn-primary" style="float:right; cursor:pointer"> + Expand All</button>
+			<div id="loading"></div>
+			<div>
+				<h1>
+					Dependencies Tree | <a href='./index.usage.html'>Usage Table</a>
+					<button id="btnExpandAll" class="btn btn-primary" style="float:right; cursor:pointer"> + Expand All</button>
 
-						<button id="btnCollapseAll" class="btn" style="float:right; cursor:pointer; margin-right:20px;"> - Collapse All</button>
-					</h1>
-				</div>
-				<div><input id="searchComponent" placeholder="Component To Search" style="width:100%" /></div>
-				<div id="tree"></div>
+					<button id="btnCollapseAll" class="btn" style="float:right; cursor:pointer; margin-right:20px;"> - Collapse All</button>
+				</h1>
 			</div>
+			<div><input id="searchComponent" placeholder="Component To Search" style="width:100%" /></div>
+			<div id="tree"></div>
 		</div>
 	</div>
 
 
     <script>
-    var clusterize;
-    var data = [];
-
 	$.debounce = function(ts, func){
 		var timer;
 
@@ -113,65 +120,82 @@
     function drawPlainDom(r){
     	$("#tree").empty();
 
-    	for (var k in r){
-    		var cmpName = k;
-    		data.push(
-    			createDomNode(
-    				cmpName,
-    				true,
-    				'lvl_1',
-    				'#FFF',
-    				'#444'
-				)
-    		);
-    			
-    		var totalDepdenciesUse = 0;
+    	var jobQueues = [];
 
-    		for (var cmpDep in r[k]){
-    			var count = r[k][cmpDep].length;
-    			data.push(
-    				createDomNode(
-    					cmpDep + ' (' + count + ')',
-    					true,
-    					'lvl_2',
-    					'#FFF',
-    					'#777'
-					)
-				)
-
-
-				totalDepdenciesUse++;
-
-				//generate attributes in tag
-				for (var i = 0; i < r[k][cmpDep].length;i++){
-					data.push(
+    	for (var key in r){
+    		jobQueues.push(
+    			(function(k){
+	    			return function(){
+	    				var cmpName = k;
 						createDomNode(
-							cmpDep + '['+i+']',
-							false,
-							'lvl_3',
-							'#FFF',
-							'#AAA'
+							cmpName,
+							true,
+							'lvl_1'
 						)
-					);
+			    			
+			    		var totalDepdenciesUse = 0;
+
+			    		for (var cmpDep in r[k]){
+			    			var count = r[k][cmpDep].length;
+							createDomNode(
+								cmpDep + ' (' + count + ')',
+								true,
+								'lvl_2'
+							)
 
 
-					if(Object.keys(r[k][cmpDep][i]).length > 0){
-						$.each(r[k][cmpDep][i], function(attrName, attrVal){
-							//simple mode
-							data.push(
+							totalDepdenciesUse++;
+
+							//generate attributes in tag
+							for (var i = 0; i < r[k][cmpDep].length;i++){
 								createDomNode(
-									'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
+									cmpDep + '['+i+']',
 									false,
-									'lvl_4',
-									'#000',
-									'#EEE'
+									'lvl_3'
 								)
-							);
-						});
-					}
-				}
-    		}
+
+
+								if(Object.keys(r[k][cmpDep][i]).length > 0){
+									$.each(r[k][cmpDep][i], function(attrName, attrVal){
+										//simple mode
+										createDomNode(
+											'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
+											false,
+											'lvl_4'
+										)
+									});
+								}
+							}
+			    		}
+	    			}
+	    		})(key)
+			);
     	}
+
+    	var maxJobs = jobQueues.length;
+    	var actionHandlerFunc = function(){
+    		if (jobQueues.length > 0){
+    			var batchSize = 50;//size of batch at a time
+    			while(batchSize > 0){
+    				batchSize--;
+
+    				var firstFunc = jobQueues.pop();
+	    			if (typeof firstFunc === 'function'){
+	    				firstFunc();
+	    			}
+    			}
+
+    			//update loading progress
+    			var percent = parseInt(((maxJobs - jobQueues.length) / maxJobs) * 100) + '%';
+    			$('#loading').width(percent).html(percent);
+    		}
+    		else{
+    			clearInterval(actionScheduler);
+    			$('#loading').remove();
+    		}
+    	};
+    	var actionScheduler = setInterval(actionHandlerFunc, 100);
+    	actionHandlerFunc();//start the first action
 
 
 		//hook up events
