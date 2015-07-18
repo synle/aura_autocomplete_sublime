@@ -201,12 +201,25 @@
 
 
 		$('#btnExpandAll').click(function(){	
-			$('.lvl_4').addClass('visible');
-			clusterize.refresh();
+			$.each($('.lvl_3, .lvl_4'), function(idx, box){
+				taskScheduler.schedule(function(){
+					box.classList.add('visible');
+				});
+			});
+
+			//start the start scheduler
+    		taskScheduler.start(200, 500);
 		});
+
 		$('#btnCollapseAll').click(function(){
-			$('.lvl_4').removeClass('visible');
-			clusterize.refresh();
+			$.each($('.lvl_3, .lvl_4'), function(idx, box){
+				taskScheduler.schedule(function(){
+					box.classList.remove('visible');
+				});
+			});
+
+			//start the start scheduler
+    		taskScheduler.start(200, 500);
 		});
 	}
 
@@ -231,8 +244,8 @@
 	}
 
 	function TaskScheduler(batchSize, intervalLength){
-		batchSize = batchSize || 100;//size of batch at a time
-		intervalLength = intervalLength || 500;//interval length
+		batchSize = batchSize || 50;//size of batch at a time
+		intervalLength = intervalLength || 1000;//interval length
 
 		var jobQueues = [];
 
@@ -240,12 +253,17 @@
 			schedule: function(func){
 				jobQueues.push(func);
 			},
-			start: function(){
+			reset: function(){
+				jobQueues = [];
+			},
+			start: function(newBatchSize, newIntervalLen){
+				newBatchSize = newBatchSize || batchSize;
+				newIntervalLen = newIntervalLen || intervalLength;
+
 				var maxJobs = jobQueues.length;
 		    	var actionHandlerFunc = function(){
-		    		console.log(jobQueues.length, jobQueues[0]);
 		    		if (jobQueues.length > 0){
-		    			var curBatchSizeLeft = batchSize;
+		    			var curBatchSizeLeft = newBatchSize;
 		    			while(curBatchSizeLeft > 0){
 		    				curBatchSizeLeft--;
 
@@ -261,12 +279,15 @@
 		    		}
 		    		else{
 		    			clearInterval(actionScheduler);
-		    			$('#loading').remove();
+		    			$('#loading').hide();
 		    		}
 		    	};
 
+
+		    	//show loading
+		    	$('#loading').show().empty();
 		    	actionHandlerFunc();//start the first action
-		    	var actionScheduler = setInterval(actionHandlerFunc, intervalLength);
+		    	var actionScheduler = setInterval(actionHandlerFunc, newIntervalLen);
 			}
 		}
 	}
