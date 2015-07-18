@@ -3,10 +3,11 @@
     <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="dist/bootstrap-treeview.min.css" rel="stylesheet" type="text/css" />
+        <link href="dist/clusterize.css" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
         <script src="dist/bootstrap-treeview.min.js"></script>
+        <script src="dist/clusterize.min.js"></script>
         <meta charset="utf-8">
         <title>Aura</title>
     </head>
@@ -35,14 +36,6 @@
 		</div>
 	</div>
 
-	<script id="tmplContentDepRow" type="text/x-handlebars-template">
-	<tr>
-		<td>{{cmp}}</td>
-		<td>{{cmpDep}}</td>
-		<td>{{count}}</td>
-	</tr>
-	</script>
-
 
     <script>
 	$.debounce = function(ts, func){
@@ -60,7 +53,52 @@
 	}
 
     $.get('./stat/depHash.json', function(r){
-    	//draw the trees
+    	// drawTree(r);
+    	drawClusterized(r)
+    });
+
+    function drawClusterized(r){
+    	var treeContainer = $("#tree").empty().addClass('clusterize-scroll');
+
+    	$(['<div id="contentArea" class="clusterize-content">',
+    		'<div class="clusterize-no-data">Loading data…</div>',
+  			'</div>'
+		].join('')).appendTo(treeContainer);
+
+
+    	for (var k in r){
+    		var cmpName = k;
+    		createDomNode(cmpName, true, 'lvl_1', '#FFF', '#444');
+    		var totalDepdenciesUse = 0;
+
+    		for (var cmpDep in r[k]){
+    			var count = r[k][cmpDep].length;
+    			createDomNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#FFF', '#777');
+
+				totalDepdenciesUse++;
+
+				//generate attributes in tag
+				for (var i = 0; i < r[k][cmpDep].length;i++){
+					createDomNode(cmpDep + '['+i+']', false, 'lvl_3', '#FFF', '#AAA');
+
+					if(Object.keys(r[k][cmpDep][i]).length > 0){
+						$.each(r[k][cmpDep][i], function(attrName, attrVal){
+							//simple mode
+							// createDomNode( '<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal, false, 'lvl_4')
+						});
+					}
+				}
+    		}
+    	}
+    }
+
+
+
+
+
+
+	function drawTree(r){
+		//draw the trees
     	var treeData = [];
     	var appNode = createTreeNode('app', true, 'lvl_0', '#FFF', '#000');
     	var cmpNode = createTreeNode('cmp', true, 'lvl_0', '#FFF', '#000');
@@ -136,8 +174,7 @@
 
     	//hook up events
 		hookupEvents();
-    });
-		
+	}
 
 	//hook up events
 	function hookupEvents(){
@@ -170,6 +207,13 @@
 		);
 	}
 
+
+
+	function createDomNode (name, hasChild, tag, color, bgcolor){
+		return $('<div class="'+tag+'" style="color='+color+'; background-color:'+bgcolor+ '" />').html(name).appendTo('#contentArea');
+	}
+
+	
 	function createTreeNode (name, hasChild, tag, color, bgcolor){
 		return {
 			text : name,
