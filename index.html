@@ -17,6 +17,29 @@
 	#tree li:hover{
 		border-left: 4px solid tomato !important;
 	}
+	.clusterize-scroll{
+		max-height: 700px;
+	}
+ 	.lvl_0 ,.lvl_1 ,.lvl_2 ,.lvl_3 ,.lvl_4{
+ 		font-weight:bold;
+ 		padding:0.5em;
+ 		font-size:1.2em;
+ 		border:1px solid #DDD;
+ 	}
+
+ 	.lvl_0{
+ 	}
+	.lvl_1{
+	}
+	.lvl_2{
+		padding-left: 20px;
+	}
+	.lvl_3{
+		padding-left: 40px;
+	}
+	.lvl_4{
+		padding-left: 60px;
+	}
 	</style>
     
 	<div class="row">
@@ -58,6 +81,7 @@
     });
 
     function drawClusterized(r){
+    	var data = [];
     	var treeContainer = $("#tree").empty().addClass('clusterize-scroll');
 
     	$(['<div id="contentArea" class="clusterize-content">',
@@ -68,28 +92,70 @@
 
     	for (var k in r){
     		var cmpName = k;
-    		createDomNode(cmpName, true, 'lvl_1', '#FFF', '#444');
+    		data.push(
+    			createDomNode(
+    				cmpName,
+    				true,
+    				'lvl_1',
+    				'#FFF',
+    				'#444'
+				)
+    		);
+    			
     		var totalDepdenciesUse = 0;
 
     		for (var cmpDep in r[k]){
     			var count = r[k][cmpDep].length;
-    			createDomNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#FFF', '#777');
+    			data.push(
+    				createDomNode(
+    					cmpDep + ' (' + count + ')',
+    					true,
+    					'lvl_2',
+    					'#FFF',
+    					'#777'
+					)
+				)
+
 
 				totalDepdenciesUse++;
 
 				//generate attributes in tag
 				for (var i = 0; i < r[k][cmpDep].length;i++){
-					createDomNode(cmpDep + '['+i+']', false, 'lvl_3', '#FFF', '#AAA');
+					data.push(
+						createDomNode(
+							cmpDep + '['+i+']',
+							false,
+							'lvl_3',
+							'#FFF',
+							'#AAA'
+						)
+					);
+
 
 					if(Object.keys(r[k][cmpDep][i]).length > 0){
 						$.each(r[k][cmpDep][i], function(attrName, attrVal){
 							//simple mode
-							// createDomNode( '<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal, false, 'lvl_4')
+							data.push(
+								createDomNode(
+									'<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal,
+									false,
+									'lvl_4',
+									'#000',
+									'#EEE'
+								)
+							);
 						});
 					}
 				}
     		}
     	}
+
+    	// JavaScript
+		var clusterize = new Clusterize({
+		  rows: data,
+		  scrollId: 'tree',
+		  contentId: 'contentArea'
+		});
     }
 
 
@@ -210,7 +276,7 @@
 
 
 	function createDomNode (name, hasChild, tag, color, bgcolor){
-		return $('<div class="'+tag+'" style="color='+color+'; background-color:'+bgcolor+ '" />').html(name).appendTo('#contentArea');
+		return '<div class="'+tag+'" style="color:'+color+'; background-color:'+bgcolor+ '">'+name+'</div>'
 	}
 
 	
