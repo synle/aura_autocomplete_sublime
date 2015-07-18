@@ -14,31 +14,54 @@
     <body>
 
     <style>
-	#tree li:hover{
-		border-left: 4px solid tomato !important;
-	}
 	.clusterize-scroll{
 		max-height: 700px;
 	}
- 	.lvl_0 ,.lvl_1 ,.lvl_2 ,.lvl_3 ,.lvl_4{
- 		font-weight:bold;
+
+
+	.box
+	{
+		font-weight:bold;
  		padding:0.5em;
  		font-size:1.2em;
- 		border:1px solid #DDD;
- 	}
+ 		cursor:pointer;
+ 		border:1px solid #EEE;
+	}
 
- 	.lvl_0{
+	.box:hover
+	{
+		border-left: 5px solid tomato;
+	}
+
+	.lvl_0{
  	}
 	.lvl_1{
+		background-color:#333;
+		color:#FFF;
 	}
 	.lvl_2{
-		padding-left: 20px;
+		background-color:#666;
+		color:#FFF;
+		padding-left: 30px;
 	}
 	.lvl_3{
-		padding-left: 40px;
+		background-color:#999;
+		color:#FFF;
+		padding-left: 60px;
 	}
 	.lvl_4{
-		padding-left: 60px;
+		background-color:#DDD;
+		color:#000;
+		padding-left: 90px;
+	}
+
+	.lvl_4 > b {
+		text-decoration:underline;
+		margin-right:20px;
+	}
+
+	.selected{
+		border-left:5px solid #6f5499;
 	}
 	</style>
     
@@ -137,7 +160,7 @@
 							//simple mode
 							data.push(
 								createDomNode(
-									'<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal,
+									'<b>'+attrName+':</b> ' + attrVal,
 									false,
 									'lvl_4',
 									'#000',
@@ -156,144 +179,33 @@
 		  scrollId: 'tree',
 		  contentId: 'contentArea'
 		});
+
+
+		//hook up events
+		hookupEvents()
     }
-
-
-
-
-
-
-	function drawTree(r){
-		//draw the trees
-    	var treeData = [];
-    	var appNode = createTreeNode('app', true, 'lvl_0', '#FFF', '#000');
-    	var cmpNode = createTreeNode('cmp', true, 'lvl_0', '#FFF', '#000');
-
-    	treeData.push(appNode);
-    	treeData.push(cmpNode);
-
-    	for (var k in r){
-    		var cmpName = k;
-    		var curNode = createTreeNode(cmpName, true, 'lvl_1', '#FFF', '#444');
-    		var totalDepdenciesUse = 0;
-    		for (var cmpDep in r[k]){
-    			var count = r[k][cmpDep].length;
-    			var curChildNode = createTreeNode( cmpDep + ' (' + count + ')' , true, 'lvl_2', '#FFF', '#777');
-    			curNode.nodes.push(
-    				curChildNode
-				);
-
-				totalDepdenciesUse++;
-
-				//generate attributes in tag
-				for (var i = 0; i < r[k][cmpDep].length;i++){
-					var curGrandChildNode = createTreeNode(cmpDep + '['+i+']', false, 'lvl_3', '#FFF', '#AAA');
-					curChildNode.nodes.push(
-						curGrandChildNode
-					);
-
-					if(Object.keys(r[k][cmpDep][i]).length > 0){
-						curGrandChildNode.nodes = [];
-
-						$.each(r[k][cmpDep][i], function(attrName, attrVal){
-							//simple mode
-							curGrandChildNode.nodes.push(
-								createTreeNode( '<b class="text-info" style="text-decoration:underline">'+attrName+':</b> ' + attrVal, false, 'lvl_4')
-							);
-
-							// //full on mode
-							// var nameNode = createTreeNode( attrName, true, 'lvl_4');
-							// var valNode = createTreeNode( attrVal, false, 'lvl_5');
-							// nameNode.nodes.push(
-							// 	valNode
-							// );
-							// nameNode.state.expanded = true;
-							// // valNode.state.expanded = true;
-
-							// curGrandChildNode.nodes.push(
-							// 	nameNode
-							// );
-						});
-					}
-				}
-    		}
-
-
-			curNode.text = curNode.text.substr(4, curNode.text.length) + " (" + totalDepdenciesUse + ")"
-
-			if(cmpName.indexOf('app.') === 0){
-				appNode.nodes.push(curNode);	
-			}
-			else{
-				cmpNode.nodes.push(curNode);
-			}
-    	}
-
-
-    	$('#tree').treeview({
-		  data: treeData,         // data is not optional
-		  levels: 5,
-		  // highlightSelected: false,
-		  // highlightSearchResults: false,
-		});
-
-
-    	//hook up events
-		hookupEvents();
-	}
 
 	//hook up events
 	function hookupEvents(){
-		$('#btnExpandAll').click(function(){
-			$('#tree').treeview('expandAll');		
-		});
-
-		$('#btnCollapseAll').click(function(){
-			$('#tree').treeview('collapseAll');		
-		});
-		
-
-		$('#tree').on('click', 'li', function(e){
-			$('#tree').treeview('toggleNodeExpanded', [ $(e.target).data('nodeid'), { silent: true } ]);
-		})
-
-
 	    $('#searchComponent').keypress(
 	    	$.debounce(
 	    		500,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
-	    			$('#tree').treeview( 'search' , [ keyword, {
-					  ignoreCase: true,     // case insensitive
-					  exactMatch: false,    // like or equals
-					  revealResults: true,  // reveal matching nodes
-					}]);
+	    			
 			    }
 			)
 		);
+
+		$('#tree').on('click', '.box', function(){
+			$(this).toggleClass('selected');
+		});
 	}
 
 
 
-	function createDomNode (name, hasChild, tag, color, bgcolor){
-		return '<div class="'+tag+'" style="color:'+color+'; background-color:'+bgcolor+ '">'+name+'</div>'
-	}
-
-	
-	function createTreeNode (name, hasChild, tag, color, bgcolor){
-		return {
-			text : name,
-			nodes: hasChild ? [] : undefined,
-			color: color || '#000',
-				backColor: bgcolor || '#fff',
-				state: {
-				// checked: true,
-				// disabled: true,
-				expanded: false,
-				selected: false
-			},
-			icon: tag
-		}
+	function createDomNode (name, hasChild, tag){
+		return '<div class="box '+tag+'">'+name+'</div>'
 	}
     </script>
 </body>
