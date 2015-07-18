@@ -65,8 +65,8 @@
 		border-left:5px solid #6f5499;
 	}
 
-	.lvl_4.visible {
-		display: block;
+	.visible {
+		display: block !important;
 	}
 
 
@@ -201,42 +201,31 @@
 
 
 		$('#btnExpandAll').click(function(){	
-			$.each($('.lvl_3, .lvl_4'), function(idx, box){
-				taskScheduler.schedule(function(){
-					box.classList.add('visible');
-				});
-			});
-
-			//start the start scheduler
-    		taskScheduler.start(200, 500);
+			$('.lvl_3:not(.visible), .lvl_4:not(.visible)').addClass('visible');
 		});
 
 		$('#btnCollapseAll').click(function(){
-			$.each($('.lvl_3, .lvl_4'), function(idx, box){
-				taskScheduler.schedule(function(){
-					box.classList.remove('visible');
-				});
+			$('.lvl_3.visible, .lvl_4.visible').removeClass('visible');
+		});
+	}
+
+
+	var escapeHtml = (function(){
+		var entityMap = {
+			"&": "&amp;",
+			"<": "&lt;",
+			">": "&gt;",
+			'"': '&quot;',
+			"'": '&#39;',
+			"/": '&#x2F;'
+		};
+
+		return function (string) {
+			return String(string).replace(/[&<>"'\/]/g, function (s) {
+				return entityMap[s];
 			});
-
-			//start the start scheduler
-    		taskScheduler.start(200, 500);
-		});
-	}
-
-	var entityMap = {
-		"&": "&amp;",
-		"<": "&lt;",
-		">": "&gt;",
-		'"': '&quot;',
-		"'": '&#39;',
-		"/": '&#x2F;'
-	};
-
-	function escapeHtml(string) {
-		return String(string).replace(/[&<>"'\/]/g, function (s) {
-			return entityMap[s];
-		});
-	}
+		}
+	})();
 
 
 	function createDomNode (name, hasChild, tag){
