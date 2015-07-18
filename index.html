@@ -85,19 +85,22 @@
 	}
 	</style>
     
-	<div class="row">
-		<div class="col-md-12">
-			<div id="loading"></div>
-			<div>
-				<h1>
-					Dependencies Tree | <a href='./index.usage.html'>Usage Table</a>
-					<button id="btnExpandAll" class="btn btn-primary" style="float:right; cursor:pointer"> + Expand All</button>
-
-					<button id="btnCollapseAll" class="btn" style="float:right; cursor:pointer; margin-right:20px;"> - Collapse All</button>
-				</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="loading" class="row"></div>
+				<div class="row">
+					<h1>
+						Dependencies Tree | <a href='./index.usage.html'>Usage Table</a>
+						<button id="btnExpandAll" class="btn btn-primary" style="float:right; cursor:pointer"> + Expand All</button>
+						<button id="btnCollapseAll" class="btn" style="float:right; cursor:pointer; margin-right:20px;"> - Collapse All</button>
+					</h1>
+				</div>
+				<div class="row">
+					<input id="searchComponent" placeholder="Component To Search" style="width:100%" />
+				</div>
+				<div id="tree" class="row"></div>
 			</div>
-			<div><input id="searchComponent" placeholder="Component To Search" style="width:100%" /></div>
-			<div id="tree"></div>
 		</div>
 	</div>
 
@@ -260,7 +263,7 @@
 
 	function TaskScheduler(batchSize, intervalLength){
 		batchSize = batchSize || 100;//size of batch at a time
-		intervalLength = intervalLength || 100;//interval length
+		intervalLength = intervalLength || 200;//interval length
 
 		var jobQueues = [];
 
