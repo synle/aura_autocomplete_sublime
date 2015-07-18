@@ -24,6 +24,7 @@
  		font-size:1.2em;
  		border:1px solid #EEE;
  		box-sizing:border-box;
+ 		overflow: hidden;
 	}
 
 	.box:hover
@@ -36,6 +37,10 @@
 	.lvl_1{
 		background-color:#333;
 		color:#FFF;
+	}
+	.lvl_1 b{
+		float:right;
+		color:tomato;
 	}
 	.lvl_2{
 		background-color:#666;
@@ -128,8 +133,11 @@
     			(function(k){
 	    			return function(){
 	    				var cmpName = k;
+	    				var formattedName = cmpName.indexOf('app.') === 0 ? '<b>app</b> ' : '<b>cmp</b> ';
+	    				formattedName += cmpName.substr(cmpName.indexOf('.') + 1)
+
 						createDomNode(
-							cmpName,
+							formattedName,
 							true,
 							'lvl_1'
 						)
