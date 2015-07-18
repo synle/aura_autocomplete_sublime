@@ -22,7 +22,6 @@
 		font-weight:bold;
  		padding:0.5em;
  		font-size:1.2em;
- 		cursor:pointer;
  		border:1px solid #EEE;
  		box-sizing:border-box;
 	}
@@ -42,6 +41,7 @@
 		background-color:#666;
 		color:#FFF;
 		padding-left: 30px;
+		cursor:pointer;
 	}
 	.lvl_3{
 		background-color:#999;
@@ -206,6 +206,17 @@
 
 		$('#btnCollapseAll').click(function(){
 			$('.lvl_3.visible, .lvl_4.visible').removeClass('visible');
+		});
+
+
+		//click to expand
+		$('.lvl_2').click(function(){
+			var myclass = 'lvl_2';
+			var next = $(this).next();
+			while(next.hasClass(myclass) === false){
+				next.toggleClass('visible');
+				next = next.next();
+			}
 		});
 	}
 
