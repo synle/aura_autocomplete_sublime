@@ -1,4 +1,5 @@
 //depdencies
+var cheerio = require('cheerio')
 var path = require('path');
 var colors = require('colors');
 var parseString = require('xml2js').parseString;
@@ -26,6 +27,7 @@ module.exports = function processParser(componentFileNames, outputDir){
 	componentFileNames.evt.forEach(function(fileName){
 		var evtName = parseHelper.getBaseFileNameWithoutExtension(fileName);
 		var evtDescription = '';
+		var evtType = '';
 		var evtParams = [];
 		var fileContent = parseHelper.readFromFile(
 			fileName,
@@ -35,36 +37,42 @@ module.exports = function processParser(componentFileNames, outputDir){
 
 		//get file breakup which allows us to generate a more accurate component name
 		var fileBreakups = parseHelper.getComponentBreakup(fileName);
+		var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
 
 
 		//parsing xml
-		parseString(fileContent, {async: true}, function (err, result) {
-			evtDescription = result['aura:event'].$.description;
+		$ = cheerio.load(
+			fileContent,
+			{ xmlMode: true }
+		);
 
-			if (result['aura:event']['aura:attribute']){
-				result['aura:event']['aura:attribute'].forEach(function(auraAttribute){
-					var evtAttribute = auraAttribute.$;
-					evtParams.push(evtAttribute);
-				});
-			}
+		evtDescription = $('aura\\:event').attr('description') || evtDescription;
+		evtType = $('aura\\:event').attr('type') || evtType;
 
+		//save it to the dictionary
+		if(eventDictionary[evtNameKey]){
+			logger.error('Error!'.bold.red, evtName.yellow, ' is a duplicate');
+			logger.error('\tNewfile:'.underline.bold.red, fileName);
+			logger.error('\tExisted:'.underline.bold.red, eventDictionary[evtNameKey].fileName );
+		}
+		else{
+			eventDictionary[evtNameKey] = {
+				name: evtName,
+				description: evtDescription,
+				params : evtParams,
+				type: evtType,
+				fileName : fileName
+			};
+		}
 
-			//save it to the dictionary
-			var evtNameKey = fileBreakups[0] + ':' + fileBreakups[1];
-			if(eventDictionary[evtNameKey]){
-				logger.error('Error!'.bold.red, evtName.yellow, ' is a duplicate');
-				logger.error('\tNewfile:'.underline.bold.red, fileName);
-				logger.error('\tExisted:'.underline.bold.red, eventDictionary[evtNameKey].fileName );
-			}
-			else{
-				eventDictionary[evtNameKey] = {
-					name: evtName,
-					description: evtDescription,
-					params : evtParams,
-					fileName : fileName
-				};
-			}
-			// console.log('EventDef', evtNameKey.bold.blue);
+		//push attributes
+		var attributes = $('aura\\:attribute');
+		_.forEach(attributes, function(curEvtAttr){
+			evtParams.push({
+				name: curEvtAttr.attribs.name,
+				type: curEvtAttr.attribs.type,
+				description: curEvtAttr.attribs.description
+			});
 		});
 	});
 
@@ -93,6 +101,8 @@ module.exports = function processParser(componentFileNames, outputDir){
 
 
 		//parsing xml
+		$ = cheerio.load( fileContent );
+
 		parseString(fileContent, {async: true}, function (err, result) {
 			if (result === undefined || result === null || result['aura:component'] === undefined){
 				return;
