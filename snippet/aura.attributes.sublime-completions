@@ -1666,6 +1666,18 @@
       "contents": "titleHeadingLevel=\"${1:ui:datePicker - Optional - String}\""
     },
     {
+      "trigger": "attr-ui-datePicker-rangeStart",
+      "contents": "rangeStart=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
+      "trigger": "attr-ui-datePicker-rangeEnd",
+      "contents": "rangeEnd=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
+      "trigger": "attr-ui-datePicker-rangeClass",
+      "contents": "rangeClass=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
       "trigger": "attr-ui-datePickerGrid-class",
       "contents": "class=\"${1:ui:datePickerGrid - Optional - String}\""
     },
@@ -1822,6 +1834,14 @@
       "contents": "draggables=\"${1:ui:dragAndDropAccessibility - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "attr-ui-dragAndDropAccessibility-draggables",
+      "contents": "draggables=\"${1:ui:dragAndDropAccessibility - Required - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attr-ui-dragAndDropAccessibility-target",
+      "contents": "target=\"${1:ui:dragAndDropAccessibility - Required - Object}\""
+    },
+    {
       "trigger": "attr-ui-dragAndDropAccessibilityMenu-class",
       "contents": "class=\"${1:ui:dragAndDropAccessibilityMenu - Optional - String}\""
     },
@@ -1870,6 +1890,18 @@
       "contents": "accessibilityComponent=\"${1:ui:draggable - Optional - String}\""
     },
     {
+      "trigger": "attr-ui-draggable-isSuccessful",
+      "contents": "isSuccessful=\"${1:ui:draggable - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-ui-draggable-isValid",
+      "contents": "isValid=\"${1:ui:draggable - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-ui-draggable-isInAccessibilityMode",
+      "contents": "isInAccessibilityMode=\"${1:ui:draggable - Optional - Boolean}\""
+    },
+    {
       "trigger": "attr-ui-dropzone-types",
       "contents": "types=\"${1:ui:dropzone - Optional - String[]}\""
     },
@@ -1896,6 +1928,22 @@
     {
       "trigger": "attr-ui-dropzone-ariaDropEffect",
       "contents": "ariaDropEffect=\"${1:ui:dropzone - Optional - String}\""
+    },
+    {
+      "trigger": "attr-ui-dropzone-isInAccessibilityMode",
+      "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-ui-dropzone-isInAccessibilityMode",
+      "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-ui-dropzone-dragComponents",
+      "contents": "dragComponents=\"${1:ui:dropzone - Required - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attr-ui-dropzone-isInAccessibilityMode",
+      "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
     },
     {
       "trigger": "attr-ui-image-title",
@@ -2894,8 +2942,16 @@
       "contents": "pillFlavor=\"${1:ui:pillContainer - Optional - String}\""
     },
     {
+      "trigger": "attr-ui-pillContainer-items",
+      "contents": "items=\"${1:ui:pillContainer - Optional - List}\""
+    },
+    {
       "trigger": "attr-ui-pillContainerAutoComplete-allowNew",
       "contents": "allowNew=\"${1:ui:pillContainerAutoComplete - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-ui-pillContainerAutoComplete-parameters",
+      "contents": "parameters=\"${1:ui:pillContainerAutoComplete - Optional - List}\""
     },
     {
       "trigger": "attr-ui-pillContainerAutoCompleteOption-iconUrl",
@@ -3628,6 +3684,14 @@
     {
       "trigger": "attr-ui-vbox-centerClass",
       "contents": "centerClass=\"${1:ui:vbox - Optional - String}\""
+    },
+    {
+      "trigger": "attr-ui-virtualDataGrid-sortBy",
+      "contents": "sortBy=\"${1:ui:virtualDataGrid - Optional - String}\""
+    },
+    {
+      "trigger": "attr-ui-virtualDataGrid-items",
+      "contents": "items=\"${1:ui:virtualDataGrid - Optional - Object}\""
     },
     {
       "trigger": "attr-ui-virtualDataGrid-sortBy",
@@ -4682,6 +4746,26 @@
       "contents": "outputStringAttr=\"${1:auratest:auraMethod - Optional - String}\""
     },
     {
+      "trigger": "attr-auratest-auraMethod-stringAttr",
+      "contents": "stringAttr=\"${1:auratest:auraMethod - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-auraMethod-stringAttr",
+      "contents": "stringAttr=\"${1:auratest:auraMethod - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-auraMethod-stringAttr2",
+      "contents": "stringAttr2=\"${1:auratest:auraMethod - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-auraMethod-stringAttrParent",
+      "contents": "stringAttrParent=\"${1:auratest:auraMethod - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-auraMethodChild-stringAttrChild",
+      "contents": "stringAttrChild=\"${1:auratest:auraMethodChild - Optional - String}\""
+    },
+    {
       "trigger": "attr-auratest-baseInputTest-cmpType",
       "contents": "cmpType=\"${1:auratest:baseInputTest - Optional - string}\""
     },
@@ -4708,6 +4792,18 @@
     {
       "trigger": "attr-auratest-componentClassChild-errorOutFromUnRender_Child",
       "contents": "errorOutFromUnRender_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-auratest-componentClassChild-value",
+      "contents": "value=\"${1:auratest:componentClassChild - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-componentClassGrandChildClientProvider-value",
+      "contents": "value=\"${1:auratest:componentClassGrandChildClientProvider - Optional - String}\""
+    },
+    {
+      "trigger": "attr-auratest-componentClassGrandChildServerProvider-value",
+      "contents": "value=\"${1:auratest:componentClassGrandChildServerProvider - Optional - String}\""
     },
     {
       "trigger": "attr-auratest-componentClassLifecycleTest-testParent",
@@ -4844,6 +4940,10 @@
     {
       "trigger": "attr-auratest-componentClassParent-errorOutFromUnRender_Parent",
       "contents": "errorOutFromUnRender_Parent=\"${1:auratest:componentClassParent - Optional - Boolean}\""
+    },
+    {
+      "trigger": "attr-auratest-componentClassParent-value",
+      "contents": "value=\"${1:auratest:componentClassParent - Optional - String}\""
     },
     {
       "trigger": "attr-auratest-componentClassServerProviderIteration-iterationForceServer",
@@ -6754,6 +6854,10 @@
       "contents": "parentAttribute=\"${1:test:parentComponent - Optional - String}\""
     },
     {
+      "trigger": "attr-test-parserChild-at1",
+      "contents": "at1=\"${1:test:parserChild - Optional - String}\""
+    },
+    {
       "trigger": "attr-test-require-version",
       "contents": "version=\"${1:test:require - Optional - String}\""
     },
@@ -7514,6 +7618,10 @@
       "contents": "caseToRender=\"${1:uitest:inputDefaultError_Test - Optional - String}\""
     },
     {
+      "trigger": "attr-uitest-inputDefaultError_Test-errors",
+      "contents": "errors=\"${1:uitest:inputDefaultError_Test - Optional - List}\""
+    },
+    {
       "trigger": "attr-uitest-inputErrorComponent-errors",
       "contents": "errors=\"${1:uitest:inputErrorComponent - Optional - Object[]}\""
     },
@@ -7704,6 +7812,10 @@
     {
       "trigger": "attr-uitest-panel2Content-counter",
       "contents": "counter=\"${1:uitest:panel2Content - Optional - Integer}\""
+    },
+    {
+      "trigger": "attr-uitest-panel2Content-payload",
+      "contents": "payload=\"${1:uitest:panel2Content - Optional - Object}\""
     },
     {
       "trigger": "attr-uitest-panel2_Tester-panelType",

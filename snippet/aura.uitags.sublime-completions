@@ -1415,7 +1415,7 @@
     },
     {
       "trigger": "tag-ui-datePicker\tFull",
-      "contents": "ui:datePicker hasTime=\"${1:ui:datePicker - Optional - Boolean}\" hours=\"${2:ui:datePicker - Optional - Integer}\" is24HourFormat=\"${3:ui:datePicker - Optional - Boolean}\" maxYear=\"${4:ui:datePicker - Optional - Integer}\" minYear=\"${5:ui:datePicker - Optional - Integer}\" minutes=\"${6:ui:datePicker - Optional - Integer}\" value=\"${7:ui:datePicker - Optional - String}\" visible=\"${8:ui:datePicker - Optional - Boolean}\" managed=\"${9:ui:datePicker - Optional - Boolean}\" referenceElement=\"${10:ui:datePicker - Optional - Object}\" showToday=\"${11:ui:datePicker - Optional - Boolean}\" hideOnSelect=\"${12:ui:datePicker - Optional - Boolean}\" setFocus=\"${13:ui:datePicker - Optional - Boolean}\" titleHeadingLevel=\"${14:ui:datePicker - Optional - String}\">${15:Implements ui:visible.\tRepresents a date picker, which can be used in input components such as ui:inputDate and ui:inputDateTime.}</ui:datePicker>"
+      "contents": "ui:datePicker hasTime=\"${1:ui:datePicker - Optional - Boolean}\" hours=\"${2:ui:datePicker - Optional - Integer}\" is24HourFormat=\"${3:ui:datePicker - Optional - Boolean}\" maxYear=\"${4:ui:datePicker - Optional - Integer}\" minYear=\"${5:ui:datePicker - Optional - Integer}\" minutes=\"${6:ui:datePicker - Optional - Integer}\" value=\"${7:ui:datePicker - Optional - String}\" visible=\"${8:ui:datePicker - Optional - Boolean}\" managed=\"${9:ui:datePicker - Optional - Boolean}\" referenceElement=\"${10:ui:datePicker - Optional - Object}\" showToday=\"${11:ui:datePicker - Optional - Boolean}\" hideOnSelect=\"${12:ui:datePicker - Optional - Boolean}\" setFocus=\"${13:ui:datePicker - Optional - Boolean}\" titleHeadingLevel=\"${14:ui:datePicker - Optional - String}\" rangeStart=\"${15:ui:datePicker - Optional - String}\" rangeEnd=\"${16:ui:datePicker - Optional - String}\" rangeClass=\"${17:ui:datePicker - Optional - String}\">${18:Implements ui:visible.\tRepresents a date picker, which can be used in input components such as ui:inputDate and ui:inputDateTime.}</ui:datePicker>"
     },
     {
       "trigger": "tag-ui-datePickerGrid\tSimple",
@@ -1471,7 +1471,7 @@
     },
     {
       "trigger": "tag-ui-dragAndDropAccessibility\tFull",
-      "contents": "ui:dragAndDropAccessibility>${1:A drag and drop accessibility component.}</ui:dragAndDropAccessibility>"
+      "contents": "ui:dragAndDropAccessibility draggables=\"${1:ui:dragAndDropAccessibility - Required - Aura.Component[]}\" target=\"${2:ui:dragAndDropAccessibility - Required - Object}\">${3:A drag and drop accessibility component.}</ui:dragAndDropAccessibility>"
     },
     {
       "trigger": "tag-ui-dragAndDropAccessibilityMenu\tSimple",
@@ -1487,7 +1487,7 @@
     },
     {
       "trigger": "tag-ui-draggable\tFull",
-      "contents": "ui:draggable type=\"${1:ui:draggable - Optional - String}\" dataTransfer=\"${2:ui:draggable - Optional - Map}\" class=\"${3:ui:draggable - Optional - String}\" dragClass=\"${4:ui:draggable - Optional - String}\" dragAccessibilityClass=\"${5:ui:draggable - Optional - String}\" dragImageClass=\"${6:ui:draggable - Optional - String}\" disable=\"${7:ui:draggable - Optional - Boolean}\" accessibilityComponent=\"${8:ui:draggable - Optional - String}\">${9:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
+      "contents": "ui:draggable type=\"${1:ui:draggable - Optional - String}\" dataTransfer=\"${2:ui:draggable - Optional - Map}\" class=\"${3:ui:draggable - Optional - String}\" dragClass=\"${4:ui:draggable - Optional - String}\" dragAccessibilityClass=\"${5:ui:draggable - Optional - String}\" dragImageClass=\"${6:ui:draggable - Optional - String}\" disable=\"${7:ui:draggable - Optional - Boolean}\" accessibilityComponent=\"${8:ui:draggable - Optional - String}\" isSuccessful=\"${9:ui:draggable - Optional - Boolean}\" isValid=\"${10:ui:draggable - Optional - Boolean}\" isInAccessibilityMode=\"${11:ui:draggable - Optional - Boolean}\">${12:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
     },
     {
       "trigger": "tag-ui-dropzone\tSimple",
@@ -1495,7 +1495,7 @@
     },
     {
       "trigger": "tag-ui-dropzone\tFull",
-      "contents": "ui:dropzone types=\"${1:ui:dropzone - Optional - String[]}\" dragOverInterval=\"${2:ui:dropzone - Optional - Integer}\" class=\"${3:ui:dropzone - Optional - String}\" dragOverClass=\"${4:ui:dropzone - Optional - String}\" dragOverAccessibilityClass=\"${5:ui:dropzone - Optional - String}\" label=\"${6:ui:dropzone - Optional - String}\">${7:Implements ui:hasContextComponent.\tComponent that could be a drop target in drag and drop operation.}</ui:dropzone>"
+      "contents": "ui:dropzone dragComponents=\"${1:ui:dropzone - Required - Aura.Component[]}\" types=\"${2:ui:dropzone - Optional - String[]}\" dragOverInterval=\"${3:ui:dropzone - Optional - Integer}\" class=\"${4:ui:dropzone - Optional - String}\" dragOverClass=\"${5:ui:dropzone - Optional - String}\" dragOverAccessibilityClass=\"${6:ui:dropzone - Optional - String}\" label=\"${7:ui:dropzone - Optional - String}\" isInAccessibilityMode=\"${8:ui:dropzone - Optional - Boolean}\" isInAccessibilityMode=\"${9:ui:dropzone - Optional - Boolean}\" isInAccessibilityMode=\"${10:ui:dropzone - Optional - Boolean}\">${11:Implements ui:hasContextComponent.\tComponent that could be a drop target in drag and drop operation.}</ui:dropzone>"
     },
     {
       "trigger": "tag-ui-fieldLabel\tSimple",
@@ -2159,7 +2159,7 @@
     },
     {
       "trigger": "tag-ui-pillContainer\tFull",
-      "contents": "ui:pillContainer items=\"${1:ui:pillContainer - Optional - List}\" maxAllowed=\"${2:ui:pillContainer - Optional - Integer}\" maxCharactersInPill=\"${3:ui:pillContainer - Optional - Integer}\" maxLines=\"${4:ui:pillContainer - Optional - Integer}\" focusOnInput=\"${5:ui:pillContainer - Optional - Boolean}\" allowRemove=\"${6:ui:pillContainer - Optional - Boolean}\" pillInput=\"${7:ui:pillContainer - Optional - Aura.Component[]}\" showMoreLabel=\"${8:ui:pillContainer - Optional - String}\" pillFlavor=\"${9:ui:pillContainer - Optional - String}\">${10:A container for ui:pill}</ui:pillContainer>"
+      "contents": "ui:pillContainer items=\"${1:ui:pillContainer - Optional - List}\" maxAllowed=\"${2:ui:pillContainer - Optional - Integer}\" maxCharactersInPill=\"${3:ui:pillContainer - Optional - Integer}\" maxLines=\"${4:ui:pillContainer - Optional - Integer}\" focusOnInput=\"${5:ui:pillContainer - Optional - Boolean}\" allowRemove=\"${6:ui:pillContainer - Optional - Boolean}\" pillInput=\"${7:ui:pillContainer - Optional - Aura.Component[]}\" showMoreLabel=\"${8:ui:pillContainer - Optional - String}\" pillFlavor=\"${9:ui:pillContainer - Optional - String}\" items=\"${10:ui:pillContainer - Optional - List}\">${11:A container for ui:pill}</ui:pillContainer>"
     },
     {
       "trigger": "tag-ui-pillContainerAutoComplete\tSimple",
@@ -2167,7 +2167,7 @@
     },
     {
       "trigger": "tag-ui-pillContainerAutoComplete\tFull",
-      "contents": "ui:pillContainerAutoComplete allowNew=\"${1:ui:pillContainerAutoComplete - Optional - Boolean}\">${2:Implements ui:pillContainerInput.\tAuto complete component for use in a ui:pillContainer}</ui:pillContainerAutoComplete>"
+      "contents": "ui:pillContainerAutoComplete allowNew=\"${1:ui:pillContainerAutoComplete - Optional - Boolean}\" parameters=\"${2:ui:pillContainerAutoComplete - Optional - List}\">${3:Implements ui:pillContainerInput.\tAuto complete component for use in a ui:pillContainer}</ui:pillContainerAutoComplete>"
     },
     {
       "trigger": "tag-ui-pillContainerAutoCompleteOption\tSimple",
@@ -2367,7 +2367,7 @@
     },
     {
       "trigger": "tag-ui-virtualDataGrid\tFull",
-      "contents": "ui:virtualDataGrid sortBy=\"${1:ui:virtualDataGrid - Optional - String}\" class=\"${2:ui:virtualDataGrid - Optional - String}\" items=\"${3:ui:virtualDataGrid - Optional - List}\" headerColumns=\"${4:ui:virtualDataGrid - Optional - Aura.Component[]}\" columns=\"${5:ui:virtualDataGrid - Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${6:ui:virtualDataGrid - Optional - Aura.ComponentDefRef[]}\" dataModel=\"${7:ui:virtualDataGrid - Optional - Aura.Component[]}\" itemVar=\"${8:ui:virtualDataGrid - Optional - String}\" fixedHeader=\"${9:ui:virtualDataGrid - Optional - Boolean}\">${10:}</ui:virtualDataGrid>"
+      "contents": "ui:virtualDataGrid sortBy=\"${1:ui:virtualDataGrid - Optional - String}\" items=\"${2:ui:virtualDataGrid - Optional - Object}\" sortBy=\"${3:ui:virtualDataGrid - Optional - String}\" class=\"${4:ui:virtualDataGrid - Optional - String}\" items=\"${5:ui:virtualDataGrid - Optional - List}\" headerColumns=\"${6:ui:virtualDataGrid - Optional - Aura.Component[]}\" columns=\"${7:ui:virtualDataGrid - Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${8:ui:virtualDataGrid - Optional - Aura.ComponentDefRef[]}\" dataModel=\"${9:ui:virtualDataGrid - Optional - Aura.Component[]}\" itemVar=\"${10:ui:virtualDataGrid - Optional - String}\" fixedHeader=\"${11:ui:virtualDataGrid - Optional - Boolean}\">${12:}</ui:virtualDataGrid>"
     },
     {
       "trigger": "tag-ui-virtualList\tSimple",
@@ -3151,7 +3151,7 @@
     },
     {
       "trigger": "tag-auratest-auraMethod\tFull",
-      "contents": "auratest:auraMethod outputStringAttr=\"${1:auratest:auraMethod - Optional - String}\">${2:Implements auratest:auraMethodInterface.\t}</auratest:auraMethod>"
+      "contents": "auratest:auraMethod outputStringAttr=\"${1:auratest:auraMethod - Optional - String}\" stringAttr=\"${2:auratest:auraMethod - Optional - String}\" stringAttr=\"${3:auratest:auraMethod - Optional - String}\" stringAttr2=\"${4:auratest:auraMethod - Optional - String}\" stringAttrParent=\"${5:auratest:auraMethod - Optional - String}\">${6:Implements auratest:auraMethodInterface.\t}</auratest:auraMethod>"
     },
     {
       "trigger": "tag-auratest-auraMethodChild\tSimple",
@@ -3159,7 +3159,7 @@
     },
     {
       "trigger": "tag-auratest-auraMethodChild\tFull",
-      "contents": "auratest:auraMethodChild>${1:}</auratest:auraMethodChild>"
+      "contents": "auratest:auraMethodChild stringAttrChild=\"${1:auratest:auraMethodChild - Optional - String}\">${2:}</auratest:auraMethodChild>"
     },
     {
       "trigger": "tag-auratest-auraMethodContainer\tSimple",
@@ -3207,7 +3207,7 @@
     },
     {
       "trigger": "tag-auratest-componentClassChild\tFull",
-      "contents": "auratest:componentClassChild errorOutFromHelper_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\" errorOutFromRender_Child=\"${2:auratest:componentClassChild - Optional - Boolean}\" errorOutFromAfterRender_Child=\"${3:auratest:componentClassChild - Optional - Boolean}\" errorOutFromReRender_Child=\"${4:auratest:componentClassChild - Optional - Boolean}\" errorOutFromUnRender_Child=\"${5:auratest:componentClassChild - Optional - Boolean}\">${6:}</auratest:componentClassChild>"
+      "contents": "auratest:componentClassChild errorOutFromHelper_Child=\"${1:auratest:componentClassChild - Optional - Boolean}\" errorOutFromRender_Child=\"${2:auratest:componentClassChild - Optional - Boolean}\" errorOutFromAfterRender_Child=\"${3:auratest:componentClassChild - Optional - Boolean}\" errorOutFromReRender_Child=\"${4:auratest:componentClassChild - Optional - Boolean}\" errorOutFromUnRender_Child=\"${5:auratest:componentClassChild - Optional - Boolean}\" value=\"${6:auratest:componentClassChild - Optional - String}\">${7:}</auratest:componentClassChild>"
     },
     {
       "trigger": "tag-auratest-componentClassClientProvider\tSimple",
@@ -3223,7 +3223,7 @@
     },
     {
       "trigger": "tag-auratest-componentClassGrandChildClientProvider\tFull",
-      "contents": "auratest:componentClassGrandChildClientProvider>${1:}</auratest:componentClassGrandChildClientProvider>"
+      "contents": "auratest:componentClassGrandChildClientProvider value=\"${1:auratest:componentClassGrandChildClientProvider - Optional - String}\">${2:}</auratest:componentClassGrandChildClientProvider>"
     },
     {
       "trigger": "tag-auratest-componentClassGrandChildServerProvider\tSimple",
@@ -3231,7 +3231,7 @@
     },
     {
       "trigger": "tag-auratest-componentClassGrandChildServerProvider\tFull",
-      "contents": "auratest:componentClassGrandChildServerProvider>${1:}</auratest:componentClassGrandChildServerProvider>"
+      "contents": "auratest:componentClassGrandChildServerProvider value=\"${1:auratest:componentClassGrandChildServerProvider - Optional - String}\">${2:}</auratest:componentClassGrandChildServerProvider>"
     },
     {
       "trigger": "tag-auratest-componentClassLifecycleTest\tSimple",
@@ -3247,7 +3247,7 @@
     },
     {
       "trigger": "tag-auratest-componentClassParent\tFull",
-      "contents": "auratest:componentClassParent id=\"${1:auratest:componentClassParent - Optional - String}\" value=\"${2:auratest:componentClassParent - Optional - String}\" errorOutFromHelper_Parent=\"${3:auratest:componentClassParent - Optional - Boolean}\" errorOutFromRender_Parent=\"${4:auratest:componentClassParent - Optional - Boolean}\" errorOutFromAfterRender_Parent=\"${5:auratest:componentClassParent - Optional - Boolean}\" errorOutFromReRender_Parent=\"${6:auratest:componentClassParent - Optional - Boolean}\" errorOutFromUnRender_Parent=\"${7:auratest:componentClassParent - Optional - Boolean}\">${8:Implements auratest:componentClassProvidable.\t}</auratest:componentClassParent>"
+      "contents": "auratest:componentClassParent id=\"${1:auratest:componentClassParent - Optional - String}\" value=\"${2:auratest:componentClassParent - Optional - String}\" errorOutFromHelper_Parent=\"${3:auratest:componentClassParent - Optional - Boolean}\" errorOutFromRender_Parent=\"${4:auratest:componentClassParent - Optional - Boolean}\" errorOutFromAfterRender_Parent=\"${5:auratest:componentClassParent - Optional - Boolean}\" errorOutFromReRender_Parent=\"${6:auratest:componentClassParent - Optional - Boolean}\" errorOutFromUnRender_Parent=\"${7:auratest:componentClassParent - Optional - Boolean}\" value=\"${8:auratest:componentClassParent - Optional - String}\">${9:Implements auratest:componentClassProvidable.\t}</auratest:componentClassParent>"
     },
     {
       "trigger": "tag-auratest-componentClassSerialization\tSimple",
@@ -6599,15 +6599,7 @@
     },
     {
       "trigger": "tag-test-parserChild\tFull",
-      "contents": "test:parserChild>${1:}</test:parserChild>"
-    },
-    {
-      "trigger": "tag-test-parserFragment\tSimple",
-      "contents": "test:parserFragment$1>${2:}</test:parserFragment>"
-    },
-    {
-      "trigger": "tag-test-parserFragment\tFull",
-      "contents": "test:parserFragment>${1:}</test:parserFragment>"
+      "contents": "test:parserChild at1=\"${1:test:parserChild - Optional - String}\">${2:}</test:parserChild>"
     },
     {
       "trigger": "tag-test-parserGrandChild\tSimple",
@@ -6616,14 +6608,6 @@
     {
       "trigger": "tag-test-parserGrandChild\tFull",
       "contents": "test:parserGrandChild>${1:}</test:parserGrandChild>"
-    },
-    {
-      "trigger": "tag-test-parserInvalid\tSimple",
-      "contents": "test:parserInvalid$1>${2:}</test:parserInvalid>"
-    },
-    {
-      "trigger": "tag-test-parserInvalid\tFull",
-      "contents": "test:parserInvalid>${1:}</test:parserInvalid>"
     },
     {
       "trigger": "tag-test-require\tSimple",
@@ -8135,7 +8119,7 @@
     },
     {
       "trigger": "tag-uitest-inputDefaultError_Test\tFull",
-      "contents": "uitest:inputDefaultError_Test caseToRender=\"${1:uitest:inputDefaultError_Test - Optional - String}\">${2:}</uitest:inputDefaultError_Test>"
+      "contents": "uitest:inputDefaultError_Test caseToRender=\"${1:uitest:inputDefaultError_Test - Optional - String}\" errors=\"${2:uitest:inputDefaultError_Test - Optional - List}\">${3:}</uitest:inputDefaultError_Test>"
     },
     {
       "trigger": "tag-uitest-inputErrorComponent\tSimple",
@@ -8607,7 +8591,7 @@
     },
     {
       "trigger": "tag-uitest-panel2Content\tFull",
-      "contents": "uitest:panel2Content counter=\"${1:uitest:panel2Content - Optional - Integer}\">${2:Panel2}</uitest:panel2Content>"
+      "contents": "uitest:panel2Content counter=\"${1:uitest:panel2Content - Optional - Integer}\" payload=\"${2:uitest:panel2Content - Optional - Object}\">${3:Panel2}</uitest:panel2Content>"
     },
     {
       "trigger": "tag-uitest-panel2_Tester\tSimple",
