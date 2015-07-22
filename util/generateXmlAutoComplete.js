@@ -66,8 +66,8 @@ module.exports = function processParser(componentFileNames, outputDir){
 		}
 
 		//push attributes
-		var attributes = $('aura\\:attribute');
-		_.forEach(attributes, function(curEvtAttr){
+		var parsedAttributes = $('aura\\:attribute');
+		_.forEach(parsedAttributes, function(curEvtAttr){
 			evtParams.push({
 				name: curEvtAttr.attribs.name,
 				type: curEvtAttr.attribs.type,
@@ -103,62 +103,57 @@ module.exports = function processParser(componentFileNames, outputDir){
 		//parsing xml
 		$ = cheerio.load( fileContent );
 
-		parseString(fileContent, {async: true}, function (err, result) {
-			if (result === undefined || result === null || result['aura:component'] === undefined){
-				return;
-			}
-
-			var componentParsedXml = result['aura:component'];
-			var componentParsedObj = componentParsedXml.$ || {};
-
-			componentObj.description = componentParsedObj.description || '';
-			componentObj.implements = componentParsedObj.implements || '';
-
-			//push component events
-			var componentAuraEvents = componentParsedXml['aura:registerevent'];
-			if(componentAuraEvents){
-				componentAuraEvents.forEach(function(curCmpEvt){
-					var evtObj = curCmpEvt.$;
-					var matchingEvtDef = eventDictionary[evtObj.type];
-
-					// console.log('component used'.red, evtObj.type);
-
-					if (matchingEvtDef === undefined){
-						logger.error('Error! cant find in dictionary'.bold.red,evtObj.type, matchingEvtDef);
-						return;	
-					}
-					
-
-					arrayEvents.push({
-						namespace: namespace,
-						component : componentName,
-						evt : evtObj,
-						evtDef : matchingEvtDef
-					});
-				});
-			}
-
-			//populate the component itself
-			var componentAuraAttributes = componentParsedXml['aura:attribute'];
-			if(componentAuraAttributes){
-				componentAuraAttributes.forEach(function(curAttribute){
-					var attributeObj = curAttribute.$;
-					// componentObj.attributes.push(attributeObj);
-
-					arrayAttributes.push({
-						component: componentObj,
-						attribute: attributeObj
-					});
+		//parsing componet stuffs
+		var parsedComponent = $('aura\\:component')[0];
+		if(parsedComponent === undefined){
+			logger.error('Error! cannot find aura:component tag in'.bold.red, fileName);
+			return;//exit
+		}
+		// console.log('parsed'.red, parsedComponent);
+		componentObj.description = parsedComponent.attribs.description || '';
+		componentObj.implements  = parsedComponent.attribs.implements || '';
 
 
-					componentObj.attributes.push(attributeObj);
-				});
-			}
+		//parsing attribtues
+		//populate the component itself
+		var componentAuraAttributes = $('aura\\:attribute');
+		_.forEach(componentAuraAttributes, function(curAttribute){
+			var attributeObj = curAttribute.attribs;
+
+			arrayAttributes.push({
+				component: componentObj,
+				attribute: attributeObj
+			});
+
+
+			componentObj.attributes.push(attributeObj);
 		});
 
+
+		//aura events
+		var componentAuraEvents = $('aura\\:registerevent');
+		_.forEach(componentAuraEvents, function(curCmpEvt){
+			var evtObj = curCmpEvt.attribs;
+			var matchingEvtDef = eventDictionary[evtObj.type];
+
+			if (matchingEvtDef === undefined){
+				logger.error('Error! cant find in dictionary'.bold.red,evtObj.type, matchingEvtDef);
+				return;	
+			}
+			
+
+			arrayEvents.push({
+				namespace: namespace,
+				component : componentName,
+				evt : evtObj,
+				evtDef : matchingEvtDef
+			});
+		});
+
+
 		arrayComponents.push(componentObj);
+		
 	});
-	
 
 	
 	//look up the helper
