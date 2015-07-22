@@ -167,7 +167,7 @@ var self = {
      */
     consolidate_attributes: function(arrayAttributes){
         var sublimeFormat = self._getDefaultSublimeJSObject(
-            'meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
+            'text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
             // 'text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
         );
 
@@ -175,10 +175,11 @@ var self = {
         for (var attributeIdx in arrayAttributes){
             var attributeComponent = arrayAttributes[attributeIdx].component;
             var attributeObj = arrayAttributes[attributeIdx].attribute;
+            var attribType = arrayAttributes[attributeIdx].type;//type : attribute or event
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
-            var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tTag';
+            var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tAttr';
 
 
             // console.log('attributeComponent', attributeComponent);
@@ -189,7 +190,8 @@ var self = {
                 attributeComponent.fullComponentTag,//fullComponentTagStr
                 attributeObj.type,//atributeType
                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
-                1//sublime tab index
+                1,//sublime tab index
+                attributeObj.TAG
             );
 
             // console.log(contents);
@@ -208,8 +210,12 @@ var self = {
         return sublimeFormat;
     },
 
-    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx){
-        return  attributeName + '="${'+sublimeTabIdx+':' + fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + ' - ' +atributeType+'}"';
+    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
+        return  attributeName + '="${'+sublimeTabIdx+':' +  fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + ' - ' +atributeType+'}"';
+    },
+
+    _serializeAttr_short : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
+        return  attributeName + '="${'+sublimeTabIdx+':'  + (isRequired ? 'Required' : 'Optional') + ' - ' +atributeType+'}"';
     },
 
     /**
@@ -228,7 +234,8 @@ var self = {
      */
     consolidate_uitags: function(arrayComponents){
         var sublimeFormat = self._getDefaultSublimeJSObject(
-            'meta.tag.xml'
+            // 'meta.tag.xml'
+            'text.xml'
         );
 
 
@@ -280,12 +287,13 @@ var self = {
 
                         // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
                         contents.push(
-                            ' ' + self._serializeAttr(
+                            ' ' + self._serializeAttr_short(
                                 attributeObj.name,//attributeName
                                 componentObj.fullComponentTag,//fullComponentTagStr
                                 attributeObj.type,//atributeType
                                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
-                                includedAttributeCount//sublime tab index
+                                includedAttributeCount,//sublime tab index
+                                attributeObj.TAG
                             )
                         );
 
@@ -303,12 +311,13 @@ var self = {
 
                         // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
                         contents.push(
-                            ' ' + self._serializeAttr(
+                            ' ' + self._serializeAttr_short(
                                 attributeObj.name,//attributeName
                                 componentObj.fullComponentTag,//fullComponentTagStr
                                 attributeObj.type,//atributeType
                                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
-                                includedAttributeCount//sublime tab index
+                                includedAttributeCount,//sublime tab index
+                                attributeObj.TAG
                             )
                         );
 

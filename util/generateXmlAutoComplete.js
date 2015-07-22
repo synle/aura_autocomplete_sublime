@@ -125,6 +125,8 @@ module.exports = function processParser(componentFileNames, outputDir){
 				attribute: attributeObj
 			});
 
+			attributeObj.TAG = 'attribute';
+
 
 			componentObj.attributes.push(attributeObj);
 		});
@@ -136,20 +138,31 @@ module.exports = function processParser(componentFileNames, outputDir){
 			var evtObj = curCmpEvt.attribs;
 			var matchingEvtDef = eventDictionary[evtObj.type];
 
+			evtObj.TAG = 'event';
+
 			if (matchingEvtDef === undefined){
-				logger.error('Error! cant find in dictionary'.bold.red,evtObj.type, matchingEvtDef);
+				logger.error('Error! cant find in dictionary'.bold.red,evtObj.type);
 				return;	
 			}
 			
+			//some events are treated as attribute
+			arrayAttributes.push({
+				component: componentObj,
+				attribute: evtObj
+			});
 
+
+			//push event
 			arrayEvents.push({
 				namespace: namespace,
 				component : componentName,
 				evt : evtObj,
 				evtDef : matchingEvtDef
 			});
-		});
 
+
+			componentObj.attributes.push(evtObj);	
+		});
 
 		arrayComponents.push(componentObj);
 		
