@@ -166,7 +166,10 @@ var self = {
         ]
      */
     consolidate_attributes: function(arrayAttributes){
-        var sublimeFormat = self._getDefaultSublimeJSObject('text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml');
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
+            // 'text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
+        );
 
         // var access = {};
         for (var attributeIdx in arrayAttributes){
@@ -175,7 +178,7 @@ var self = {
 
             //triggers
             // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
-            var trigger = 'attr-' + attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name ;
+            var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tTag';
 
 
             // console.log('attributeComponent', attributeComponent);
