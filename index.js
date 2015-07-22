@@ -59,6 +59,8 @@ else{
 
 
 function processParser(baseDir, outputDir){
+	logger.log(baseDir.bold.underline, baseDir);
+
 	//trim whitespace
 	baseDir = baseDir.trim();
 	outputDir = outputDir.trim();
@@ -91,7 +93,6 @@ function processParser(baseDir, outputDir){
 		componentFileNames,
 		outputDir
 	);
-	return;
 		
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files

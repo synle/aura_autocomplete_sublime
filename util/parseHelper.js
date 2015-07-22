@@ -58,7 +58,7 @@ var self = {
                         res.evt.push(newDir);
                         break;
                     case '.js':
-                        // res.js.push(newDir);
+                        res.js.push(newDir);
 
                         //special helper js
                         if(newDir.indexOf('Helper.js') >= 0){
