@@ -242,7 +242,7 @@ var self = {
             //simplify content
             //triggers
             //
-            var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tSimple';
+            var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tTag-Simple';
 
 
             //not
@@ -263,7 +263,7 @@ var self = {
             // 
             //expanded content
             //
-            var trigger = 'tag' + TRIGGER_SEPARATOR + componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tFull';
+            var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tTag-Full';
 
             var contents = [
                 componentObj.fullComponentTag,
