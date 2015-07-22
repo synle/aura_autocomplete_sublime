@@ -12,11 +12,6 @@
     <body>
 
     <style>
-	.clusterize-scroll{
-		max-height: 700px;
-	}
-
-
 	.box
 	{
 		font-weight:bold;
@@ -40,7 +35,10 @@
 	}
 	.lvl_1 b.ticker{
 		float:right;
-		color:tomato;
+		color:#68B4F6;
+	}
+	.box b.ticker_2{
+		color: rgb(122, 247, 126);
 	}
 	.lvl_2{
 		background-color:#666;
@@ -88,7 +86,12 @@
 		padding-right:5px;
 		box-sizing:border-box;
 	}
+
+	.search-hl .box{
+		display:none !important;
+	}
 	</style>
+
     
 	<div class="container-fluid">
 		<div style="padding:10px">
@@ -173,7 +176,7 @@
 							//generate attributes in tag
 							for (var i = 0; i < r[k][cmpDep].length;i++){
 								var wrapper_3 = createDomNode(
-									cmpDep + '['+i+']',
+									cmpDep + ' [<b class="ticker_2">'+i+'</b>]',
 									false,
 									'lvl_3',
 									wrapper_2
@@ -210,20 +213,22 @@
 
 	//hook up events
 	function hookupEvents(){
-	 //    $('#searchComponent').keypress(
-	 //    	$.debounce(
-	 //    		500,
-	 //    		function(){
-	 //    			var keyword = $('#searchComponent').val();
-	 //    			$('.box').each(function(){
-	 //    				var isVisible = false;
-	 //    				if ($(this).text().indexOf(keyword) >= 0){
-	 //    					isVisible = true;
-	 //    				}
-	 //    			});
-		// 	    }
-		// 	)
-		// );
+	    $('#searchComponent').keypress(
+	    	$.debounce(
+	    		500,
+	    		function(){
+	    			var keyword = $('#searchComponent').val();
+					$('#tree').toggleClass('search-hl', keyword.length === 0);
+
+	    			$('.box').each(function(){
+	    				var isVisible = false;
+	    				if ($(this).text().indexOf(keyword) >= 0){
+	    					isVisible = true;
+	    				}
+	    			});
+			    }
+			)
+		);
 
 
 	    //click to select
@@ -233,11 +238,11 @@
 
 
 		$('#btnExpandAll').click(function(){	
-			$('.lvl_3:not(.visible), .lvl_4:not(.visible)').addClass('visible');
+			$('.box:not(.visible)').addClass('visible');
 		});
 
 		$('#btnCollapseAll').click(function(){
-			$('.lvl_3.visible, .lvl_4.visible').removeClass('visible');
+			$('.box.visible').removeClass('visible');
 		});
 
 
