@@ -22,16 +22,20 @@
 	    	padding-right:15px;
 	    	margin-right:20px;
 	    	box-sizing:border-box;
-	    	text-shadow: 1px 0 #efefef;
+	    	
 	    }
 	    .cmpName{
 	    	margin-right:5px;
+	    	background-color:#eee;
 	    }
 
-	    .bar.summary{
-	    	display:none;
+	    .summary{
+	    	text-align: center;
+	    	font-size:30px;
+	    	color:tomato;
 	    }
 	    .bar.detail{
+	    	padding:20px;
 	    }
     </style>
     
@@ -109,7 +113,7 @@
 				max  = count;
 
 			countHash[count] = countHash[count] || [];
-			countHash[count].push('<b class="cmpName">'+cmpName+'</b>' + '(' + count + ')');
+			countHash[count].push('<b class="cmpName">'+cmpName + '(' + count + ') </b>');
     	}
 
 		$('#chartUsage').empty();
@@ -121,7 +125,7 @@
     		var width = parseInt(count * 100 / max);
     		width += '%';
 
-			$('#chartUsage').append('<div class="bar summary" style="background-color:' + bgcolor + '; width:'+width+'"><b>'+count + ' Components In This Category</b></div>');
+			$('#chartUsage').append('<div class="summary"><b> Total Dependencies = '+count + '</b></div>');
     		$('#chartUsage').append('<div class="bar detail" style="background-color:' + bgcolor + '; width:'+width+'"><b>'+cmpName + '</b></div>');
     	}
     });
