@@ -7,7 +7,7 @@
     "clean": "rm -f snippet/aura*",
     "pkg": "node index.js --silent;",
     "setup": "sh install.sublime.sh",
-    "start": "http-server ."
+    "start": "./node_modules/http-server/bin/http-server ."
   },
   "repository": {
     "type": "git",
