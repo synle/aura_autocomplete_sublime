@@ -215,7 +215,7 @@
 	function hookupEvents(){
 	    $('#searchComponent').keypress(
 	    	$.debounce(
-	    		500,
+	    		1000,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
 					$('#tree').toggleClass('search-hl', keyword.length === 0);
