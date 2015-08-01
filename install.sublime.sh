@@ -7,11 +7,12 @@ then
 
 	echo "==="
 	echo "Clean up previous installations of Aura"
-	rm -f ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/aura*.sublime-completions
+	rm -f ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/aura*.sublime-*
+
 
 	echo "==="
 	echo "Copying aura snippets from bash"
-	cp ./snippet/*.sublime-completions ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+	cp ./snippet/*.sublime-* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 else
 	#!/bin/bash
 	if [ ! -d "~/config/sublime-text-3/Packages/User" ]
@@ -22,11 +23,11 @@ else
 		
 		echo "==="
 		echo "Clean up previous installations of Aura"
-		rm -f ~/config/sublime-text-3/Packages/User/aura*.sublime-completions
+		rm -f ~/config/sublime-text-3/Packages/User/aura*.sublime-*
 
 		echo "==="
 		echo "Copying aura snippets from bash"
-		cp ./snippet/*.sublime-completions ~/config/sublime-text-3/Packages/User
+		cp ./snippet/*.sublime-* ~/config/sublime-text-3/Packages/User
 	else
 		echo "Directory not found, please manually copy and paste the snippet to your Sublime Packages Folder."
 	fi

@@ -17,9 +17,12 @@ var self = {
     },
     listDir: function listDir(dir, res) {
         res = res || {
+            app: [],
             cmp: [],
             evt: [],
             helperjs: [],
+            controllerjs: [],
+            rendererjs: [],
             js: []
         };
         var dirs = fs.readdirSync(dir);
@@ -48,6 +51,9 @@ var self = {
                     case '.cmp':
                         res.cmp.push(newDir);
                         break;
+                    case '.app':
+                        res.app.push(newDir);
+                        break;
                     case '.evt':
                         res.evt.push(newDir);
                         break;
@@ -58,6 +64,13 @@ var self = {
                         if(newDir.indexOf('Helper.js') >= 0){
                             res.helperjs.push(newDir);    
                         }
+                        else if(newDir.indexOf('Controller.js') >= 0){
+                            res.controllerjs.push(newDir);    
+                        }
+                        else if(newDir.indexOf('Renderer.js') >= 0){
+                            res.rendererjs.push(newDir);    
+                        }
+
                         break;
                 }
             }

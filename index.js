@@ -15,6 +15,7 @@ var promptSchema = config.prompt;
 //internal dependencies
 var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
 var generateJsAutoComplete = require('./util/generateJsAutoComplete');
+var generateRelationship = require('./util/generateRelationship');
 
 //setting debug=2 will trigger full logging mode
 if (process.env.baseDir !== undefined){
@@ -58,6 +59,8 @@ else{
 
 
 function processParser(baseDir, outputDir){
+	logger.log(baseDir.bold.underline, baseDir);
+
 	//trim whitespace
 	baseDir = baseDir.trim();
 	outputDir = outputDir.trim();
@@ -76,10 +79,20 @@ function processParser(baseDir, outputDir){
 
 	//print stats
 	logger.log('Statistics'.bold.underline.bgBlue.white);
-	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	logger.log('.app Files:'.bold, componentFileNames.app.length);
 	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
-	logger.log('Helper.js Files:'.bold, componentFileNames.helperjs.length);
-	logger.log('js Files:'.bold, componentFileNames.js.length);
+	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+	// logger.log('js Files:'.bold, componentFileNames.js.length);
+	logger.log('\tHelper.js Files:'.bold, componentFileNames.helperjs.length);
+	logger.log('\tController.js Files:'.bold, componentFileNames.controllerjs.length);
+	logger.log('\tRenderrer.js Files:'.bold, componentFileNames.rendererjs.length);
+
+
+
+	generateRelationship(
+		componentFileNames,
+		outputDir
+	);
 		
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files

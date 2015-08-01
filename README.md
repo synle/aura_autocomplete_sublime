@@ -13,8 +13,8 @@ Trigger | Example | Description
 `evt-{COMPONENT_NAME}-{EVENT_NAME}` | **`evt-search`** | Autocompelte for events
 `$a-test-{TEST_METHOD_NAME}` | **`$A.test.assertTru`** | All Test.js functions
 `$a-util-{UTIL_METHOD_NAME}` | **`$A-util-getbool`** | All Util.js functions
-`attr-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` | <a **`attr-ui-menuitem-select`** | all Aura tag attributes
-`tag-{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` |  <**`tag-ui-inputtext`** | All Aura tag names
+`{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` | <a **`attr-ui-menuitem-select`** | all Aura tag attributes
+`{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` |  <**`tag-ui-inputtext`** | All Aura tag names
 
 #### Screenshots:
 ![](images/evt1.jpg)

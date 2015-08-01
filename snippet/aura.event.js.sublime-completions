@@ -2,6 +2,10 @@
   "scope": "source.js",
   "completions": [
     {
+      "trigger": "evt-aura-iteration-iterationComplete",
+      "contents": "//  component: iteration\n//    evtName: iterationComplete\n//    evtType: aura:operationComplete\n//description: The event fired when this component has finished asynchronously constructing the children of the iteration from the template provided.\nvar e = cmp.find(\"${1:iteration}\").get(\"e.iterationComplete\");\ne.setParams({\n\toperation: \"${2:String}\",// The type of operation that has completed.\n\tresult: \"${3:Object}\",// The result, if any, of the operation. This will depend on the type and outcome of the operation.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-auradev-quickFixButton-showUI",
       "contents": "//  component: quickFixButton\n//    evtName: showUI\n//    evtType: auradev:showQuickFixUI\n//description: \nvar e = cmp.find(\"${1:quickFixButton}\").get(\"e.showUI\");\ne.setParams({\n\tui: \"${2:Aura.Component}\",\n});\ne.fire();"
     },
@@ -10,8 +14,88 @@
       "contents": "//  component: editorPanel\n//    evtName: open\n//    evtType: auradocs:openDef\n//description: \nvar e = cmp.find(\"${1:editorPanel}\").get(\"e.open\");\ne.setParams({\n\tdescriptor: \"${2:String}\",\n\tdefType: \"${3:String}\",\n});\ne.fire();"
     },
     {
+      "trigger": "evt-auradocs-searchFilterTree-search",
+      "contents": "//  component: searchFilterTree\n//    evtName: search\n//    evtType: ui:searchEvent\n//description: \nvar e = cmp.find(\"${1:searchFilterTree}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-aurajstest-jstestCase-done",
       "contents": "//  component: jstestCase\n//    evtName: done\n//    evtType: aurajstest:testStatus\n//description: \nvar e = cmp.find(\"${1:jstestCase}\").get(\"e.done\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractDataGrid-refresh",
+      "contents": "//  component: abstractDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:abstractDataGrid}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractDataGrid-addRemove",
+      "contents": "//  component: abstractDataGrid\n//    evtName: addRemove\n//    evtType: ui:addRemove\n//description: Command event for grid to insert or delete items as rows.\nvar e = cmp.find(\"${1:abstractDataGrid}\").get(\"e.addRemove\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Zero base index for where to add/remove rows.\n\tcount: \"${3:Integer}\",// Row count to add/remove.\n\tlast: \"${4:Boolean}\",// Alternative to index for simply pushing an item.\n\titems: \"${5:Object[]}\",// Items to insert. Empty rows are inserted not specified.\n\tremove: \"${6:Boolean}\",// Indicate removal\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractList-triggerDataProvider",
+      "contents": "//  component: abstractList\n//    evtName: triggerDataProvider\n//    evtType: ui:dataProvide\n//description: The event fired when the data provider is triggered.\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.triggerDataProvider\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters data provider can use to fetch data.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractList-listComplete",
+      "contents": "//  component: abstractList\n//    evtName: listComplete\n//    evtType: aura:operationComplete\n//description: The event fired when concrete implementations have finished their component creation.\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.listComplete\");\ne.setParams({\n\toperation: \"${2:String}\",// The type of operation that has completed.\n\tresult: \"${3:Object}\",// The result, if any, of the operation. This will depend on the type and outcome of the operation.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractList-refresh",
+      "contents": "//  component: abstractList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: The event fired when the component is refreshed.\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-abstractList-addRemove",
+      "contents": "//  component: abstractList\n//    evtName: addRemove\n//    evtType: ui:addRemove\n//description: Command event to insert or remove items\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.addRemove\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Zero base index for where to add/remove rows.\n\tcount: \"${3:Integer}\",// Row count to add/remove.\n\tlast: \"${4:Boolean}\",// Alternative to index for simply pushing an item.\n\titems: \"${5:Object[]}\",// Items to insert. Empty rows are inserted not specified.\n\tremove: \"${6:Boolean}\",// Indicate removal\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-actionDelegate-onaction",
+      "contents": "//  component: actionDelegate\n//    evtName: onaction\n//    evtType: ui:actionEvent\n//description: \nvar e = cmp.find(\"${1:actionDelegate}\").get(\"e.onaction\");\ne.setParams({\n\tname: \"${2:String}\",\n\tindex: \"${3:Integer}\",\n\tvalue: \"${4:String}\",\n\titem: \"${5:Object}\",\n\tcomponent: \"${6:Aura.Component[]}\",// ui:action which fired the event\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-asyncImage-load",
+      "contents": "//  component: asyncImage\n//    evtName: load\n//    evtType: ui:load\n//description: \nvar e = cmp.find(\"${1:asyncImage}\").get(\"e.load\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-matchDone",
+      "contents": "//  component: autocomplete\n//    evtName: matchDone\n//    evtType: ui:matchDone\n//description: The event fired when the matching is done.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.matchDone\");\ne.setParams({\n\tsize: \"${2:Integer}\",// The number of matched options in the list.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-inputChange",
+      "contents": "//  component: autocomplete\n//    evtName: inputChange\n//    evtType: ui:inputChange\n//description: The event fired when the input value changes.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.inputChange\");\ne.setParams({\n\tvalue: \"${2:String}\",// The updated text in the component.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-selectListOption",
+      "contents": "//  component: autocomplete\n//    evtName: selectListOption\n//    evtType: ui:selectListOption\n//description: The event fired when a list option is displayed.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.selectListOption\");\ne.setParams({\n\toption: \"${2:Aura.Component[]}\",// The option component selected.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-fetchData",
+      "contents": "//  component: autocomplete\n//    evtName: fetchData\n//    evtType: ui:fetchData\n//description: The event indicates we need to fetch data through a data provider.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.fetchData\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters data provider can use to fetch data.\n\tindex: \"${3:Integer}\",// From which data provider to fetch data.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-matchText",
+      "contents": "//  component: autocomplete\n//    evtName: matchText\n//    evtType: ui:matchText\n//description: The event fired when a text match occurs.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.matchText\");\ne.setParams({\n\tkeyword: \"${2:String}\",// The keyword to be matched.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-matchDone",
+      "contents": "//  component: autocompleteList\n//    evtName: matchDone\n//    evtType: ui:matchDone\n//description: The event fired when the matching is done.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.matchDone\");\ne.setParams({\n\tsize: \"${2:Integer}\",// The number of matched options in the list.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-listHighlight",
+      "contents": "//  component: autocompleteList\n//    evtName: listHighlight\n//    evtType: ui:listHighlight\n//description: The event fired when a list option is highlighted.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listHighlight\");\ne.setParams({\n\tactiveIndex: \"${2:Integer}\",// The list option should be highlighted.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-matchText",
+      "contents": "//  component: autocompleteList\n//    evtName: matchText\n//    evtType: ui:matchText\n//description: The event fired when a text match occurs.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.matchText\");\ne.setParams({\n\tkeyword: \"${2:String}\",// The keyword to be matched.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-pressOnHighlighted",
+      "contents": "//  component: autocompleteList\n//    evtName: pressOnHighlighted\n//    evtType: ui:press\n//description: The event fired when a highlighted option is pressed.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.pressOnHighlighted\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-selectListOption",
+      "contents": "//  component: autocompleteList\n//    evtName: selectListOption\n//    evtType: ui:selectListOption\n//description: The event fired when a list option is selected.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.selectListOption\");\ne.setParams({\n\toption: \"${2:Aura.Component[]}\",// The option component selected.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompleteList-updateAriaAttributes",
+      "contents": "//  component: autocompleteList\n//    evtName: updateAriaAttributes\n//    evtType: ui:updateAriaAttributes\n//description: The event fired when a new option is highlighted.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.updateAriaAttributes\");\ne.setParams({\n\tattrs: \"${2:Object}\",// An object including all updated attributes.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-keydown",
@@ -94,8 +178,32 @@
       "contents": "//  component: dataGrid\n//    evtName: updateRowAttributes\n//    evtType: ui:updateGridRow\n//description: \nvar e = cmp.find(\"${1:dataGrid}\").get(\"e.updateRowAttributes\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Index of the row to update\n\tclassName: \"${3:String}\",// Class attribute to update. An undefined or null value will leave the class attribute unchanged\n\tclassOp: \"${4:String}\",// Operation to do for the class: add, remove, toggle. Any other value will leave the class attribute unchanged.\n\tattributes: \"${5:List}\",// Attributes to update on the row. Each item in the list should be of the form {name: attrName, value: attrValue}. Currently, only the 'disabled' attribute is supported\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-dataProvider-provide",
+      "contents": "//  component: dataProvider\n//    evtName: provide\n//    evtType: ui:dataProvide\n//description: The event fired when the list is intialized.\nvar e = cmp.find(\"${1:dataProvider}\").get(\"e.provide\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters data provider can use to fetch data.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataProvider-onchange",
+      "contents": "//  component: dataProvider\n//    evtName: onchange\n//    evtType: ui:dataChanged\n//description: The event fired when the list data changes.\nvar e = cmp.find(\"${1:dataProvider}\").get(\"e.onchange\");\ne.setParams({\n\tdata: \"${2:Object}\",\n\tcurrentPage: \"${3:Integer}\",// Gets or sets the current page of the pager. The first page is 1, the last page is pageCount.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataProvider-error",
+      "contents": "//  component: dataProvider\n//    evtName: error\n//    evtType: ui:dataProvideError\n//description: The event fired when there is an error during data fetching.\nvar e = cmp.find(\"${1:dataProvider}\").get(\"e.error\");\ne.setParams({\n\terror: \"${2:Object}\",// The object data provider uses to store errors.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-dataTableRow-rowPress",
       "contents": "//  component: dataTableRow\n//    evtName: rowPress\n//    evtType: ui:rowPress\n//description: The event fired when the row is pressed down. The element that is clicked on is checked before the event is fired.\nvar e = cmp.find(\"${1:dataTableRow}\").get(\"e.rowPress\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataWriter-write",
+      "contents": "//  component: dataWriter\n//    evtName: write\n//    evtType: ui:write\n//description: Command event to invoke writing.\nvar e = cmp.find(\"${1:dataWriter}\").get(\"e.write\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataWriter-onsuccess",
+      "contents": "//  component: dataWriter\n//    evtName: onsuccess\n//    evtType: ui:response\n//description: Event fired on write success.\nvar e = cmp.find(\"${1:dataWriter}\").get(\"e.onsuccess\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataWriter-onerror",
+      "contents": "//  component: dataWriter\n//    evtName: onerror\n//    evtType: ui:response\n//description: Event fired on write error.\nvar e = cmp.find(\"${1:dataWriter}\").get(\"e.onerror\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-datePicker-selectDate",
@@ -122,20 +230,396 @@
       "contents": "//  component: datePickerGrid\n//    evtName: updateCalendarTitle\n//    evtType: ui:updateCalendarTitle\n//description: The event fired when the calendar month and year are updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendarTitle\");\ne.setParams({\n\tmonth: \"${2:Integer}\",\n\tyear: \"${3:Integer}\",\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-dialog-close",
+      "contents": "//  component: dialog\n//    evtName: close\n//    evtType: ui:closeDialog\n//description: Event fired when the dialog window requests to close itself.\nvar e = cmp.find(\"${1:dialog}\").get(\"e.close\");\ne.setParams({\n\tdialog: \"${2:Aura.Component}\",// The dialog that should be closed.\n\tconfirmClicked: \"${3:Boolean}\",// This property is 'true' if the confirmation button in an alert dialog was clicked, 'false' otherwise.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-draggable-dragStart",
+      "contents": "//  component: draggable\n//    evtName: dragStart\n//    evtType: ui:dragEvent\n//description: Event fired when user starts dragging this component.\nvar e = cmp.find(\"${1:draggable}\").get(\"e.dragStart\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-draggable-dragEnd",
+      "contents": "//  component: draggable\n//    evtName: dragEnd\n//    evtType: ui:dragEvent\n//description: Event fired when this drag operation is being ended.\nvar e = cmp.find(\"${1:draggable}\").get(\"e.dragEnd\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-draggable-dropComplete",
+      "contents": "//  component: draggable\n//    evtName: dropComplete\n//    evtType: ui:dragEvent\n//description: Event fired when drop operation is completed.\nvar e = cmp.find(\"${1:draggable}\").get(\"e.dropComplete\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dropzone-dragEnter",
+      "contents": "//  component: dropzone\n//    evtName: dragEnter\n//    evtType: ui:dragEvent\n//description: Event fired when a dragged component enters this drop target.\nvar e = cmp.find(\"${1:dropzone}\").get(\"e.dragEnter\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dropzone-dragOver",
+      "contents": "//  component: dropzone\n//    evtName: dragOver\n//    evtType: ui:dragEvent\n//description: Event fired when a dragged component is hovered over this drop target.\nvar e = cmp.find(\"${1:dropzone}\").get(\"e.dragOver\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dropzone-dragLeave",
+      "contents": "//  component: dropzone\n//    evtName: dragLeave\n//    evtType: ui:dragEvent\n//description: Event fired when a dragged component leaves this drop target.\nvar e = cmp.find(\"${1:dropzone}\").get(\"e.dragLeave\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dropzone-drop",
+      "contents": "//  component: dropzone\n//    evtName: drop\n//    evtType: ui:dragEvent\n//description: Event fired when a component is dropped on this drop target.\nvar e = cmp.find(\"${1:dropzone}\").get(\"e.drop\");\ne.setParams({\n\ttype: \"${2:String}\",// Drag and drop operation type: can be either copy, link, move, or none.\n\tdragComponent: \"${3:Aura.Component[]}\",// The dragged component.\n\tdropComponent: \"${4:Aura.Component[]}\",// The dropzone component.\n\tdropComponentTarget: \"${5:Object}\",// Target event component receiving drop.\n\tdata: \"${6:Object}\",// Data that is being transferred during a drag and drop operation.\n\tdropComplete: \"${7:Boolean}\",// Set to true if drop operation has been completed or false otherwise. The value should only be set when drop operation is performed.\n\tisInAccessibilityMode: \"${8:Boolean}\",// Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-image-onload",
+      "contents": "//  component: image\n//    evtName: onload\n//    evtType: ui:response\n//description: Event fired when the image is done loading, passes the image loaded to the event.\nvar e = cmp.find(\"${1:image}\").get(\"e.onload\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-image-onerror",
+      "contents": "//  component: image\n//    evtName: onerror\n//    evtType: ui:response\n//description: Event fired when an error occurs while loading the image.\nvar e = cmp.find(\"${1:image}\").get(\"e.onerror\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-infiniteList-onRowOpen",
+      "contents": "//  component: infiniteList\n//    evtName: onRowOpen\n//    evtType: ui:openRow\n//description: Fired when a row is swiped open.\nvar e = cmp.find(\"${1:infiniteList}\").get(\"e.onRowOpen\");\ne.setParams({\n\trow: \"${2:Aura.Component[]}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-infiniteList-onRowClose",
+      "contents": "//  component: infiniteList\n//    evtName: onRowClose\n//    evtType: ui:closeRow\n//description: Fired when a row is swiped closed.\nvar e = cmp.find(\"${1:infiniteList}\").get(\"e.onRowClose\");\ne.setParams({\n\trow: \"${2:Aura.Component[]}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-infiniteListRow-open",
+      "contents": "//  component: infiniteListRow\n//    evtName: open\n//    evtType: ui:open\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.open\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-infiniteListRow-close",
+      "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-change",
+      "contents": "//  component: input\n//    evtName: change\n//    evtType: ui:change\n//description: The event fired when the user changes the content of the input.\nvar e = cmp.find(\"${1:input}\").get(\"e.change\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-copy",
+      "contents": "//  component: input\n//    evtName: copy\n//    evtType: ui:copy\n//description: The event fired when the user copies content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.copy\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-cut",
+      "contents": "//  component: input\n//    evtName: cut\n//    evtType: ui:cut\n//description: The event fired when the user cuts content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.cut\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-paste",
+      "contents": "//  component: input\n//    evtName: paste\n//    evtType: ui:paste\n//description: The event fired when the user pastes content from the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.paste\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-onError",
+      "contents": "//  component: input\n//    evtName: onError\n//    evtType: ui:validationError\n//description: The event fired when there are any validation errors on the component.\nvar e = cmp.find(\"${1:input}\").get(\"e.onError\");\ne.setParams({\n\terrors: \"${2:Object[]}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-onClearErrors",
+      "contents": "//  component: input\n//    evtName: onClearErrors\n//    evtType: ui:clearErrors\n//description: The event fired when any validation errors should be cleared.\nvar e = cmp.find(\"${1:input}\").get(\"e.onClearErrors\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-updateError",
+      "contents": "//  component: input\n//    evtName: updateError\n//    evtType: ui:updateError\n//description: The event fired to trigger the default error component and messages (deprecated).\nvar e = cmp.find(\"${1:input}\").get(\"e.updateError\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-input-input",
+      "contents": "//  component: input\n//    evtName: input\n//    evtType: ui:inputEvent\n//description: The event fired when the user enters an input.\nvar e = cmp.find(\"${1:input}\").get(\"e.input\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputDate-openPicker",
+      "contents": "//  component: inputDate\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDate}\").get(\"e.openPicker\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputDateTime-openPicker",
+      "contents": "//  component: inputDateTime\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDateTime}\").get(\"e.openPicker\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-inputSearch-search",
       "contents": "//  component: inputSearch\n//    evtName: search\n//    evtType: ui:searchEvent\n//description: The event fired when the user runs a search.\nvar e = cmp.find(\"${1:inputSearch}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-blur",
+      "contents": "//  component: interactive\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.blur\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-focus",
+      "contents": "//  component: interactive\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when the user focuses on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-keydown",
+      "contents": "//  component: interactive\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-keypress",
+      "contents": "//  component: interactive\n//    evtName: keypress\n//    evtType: ui:keypress\n//description: The event fired when the user presses or holds down a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keypress\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-keyup",
+      "contents": "//  component: interactive\n//    evtName: keyup\n//    evtType: ui:keyup\n//description: The event fired when the user releases a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keyup\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-interactive-select",
+      "contents": "//  component: interactive\n//    evtName: select\n//    evtType: ui:select\n//description: The event fired when the user selects some text.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.select\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listSorter-refresh",
+      "contents": "//  component: listSorter\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: \nvar e = cmp.find(\"${1:listSorter}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncolumnsready",
+      "contents": "//  component: listView\n//    evtName: oncolumnsready\n//    evtType: ui:listViewEvent\n//description: The event that fires when all column templates have been processed and the columns, dataColumns and dataTemplates attributes are all available.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncolumnsready\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onitemsready",
+      "contents": "//  component: listView\n//    evtName: onitemsready\n//    evtType: ui:listViewEvent\n//description: The event that fires when all item rows have been processed, column types instantiated, data formatters run, and the corresponding component trees have been generated.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onitemsready\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellclick",
+      "contents": "//  component: listView\n//    evtName: oncellclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell is clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheaderclick",
+      "contents": "//  component: listView\n//    evtName: onheaderclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell is clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheaderclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowclick",
+      "contents": "//  component: listView\n//    evtName: onrowclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row is clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onclick",
+      "contents": "//  component: listView\n//    evtName: onclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when the table is clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncelldblclick",
+      "contents": "//  component: listView\n//    evtName: oncelldblclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell is double clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncelldblclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheaderdblclick",
+      "contents": "//  component: listView\n//    evtName: onheaderdblclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell is double clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheaderdblclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowdblclick",
+      "contents": "//  component: listView\n//    evtName: onrowdblclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row is double clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowdblclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-ondblclick",
+      "contents": "//  component: listView\n//    evtName: ondblclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when the table is double clicked.\nvar e = cmp.find(\"${1:listView}\").get(\"e.ondblclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellmousedown",
+      "contents": "//  component: listView\n//    evtName: oncellmousedown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell mousedown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellmousedown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadermousedown",
+      "contents": "//  component: listView\n//    evtName: onheadermousedown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell mousedown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadermousedown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowmousedown",
+      "contents": "//  component: listView\n//    evtName: onrowmousedown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row mousedown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowmousedown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onmousedown",
+      "contents": "//  component: listView\n//    evtName: onmousedown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table mousedown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onmousedown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellmouseup",
+      "contents": "//  component: listView\n//    evtName: oncellmouseup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell mouseup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellmouseup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadermouseup",
+      "contents": "//  component: listView\n//    evtName: onheadermouseup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell mouseup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadermouseup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowmouseup",
+      "contents": "//  component: listView\n//    evtName: onrowmouseup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row mouseup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowmouseup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onmouseup",
+      "contents": "//  component: listView\n//    evtName: onmouseup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table mouseup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onmouseup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellmouseover",
+      "contents": "//  component: listView\n//    evtName: oncellmouseover\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell mouseover occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellmouseover\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadermouseover",
+      "contents": "//  component: listView\n//    evtName: onheadermouseover\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell mouseover occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadermouseover\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowmouseover",
+      "contents": "//  component: listView\n//    evtName: onrowmouseover\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row mouseover occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowmouseover\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onmouseover",
+      "contents": "//  component: listView\n//    evtName: onmouseover\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table mouseover occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onmouseover\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellmouseout",
+      "contents": "//  component: listView\n//    evtName: oncellmouseout\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell mouseout occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellmouseout\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadermouseout",
+      "contents": "//  component: listView\n//    evtName: onheadermouseout\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell mouseout occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadermouseout\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowmouseout",
+      "contents": "//  component: listView\n//    evtName: onrowmouseout\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row mouseout occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowmouseout\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onmouseout",
+      "contents": "//  component: listView\n//    evtName: onmouseout\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table mouseout occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onmouseout\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellkeydown",
+      "contents": "//  component: listView\n//    evtName: oncellkeydown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell keydown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellkeydown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheaderkeydown",
+      "contents": "//  component: listView\n//    evtName: onheaderkeydown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell keydown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheaderkeydown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowkeydown",
+      "contents": "//  component: listView\n//    evtName: onrowkeydown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row keydown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowkeydown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onkeydown",
+      "contents": "//  component: listView\n//    evtName: onkeydown\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table keydown occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onkeydown\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellkeyup",
+      "contents": "//  component: listView\n//    evtName: oncellkeyup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell keyup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellkeyup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheaderkeyup",
+      "contents": "//  component: listView\n//    evtName: onheaderkeyup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell keyup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheaderkeyup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowkeyup",
+      "contents": "//  component: listView\n//    evtName: onrowkeyup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row keyup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowkeyup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onkeyup",
+      "contents": "//  component: listView\n//    evtName: onkeyup\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table keyup occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onkeyup\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncellkeypress",
+      "contents": "//  component: listView\n//    evtName: oncellkeypress\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell keypress occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncellkeypress\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheaderkeypress",
+      "contents": "//  component: listView\n//    evtName: onheaderkeypress\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell keypress occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheaderkeypress\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowkeypress",
+      "contents": "//  component: listView\n//    evtName: onrowkeypress\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row keypress occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowkeypress\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onkeypress",
+      "contents": "//  component: listView\n//    evtName: onkeypress\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table keypress occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onkeypress\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncelltouchstart",
+      "contents": "//  component: listView\n//    evtName: oncelltouchstart\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell touchstart occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncelltouchstart\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadertouchstart",
+      "contents": "//  component: listView\n//    evtName: onheadertouchstart\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell touchstart occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadertouchstart\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowtouchstart",
+      "contents": "//  component: listView\n//    evtName: onrowtouchstart\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row touchstart occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowtouchstart\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-ontouchstart",
+      "contents": "//  component: listView\n//    evtName: ontouchstart\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table touchstart occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.ontouchstart\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncelltouchmove",
+      "contents": "//  component: listView\n//    evtName: oncelltouchmove\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell touchmove occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncelltouchmove\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadertouchmove",
+      "contents": "//  component: listView\n//    evtName: onheadertouchmove\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell touchmove occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadertouchmove\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowtouchmove",
+      "contents": "//  component: listView\n//    evtName: onrowtouchmove\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row touchmove occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowtouchmove\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-ontouchmove",
+      "contents": "//  component: listView\n//    evtName: ontouchmove\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table touchmove occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.ontouchmove\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-oncelltouchend",
+      "contents": "//  component: listView\n//    evtName: oncelltouchend\n//    evtType: ui:listViewEvent\n//description: The event that fires when a data cell touchend occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.oncelltouchend\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onheadertouchend",
+      "contents": "//  component: listView\n//    evtName: onheadertouchend\n//    evtType: ui:listViewEvent\n//description: The event that fires when a header cell touchend occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onheadertouchend\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-onrowtouchend",
+      "contents": "//  component: listView\n//    evtName: onrowtouchend\n//    evtType: ui:listViewEvent\n//description: The event that fires when a row touchend occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.onrowtouchend\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listView-ontouchend",
+      "contents": "//  component: listView\n//    evtName: ontouchend\n//    evtType: ui:listViewEvent\n//description: The event that fires when a table touchend occurs.\nvar e = cmp.find(\"${1:listView}\").get(\"e.ontouchend\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listViewColumnCheckbox-onchange",
+      "contents": "//  component: listViewColumnCheckbox\n//    evtName: onchange\n//    evtType: ui:listViewEvent\n//description: The event fired when the checkbox selection is changed.\nvar e = cmp.find(\"${1:listViewColumnCheckbox}\").get(\"e.onchange\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listViewColumnEmail-onclick",
+      "contents": "//  component: listViewColumnEmail\n//    evtName: onclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when the hyperlink is clicked.\nvar e = cmp.find(\"${1:listViewColumnEmail}\").get(\"e.onclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-listViewColumnLink-onclick",
+      "contents": "//  component: listViewColumnLink\n//    evtName: onclick\n//    evtType: ui:listViewEvent\n//description: The event that fires when the hyperlink is clicked.\nvar e = cmp.find(\"${1:listViewColumnLink}\").get(\"e.onclick\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the execution of the event.\n\tdata: \"${4:Object}\",// Context sensitive data relevant to the execution of the event.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-menuItem-menuSelect",
       "contents": "//  component: menuItem\n//    evtName: menuSelect\n//    evtType: ui:menuSelect\n//description: The event that is fired when the menu item is selected.\nvar e = cmp.find(\"${1:menuItem}\").get(\"e.menuSelect\");\ne.setParams({\n\tselectedItem: \"${2:Aura.Component[]}\",// The menu item which is selected.\n\thideMenu: \"${3:Boolean}\",// Hide menu if set to true.\n\tdeselectSiblings: \"${4:Boolean}\",// Deselect the siblings of the currently selected menu item.\n\tfocusTrigger: \"${5:Boolean}\",// Set focus to menuTrigger.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-menuList-menuCollapse",
+      "contents": "//  component: menuList\n//    evtName: menuCollapse\n//    evtType: ui:collapse\n//description: The event fired when the menu list collapses.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuCollapse\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuList-menuExpand",
+      "contents": "//  component: menuList\n//    evtName: menuExpand\n//    evtType: ui:expand\n//description: The event fired when the menu list displays.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuExpand\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuList-menuSelect",
+      "contents": "//  component: menuList\n//    evtName: menuSelect\n//    evtType: ui:menuSelect\n//description: The event fired when the user select a menu item.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuSelect\");\ne.setParams({\n\tselectedItem: \"${2:Aura.Component[]}\",// The menu item which is selected.\n\thideMenu: \"${3:Boolean}\",// Hide menu if set to true.\n\tdeselectSiblings: \"${4:Boolean}\",// Deselect the siblings of the currently selected menu item.\n\tfocusTrigger: \"${5:Boolean}\",// Set focus to menuTrigger.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuList-menuFocusChange",
+      "contents": "//  component: menuList\n//    evtName: menuFocusChange\n//    evtType: ui:menuFocusChange\n//description: The event fired when the menu list focus changed from one menuItem to another menuItem.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuFocusChange\");\ne.setParams({\n\tpreviousItem: \"${2:Aura.Component[]}\",// The menu item which is previously focused.\n\tcurrentItem: \"${3:Aura.Component[]}\",// The menu item which is currently focused.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuList-refresh",
+      "contents": "//  component: menuList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the menuList.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-menuTrigger-menuTriggerPress",
       "contents": "//  component: menuTrigger\n//    evtName: menuTriggerPress\n//    evtType: ui:menuTriggerPress\n//description: The event that is fired when the trigger is clicked.\nvar e = cmp.find(\"${1:menuTrigger}\").get(\"e.menuTriggerPress\");\ne.setParams({\n\tfocusItemIndex: \"${2:Integer}\",// The index of the item which should be on focus when the menu displays.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-outputURL-click",
+      "contents": "//  component: outputURL\n//    evtName: click\n//    evtType: ui:click\n//description: The event fired when the user clicks on the component.\nvar e = cmp.find(\"${1:outputURL}\").get(\"e.click\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pager-onPageChange",
+      "contents": "//  component: pager\n//    evtName: onPageChange\n//    evtType: ui:pagerEvent\n//description: The event that is fired when a concrete pager triggers a paging event.\nvar e = cmp.find(\"${1:pager}\").get(\"e.onPageChange\");\ne.setParams({\n\tpageSize: \"${2:Integer}\",// The desired pageSize to be set.\n\tcurrentPage: \"${3:Integer}\",// The desired page to be set.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-panelDialog-panelDoneRendering",
+      "contents": "//  component: panelDialog\n//    evtName: panelDoneRendering\n//    evtType: ui:panelDoneRendering\n//description: \nvar e = cmp.find(\"${1:panelDialog}\").get(\"e.panelDoneRendering\");\ne.setParams({\n\tpanelId: \"${2:Integer}\",\n\tpanelType: \"${3:String}\",\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-pill-onHandledEvent",
       "contents": "//  component: pill\n//    evtName: onHandledEvent\n//    evtType: ui:response\n//description: The event fired when the user interactions with this component which it should be handled by the pillContainer (i.e left and right arrow, Enter, and Backspace)\nvar e = cmp.find(\"${1:pill}\").get(\"e.onHandledEvent\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pill-keydown",
+      "contents": "//  component: pill\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-pill-blur",
+      "contents": "//  component: pill\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.blur\");\ne.setParams({\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-pillContainer-pillInserted",
@@ -146,8 +630,92 @@
       "contents": "//  component: pillContainer\n//    evtName: pillRemoved\n//    evtType: ui:response\n//description: Event fired when a pill is removed from this container.\nvar e = cmp.find(\"${1:pillContainer}\").get(\"e.pillRemoved\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-popup-popupTriggerPress",
+      "contents": "//  component: popup\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when the popup trigger is pressed. Other components may also fire this event to simulate a trigger press.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTriggerPress\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popup-popupTargetShow",
+      "contents": "//  component: popup\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target. Other components may also fire this event to show the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetShow\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popup-popupTargetHide",
+      "contents": "//  component: popup\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target. Other components may also fire this event to hide the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetHide\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popup-popupKeyboardEvent",
+      "contents": "//  component: popup\n//    evtName: popupKeyboardEvent\n//    evtType: ui:popupKeyboardEvent\n//description: The event fired when a user interacts with a popup via the keyboard.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupKeyboardEvent\");\ne.setParams({\n\tevent: \"${2:Object}\",// The keyboard event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popup-refresh",
+      "contents": "//  component: popup\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the popup\nvar e = cmp.find(\"${1:popup}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTarget-popupCollapse",
+      "contents": "//  component: popupTarget\n//    evtName: popupCollapse\n//    evtType: ui:collapse\n//description: The event fired when the popup target list collapses.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupCollapse\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTarget-popupExpand",
+      "contents": "//  component: popupTarget\n//    evtName: popupExpand\n//    evtType: ui:expand\n//description: The event fired when the popup target list displays.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupExpand\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTarget-popupKeyboardEvent",
+      "contents": "//  component: popupTarget\n//    evtName: popupKeyboardEvent\n//    evtType: ui:popupKeyboardEvent\n//description: The event fired when the user interacts with the popup using the keyboard.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupKeyboardEvent\");\ne.setParams({\n\tevent: \"${2:Object}\",// The keyboard event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTarget-doClose",
+      "contents": "//  component: popupTarget\n//    evtName: doClose\n//    evtType: ui:collapse\n//description: Tell the target to close itself.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.doClose\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTrigger-popupTriggerPress",
+      "contents": "//  component: popupTrigger\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when a popup trigger is pressed.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTriggerPress\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTrigger-popupTargetShow",
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetShow\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTrigger-popupTargetHide",
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetHide\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-popupTrigger-popupKeyboardEvent",
+      "contents": "//  component: popupTrigger\n//    evtName: popupKeyboardEvent\n//    evtType: ui:popupKeyboardEvent\n//description: The event fired when a user interacts with a popup via the keyboard.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupKeyboardEvent\");\ne.setParams({\n\tevent: \"${2:Object}\",// The keyboard event.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-scroller-scrollTo",
+      "contents": "//  component: scroller\n//    evtName: scrollTo\n//    evtType: ui:scrollTo\n//description: The event fired when the scroller should move to a new destination\nvar e = cmp.find(\"${1:scroller}\").get(\"e.scrollTo\");\ne.setParams({\n\tdestination: \"${2:String}\",// Destination of scrolling. Options are top|bottom|left|right|custom\n\txcoord: \"${3:Integer}\",// X coordinate of custom scrolling\n\tycoord: \"${4:Integer}\",// Y coordinate of custom scrolling\n\ttime: \"${5:Integer}\",// Time (in milliseconds) to get to destination\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-scroller-scrollBy",
+      "contents": "//  component: scroller\n//    evtName: scrollBy\n//    evtType: ui:scrollBy\n//description: The event fired when the scroller should move to a new destination relative to its current position\nvar e = cmp.find(\"${1:scroller}\").get(\"e.scrollBy\");\ne.setParams({\n\tdeltaX: \"${2:Integer}\",// Change in X coordinate of scroller\n\tdeltaY: \"${3:Integer}\",// Change in Y coordinate of scroller\n\ttime: \"${4:Integer}\",// Time (in milliseconds) to get to destination\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-scrollerDeprecated-refreshed",
+      "contents": "//  component: scrollerDeprecated\n//    evtName: refreshed\n//    evtType: ui:scrollerRefreshed\n//description: The event fired when the scroller is refreshed.\nvar e = cmp.find(\"${1:scrollerDeprecated}\").get(\"e.refreshed\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-scrollerDeprecated-scrollTo",
+      "contents": "//  component: scrollerDeprecated\n//    evtName: scrollTo\n//    evtType: ui:scrollTo\n//description: The event fired when the scroller should move to a new destination.\nvar e = cmp.find(\"${1:scrollerDeprecated}\").get(\"e.scrollTo\");\ne.setParams({\n\tdestination: \"${2:String}\",// Destination of scrolling. Options are top|bottom|left|right|custom\n\txcoord: \"${3:Integer}\",// X coordinate of custom scrolling\n\tycoord: \"${4:Integer}\",// Y coordinate of custom scrolling\n\ttime: \"${5:Integer}\",// Time (in milliseconds) to get to destination\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-scrollerDeprecated-scrollBy",
+      "contents": "//  component: scrollerDeprecated\n//    evtName: scrollBy\n//    evtType: ui:scrollBy\n//description: The event fired when the scroller should move to a new destination relative to its current position.\nvar e = cmp.find(\"${1:scrollerDeprecated}\").get(\"e.scrollBy\");\ne.setParams({\n\tdeltaX: \"${2:Integer}\",// Change in X coordinate of scroller\n\tdeltaY: \"${3:Integer}\",// Change in Y coordinate of scroller\n\ttime: \"${4:Integer}\",// Time (in milliseconds) to get to destination\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-spinner-toggle",
+      "contents": "//  component: spinner\n//    evtName: toggle\n//    evtType: ui:toggleLoadingIndicator\n//description: The event fired when the spinner is toggled.\nvar e = cmp.find(\"${1:spinner}\").get(\"e.toggle\");\ne.setParams({\n\tisVisible: \"${2:Boolean}\",// Hide/show the spinner\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-tab-beforeActivate",
       "contents": "//  component: tab\n//    evtName: beforeActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered before the tab is activated. Can be canceled to prevent the tab from activating.\nvar e = cmp.find(\"${1:tab}\").get(\"e.beforeActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tab-onActivated",
+      "contents": "//  component: tab\n//    evtName: onActivated\n//    evtType: ui:tabsetEvent\n//description: The event fired when the tab is activated.\nvar e = cmp.find(\"${1:tab}\").get(\"e.onActivated\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tab-setActive",
+      "contents": "//  component: tab\n//    evtName: setActive\n//    evtType: ui:tabsetEvent\n//description: The event fired from ui:tabset to set this tab as active or deactive.\nvar e = cmp.find(\"${1:tab}\").get(\"e.setActive\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabBar-setActive",
@@ -178,6 +746,10 @@
       "contents": "//  component: tabBar\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-tabItem-activateTab",
+      "contents": "//  component: tabItem\n//    evtName: activateTab\n//    evtType: ui:tabsetEvent\n//description: The event is fired to activate the tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-tabItem-onActivate",
       "contents": "//  component: tabItem\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is fired when the tab is clicked to activate.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
@@ -194,12 +766,28 @@
       "contents": "//  component: tabItem\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-tabOverflowMenuItem-activateTab",
+      "contents": "//  component: tabOverflowMenuItem\n//    evtName: activateTab\n//    evtType: ui:tabsetEvent\n//description: The event is fired to activate the tab.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-tabOverflowMenuItem-onTabHover",
       "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabHover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves over a tab or when a tab is put into focus.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabHover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabOverflowMenuItem-onTabUnhover",
       "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabOverflowMenuItem-onTabSelection",
+      "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabSelection\n//    evtType: ui:tabsetEvent\n//description: The event is fired when a tab from the overflow menu is selected.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabSelection\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabOverflowMenuList-forwardWrap",
+      "contents": "//  component: tabOverflowMenuList\n//    evtName: forwardWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a forward wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.forwardWrap\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabOverflowMenuList-reverseWrap",
+      "contents": "//  component: tabOverflowMenuList\n//    evtName: reverseWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a reverse wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.reverseWrap\");\ne.setParams({\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabset-addTab",
@@ -226,6 +814,26 @@
       "contents": "//  component: tabset\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered when the tab is activated.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-tree-getChildren",
+      "contents": "//  component: tree\n//    evtName: getChildren\n//    evtType: ui:getChildren\n//description: \nvar e = cmp.find(\"${1:tree}\").get(\"e.getChildren\");\ne.setParams({\n\tcallback: \"${2:Object}\",// A function that accepts an array of ui:treeNode components\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-treeNode-getChildren",
+      "contents": "//  component: treeNode\n//    evtName: getChildren\n//    evtType: ui:getChildren\n//description: \nvar e = cmp.find(\"${1:treeNode}\").get(\"e.getChildren\");\ne.setParams({\n\tcallback: \"${2:Object}\",// A function that accepts an array of ui:treeNode components\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-virtualDataGrid-refresh",
+      "contents": "//  component: virtualDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-virtualDataGrid-onsort",
+      "contents": "//  component: virtualDataGrid\n//    evtName: onsort\n//    evtType: ui:sort\n//description: \nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onsort\");\ne.setParams({\n\tsortBy: \"${2:String}\",\n\tcallback: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-uiExamples-panelHeader-notify",
+      "contents": "//  component: panelHeader\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panelHeader}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-actionsTest-chainBoundaryCases-press",
       "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
     },
@@ -238,8 +846,24 @@
       "contents": "//  component: chainLocalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
     },
     {
+      "trigger": "evt-auratest-requireConsumer-versionEvt",
+      "contents": "//  component: requireConsumer\n//    evtName: versionEvt\n//    evtType: auratest:testEvent\n//description: \nvar e = cmp.find(\"${1:requireConsumer}\").get(\"e.versionEvt\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-requireWithModel-versionEvt",
+      "contents": "//  component: requireWithModel\n//    evtName: versionEvt\n//    evtType: auratest:testEvent\n//description: \nvar e = cmp.find(\"${1:requireWithModel}\").get(\"e.versionEvt\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-auratest-test_button-press",
       "contents": "//  component: test_button\n//    evtName: press\n//    evtType: auratest:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-aHandlesEventFromA-evt",
+      "contents": "//  component: aHandlesEventFromA\n//    evtName: evt\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:aHandlesEventFromA}\").get(\"e.evt\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-handleEventTest-bHandlesEventFromA-evtB",
+      "contents": "//  component: bHandlesEventFromA\n//    evtName: evtB\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:bHandlesEventFromA}\").get(\"e.evtB\");\ne.setParams({\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-handlerWithNameAndEvent-somename",
@@ -274,6 +898,26 @@
       "contents": "//  component: parentComponent\n//    evtName: parentEvent\n//    evtType: test:parentEvent\n//description: The Description\nvar e = cmp.find(\"${1:parentComponent}\").get(\"e.parentEvent\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
     },
     {
+      "trigger": "evt-test-require-versionEvt",
+      "contents": "//  component: require\n//    evtName: versionEvt\n//    evtType: auratest:testEvent\n//description: \nvar e = cmp.find(\"${1:require}\").get(\"e.versionEvt\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-testActionEvent-local",
+      "contents": "//  component: testActionEvent\n//    evtName: local\n//    evtType: test:testActionEventEvent\n//description: \nvar e = cmp.find(\"${1:testActionEvent}\").get(\"e.local\");\ne.setParams({\n\tmsg: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-testEventBubblingEmitter-bubblingEvent",
+      "contents": "//  component: testEventBubblingEmitter\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEvent\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitter}\").get(\"e.bubblingEvent\");\ne.setParams({\n\tname: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-testEventBubblingEmitterExtended-bubblingEvent",
+      "contents": "//  component: testEventBubblingEmitterExtended\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventExtended\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterExtended}\").get(\"e.bubblingEvent\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-test-testEventBubblingEmitterOther-bubblingEvent",
+      "contents": "//  component: testEventBubblingEmitterOther\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventOther\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterOther}\").get(\"e.bubblingEvent\");\ne.setParams({\n\tname: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-test-test_Events_BiggerComponentForEvent-testBiggerPress",
       "contents": "//  component: test_Events_BiggerComponentForEvent\n//    evtName: testBiggerPress\n//    evtType: test:test_Events_Event2\n//description: \nvar e = cmp.find(\"${1:test_Events_BiggerComponentForEvent}\").get(\"e.testBiggerPress\");\ne.setParams({\n\ttestEvent2: \"${2:String}\",\n});\ne.fire();"
     },
@@ -290,8 +934,24 @@
       "contents": "//  component: test_button\n//    evtName: press\n//    evtType: test:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
     },
     {
+      "trigger": "evt-uitest-panel2-notify",
+      "contents": "//  component: panel2\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panel2}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-uitest-panel2Content-notify",
+      "contents": "//  component: panel2Content\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panel2Content}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-uitest-pillContainer_InputText-keydown",
+      "contents": "//  component: pillContainer_InputText\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pillContainer_InputText}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
       "contents": "//  component: popupTestTriggerElement\n//    evtName: popupTargetToggle\n//    evtType: ui:popupTargetToggle\n//description: \nvar e = cmp.find(\"${1:popupTestTriggerElement}\").get(\"e.popupTargetToggle\");\ne.setParams({\n\tcomponent: \"${2:Aura.Component[]}\",// The custom popup trigger.\n\tshow: \"${3:Boolean}\",// Whether to show or hide the target.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-updateTest-updateable-click",
+      "contents": "//  component: updateable\n//    evtName: click\n//    evtType: updateTest:updateableEvent\n//description: \nvar e = cmp.find(\"${1:updateable}\").get(\"e.click\");\ne.setParams({\n});\ne.fire();"
     }
   ]
 }
