@@ -314,6 +314,10 @@
       "contents": "afterAuraInit=\"${1:aura:template - Optional - String}\""
     },
     {
+      "trigger": "aura-template-auraLoading\tAttr",
+      "contents": "auraLoading=\"${1:aura:template - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "aura-template-inlineStyle\tAttr",
       "contents": "inlineStyle=\"${1:aura:template - Optional - Aura.Component[]}\""
     },
@@ -458,16 +462,16 @@
       "contents": "renderMethods=\"${1:auradev:componentClass - Required - java://List<org.auraframework.util.json.JsFunction>}\""
     },
     {
-      "trigger": "auradev-componentClass-renderMethodStubs\tAttr",
-      "contents": "renderMethodStubs=\"${1:auradev:componentClass - Required - String[]}\""
+      "trigger": "auradev-componentClass-isRootComponent\tAttr",
+      "contents": "isRootComponent=\"${1:auradev:componentClass - Required - Boolean}\""
     },
     {
-      "trigger": "auradev-componentClass-superRenderMethodNames\tAttr",
-      "contents": "superRenderMethodNames=\"${1:auradev:componentClass - Required - java://List<org.auraframework.impl.ServerServiceImpl.RerenderInfo>}\""
+      "trigger": "auradev-componentClass-hasSuperClass\tAttr",
+      "contents": "hasSuperClass=\"${1:auradev:componentClass - Required - Boolean}\""
     },
     {
-      "trigger": "auradev-componentClass-rootComponent\tAttr",
-      "contents": "rootComponent=\"${1:auradev:componentClass - Required - Boolean}\""
+      "trigger": "auradev-componentClass-hasUnrenderMethod\tAttr",
+      "contents": "hasUnrenderMethod=\"${1:auradev:componentClass - Required - Boolean}\""
     },
     {
       "trigger": "auradev-createBaseComponentDefQuickFix-defType\tAttr",
@@ -862,12 +866,20 @@
       "contents": "suite=\"${1:aurajstest:jstestCase - Optional - java://org.auraframework.def.TestSuiteDef}\""
     },
     {
+      "trigger": "aurajstest-jstestCase-shortName\tAttr",
+      "contents": "shortName=\"${1:aurajstest:jstestCase - Optional - String}\""
+    },
+    {
       "trigger": "aurajstest-jstestCase-url\tAttr",
       "contents": "url=\"${1:aurajstest:jstestCase - Optional - String}\""
     },
     {
       "trigger": "aurajstest-jstestCase-status\tAttr",
       "contents": "status=\"${1:aurajstest:jstestCase - Optional - String}\""
+    },
+    {
+      "trigger": "aurajstest-jstestCase-individualTestUrl\tAttr",
+      "contents": "individualTestUrl=\"${1:aurajstest:jstestCase - Optional - String}\""
     },
     {
       "trigger": "aurajstest-jstestCase-done\tAttr",
@@ -1094,6 +1106,10 @@
       "contents": "footer=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-autocomplete-usePanel\tAttr",
+      "contents": "usePanel=\"${1:ui:autocomplete - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocomplete-matchDone\tAttr",
       "contents": "matchDone=\"${1:ui:autocomplete - Optional - ui:matchDone}\""
     },
@@ -1158,6 +1174,10 @@
       "contents": "updateAriaAttributes=\"${1:ui:autocompleteList - Optional - ui:updateAriaAttributes}\""
     },
     {
+      "trigger": "ui-autocompleteList-listExpand\tAttr",
+      "contents": "listExpand=\"${1:ui:autocompleteList - Optional - ui:autocompleteListExpand}\""
+    },
+    {
       "trigger": "ui-autocompleteOption-displayText\tAttr",
       "contents": "displayText=\"${1:ui:autocompleteOption - Optional - String}\""
     },
@@ -1172,6 +1192,18 @@
     {
       "trigger": "ui-autocompleteOption-domId\tAttr",
       "contents": "domId=\"${1:ui:autocompleteOption - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocompletePanel-referenceElement\tAttr",
+      "contents": "referenceElement=\"${1:ui:autocompletePanel - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-autocompletePanel-visible\tAttr",
+      "contents": "visible=\"${1:ui:autocompletePanel - Optional - boolean}\""
+    },
+    {
+      "trigger": "ui-autocompletePanel-zIndex\tAttr",
+      "contents": "zIndex=\"${1:ui:autocompletePanel - Optional - Integer}\""
     },
     {
       "trigger": "ui-block-overflow\tAttr",
@@ -1222,6 +1254,18 @@
       "contents": "iconClass=\"${1:ui:button - Optional - String}\""
     },
     {
+      "trigger": "ui-button-selectedClass\tAttr",
+      "contents": "selectedClass=\"${1:ui:button - Optional - String}\""
+    },
+    {
+      "trigger": "ui-button-notSelectedClass\tAttr",
+      "contents": "notSelectedClass=\"${1:ui:button - Optional - String}\""
+    },
+    {
+      "trigger": "ui-button-classList\tAttr",
+      "contents": "classList=\"${1:ui:button - Optional - String}\""
+    },
+    {
       "trigger": "ui-button-disabled\tAttr",
       "contents": "disabled=\"${1:ui:button - Optional - Boolean}\""
     },
@@ -1242,12 +1286,36 @@
       "contents": "tabIndex=\"${1:ui:button - Optional - Integer}\""
     },
     {
+      "trigger": "ui-button-stateful\tAttr",
+      "contents": "stateful=\"${1:ui:button - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-button-selected\tAttr",
+      "contents": "selected=\"${1:ui:button - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-button-keydown\tAttr",
       "contents": "keydown=\"${1:ui:button - Optional - ui:keydown}\""
     },
     {
       "trigger": "ui-button-press\tAttr",
       "contents": "press=\"${1:ui:button - Optional - ui:press}\""
+    },
+    {
+      "trigger": "ui-button-mouseover\tAttr",
+      "contents": "mouseover=\"${1:ui:button - Optional - ui:mouseover}\""
+    },
+    {
+      "trigger": "ui-button-mouseout\tAttr",
+      "contents": "mouseout=\"${1:ui:button - Optional - ui:mouseout}\""
+    },
+    {
+      "trigger": "ui-button-focus\tAttr",
+      "contents": "focus=\"${1:ui:button - Optional - ui:focus}\""
+    },
+    {
+      "trigger": "ui-button-blur\tAttr",
+      "contents": "blur=\"${1:ui:button - Optional - ui:blur}\""
     },
     {
       "trigger": "ui-carousel-height\tAttr",
@@ -1870,6 +1938,10 @@
       "contents": "titleHeadingLevel=\"${1:ui:datePicker - Optional - String}\""
     },
     {
+      "trigger": "ui-datePicker-_today\tAttr",
+      "contents": "_today=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
       "trigger": "ui-datePicker-rangeStart\tAttr",
       "contents": "rangeStart=\"${1:ui:datePicker - Optional - String}\""
     },
@@ -1932,6 +2004,10 @@
     {
       "trigger": "ui-datePickerGrid-_namesOfWeekdays\tAttr",
       "contents": "_namesOfWeekdays=\"${1:ui:datePickerGrid - Optional - List}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-_today\tAttr",
+      "contents": "_today=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
       "trigger": "ui-datePickerGrid-hide\tAttr",
@@ -2126,6 +2202,10 @@
       "contents": "isSuccessful=\"${1:ui:draggable - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-draggable-target\tAttr",
+      "contents": "target=\"${1:ui:draggable - Optional - Object}\""
+    },
+    {
       "trigger": "ui-draggable-isValid\tAttr",
       "contents": "isValid=\"${1:ui:draggable - Optional - Boolean}\""
     },
@@ -2174,12 +2254,24 @@
       "contents": "ariaDropEffect=\"${1:ui:dropzone - Optional - String}\""
     },
     {
-      "trigger": "ui-dropzone-isInAccessibilityMode\tAttr",
-      "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
+      "trigger": "ui-dropzone-target\tAttr",
+      "contents": "target=\"${1:ui:dropzone - Optional - Object}\""
     },
     {
       "trigger": "ui-dropzone-isInAccessibilityMode\tAttr",
       "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dropzone-target\tAttr",
+      "contents": "target=\"${1:ui:dropzone - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-dropzone-isInAccessibilityMode\tAttr",
+      "contents": "isInAccessibilityMode=\"${1:ui:dropzone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dropzone-target\tAttr",
+      "contents": "target=\"${1:ui:dropzone - Optional - Object}\""
     },
     {
       "trigger": "ui-dropzone-dragComponents\tAttr",
@@ -2402,6 +2494,10 @@
       "contents": "endDate=\"${1:ui:inputDateRange - Optional - String}\""
     },
     {
+      "trigger": "ui-inputDateTime-useSingleInput\tAttr",
+      "contents": "useSingleInput=\"${1:ui:inputDateTime - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-inputDateTime-value\tAttr",
       "contents": "value=\"${1:ui:inputDateTime - Optional - String}\""
     },
@@ -2410,8 +2506,8 @@
       "contents": "placeholder=\"${1:ui:inputDateTime - Optional - String}\""
     },
     {
-      "trigger": "ui-inputDateTime-timezone\tAttr",
-      "contents": "timezone=\"${1:ui:inputDateTime - Optional - String}\""
+      "trigger": "ui-inputDateTime-timePlaceholder\tAttr",
+      "contents": "timePlaceholder=\"${1:ui:inputDateTime - Optional - String}\""
     },
     {
       "trigger": "ui-inputDateTime-openPicker\tAttr",
@@ -2568,6 +2664,42 @@
     {
       "trigger": "ui-inputTextForAutocomplete-ariaActiveDescendant\tAttr",
       "contents": "ariaActiveDescendant=\"${1:ui:inputTextForAutocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-timeFormat\tAttr",
+      "contents": "timeFormat=\"${1:ui:inputTimePicker - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-langLocale\tAttr",
+      "contents": "langLocale=\"${1:ui:inputTimePicker - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-hours\tAttr",
+      "contents": "hours=\"${1:ui:inputTimePicker - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-minutes\tAttr",
+      "contents": "minutes=\"${1:ui:inputTimePicker - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-interval\tAttr",
+      "contents": "interval=\"${1:ui:inputTimePicker - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-visible\tAttr",
+      "contents": "visible=\"${1:ui:inputTimePicker - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-referenceElement\tAttr",
+      "contents": "referenceElement=\"${1:ui:inputTimePicker - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-_timeListInitialized\tAttr",
+      "contents": "_timeListInitialized=\"${1:ui:inputTimePicker - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-selectDate\tAttr",
+      "contents": "selectDate=\"${1:ui:inputTimePicker - Optional - ui:selectDate}\""
     },
     {
       "trigger": "ui-interactive-disabled\tAttr",
@@ -3066,6 +3198,10 @@
       "contents": "focusTrigger=\"${1:ui:menuList - Optional - Aura.Action}\""
     },
     {
+      "trigger": "ui-menuList-headerText\tAttr",
+      "contents": "headerText=\"${1:ui:menuList - Optional - String}\""
+    },
+    {
       "trigger": "ui-menuList-childMenuItems\tAttr",
       "contents": "childMenuItems=\"${1:ui:menuList - Optional - Aura.Component[]}\""
     },
@@ -3096,6 +3232,10 @@
     {
       "trigger": "ui-menuTriggerLink-label\tAttr",
       "contents": "label=\"${1:ui:menuTriggerLink - Optional - String}\""
+    },
+    {
+      "trigger": "ui-menuTriggerLink-menuTriggerPress\tAttr",
+      "contents": "menuTriggerPress=\"${1:ui:menuTriggerLink - Optional - ui:menuTriggerPress}\""
     },
     {
       "trigger": "ui-message-title\tAttr",
@@ -3130,6 +3270,14 @@
       "contents": "showCloseButton=\"${1:ui:modal - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-modal-closeButton\tAttr",
+      "contents": "closeButton=\"${1:ui:modal - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-modal-closeAction\tAttr",
+      "contents": "closeAction=\"${1:ui:modal - Optional - Object}\""
+    },
+    {
       "trigger": "ui-modal-closeDialogLabel\tAttr",
       "contents": "closeDialogLabel=\"${1:ui:modal - Optional - String}\""
     },
@@ -3148,10 +3296,6 @@
     {
       "trigger": "ui-modal-autoFocus\tAttr",
       "contents": "autoFocus=\"${1:ui:modal - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-modal-closeButton\tAttr",
-      "contents": "closeButton=\"${1:ui:modal - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-output-value\tAttr",
@@ -3506,12 +3650,20 @@
       "contents": "iconUrl=\"${1:ui:pill - Optional - String}\""
     },
     {
+      "trigger": "ui-pill-iconBackgroundColor\tAttr",
+      "contents": "iconBackgroundColor=\"${1:ui:pill - Optional - String}\""
+    },
+    {
       "trigger": "ui-pill-accessibleDeleteLabel\tAttr",
       "contents": "accessibleDeleteLabel=\"${1:ui:pill - Optional - String}\""
     },
     {
       "trigger": "ui-pill-maxCharacters\tAttr",
       "contents": "maxCharacters=\"${1:ui:pill - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-pill-active\tAttr",
+      "contents": "active=\"${1:ui:pill - Optional - Boolean}\""
     },
     {
       "trigger": "ui-pill-onHandledEvent\tAttr",
@@ -3532,10 +3684,6 @@
     {
       "trigger": "ui-pillContainer-maxAllowed\tAttr",
       "contents": "maxAllowed=\"${1:ui:pillContainer - Optional - Integer}\""
-    },
-    {
-      "trigger": "ui-pillContainer-maxCharactersInPill\tAttr",
-      "contents": "maxCharactersInPill=\"${1:ui:pillContainer - Optional - Integer}\""
     },
     {
       "trigger": "ui-pillContainer-maxLines\tAttr",
@@ -3562,6 +3710,14 @@
       "contents": "pillFlavor=\"${1:ui:pillContainer - Optional - String}\""
     },
     {
+      "trigger": "ui-pillContainer-assistiveTextLabel\tAttr",
+      "contents": "assistiveTextLabel=\"${1:ui:pillContainer - Optional - String}\""
+    },
+    {
+      "trigger": "ui-pillContainer-expanded\tAttr",
+      "contents": "expanded=\"${1:ui:pillContainer - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-pillContainer-items\tAttr",
       "contents": "items=\"${1:ui:pillContainer - Optional - List}\""
     },
@@ -3584,6 +3740,10 @@
     {
       "trigger": "ui-pillContainerAutoCompleteOption-iconUrl\tAttr",
       "contents": "iconUrl=\"${1:ui:pillContainerAutoCompleteOption - Optional - String}\""
+    },
+    {
+      "trigger": "ui-pillContainerAutoCompleteOption-iconBackgroundColor\tAttr",
+      "contents": "iconBackgroundColor=\"${1:ui:pillContainerAutoCompleteOption - Optional - String}\""
     },
     {
       "trigger": "ui-popup-popupTriggerPress\tAttr",
@@ -3644,6 +3804,10 @@
     {
       "trigger": "ui-popupTarget-preTransitionClass\tAttr",
       "contents": "preTransitionClass=\"${1:ui:popupTarget - Optional - String}\""
+    },
+    {
+      "trigger": "ui-popupTarget-showNubbin\tAttr",
+      "contents": "showNubbin=\"${1:ui:popupTarget - Optional - Boolean}\""
     },
     {
       "trigger": "ui-popupTarget-popupCollapse\tAttr",
@@ -3840,6 +4004,18 @@
     {
       "trigger": "ui-scroller-infiniteLoadingDataProvider\tAttr",
       "contents": "infiniteLoadingDataProvider=\"${1:ui:scroller - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "ui-scroller-infiniteLoadingNoDataLabel\tAttr",
+      "contents": "infiniteLoadingNoDataLabel=\"${1:ui:scroller - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scroller-infiniteLoadingIdleLabel\tAttr",
+      "contents": "infiniteLoadingIdleLabel=\"${1:ui:scroller - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scroller-infiniteLoadingLoadingLabel\tAttr",
+      "contents": "infiniteLoadingLoadingLabel=\"${1:ui:scroller - Optional - String}\""
     },
     {
       "trigger": "ui-scroller-pullToShowMoreClick\tAttr",
@@ -4100,6 +4276,10 @@
     {
       "trigger": "ui-tab-active\tAttr",
       "contents": "active=\"${1:ui:tab - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tab-hidden\tAttr",
+      "contents": "hidden=\"${1:ui:tab - Optional - Boolean}\""
     },
     {
       "trigger": "ui-tab-iconClass\tAttr",
@@ -4434,6 +4614,10 @@
       "contents": "direction=\"${1:ui:tooltip - Optional - String}\""
     },
     {
+      "trigger": "ui-tooltip-allowFlips\tAttr",
+      "contents": "allowFlips=\"${1:ui:tooltip - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-tooltip-domId\tAttr",
       "contents": "domId=\"${1:ui:tooltip - Optional - String}\""
     },
@@ -4554,6 +4738,10 @@
       "contents": "_sortBy=\"${1:ui:virtualDataGrid - Optional - String}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-useRowHeaders\tAttr",
+      "contents": "useRowHeaders=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-fixedHeader\tAttr",
       "contents": "fixedHeader=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
     },
@@ -4632,6 +4820,10 @@
     {
       "trigger": "uiExamples-dataGridDynamicColumns-count\tAttr",
       "contents": "count=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
+    },
+    {
+      "trigger": "uiExamples-dataGridKitchenSink-tableFlavor\tAttr",
+      "contents": "tableFlavor=\"${1:uiExamples:dataGridKitchenSink - Optional - String}\""
     },
     {
       "trigger": "uiExamples-dataGridKitchenSink-mode\tAttr",
@@ -4798,6 +4990,10 @@
       "contents": "display=\"${1:uiExamples:renderIfExample - Optional - Boolean}\""
     },
     {
+      "trigger": "uiExamples-virtualDataGridKitchenSink-tableFlavor\tAttr",
+      "contents": "tableFlavor=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - String}\""
+    },
+    {
       "trigger": "uiExamples-virtualDataGridKitchenSink-sortBy\tAttr",
       "contents": "sortBy=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - String}\""
     },
@@ -4886,8 +5082,16 @@
       "contents": "error=\"${1:actionsTest:deferredServerAction - Optional - String}\""
     },
     {
+      "trigger": "actionsTest-serverAction-text\tAttr",
+      "contents": "text=\"${1:actionsTest:serverAction - Optional - String}\""
+    },
+    {
       "trigger": "actionsTest-serverAction-errorMessage\tAttr",
-      "contents": "errorMessage=\"${1:actionsTest:serverAction - Optional - string}\""
+      "contents": "errorMessage=\"${1:actionsTest:serverAction - Optional - String}\""
+    },
+    {
+      "trigger": "actionsTest-serverAction-transactionId\tAttr",
+      "contents": "transactionId=\"${1:actionsTest:serverAction - Optional - Integer}\""
     },
     {
       "trigger": "actionsTest-transactions-transactionId\tAttr",
@@ -5566,6 +5770,26 @@
       "contents": "city=\"${1:auraStorageTest:teamFacet - Optional - String}\""
     },
     {
+      "trigger": "auraStorageTest-versionTest-defaultExpiration\tAttr",
+      "contents": "defaultExpiration=\"${1:auraStorageTest:versionTest - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStorageTest-versionTest-defaultAutoRefreshInterval\tAttr",
+      "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:versionTest - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStorageTest-versionTest-requireUseStorageQueryParam\tAttr",
+      "contents": "requireUseStorageQueryParam=\"${1:auraStorageTest:versionTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auraStorageTest-versionTest-persistent\tAttr",
+      "contents": "persistent=\"${1:auraStorageTest:versionTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auraStorageTest-versionTest-version\tAttr",
+      "contents": "version=\"${1:auraStorageTest:versionTest - Optional - String}\""
+    },
+    {
       "trigger": "auratest-access-currentTest\tAttr",
       "contents": "currentTest=\"${1:auratest:access - Optional - String}\""
     },
@@ -5898,6 +6122,14 @@
       "contents": "value=\"${1:auratest:label - Optional - String}\""
     },
     {
+      "trigger": "auratest-label-valueElse\tAttr",
+      "contents": "valueElse=\"${1:auratest:label - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-label-date\tAttr",
+      "contents": "date=\"${1:auratest:label - Optional - Date}\""
+    },
+    {
       "trigger": "auratest-label-string\tAttr",
       "contents": "string=\"${1:auratest:label - Optional - String}\""
     },
@@ -5916,6 +6148,10 @@
     {
       "trigger": "auratest-label-noll\tAttr",
       "contents": "noll=\"${1:auratest:label - Optional - Object}\""
+    },
+    {
+      "trigger": "auratest-label-booleanForIf\tAttr",
+      "contents": "booleanForIf=\"${1:auratest:label - Optional - Boolean}\""
     },
     {
       "trigger": "auratest-logPanel-logs\tAttr",
@@ -5962,16 +6198,16 @@
       "contents": "versionEvt=\"${1:auratest:requireConsumer - Optional - auratest:testEvent}\""
     },
     {
-      "trigger": "auratest-requireWithModel-actionDone\tAttr",
-      "contents": "actionDone=\"${1:auratest:requireWithModel - Optional - Boolean}\""
+      "trigger": "auratest-requireWithServerAction-actionDone\tAttr",
+      "contents": "actionDone=\"${1:auratest:requireWithServerAction - Optional - Boolean}\""
     },
     {
-      "trigger": "auratest-requireWithModel-version\tAttr",
-      "contents": "version=\"${1:auratest:requireWithModel - Optional - String}\""
+      "trigger": "auratest-requireWithServerAction-version\tAttr",
+      "contents": "version=\"${1:auratest:requireWithServerAction - Optional - String}\""
     },
     {
-      "trigger": "auratest-requireWithModel-versionEvt\tAttr",
-      "contents": "versionEvt=\"${1:auratest:requireWithModel - Optional - auratest:testEvent}\""
+      "trigger": "auratest-requireWithServerAction-versionEvt\tAttr",
+      "contents": "versionEvt=\"${1:auratest:requireWithServerAction - Optional - auratest:testEvent}\""
     },
     {
       "trigger": "auratest-rerenderAbstract-toggleAbstract\tAttr",
@@ -6012,14 +6248,6 @@
     {
       "trigger": "auratest-testForEachDefChild-numbers\tAttr",
       "contents": "numbers=\"${1:auratest:testForEachDefChild - Optional - Account}\""
-    },
-    {
-      "trigger": "auratest-testPerfRunnerContainer-scope\tAttr",
-      "contents": "scope=\"${1:auratest:testPerfRunnerContainer - Optional - String}\""
-    },
-    {
-      "trigger": "auratest-testPerfRunnerContainer-keyword\tAttr",
-      "contents": "keyword=\"${1:auratest:testPerfRunnerContainer - Optional - String}\""
     },
     {
       "trigger": "auratest-test_CompoundFormula_NonString-NameString\tAttr",
@@ -6202,22 +6430,6 @@
       "contents": "parent=\"${1:componentTest:knowParent - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "componentTest-labelTest-pattern\tAttr",
-      "contents": "pattern=\"${1:componentTest:labelTest - Optional - String}\""
-    },
-    {
-      "trigger": "componentTest-labelTest-date\tAttr",
-      "contents": "date=\"${1:componentTest:labelTest - Optional - Date}\""
-    },
-    {
-      "trigger": "componentTest-labelTest-userId\tAttr",
-      "contents": "userId=\"${1:componentTest:labelTest - Optional - String}\""
-    },
-    {
-      "trigger": "componentTest-labelTest-userName\tAttr",
-      "contents": "userName=\"${1:componentTest:labelTest - Optional - String}\""
-    },
-    {
       "trigger": "componentTest-require-version\tAttr",
       "contents": "version=\"${1:componentTest:require - Optional - String}\""
     },
@@ -6272,6 +6484,10 @@
     {
       "trigger": "componentTest-throwErrorInner-outputValue\tAttr",
       "contents": "outputValue=\"${1:componentTest:throwErrorInner - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-versionInServer-newComponent\tAttr",
+      "contents": "newComponent=\"${1:componentTest:versionInServer - Optional - Aura.Component}\""
     },
     {
       "trigger": "componentTest-versionInServer-actionDone\tAttr",
@@ -6498,6 +6714,18 @@
       "contents": "list=\"${1:forEachDefTest:forEachDefDisplay - Optional - List}\""
     },
     {
+      "trigger": "gvpTest-basicTest-attributeLabel\tAttr",
+      "contents": "attributeLabel=\"${1:gvpTest:basicTest - Optional - String}\""
+    },
+    {
+      "trigger": "gvpTest-customGVPInitInTemplateTest-valueChanged\tAttr",
+      "contents": "valueChanged=\"${1:gvpTest:customGVPInitInTemplateTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "gvpTest-customGVPInitInTemplateTest-gvpValue\tAttr",
+      "contents": "gvpValue=\"${1:gvpTest:customGVPInitInTemplateTest - Optional - String}\""
+    },
+    {
       "trigger": "gvpTest-customGVPTemplate-stringValue\tAttr",
       "contents": "stringValue=\"${1:gvpTest:customGVPTemplate - Optional - String}\""
     },
@@ -6612,6 +6840,14 @@
     {
       "trigger": "integrationService-simpleStub-attrMap\tAttr",
       "contents": "attrMap=\"${1:integrationService:simpleStub - Optional - Map}\""
+    },
+    {
+      "trigger": "iterationPerformanceTest-iterationBatchOperations-initialState\tAttr",
+      "contents": "initialState=\"${1:iterationPerformanceTest:iterationBatchOperations - Optional - Object}\""
+    },
+    {
+      "trigger": "iterationPerformanceTest-iterationBatchOperations-iterationItems\tAttr",
+      "contents": "iterationItems=\"${1:iterationPerformanceTest:iterationBatchOperations - Optional - Object}\""
     },
     {
       "trigger": "iterationTest-arrayIteration-newCmp\tAttr",
@@ -7770,6 +8006,14 @@
       "contents": "versionInConsumedCmp=\"${1:test:requireConsumer - Optional - String}\""
     },
     {
+      "trigger": "test-runnerContainer-scope\tAttr",
+      "contents": "scope=\"${1:test:runnerContainer - Optional - String}\""
+    },
+    {
+      "trigger": "test-runnerContainer-keyword\tAttr",
+      "contents": "keyword=\"${1:test:runnerContainer - Optional - String}\""
+    },
+    {
       "trigger": "test-testActionCallbacks-cbComplete\tAttr",
       "contents": "cbComplete=\"${1:test:testActionCallbacks - Optional - String}\""
     },
@@ -8378,12 +8622,20 @@
       "contents": "value=\"${1:uitest:datePickerManager_Test - Optional - String}\""
     },
     {
-      "trigger": "uitest-datePicker_TodayButtonTest-showToday\tAttr",
-      "contents": "showToday=\"${1:uitest:datePicker_TodayButtonTest - Optional - Boolean}\""
+      "trigger": "uitest-datePicker_PositioningTest-pos\tAttr",
+      "contents": "pos=\"${1:uitest:datePicker_PositioningTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-datePicker_TodayButtonTest-selectedDate\tAttr",
-      "contents": "selectedDate=\"${1:uitest:datePicker_TodayButtonTest - Optional - Object}\""
+      "trigger": "uitest-datePicker_TodayButtonTest-renderItem\tAttr",
+      "contents": "renderItem=\"${1:uitest:datePicker_TodayButtonTest - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-datepicker_RegressionTest-value\tAttr",
+      "contents": "value=\"${1:uitest:datepicker_RegressionTest - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-datepicker_RegressionTest-renderItem\tAttr",
+      "contents": "renderItem=\"${1:uitest:datepicker_RegressionTest - Optional - String}\""
     },
     {
       "trigger": "uitest-demoMenuTrigger-label\tAttr",
@@ -8516,6 +8768,14 @@
     {
       "trigger": "uitest-inputDateTime_Test-format\tAttr",
       "contents": "format=\"${1:uitest:inputDateTime_Test - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-inputDateTime_Test-dateFormat\tAttr",
+      "contents": "dateFormat=\"${1:uitest:inputDateTime_Test - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-inputDateTime_Test-timeFormat\tAttr",
+      "contents": "timeFormat=\"${1:uitest:inputDateTime_Test - Optional - String}\""
     },
     {
       "trigger": "uitest-inputDate_Test-value\tAttr",
@@ -8818,8 +9078,8 @@
       "contents": "showPointer=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
     },
     {
-      "trigger": "uitest-panel2_Tester-referenceElement\tAttr",
-      "contents": "referenceElement=\"${1:uitest:panel2_Tester - Optional - Object}\""
+      "trigger": "uitest-panel2_Tester-useReferenceElementSelector\tAttr",
+      "contents": "useReferenceElementSelector=\"${1:uitest:panel2_Tester - Optional - Boolean}\""
     },
     {
       "trigger": "uitest-panel2_Tester-useReferenceElement\tAttr",
@@ -8910,6 +9170,14 @@
       "contents": "scrollerId=\"${1:uitest:scroller_BidirectionalTest - Optional - String}\""
     },
     {
+      "trigger": "uitest-scroller_InfiniteLoading-initialSize\tAttr",
+      "contents": "initialSize=\"${1:uitest:scroller_InfiniteLoading - Optional - Integer}\""
+    },
+    {
+      "trigger": "uitest-scroller_InfiniteLoading-loadDelay_ms\tAttr",
+      "contents": "loadDelay_ms=\"${1:uitest:scroller_InfiniteLoading - Optional - Integer}\""
+    },
+    {
       "trigger": "uitest-scroller_Test-scrollToBottomCount\tAttr",
       "contents": "scrollToBottomCount=\"${1:uitest:scroller_Test - Optional - Integer}\""
     },
@@ -8922,16 +9190,24 @@
       "contents": "rows=\"${1:uitest:scroller_basicPerf - Optional - List}\""
     },
     {
+      "trigger": "uitest-tab_afterRenderCustomTab-_afterRenderWidth\tAttr",
+      "contents": "_afterRenderWidth=\"${1:uitest:tab_afterRenderCustomTab - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-tab_afterRenderCustomTab-_afterRenderHeight\tAttr",
+      "contents": "_afterRenderHeight=\"${1:uitest:tab_afterRenderCustomTab - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-tab_afterRenderCustomTab-_isDomPresent\tAttr",
+      "contents": "_isDomPresent=\"${1:uitest:tab_afterRenderCustomTab - Optional - Boolean}\""
+    },
+    {
       "trigger": "uitest-tab_lazyCustomTab-rendered\tAttr",
       "contents": "rendered=\"${1:uitest:tab_lazyCustomTab - Optional - Boolean}\""
     },
     {
       "trigger": "uitest-tabset_RegressionTest-renderItem\tAttr",
       "contents": "renderItem=\"${1:uitest:tabset_RegressionTest - Optional - String}\""
-    },
-    {
-      "trigger": "uitest-tabset_RegressionTest-_extra\tAttr",
-      "contents": "_extra=\"${1:uitest:tabset_RegressionTest - Optional - String}\""
     },
     {
       "trigger": "uitest-tabset_Test-renderItem\tAttr",
@@ -8950,6 +9226,18 @@
       "contents": "conditionalShow=\"${1:uitest:tabset_Test - Optional - Boolean}\""
     },
     {
+      "trigger": "uitest-tabset_extendsTest-_afterRenderWidth\tAttr",
+      "contents": "_afterRenderWidth=\"${1:uitest:tabset_extendsTest - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-tabset_extendsTest-_afterRenderHeight\tAttr",
+      "contents": "_afterRenderHeight=\"${1:uitest:tabset_extendsTest - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-tabset_extendsTest-_isDomPresent\tAttr",
+      "contents": "_isDomPresent=\"${1:uitest:tabset_extendsTest - Optional - Boolean}\""
+    },
+    {
       "trigger": "uitest-tabset_overflowTest-renderItem\tAttr",
       "contents": "renderItem=\"${1:uitest:tabset_overflowTest - Optional - String}\""
     },
@@ -8962,8 +9250,8 @@
       "contents": "newTabActive=\"${1:uitest:tabset_overflowTest - Optional - Boolean}\""
     },
     {
-      "trigger": "uitest-tooltipTest-renderItem\tAttr",
-      "contents": "renderItem=\"${1:uitest:tooltipTest - Optional - String}\""
+      "trigger": "uitest-tooltip_FullTest-renderItem\tAttr",
+      "contents": "renderItem=\"${1:uitest:tooltip_FullTest - Optional - String}\""
     },
     {
       "trigger": "uitest-tooltip_Test-renderItem\tAttr",
@@ -9012,6 +9300,10 @@
     {
       "trigger": "uitest-virtualDataGrid_columnsTests-gridSelectedItems\tAttr",
       "contents": "gridSelectedItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - List}\""
+    },
+    {
+      "trigger": "uitest-virtualDataGrid_columnsTests-useRowHeaders\tAttr",
+      "contents": "useRowHeaders=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Boolean}\""
     },
     {
       "trigger": "uitest-virtualDataGrid_columnsTests-provideNoData\tAttr",

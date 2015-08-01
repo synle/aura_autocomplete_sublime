@@ -6,10 +6,6 @@
       "contents": "A.test.getInitialGlobalState(${1:})"
     },
     {
-      "trigger": "A-test-getWhitelistedVariables",
-      "contents": "A.test.getWhitelistedVariables(${1:})"
-    },
-    {
       "trigger": "A-test-addWaitFor",
       "contents": "A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})"
     },
@@ -366,8 +362,8 @@
       "contents": "A.test.removePrePostSendCallback(${1:handle})"
     },
     {
-      "trigger": "A-test-install",
-      "contents": "A.test.install(${1:})"
+      "trigger": "A-test-installOverride",
+      "contents": "A.test.installOverride(${1:})"
     },
     {
       "trigger": "A-test-run",
@@ -395,7 +391,7 @@
     },
     {
       "trigger": "A-test-checkGlobalNamespacePollution",
-      "contents": "A.test.checkGlobalNamespacePollution(${1:})"
+      "contents": "A.test.checkGlobalNamespacePollution(${1:whitelistedPollutants})"
     },
     {
       "trigger": "A-util-isIOSWebView",

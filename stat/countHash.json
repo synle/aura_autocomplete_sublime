@@ -98,6 +98,11 @@
   "aura:iteration": 1,
   "aurajstest:jstestcase": 1
  },
+ "app.uiExamples:gridExamples": {
+  "aura:application": 1,
+  "uiexamples:virtualdatagridkitchensink": 1,
+  "uiexamples:datagridkitchensink": 1
+ },
  "app.uiExamples:panelExamples": {
   "aura:application": 1,
   "aura:handler": 1,
@@ -148,7 +153,12 @@
  },
  "app.auraStorageTest:indexedDBStorageTest": {
   "aura:application": 1,
-  "aura:dependency": 1,
+  "aura:import": 1,
+  "aura:dependency": 1
+ },
+ "app.auraStorageTest:noGetApplicationCache": {
+  "aura:application": 1,
+  "aura:attribute": 2,
   "aura:handler": 1
  },
  "app.auratest:aisAsyncApp": {
@@ -190,12 +200,6 @@
  "app.auratest:testLayoutsWithJavaController": {
   "aura:application": 1,
   "aura:handler": 1
- },
- "app.auratest:testPerfRunner": {
-  "aura:application": 1,
-  "aura:attribute": 2,
-  "aura:if": 1,
-  "auratest:testperfrunnercontainer": 1
  },
  "app.auratest:testTitleChangeEvent": {
   "aura:application": 1,
@@ -436,6 +440,13 @@
  "app.test:layoutsNonExistDefault": {
   "aura:application": 1
  },
+ "app.test:runner": {
+  "aura:application": 1,
+  "aura:attribute": 2,
+  "aura:if": 1,
+  "aura:set": 1,
+  "test:runnercontainer": 1
+ },
  "app.test:styleTest": {
   "aura:application": 1,
   "ui:message": 1,
@@ -604,7 +615,7 @@
   "aura:attribute": 25,
   "ui:block": 2,
   "aura:set": 2,
-  "ui:inputtext": 1,
+  "ui:inputtext": 2,
   "uitest:panel2_tester": 1,
   "ui:panelmanager2": 1,
   "ui:panel": 1,
@@ -732,7 +743,8 @@
  },
  "cmp.aura:template": {
   "aura:component": 1,
-  "aura:attribute": 29
+  "aura:attribute": 30,
+  "aura:set": 1
  },
  "cmp.aura:text": {
   "aura:component": 1,
@@ -746,7 +758,7 @@
   "aura:component": 1,
   "aura:attribute": 4,
   "aura:handler": 1,
-  "aura:renderif": 1,
+  "aura:if": 1,
   "ui:stamp": 1
  },
  "cmp.auraStorage:init": {
@@ -785,7 +797,7 @@
   "aura:attribute": 9,
   "aura:if": 7,
   "aura:set": 2,
-  "aura:iteration": 3
+  "aura:iteration": 2
  },
  "cmp.auradev:createApplicationDefQuickFix": {
   "aura:component": 1,
@@ -906,9 +918,10 @@
  "cmp.auradocs:apiSymbol": {
   "aura:component": 1,
   "aura:attribute": 1,
+  "aura:if": 12,
   "aura:iteration": 7,
-  "aura:if": 10,
-  "aura:unescapedhtml": 4,
+  "aura:unescapedhtml": 5,
+  "ui:stamp": 1,
   "auradocs:apiparams": 1
  },
  "cmp.auradocs:apiSymbols": {
@@ -921,6 +934,7 @@
  "cmp.auradocs:apiTopic": {
   "aura:component": 1,
   "aura:set": 3,
+  "aura:if": 2,
   "auradocs:apisymbols": 2
  },
  "cmp.auradocs:codeblock": {
@@ -1457,10 +1471,11 @@
  },
  "cmp.aurajstest:jstestCase": {
   "aura:component": 1,
-  "aura:attribute": 4,
+  "aura:attribute": 6,
   "aura:set": 4,
   "aura:registerevent": 1,
-  "aura:handler": 1
+  "aura:handler": 2,
+  "aura:if": 1
  },
  "cmp.ui:abstractDataGrid": {
   "aura:component": 1,
@@ -1516,19 +1531,20 @@
  },
  "cmp.ui:autocomplete": {
   "aura:component": 1,
-  "aura:attribute": 14,
+  "aura:attribute": 15,
   "aura:registerevent": 5,
-  "aura:handler": 3,
-  "aura:set": 2,
-  "aura:if": 1,
+  "aura:handler": 4,
+  "aura:set": 3,
+  "aura:if": 2,
   "ui:inputtextareaforautocomplete": 1,
   "ui:inputtextforautocomplete": 1,
-  "ui:autocompletelist": 1
+  "ui:autocompletepanel": 1,
+  "ui:autocompletelist": 2
  },
  "cmp.ui:autocompleteList": {
   "aura:component": 1,
   "aura:attribute": 5,
-  "aura:registerevent": 6,
+  "aura:registerevent": 7,
   "aura:handler": 5,
   "aura:iteration": 1
  },
@@ -1539,6 +1555,12 @@
   "aura:renderif": 1,
   "aura:set": 1
  },
+ "cmp.ui:autocompletePanel": {
+  "aura:component": 1,
+  "aura:import": 1,
+  "aura:attribute": 3,
+  "aura:handler": 2
+ },
  "cmp.ui:block": {
   "aura:component": 1,
   "aura:attribute": 4,
@@ -1547,8 +1569,9 @@
  },
  "cmp.ui:button": {
   "aura:component": 1,
-  "aura:attribute": 13,
-  "aura:registerevent": 2,
+  "aura:attribute": 18,
+  "aura:registerevent": 6,
+  "aura:handler": 1,
   "aura:if": 2,
   "aura:set": 1
  },
@@ -1674,10 +1697,10 @@
  "cmp.ui:datePicker": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 18,
+  "aura:attribute": 19,
   "aura:method": 1,
   "aura:registerevent": 1,
-  "aura:handler": 1,
+  "aura:handler": 2,
   "aura:if": 5,
   "ui:outputtext": 1,
   "aura:set": 2,
@@ -1687,7 +1710,7 @@
  },
  "cmp.ui:datePickerGrid": {
   "aura:component": 1,
-  "aura:attribute": 12,
+  "aura:attribute": 13,
   "aura:registerevent": 5,
   "aura:handler": 3,
   "aura:iteration": 1,
@@ -1740,7 +1763,7 @@
  "cmp.ui:draggable": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 12,
+  "aura:attribute": 13,
   "aura:registerevent": 3,
   "aura:handler": 1,
   "aura:method": 2
@@ -1748,7 +1771,7 @@
  "cmp.ui:dropzone": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 11,
+  "aura:attribute": 14,
   "aura:registerevent": 4,
   "aura:method": 5
  },
@@ -1799,8 +1822,7 @@
   "aura:attribute": 2,
   "aura:handler": 2,
   "aura:registerevent": 1,
-  "aura:if": 3,
-  "aura:set": 1,
+  "aura:if": 5,
   "ui:datepicker": 1
  },
  "cmp.ui:inputDateRange": {
@@ -1812,12 +1834,13 @@
  },
  "cmp.ui:inputDateTime": {
   "aura:component": 1,
-  "aura:attribute": 3,
+  "aura:attribute": 4,
   "aura:handler": 2,
   "aura:registerevent": 1,
-  "aura:if": 2,
-  "aura:set": 1,
-  "ui:datepicker": 1
+  "aura:if": 4,
+  "ui:datepicker": 2,
+  "ui:inputtimepicker": 1,
+  "aura:set": 2
  },
  "cmp.ui:inputDateTrigger": {
   "aura:component": 1,
@@ -1907,6 +1930,12 @@
  "cmp.ui:inputTextForAutocomplete": {
   "aura:component": 1,
   "aura:attribute": 3
+ },
+ "cmp.ui:inputTimePicker": {
+  "aura:component": 1,
+  "aura:import": 1,
+  "aura:attribute": 8,
+  "aura:registerevent": 1
  },
  "cmp.ui:inputURL": {
   "aura:component": 1
@@ -1998,9 +2027,10 @@
  },
  "cmp.ui:menuList": {
   "aura:component": 1,
-  "aura:attribute": 5,
+  "aura:attribute": 6,
   "aura:registerevent": 5,
   "aura:handler": 1,
+  "aura:if": 1,
   "aura:iteration": 1,
   "ui:menuitem": 1
  },
@@ -2012,8 +2042,9 @@
  "cmp.ui:menuTriggerLink": {
   "aura:component": 1,
   "aura:attribute": 1,
-  "aura:if": 1,
-  "aura:set": 1
+  "aura:registerevent": 1,
+  "aura:set": 2,
+  "aura:if": 1
  },
  "cmp.ui:message": {
   "aura:component": 1,
@@ -2026,10 +2057,10 @@
  "cmp.ui:modal": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 11,
+  "aura:attribute": 12,
   "aura:handler": 2,
   "aura:dependency": 1,
-  "aura:if": 1
+  "aura:if": 2
  },
  "cmp.ui:output": {
   "aura:component": 1,
@@ -2133,7 +2164,7 @@
   "aura:component": 1,
   "aura:import": 2,
   "aura:attribute": 17,
-  "aura:handler": 2,
+  "aura:handler": 3,
   "aura:dependency": 1,
   "aura:if": 2
  },
@@ -2157,12 +2188,12 @@
  "cmp.ui:panelManager2": {
   "aura:component": 1,
   "aura:attribute": 1,
-  "aura:handler": 5
+  "aura:handler": 6
  },
  "cmp.ui:pill": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 6,
+  "aura:attribute": 8,
   "aura:registerevent": 3,
   "aura:handler": 2,
   "aura:if": 2,
@@ -2170,10 +2201,10 @@
  },
  "cmp.ui:pillContainer": {
   "aura:component": 1,
-  "aura:attribute": 10,
+  "aura:attribute": 11,
+  "aura:handler": 5,
   "aura:registerevent": 2,
   "aura:method": 1,
-  "aura:handler": 1,
   "aura:iteration": 1,
   "ui:pill": 1
  },
@@ -2185,7 +2216,7 @@
  },
  "cmp.ui:pillContainerAutoCompleteOption": {
   "aura:component": 1,
-  "aura:attribute": 1,
+  "aura:attribute": 2,
   "ui:image": 1
  },
  "cmp.ui:popup": {
@@ -2195,7 +2226,7 @@
  },
  "cmp.ui:popupTarget": {
   "aura:component": 1,
-  "aura:attribute": 10,
+  "aura:attribute": 11,
   "aura:registerevent": 4,
   "aura:handler": 1,
   "aura:if": 1,
@@ -2229,7 +2260,7 @@
  "cmp.ui:scroller": {
   "aura:component": 1,
   "aura:import": 2,
-  "aura:attribute": 51,
+  "aura:attribute": 54,
   "aura:registerevent": 2,
   "aura:handler": 6,
   "ui:resizeobserver": 1
@@ -2255,7 +2286,7 @@
  },
  "cmp.ui:tab": {
   "aura:component": 1,
-  "aura:attribute": 9,
+  "aura:attribute": 10,
   "aura:registerevent": 3,
   "aura:handler": 1
  },
@@ -2313,7 +2344,7 @@
  "cmp.ui:tooltip": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 15,
+  "aura:attribute": 16,
   "aura:method": 2,
   "aura:if": 1,
   "aura:set": 1
@@ -2348,7 +2379,7 @@
  },
  "cmp.ui:virtualDataGrid": {
   "aura:component": 1,
-  "aura:attribute": 13,
+  "aura:attribute": 14,
   "aura:handler": 4,
   "aura:registerevent": 2,
   "aura:method": 2
@@ -2367,11 +2398,14 @@
  "cmp.uiExamples:autocompleteExample": {
   "aura:component": 1,
   "aura:attribute": 3,
+  "ui:panelmanager2": 1,
+  "aura:set": 5,
+  "ui:panel": 1,
+  "ui:modal": 1,
   "ui:button": 1,
   "ui:label": 2,
   "ui:outputtext": 2,
   "ui:autocomplete": 2,
-  "aura:set": 4,
   "uiexamples:autocompletedataprovider": 2,
   "ui:autocompleteoption": 1,
   "uiexamples:autocompleteoptionexampleextended": 1
@@ -2387,6 +2421,12 @@
   "ui:inputtext": 1,
   "ui:button": 1,
   "ui:outputtext": 1
+ },
+ "cmp.uiExamples:carouselExample": {
+  "aura:component": 1,
+  "ui:carousel": 1,
+  "aura:set": 1,
+  "ui:outputtext": 2
  },
  "cmp.uiExamples:checkbox": {
   "aura:component": 1,
@@ -2414,7 +2454,7 @@
  },
  "cmp.uiExamples:dataGridKitchenSink": {
   "aura:component": 1,
-  "aura:attribute": 11,
+  "aura:attribute": 12,
   "aura:handler": 1,
   "ui:button": 14,
   "ui:inputtext": 4,
@@ -2664,7 +2704,7 @@
  },
  "cmp.uiExamples:tooltipExample": {
   "aura:component": 1,
-  "ui:tooltip": 10,
+  "ui:tooltip": 11,
   "ui:inputtext": 1,
   "ui:button": 1
  },
@@ -2676,7 +2716,7 @@
  },
  "cmp.uiExamples:virtualDataGridKitchenSink": {
   "aura:component": 1,
-  "aura:attribute": 11,
+  "aura:attribute": 12,
   "aura:handler": 2,
   "ui:button": 4,
   "ui:inputcheckbox": 1,
@@ -2726,7 +2766,7 @@
  },
  "cmp.actionsTest:serverAction": {
   "aura:component": 1,
-  "aura:attribute": 1,
+  "aura:attribute": 3,
   "aurastorage:init": 1,
   "ui:button": 5
  },
@@ -2892,8 +2932,12 @@
   "ui:inputtext": 1,
   "aura:if": 1
  },
- "cmp.auraStorageTest:memoryAdapterTest": {
+ "cmp.auraStorageTest:isolationTest": {
   "aura:component": 1
+ },
+ "cmp.auraStorageTest:memoryAdapterTest": {
+  "aura:component": 1,
+  "aura:import": 1
  },
  "cmp.auraStorageTest:namedStorageTemplate": {
   "aura:component": 1,
@@ -2908,6 +2952,11 @@
   "aura:attribute": 2,
   "aurastorage:init": 1,
   "ui:button": 7
+ },
+ "cmp.auraStorageTest:noGetApplicationCacheTemplate": {
+  "aura:component": 1,
+  "aura:set": 4,
+  "aurastorage:init": 1
  },
  "cmp.auraStorageTest:playerFacet": {
   "aura:component": 1,
@@ -2924,6 +2973,16 @@
   "aura:component": 1,
   "aura:attribute": 2,
   "ui:button": 1
+ },
+ "cmp.auraStorageTest:versionTemplate": {
+  "aura:component": 1,
+  "aura:set": 1,
+  "aurastorage:init": 2
+ },
+ "cmp.auraStorageTest:versionTest": {
+  "aura:component": 1,
+  "aura:attribute": 5,
+  "aurastorage:init": 1
  },
  "cmp.auratest:access": {
   "aura:component": 1,
@@ -3103,8 +3162,11 @@
  },
  "cmp.auratest:label": {
   "aura:component": 1,
-  "aura:attribute": 6,
-  "aura:label": 15
+  "aura:attribute": 9,
+  "aura:label": 18,
+  "aura:if": 1,
+  "aura:set": 1,
+  "ui:outputdate": 1
  },
  "cmp.auratest:logPanel": {
   "aura:component": 1,
@@ -3121,7 +3183,7 @@
  "cmp.auratest:require": {
   "aura:component": 1,
   "aura:attribute": 5,
-  "aura:if": 2,
+  "aura:if": 1,
   "aura:text": 2,
   "aura:method": 7,
   "aura:handler": 1
@@ -3129,16 +3191,16 @@
  "cmp.auratest:requireConsumer": {
   "aura:component": 1,
   "aura:attribute": 3,
-  "aura:method": 3,
+  "aura:method": 4,
   "aura:require": 2,
   "test:require": 1,
+  "auratest:require": 1,
   "aura:registerevent": 1
  },
- "cmp.auratest:requireWithModel": {
+ "cmp.auratest:requireWithServerAction": {
   "aura:component": 1,
   "aura:attribute": 2,
-  "aura:text": 1,
-  "aura:method": 4,
+  "aura:method": 3,
   "aura:registerevent": 1,
   "aura:handler": 1
  },
@@ -3205,10 +3267,6 @@
  },
  "cmp.auratest:testModelThatThrowsInRenderer": {
   "aura:component": 1
- },
- "cmp.auratest:testPerfRunnerContainer": {
-  "aura:component": 1,
-  "aura:attribute": 2
  },
  "cmp.auratest:test_Abstract": {
   "aura:component": 1
@@ -3510,12 +3568,6 @@
   "aura:component": 1,
   "aura:attribute": 1
  },
- "cmp.componentTest:labelTest": {
-  "aura:component": 1,
-  "aura:attribute": 4,
-  "aura:label": 1,
-  "ui:outputdate": 2
- },
  "cmp.componentTest:renderNestedComponents": {
   "aura:component": 1,
   "componenttest:hasbody": 2,
@@ -3553,10 +3605,10 @@
  },
  "cmp.componentTest:versionInServer": {
   "aura:component": 1,
-  "aura:attribute": 2,
-  "auratest:requirewithmodel": 1,
+  "aura:attribute": 3,
+  "auratest:requirewithserveraction": 1,
   "auratest:requireconsumer": 1,
-  "aura:require": 1
+  "aura:require": 2
  },
  "cmp.componentTest:versioning": {
   "aura:component": 1,
@@ -3808,6 +3860,9 @@
  "cmp.flavorTest:overrides_x_onlyImplicitDefault": {
   "aura:component": 1
  },
+ "cmp.flavorTest:sample_extends": {
+  "aura:component": 1
+ },
  "cmp.flavorTest:x_landmark": {
   "aura:component": 1
  },
@@ -3862,13 +3917,19 @@
   "aura:iteration": 1
  },
  "cmp.gvpTest:basicTest": {
-  "aura:component": 1
+  "aura:component": 1,
+  "aura:attribute": 1
  },
  "cmp.gvpTest:browserProvider": {
   "aura:component": 1
  },
  "cmp.gvpTest:contextGVPTest": {
   "aura:component": 1
+ },
+ "cmp.gvpTest:customGVPInitInTemplateTest": {
+  "aura:component": 1,
+  "aura:attribute": 2,
+  "aura:handler": 1
  },
  "cmp.gvpTest:customGVPTemplate": {
   "aura:component": 1,
@@ -4031,6 +4092,11 @@
  "cmp.integrationService:simpleStub": {
   "aura:component": 1,
   "aura:attribute": 4
+ },
+ "cmp.iterationPerformanceTest:iterationBatchOperations": {
+  "aura:component": 1,
+  "aura:attribute": 2,
+  "aura:iteration": 1
  },
  "cmp.iterationTest:arrayIteration": {
   "aura:component": 1,
@@ -4659,6 +4725,9 @@
   "aura:set": 1,
   "ui:outputurl": 1
  },
+ "cmp.performance:perfTest": {
+  "aura:component": 1
+ },
  "cmp.performanceTest:runnerExample": {
   "aura:component": 1,
   "aura:attribute": 1,
@@ -4962,6 +5031,10 @@
   "aura:attribute": 2,
   "aura:method": 1,
   "aura:require": 1
+ },
+ "cmp.test:runnerContainer": {
+  "aura:component": 1,
+  "aura:attribute": 2
  },
  "cmp.test:serverModelCaseSensitivity": {
   "aura:component": 1
@@ -5616,6 +5689,11 @@
   "ui:button": 4,
   "ui:outputtext": 3
  },
+ "cmp.uitest:carousel_AccessibilityTest": {
+  "aura:component": 1,
+  "ui:carousel": 1,
+  "aura:set": 1
+ },
  "cmp.uitest:carousel_SpinnerTest": {
   "aura:component": 1,
   "aura:handler": 1,
@@ -5703,9 +5781,25 @@
   "ui:inputdate": 1,
   "ui:datepickermanager": 1
  },
+ "cmp.uitest:datePicker_PositioningTest": {
+  "aura:component": 1,
+  "aura:attribute": 1,
+  "ui:button": 2,
+  "ui:inputdate": 1,
+  "ui:outputtext": 9
+ },
  "cmp.uitest:datePicker_TodayButtonTest": {
   "aura:component": 1,
+  "aura:attribute": 1,
+  "aura:if": 4,
+  "ui:datepicker": 3
+ },
+ "cmp.uitest:datepicker_RegressionTest": {
+  "aura:component": 1,
   "aura:attribute": 2,
+  "aura:if": 4,
+  "ui:inputdatetrigger": 3,
+  "ui:datepickermanager": 3,
   "ui:datepicker": 1
  },
  "cmp.uitest:demoMenuTrigger": {
@@ -5861,7 +5955,7 @@
  },
  "cmp.uitest:inputDateTime_Test": {
   "aura:component": 1,
-  "aura:attribute": 2,
+  "aura:attribute": 4,
   "ui:inputdatetime": 1
  },
  "cmp.uitest:inputDate_Test": {
@@ -6149,6 +6243,17 @@
  "cmp.uitest:menuList_Extend": {
   "aura:component": 1
  },
+ "cmp.uitest:menu_WithPanel": {
+  "aura:component": 1,
+  "ui:menu": 1,
+  "ui:menutriggerlink": 1,
+  "ui:menulist": 1,
+  "ui:actionmenuitem": 1,
+  "ui:panelmanager2": 1,
+  "aura:set": 1,
+  "ui:panel": 1,
+  "ui:modal": 1
+ },
  "cmp.uitest:messagedemo": {
   "aura:component": 1,
   "ui:message": 5
@@ -6251,10 +6356,19 @@
   "aura:attribute": 26,
   "aura:dependency": 1,
   "aura:handler": 1,
-  "ui:outputtext": 3,
+  "ui:outputtext": 6,
   "ui:inputtext": 9,
-  "ui:inputcheckbox": 13,
+  "ui:inputcheckbox": 14,
   "ui:button": 1
+ },
+ "cmp.uitest:panelRefElement_Test": {
+  "aura:component": 1,
+  "aura:handler": 1,
+  "ui:outputtext": 2,
+  "ui:button": 2,
+  "ui:panelmanager2": 1,
+  "aura:set": 1,
+  "ui:panel": 1
  },
  "cmp.uitest:panelTest": {
   "aura:component": 1,
@@ -6317,6 +6431,10 @@
   "aura:set": 1,
   "uitest:pillcontainer_inputtext": 1
  },
+ "cmp.uitest:pill_Test": {
+  "aura:component": 1,
+  "ui:pill": 3
+ },
  "cmp.uitest:popupTestExtendedPopup": {
   "aura:component": 1
  },
@@ -6348,6 +6466,12 @@
   "ui:outputtext": 6,
   "ui:scroller": 6
  },
+ "cmp.uitest:scroller_InfiniteLoading": {
+  "aura:component": 1,
+  "aura:attribute": 2,
+  "aura:handler": 1,
+  "ui:scroller": 1
+ },
  "cmp.uitest:scroller_Test": {
   "aura:component": 1,
   "aura:attribute": 1,
@@ -6374,16 +6498,22 @@
   "aura:component": 1,
   "ui:stamp": 6
  },
+ "cmp.uitest:tab_afterRenderCustomTab": {
+  "aura:component": 1,
+  "aura:attribute": 3
+ },
  "cmp.uitest:tab_lazyCustomTab": {
   "aura:component": 1,
   "aura:attribute": 1
  },
  "cmp.uitest:tabset_RegressionTest": {
   "aura:component": 1,
-  "aura:attribute": 2,
-  "aura:if": 3,
+  "aura:attribute": 1,
+  "aura:if": 6,
   "ui:tabset": 2,
-  "ui:tab": 2
+  "ui:tab": 2,
+  "uitest:tabset_extendstest": 3,
+  "uitest:tab_afterrendercustomtab": 6
  },
  "cmp.uitest:tabset_Test": {
   "aura:component": 1,
@@ -6401,7 +6531,8 @@
   "uitest:tab_lazycustomtab": 3
  },
  "cmp.uitest:tabset_extendsTest": {
-  "aura:component": 1
+  "aura:component": 1,
+  "aura:attribute": 3
  },
  "cmp.uitest:tabset_overflowTest": {
   "aura:component": 1,
@@ -6411,7 +6542,12 @@
   "uitest:tabset_extendstest": 5,
   "ui:tab": 22
  },
- "cmp.uitest:tooltipTest": {
+ "cmp.uitest:tooltipTestPosition": {
+  "aura:component": 1,
+  "ui:tooltip": 36,
+  "ui:label": 36
+ },
+ "cmp.uitest:tooltip_FullTest": {
   "aura:component": 1,
   "aura:attribute": 1,
   "ui:tooltip": 71,
@@ -6419,11 +6555,6 @@
   "ui:image": 1,
   "ui:button": 3,
   "ui:inputtext": 2
- },
- "cmp.uitest:tooltipTestPosition": {
-  "aura:component": 1,
-  "ui:tooltip": 36,
-  "ui:label": 36
  },
  "cmp.uitest:tooltip_Test": {
   "aura:component": 1,
@@ -6450,7 +6581,7 @@
  },
  "cmp.uitest:virtualDataGrid_columnsTests": {
   "aura:component": 1,
-  "aura:attribute": 11,
+  "aura:attribute": 12,
   "aura:handler": 2,
   "ui:button": 4,
   "ui:inputcheckbox": 1,
@@ -6516,6 +6647,9 @@
   "aura:component": 1
  },
  "cmp.updateTest:updateableOther": {
+  "aura:component": 1
+ },
+ "cmp.utilTest:isEmpty": {
   "aura:component": 1
  },
  "cmp.validationTest:basic": {

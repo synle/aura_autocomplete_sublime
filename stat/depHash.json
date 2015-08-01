@@ -243,7 +243,7 @@
     "resource": "auradocs:*"
    },
    {
-    "resource": "aurastorage:*"
+    "resource": "auraStorage:*"
    }
   ],
   "aura:handler": [
@@ -330,7 +330,7 @@
     "resource": "auradocs:*"
    },
    {
-    "resource": "aurastorage:*"
+    "resource": "auraStorage:*"
    }
   ],
   "aura:handler": [
@@ -508,6 +508,21 @@
    }
   ]
  },
+ "app.uiExamples:gridExamples": {
+  "aura:application": [
+   {}
+  ],
+  "uiexamples:virtualdatagridkitchensink": [
+   {
+    "tableflavor": "blueLined"
+   }
+  ],
+  "uiexamples:datagridkitchensink": [
+   {
+    "tableflavor": "blueLined"
+   }
+  ]
+ },
  "app.uiExamples:panelExamples": {
   "aura:application": [
    {}
@@ -620,41 +635,52 @@
   ],
   "ui:button": [
    {
+    "stateful": "true",
+    "aura:flavor": "flat",
     "class": "flat-btn",
     "label": "Modal",
     "press": "{!c.createModal}"
    },
    {
+    "aura:flavor": "flat",
     "label": "Large Modal (flavor)",
     "class": "flat-btn",
     "press": "{!c.createLargeModal}"
    },
    {
+    "aura:flavor": "flat",
     "label": "Lazy load content",
     "class": "flat-btn",
     "press": "{!c.lazyLoadPanel}"
    },
    {
+    "aura:flavor": "flat",
     "label": "Flavored Panel with a pointer",
     "class": "customer-header-button flat-btn",
     "press": "{!c.createPanelWithHeader}"
    },
    {
+    "aura:flavor": "flat",
+    "aura:id": "southbutton",
+    "stateful": "true",
     "class": "positioned-target flat-btn",
     "label": "South",
     "press": "{!c.openNotification}"
    },
    {
+    "aura:flavor": "flat",
     "class": "positioned-target-east flat-btn",
     "label": "East",
     "press": "{!c.openEastPanel}"
    },
    {
+    "aura:flavor": "flat",
     "class": "positioned-target-west flat-btn",
     "label": "West",
     "press": "{!c.openWestPanel}"
    },
    {
+    "aura:flavor": "flat",
     "class": "positioned-target-north flat-btn",
     "label": "North",
     "press": "{!c.openNorthPanel}"
@@ -685,10 +711,9 @@
     "aura:flavor": "pop",
     "fadeinduration": "500",
     "fadeoutduration": "500",
-    "direction": "east",
+    "direction": "south",
     "triggerclass": "my-tt",
     "advanced": "true",
-    "trigger": "click",
     "tooltipbody": "This is tooltip goes to the east, also supported: south and west!"
    }
   ],
@@ -831,15 +856,41 @@
     "render": "client"
    }
   ],
+  "aura:import": [
+   {
+    "library": "auraStorageTest:storageTestLib",
+    "property": "lib"
+   }
+  ],
   "aura:dependency": [
    {
     "resource": "markup://auraStorageTest:indexedDBCmp"
    }
+  ]
+ },
+ "app.auraStorageTest:noGetApplicationCache": {
+  "aura:application": [
+   {
+    "template": "auraStorageTest:noGetApplicationCacheTemplate"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "status",
+    "type": "String",
+    "default": "Waiting"
+   },
+   {
+    "name": "fromStorage",
+    "type": "String",
+    "default": "Waiting"
+   }
   ],
   "aura:handler": [
    {
-    "event": "auraStorage:modified",
-    "action": "{!c.storageModified}"
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
    }
   ]
  },
@@ -1070,34 +1121,6 @@
    {
     "event": "aura:layoutChange",
     "action": "{!c.layoutDone}"
-   }
-  ]
- },
- "app.auratest:testPerfRunner": {
-  "aura:application": [
-   {}
-  ],
-  "aura:attribute": [
-   {
-    "name": "scope",
-    "type": "String"
-   },
-   {
-    "name": "keyword",
-    "type": "String"
-   }
-  ],
-  "aura:if": [
-   {
-    "istrue": "{!v.scope == 'perf'}"
-   }
-  ],
-  "auratest:testperfrunnercontainer": [
-   {
-    "aura:id": "container",
-    "scope": "{!v.scope}",
-    "keyword": "{!v.keyword}",
-    "aura:load": "lazy"
    }
   ]
  },
@@ -2390,6 +2413,39 @@
  "app.test:layoutsNonExistDefault": {
   "aura:application": [
    {}
+  ]
+ },
+ "app.test:runner": {
+  "aura:application": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "scope",
+    "type": "String"
+   },
+   {
+    "name": "keyword",
+    "type": "String"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!v.scope == 'perf'}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "else"
+   }
+  ],
+  "test:runnercontainer": [
+   {
+    "aura:id": "container",
+    "scope": "{!v.scope}",
+    "keyword": "{!v.keyword}",
+    "aura:load": "lazy"
+   }
   ]
  },
  "app.test:styleTest": {
@@ -4433,8 +4489,9 @@
     "default": "false"
    },
    {
-    "name": "testReferenceElement",
-    "type": "Object"
+    "name": "testUseReferenceElementSelector",
+    "type": "Boolean",
+    "default": "false"
    },
    {
     "name": "testUseReferenceElement",
@@ -4503,6 +4560,12 @@
     "aura:id": "appInput",
     "value": "TestingCloseOnClickOutFeature",
     "maxlength": "10"
+   },
+   {
+    "class": "appInput2",
+    "aura:id": "appInput2",
+    "value": "this opens a panel",
+    "click": "{!c.createPanel}"
    }
   ],
   "uitest:panel2_tester": [
@@ -4523,7 +4586,7 @@
     "autofocus": "{!v.testAutoFocus}",
     "direction": "{!v.testDirection}",
     "showpointer": "{!v.testShowPointer}",
-    "referenceelement": "{!v.testReferenceElement}",
+    "usereferenceelementselector": "{!v.testUseReferenceElementSelector}",
     "usereferenceelement": "{!v.testUseReferenceElement}",
     "referenceelementselector": "{!v.testReferenceElementSelector}",
     "useheader": "{!v.testUseHeader}",
@@ -5878,6 +5941,11 @@
     "description": "Not used."
    },
    {
+    "name": "auraLoading",
+    "type": "Aura.Component[]",
+    "description": "Aura Loading Screen Markup"
+   },
+   {
     "name": "inlineStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display inline elements"
@@ -5886,6 +5954,11 @@
     "name": "appcacheProgressBarStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display appcache progress bar."
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "auraLoading"
    }
   ]
  },
@@ -5981,7 +6054,7 @@
     "action": "{!c.update}"
    }
   ],
-  "aura:renderif": [
+  "aura:if": [
    {
     "istrue": "{!v.enabled}"
    }
@@ -5998,7 +6071,8 @@
   "aura:component": [
    {
     "renderer": "java://org.auraframework.component.auraStorage.InitRenderer",
-    "support": "GA"
+    "support": "GA",
+    "description": "Initializes a storage instance using an adapter that satisfies the provided criteria."
    }
   ],
   "aura:attribute": [
@@ -6012,7 +6086,7 @@
     "name": "persistent",
     "type": "Boolean",
     "default": "false",
-    "description": "Set to true if this storage requires persistent storage support."
+    "description": "Set to true if this storage desires persistence."
    },
    {
     "name": "secure",
@@ -6024,43 +6098,43 @@
     "name": "clearStorageOnInit",
     "type": "Boolean",
     "default": "true",
-    "description": "Set to true to delete all previous data on initialization for persistent storage."
+    "description": "Set to true to delete all previous data on initialization (relevant for persistent storage only)."
    },
    {
     "name": "defaultExpiration",
     "type": "Integer",
     "default": "10",
-    "description": "The default number of seconds that an object will be retained in storage if a request specific expiration has not been specified in the call to Action.setStorable()."
+    "description": "The default duration (seconds) that an object will be retained in storage. Actions may override this on a per-entry basis with Action.setStorable()."
    },
    {
     "name": "defaultAutoRefreshInterval",
     "type": "Integer",
     "default": "30",
-    "description": "The default number of seconds before an auto refresh request will be initiated if a request specific interval has not been specified in the call to Action.setStorable()."
+    "description": "The default duration (seconds) before an auto refresh request will be initiated. Actions may override this on a per-entry basis with Action.setStorable()."
    },
    {
     "name": "maxSize",
     "type": "Integer",
     "default": "1000",
-    "description": "Maximum size in kilobytes that will be used in the memory adapter's storage. Existing items will be evicted to make room for new items using LRU and expiry strategies. Value is multiplied by 1024 bytes for storage initialization."
+    "description": "Maximum size (KB) of the storage instance. Existing items will be evicted to make room for new items; algorithm is adapter-specific."
    },
    {
     "name": "debugLoggingEnabled",
     "type": "Boolean",
     "default": "false",
-    "description": "Controls if additional $A.log() messages are generated."
+    "description": "Set to true to enable debug logging with $A.log()."
    },
    {
     "name": "requireUseStorageQueryParam",
     "type": "Boolean",
     "default": "false",
-    "description": "If true, aura.useStorage=true must be set in the query string in the URL to use the storage service. If true and the query parameter is not set, storage is not initialized."
+    "description": "Set to true to require URL query paramter aura.useStorage=true to use the storage service."
    },
    {
     "name": "version",
     "type": "String",
     "default": "",
-    "description": "Optional. Version to associate all storage items"
+    "description": "Optional. Version to associate with all stored items."
    }
   ],
   "aura:handler": [
@@ -6234,33 +6308,33 @@
     "required": "true"
    },
    {
-    "name": "renderMethodStubs",
-    "type": "String[]",
+    "name": "isRootComponent",
+    "type": "Boolean",
     "required": "true"
    },
    {
-    "name": "superRenderMethodNames",
-    "type": "java://List<org.auraframework.impl.ServerServiceImpl.RerenderInfo>",
+    "name": "hasSuperClass",
+    "type": "Boolean",
     "required": "true"
    },
    {
-    "name": "rootComponent",
+    "name": "hasUnrenderMethod",
     "type": "Boolean",
     "required": "true"
    }
   ],
   "aura:if": [
    {
-    "istrue": "{!v.superClassName != '$A.Component'}"
+    "istrue": "{!v.hasSuperClass}"
    },
    {
     "istrue": "{!empty(v.helperProperties)}"
    },
    {
-    "istrue": "{!v.superClassName != '$A.Component'}"
+    "istrue": "{!v.hasSuperClass}"
    },
    {
-    "istrue": "{!v.superClassName != '$A.Component'}"
+    "istrue": "{!v.hasSuperClass}"
    },
    {
     "istrue": "{!method.arguments.length > 0}"
@@ -6269,7 +6343,7 @@
     "istrue": "{!method.arguments.length > 1}"
    },
    {
-    "istrue": "{!v.rootComponent == true && name == 'unrender'}"
+    "istrue": "{!v.isRootComponent && !v.hasUnrenderMethod}"
    }
   ],
   "aura:set": [
@@ -6288,10 +6362,6 @@
    {
     "items": "{!v.renderMethods}",
     "var": "method"
-   },
-   {
-    "items": "{!v.renderMethodStubs}",
-    "var": "name"
    }
   ]
  },
@@ -6752,6 +6822,44 @@
     "type": "Object"
    }
   ],
+  "aura:if": [
+   {
+    "istrue": "{!v.symbol.kind == 'function'}"
+   },
+   {
+    "istrue": "{!name != ''}"
+   },
+   {
+    "istrue": "{!index != (param.type.names.length - 1)}"
+   },
+   {
+    "istrue": "{!v.symbol.returns && v.symbol.returns.length>0}"
+   },
+   {
+    "istrue": "{!index != (v.symbol.returns[0].type.names.length - 1)}"
+   },
+   {
+    "istrue": "{! !empty(v.symbol.deprecated)}"
+   },
+   {
+    "istrue": "{!v.symbol.params.length > 0}"
+   },
+   {
+    "istrue": "{!v.symbol.returns && v.symbol.returns.length>0}"
+   },
+   {
+    "istrue": "{!index != (v.symbol.returns[0].type.names.length - 1)}"
+   },
+   {
+    "istrue": "{!v.symbol.exceptions && v.symbol.exceptions.length>0}"
+   },
+   {
+    "istrue": "{!index != (ex.type.names.length - 1)}"
+   },
+   {
+    "istrue": "{!v.symbol.examples && v.symbol.examples.length>0}"
+   }
+  ],
   "aura:iteration": [
    {
     "items": "{!v.symbol.params}",
@@ -6786,41 +6894,12 @@
     "var": "ex"
    }
   ],
-  "aura:if": [
-   {
-    "istrue": "{!name != ''}"
-   },
-   {
-    "istrue": "{!index != (param.type.names.length - 1)}"
-   },
-   {
-    "istrue": "{!v.symbol.returns && v.symbol.returns.length>0}"
-   },
-   {
-    "istrue": "{!index != (v.symbol.returns[0].type.names.length - 1)}"
-   },
-   {
-    "istrue": "{!v.symbol.params.length > 0}"
-   },
-   {
-    "istrue": "{!v.symbol.returns && v.symbol.returns.length>0}"
-   },
-   {
-    "istrue": "{!index != (v.symbol.returns[0].type.names.length - 1)}"
-   },
-   {
-    "istrue": "{!v.symbol.exceptions && v.symbol.exceptions.length>0}"
-   },
-   {
-    "istrue": "{!index != (ex.type.names.length - 1)}"
-   },
-   {
-    "istrue": "{!v.symbol.examples && v.symbol.examples.length>0}"
-   }
-  ],
   "aura:unescapedhtml": [
    {
     "value": "{!v.symbol.classDesc + v.symbol.description}"
+   },
+   {
+    "value": "{!v.symbol.deprecated}"
    },
    {
     "value": "{!v.symbol.returns[0].description}"
@@ -6830,6 +6909,11 @@
    },
    {
     "value": "{!ex}"
+   }
+  ],
+  "ui:stamp": [
+   {
+    "severity": "inverse"
    }
   ],
   "auradocs:apiparams": [
@@ -6886,7 +6970,7 @@
   "aura:set": [
    {
     "attribute": "title",
-    "value": "{!m.title}"
+    "value": "{#m.title}"
    },
    {
     "attribute": "subtitle"
@@ -6895,14 +6979,22 @@
     "attribute": "example"
    }
   ],
+  "aura:if": [
+   {
+    "istrue": "{# empty(m.symbol.methods) == false}"
+   },
+   {
+    "istrue": "{# empty(m.symbol.properties) == false}"
+   }
+  ],
   "auradocs:apisymbols": [
    {
     "title": "Methods",
-    "symbols": "{!m.symbol.methods}"
+    "symbols": "{#m.symbol.methods}"
    },
    {
     "title": "Fields",
-    "symbols": "{!m.symbol.properties}"
+    "symbols": "{#m.symbol.properties}"
    }
   ]
  },
@@ -9930,13 +10022,22 @@
     "type": "java://org.auraframework.def.TestSuiteDef"
    },
    {
+    "name": "shortName",
+    "type": "String"
+   },
+   {
     "name": "url",
     "type": "String"
    },
    {
     "name": "status",
     "type": "String",
-    "default": "spin"
+    "default": ""
+   },
+   {
+    "name": "individualTestUrl",
+    "type": "String",
+    "default": ""
    }
   ],
   "aura:set": [
@@ -9945,14 +10046,13 @@
     "value": "false"
    },
    {
-    "attribute": "title",
-    "value": "{!v.case.name}"
-   },
-   {
     "attribute": "icon"
    },
    {
     "attribute": "body"
+   },
+   {
+    "attribute": "else"
    }
   ],
   "aura:registerevent": [
@@ -9963,8 +10063,18 @@
   ],
   "aura:handler": [
    {
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
+   },
+   {
     "name": "onActivated",
     "action": "{!c.onActivate}"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!v.status == 'pass' || v.status == 'fail'}"
    }
   ]
  },
@@ -10416,6 +10526,7 @@
     "extends": "ui:input",
     "support": "proto",
     "extensible": "true",
+    "defaultflavor": "default, lookup",
     "description": "Represents an input field that suggests a list of values from the data provider as you type."
    }
   ],
@@ -10496,6 +10607,11 @@
     "name": "footer",
     "type": "Aura.Component[]",
     "description": "A facet below the rendered list, for use as a list footer"
+   },
+   {
+    "name": "usePanel",
+    "type": "boolean",
+    "default": "false"
    }
   ],
   "aura:registerevent": [
@@ -10538,6 +10654,11 @@
     "name": "init",
     "value": "{!this}",
     "action": "{!c.doInit}"
+   },
+   {
+    "name": "listExpand",
+    "event": "ui:autocompleteListExpand",
+    "action": "{!c.handleListExpand}"
    }
   ],
   "aura:set": [
@@ -10547,11 +10668,17 @@
    },
    {
     "attribute": "else"
+   },
+   {
+    "attribute": "else"
    }
   ],
   "aura:if": [
    {
     "istrue": "{!v.inputType == 'inputTextArea'}"
+   },
+   {
+    "istrue": "{!v.usePanel}"
    }
   ],
   "ui:inputtextareaforautocomplete": [
@@ -10578,10 +10705,34 @@
     "autocompletebutton": "{!v.autocompleteButton}"
    }
   ],
+  "ui:autocompletepanel": [
+   {
+    "aura:id": "panel"
+   }
+  ],
   "ui:autocompletelist": [
    {
     "aura:id": "list",
-    "class": "{!v.class}",
+    "class": "{!v.class + ' lookup__menu'}",
+    "dataprovider": "{!v.dataProvider}",
+    "itemvar": "{!v.optionVar}",
+    "itemtemplate": "{!v.listOption}",
+    "emptylistcontent": "{!v.emptyListContent}",
+    "loadingindicator": "{!v.loadingIndicator}",
+    "header": "{!v.header}",
+    "footer": "{!v.footer}",
+    "theme": "{!v.theme}",
+    "visible": "false",
+    "role": "listbox",
+    "propertytomatch": "{!v.propertyToMatch}",
+    "matchdone": "{!c.handleMatchDone}",
+    "selectlistoption": "{!c.handleSelectOption}",
+    "updateariaattributes": "{!c.updateAriaAttributes}",
+    "matchfunc": "{!v.matchFunc}"
+   },
+   {
+    "aura:id": "list",
+    "class": "{!v.class + ' lookup__menu'}",
     "dataprovider": "{!v.dataProvider}",
     "itemvar": "{!v.optionVar}",
     "itemtemplate": "{!v.listOption}",
@@ -10667,6 +10818,11 @@
     "name": "updateAriaAttributes",
     "type": "ui:updateAriaAttributes",
     "description": "The event fired when a new option is highlighted."
+   },
+   {
+    "name": "listExpand",
+    "type": "ui:autocompleteListExpand",
+    "description": "The event fired when the list is made visible"
    }
   ],
   "aura:handler": [
@@ -10760,6 +10916,48 @@
   "aura:set": [
    {
     "attribute": "else"
+   }
+  ]
+ },
+ "cmp.ui:autocompletePanel": {
+  "aura:component": [
+   {
+    "defaultflavor": "lookup"
+   }
+  ],
+  "aura:import": [
+   {
+    "library": "ui:panelPositioningLib",
+    "property": "lib"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "referenceElement",
+    "type": "Object"
+   },
+   {
+    "name": "visible",
+    "type": "boolean",
+    "default": "false",
+    "access": "INTERNAL"
+   },
+   {
+    "name": "zIndex",
+    "type": "Integer",
+    "default": "0"
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "change",
+    "value": "{!v.referenceElement}",
+    "action": "{!c.handleReferenceElement}"
+   },
+   {
+    "name": "change",
+    "value": "{!v.zIndex}",
+    "action": "{!c.handleZIndex}"
    }
   ]
  },
@@ -10874,6 +11072,25 @@
     "description": "A CSS style to be attached to the button's icon. This style is added in addition to base styles output by the component."
    },
    {
+    "name": "selectedClass",
+    "type": "String",
+    "default": "is-selected",
+    "description": "The class applied when the button is selected"
+   },
+   {
+    "name": "notSelectedClass",
+    "type": "String",
+    "default": "not-selected",
+    "description": "The class applied when the button is not selected"
+   },
+   {
+    "name": "classList",
+    "type": "String",
+    "access": "PRIVATE",
+    "default": "",
+    "description": "The list of classes rendered to the element"
+   },
+   {
     "name": "disabled",
     "type": "Boolean",
     "default": "false",
@@ -10903,6 +11120,18 @@
     "name": "tabIndex",
     "type": "Integer",
     "description": "The tab index of the button element."
+   },
+   {
+    "name": "stateful",
+    "type": "Boolean",
+    "default": "false",
+    "description": "A stateful button can be selected."
+   },
+   {
+    "name": "selected",
+    "type": "Boolean",
+    "default": "false",
+    "description": "If a button is stateful this value toggles selected"
    }
   ],
   "aura:registerevent": [
@@ -10916,6 +11145,37 @@
     "type": "ui:press",
     "access": "GLOBAL",
     "description": "The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller."
+   },
+   {
+    "name": "mouseover",
+    "type": "ui:mouseover",
+    "access": "INTERNAL",
+    "description": "The controller method that runs when the button is hovered."
+   },
+   {
+    "name": "mouseout",
+    "type": "ui:mouseout",
+    "access": "INTERNAL",
+    "description": "The controller method that runs when the button is hovered."
+   },
+   {
+    "name": "focus",
+    "type": "ui:focus",
+    "access": "INTERNAL",
+    "description": "The controller method that runs when the button receives focus."
+   },
+   {
+    "name": "blur",
+    "type": "ui:blur",
+    "access": "INTERNAL",
+    "description": "The controller method that runs when the button loses focus."
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "change",
+    "value": "{!v.selected}",
+    "action": "{!c.changeSelected}"
    }
   ],
   "aura:if": [
@@ -11068,6 +11328,7 @@
     "class": "carousel-body",
     "bindeventstoscroller": "{!v.bindEventsToScroller}",
     "scroll": "horizontal",
+    "supportvoiceover": "false",
     "enabled": "{! (v.pageModels.length > 1 || v.pageComponents.length > 1)}",
     "snap": "true",
     "lockondirection": "vertical",
@@ -12207,7 +12468,7 @@
     "name": "hasTime",
     "type": "Boolean",
     "default": "false",
-    "description": "Indicate if the parent datePicker component supports time picker."
+    "description": "Indicate if the parent datePicker component supports time picker. This also works as a flag for S1 vs SFX view."
    },
    {
     "name": "hours",
@@ -12287,6 +12548,12 @@
     "description": "The heading level for the title. The default is h2."
    },
    {
+    "name": "_today",
+    "type": "String",
+    "access": "private",
+    "description": "The date string (yyyy-MM-dd) of today based on the Aura time zone."
+   },
+   {
     "name": "rangeStart",
     "type": "String",
     "description": "Start date of the range in the format yyyy-mm-dd"
@@ -12322,6 +12589,11 @@
     "name": "init",
     "value": "{!this}",
     "action": "{!c.doInit}"
+   },
+   {
+    "name": "change",
+    "value": "{!v.visible}",
+    "action": "{!c.handleVisible}"
    }
   ],
   "aura:if": [
@@ -12452,6 +12724,12 @@
     "name": "_namesOfWeekdays",
     "type": "List",
     "description": "The names of the week days based on locale."
+   },
+   {
+    "name": "_today",
+    "type": "String",
+    "access": "private",
+    "description": "The date string (yyyy-MM-dd) of today based on the Aura time zone."
    }
   ],
   "aura:registerevent": [
@@ -13139,6 +13417,11 @@
     "description": "Set to true if drop is performed or false if it's aborted."
    },
    {
+    "name": "target",
+    "type": "Object",
+    "description": "The event target for dragend."
+   },
+   {
     "name": "isValid",
     "type": "Boolean",
     "default": "true",
@@ -13246,16 +13529,31 @@
     "description": "Indicate what operation this component is capable of receiving."
    },
    {
-    "name": "isInAccessibilityMode",
-    "type": "Boolean",
-    "default": "true",
-    "description": "Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction."
+    "name": "target",
+    "type": "Object",
+    "description": "The event target for dragend."
    },
    {
     "name": "isInAccessibilityMode",
     "type": "Boolean",
     "default": "true",
     "description": "Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction."
+   },
+   {
+    "name": "target",
+    "type": "Object",
+    "description": "The event target for dragend."
+   },
+   {
+    "name": "isInAccessibilityMode",
+    "type": "Boolean",
+    "default": "true",
+    "description": "Set to true if drag and drop operation is initiated in accessibility mode, i.e. through keyboard interaction."
+   },
+   {
+    "name": "target",
+    "type": "Object",
+    "description": "The event target for dragend."
    },
    {
     "name": "dragComponents",
@@ -13513,7 +13811,8 @@
     "abstract": "true",
     "implements": "ui:visible, ui:uiEvents",
     "description": "An abstract class that is extended by input components such as ui:inputCheckbox and ui:inputText.",
-    "support": "GA"
+    "support": "GA",
+    "dynamicallyflavorable": "true"
    }
   ],
   "aura:import": [
@@ -13712,6 +14011,7 @@
     "extensible": "true",
     "support": "GA",
     "access": "GLOBAL",
+    "defaultflavor": "default, checkbox",
     "description": "Represents a checkbox. Its behavior can be configured using events such as click and change."
    }
   ],
@@ -13733,6 +14033,7 @@
     "extends": "ui:input",
     "implements": "ui:inputNumberComponent,ui:inputTextComponent",
     "extensible": "true",
+    "defaultflavor": "default, input",
     "description": "An input field for entering a currency."
    }
   ],
@@ -13751,6 +14052,7 @@
     "extends": "ui:input",
     "implements": "ui:inputDateComponent",
     "extensible": "true",
+    "defaultflavor": "default, input, datetime",
     "description": "An input field for entering a date."
    }
   ],
@@ -13792,12 +14094,13 @@
     "istrue": "{!v.displayDatePicker}"
    },
    {
-    "istrue": "{! v.loadDatePicker }"
-   }
-  ],
-  "aura:set": [
+    "istrue": "{!$Browser.formFactor == 'DESKTOP'}"
+   },
    {
-    "attribute": "else"
+    "istrue": "{!v.displayDatePicker}"
+   },
+   {
+    "istrue": "{! v.loadDatePicker }"
    }
   ],
   "ui:datepicker": [
@@ -13870,13 +14173,20 @@
     "access": "GLOBAL",
     "support": "GA",
     "extends": "ui:input",
-    "implements": "ui:inputDateComponent",
+    "implements": "ui:inputDateTimeComponent",
     "extensible": "true",
+    "defaultflavor": "default, input, datetime",
     "controller": "java://org.auraframework.impl.controller.TimeZoneInfoController",
     "description": "An input field for entering a date and time."
    }
   ],
   "aura:attribute": [
+   {
+    "name": "useSingleInput",
+    "type": "Boolean",
+    "default": "false",
+    "description": "Use single input mode, even on desktop view"
+   },
    {
     "name": "value",
     "type": "String",
@@ -13886,12 +14196,12 @@
    {
     "name": "placeholder",
     "type": "String",
-    "description": "The text that is displayed by default. Set during init based on the 'format' value."
+    "description": "The text that is displayed for date input by default. Set during init based on the 'format' value."
    },
    {
-    "name": "timezone",
+    "name": "timePlaceholder",
     "type": "String",
-    "description": "The timezone ID, for example, America/Los_Angeles."
+    "description": "The text that is displayed for time input by default. Set during init based on the 'format' value."
    }
   ],
   "aura:handler": [
@@ -13913,22 +14223,41 @@
   ],
   "aura:if": [
    {
-    "istrue": "{!$Browser.isPhone || $Browser.isTablet}"
+    "istrue": "{!and($Browser.formFactor == 'DESKTOP', !v.useSingleInput)}"
+   },
+   {
+    "istrue": "{!and(v.displayDatePicker, !v.disabled)}"
+   },
+   {
+    "istrue": "{!$Browser.formFactor == 'DESKTOP'}"
    },
    {
     "istrue": "{!and(v.displayDatePicker, !v.disabled)}"
    }
   ],
-  "aura:set": [
-   {
-    "attribute": "else"
-   }
-  ],
   "ui:datepicker": [
    {
     "aura:id": "datePicker",
+    "selectdate": "{!c.setValue}"
+   },
+   {
+    "aura:id": "datePicker",
+    "selectdate": "{!c.setValue}"
+   }
+  ],
+  "ui:inputtimepicker": [
+   {
+    "aura:id": "timePicker",
     "selectdate": "{!c.setValue}",
-    "hastime": "true"
+    "timeformat": "{!v.timeFormat}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "else"
+   },
+   {
+    "attribute": "else"
    }
   ]
  },
@@ -13936,6 +14265,7 @@
   "aura:component": [
    {
     "extends": "ui:inputDate",
+    "defaultflavor": "default, input",
     "description": "Represents a date input component that can be used with the date picker manager, ui:datePickerManager."
    }
   ],
@@ -14015,7 +14345,8 @@
     "extensible": "true",
     "support": "GA",
     "access": "GLOBAL",
-    "description": "Represents an input field for entering an email address."
+    "description": "Represents an input field for entering an email address.",
+    "defaultflavor": "default, input"
    }
   ]
  },
@@ -14040,6 +14371,7 @@
     "extensible": "true",
     "support": "GA",
     "access": "GLOBAL",
+    "defaultflavor": "default,input",
     "description": "An input field for entering a number, taking advantage of client input assistance and validation when available."
    }
   ],
@@ -14077,6 +14409,7 @@
     "implements": "ui:inputNumberComponent,ui:inputTextComponent",
     "extensible": "true",
     "support": "GA",
+    "defaultflavor": "default, input",
     "description": "An input field for entering a percentage."
    }
   ],
@@ -14095,7 +14428,8 @@
     "extensible": "true",
     "support": "GA",
     "access": "GLOBAL",
-    "description": "Represents an input field for entering a telephone number."
+    "description": "Represents an input field for entering a telephone number.",
+    "defaultflavor": "default, input"
    }
   ]
  },
@@ -14107,6 +14441,7 @@
     "extends": "ui:input",
     "implements": "ui:inputBaseOption",
     "extensible": "true",
+    "defaultflavor": "default, radio",
     "description": "The radio button used in the input."
    }
   ],
@@ -14126,6 +14461,7 @@
     "extends": "ui:inputNumber",
     "extensible": "true",
     "support": "BETA",
+    "defaultflavor": "default, input",
     "description": "The range used in the input."
    }
   ],
@@ -14225,6 +14561,7 @@
     "implements": "ui:inputTextComponent",
     "extensible": "true",
     "support": "GA",
+    "defaultflavor": "default, input",
     "description": "This component displays an input field suitable for entering a search string."
    }
   ],
@@ -14284,6 +14621,7 @@
     "extends": "ui:input",
     "implements": "ui:inputTextComponent",
     "extensible": "true",
+    "defaultflavor": "default,input",
     "description": "An input field for entering secret text with type password."
    }
   ]
@@ -14295,7 +14633,8 @@
     "support": "GA",
     "extends": "ui:input",
     "extensible": "true",
-    "description": "Represents a drop-down list with options."
+    "description": "Represents a drop-down list with options.",
+    "defaultflavor": "default, select"
    }
   ],
   "aura:attribute": [
@@ -14398,7 +14737,8 @@
     "extensible": "true",
     "support": "GA",
     "access": "GLOBAL",
-    "description": "Represents an input field suitable for entering a single line of free-form text."
+    "description": "Represents an input field suitable for entering a single line of free-form text.",
+    "defaultflavor": "default, input"
    }
   ]
  },
@@ -14409,6 +14749,7 @@
     "support": "GA",
     "extends": "ui:input",
     "extensible": "true",
+    "defaultflavor": "default, textarea",
     "description": "An HTML textarea element that can be editable or read-only. Scroll bars may not appear on Chrome browsers in Android devices, but you can select focus in the textarea to activate scrolling."
    }
   ],
@@ -14469,6 +14810,7 @@
     "extends": "ui:inputTextArea",
     "extensible": "true",
     "support": "proto",
+    "defaultflavor": "default, textarea",
     "description": "This component is used as input text area in a ui:autocomplete component."
    }
   ],
@@ -14499,6 +14841,7 @@
     "implements": "ui:inputTextComponent",
     "extensible": "true",
     "support": "proto",
+    "defaultflavor": "default, input",
     "description": "This component is used as input text in a ui:autocomplete component."
    }
   ],
@@ -14522,6 +14865,75 @@
    }
   ]
  },
+ "cmp.ui:inputTimePicker": {
+  "aura:component": [
+   {
+    "implements": "ui:visible",
+    "description": "A time picker which can be used in datePicker to select both date and time"
+   }
+  ],
+  "aura:import": [
+   {
+    "library": "ui:panelPositioningLib",
+    "property": "lib"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "timeFormat",
+    "type": "String",
+    "description": "The java.text.SimpleDateFormat style format for the time."
+   },
+   {
+    "name": "langLocale",
+    "type": "String",
+    "description": "The language locale used to format time."
+   },
+   {
+    "name": "hours",
+    "type": "Integer",
+    "default": "12",
+    "description": "The hour value."
+   },
+   {
+    "name": "minutes",
+    "type": "Integer",
+    "default": "00",
+    "description": "The miniue value."
+   },
+   {
+    "name": "interval",
+    "type": "Integer",
+    "default": "30",
+    "description": "The interval in minutes."
+   },
+   {
+    "name": "visible",
+    "type": "Boolean",
+    "default": "false",
+    "description": "Indicates if this time picker list is displayed. Defaults to false."
+   },
+   {
+    "name": "referenceElement",
+    "type": "Object",
+    "description": "The reference node which this datePicker should be positioned to. Usually it is a inputDate element."
+   },
+   {
+    "name": "_timeListInitialized",
+    "access": "private",
+    "type": "Boolean",
+    "default": "false",
+    "description": "Indicates if the time list is initialized or not."
+   }
+  ],
+  "aura:registerevent": [
+   {
+    "name": "selectDate",
+    "type": "ui:selectDate",
+    "description": "The event fired when a date is selected."
+   }
+  ]
+ },
  "cmp.ui:inputURL": {
   "aura:component": [
    {
@@ -14530,6 +14942,7 @@
     "extends": "ui:input",
     "implements": "ui:inputTextComponent",
     "extensible": "true",
+    "defaultflavor": "default, input",
     "description": "An input field for entering a URL."
    }
   ]
@@ -15538,6 +15951,11 @@
     "description": "The action is invoked to set focus to the menu trigger."
    },
    {
+    "name": "headerText",
+    "type": "String",
+    "description": "If set, shows a non-selectable header text."
+   },
+   {
     "name": "childMenuItems",
     "type": "Aura.Component[]",
     "description": "a read-only attribute pointing to child components."
@@ -15578,6 +15996,11 @@
    {
     "name": "refresh",
     "action": "{!c.update}"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!v.headerText != null}"
    }
   ],
   "aura:iteration": [
@@ -15628,7 +16051,7 @@
     "access": "GLOBAL",
     "support": "GA",
     "extensible": "true",
-    "extends": "ui:menuTrigger",
+    "extends": "ui:popupTrigger",
     "description": "A link that triggers a dropdown menu."
    }
   ],
@@ -15640,14 +16063,25 @@
     "description": "The text displayed on the component."
    }
   ],
-  "aura:if": [
+  "aura:registerevent": [
    {
-    "istrue": "{!v.body.length == 0}"
+    "access": "GLOBAL",
+    "name": "menuTriggerPress",
+    "type": "ui:menuTriggerPress",
+    "description": "The event that is fired when the trigger is clicked."
    }
   ],
   "aura:set": [
    {
+    "attribute": "trigger"
+   },
+   {
     "attribute": "else"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!v.body.length == 0}"
    }
   ]
  },
@@ -15756,6 +16190,15 @@
     "description": "Adds a close button in top right corner of the dialog"
    },
    {
+    "name": "closeButton",
+    "type": "Aura.Component[]"
+   },
+   {
+    "name": "closeAction",
+    "type": "Object",
+    "description": "Overrides default close action (which is destroy) when close button is clicked."
+   },
+   {
     "name": "closeDialogLabel",
     "type": "String",
     "default": "Close",
@@ -15783,10 +16226,6 @@
     "type": "Boolean",
     "default": "true",
     "description": "Sets initial focus on the first item in the panel"
-   },
-   {
-    "name": "closeButton",
-    "type": "Aura.Component[]"
    }
   ],
   "aura:handler": [
@@ -15810,6 +16249,9 @@
   "aura:if": [
    {
     "istrue": "{!!empty(v.title)}"
+   },
+   {
+    "istrue": "{!!empty(v.footer)}"
    }
   ]
  },
@@ -16520,7 +16962,7 @@
     "name": "titleDisplay",
     "type": "Boolean",
     "default": "true",
-    "description": "The title of the window can be shown/hidden for accessibility"
+    "description": "If true, the title of the window can be shown/hidden for accessibility. The default is true."
    },
    {
     "name": "startOfDialogLabel",
@@ -16532,7 +16974,7 @@
     "name": "closeOnClickOut",
     "type": "Boolean",
     "default": "false",
-    "description": "Adds a listener to close the dialog when a user clicks outside the dialog"
+    "description": "If true, adds a listener to close the dialog when a user clicks outside the dialog. The default is false."
    },
    {
     "name": "closeAction",
@@ -16543,7 +16985,7 @@
     "name": "showCloseButton",
     "type": "Boolean",
     "default": "true",
-    "description": "Adds a close button in top right corner of the dialog"
+    "description": "If true, adds a close button in top right corner of the dialog. The default is true."
    },
    {
     "name": "closeDialogLabel",
@@ -16555,7 +16997,7 @@
     "name": "useTransition",
     "type": "Boolean",
     "default": "true",
-    "description": "Use css transition when showing or hiding the panel"
+    "description": "If true, uses css transition when showing or hiding the panel. The default is true."
    },
    {
     "name": "animation",
@@ -16572,7 +17014,7 @@
     "name": "autoFocus",
     "type": "Boolean",
     "default": "true",
-    "description": "Sets the panel as the first focusable element"
+    "description": "If true, sets the panel as the first focusable element. The default is true."
    },
    {
     "name": "referenceElementSelector",
@@ -16594,11 +17036,12 @@
     "name": "showPointer",
     "type": "Boolean",
     "default": "false",
-    "description": "Show a pointer that points to the referenceElement"
+    "description": "If true, shows a pointer that points to the referenceElement. The default is false."
    },
    {
     "name": "closeButton",
-    "type": "Aura.Component[]"
+    "type": "Aura.Component[]",
+    "description": "Replaces the default close button with a custom one"
    }
   ],
   "aura:handler": [
@@ -16612,6 +17055,11 @@
     "event": "ui:notify",
     "action": "{!c.onNotify}",
     "description": "Enables panel manager and panels to communicate"
+   },
+   {
+    "name": "change",
+    "value": "{!v.referenceElement}",
+    "action": "{!c.onRefChange}"
    }
   ],
   "aura:dependency": [
@@ -16898,6 +17346,10 @@
    {
     "event": "ui:getActivePanel",
     "action": "{!c.getActivePanel}"
+   },
+   {
+    "event": "ui:stackPanel",
+    "action": "{!c.stackPanel}"
    }
   ]
  },
@@ -16938,9 +17390,14 @@
     "description": "The url for the icon"
    },
    {
+    "name": "iconBackgroundColor",
+    "type": "String",
+    "description": "The background color for the icon"
+   },
+   {
     "name": "accessibleDeleteLabel",
     "type": "String",
-    "default": "Remove pill",
+    "default": "Press Delete to Remove",
     "description": "The accessible label for the close icon."
    },
    {
@@ -16948,6 +17405,12 @@
     "type": "Integer",
     "default": "30",
     "description": "The maximum number of characters displayed in a pill."
+   },
+   {
+    "name": "active",
+    "type": "Boolean",
+    "default": "true",
+    "description": "Specifies whether a pill is active and will take focus"
    }
   ],
   "aura:registerevent": [
@@ -16991,7 +17454,6 @@
    {
     "aura:id": "icon",
     "src": "{!v.iconUrl}",
-    "class": "pillIcon",
     "imagetype": "decorative",
     "onerror": "{!c.onIconError}"
    }
@@ -17000,6 +17462,7 @@
  "cmp.ui:pillContainer": {
   "aura:component": [
    {
+    "implements": "ui:focusable",
     "description": "A container for ui:pill",
     "extensible": "true",
     "support": "PROTO"
@@ -17015,12 +17478,6 @@
     "type": "Integer",
     "default": "10",
     "description": "Max pills this container should have."
-   },
-   {
-    "name": "maxCharactersInPill",
-    "type": "Integer",
-    "default": "30",
-    "description": "The maximum number of characters displayed in a pill."
    },
    {
     "name": "maxLines",
@@ -17057,8 +17514,46 @@
     "default": "default"
    },
    {
+    "name": "assistiveTextLabel",
+    "type": "String",
+    "description": "Assitive text for the pill container"
+   },
+   {
+    "name": "expanded",
+    "type": "Boolean",
+    "default": "false",
+    "access": "private"
+   },
+   {
     "name": "items",
     "type": "List"
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "blur",
+    "event": "ui:blur",
+    "action": "{!c.onInputFocus}"
+   },
+   {
+    "name": "focus",
+    "event": "ui:focus",
+    "action": "{!c.onInputBlur}"
+   },
+   {
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
+   },
+   {
+    "name": "change",
+    "value": "{!v.items}",
+    "action": "{!c.onItemsChanged}"
+   },
+   {
+    "name": "change",
+    "value": "{!v.maxAllowed}",
+    "action": "{!c.onItemsChanged}"
    }
   ],
   "aura:registerevent": [
@@ -17079,13 +17574,6 @@
     "description": "The method called to add new items. Takes in an array of object [{name:'name', id:'id'}, ...]"
    }
   ],
-  "aura:handler": [
-   {
-    "name": "init",
-    "value": "{!this}",
-    "action": "{!c.init}"
-   }
-  ],
   "aura:iteration": [
    {
     "items": "{!v.items}",
@@ -17099,6 +17587,7 @@
     "aura:id": "pill",
     "aura:flavor": "{!v.pillFlavor}",
     "iconurl": "{!item.icon.url}",
+    "iconbackgroundcolor": "{!item.icon.backgroundColor}",
     "label": "{!item.label}",
     "id": "{!item.id}",
     "showdelete": "{!v.allowRemove}",
@@ -17155,6 +17644,11 @@
   "aura:attribute": [
    {
     "name": "iconUrl",
+    "type": "String",
+    "default": "true"
+   },
+   {
+    "name": "iconBackgroundColor",
     "type": "String",
     "default": "true"
    }
@@ -17303,6 +17797,12 @@
     "type": "String",
     "default": "",
     "description": "This CSS class is initially applied to the target then removed prior to toggling the visible class. This is to allow for CSS transitions."
+   },
+   {
+    "name": "showNubbin",
+    "type": "Boolean",
+    "default": "false",
+    "description": "Shows a little triangle at the top when used in a menu."
    }
   ],
   "aura:registerevent": [
@@ -17716,6 +18216,24 @@
     "name": "infiniteLoadingDataProvider",
     "type": "Aura.Action",
     "description": "The action invoked when the user has reached the end of the scrolling area"
+   },
+   {
+    "name": "infiniteLoadingNoDataLabel",
+    "type": "String",
+    "default": "No more data to display",
+    "description": "The text to display when no more data is available to be shown"
+   },
+   {
+    "name": "infiniteLoadingIdleLabel",
+    "type": "String",
+    "default": "",
+    "description": "The text to display when no loading is happening"
+   },
+   {
+    "name": "infiniteLoadingLoadingLabel",
+    "type": "String",
+    "default": "Loading more...",
+    "description": "The text to display while the infinite loading callback is invoked"
    },
    {
     "name": "pullToShowMoreClick",
@@ -18223,6 +18741,11 @@
     "description": "Specifies whether a tab is active (true) or not (false)."
    },
    {
+    "name": "hidden",
+    "type": "Boolean",
+    "description": "Specifies whether a tab is hidden (true) or not (false)."
+   },
+   {
     "name": "iconClass",
     "type": "String",
     "description": "The CSS style used to display the icon on the tab."
@@ -18628,29 +19151,29 @@
     "name": "lazyRenderTabs",
     "type": "Boolean",
     "default": "false",
-    "description": "If true, contained ui:tab components are rendered only when they are activated."
+    "description": "If true, contained ui:tab components are rendered only when they are activated. The default is false."
    },
    {
     "name": "useOverflowMenu",
     "type": "Boolean",
     "default": "false",
-    "description": ""
+    "description": "Provides an overflow menu if set to true. Set barWidth and tabItemWidth to determine the number of overflow items. For example, if barWidth is 600 and tabItemWidth is 200, then the number of visible tabs is 3 and the third contains overflow items. The default is false."
    },
    {
     "name": "barWidth",
     "type": "Integer",
-    "description": ""
+    "description": "The total width of the tabs in pixels."
    },
    {
     "name": "tabItemWidth",
     "type": "Integer",
-    "description": ""
+    "description": "The width of each tab in pixels."
    },
    {
     "name": "overflowLabel",
     "type": "String",
     "default": "More",
-    "description": ""
+    "description": "The text label that appears on the label. The default is \"More\"."
    }
   ],
   "aura:registerevent": [
@@ -18974,6 +19497,13 @@
     "description": "The direction in which the tooltip should go. Valid values are \"north\", \"south\", \"west\", and \"east\". The default is \"north\"."
    },
    {
+    "name": "allowFlips",
+    "default": "true",
+    "type": "Boolean",
+    "access": "INTERNAL",
+    "description": "If true the tooltip will change direction automatically when needed to stay in the viewport"
+   },
+   {
     "name": "domId",
     "type": "String",
     "access": "INTERNAL",
@@ -19273,6 +19803,12 @@
     "description": "Sort order of the data in the grid. Name of column, predicated by a '-' for descending."
    },
    {
+    "name": "useRowHeaders",
+    "type": "Boolean",
+    "default": "false",
+    "description": "Makes the first column of each row a header cell"
+   },
+   {
     "name": "fixedHeader",
     "type": "Boolean",
     "default": "false",
@@ -19417,6 +19953,38 @@
     "default": "false"
    }
   ],
+  "ui:panelmanager2": [
+   {
+    "aura:id": "pm"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "registeredPanels"
+   },
+   {
+    "attribute": "dataProvider"
+   },
+   {
+    "attribute": "listOption"
+   },
+   {
+    "attribute": "dataProvider"
+   },
+   {
+    "attribute": "listOption"
+   }
+  ],
+  "ui:panel": [
+   {
+    "alias": "panel"
+   }
+  ],
+  "ui:modal": [
+   {
+    "alias": "modal"
+   }
+  ],
   "ui:button": [
    {
     "label": "Press",
@@ -19455,26 +20023,13 @@
    },
    {
     "aura:id": "autocompleteExtendedOpts",
+    "usepanel": "true",
     "inputclass": "autocomplete",
     "optionvar": "row",
     "matchdone": "{!c.handleMatch}",
     "inputchange": "{!c.handleInput}",
     "selectlistoption": "{!c.handleSelection}",
     "label": "Autocomplete"
-   }
-  ],
-  "aura:set": [
-   {
-    "attribute": "dataProvider"
-   },
-   {
-    "attribute": "listOption"
-   },
-   {
-    "attribute": "dataProvider"
-   },
-   {
-    "attribute": "listOption"
    }
   ],
   "uiexamples:autocompletedataprovider": [
@@ -19544,6 +20099,27 @@
     "aura:id": "outName",
     "value": "",
     "class": "text"
+   }
+  ]
+ },
+ "cmp.uiExamples:carouselExample": {
+  "aura:component": [
+   {}
+  ],
+  "ui:carousel": [
+   {}
+  ],
+  "aura:set": [
+   {
+    "attribute": "pageComponents"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "value": "Page 1"
+   },
+   {
+    "value": "Page 2"
    }
   ]
  },
@@ -19712,6 +20288,10 @@
   ],
   "aura:attribute": [
    {
+    "name": "tableFlavor",
+    "type": "String"
+   },
+   {
     "name": "mode",
     "type": "String",
     "default": "VIEW"
@@ -19857,6 +20437,7 @@
   "ui:datagrid": [
    {
     "aura:id": "grid",
+    "aura:flavor": "{!v.tableFlavor}",
     "mode": "{!v.mode}",
     "sortby": "{!v.sortBy}",
     "summary": "Assorted Data for testing"
@@ -21420,6 +22001,11 @@
   ],
   "ui:tooltip": [
    {
+    "advanced": "true",
+    "triggerclass": "my-trigger-class",
+    "tooltipbody": "You have to use the advanced mode in this case. Also it is very, very large and could never fit on screen in some cases. Wow, this is a lot of text! It just goes on and on and on. It is a whole entire paragraph."
+   },
+   {
     "fadeinduration": "1000",
     "tooltipbody": "corpus means body"
    },
@@ -21430,25 +22016,26 @@
    },
    {
     "advanced": "true",
+    "direction": "west",
     "tooltipbody": "This is another one"
    },
    {
     "tooltipbody": "Click here for more info"
    },
    {
-    "disabled": "true",
     "fadeoutduration": "500",
     "triggerclass": "my-trigger-class",
     "tooltipbody": "Please?"
    },
    {
-    "fadeinduration": "500",
+    "fadeinduration": "2000",
     "triggerclass": "my-trigger-class",
     "tooltipbody": "We PROMISE we will never, ever spam you. Never, ever."
    },
    {
-    "delay": "500",
+    "delay": "3000",
     "fadeinduration": "500",
+    "advanced": "false",
     "fadeoutduration": "500",
     "tooltipbody": "TPS reports now require a cover sheet"
    },
@@ -21459,8 +22046,9 @@
    },
    {
     "advanced": "true",
+    "direction": "east",
     "disabled": "true",
-    "trigger": "focus",
+    "trigger": "click",
     "tooltipbody": "Focus will toggle this too"
    },
    {
@@ -21515,6 +22103,11 @@
    {}
   ],
   "aura:attribute": [
+   {
+    "name": "tableFlavor",
+    "type": "String",
+    "default": "default"
+   },
    {
     "name": "sortBy",
     "type": "String"
@@ -21628,8 +22221,10 @@
   "ui:virtualdatagrid": [
    {
     "aura:id": "grid",
+    "aura:flavor": "{!v.tableFlavor}",
     "onsort": "{!c.onsort}",
-    "fixedheader": "true"
+    "fixedheader": "true",
+    "userowheaders": "true"
    }
   ],
   "aura:set": [
@@ -21887,8 +22482,17 @@
   ],
   "aura:attribute": [
    {
+    "name": "text",
+    "type": "String"
+   },
+   {
     "name": "errorMessage",
-    "type": "string"
+    "type": "String"
+   },
+   {
+    "name": "transactionId",
+    "type": "Integer",
+    "default": "999"
    }
   ],
   "aurastorage:init": [
@@ -23549,9 +24153,20 @@
    }
   ]
  },
+ "cmp.auraStorageTest:isolationTest": {
+  "aura:component": [
+   {}
+  ]
+ },
  "cmp.auraStorageTest:memoryAdapterTest": {
   "aura:component": [
    {}
+  ],
+  "aura:import": [
+   {
+    "library": "auraStorageTest:storageTestLib",
+    "property": "lib"
+   }
   ]
  },
  "cmp.auraStorageTest:namedStorageTemplate": {
@@ -23652,6 +24267,41 @@
    }
   ]
  },
+ "cmp.auraStorageTest:noGetApplicationCacheTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "auraPreInitBlock"
+   },
+   {
+    "attribute": "autoInitialize",
+    "value": "false"
+   },
+   {
+    "attribute": "autoInitializeSync",
+    "value": "false"
+   },
+   {
+    "attribute": "auraInitBlock"
+   }
+  ],
+  "aurastorage:init": [
+   {
+    "name": "actions",
+    "maxsize": "4096",
+    "clearstorageoninit": "false",
+    "defaultexpiration": "3600",
+    "debugloggingenabled": "true",
+    "secure": "false",
+    "persistent": "true"
+   }
+  ]
+ },
  "cmp.auraStorageTest:playerFacet": {
   "aura:component": [
    {
@@ -23738,6 +24388,73 @@
     "label": "Who are we?",
     "press": "{!c.revealMe}",
     "aura:id": "button"
+   }
+  ]
+ },
+ "cmp.auraStorageTest:versionTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "auraPreInitBlock"
+   }
+  ],
+  "aurastorage:init": [
+   {
+    "name": "templateStorageDefaultVersion"
+   },
+   {
+    "name": "templateStorageEmptyVersion",
+    "version": ""
+   }
+  ]
+ },
+ "cmp.auraStorageTest:versionTest": {
+  "aura:component": [
+   {
+    "template": "auraStorageTest:versionTemplate"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "defaultExpiration",
+    "type": "Integer",
+    "default": "50"
+   },
+   {
+    "name": "defaultAutoRefreshInterval",
+    "type": "Integer",
+    "default": "60"
+   },
+   {
+    "name": "requireUseStorageQueryParam",
+    "type": "Boolean"
+   },
+   {
+    "name": "persistent",
+    "type": "Boolean",
+    "default": "false"
+   },
+   {
+    "name": "version",
+    "type": "String",
+    "default": ""
+   }
+  ],
+  "aurastorage:init": [
+   {
+    "debugloggingenabled": "true",
+    "name": "cmpStorage",
+    "secure": "true",
+    "persistent": "{!v.persistent}",
+    "defaultexpiration": "{!v.defaultExpiration}",
+    "defaultautorefreshinterval": "{!v.defaultAutoRefreshInterval}",
+    "requireusestoragequeryparam": "{!v.requireUseStorageQueryParam}",
+    "version": "{!v.version}"
    }
   ]
  },
@@ -25290,6 +26007,15 @@
     "type": "String"
    },
    {
+    "name": "valueElse",
+    "type": "String"
+   },
+   {
+    "name": "date",
+    "type": "Date",
+    "default": "2015-09-08"
+   },
+   {
     "name": "string",
     "type": "String",
     "default": "test"
@@ -25311,6 +26037,11 @@
    {
     "name": "noll",
     "type": "Object"
+   },
+   {
+    "name": "booleanForIf",
+    "type": "Boolean",
+    "default": "true"
    }
   ],
   "aura:label": [
@@ -25358,6 +26089,30 @@
    },
    {
     "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.valueElse}"
+   },
+   {
+    "value": "{!v.value}"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!(v.booleanForIf)}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "else"
+   }
+  ],
+  "ui:outputdate": [
+   {
+    "value": "{!v.date}"
    }
   ]
  },
@@ -25448,10 +26203,7 @@
   ],
   "aura:if": [
    {
-    "istrue": "{!2.0 == version}"
-   },
-   {
-    "istrue": "{!version > 1}"
+    "istrue": "{!'2.0' == version}"
    }
   ],
   "aura:text": [
@@ -25528,6 +26280,10 @@
     "action": "{!c.updateWithVersionInConsumedComponentInTest}"
    },
    {
+    "name": "updateWithVersionInConsumedComponentInSamenamespace",
+    "action": "{!c.updateWithVersionInConsumedComponentInSamenamespace}"
+   },
+   {
     "name": "updateWithVersionInConsumedComponent",
     "action": "{!c.updateWithVersionInConsumedComponent}"
    },
@@ -25552,6 +26308,11 @@
     "versionevt": "{!c.updateVersionFromVersionEvent}"
    }
   ],
+  "auratest:require": [
+   {
+    "aura:id": "auratest_require"
+   }
+  ],
   "aura:registerevent": [
    {
     "name": "versionEvt",
@@ -25559,11 +26320,11 @@
    }
   ]
  },
- "cmp.auratest:requireWithModel": {
+ "cmp.auratest:requireWithServerAction": {
   "aura:component": [
    {
     "controller": "java://org.auraframework.components.test.java.controller.VersionTestController",
-    "model": "java://org.auraframework.impl.java.model.VersionTestModel"
+    "model": "java://org.auraframework.components.test.java.model.TestModel"
    }
   ],
   "aura:attribute": [
@@ -25577,12 +26338,6 @@
     "name": "version"
    }
   ],
-  "aura:text": [
-   {
-    "aura:id": "versionFromModel",
-    "value": "{!m.version}"
-   }
-  ],
   "aura:method": [
    {
     "name": "updateVersionFromClientController",
@@ -25591,10 +26346,6 @@
    {
     "name": "updateVersionFromServerController",
     "action": "{!c.updateVersionFromServerController}"
-   },
-   {
-    "name": "updateVersionFromServerModel",
-    "action": "{!c.updateVersionFromServerModel}"
    },
    {
     "name": "fireVersionEvent",
@@ -25857,24 +26608,6 @@
   "aura:component": [
    {
     "model": "java://org.auraframework.components.test.java.model.TestModelThrowsInGetter"
-   }
-  ]
- },
- "cmp.auratest:testPerfRunnerContainer": {
-  "aura:component": [
-   {
-    "model": "java://org.auraframework.test.testsetrunner.TestSetRunnerModel",
-    "controller": "java://org.auraframework.test.testsetrunner.TestSetRunnerController"
-   }
-  ],
-  "aura:attribute": [
-   {
-    "name": "scope",
-    "type": "String"
-   },
-   {
-    "name": "keyword",
-    "type": "String"
    }
   ]
  },
@@ -27046,48 +27779,6 @@
    }
   ]
  },
- "cmp.componentTest:labelTest": {
-  "aura:component": [
-   {
-    "render": "client"
-   }
-  ],
-  "aura:attribute": [
-   {
-    "name": "pattern",
-    "type": "String",
-    "default": "{0}"
-   },
-   {
-    "name": "date",
-    "type": "Date",
-    "default": "2015-09-08"
-   },
-   {
-    "name": "userId",
-    "type": "String",
-    "default": "FEED-BOBO-BEEF"
-   },
-   {
-    "name": "userName",
-    "type": "String",
-    "default": "Chris Bobo"
-   }
-  ],
-  "aura:label": [
-   {
-    "value": "{!v.pattern}"
-   }
-  ],
-  "ui:outputdate": [
-   {
-    "value": "{!v.date}"
-   },
-   {
-    "value": "{!v.date}"
-   }
-  ]
- },
  "cmp.componentTest:renderNestedComponents": {
   "aura:component": [
    {}
@@ -27279,6 +27970,10 @@
   ],
   "aura:attribute": [
    {
+    "type": "Aura.Component",
+    "name": "newComponent"
+   },
+   {
     "type": "Boolean",
     "name": "actionDone",
     "default": "false"
@@ -27288,9 +27983,9 @@
     "name": "version"
    }
   ],
-  "auratest:requirewithmodel": [
+  "auratest:requirewithserveraction": [
    {
-    "aura:id": "auratest_requireWithModel"
+    "aura:id": "auratest_requireWithServerAction"
    }
   ],
   "auratest:requireconsumer": [
@@ -27302,6 +27997,10 @@
    {
     "namespace": "auratest",
     "version": "2.0"
+   },
+   {
+    "namespace": "test",
+    "version": "5.0"
    }
   ]
  },
@@ -30699,6 +31398,11 @@
    {}
   ]
  },
+ "cmp.flavorTest:sample_extends": {
+  "aura:component": [
+   {}
+  ]
+ },
  "cmp.flavorTest:x_landmark": {
   "aura:component": [
    {
@@ -31036,6 +31740,13 @@
  "cmp.gvpTest:basicTest": {
   "aura:component": [
    {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "attributeLabel",
+    "type": "String",
+    "default": "{!$Label.Related_Lists.task_mode_today}"
+   }
   ]
  },
  "cmp.gvpTest:browserProvider": {
@@ -31047,6 +31758,32 @@
   "aura:component": [
    {
     "controller": "java://org.auraframework.components.test.java.controller.ContextVPTestController"
+   }
+  ]
+ },
+ "cmp.gvpTest:customGVPInitInTemplateTest": {
+  "aura:component": [
+   {
+    "template": "gvpTest:customGVPTemplate"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "valueChanged",
+    "type": "Boolean",
+    "default": "false"
+   },
+   {
+    "name": "gvpValue",
+    "type": "String",
+    "default": "{!$CustomInitInTemplate.task_mode_today}"
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "change",
+    "value": "{!v.gvpValue}",
+    "action": "{!c.valueChanged}"
    }
   ]
  },
@@ -31767,6 +32504,31 @@
     "name": "attrMap",
     "type": "Map",
     "default": "{}"
+   }
+  ]
+ },
+ "cmp.iterationPerformanceTest:iterationBatchOperations": {
+  "aura:component": [
+   {
+    "extends": "performance:perfTest",
+    "description": "Test memory leaks in iteration when setting data multiple times before rendering"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "initialState",
+    "type": "Object"
+   },
+   {
+    "name": "iterationItems",
+    "type": "Object"
+   }
+  ],
+  "aura:iteration": [
+   {
+    "aura:id": "iteration",
+    "items": "{!v.iterationItems}",
+    "var": "i"
    }
   ]
  },
@@ -53942,6 +54704,16 @@
    }
   ]
  },
+ "cmp.performance:perfTest": {
+  "aura:component": [
+   {
+    "abstract": "true",
+    "extensible": "true",
+    "implements": "performance:test",
+    "description": "Abstract component for performance tests"
+   }
+  ]
+ },
  "cmp.performanceTest:runnerExample": {
   "aura:component": [
    {
@@ -53965,7 +54737,7 @@
  "cmp.performanceTest:runnerExample2": {
   "aura:component": [
    {
-    "implements": "performance:test"
+    "extends": "performance:perfTest"
    }
   ],
   "aura:attribute": [
@@ -55129,6 +55901,24 @@
    }
   ]
  },
+ "cmp.test:runnerContainer": {
+  "aura:component": [
+   {
+    "model": "java://org.auraframework.test.testsetrunner.TestSetRunnerModel",
+    "controller": "java://org.auraframework.test.testsetrunner.TestSetRunnerController"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "scope",
+    "type": "String"
+   },
+   {
+    "name": "keyword",
+    "type": "String"
+   }
+  ]
+ },
  "cmp.test:serverModelCaseSensitivity": {
   "aura:component": [
    {
@@ -55186,14 +55976,12 @@
    {
     "name": "cbResult",
     "type": "String",
-    "default": "NONE",
-    "visibility": "private"
+    "default": "NONE"
    },
    {
     "name": "cbState",
     "type": "String",
-    "default": "NONE",
-    "visibility": "private"
+    "default": "NONE"
    }
   ],
   "ui:button": [
@@ -55236,13 +56024,11 @@
    },
    {
     "name": "data",
-    "type": "String",
-    "visibility": "private"
+    "type": "String"
    },
    {
     "name": "event",
-    "type": "String",
-    "visibility": "private"
+    "type": "String"
    }
   ],
   "aura:registerevent": [
@@ -58657,6 +59443,21 @@
    }
   ]
  },
+ "cmp.uitest:carousel_AccessibilityTest": {
+  "aura:component": [
+   {}
+  ],
+  "ui:carousel": [
+   {
+    "aura:id": "carousel"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "pageComponents"
+   }
+  ]
+ },
  "cmp.uitest:carousel_SpinnerTest": {
   "aura:component": [
    {
@@ -59577,28 +60378,196 @@
    }
   ]
  },
+ "cmp.uitest:datePicker_PositioningTest": {
+  "aura:component": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "pos",
+    "type": "Integer",
+    "default": "1",
+    "description": "Position at which the datePicker currently is"
+   }
+  ],
+  "ui:button": [
+   {
+    "aura:id": "backBtn",
+    "class": "btn",
+    "label": "back",
+    "press": "{!c.back}"
+   },
+   {
+    "aura:id": "forwardBtn",
+    "class": "btn",
+    "label": "forward",
+    "press": "{!c.forward}"
+   }
+  ],
+  "ui:inputdate": [
+   {
+    "aura:id": "inputDate",
+    "displaydatepicker": "true"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "aura:id": "pos1",
+    "value": ""
+   },
+   {
+    "aura:id": "pos2",
+    "class": "pos2",
+    "value": "Position 2"
+   },
+   {
+    "aura:id": "pos3",
+    "class": "pos3",
+    "value": "Position 3"
+   },
+   {
+    "aura:id": "pos4",
+    "class": "pos4",
+    "value": "Position 4"
+   },
+   {
+    "aura:id": "pos5",
+    "class": "pos5",
+    "value": "Position 5"
+   },
+   {
+    "aura:id": "pos6",
+    "class": "pos6",
+    "value": "Position 6"
+   },
+   {
+    "aura:id": "pos7",
+    "class": "pos7",
+    "value": "Position 7"
+   },
+   {
+    "aura:id": "pos8",
+    "class": "pos8",
+    "value": "Position 8"
+   },
+   {
+    "aura:id": "pos9",
+    "class": "pos9",
+    "value": "Position 9"
+   }
+  ]
+ },
  "cmp.uitest:datePicker_TodayButtonTest": {
   "aura:component": [
    {}
   ],
   "aura:attribute": [
    {
-    "name": "showToday",
-    "type": "Boolean",
-    "default": "true"
+    "name": "renderItem",
+    "type": "String",
+    "default": "",
+    "description": "used to selectively pick the right block to run the tests"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{! v.renderItem == 'testShowTodayDatepickerFlag'}"
    },
    {
-    "name": "selectedDate",
-    "type": "Object",
-    "default": "true"
+    "istrue": "{! v.renderItem == 'testHideTodayDatepickerFlag'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testDefaultValueOfDatePicker'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testLocalizedTodayWithTimezoneAPI'}"
    }
   ],
   "ui:datepicker": [
    {
     "aura:id": "datePicker",
-    "showtoday": "{!v.showToday}",
+    "showtoday": "true",
     "selectdate": "{!c.handleSelectedDate}",
     "visible": "true"
+   },
+   {
+    "aura:id": "datePicker",
+    "showtoday": "false",
+    "selectdate": "{!c.handleSelectedDate}",
+    "visible": "true"
+   },
+   {
+    "aura:id": "datePicker",
+    "showtoday": "true",
+    "selectdate": "{!c.handleSelectedDate}",
+    "visible": "true",
+    "value": "2015-7-15"
+   }
+  ]
+ },
+ "cmp.uitest:datepicker_RegressionTest": {
+  "aura:component": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "value",
+    "type": "String",
+    "default": "2015-07-01"
+   },
+   {
+    "name": "renderItem",
+    "type": "String",
+    "default": "testAccessibiltyHeaderTagDefValue"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{! v.renderItem == 'testSFXAccessibiltyHeaderTagDefValue'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testSFXAccessibiltyCustomHeaderTag'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testSetFocusOnDatepickerGridDefaultVal'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testDatepickerSetFocus'}"
+   }
+  ],
+  "ui:inputdatetrigger": [
+   {
+    "displaydatepicker": "true",
+    "format": "yyyy-MM-dd",
+    "value": "{!v.value}"
+   },
+   {
+    "displaydatepicker": "true",
+    "format": "yyyy-MM-dd",
+    "value": "{!v.value}"
+   },
+   {
+    "displaydatepicker": "true",
+    "format": "yyyy-MM-dd",
+    "value": "{!v.value}"
+   }
+  ],
+  "ui:datepickermanager": [
+   {
+    "aura:id": "datepickerManager"
+   },
+   {
+    "aura:id": "datepickerManager"
+   },
+   {
+    "aura:id": "datepickerManager"
+   }
+  ],
+  "ui:datepicker": [
+   {
+    "aura:id": "standAloneDatepicker",
+    "visible": "true",
+    "titleheadinglevel": "h3"
    }
   ]
  },
@@ -60094,7 +61063,7 @@
     "count": "1"
    },
    {
-    "prefix": "Draggable Type: Move3",
+    "prefix": "Draggable Type: Move2",
     "count": "1"
    }
   ],
@@ -60713,6 +61682,14 @@
    {
     "name": "format",
     "type": "String"
+   },
+   {
+    "name": "dateFormat",
+    "type": "String"
+   },
+   {
+    "name": "timeFormat",
+    "type": "String"
    }
   ],
   "ui:inputdatetime": [
@@ -60722,7 +61699,9 @@
     "displaydatepicker": "true",
     "class": "date_input_box",
     "value": "{!v.value}",
-    "format": "{!v.format}"
+    "format": "{!v.format}",
+    "dateformat": "{!v.dateFormat}",
+    "timeformat": "{!v.timeFormat}"
    }
   ]
  },
@@ -62971,6 +63950,53 @@
    }
   ]
  },
+ "cmp.uitest:menu_WithPanel": {
+  "aura:component": [
+   {}
+  ],
+  "ui:menu": [
+   {
+    "aura:id": "uiMenu",
+    "class": "checkPositionMenu"
+   }
+  ],
+  "ui:menutriggerlink": [
+   {
+    "aura:id": "menuWithPanelTrigger",
+    "label": "My Menu"
+   }
+  ],
+  "ui:menulist": [
+   {
+    "aura:id": "menuWithPanel"
+   }
+  ],
+  "ui:actionmenuitem": [
+   {
+    "aura:id": "menuWithPanelItem1",
+    "label": "open panel",
+    "click": "{!c.openPanel}"
+   }
+  ],
+  "ui:panelmanager2": [
+   {}
+  ],
+  "aura:set": [
+   {
+    "attribute": "registeredPanels"
+   }
+  ],
+  "ui:panel": [
+   {
+    "alias": "panel"
+   }
+  ],
+  "ui:modal": [
+   {
+    "alias": "modal"
+   }
+  ]
+ },
  "cmp.uitest:messagedemo": {
   "aura:component": [
    {}
@@ -63553,8 +64579,9 @@
     "default": "false"
    },
    {
-    "name": "referenceElement",
-    "type": "Object"
+    "name": "useReferenceElementSelector",
+    "type": "Boolean",
+    "default": "false"
    },
    {
     "name": "useReferenceElement",
@@ -63622,14 +64649,29 @@
     "value": "Create a panel to your liking"
    },
    {
-    "class": "IdCreated",
-    "aura:id": "IdCreated",
+    "class": "idCreated",
+    "aura:id": "idCreated",
     "value": ""
    },
    {
-    "class": "IdDestroyed",
-    "aura:id": "IdDestroyed",
+    "class": "idDestroyed",
+    "aura:id": "idDestroyed",
     "value": ""
+   },
+   {
+    "class": "idRefEl",
+    "aura:id": "idRefEl",
+    "value": ""
+   },
+   {
+    "class": "formFactorInfo",
+    "aura:id": "formFactorInfo",
+    "value": "{!$Browser.formFactor}"
+   },
+   {
+    "class": "labelFromGVP",
+    "aura:id": "labelFromGVP",
+    "value": "{!$Label.Related_Lists.task_mode_today}"
    }
   ],
   "ui:inputtext": [
@@ -63732,6 +64774,12 @@
     "class": "inputShowPointerClass"
    },
    {
+    "aura:id": "inputUseReferenceElementSelector",
+    "label": "Use Reference Element Selector",
+    "value": "{!v.useReferenceElementSelector}",
+    "class": "inputUseReferenceElementSelector"
+   },
+   {
     "aura:id": "inputUseReferenceElement",
     "label": "Use Reference Element",
     "value": "{!v.useReferenceElement}",
@@ -63774,6 +64822,60 @@
     "label": "Create Panel",
     "press": "{!c.createPanel}",
     "class": "createPanelBtnClass"
+   }
+  ]
+ },
+ "cmp.uitest:panelRefElement_Test": {
+  "aura:component": [
+   {}
+  ],
+  "aura:handler": [
+   {
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "class": "title",
+    "value": "Panel Reference Element Tester"
+   },
+   {
+    "aura:id": "refElement1",
+    "class": "refElement1",
+    "value": "RefElem1"
+   }
+  ],
+  "ui:button": [
+   {
+    "aura:id": "changeRefBtn",
+    "class": "changeRefBtn",
+    "label": "ChangeRefElem",
+    "press": "{!c.changeReferenceElement}"
+   },
+   {
+    "aura:id": "refElement2",
+    "class": "refElement2",
+    "label": "RefElem2",
+    "press": "{!c.openPanel}"
+   }
+  ],
+  "ui:panelmanager2": [
+   {
+    "aura:id": "pm"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "registeredPanels"
+   }
+  ],
+  "ui:panel": [
+   {
+    "aura:id": "panel",
+    "class": "newPanel",
+    "alias": "panel"
    }
   ]
  },
@@ -64013,7 +65115,9 @@
   "ui:pillcontainerautocomplete": [
    {
     "aura:id": "autocomplete",
-    "optionvar": "row"
+    "optionvar": "row",
+    "label": "lookupLabel",
+    "labelposition": "hidden"
    }
   ],
   "uitest:pillcontainerautocompletedataprovider": [
@@ -64025,7 +65129,8 @@
     "keyword": "{!row.keyword}",
     "value": "{!row}",
     "visible": "{!row.visible}",
-    "iconurl": "{!row.icon.url}"
+    "iconurl": "{!row.icon.url}",
+    "iconbackgroundcolor": "{!row.icon.backgroundColor}"
    }
   ]
  },
@@ -64125,6 +65230,27 @@
   "uitest:pillcontainer_inputtext": [
    {
     "aura:id": "textInput"
+   }
+  ]
+ },
+ "cmp.uitest:pill_Test": {
+  "aura:component": [
+   {}
+  ],
+  "ui:pill": [
+   {
+    "label": "Some Text",
+    "iconbackgroundcolor": "f0f",
+    "iconurl": "https://pi.pardot.com/images/salesforce.png"
+   },
+   {
+    "label": "Pill with empty iconUrl",
+    "iconbackgroundcolor": "abc",
+    "iconurl": ""
+   },
+   {
+    "label": "Pill with default iconUrl",
+    "iconbackgroundcolor": "def"
    }
   ]
  },
@@ -64316,6 +65442,44 @@
    {
     "aura:id": "horizontalScroll",
     "scroll": "horizontal"
+   }
+  ]
+ },
+ "cmp.uitest:scroller_InfiniteLoading": {
+  "aura:component": [
+   {
+    "description": "A test scroller."
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "initialSize",
+    "type": "Integer",
+    "default": "40"
+   },
+   {
+    "name": "loadDelay_ms",
+    "type": "Integer",
+    "default": "250",
+    "description": "delay before the scroller load the new items"
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
+   }
+  ],
+  "ui:scroller": [
+   {
+    "class": "scrollWrapper",
+    "aura:id": "test-scroller",
+    "usenativescroller": "true",
+    "bindeventstoscroller": "true",
+    "infiniteloading": "true",
+    "infiniteloadingdataprovider": "{!c.onLoadMore}",
+    "infiniteloadingloadinglabel": "Test Loading...1234567890"
    }
   ]
  },
@@ -64516,6 +65680,33 @@
    }
   ]
  },
+ "cmp.uitest:tab_afterRenderCustomTab": {
+  "aura:component": [
+   {
+    "extends": "ui:tab"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "name": "_afterRenderWidth",
+    "type": "String",
+    "default": "",
+    "description": "after render tab content width"
+   },
+   {
+    "name": "_afterRenderHeight",
+    "type": "String",
+    "default": "",
+    "description": "after render tab content height"
+   },
+   {
+    "name": "_isDomPresent",
+    "type": "Boolean",
+    "default": "false",
+    "description": "whether or not the dom is present"
+   }
+  ]
+ },
  "cmp.uitest:tab_lazyCustomTab": {
   "aura:component": [
    {
@@ -64539,11 +65730,6 @@
     "name": "renderItem",
     "type": "String",
     "default": "none"
-   },
-   {
-    "name": "_extra",
-    "type": "String",
-    "default": "none"
    }
   ],
   "aura:if": [
@@ -64552,6 +65738,15 @@
    },
    {
     "istrue": "{! v.renderItem == 'testTabItemAltText'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testAfterRenderStateTab0Active'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testAfterRenderStateTab1Active'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'testAfterRenderStateNoActiveTab'}"
    },
    {
     "istrue": "{! v.renderItem == 'none'}"
@@ -64573,6 +65768,48 @@
    },
    {
     "title": "tab 1 title"
+   }
+  ],
+  "uitest:tabset_extendstest": [
+   {
+    "class": "tabset",
+    "aura:id": "tabSet"
+   },
+   {
+    "class": "tabset",
+    "aura:id": "tabSet"
+   },
+   {
+    "class": "tabset",
+    "aura:id": "tabSet"
+   }
+  ],
+  "uitest:tab_afterrendercustomtab": [
+   {
+    "aura:id": "tab0",
+    "title": "tab 0",
+    "active": "true"
+   },
+   {
+    "aura:id": "tab1",
+    "title": "tab 1"
+   },
+   {
+    "aura:id": "tab0",
+    "title": "tab 0"
+   },
+   {
+    "aura:id": "tab1",
+    "title": "tab 1",
+    "active": "true"
+   },
+   {
+    "aura:id": "tab0",
+    "title": "tab 0"
+   },
+   {
+    "aura:id": "tab1",
+    "title": "tab 1"
    }
   ]
  },
@@ -64807,6 +66044,26 @@
    {
     "extends": "ui:tabset"
    }
+  ],
+  "aura:attribute": [
+   {
+    "name": "_afterRenderWidth",
+    "type": "String",
+    "default": "",
+    "description": "after render tab content width"
+   },
+   {
+    "name": "_afterRenderHeight",
+    "type": "String",
+    "default": "",
+    "description": "after render tab content height"
+   },
+   {
+    "name": "_isDomPresent",
+    "type": "Boolean",
+    "default": "false",
+    "description": "whether or not the dom is present"
+   }
   ]
  },
  "cmp.uitest:tabset_overflowTest": {
@@ -64986,7 +66243,412 @@
    }
   ]
  },
- "cmp.uitest:tooltipTest": {
+ "cmp.uitest:tooltipTestPosition": {
+  "aura:component": [
+   {}
+  ],
+  "ui:tooltip": [
+   {
+    "aura:id": "topLeftWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topLeftNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topLeftSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topLeftEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topCenterWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topCenterNorth",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topCenterSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topCenterEast",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topRightWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topRightNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topRightSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "topRightEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "leftCenterWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "leftCenterNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "leftCenterSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "leftCenterEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "centerCenterWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "centerCenterNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "centerCenterSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "centerCenterEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "rightCenterWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "rightCenterNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "rightCenterSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "rightCenterEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomRightWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomRightNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomRightSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomRightEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomCenterWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomCenterNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomCenterSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomCenterEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomLeftWest",
+    "advanced": "true",
+    "direction": "west",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomLeftNorth",
+    "advanced": "true",
+    "direction": "north",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomLeftSouth",
+    "advanced": "true",
+    "direction": "south",
+    "trigger": "hover"
+   },
+   {
+    "aura:id": "bottomLeftEast",
+    "advanced": "true",
+    "direction": "east",
+    "trigger": "hover"
+   }
+  ],
+  "ui:label": [
+   {
+    "aura:id": "topLeftWestlabel",
+    "for": "topLeftWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "topLeftNorthlabel",
+    "for": "topLeftNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "topLeftSouthlabel",
+    "for": "topLeftSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "topLeftEastlabel",
+    "for": "topLeftEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "topCenterWestlabel",
+    "for": "topCenterWest",
+    "label": " Wst"
+   },
+   {
+    "aura:id": "topCenterNorthlabel",
+    "for": "topCenterNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "topCenterSouthlabel",
+    "for": "topCenterSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "topCenterEastlabel",
+    "for": "topCenterEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "topRightWestlabel",
+    "for": "topRightWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "topRightNorthlabel",
+    "for": "topRightNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "topRightSouthlabel",
+    "for": "topRightSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "topRightEastlabel",
+    "for": "topRightEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "leftCenterWestlabel",
+    "for": "leftCenterWest",
+    "label": " Wst"
+   },
+   {
+    "aura:id": "leftCenterNorthlabel",
+    "for": "leftCenterNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "leftCenterSouthlabel",
+    "for": "leftCenterSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "leftCenterEastlabel",
+    "for": "leftCenterEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "centerCenterWestlabel",
+    "for": "centerCenterWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "centerCenterNorthlabel",
+    "for": "centerCenterNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "centerCenterSouthlabel",
+    "for": "centerCenterSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "centerCenterEastlabel",
+    "for": "centerCenterEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "rightCenterWestlabel",
+    "for": "rightCenterWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "rightCenterNorthlabel",
+    "for": "rightCenterNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "rightCenterSouthlabel",
+    "for": "rightCenterSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "rightCenterEastlabel",
+    "for": "rightCenterEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "bottomRightWestlabel",
+    "for": "bottomRightWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "bottomRightNorthlabel",
+    "for": "bottomRightNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "bottomRightSouthlabel",
+    "for": "bottomRightSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "bottomRightEastlabel",
+    "for": "bottomRightEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "bottomCenterWestlabel",
+    "for": "bottomCenterWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "bottomCenterNorthlabel",
+    "for": "bottomCenterNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "bottomCenterSouthlabel",
+    "for": "bottomCenterSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "bottomCenterEastlabel",
+    "for": "bottomCenterEast",
+    "label": " Est"
+   },
+   {
+    "aura:id": "bottomLeftWestlabel",
+    "for": "bottomLeftWest",
+    "label": "Wst"
+   },
+   {
+    "aura:id": "bottomLeftNorthlabel",
+    "for": "bottomLeftNorth",
+    "label": " Nrt"
+   },
+   {
+    "aura:id": "bottomLeftSouthlabel",
+    "for": "bottomLeftSouth",
+    "label": " Sth"
+   },
+   {
+    "aura:id": "bottomLeftEastlabel",
+    "for": "bottomLeftEast",
+    "label": " Est"
+   }
+  ]
+ },
+ "cmp.uitest:tooltip_FullTest": {
   "aura:component": [
    {}
   ],
@@ -65074,7 +66736,8 @@
     "aura:id": "triggerclick",
     "advanced": "true",
     "trigger": "click",
-    "tooltipbody": "Tooltip Message"
+    "tooltipbody": "Tooltip Message",
+    "triggerclass": "triggerClick"
    },
    {
     "aura:id": "triggerfocus",
@@ -65863,411 +67526,6 @@
    }
   ]
  },
- "cmp.uitest:tooltipTestPosition": {
-  "aura:component": [
-   {}
-  ],
-  "ui:tooltip": [
-   {
-    "aura:id": "topLeftWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topLeftNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topLeftSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topLeftEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topCenterWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topCenterNorth",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topCenterSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topCenterEast",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topRightWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topRightNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topRightSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "topRightEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "leftCenterWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "leftCenterNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "leftCenterSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "leftCenterEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "centerCenterWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "centerCenterNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "centerCenterSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "centerCenterEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "rightCenterWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "rightCenterNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "rightCenterSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "rightCenterEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomRightWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomRightNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomRightSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomRightEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomCenterWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomCenterNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomCenterSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomCenterEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomLeftWest",
-    "advanced": "true",
-    "direction": "west",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomLeftNorth",
-    "advanced": "true",
-    "direction": "north",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomLeftSouth",
-    "advanced": "true",
-    "direction": "south",
-    "trigger": "hover"
-   },
-   {
-    "aura:id": "bottomLeftEast",
-    "advanced": "true",
-    "direction": "east",
-    "trigger": "hover"
-   }
-  ],
-  "ui:label": [
-   {
-    "aura:id": "topLeftWestlabel",
-    "for": "topLeftWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "topLeftNorthlabel",
-    "for": "topLeftNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "topLeftSouthlabel",
-    "for": "topLeftSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "topLeftEastlabel",
-    "for": "topLeftEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "topCenterWestlabel",
-    "for": "topCenterWest",
-    "label": " Wst"
-   },
-   {
-    "aura:id": "topCenterNorthlabel",
-    "for": "topCenterNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "topCenterSouthlabel",
-    "for": "topCenterSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "topCenterEastlabel",
-    "for": "topCenterEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "topRightWestlabel",
-    "for": "topRightWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "topRightNorthlabel",
-    "for": "topRightNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "topRightSouthlabel",
-    "for": "topRightSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "topRightEastlabel",
-    "for": "topRightEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "leftCenterWestlabel",
-    "for": "leftCenterWest",
-    "label": " Wst"
-   },
-   {
-    "aura:id": "leftCenterNorthlabel",
-    "for": "leftCenterNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "leftCenterSouthlabel",
-    "for": "leftCenterSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "leftCenterEastlabel",
-    "for": "leftCenterEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "centerCenterWestlabel",
-    "for": "centerCenterWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "centerCenterNorthlabel",
-    "for": "centerCenterNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "centerCenterSouthlabel",
-    "for": "centerCenterSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "centerCenterEastlabel",
-    "for": "centerCenterEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "rightCenterWestlabel",
-    "for": "rightCenterWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "rightCenterNorthlabel",
-    "for": "rightCenterNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "rightCenterSouthlabel",
-    "for": "rightCenterSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "rightCenterEastlabel",
-    "for": "rightCenterEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "bottomRightWestlabel",
-    "for": "bottomRightWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "bottomRightNorthlabel",
-    "for": "bottomRightNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "bottomRightSouthlabel",
-    "for": "bottomRightSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "bottomRightEastlabel",
-    "for": "bottomRightEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "bottomCenterWestlabel",
-    "for": "bottomCenterWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "bottomCenterNorthlabel",
-    "for": "bottomCenterNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "bottomCenterSouthlabel",
-    "for": "bottomCenterSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "bottomCenterEastlabel",
-    "for": "bottomCenterEast",
-    "label": " Est"
-   },
-   {
-    "aura:id": "bottomLeftWestlabel",
-    "for": "bottomLeftWest",
-    "label": "Wst"
-   },
-   {
-    "aura:id": "bottomLeftNorthlabel",
-    "for": "bottomLeftNorth",
-    "label": " Nrt"
-   },
-   {
-    "aura:id": "bottomLeftSouthlabel",
-    "for": "bottomLeftSouth",
-    "label": " Sth"
-   },
-   {
-    "aura:id": "bottomLeftEastlabel",
-    "for": "bottomLeftEast",
-    "label": " Est"
-   }
-  ]
- },
  "cmp.uitest:tooltip_Test": {
   "aura:component": [
    {}
@@ -66657,6 +67915,11 @@
     "type": "List"
    },
    {
+    "name": "useRowHeaders",
+    "type": "Boolean",
+    "default": "false"
+   },
+   {
     "name": "provideNoData",
     "type": "Boolean"
    }
@@ -66728,7 +67991,8 @@
    {
     "aura:id": "grid",
     "onsort": "{!c.onsort}",
-    "fixedheader": "true"
+    "fixedheader": "true",
+    "userowheaders": "{!v.useRowHeaders}"
    }
   ],
   "aura:set": [
@@ -67120,6 +68384,13 @@
   ]
  },
  "cmp.updateTest:updateableOther": {
+  "aura:component": [
+   {
+    "render": "client"
+   }
+  ]
+ },
+ "cmp.utilTest:isEmpty": {
   "aura:component": [
    {
     "render": "client"
