@@ -6,7 +6,7 @@
     "test": "./node_modules/mocha/bin/mocha test",
     "clean": "rm -f snippet/aura*.sublime-completions",
     "pkg": "node index.js --silent;",
-    "setup" : "sh install.sublime.sh",
+    "setup": "sh install.sublime.sh",
     "start": "node index.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/synle/aura_autocomplete_sublime",
   "dependencies": {
+    "cheerio": "^0.19.0",
     "colors": "^1.1.2",
     "lodash": "^3.10.0",
     "prompt": "^0.2.14",
