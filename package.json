@@ -7,7 +7,7 @@
     "clean": "rm -f snippet/aura*.sublime-completions",
     "pkg": "node index.js --silent;",
     "setup": "sh install.sublime.sh",
-    "start": "node index.js"
+    "start": "./node_modules/http-server/bin/http-server ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "dependencies": {
     "cheerio": "^0.19.0",
     "colors": "^1.1.2",
+    "http-server": "^0.8.0",
     "lodash": "^3.10.0",
     "prompt": "^0.2.14",
     "xml2js": "^0.4.9"
