@@ -42,6 +42,10 @@
       "contents": "cmp.getDef().getHelper().createBody(${1:component})"
     },
     {
+      "trigger": "helper-aura-iteration-clearUnrenderedBody",
+      "contents": "cmp.getDef().getHelper().clearUnrenderedBody(${1:component})"
+    },
+    {
       "trigger": "helper-aura-iteration-updateBody",
       "contents": "cmp.getDef().getHelper().updateBody(${1:component})"
     },
@@ -379,15 +383,15 @@
     },
     {
       "trigger": "helper-ui-autocompleteList-matchFunc",
-      "contents": "cmp.getDef().getHelper().matchFunc(${1:component})"
+      "contents": "cmp.getDef().getHelper().matchFunc(${1:component},${2:items})"
     },
     {
       "trigger": "helper-ui-autocompleteList-matchFuncDone",
-      "contents": "cmp.getDef().getHelper().matchFuncDone(${1:component})"
+      "contents": "cmp.getDef().getHelper().matchFuncDone(${1:component},${2:items})"
     },
     {
       "trigger": "helper-ui-autocompleteList-matchText",
-      "contents": "cmp.getDef().getHelper().matchText(${1:component})"
+      "contents": "cmp.getDef().getHelper().matchText(${1:component},${2:items})"
     },
     {
       "trigger": "helper-ui-autocompleteList-toggleListVisibility",
@@ -424,6 +428,18 @@
     {
       "trigger": "helper-ui-autocompleteOption-htmlEscape",
       "contents": "cmp.getDef().getHelper().htmlEscape(${1:str})"
+    },
+    {
+      "trigger": "helper-ui-button-catchAndFireEvent",
+      "contents": "cmp.getDef().getHelper().catchAndFireEvent(${1:cmp},${2:event},${3:eventName})"
+    },
+    {
+      "trigger": "helper-ui-button-getClassList",
+      "contents": "cmp.getDef().getHelper().getClassList(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-button-updateStatefulClasses",
+      "contents": "cmp.getDef().getHelper().updateStatefulClasses(${1:cmp},${2:event})"
     },
     {
       "trigger": "helper-ui-carousel-initialize",
@@ -1010,6 +1026,10 @@
       "contents": "cmp.getDef().getHelper().write(${1:concrete},${2:cfg},${3:callback})"
     },
     {
+      "trigger": "helper-ui-datePicker-_getScrollableParent",
+      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
+    },
+    {
       "trigger": "helper-ui-datePicker-attachToDocumentBody",
       "contents": "cmp.getDef().getHelper().attachToDocumentBody(${1:component})"
     },
@@ -1088,6 +1108,10 @@
     {
       "trigger": "helper-ui-datePicker-yearChange",
       "contents": "cmp.getDef().getHelper().yearChange(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-hide",
+      "contents": "cmp.getDef().getHelper().hide(${1:component},${2:shouldFocusReferenceElem})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-changeCalendar",
@@ -1243,19 +1267,19 @@
     },
     {
       "trigger": "helper-ui-dragAndDropAccessibility-fireDragEnd",
-      "contents": "cmp.getDef().getHelper().fireDragEnd(${1:draggables},${2:isValid})"
+      "contents": "cmp.getDef().getHelper().fireDragEnd(${1:draggables},${2:isValid},${3:target})"
     },
     {
       "trigger": "helper-ui-dragAndDropAccessibility-fireDragEnter",
-      "contents": "cmp.getDef().getHelper().fireDragEnter(${1:dropzones})"
+      "contents": "cmp.getDef().getHelper().fireDragEnter(${1:dropzones},${2:target})"
     },
     {
       "trigger": "helper-ui-dragAndDropAccessibility-fireDragLeave",
-      "contents": "cmp.getDef().getHelper().fireDragLeave(${1:dropzones})"
+      "contents": "cmp.getDef().getHelper().fireDragLeave(${1:dropzones},${2:target})"
     },
     {
       "trigger": "helper-ui-dragAndDropAccessibility-fireDrop",
-      "contents": "cmp.getDef().getHelper().fireDrop(${1:dropzones},${2:draggables})"
+      "contents": "cmp.getDef().getHelper().fireDrop(${1:dropzones},${2:draggables},${3:target})"
     },
     {
       "trigger": "helper-ui-dragAndDropAccessibilityMenu-startDragAndDrop",
@@ -1303,7 +1327,7 @@
     },
     {
       "trigger": "helper-ui-draggable-fireDragStart",
-      "contents": "cmp.getDef().getHelper().fireDragStart(${1:component},${2:isInAccessibilityMode})"
+      "contents": "cmp.getDef().getHelper().fireDragStart(${1:component},${2:target},${3:isInAccessibilityMode})"
     },
     {
       "trigger": "helper-ui-draggable-createDragImage",
@@ -1319,7 +1343,7 @@
     },
     {
       "trigger": "helper-ui-draggable-fireDragEnd",
-      "contents": "cmp.getDef().getHelper().fireDragEnd(${1:component},${2:isValid},${3:isInAccessibilityMode})"
+      "contents": "cmp.getDef().getHelper().fireDragEnd(${1:component},${2:target},${3:isValid},${4:isInAccessibilityMode})"
     },
     {
       "trigger": "helper-ui-draggable-handleDropComplete",
@@ -1327,7 +1351,7 @@
     },
     {
       "trigger": "helper-ui-draggable-updateDropOperationStatus",
-      "contents": "cmp.getDef().getHelper().updateDropOperationStatus(${1:component},${2:eventType},${3:event})"
+      "contents": "cmp.getDef().getHelper().updateDropOperationStatus(${1:component},${2:eventType},${3:config})"
     },
     {
       "trigger": "helper-ui-draggable-enterDragOperation",
@@ -1526,6 +1550,10 @@
       "contents": "cmp.getDef().getHelper().buildBody(${1:component})"
     },
     {
+      "trigger": "helper-ui-input-resetLabelPosition",
+      "contents": "cmp.getDef().getHelper().resetLabelPosition(${1:component})"
+    },
+    {
       "trigger": "helper-ui-input-checkValidPosition",
       "contents": "cmp.getDef().getHelper().checkValidPosition(${1:passedInPosition})"
     },
@@ -1578,8 +1606,8 @@
       "contents": "cmp.getDef().getHelper().updateError(${1:component},${2:errors})"
     },
     {
-      "trigger": "helper-ui-input-addAriaDescribedBy",
-      "contents": "cmp.getDef().getHelper().addAriaDescribedBy(${1:component},${2:errorCmpId})"
+      "trigger": "helper-ui-input-updateAriaDescribedBy",
+      "contents": "cmp.getDef().getHelper().updateAriaDescribedBy(${1:component},${2:errorCmpId})"
     },
     {
       "trigger": "helper-ui-input-updateErrorElement",
@@ -1608,6 +1636,10 @@
     {
       "trigger": "helper-ui-input-addTokenToString",
       "contents": "cmp.getDef().getHelper().addTokenToString(${1:str},${2:token})"
+    },
+    {
+      "trigger": "helper-ui-input-removeTokenFromString",
+      "contents": "cmp.getDef().getHelper().removeTokenFromString(${1:str},${2:token})"
     },
     {
       "trigger": "helper-ui-input-addInputClass",
@@ -1650,8 +1682,20 @@
       "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputDate-handleUpdate",
+      "contents": "cmp.getDef().getHelper().handleUpdate(${1:component},${2:event})"
+    },
+    {
       "trigger": "helper-ui-inputDate-doUpdate",
       "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-addDomHandler",
+      "contents": "cmp.getDef().getHelper().addDomHandler(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-getInputElement",
+      "contents": "cmp.getDef().getHelper().getInputElement(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDate-getDateString",
@@ -1660,6 +1704,10 @@
     {
       "trigger": "helper-ui-inputDate-toggleClearButton",
       "contents": "cmp.getDef().getHelper().toggleClearButton(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-toggleOpenIconVisibility",
+      "contents": "cmp.getDef().getHelper().toggleOpenIconVisibility(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDateRange-openStartDatePicker",
@@ -1714,20 +1762,32 @@
       "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputDateTime-displayTimePicker",
+      "contents": "cmp.getDef().getHelper().displayTimePicker(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputDateTime-displayDateTime",
-      "contents": "cmp.getDef().getHelper().displayDateTime(${1:component},${2:displayValue})"
+      "contents": "cmp.getDef().getHelper().displayDateTime(${1:component},${2:dateDisplayValue},${3:timeDisplayValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-addInputClass",
+      "contents": "cmp.getDef().getHelper().addInputClass(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-addDomHandler",
+      "contents": "cmp.getDef().getHelper().addDomHandler(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-handleUpdate",
+      "contents": "cmp.getDef().getHelper().handleUpdate(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-inputDateTime-doUpdate",
-      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
+      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value},${3:hasTime})"
     },
     {
       "trigger": "helper-ui-inputDateTime-formatDateTime",
       "contents": "cmp.getDef().getHelper().formatDateTime(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-inputDateTime-getDateString",
-      "contents": "cmp.getDef().getHelper().getDateString(${1:date})"
     },
     {
       "trigger": "helper-ui-inputDateTime-getUTCDateString",
@@ -1744,6 +1804,42 @@
     {
       "trigger": "helper-ui-inputDateTime-toggleClearButton",
       "contents": "cmp.getDef().getHelper().toggleClearButton(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-setDateValue",
+      "contents": "cmp.getDef().getHelper().setDateValue(${1:component},${2:dateValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-setTimeValue",
+      "contents": "cmp.getDef().getHelper().setTimeValue(${1:component},${2:selectedHours},${3:selectedMinutes})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-setDateTimeValue",
+      "contents": "cmp.getDef().getHelper().setDateTimeValue(${1:component},${2:dateTimeString},${3:hasTime},${4:langLocale})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-updateTimeFormat",
+      "contents": "cmp.getDef().getHelper().updateTimeFormat(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-getDateTime",
+      "contents": "cmp.getDef().getHelper().getDateTime(${1:component},${2:langLocale},${3:dateTimeString})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-getDateTimeString",
+      "contents": "cmp.getDef().getHelper().getDateTimeString(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-getDateString",
+      "contents": "cmp.getDef().getHelper().getDateString(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-getTimeString",
+      "contents": "cmp.getDef().getHelper().getTimeString(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-isDesktopMode",
+      "contents": "cmp.getDef().getHelper().isDesktopMode(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDateTrigger-displayDatePicker",
@@ -1867,11 +1963,79 @@
     },
     {
       "trigger": "helper-ui-inputSelect-renderOptions",
-      "contents": "cmp.getDef().getHelper().renderOptions(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().renderOptions(${1:cmp},${2:options})"
+    },
+    {
+      "trigger": "helper-ui-inputSelect-updateOptionElement",
+      "contents": "cmp.getDef().getHelper().updateOptionElement(${1:cmp},${2:option},${3:optionElement})"
+    },
+    {
+      "trigger": "helper-ui-inputSelect-getInternalText",
+      "contents": "cmp.getDef().getHelper().getInternalText(${1:option})"
     },
     {
       "trigger": "helper-ui-inputTextArea-setDomElementValue",
       "contents": "cmp.getDef().getHelper().setDomElementValue(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-position",
+      "contents": "cmp.getDef().getHelper().position(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-selectTime",
+      "contents": "cmp.getDef().getHelper().selectTime(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-hide",
+      "contents": "cmp.getDef().getHelper().hide(${1:component},${2:shouldFocusReferenceElem})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-renderList",
+      "contents": "cmp.getDef().getHelper().renderList(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-updateGlobalEventListeners",
+      "contents": "cmp.getDef().getHelper().updateGlobalEventListeners(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-getOnClickFunction",
+      "contents": "cmp.getDef().getHelper().getOnClickFunction(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-isElementInComponent",
+      "contents": "cmp.getDef().getHelper().isElementInComponent(${1:component},${2:targetElem})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-appendListElement",
+      "contents": "cmp.getDef().getHelper().appendListElement(${1:listElem},${2:displayValue},${3:hourValue},${4:minuteValue},${5:selected})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-scrollToSelectedTime",
+      "contents": "cmp.getDef().getHelper().scrollToSelectedTime(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-setEventHandlers",
+      "contents": "cmp.getDef().getHelper().setEventHandlers(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-removeEventHandlers",
+      "contents": "cmp.getDef().getHelper().removeEventHandlers(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-getMousewheelHandler",
+      "contents": "cmp.getDef().getHelper().getMousewheelHandler(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-getKeyboardInteractionHandler",
+      "contents": "cmp.getDef().getHelper().getKeyboardInteractionHandler(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-setFocusToNextItem",
+      "contents": "cmp.getDef().getHelper().setFocusToNextItem(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-setFocusToPreviousItem",
+      "contents": "cmp.getDef().getHelper().setFocusToPreviousItem(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-interactive-addDomEvents",
@@ -2262,6 +2426,14 @@
       "contents": "cmp.getDef().getHelper().getAnchorElement(${1:component})"
     },
     {
+      "trigger": "helper-ui-menuTriggerLink-handleClick",
+      "contents": "cmp.getDef().getHelper().handleClick(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-menuTriggerLink-fireMenuTriggerPress",
+      "contents": "cmp.getDef().getHelper().fireMenuTriggerPress(${1:component},${2:index})"
+    },
+    {
       "trigger": "helper-ui-modal-init",
       "contents": "cmp.getDef().getHelper().init(${1:cmp})"
     },
@@ -2382,8 +2554,16 @@
       "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event})"
     },
     {
+      "trigger": "helper-ui-panel-_getReferenceElement",
+      "contents": "cmp.getDef().getHelper()._getReferenceElement(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-panel-show",
       "contents": "cmp.getDef().getHelper().show(${1:cmp},${2:callback})"
+    },
+    {
+      "trigger": "helper-ui-panel-reposition",
+      "contents": "cmp.getDef().getHelper().reposition(${1:cmp},${2:callback})"
     },
     {
       "trigger": "helper-ui-panel-hide",
@@ -2392,6 +2572,10 @@
     {
       "trigger": "helper-ui-panel-close",
       "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback})"
+    },
+    {
+      "trigger": "helper-ui-panel-cleanPositioning",
+      "contents": "cmp.getDef().getHelper().cleanPositioning(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panel-position",
@@ -2508,10 +2692,6 @@
     {
       "trigger": "helper-ui-panelManager-openInstance",
       "contents": "cmp.getDef().getHelper().openInstance(${1:cmp},${2:panel},${3:config})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-afterOpenInstance",
-      "contents": "cmp.getDef().getHelper().afterOpenInstance(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panelManager-isPanel",
@@ -2642,6 +2822,10 @@
       "contents": "cmp.getDef().getHelper().stackPanel(${1:panel})"
     },
     {
+      "trigger": "helper-ui-panelManager2-stackElement",
+      "contents": "cmp.getDef().getHelper().stackElement(${1:cb})"
+    },
+    {
       "trigger": "helper-ui-panelManager2-createPanelInstance",
       "contents": "cmp.getDef().getHelper().createPanelInstance(${1:cmp},${2:panelDef},${3:config})"
     },
@@ -2702,6 +2886,10 @@
       "contents": "cmp.getDef().getHelper().insertItems(${1:cmp},${2:newItems})"
     },
     {
+      "trigger": "helper-ui-pillContainer-onItemsChanged",
+      "contents": "cmp.getDef().getHelper().onItemsChanged(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-pillContainer-handlePillEvent",
       "contents": "cmp.getDef().getHelper().handlePillEvent(${1:cmp},${2:event})"
     },
@@ -2718,12 +2906,28 @@
       "contents": "cmp.getDef().getHelper().focusOnInputBox(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-pillContainer-setInputWidth",
+      "contents": "cmp.getDef().getHelper().setInputWidth(${1:cmp},${2:pillInput})"
+    },
+    {
+      "trigger": "helper-ui-pillContainer-_setInputWidthDirectly",
+      "contents": "cmp.getDef().getHelper()._setInputWidthDirectly(${1:cmp},${2:pillInput})"
+    },
+    {
       "trigger": "helper-ui-pillContainer-adjustHeight",
       "contents": "cmp.getDef().getHelper().adjustHeight(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-showMore",
       "contents": "cmp.getDef().getHelper().showMore(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-pillContainer-registerResizeHandler",
+      "contents": "cmp.getDef().getHelper().registerResizeHandler(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-pillContainer-deregisterResizeHandler",
+      "contents": "cmp.getDef().getHelper().deregisterResizeHandler(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-_getActualHeight",
@@ -2746,12 +2950,8 @@
       "contents": "cmp.getDef().getHelper()._deleteItem(${1:cmp},${2:data})"
     },
     {
-      "trigger": "helper-ui-pillContainer-_processPillInserted",
-      "contents": "cmp.getDef().getHelper()._processPillInserted(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-pillContainer-_processPillRemoved",
-      "contents": "cmp.getDef().getHelper()._processPillRemoved(${1:cmp})"
+      "trigger": "helper-ui-pillContainer-_setActiveItem",
+      "contents": "cmp.getDef().getHelper()._setActiveItem(${1:cmp},${2:firstActive})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoComplete-handleEnterKeyOnInput",
@@ -2776,6 +2976,22 @@
     {
       "trigger": "helper-ui-pillContainerAutoComplete-addParentListElementAsInput",
       "contents": "cmp.getDef().getHelper().addParentListElementAsInput(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-pillContainerAutoComplete-handleListExpand",
+      "contents": "cmp.getDef().getHelper().handleListExpand(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-pillContainerAutoComplete-_getPillContainerListElement",
+      "contents": "cmp.getDef().getHelper()._getPillContainerListElement(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-pillContainerAutoComplete-_getPillContainer",
+      "contents": "cmp.getDef().getHelper()._getPillContainer(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-pillContainerAutoComplete-getInputElement",
+      "contents": "cmp.getDef().getHelper().getInputElement(${1:component})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoCompleteOption-displayText",
@@ -3374,6 +3590,14 @@
       "contents": "cmp.getDef().getHelper().setTransform(${1:el},${2:transformValue})"
     },
     {
+      "trigger": "helper-ui-tooltip-initStyle",
+      "contents": "cmp.getDef().getHelper().initStyle(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-tooltip-updateConstraints",
+      "contents": "cmp.getDef().getHelper().updateConstraints(${1:component})"
+    },
+    {
       "trigger": "helper-ui-tooltip-buildTooltip",
       "contents": "cmp.getDef().getHelper().buildTooltip(${1:component})"
     },
@@ -3384,10 +3608,6 @@
     {
       "trigger": "helper-ui-tooltip-_handlePositionEvents",
       "contents": "cmp.getDef().getHelper()._handlePositionEvents(${1:ev},${2:component})"
-    },
-    {
-      "trigger": "helper-ui-tooltip-_canFocus",
-      "contents": "cmp.getDef().getHelper()._canFocus(${1:})"
     },
     {
       "trigger": "helper-ui-tooltip-show",
@@ -3404,6 +3624,10 @@
     {
       "trigger": "helper-ui-tooltip-toggle",
       "contents": "cmp.getDef().getHelper().toggle(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-tooltip-cleanup",
+      "contents": "cmp.getDef().getHelper().cleanup(${1:component})"
     },
     {
       "trigger": "helper-ui-tooltip-makeTrigger",
@@ -3495,7 +3719,11 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_initializeRowTemplate",
-      "contents": "cmp.getDef().getHelper()._initializeRowTemplate(${1:templates})"
+      "contents": "cmp.getDef().getHelper()._initializeRowTemplate(${1:templates},${2:useRowHeader})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_createColumn",
+      "contents": "cmp.getDef().getHelper()._createColumn(${1:elementTemplate},${2:columnTemplate})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_createPassthroughValue",
@@ -3564,6 +3792,10 @@
     {
       "trigger": "helper-ui-virtualDataGrid-sortCallback",
       "contents": "cmp.getDef().getHelper().sortCallback(${1:cmp},${2:response})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-destroyTemplates",
+      "contents": "cmp.getDef().getHelper().destroyTemplates(${1:cmp})"
     },
     {
       "trigger": "helper-ui-virtualList-initialize",
@@ -3750,6 +3982,10 @@
       "contents": "cmp.getDef().getHelper().getTeamAndPlayers(${1:cmp},${2:storable})"
     },
     {
+      "trigger": "helper-auraStorageTest-newComponent-getTeamAndTeam",
+      "contents": "cmp.getDef().getHelper().getTeamAndTeam(${1:cmp},${2:storable})"
+    },
+    {
       "trigger": "helper-auraStorageTest-newComponent-getTeamOnly",
       "contents": "cmp.getDef().getHelper().getTeamOnly(${1:cmp,storable})"
     },
@@ -3802,96 +4038,8 @@
       "contents": "cmp.getDef().getHelper().updateComponentExist(${1:cmp},${2:exist})"
     },
     {
-      "trigger": "helper-auratest-requireWithModel-updateVersion",
+      "trigger": "helper-auratest-requireWithServerAction-updateVersion",
       "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunner-method",
-      "contents": "cmp.getDef().getHelper().method(${1:})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-_parseTestName",
-      "contents": "cmp.getDef().getHelper()._parseTestName(${1:name})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-_parseTestNameSpace",
-      "contents": "cmp.getDef().getHelper()._parseTestNameSpace(${1:ns})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-_parseStatus",
-      "contents": "cmp.getDef().getHelper()._parseStatus(${1:status})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-createRow",
-      "contents": "cmp.getDef().getHelper().createRow(${1:t})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-buildDOM",
-      "contents": "cmp.getDef().getHelper().buildDOM(${1:testArray})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-renderTests",
-      "contents": "cmp.getDef().getHelper().renderTests(${1:testArray},${2:parent})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-attachEvents",
-      "contents": "cmp.getDef().getHelper().attachEvents(${1:cmp},${2:dom})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-showAllSections",
-      "contents": "cmp.getDef().getHelper().showAllSections(${1:})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-toggleIntegrationTests",
-      "contents": "cmp.getDef().getHelper().toggleIntegrationTests(${1:button},${2:dom},${3:e})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-toggleFailTests",
-      "contents": "cmp.getDef().getHelper().toggleFailTests(${1:cmp},${2:button},${3:dom},${4:e})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-toggleSelection",
-      "contents": "cmp.getDef().getHelper().toggleSelection(${1:button},${2:dom},${3:e})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-_updateSelectedTestCount",
-      "contents": "cmp.getDef().getHelper()._updateSelectedTestCount(${1:dom},${2:count})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-calcOrOperators",
-      "contents": "cmp.getDef().getHelper().calcOrOperators(${1:regexp},${2:name})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-calcAndOperators",
-      "contents": "cmp.getDef().getHelper().calcAndOperators(${1:regexp},${2:name})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-filterTests",
-      "contents": "cmp.getDef().getHelper().filterTests(${1:dom},${2:query},${3:logicOps},${4:isCaseSensitive},${5:test_integ},${6:test_unit})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-_getLiFromInput",
-      "contents": "cmp.getDef().getHelper()._getLiFromInput(${1:input})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-runTests",
-      "contents": "cmp.getDef().getHelper().runTests(${1:cmp},${2:dom},${3:e})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-updateStatus",
-      "contents": "cmp.getDef().getHelper().updateStatus(${1:status})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-updateTests",
-      "contents": "cmp.getDef().getHelper().updateTests(${1:result},${2:dom})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-finishTestRun",
-      "contents": "cmp.getDef().getHelper().finishTestRun(${1:cmp},${2:actionResult},${3:dom},${4:success})"
-    },
-    {
-      "trigger": "helper-auratest-testPerfRunnerContainer-pollTestResults",
-      "contents": "cmp.getDef().getHelper().pollTestResults(${1:cmp},${2:containerDOM},${3:previousPollActionForThisTestRunnerAction},${4:testRunnerActionCurrent})"
     },
     {
       "trigger": "helper-componentTest-componentBodyWithChanges-newComponent",
@@ -4078,6 +4226,110 @@
       "contents": "cmp.getDef().getHelper().returnAString(${1:cmp})"
     },
     {
+      "trigger": "helper-test-runner-method",
+      "contents": "cmp.getDef().getHelper().method(${1:})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-_parseTestName",
+      "contents": "cmp.getDef().getHelper()._parseTestName(${1:name})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-_parseTestNameSpace",
+      "contents": "cmp.getDef().getHelper()._parseTestNameSpace(${1:ns})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-_parseStatus",
+      "contents": "cmp.getDef().getHelper()._parseStatus(${1:status})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-createRow",
+      "contents": "cmp.getDef().getHelper().createRow(${1:t})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-buildDOM",
+      "contents": "cmp.getDef().getHelper().buildDOM(${1:testArray})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-renderTests",
+      "contents": "cmp.getDef().getHelper().renderTests(${1:testArray},${2:parent})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-attachEvents",
+      "contents": "cmp.getDef().getHelper().attachEvents(${1:cmp},${2:dom})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-updateTestCountStat",
+      "contents": "cmp.getDef().getHelper().updateTestCountStat(${1:testCountHash})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-getTestTypeArray",
+      "contents": "cmp.getDef().getHelper().getTestTypeArray(${1:})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-createTestTypeFilterControl",
+      "contents": "cmp.getDef().getHelper().createTestTypeFilterControl(${1:toggleTestType},${2:testTypesArray})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-scrollTestContainerToTop",
+      "contents": "cmp.getDef().getHelper().scrollTestContainerToTop(${1:})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-setPageState",
+      "contents": "cmp.getDef().getHelper().setPageState(${1:newText})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-toggleIntegrationTests",
+      "contents": "cmp.getDef().getHelper().toggleIntegrationTests(${1:button},${2:dom},${3:e})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-toggleFailTests",
+      "contents": "cmp.getDef().getHelper().toggleFailTests(${1:cmp},${2:button},${3:dom},${4:e})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-toggleSelection",
+      "contents": "cmp.getDef().getHelper().toggleSelection(${1:select_all_checkbox},${2:dom})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-_updateSelectedTestCount",
+      "contents": "cmp.getDef().getHelper()._updateSelectedTestCount(${1:count})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-calcOrOperators",
+      "contents": "cmp.getDef().getHelper().calcOrOperators(${1:regexp},${2:name})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-calcAndOperators",
+      "contents": "cmp.getDef().getHelper().calcAndOperators(${1:regexp},${2:name})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-filterTests",
+      "contents": "cmp.getDef().getHelper().filterTests(${1:dom},${2:query},${3:logicOps},${4:isCaseSensitive},${5:testTypesArray})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-_getLiFromInput",
+      "contents": "cmp.getDef().getHelper()._getLiFromInput(${1:input})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-runTests",
+      "contents": "cmp.getDef().getHelper().runTests(${1:cmp},${2:dom},${3:e})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-updateStatus",
+      "contents": "cmp.getDef().getHelper().updateStatus(${1:status})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-updateTests",
+      "contents": "cmp.getDef().getHelper().updateTests(${1:result},${2:dom})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-finishTestRun",
+      "contents": "cmp.getDef().getHelper().finishTestRun(${1:cmp},${2:actionResult},${3:dom},${4:success})"
+    },
+    {
+      "trigger": "helper-test-runnerContainer-pollTestResults",
+      "contents": "cmp.getDef().getHelper().pollTestResults(${1:cmp},${2:containerDOM},${3:previousPollActionForThisTestRunnerAction},${4:testRunnerActionCurrent})"
+    },
+    {
       "trigger": "helper-test-testActionCallbacks-runTest",
       "contents": "cmp.getDef().getHelper().runTest(${1:component},${2:action},${3:callback},${4:expected})"
     },
@@ -4232,6 +4484,10 @@
     {
       "trigger": "helper-uitest-dataGrid_TestDataProvider-createTasks",
       "contents": "cmp.getDef().getHelper().createTasks(${1:cmp},${2:currentPage},${3:pageSize})"
+    },
+    {
+      "trigger": "helper-uitest-datePicker_PositioningTest-move",
+      "contents": "cmp.getDef().getHelper().move(${1:cmp},${2:direction})"
     },
     {
       "trigger": "helper-uitest-image_ErrorTest-hideImage",
@@ -4440,6 +4696,14 @@
     {
       "trigger": "helper-uitest-scroller_BidirectionalTest-handleScrollBy",
       "contents": "cmp.getDef().getHelper().handleScrollBy(${1:scrollEvt},${2:deltaX},${3:deltaY},${4:time})"
+    },
+    {
+      "trigger": "helper-uitest-scroller_InfiniteLoading-generateListItems",
+      "contents": "cmp.getDef().getHelper().generateListItems(${1:startIndex},${2:listSize},${3:callback})"
+    },
+    {
+      "trigger": "helper-uitest-scroller_InfiniteLoading-generateListItem",
+      "contents": "cmp.getDef().getHelper().generateListItem(${1:index})"
     },
     {
       "trigger": "helper-uitest-scroller_Test-handleScrollTo",

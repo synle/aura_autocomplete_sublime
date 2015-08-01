@@ -103,7 +103,7 @@
     },
     {
       "trigger": "aura-template\tTag Full",
-      "contents": "aura:template title=\"${1:Optional - String}\" auraStyleTags=\"${2:Optional - String}\" auraScriptTags=\"${3:Optional - String}\" auraBaseScriptTags=\"${4:Optional - String}\" auraNamespacesScriptTags=\"${5:Optional - String}\" auraResetCss=\"${6:Optional - String}\" auraInlineStyle=\"${7:Optional - String}\" auraInit=\"${8:Optional - String}\" auraInitSync=\"${9:Optional - String}\" auraPreInitBlock=\"${10:Optional - Aura.Component[]}\" auraInitBlock=\"${11:Optional - Aura.Component[]}\" autoInitialize=\"${12:Optional - String}\" autoInitializeSync=\"${13:Optional - String}\" doctype=\"${14:Optional - String}\" loadingText=\"${15:Optional - String}\" errorTitle=\"${16:Optional - String}\" errorMessage=\"${17:Optional - String}\" defaultBodyClass=\"${18:Optional - String}\" bodyClass=\"${19:Optional - String}\" extraStyleTags=\"${20:Optional - Aura.Component[]}\" extraScriptTags=\"${21:Optional - Aura.Component[]}\" extraMetaTags=\"${22:Optional - Aura.Component[]}\" normalizeCss=\"${23:Optional - Boolean}\" forceError=\"${24:Optional - Boolean}\" manifest=\"${25:Optional - String}\" lastMod=\"${26:Optional - String}\" afterAuraInit=\"${27:Optional - String}\" inlineStyle=\"${28:Optional - Aura.Component[]}\" appcacheProgressBarStyle=\"${29:Optional - Aura.Component[]}\">${30:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
+      "contents": "aura:template title=\"${1:Optional - String}\" auraStyleTags=\"${2:Optional - String}\" auraScriptTags=\"${3:Optional - String}\" auraBaseScriptTags=\"${4:Optional - String}\" auraNamespacesScriptTags=\"${5:Optional - String}\" auraResetCss=\"${6:Optional - String}\" auraInlineStyle=\"${7:Optional - String}\" auraInit=\"${8:Optional - String}\" auraInitSync=\"${9:Optional - String}\" auraPreInitBlock=\"${10:Optional - Aura.Component[]}\" auraInitBlock=\"${11:Optional - Aura.Component[]}\" autoInitialize=\"${12:Optional - String}\" autoInitializeSync=\"${13:Optional - String}\" doctype=\"${14:Optional - String}\" loadingText=\"${15:Optional - String}\" errorTitle=\"${16:Optional - String}\" errorMessage=\"${17:Optional - String}\" defaultBodyClass=\"${18:Optional - String}\" bodyClass=\"${19:Optional - String}\" extraStyleTags=\"${20:Optional - Aura.Component[]}\" extraScriptTags=\"${21:Optional - Aura.Component[]}\" extraMetaTags=\"${22:Optional - Aura.Component[]}\" normalizeCss=\"${23:Optional - Boolean}\" forceError=\"${24:Optional - Boolean}\" manifest=\"${25:Optional - String}\" lastMod=\"${26:Optional - String}\" afterAuraInit=\"${27:Optional - String}\" auraLoading=\"${28:Optional - Aura.Component[]}\" inlineStyle=\"${29:Optional - Aura.Component[]}\" appcacheProgressBarStyle=\"${30:Optional - Aura.Component[]}\">${31:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
     },
     {
       "trigger": "aura-text\tTag Simple",
@@ -131,11 +131,11 @@
     },
     {
       "trigger": "auraStorage-init\tTag Simple",
-      "contents": "auraStorage:init$1>${2:}</auraStorage:init>"
+      "contents": "auraStorage:init$1>${2:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
     },
     {
       "trigger": "auraStorage-init\tTag Full",
-      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" requireUseStorageQueryParam=\"${9:Optional - Boolean}\" version=\"${10:Optional - String}\">${11:}</auraStorage:init>"
+      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" requireUseStorageQueryParam=\"${9:Optional - Boolean}\" version=\"${10:Optional - String}\">${11:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
     },
     {
       "trigger": "auraadmin-cacheView\tTag Simple",
@@ -183,7 +183,7 @@
     },
     {
       "trigger": "auradev-componentClass\tTag Full",
-      "contents": "auradev:componentClass fullyQualifiedName=\"${1:Required - String}\" superFullyQualifiedName=\"${2:Required - String}\" className=\"${3:Required - String}\" superClassName=\"${4:Required - String}\" helperProperties=\"${5:Required - java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>}\" renderMethods=\"${6:Required - java://List<org.auraframework.util.json.JsFunction>}\" renderMethodStubs=\"${7:Required - String[]}\" superRenderMethodNames=\"${8:Required - java://List<org.auraframework.impl.ServerServiceImpl.RerenderInfo>}\" rootComponent=\"${9:Required - Boolean}\">${10:Renders the concrete javascript class for a component.}</auradev:componentClass>"
+      "contents": "auradev:componentClass fullyQualifiedName=\"${1:Required - String}\" superFullyQualifiedName=\"${2:Required - String}\" className=\"${3:Required - String}\" superClassName=\"${4:Required - String}\" helperProperties=\"${5:Required - java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>}\" renderMethods=\"${6:Required - java://List<org.auraframework.util.json.JsFunction>}\" isRootComponent=\"${7:Required - Boolean}\" hasSuperClass=\"${8:Required - Boolean}\" hasUnrenderMethod=\"${9:Required - Boolean}\">${10:Renders the concrete javascript class for a component.}</auradev:componentClass>"
     },
     {
       "trigger": "auradev-createApplicationDefQuickFix\tTag Simple",
@@ -1135,7 +1135,7 @@
     },
     {
       "trigger": "aurajstest-jstestCase\tTag Full",
-      "contents": "aurajstest:jstestCase case=\"${1:Optional - java://org.auraframework.def.TestCaseDef}\" suite=\"${2:Optional - java://org.auraframework.def.TestSuiteDef}\" url=\"${3:Optional - String}\" status=\"${4:Optional - String}\" done=\"${5:Optional - aurajstest:testStatus}\">${6:}</aurajstest:jstestCase>"
+      "contents": "aurajstest:jstestCase case=\"${1:Optional - java://org.auraframework.def.TestCaseDef}\" suite=\"${2:Optional - java://org.auraframework.def.TestSuiteDef}\" shortName=\"${3:Optional - String}\" url=\"${4:Optional - String}\" status=\"${5:Optional - String}\" individualTestUrl=\"${6:Optional - String}\" done=\"${7:Optional - aurajstest:testStatus}\">${8:}</aurajstest:jstestCase>"
     },
     {
       "trigger": "ui-abstractDataGrid\tTag Simple",
@@ -1215,7 +1215,7 @@
     },
     {
       "trigger": "ui-autocomplete\tTag Full",
-      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" listOption=\"${2:Required - Aura.ComponentDefRef[]}\" optionVar=\"${3:Required - String}\" emptyListContent=\"${4:Optional - Aura.Component[]}\" loadingIndicator=\"${5:Optional - Aura.Component[]}\" inputClass=\"${6:Optional - String}\" inputType=\"${7:Optional - String}\" placeholder=\"${8:Optional - String}\" propertyToMatch=\"${9:Optional - String}\" theme=\"${10:Optional - String}\" matchFunc=\"${11:Optional - Aura.Action}\" autocompleteButton=\"${12:Optional - Aura.Component[]}\" header=\"${13:Optional - Aura.Component[]}\" footer=\"${14:Optional - Aura.Component[]}\" matchDone=\"${15:Optional - ui:matchDone}\" inputChange=\"${16:Optional - ui:inputChange}\" selectListOption=\"${17:Optional - ui:selectListOption}\" fetchData=\"${18:Optional - ui:fetchData}\" matchText=\"${19:Optional - ui:matchText}\">${20:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
+      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" listOption=\"${2:Required - Aura.ComponentDefRef[]}\" optionVar=\"${3:Required - String}\" emptyListContent=\"${4:Optional - Aura.Component[]}\" loadingIndicator=\"${5:Optional - Aura.Component[]}\" inputClass=\"${6:Optional - String}\" inputType=\"${7:Optional - String}\" placeholder=\"${8:Optional - String}\" propertyToMatch=\"${9:Optional - String}\" theme=\"${10:Optional - String}\" matchFunc=\"${11:Optional - Aura.Action}\" autocompleteButton=\"${12:Optional - Aura.Component[]}\" header=\"${13:Optional - Aura.Component[]}\" footer=\"${14:Optional - Aura.Component[]}\" usePanel=\"${15:Optional - boolean}\" matchDone=\"${16:Optional - ui:matchDone}\" inputChange=\"${17:Optional - ui:inputChange}\" selectListOption=\"${18:Optional - ui:selectListOption}\" fetchData=\"${19:Optional - ui:fetchData}\" matchText=\"${20:Optional - ui:matchText}\">${21:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
     },
     {
       "trigger": "ui-autocompleteList\tTag Simple",
@@ -1223,7 +1223,7 @@
     },
     {
       "trigger": "ui-autocompleteList\tTag Full",
-      "contents": "ui:autocompleteList ignoredElements=\"${1:Optional - Object}\" keyword=\"${2:Optional - String}\" propertyToMatch=\"${3:Optional - String}\" theme=\"${4:Optional - String}\" matchFunc=\"${5:Optional - Aura.Action}\" matchDone=\"${6:Optional - ui:matchDone}\" listHighlight=\"${7:Optional - ui:listHighlight}\" matchText=\"${8:Optional - ui:matchText}\" pressOnHighlighted=\"${9:Optional - ui:press}\" selectListOption=\"${10:Optional - ui:selectListOption}\" updateAriaAttributes=\"${11:Optional - ui:updateAriaAttributes}\">${12:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
+      "contents": "ui:autocompleteList ignoredElements=\"${1:Optional - Object}\" keyword=\"${2:Optional - String}\" propertyToMatch=\"${3:Optional - String}\" theme=\"${4:Optional - String}\" matchFunc=\"${5:Optional - Aura.Action}\" matchDone=\"${6:Optional - ui:matchDone}\" listHighlight=\"${7:Optional - ui:listHighlight}\" matchText=\"${8:Optional - ui:matchText}\" pressOnHighlighted=\"${9:Optional - ui:press}\" selectListOption=\"${10:Optional - ui:selectListOption}\" updateAriaAttributes=\"${11:Optional - ui:updateAriaAttributes}\" listExpand=\"${12:Optional - ui:autocompleteListExpand}\">${13:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
     },
     {
       "trigger": "ui-autocompleteOption\tTag Simple",
@@ -1232,6 +1232,14 @@
     {
       "trigger": "ui-autocompleteOption\tTag Full",
       "contents": "ui:autocompleteOption label=\"${1:Required - String}\" displayText=\"${2:Optional - String}\" theme=\"${3:Optional - String}\" domId=\"${4:Optional - String}\">${5:Implements ui:autocompleteOptionTemplate.\tThis component represents list options in an ui:autocomplete component. The options are displayed when an input keyword matches an item in the data provider.}</ui:autocompleteOption>"
+    },
+    {
+      "trigger": "ui-autocompletePanel\tTag Simple",
+      "contents": "ui:autocompletePanel$1>${2:}</ui:autocompletePanel>"
+    },
+    {
+      "trigger": "ui-autocompletePanel\tTag Full",
+      "contents": "ui:autocompletePanel referenceElement=\"${1:Optional - Object}\" visible=\"${2:Optional - boolean}\" zIndex=\"${3:Optional - Integer}\">${4:}</ui:autocompletePanel>"
     },
     {
       "trigger": "ui-block\tTag Simple",
@@ -1247,7 +1255,7 @@
     },
     {
       "trigger": "ui-button\tTag Full",
-      "contents": "ui:button label=\"${1:Required - String}\" buttonTitle=\"${2:Optional - String}\" buttonType=\"${3:Optional - String}\" class=\"${4:Optional - String}\" labelClass=\"${5:Optional - String}\" labelDisplay=\"${6:Optional - Boolean}\" iconImgSrc=\"${7:Optional - String}\" iconClass=\"${8:Optional - String}\" disabled=\"${9:Optional - Boolean}\" accesskey=\"${10:Optional - String}\" labelDir=\"${11:Optional - String}\" stopPropagation=\"${12:Optional - Boolean}\" tabIndex=\"${13:Optional - Integer}\" keydown=\"${14:Optional - ui:keydown}\" press=\"${15:Optional - ui:press}\">${16:Represents a button element.}</ui:button>"
+      "contents": "ui:button label=\"${1:Required - String}\" buttonTitle=\"${2:Optional - String}\" buttonType=\"${3:Optional - String}\" class=\"${4:Optional - String}\" labelClass=\"${5:Optional - String}\" labelDisplay=\"${6:Optional - Boolean}\" iconImgSrc=\"${7:Optional - String}\" iconClass=\"${8:Optional - String}\" selectedClass=\"${9:Optional - String}\" notSelectedClass=\"${10:Optional - String}\" disabled=\"${11:Optional - Boolean}\" accesskey=\"${12:Optional - String}\" labelDir=\"${13:Optional - String}\" stopPropagation=\"${14:Optional - Boolean}\" tabIndex=\"${15:Optional - Integer}\" stateful=\"${16:Optional - Boolean}\" selected=\"${17:Optional - Boolean}\" keydown=\"${18:Optional - ui:keydown}\" press=\"${19:Optional - ui:press}\" mouseover=\"${20:Optional - ui:mouseover}\" mouseout=\"${21:Optional - ui:mouseout}\" focus=\"${22:Optional - ui:focus}\" blur=\"${23:Optional - ui:blur}\">${24:Represents a button element.}</ui:button>"
     },
     {
       "trigger": "ui-calendar\tTag Simple",
@@ -1487,7 +1495,7 @@
     },
     {
       "trigger": "ui-draggable\tTag Full",
-      "contents": "ui:draggable type=\"${1:Optional - String}\" dataTransfer=\"${2:Optional - Map}\" class=\"${3:Optional - String}\" dragClass=\"${4:Optional - String}\" dragAccessibilityClass=\"${5:Optional - String}\" dragImageClass=\"${6:Optional - String}\" disable=\"${7:Optional - Boolean}\" accessibilityComponent=\"${8:Optional - String}\" isSuccessful=\"${9:Optional - Boolean}\" isValid=\"${10:Optional - Boolean}\" isInAccessibilityMode=\"${11:Optional - Boolean}\" dragStart=\"${12:Optional - ui:dragEvent}\" dragEnd=\"${13:Optional - ui:dragEvent}\" dropComplete=\"${14:Optional - ui:dragEvent}\">${15:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
+      "contents": "ui:draggable type=\"${1:Optional - String}\" dataTransfer=\"${2:Optional - Map}\" class=\"${3:Optional - String}\" dragClass=\"${4:Optional - String}\" dragAccessibilityClass=\"${5:Optional - String}\" dragImageClass=\"${6:Optional - String}\" disable=\"${7:Optional - Boolean}\" accessibilityComponent=\"${8:Optional - String}\" isSuccessful=\"${9:Optional - Boolean}\" target=\"${10:Optional - Object}\" isValid=\"${11:Optional - Boolean}\" isInAccessibilityMode=\"${12:Optional - Boolean}\" dragStart=\"${13:Optional - ui:dragEvent}\" dragEnd=\"${14:Optional - ui:dragEvent}\" dropComplete=\"${15:Optional - ui:dragEvent}\">${16:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
     },
     {
       "trigger": "ui-dropzone\tTag Simple",
@@ -1495,7 +1503,7 @@
     },
     {
       "trigger": "ui-dropzone\tTag Full",
-      "contents": "ui:dropzone dragComponents=\"${1:Required - Aura.Component[]}\" types=\"${2:Optional - String[]}\" dragOverInterval=\"${3:Optional - Integer}\" class=\"${4:Optional - String}\" dragOverClass=\"${5:Optional - String}\" dragOverAccessibilityClass=\"${6:Optional - String}\" label=\"${7:Optional - String}\" isInAccessibilityMode=\"${8:Optional - Boolean}\" isInAccessibilityMode=\"${9:Optional - Boolean}\" isInAccessibilityMode=\"${10:Optional - Boolean}\" dragEnter=\"${11:Optional - ui:dragEvent}\" dragOver=\"${12:Optional - ui:dragEvent}\" dragLeave=\"${13:Optional - ui:dragEvent}\" drop=\"${14:Optional - ui:dragEvent}\">${15:Implements ui:hasContextComponent.\tComponent that could be a drop target in drag and drop operation.}</ui:dropzone>"
+      "contents": "ui:dropzone dragComponents=\"${1:Required - Aura.Component[]}\" types=\"${2:Optional - String[]}\" dragOverInterval=\"${3:Optional - Integer}\" class=\"${4:Optional - String}\" dragOverClass=\"${5:Optional - String}\" dragOverAccessibilityClass=\"${6:Optional - String}\" label=\"${7:Optional - String}\" target=\"${8:Optional - Object}\" isInAccessibilityMode=\"${9:Optional - Boolean}\" target=\"${10:Optional - Object}\" isInAccessibilityMode=\"${11:Optional - Boolean}\" target=\"${12:Optional - Object}\" isInAccessibilityMode=\"${13:Optional - Boolean}\" dragEnter=\"${14:Optional - ui:dragEvent}\" dragOver=\"${15:Optional - ui:dragEvent}\" dragLeave=\"${16:Optional - ui:dragEvent}\" drop=\"${17:Optional - ui:dragEvent}\">${18:Implements ui:hasContextComponent.\tComponent that could be a drop target in drag and drop operation.}</ui:dropzone>"
     },
     {
       "trigger": "ui-fieldLabel\tTag Simple",
@@ -1579,11 +1587,11 @@
     },
     {
       "trigger": "ui-inputDateTime\tTag Simple",
-      "contents": "ui:inputDateTime$1>${2:Implements ui:inputDateComponent.\tAn input field for entering a date and time.}</ui:inputDateTime>"
+      "contents": "ui:inputDateTime$1>${2:Implements ui:inputDateTimeComponent.\tAn input field for entering a date and time.}</ui:inputDateTime>"
     },
     {
       "trigger": "ui-inputDateTime\tTag Full",
-      "contents": "ui:inputDateTime value=\"${1:Optional - String}\" placeholder=\"${2:Optional - String}\" timezone=\"${3:Optional - String}\" openPicker=\"${4:Optional - ui:openPicker}\">${5:Implements ui:inputDateComponent.\tAn input field for entering a date and time.}</ui:inputDateTime>"
+      "contents": "ui:inputDateTime useSingleInput=\"${1:Optional - Boolean}\" value=\"${2:Optional - String}\" placeholder=\"${3:Optional - String}\" timePlaceholder=\"${4:Optional - String}\" openPicker=\"${5:Optional - ui:openPicker}\">${6:Implements ui:inputDateTimeComponent.\tAn input field for entering a date and time.}</ui:inputDateTime>"
     },
     {
       "trigger": "ui-inputDateTrigger\tTag Simple",
@@ -1746,6 +1754,14 @@
       "contents": "ui:inputTextForAutocomplete autocompleteButton=\"${1:Optional - Aura.Component[]}\" ariaExpanded=\"${2:Optional - String}\" ariaActiveDescendant=\"${3:Optional - String}\">${4:Implements ui:inputTextComponent.\tThis component is used as input text in a ui:autocomplete component.}</ui:inputTextForAutocomplete>"
     },
     {
+      "trigger": "ui-inputTimePicker\tTag Simple",
+      "contents": "ui:inputTimePicker$1>${2:Implements ui:visible.\tA time picker which can be used in datePicker to select both date and time}</ui:inputTimePicker>"
+    },
+    {
+      "trigger": "ui-inputTimePicker\tTag Full",
+      "contents": "ui:inputTimePicker timeFormat=\"${1:Optional - String}\" langLocale=\"${2:Optional - String}\" hours=\"${3:Optional - Integer}\" minutes=\"${4:Optional - Integer}\" interval=\"${5:Optional - Integer}\" visible=\"${6:Optional - Boolean}\" referenceElement=\"${7:Optional - Object}\" selectDate=\"${8:Optional - ui:selectDate}\">${9:Implements ui:visible.\tA time picker which can be used in datePicker to select both date and time}</ui:inputTimePicker>"
+    },
+    {
       "trigger": "ui-inputURL\tTag Simple",
       "contents": "ui:inputURL$1>${2:Implements ui:inputTextComponent.\tAn input field for entering a URL.}</ui:inputURL>"
     },
@@ -1903,7 +1919,7 @@
     },
     {
       "trigger": "ui-menuList\tTag Full",
-      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" childMenuItems=\"${5:Optional - Aura.Component[]}\" menuCollapse=\"${6:Optional - ui:collapse}\" menuExpand=\"${7:Optional - ui:expand}\" menuSelect=\"${8:Optional - ui:menuSelect}\" menuFocusChange=\"${9:Optional - ui:menuFocusChange}\" refresh=\"${10:Optional - ui:refresh}\">${11:Implements ui:visible.\tA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuTrigger\tTag Simple",
@@ -1919,7 +1935,7 @@
     },
     {
       "trigger": "ui-menuTriggerLink\tTag Full",
-      "contents": "ui:menuTriggerLink label=\"${1:Optional - String}\">${2:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
+      "contents": "ui:menuTriggerLink label=\"${1:Optional - String}\" menuTriggerPress=\"${2:Optional - ui:menuTriggerPress}\">${3:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
     },
     {
       "trigger": "ui-message\tTag Simple",
@@ -1935,7 +1951,7 @@
     },
     {
       "trigger": "ui-modal\tTag Full",
-      "contents": "ui:modal title=\"${1:Optional - String}\" titleDisplay=\"${2:Optional - Boolean}\" class=\"${3:Optional - String}\" startOfDialogLabel=\"${4:Optional - String}\" showCloseButton=\"${5:Optional - Boolean}\" closeDialogLabel=\"${6:Optional - String}\" useTransition=\"${7:Optional - Boolean}\" animation=\"${8:Optional - String}\" closeAnimation=\"${9:Optional - String}\" autoFocus=\"${10:Optional - Boolean}\" closeButton=\"${11:Optional - Aura.Component[]}\">${12:Implements ui:panelType.\t}</ui:modal>"
+      "contents": "ui:modal title=\"${1:Optional - String}\" titleDisplay=\"${2:Optional - Boolean}\" class=\"${3:Optional - String}\" startOfDialogLabel=\"${4:Optional - String}\" showCloseButton=\"${5:Optional - Boolean}\" closeButton=\"${6:Optional - Aura.Component[]}\" closeAction=\"${7:Optional - Object}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\">${13:Implements ui:panelType.\t}</ui:modal>"
     },
     {
       "trigger": "ui-output\tTag Simple",
@@ -2151,15 +2167,15 @@
     },
     {
       "trigger": "ui-pill\tTag Full",
-      "contents": "ui:pill label=\"${1:Optional - String}\" id=\"${2:Optional - String}\" showDelete=\"${3:Optional - Boolean}\" iconUrl=\"${4:Optional - String}\" accessibleDeleteLabel=\"${5:Optional - String}\" maxCharacters=\"${6:Optional - Integer}\" onHandledEvent=\"${7:Optional - ui:response}\" keydown=\"${8:Optional - ui:keydown}\" blur=\"${9:Optional - ui:blur}\">${10:Implements ui:visible, ui:focusable.\tA UI pill in a ui:pillContainer component}</ui:pill>"
+      "contents": "ui:pill label=\"${1:Optional - String}\" id=\"${2:Optional - String}\" showDelete=\"${3:Optional - Boolean}\" iconUrl=\"${4:Optional - String}\" iconBackgroundColor=\"${5:Optional - String}\" accessibleDeleteLabel=\"${6:Optional - String}\" maxCharacters=\"${7:Optional - Integer}\" active=\"${8:Optional - Boolean}\" onHandledEvent=\"${9:Optional - ui:response}\" keydown=\"${10:Optional - ui:keydown}\" blur=\"${11:Optional - ui:blur}\">${12:Implements ui:visible, ui:focusable.\tA UI pill in a ui:pillContainer component}</ui:pill>"
     },
     {
       "trigger": "ui-pillContainer\tTag Simple",
-      "contents": "ui:pillContainer$1>${2:A container for ui:pill}</ui:pillContainer>"
+      "contents": "ui:pillContainer$1>${2:Implements ui:focusable.\tA container for ui:pill}</ui:pillContainer>"
     },
     {
       "trigger": "ui-pillContainer\tTag Full",
-      "contents": "ui:pillContainer items=\"${1:Optional - List}\" maxAllowed=\"${2:Optional - Integer}\" maxCharactersInPill=\"${3:Optional - Integer}\" maxLines=\"${4:Optional - Integer}\" focusOnInput=\"${5:Optional - Boolean}\" allowRemove=\"${6:Optional - Boolean}\" pillInput=\"${7:Optional - Aura.Component[]}\" showMoreLabel=\"${8:Optional - String}\" pillFlavor=\"${9:Optional - String}\" items=\"${10:Optional - List}\" pillInserted=\"${11:Optional - ui:response}\" pillRemoved=\"${12:Optional - ui:response}\">${13:A container for ui:pill}</ui:pillContainer>"
+      "contents": "ui:pillContainer items=\"${1:Optional - List}\" maxAllowed=\"${2:Optional - Integer}\" maxLines=\"${3:Optional - Integer}\" focusOnInput=\"${4:Optional - Boolean}\" allowRemove=\"${5:Optional - Boolean}\" pillInput=\"${6:Optional - Aura.Component[]}\" showMoreLabel=\"${7:Optional - String}\" pillFlavor=\"${8:Optional - String}\" assistiveTextLabel=\"${9:Optional - String}\" items=\"${10:Optional - List}\" pillInserted=\"${11:Optional - ui:response}\" pillRemoved=\"${12:Optional - ui:response}\">${13:Implements ui:focusable.\tA container for ui:pill}</ui:pillContainer>"
     },
     {
       "trigger": "ui-pillContainerAutoComplete\tTag Simple",
@@ -2175,7 +2191,7 @@
     },
     {
       "trigger": "ui-pillContainerAutoCompleteOption\tTag Full",
-      "contents": "ui:pillContainerAutoCompleteOption iconUrl=\"${1:Optional - String}\">${2:Auto complete component for use in a ui:pillContainer}</ui:pillContainerAutoCompleteOption>"
+      "contents": "ui:pillContainerAutoCompleteOption iconUrl=\"${1:Optional - String}\" iconBackgroundColor=\"${2:Optional - String}\">${3:Auto complete component for use in a ui:pillContainer}</ui:pillContainerAutoCompleteOption>"
     },
     {
       "trigger": "ui-popup\tTag Simple",
@@ -2191,7 +2207,7 @@
     },
     {
       "trigger": "ui-popupTarget\tTag Full",
-      "contents": "ui:popupTarget visible=\"${1:Optional - Boolean}\" closeOnTabKey=\"${2:Optional - Boolean}\" autoPosition=\"${3:Optional - Boolean}\" manualPosition=\"${4:Optional - Boolean}\" attachToBody=\"${5:Optional - Boolean}\" referenceElement=\"${6:Optional - Object}\" curtain=\"${7:Optional - Boolean}\" closeOnClickOutside=\"${8:Optional - Boolean}\" closeOnClickInside=\"${9:Optional - Boolean}\" preTransitionClass=\"${10:Optional - String}\" popupCollapse=\"${11:Optional - ui:collapse}\" popupExpand=\"${12:Optional - ui:expand}\" popupKeyboardEvent=\"${13:Optional - ui:popupKeyboardEvent}\" doClose=\"${14:Optional - ui:collapse}\">${15:Implements ui:visible.\tA container that is displayed in response to a trigger event. If used in a mobile context, it is recommended that curtain be set to true to prevent nested iframes from consuming the closeOnClickOutside event.}</ui:popupTarget>"
+      "contents": "ui:popupTarget visible=\"${1:Optional - Boolean}\" closeOnTabKey=\"${2:Optional - Boolean}\" autoPosition=\"${3:Optional - Boolean}\" manualPosition=\"${4:Optional - Boolean}\" attachToBody=\"${5:Optional - Boolean}\" referenceElement=\"${6:Optional - Object}\" curtain=\"${7:Optional - Boolean}\" closeOnClickOutside=\"${8:Optional - Boolean}\" closeOnClickInside=\"${9:Optional - Boolean}\" preTransitionClass=\"${10:Optional - String}\" showNubbin=\"${11:Optional - Boolean}\" popupCollapse=\"${12:Optional - ui:collapse}\" popupExpand=\"${13:Optional - ui:expand}\" popupKeyboardEvent=\"${14:Optional - ui:popupKeyboardEvent}\" doClose=\"${15:Optional - ui:collapse}\">${16:Implements ui:visible.\tA container that is displayed in response to a trigger event. If used in a mobile context, it is recommended that curtain be set to true to prevent nested iframes from consuming the closeOnClickOutside event.}</ui:popupTarget>"
     },
     {
       "trigger": "ui-popupTrigger\tTag Simple",
@@ -2231,7 +2247,7 @@
     },
     {
       "trigger": "ui-scroller\tTag Full",
-      "contents": "ui:scroller scroll=\"${1:Optional - String}\" enabled=\"${2:Optional - Boolean}\" useCSSTransition=\"${3:Optional - Boolean}\" useNativeScroller=\"${4:Optional - Boolean}\" preventNestedScroll=\"${5:Optional - Boolean}\" preventDefaultOnMove=\"${6:Optional - Boolean}\" debounce=\"${7:Optional - Boolean}\" snap=\"${8:Optional - Boolean}\" endless=\"${9:Optional - Boolean}\" snapType=\"${10:Optional - String}\" plugins=\"${11:Optional - String}\" gpuOptimization=\"${12:Optional - Boolean}\" bindEventsToScroller=\"${13:Optional - Boolean}\" showScrollbars=\"${14:Optional - Boolean}\" canShowMore=\"${15:Optional - Boolean}\" canRefresh=\"${16:Optional - Boolean}\" width=\"${17:Optional - Integer}\" height=\"${18:Optional - Integer}\" itemWidth=\"${19:Optional - Integer}\" itemHeight=\"${20:Optional - Integer}\" class=\"${21:Optional - String}\" scrollContentClass=\"${22:Optional - String}\" minThreshold=\"${23:Optional - Integer}\" minDirectionThreshold=\"${24:Optional - Integer}\" lockOnDirection=\"${25:Optional - String}\" onBeforeScrollStart=\"${26:Optional - Aura.Action}\" onScrollStart=\"${27:Optional - Aura.Action}\" onScrollEnd=\"${28:Optional - Aura.Action}\" onScrollMove=\"${29:Optional - Aura.Action}\" onPullToShowMore=\"${30:Optional - Aura.Action}\" onPullToRefresh=\"${31:Optional - Aura.Action}\" infiniteLoading=\"${32:Optional - Boolean}\" infiniteLoadingThreshold=\"${33:Optional - Integer}\" infiniteLoadingDataProvider=\"${34:Optional - Aura.Action}\" pullToShowMoreClick=\"${35:Optional - String}\" pullToShowMorePull=\"${36:Optional - String}\" pullToShowMoreRelease=\"${37:Optional - String}\" pullToShowMoreUpdating=\"${38:Optional - String}\" pullToShowMoreSubtitle=\"${39:Optional - String}\" pullToShowMoreError=\"${40:Optional - String}\" pullToRefreshClick=\"${41:Optional - String}\" pullToRefreshPull=\"${42:Optional - String}\" pullToRefreshRelease=\"${43:Optional - String}\" pullToRefreshUpdating=\"${44:Optional - String}\" pullToRefreshError=\"${45:Optional - String}\" pullToRefreshSubtitle=\"${46:Optional - String}\" scrollButtonUp=\"${47:Optional - String}\" scrollButtonDown=\"${48:Optional - String}\" scrollButtonLeft=\"${49:Optional - String}\" scrollButtonRight=\"${50:Optional - String}\" supportVoiceOver=\"${51:Optional - Boolean}\" scrollTo=\"${52:Optional - ui:scrollTo}\" scrollBy=\"${53:Optional - ui:scrollBy}\">${54:A scrollable view with scroll bars and pull-to-refresh support}</ui:scroller>"
+      "contents": "ui:scroller scroll=\"${1:Optional - String}\" enabled=\"${2:Optional - Boolean}\" useCSSTransition=\"${3:Optional - Boolean}\" useNativeScroller=\"${4:Optional - Boolean}\" preventNestedScroll=\"${5:Optional - Boolean}\" preventDefaultOnMove=\"${6:Optional - Boolean}\" debounce=\"${7:Optional - Boolean}\" snap=\"${8:Optional - Boolean}\" endless=\"${9:Optional - Boolean}\" snapType=\"${10:Optional - String}\" plugins=\"${11:Optional - String}\" gpuOptimization=\"${12:Optional - Boolean}\" bindEventsToScroller=\"${13:Optional - Boolean}\" showScrollbars=\"${14:Optional - Boolean}\" canShowMore=\"${15:Optional - Boolean}\" canRefresh=\"${16:Optional - Boolean}\" width=\"${17:Optional - Integer}\" height=\"${18:Optional - Integer}\" itemWidth=\"${19:Optional - Integer}\" itemHeight=\"${20:Optional - Integer}\" class=\"${21:Optional - String}\" scrollContentClass=\"${22:Optional - String}\" minThreshold=\"${23:Optional - Integer}\" minDirectionThreshold=\"${24:Optional - Integer}\" lockOnDirection=\"${25:Optional - String}\" onBeforeScrollStart=\"${26:Optional - Aura.Action}\" onScrollStart=\"${27:Optional - Aura.Action}\" onScrollEnd=\"${28:Optional - Aura.Action}\" onScrollMove=\"${29:Optional - Aura.Action}\" onPullToShowMore=\"${30:Optional - Aura.Action}\" onPullToRefresh=\"${31:Optional - Aura.Action}\" infiniteLoading=\"${32:Optional - Boolean}\" infiniteLoadingThreshold=\"${33:Optional - Integer}\" infiniteLoadingDataProvider=\"${34:Optional - Aura.Action}\" infiniteLoadingNoDataLabel=\"${35:Optional - String}\" infiniteLoadingIdleLabel=\"${36:Optional - String}\" infiniteLoadingLoadingLabel=\"${37:Optional - String}\" pullToShowMoreClick=\"${38:Optional - String}\" pullToShowMorePull=\"${39:Optional - String}\" pullToShowMoreRelease=\"${40:Optional - String}\" pullToShowMoreUpdating=\"${41:Optional - String}\" pullToShowMoreSubtitle=\"${42:Optional - String}\" pullToShowMoreError=\"${43:Optional - String}\" pullToRefreshClick=\"${44:Optional - String}\" pullToRefreshPull=\"${45:Optional - String}\" pullToRefreshRelease=\"${46:Optional - String}\" pullToRefreshUpdating=\"${47:Optional - String}\" pullToRefreshError=\"${48:Optional - String}\" pullToRefreshSubtitle=\"${49:Optional - String}\" scrollButtonUp=\"${50:Optional - String}\" scrollButtonDown=\"${51:Optional - String}\" scrollButtonLeft=\"${52:Optional - String}\" scrollButtonRight=\"${53:Optional - String}\" supportVoiceOver=\"${54:Optional - Boolean}\" scrollTo=\"${55:Optional - ui:scrollTo}\" scrollBy=\"${56:Optional - ui:scrollBy}\">${57:A scrollable view with scroll bars and pull-to-refresh support}</ui:scroller>"
     },
     {
       "trigger": "ui-scrollerDeprecated\tTag Simple",
@@ -2263,7 +2279,7 @@
     },
     {
       "trigger": "ui-tab\tTag Full",
-      "contents": "ui:tab class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" name=\"${3:Optional - String}\" icon=\"${4:Optional - Aura.Component[]}\" scroll=\"${5:Optional - Boolean}\" active=\"${6:Optional - Boolean}\" iconClass=\"${7:Optional - String}\" closable=\"${8:Optional - Boolean}\" ariaControlId=\"${9:Optional - String}\" beforeActivate=\"${10:Optional - ui:tabsetEvent}\" onActivated=\"${11:Optional - ui:tabsetEvent}\" setActive=\"${12:Optional - ui:tabsetEvent}\">${13:A single tab that is nested in a ui:tabset component.}</ui:tab>"
+      "contents": "ui:tab class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" name=\"${3:Optional - String}\" icon=\"${4:Optional - Aura.Component[]}\" scroll=\"${5:Optional - Boolean}\" active=\"${6:Optional - Boolean}\" hidden=\"${7:Optional - Boolean}\" iconClass=\"${8:Optional - String}\" closable=\"${9:Optional - Boolean}\" ariaControlId=\"${10:Optional - String}\" beforeActivate=\"${11:Optional - ui:tabsetEvent}\" onActivated=\"${12:Optional - ui:tabsetEvent}\" setActive=\"${13:Optional - ui:tabsetEvent}\">${14:A single tab that is nested in a ui:tabset component.}</ui:tab>"
     },
     {
       "trigger": "ui-tabBar\tTag Simple",
@@ -2327,7 +2343,7 @@
     },
     {
       "trigger": "ui-tooltip\tTag Full",
-      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" disabled=\"${2:Optional - Boolean}\" advanced=\"${3:Optional - Boolean}\" trigger=\"${4:Optional - String}\" triggerClass=\"${5:Optional - String}\" isVisible=\"${6:Optional - Boolean}\" fadeOut=\"${7:Optional - Boolean}\" fadeIn=\"${8:Optional - Boolean}\" fadeOutDuration=\"${9:Optional - Integer}\" fadeInDuration=\"${10:Optional - Integer}\" delay=\"${11:Optional - Integer}\" class=\"${12:Optional - String}\" tabIndex=\"${13:Optional - Integer}\" direction=\"${14:Optional - String}\" domId=\"${15:Optional - String}\">${16:}</ui:tooltip>"
+      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" disabled=\"${2:Optional - Boolean}\" advanced=\"${3:Optional - Boolean}\" trigger=\"${4:Optional - String}\" triggerClass=\"${5:Optional - String}\" isVisible=\"${6:Optional - Boolean}\" fadeOut=\"${7:Optional - Boolean}\" fadeIn=\"${8:Optional - Boolean}\" fadeOutDuration=\"${9:Optional - Integer}\" fadeInDuration=\"${10:Optional - Integer}\" delay=\"${11:Optional - Integer}\" class=\"${12:Optional - String}\" tabIndex=\"${13:Optional - Integer}\" direction=\"${14:Optional - String}\" allowFlips=\"${15:Optional - Boolean}\" domId=\"${16:Optional - String}\">${17:}</ui:tooltip>"
     },
     {
       "trigger": "ui-tree\tTag Simple",
@@ -2367,7 +2383,7 @@
     },
     {
       "trigger": "ui-virtualDataGrid\tTag Full",
-      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" sortBy=\"${3:Optional - String}\" class=\"${4:Optional - String}\" items=\"${5:Optional - List}\" headerColumns=\"${6:Optional - Aura.Component[]}\" columns=\"${7:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${8:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${9:Optional - Aura.Component[]}\" itemVar=\"${10:Optional - String}\" fixedHeader=\"${11:Optional - Boolean}\" refresh=\"${12:Optional - ui:refresh}\" onsort=\"${13:Optional - ui:sort}\">${14:}</ui:virtualDataGrid>"
+      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" sortBy=\"${3:Optional - String}\" class=\"${4:Optional - String}\" items=\"${5:Optional - List}\" headerColumns=\"${6:Optional - Aura.Component[]}\" columns=\"${7:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${8:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${9:Optional - Aura.Component[]}\" itemVar=\"${10:Optional - String}\" useRowHeaders=\"${11:Optional - Boolean}\" fixedHeader=\"${12:Optional - Boolean}\" refresh=\"${13:Optional - ui:refresh}\" onsort=\"${14:Optional - ui:sort}\">${15:}</ui:virtualDataGrid>"
     },
     {
       "trigger": "ui-virtualList\tTag Simple",
@@ -2418,6 +2434,14 @@
       "contents": "uiExamples:buttonExample>${1:}</uiExamples:buttonExample>"
     },
     {
+      "trigger": "uiExamples-carouselExample\tTag Simple",
+      "contents": "uiExamples:carouselExample$1>${2:}</uiExamples:carouselExample>"
+    },
+    {
+      "trigger": "uiExamples-carouselExample\tTag Full",
+      "contents": "uiExamples:carouselExample>${1:}</uiExamples:carouselExample>"
+    },
+    {
       "trigger": "uiExamples-checkbox\tTag Simple",
       "contents": "uiExamples:checkbox$1>${2:}</uiExamples:checkbox>"
     },
@@ -2447,7 +2471,7 @@
     },
     {
       "trigger": "uiExamples-dataGridKitchenSink\tTag Full",
-      "contents": "uiExamples:dataGridKitchenSink mode=\"${1:Optional - String}\" sortBy=\"${2:Optional - String}\" pageSize=\"${3:Optional - Integer}\" currentPage=\"${4:Optional - Integer}\" totalItems=\"${5:Optional - Integer}\" index=\"${6:Optional - Integer}\" count=\"${7:Optional - Integer}\" className=\"${8:Optional - String}\" rowIndex=\"${9:Optional - Integer}\" gridItems=\"${10:Optional - List}\" gridSelectedItems=\"${11:Optional - List}\">${12:}</uiExamples:dataGridKitchenSink>"
+      "contents": "uiExamples:dataGridKitchenSink tableFlavor=\"${1:Optional - String}\" mode=\"${2:Optional - String}\" sortBy=\"${3:Optional - String}\" pageSize=\"${4:Optional - Integer}\" currentPage=\"${5:Optional - Integer}\" totalItems=\"${6:Optional - Integer}\" index=\"${7:Optional - Integer}\" count=\"${8:Optional - Integer}\" className=\"${9:Optional - String}\" rowIndex=\"${10:Optional - Integer}\" gridItems=\"${11:Optional - List}\" gridSelectedItems=\"${12:Optional - List}\">${13:}</uiExamples:dataGridKitchenSink>"
     },
     {
       "trigger": "uiExamples-dataGridKitchenSinkDataProvider\tTag Simple",
@@ -2743,7 +2767,7 @@
     },
     {
       "trigger": "uiExamples-virtualDataGridKitchenSink\tTag Full",
-      "contents": "uiExamples:virtualDataGridKitchenSink sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\" className=\"${7:Optional - String}\" rowIndex=\"${8:Optional - Integer}\" gridItems=\"${9:Optional - List}\" gridSelectedItems=\"${10:Optional - List}\" provideNoData=\"${11:Optional - Boolean}\">${12:}</uiExamples:virtualDataGridKitchenSink>"
+      "contents": "uiExamples:virtualDataGridKitchenSink tableFlavor=\"${1:Optional - String}\" sortBy=\"${2:Optional - String}\" pageSize=\"${3:Optional - Integer}\" currentPage=\"${4:Optional - Integer}\" totalItems=\"${5:Optional - Integer}\" index=\"${6:Optional - Integer}\" count=\"${7:Optional - Integer}\" className=\"${8:Optional - String}\" rowIndex=\"${9:Optional - Integer}\" gridItems=\"${10:Optional - List}\" gridSelectedItems=\"${11:Optional - List}\" provideNoData=\"${12:Optional - Boolean}\">${13:}</uiExamples:virtualDataGridKitchenSink>"
     },
     {
       "trigger": "actionsTest-beanActionModel\tTag Simple",
@@ -2807,7 +2831,7 @@
     },
     {
       "trigger": "actionsTest-serverAction\tTag Full",
-      "contents": "actionsTest:serverAction errorMessage=\"${1:Optional - string}\">${2:}</actionsTest:serverAction>"
+      "contents": "actionsTest:serverAction text=\"${1:Optional - String}\" errorMessage=\"${2:Optional - String}\" transactionId=\"${3:Optional - Integer}\">${4:}</actionsTest:serverAction>"
     },
     {
       "trigger": "actionsTest-transactions\tTag Simple",
@@ -3074,6 +3098,14 @@
       "contents": "auraStorageTest:initTest clearStorageOnInit=\"${1:Optional - Boolean}\" defaultExpiration=\"${2:Optional - Integer}\" defaultAutoRefreshInterval=\"${3:Optional - Integer}\" requireUseStorageQueryParam=\"${4:Optional - Boolean}\" persistent=\"${5:Optional - Boolean}\" version=\"${6:Optional - String}\" host=\"${7:Optional - String}\" actionStatus=\"${8:Optional - String}\" dupNamedStorage=\"${9:Optional - Boolean}\">${10:Implements auraStorage:refreshObserver.\t}</auraStorageTest:initTest>"
     },
     {
+      "trigger": "auraStorageTest-isolationTest\tTag Simple",
+      "contents": "auraStorageTest:isolationTest$1>${2:}</auraStorageTest:isolationTest>"
+    },
+    {
+      "trigger": "auraStorageTest-isolationTest\tTag Full",
+      "contents": "auraStorageTest:isolationTest>${1:}</auraStorageTest:isolationTest>"
+    },
+    {
       "trigger": "auraStorageTest-memoryAdapterTest\tTag Simple",
       "contents": "auraStorageTest:memoryAdapterTest$1>${2:}</auraStorageTest:memoryAdapterTest>"
     },
@@ -3106,6 +3138,14 @@
       "contents": "auraStorageTest:newComponent defaultExpiration=\"${1:Optional - Integer}\" defaultAutoRefreshInterval=\"${2:Optional - Integer}\">${3:}</auraStorageTest:newComponent>"
     },
     {
+      "trigger": "auraStorageTest-noGetApplicationCacheTemplate\tTag Simple",
+      "contents": "auraStorageTest:noGetApplicationCacheTemplate$1>${2:}</auraStorageTest:noGetApplicationCacheTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-noGetApplicationCacheTemplate\tTag Full",
+      "contents": "auraStorageTest:noGetApplicationCacheTemplate>${1:}</auraStorageTest:noGetApplicationCacheTemplate>"
+    },
+    {
       "trigger": "auraStorageTest-playerFacet\tTag Simple",
       "contents": "auraStorageTest:playerFacet$1>${2:}</auraStorageTest:playerFacet>"
     },
@@ -3128,6 +3168,22 @@
     {
       "trigger": "auraStorageTest-teamFacet\tTag Full",
       "contents": "auraStorageTest:teamFacet name=\"${1:Optional - String}\" city=\"${2:Optional - String}\">${3:}</auraStorageTest:teamFacet>"
+    },
+    {
+      "trigger": "auraStorageTest-versionTemplate\tTag Simple",
+      "contents": "auraStorageTest:versionTemplate$1>${2:}</auraStorageTest:versionTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-versionTemplate\tTag Full",
+      "contents": "auraStorageTest:versionTemplate>${1:}</auraStorageTest:versionTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-versionTest\tTag Simple",
+      "contents": "auraStorageTest:versionTest$1>${2:}</auraStorageTest:versionTest>"
+    },
+    {
+      "trigger": "auraStorageTest-versionTest\tTag Full",
+      "contents": "auraStorageTest:versionTest defaultExpiration=\"${1:Optional - Integer}\" defaultAutoRefreshInterval=\"${2:Optional - Integer}\" requireUseStorageQueryParam=\"${3:Optional - Boolean}\" persistent=\"${4:Optional - Boolean}\" version=\"${5:Optional - String}\">${6:}</auraStorageTest:versionTest>"
     },
     {
       "trigger": "auratest-access\tTag Simple",
@@ -3367,7 +3423,7 @@
     },
     {
       "trigger": "auratest-label\tTag Full",
-      "contents": "auratest:label value=\"${1:Optional - String}\" string=\"${2:Optional - String}\" boolean=\"${3:Optional - boolean}\" double=\"${4:Optional - double}\" undef=\"${5:Optional - Object}\" noll=\"${6:Optional - Object}\">${7:}</auratest:label>"
+      "contents": "auratest:label value=\"${1:Optional - String}\" valueElse=\"${2:Optional - String}\" date=\"${3:Optional - Date}\" string=\"${4:Optional - String}\" boolean=\"${5:Optional - boolean}\" double=\"${6:Optional - double}\" undef=\"${7:Optional - Object}\" noll=\"${8:Optional - Object}\" booleanForIf=\"${9:Optional - Boolean}\">${10:}</auratest:label>"
     },
     {
       "trigger": "auratest-logPanel\tTag Simple",
@@ -3402,12 +3458,12 @@
       "contents": "auratest:requireConsumer consumedCmp=\"${1:Optional - Aura.Component}\" versionInConsumedCmp=\"${2:Optional - String}\" actionDone=\"${3:Optional - Boolean}\" versionEvt=\"${4:Optional - auratest:testEvent}\">${5:}</auratest:requireConsumer>"
     },
     {
-      "trigger": "auratest-requireWithModel\tTag Simple",
-      "contents": "auratest:requireWithModel$1>${2:}</auratest:requireWithModel>"
+      "trigger": "auratest-requireWithServerAction\tTag Simple",
+      "contents": "auratest:requireWithServerAction$1>${2:}</auratest:requireWithServerAction>"
     },
     {
-      "trigger": "auratest-requireWithModel\tTag Full",
-      "contents": "auratest:requireWithModel actionDone=\"${1:Optional - Boolean}\" version=\"${2:Optional - String}\" versionEvt=\"${3:Optional - auratest:testEvent}\">${4:}</auratest:requireWithModel>"
+      "trigger": "auratest-requireWithServerAction\tTag Full",
+      "contents": "auratest:requireWithServerAction actionDone=\"${1:Optional - Boolean}\" version=\"${2:Optional - String}\" versionEvt=\"${3:Optional - auratest:testEvent}\">${4:}</auratest:requireWithServerAction>"
     },
     {
       "trigger": "auratest-rerenderAbstract\tTag Simple",
@@ -3536,14 +3592,6 @@
     {
       "trigger": "auratest-testModelThatThrowsInRenderer\tTag Full",
       "contents": "auratest:testModelThatThrowsInRenderer>${1:}</auratest:testModelThatThrowsInRenderer>"
-    },
-    {
-      "trigger": "auratest-testPerfRunnerContainer\tTag Simple",
-      "contents": "auratest:testPerfRunnerContainer$1>${2:}</auratest:testPerfRunnerContainer>"
-    },
-    {
-      "trigger": "auratest-testPerfRunnerContainer\tTag Full",
-      "contents": "auratest:testPerfRunnerContainer scope=\"${1:Optional - String}\" keyword=\"${2:Optional - String}\">${3:}</auratest:testPerfRunnerContainer>"
     },
     {
       "trigger": "auratest-test_Abstract\tTag Simple",
@@ -4114,14 +4162,6 @@
       "contents": "componentTest:knowParent parent=\"${1:Optional - Aura.Component[]}\">${2:}</componentTest:knowParent>"
     },
     {
-      "trigger": "componentTest-labelTest\tTag Simple",
-      "contents": "componentTest:labelTest$1>${2:}</componentTest:labelTest>"
-    },
-    {
-      "trigger": "componentTest-labelTest\tTag Full",
-      "contents": "componentTest:labelTest pattern=\"${1:Optional - String}\" date=\"${2:Optional - Date}\" userId=\"${3:Optional - String}\" userName=\"${4:Optional - String}\">${5:}</componentTest:labelTest>"
-    },
-    {
       "trigger": "componentTest-renderNestedComponents\tTag Simple",
       "contents": "componentTest:renderNestedComponents$1>${2:}</componentTest:renderNestedComponents>"
     },
@@ -4191,7 +4231,7 @@
     },
     {
       "trigger": "componentTest-versionInServer\tTag Full",
-      "contents": "componentTest:versionInServer actionDone=\"${1:Optional - Boolean}\" version=\"${2:Optional - String}\">${3:}</componentTest:versionInServer>"
+      "contents": "componentTest:versionInServer newComponent=\"${1:Optional - Aura.Component}\" actionDone=\"${2:Optional - Boolean}\" version=\"${3:Optional - String}\">${4:}</componentTest:versionInServer>"
     },
     {
       "trigger": "componentTest-versioning\tTag Simple",
@@ -4706,6 +4746,14 @@
       "contents": "flavorTest:overrides_x_onlyImplicitDefault>${1:}</flavorTest:overrides_x_onlyImplicitDefault>"
     },
     {
+      "trigger": "flavorTest-sample_extends\tTag Simple",
+      "contents": "flavorTest:sample_extends$1>${2:}</flavorTest:sample_extends>"
+    },
+    {
+      "trigger": "flavorTest-sample_extends\tTag Full",
+      "contents": "flavorTest:sample_extends>${1:}</flavorTest:sample_extends>"
+    },
+    {
       "trigger": "flavorTest-x_landmark\tTag Simple",
       "contents": "flavorTest:x_landmark$1>${2:sample component using markup that landmark would use}</flavorTest:x_landmark>"
     },
@@ -4807,7 +4855,7 @@
     },
     {
       "trigger": "gvpTest-basicTest\tTag Full",
-      "contents": "gvpTest:basicTest>${1:}</gvpTest:basicTest>"
+      "contents": "gvpTest:basicTest attributeLabel=\"${1:Optional - String}\">${2:}</gvpTest:basicTest>"
     },
     {
       "trigger": "gvpTest-browserProvider\tTag Simple",
@@ -4824,6 +4872,14 @@
     {
       "trigger": "gvpTest-contextGVPTest\tTag Full",
       "contents": "gvpTest:contextGVPTest>${1:}</gvpTest:contextGVPTest>"
+    },
+    {
+      "trigger": "gvpTest-customGVPInitInTemplateTest\tTag Simple",
+      "contents": "gvpTest:customGVPInitInTemplateTest$1>${2:}</gvpTest:customGVPInitInTemplateTest>"
+    },
+    {
+      "trigger": "gvpTest-customGVPInitInTemplateTest\tTag Full",
+      "contents": "gvpTest:customGVPInitInTemplateTest valueChanged=\"${1:Optional - Boolean}\" gvpValue=\"${2:Optional - String}\">${3:}</gvpTest:customGVPInitInTemplateTest>"
     },
     {
       "trigger": "gvpTest-customGVPTemplate\tTag Simple",
@@ -5112,6 +5168,14 @@
     {
       "trigger": "integrationService-simpleStub\tTag Full",
       "contents": "integrationService:simpleStub placeholder=\"${1:Optional - String}\" localId=\"${2:Optional - String}\" desc=\"${3:Optional - String}\" attrMap=\"${4:Optional - Map}\">${5:}</integrationService:simpleStub>"
+    },
+    {
+      "trigger": "iterationPerformanceTest-iterationBatchOperations\tTag Simple",
+      "contents": "iterationPerformanceTest:iterationBatchOperations$1>${2:Test memory leaks in iteration when setting data multiple times before rendering}</iterationPerformanceTest:iterationBatchOperations>"
+    },
+    {
+      "trigger": "iterationPerformanceTest-iterationBatchOperations\tTag Full",
+      "contents": "iterationPerformanceTest:iterationBatchOperations initialState=\"${1:Optional - Object}\" iterationItems=\"${2:Optional - Object}\">${3:Test memory leaks in iteration when setting data multiple times before rendering}</iterationPerformanceTest:iterationBatchOperations>"
     },
     {
       "trigger": "iterationTest-arrayIteration\tTag Simple",
@@ -6034,6 +6098,14 @@
       "contents": "perfTest:registeredComponentsItem item=\"${1:Optional - Object}\" readonly=\"${2:Optional - boolean}\">${3:}</perfTest:registeredComponentsItem>"
     },
     {
+      "trigger": "performance-perfTest\tTag Simple",
+      "contents": "performance:perfTest$1>${2:Implements performance:test.\tAbstract component for performance tests}</performance:perfTest>"
+    },
+    {
+      "trigger": "performance-perfTest\tTag Full",
+      "contents": "performance:perfTest>${1:Implements performance:test.\tAbstract component for performance tests}</performance:perfTest>"
+    },
+    {
       "trigger": "performanceTest-runnerExample\tTag Simple",
       "contents": "performanceTest:runnerExample$1>${2:Implements performance:test.\t}</performanceTest:runnerExample>"
     },
@@ -6043,11 +6115,11 @@
     },
     {
       "trigger": "performanceTest-runnerExample2\tTag Simple",
-      "contents": "performanceTest:runnerExample2$1>${2:Implements performance:test.\t}</performanceTest:runnerExample2>"
+      "contents": "performanceTest:runnerExample2$1>${2:}</performanceTest:runnerExample2>"
     },
     {
       "trigger": "performanceTest-runnerExample2\tTag Full",
-      "contents": "performanceTest:runnerExample2 loaded=\"${1:Optional - Boolean}\">${2:Implements performance:test.\t}</performanceTest:runnerExample2>"
+      "contents": "performanceTest:runnerExample2 loaded=\"${1:Optional - Boolean}\">${2:}</performanceTest:runnerExample2>"
     },
     {
       "trigger": "preloadTest-test_SpecialCharacter\tTag Simple",
@@ -6624,6 +6696,14 @@
     {
       "trigger": "test-requireConsumer\tTag Full",
       "contents": "test:requireConsumer consumedCmp=\"${1:Optional - Aura.Component}\" versionInConsumedCmp=\"${2:Optional - String}\">${3:}</test:requireConsumer>"
+    },
+    {
+      "trigger": "test-runnerContainer\tTag Simple",
+      "contents": "test:runnerContainer$1>${2:}</test:runnerContainer>"
+    },
+    {
+      "trigger": "test-runnerContainer\tTag Full",
+      "contents": "test:runnerContainer scope=\"${1:Optional - String}\" keyword=\"${2:Optional - String}\">${3:}</test:runnerContainer>"
     },
     {
       "trigger": "test-serverModelCaseSensitivity\tTag Simple",
@@ -7810,6 +7890,14 @@
       "contents": "uitest:button_Test iconAndLabelButtonPressedMessage=\"${1:Optional - String}\" labelOnlyButtonPressedMessage=\"${2:Optional - String}\" iconOnlyButtonPressedMessage=\"${3:Optional - String}\" isDomEventSet=\"${4:Optional - boolean}\">${5:}</uitest:button_Test>"
     },
     {
+      "trigger": "uitest-carousel_AccessibilityTest\tTag Simple",
+      "contents": "uitest:carousel_AccessibilityTest$1>${2:}</uitest:carousel_AccessibilityTest>"
+    },
+    {
+      "trigger": "uitest-carousel_AccessibilityTest\tTag Full",
+      "contents": "uitest:carousel_AccessibilityTest>${1:}</uitest:carousel_AccessibilityTest>"
+    },
+    {
       "trigger": "uitest-carousel_SpinnerTest\tTag Simple",
       "contents": "uitest:carousel_SpinnerTest$1>${2:}</uitest:carousel_SpinnerTest>"
     },
@@ -7898,12 +7986,28 @@
       "contents": "uitest:datePickerManager_Test value=\"${1:Optional - String}\">${2:}</uitest:datePickerManager_Test>"
     },
     {
+      "trigger": "uitest-datePicker_PositioningTest\tTag Simple",
+      "contents": "uitest:datePicker_PositioningTest$1>${2:}</uitest:datePicker_PositioningTest>"
+    },
+    {
+      "trigger": "uitest-datePicker_PositioningTest\tTag Full",
+      "contents": "uitest:datePicker_PositioningTest pos=\"${1:Optional - Integer}\">${2:}</uitest:datePicker_PositioningTest>"
+    },
+    {
       "trigger": "uitest-datePicker_TodayButtonTest\tTag Simple",
       "contents": "uitest:datePicker_TodayButtonTest$1>${2:}</uitest:datePicker_TodayButtonTest>"
     },
     {
       "trigger": "uitest-datePicker_TodayButtonTest\tTag Full",
-      "contents": "uitest:datePicker_TodayButtonTest showToday=\"${1:Optional - Boolean}\" selectedDate=\"${2:Optional - Object}\">${3:}</uitest:datePicker_TodayButtonTest>"
+      "contents": "uitest:datePicker_TodayButtonTest renderItem=\"${1:Optional - String}\">${2:}</uitest:datePicker_TodayButtonTest>"
+    },
+    {
+      "trigger": "uitest-datepicker_RegressionTest\tTag Simple",
+      "contents": "uitest:datepicker_RegressionTest$1>${2:}</uitest:datepicker_RegressionTest>"
+    },
+    {
+      "trigger": "uitest-datepicker_RegressionTest\tTag Full",
+      "contents": "uitest:datepicker_RegressionTest value=\"${1:Optional - String}\" renderItem=\"${2:Optional - String}\">${3:}</uitest:datepicker_RegressionTest>"
     },
     {
       "trigger": "uitest-demoMenuTrigger\tTag Simple",
@@ -8087,7 +8191,7 @@
     },
     {
       "trigger": "uitest-inputDateTime_Test\tTag Full",
-      "contents": "uitest:inputDateTime_Test value=\"${1:Optional - String}\" format=\"${2:Optional - String}\">${3:}</uitest:inputDateTime_Test>"
+      "contents": "uitest:inputDateTime_Test value=\"${1:Optional - String}\" format=\"${2:Optional - String}\" dateFormat=\"${3:Optional - String}\" timeFormat=\"${4:Optional - String}\">${5:}</uitest:inputDateTime_Test>"
     },
     {
       "trigger": "uitest-inputDate_Test\tTag Simple",
@@ -8426,6 +8530,14 @@
       "contents": "uitest:menuList_Extend>${1:}</uitest:menuList_Extend>"
     },
     {
+      "trigger": "uitest-menu_WithPanel\tTag Simple",
+      "contents": "uitest:menu_WithPanel$1>${2:}</uitest:menu_WithPanel>"
+    },
+    {
+      "trigger": "uitest-menu_WithPanel\tTag Full",
+      "contents": "uitest:menu_WithPanel>${1:}</uitest:menu_WithPanel>"
+    },
+    {
       "trigger": "uitest-messagedemo\tTag Simple",
       "contents": "uitest:messagedemo$1>${2:}</uitest:messagedemo>"
     },
@@ -8599,7 +8711,15 @@
     },
     {
       "trigger": "uitest-panel2_Tester\tTag Full",
-      "contents": "uitest:panel2_Tester panelType=\"${1:Optional - String}\" title=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" class=\"${4:Optional - String}\" flavor=\"${5:Optional - String}\" isVisible=\"${6:Optional - Boolean}\" startOfDialogLabel=\"${7:Optional - String}\" closeOnClickOut=\"${8:Optional - Boolean}\" showCloseButton=\"${9:Optional - Boolean}\" closeDialogLabel=\"${10:Optional - String}\" useTransition=\"${11:Optional - Boolean}\" animation=\"${12:Optional - String}\" autoFocus=\"${13:Optional - Boolean}\" direction=\"${14:Optional - String}\" showPointer=\"${15:Optional - Boolean}\" referenceElement=\"${16:Optional - Object}\" useReferenceElement=\"${17:Optional - Boolean}\" referenceElementSelector=\"${18:Optional - String}\" useHeader=\"${19:Optional - Boolean}\" useFooter=\"${20:Optional - Boolean}\" panelHeader=\"${21:Optional - Aura.Component[]}\" panelFooter=\"${22:Optional - Aura.Component[]}\" makeScrollable=\"${23:Optional - Boolean}\" nonScrollable=\"${24:Optional - Boolean}\" customizeCloseAction=\"${25:Optional - Boolean}\" closeActionCalled=\"${26:Optional - String}\">${27:}</uitest:panel2_Tester>"
+      "contents": "uitest:panel2_Tester panelType=\"${1:Optional - String}\" title=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" class=\"${4:Optional - String}\" flavor=\"${5:Optional - String}\" isVisible=\"${6:Optional - Boolean}\" startOfDialogLabel=\"${7:Optional - String}\" closeOnClickOut=\"${8:Optional - Boolean}\" showCloseButton=\"${9:Optional - Boolean}\" closeDialogLabel=\"${10:Optional - String}\" useTransition=\"${11:Optional - Boolean}\" animation=\"${12:Optional - String}\" autoFocus=\"${13:Optional - Boolean}\" direction=\"${14:Optional - String}\" showPointer=\"${15:Optional - Boolean}\" useReferenceElementSelector=\"${16:Optional - Boolean}\" useReferenceElement=\"${17:Optional - Boolean}\" referenceElementSelector=\"${18:Optional - String}\" useHeader=\"${19:Optional - Boolean}\" useFooter=\"${20:Optional - Boolean}\" panelHeader=\"${21:Optional - Aura.Component[]}\" panelFooter=\"${22:Optional - Aura.Component[]}\" makeScrollable=\"${23:Optional - Boolean}\" nonScrollable=\"${24:Optional - Boolean}\" customizeCloseAction=\"${25:Optional - Boolean}\" closeActionCalled=\"${26:Optional - String}\">${27:}</uitest:panel2_Tester>"
+    },
+    {
+      "trigger": "uitest-panelRefElement_Test\tTag Simple",
+      "contents": "uitest:panelRefElement_Test$1>${2:}</uitest:panelRefElement_Test>"
+    },
+    {
+      "trigger": "uitest-panelRefElement_Test\tTag Full",
+      "contents": "uitest:panelRefElement_Test>${1:}</uitest:panelRefElement_Test>"
     },
     {
       "trigger": "uitest-panelTest\tTag Simple",
@@ -8666,6 +8786,14 @@
       "contents": "uitest:pillContainer_WithTextInput pillInsertFired=\"${1:Optional - boolean}\" pillRemovedFired=\"${2:Optional - boolean}\">${3:}</uitest:pillContainer_WithTextInput>"
     },
     {
+      "trigger": "uitest-pill_Test\tTag Simple",
+      "contents": "uitest:pill_Test$1>${2:}</uitest:pill_Test>"
+    },
+    {
+      "trigger": "uitest-pill_Test\tTag Full",
+      "contents": "uitest:pill_Test>${1:}</uitest:pill_Test>"
+    },
+    {
       "trigger": "uitest-popupTestExtendedPopup\tTag Simple",
       "contents": "uitest:popupTestExtendedPopup$1>${2:}</uitest:popupTestExtendedPopup>"
     },
@@ -8714,6 +8842,14 @@
       "contents": "uitest:scroller_BidirectionalTest scrollerId=\"${1:Optional - String}\">${2:}</uitest:scroller_BidirectionalTest>"
     },
     {
+      "trigger": "uitest-scroller_InfiniteLoading\tTag Simple",
+      "contents": "uitest:scroller_InfiniteLoading$1>${2:A test scroller.}</uitest:scroller_InfiniteLoading>"
+    },
+    {
+      "trigger": "uitest-scroller_InfiniteLoading\tTag Full",
+      "contents": "uitest:scroller_InfiniteLoading initialSize=\"${1:Optional - Integer}\" loadDelay_ms=\"${2:Optional - Integer}\">${3:A test scroller.}</uitest:scroller_InfiniteLoading>"
+    },
+    {
       "trigger": "uitest-scroller_Test\tTag Simple",
       "contents": "uitest:scroller_Test$1>${2:}</uitest:scroller_Test>"
     },
@@ -8744,6 +8880,14 @@
     {
       "trigger": "uitest-stampdemo\tTag Full",
       "contents": "uitest:stampdemo>${1:}</uitest:stampdemo>"
+    },
+    {
+      "trigger": "uitest-tab_afterRenderCustomTab\tTag Simple",
+      "contents": "uitest:tab_afterRenderCustomTab$1>${2:}</uitest:tab_afterRenderCustomTab>"
+    },
+    {
+      "trigger": "uitest-tab_afterRenderCustomTab\tTag Full",
+      "contents": "uitest:tab_afterRenderCustomTab>${1:}</uitest:tab_afterRenderCustomTab>"
     },
     {
       "trigger": "uitest-tab_lazyCustomTab\tTag Simple",
@@ -8786,20 +8930,20 @@
       "contents": "uitest:tabset_overflowTest renderItem=\"${1:Optional - String}\" newTabCloseable=\"${2:Optional - Boolean}\" newTabActive=\"${3:Optional - Boolean}\">${4:}</uitest:tabset_overflowTest>"
     },
     {
-      "trigger": "uitest-tooltipTest\tTag Simple",
-      "contents": "uitest:tooltipTest$1>${2:}</uitest:tooltipTest>"
-    },
-    {
-      "trigger": "uitest-tooltipTest\tTag Full",
-      "contents": "uitest:tooltipTest renderItem=\"${1:Optional - String}\">${2:}</uitest:tooltipTest>"
-    },
-    {
       "trigger": "uitest-tooltipTestPosition\tTag Simple",
       "contents": "uitest:tooltipTestPosition$1>${2:}</uitest:tooltipTestPosition>"
     },
     {
       "trigger": "uitest-tooltipTestPosition\tTag Full",
       "contents": "uitest:tooltipTestPosition>${1:}</uitest:tooltipTestPosition>"
+    },
+    {
+      "trigger": "uitest-tooltip_FullTest\tTag Simple",
+      "contents": "uitest:tooltip_FullTest$1>${2:}</uitest:tooltip_FullTest>"
+    },
+    {
+      "trigger": "uitest-tooltip_FullTest\tTag Full",
+      "contents": "uitest:tooltip_FullTest renderItem=\"${1:Optional - String}\">${2:}</uitest:tooltip_FullTest>"
     },
     {
       "trigger": "uitest-tooltip_Test\tTag Simple",
@@ -8847,7 +8991,7 @@
     },
     {
       "trigger": "uitest-virtualDataGrid_columnsTests\tTag Full",
-      "contents": "uitest:virtualDataGrid_columnsTests sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\" className=\"${7:Optional - String}\" rowIndex=\"${8:Optional - Integer}\" gridItems=\"${9:Optional - List}\" gridSelectedItems=\"${10:Optional - List}\" provideNoData=\"${11:Optional - Boolean}\">${12:}</uitest:virtualDataGrid_columnsTests>"
+      "contents": "uitest:virtualDataGrid_columnsTests sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\" className=\"${7:Optional - String}\" rowIndex=\"${8:Optional - Integer}\" gridItems=\"${9:Optional - List}\" gridSelectedItems=\"${10:Optional - List}\" useRowHeaders=\"${11:Optional - Boolean}\" provideNoData=\"${12:Optional - Boolean}\">${13:}</uitest:virtualDataGrid_columnsTests>"
     },
     {
       "trigger": "uitest-virtualDataGrid_dataProvider\tTag Simple",
@@ -8928,6 +9072,14 @@
     {
       "trigger": "updateTest-updateableOther\tTag Full",
       "contents": "updateTest:updateableOther>${1:}</updateTest:updateableOther>"
+    },
+    {
+      "trigger": "utilTest-isEmpty\tTag Simple",
+      "contents": "utilTest:isEmpty$1>${2:}</utilTest:isEmpty>"
+    },
+    {
+      "trigger": "utilTest-isEmpty\tTag Full",
+      "contents": "utilTest:isEmpty>${1:}</utilTest:isEmpty>"
     },
     {
       "trigger": "validationTest-basic\tTag Simple",

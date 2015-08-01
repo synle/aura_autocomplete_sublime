@@ -12,25 +12,20 @@
     <body>
 
     <style>
-	.clusterize-scroll{
-		max-height: 700px;
-	}
-
-
 	.box
 	{
 		font-weight:bold;
- 		padding:0.5em;
- 		font-size:1.2em;
+ 		padding:10px;
+ 		font-size:1em;
  		border:1px solid #EEE;
  		box-sizing:border-box;
  		overflow: hidden;
 	}
 
-	.box:hover
+	/*.box:hover
 	{
 		border-left: 5px solid tomato;
-	}
+	}*/
 
 	.lvl_0{
  	}
@@ -38,26 +33,29 @@
 		background-color:#333;
 		color:#FFF;
 	}
-	.lvl_1 b{
+	.lvl_1 b.ticker{
 		float:right;
-		color:tomato;
+		color:#68B4F6;
+	}
+	.box b.ticker_2{
+		color: rgb(122, 247, 126);
 	}
 	.lvl_2{
 		background-color:#666;
 		color:#FFF;
-		padding-left: 50px;
+		margin-left: 50px;
 		cursor:pointer;
 	}
 	.lvl_3{
 		background-color:#999;
 		color:#FFF;
-		padding-left: 100px;
+		margin-left: 100px;
 		display:none;
 	}
 	.lvl_4{
 		background-color:#DDD;
 		color:#000;
-		padding-left: 150px;
+		margin-left: 150px;
 		display:none;
 	}
 
@@ -82,8 +80,18 @@
 		text-shadow: 1px 1px #CCC;
 		position:fixed;
 		top:0;
+		left:0;
+		width:100%;
+		padding-left:5px;
+		padding-right:5px;
+		box-sizing:border-box;
+	}
+
+	.search-hl .box{
+		display:none !important;
 	}
 	</style>
+
     
 	<div class="container-fluid">
 		<div style="padding:10px">
@@ -141,23 +149,25 @@
     			(function(k){
 	    			return function(){
 	    				var cmpName = k;
-	    				var formattedName = cmpName.indexOf('app.') === 0 ? '<b>app</b> ' : '<b>cmp</b> ';
+	    				var formattedName = cmpName.indexOf('app.') === 0 ? '<b class="ticker">app</b> ' : '<b class="ticker">cmp</b> ';
 	    				formattedName += cmpName.substr(cmpName.indexOf('.') + 1)
 
-						createDomNode(
+						var wrapper_1 = createDomNode(
 							formattedName,
 							true,
-							'lvl_1'
+							'lvl_1',
+							'#tree'
 						)
 			    			
 			    		var totalDepdenciesUse = 0;
 
 			    		for (var cmpDep in r[k]){
 			    			var count = r[k][cmpDep].length;
-							createDomNode(
-								cmpDep + ' (' + count + ')',
+							var wrapper_2 = createDomNode(
+								cmpDep + '<b class="ticker">' + count + '</b>',
 								true,
-								'lvl_2'
+								'lvl_2',
+								wrapper_1
 							)
 
 
@@ -165,10 +175,11 @@
 
 							//generate attributes in tag
 							for (var i = 0; i < r[k][cmpDep].length;i++){
-								createDomNode(
-									cmpDep + '['+i+']',
+								var wrapper_3 = createDomNode(
+									cmpDep + ' [<b class="ticker_2">'+i+'</b>]',
 									false,
-									'lvl_3'
+									'lvl_3',
+									wrapper_2
 								)
 
 
@@ -178,7 +189,8 @@
 										createDomNode(
 											'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
 											false,
-											'lvl_4'
+											'lvl_4',
+											wrapper_3
 										)
 									});
 								}
@@ -206,12 +218,12 @@
 	    		500,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
+					$('#tree').toggleClass('search-hl', keyword.length === 0);
+
 	    			$('.box').each(function(){
+	    				var isVisible = false;
 	    				if ($(this).text().indexOf(keyword) >= 0){
-	    					$(this).show();
-	    				}
-	    				else{
-	    					$(this).hide();
+	    					isVisible = true;
 	    				}
 	    			});
 			    }
@@ -226,23 +238,20 @@
 
 
 		$('#btnExpandAll').click(function(){	
-			$('.lvl_3:not(.visible), .lvl_4:not(.visible)').addClass('visible');
+			$('.box:not(.visible)').addClass('visible');
 		});
 
 		$('#btnCollapseAll').click(function(){
-			$('.lvl_3.visible, .lvl_4.visible').removeClass('visible');
+			$('.box.visible').removeClass('visible');
 		});
 
 
 
 		//click to expand each box
-		$('#tree').on('click', '.lvl_2', function(){
-			var myclass = 'lvl_2';
-			var next = $(this).next();
-			while(next.hasClass(myclass) === false){
-				next.toggleClass('visible');
-				next = next.next();
-			}
+		$('#tree').on('click', '.box', function(e){
+			$(this).children('.box').toggleClass('visible');
+			e.stopPropagation();
+			e.preventDefault();
 		});
 	}
 
@@ -265,8 +274,8 @@
 	})();
 
 
-	function createDomNode (name, hasChild, tag){
-		$('<div class="box '+tag+'" />').html(name).appendTo('#tree');
+	function createDomNode (name, hasChild, tag, parent){
+		return $('<div class="box '+tag+'" />').html(name).appendTo(parent);
 	}
 
 	function TaskScheduler(batchSize, intervalLength){

@@ -46,6 +46,7 @@ module.exports = function processParser(componentFileNames, outputDir){
 	};
 	var AuraLayoutService = window = {};
 	var $A = {
+		installOverride: function(){},
 		logger:{
 			subscribe:function(){}
 		}

@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />''
         <link href="dist/bootstrap-treeview.min.css" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
         <script src="dist/bootstrap-treeview.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
         <meta charset="utf-8">
         <title>Aura</title>
     </head>
     <body>
+
+    <style>
+	    .bar{
+	    	border:1px solid #eee;	
+	    	margin-bottom:5px;
+	    	padding-left:10px;
+	    	padding-right:15px;
+	    	margin-right:20px;
+	    	box-sizing:border-box;
+	    	text-shadow: 1px 0 #efefef;
+	    }
+	    .cmpName{
+	    	margin-right:5px;
+	    }
+
+	    .bar.summary{
+	    	display:none;
+	    }
+	    .bar.detail{
+	    }
+    </style>
     
 	<div class="row">
 		<div class="col-md-12">
@@ -18,17 +41,28 @@
 				<div>
 					<h2>Usage Table | <a href='./index.html'>Dependencies Tree</a></h2>
 				</div>
-				<div><input id="searchComponentUsage" placeholder="Component To Search" style="width:100%" /></div>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>Component</th>
-							<th>Usage</th>
-						</tr>
-					</thead>
-					<tbody id="tblUsage"></tbody>
-				</table>
 			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input id="searchComponentUsage" placeholder="Component To Search" style="width:100%" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Component</th>
+						<th>Usage</th>
+					</tr>
+				</thead>
+				<tbody id="tblUsage"></tbody>
+			</table>
+		</div>
+		<div id="chartUsage" class="col-md-7">
+			<canvas width="600" height="600" />
 		</div>
 	</div>
 
@@ -60,13 +94,35 @@
     	var source   = $("#tmplUsageRow").html();
     	var template = Handlebars.compile(source);
     	var body = $('#tblUsage');
+    	var max = 0;
+    	var countHash = {};
 
     	for (var k in r){
     		var cmpName = k;
+    		var count = r[k];
     		body.append(template({
 				cmp: cmpName,
-				count : r[k]
+				count : count
 			}));
+
+			if(count > max )
+				max  = count;
+
+			countHash[count] = countHash[count] || [];
+			countHash[count].push('<b class="cmpName">'+cmpName+'</b>' + '(' + count + ')');
+    	}
+
+		$('#chartUsage').empty();
+
+		for (var k in countHash){
+			var bgcolor = generateColor();
+    		var cmpName = countHash[k].join('<br />');
+    		var count = k;
+    		var width = parseInt(count * 100 / max);
+    		width += '%';
+
+			$('#chartUsage').append('<div class="bar summary" style="background-color:' + bgcolor + '; width:'+width+'"><b>'+count + ' Components In This Category</b></div>');
+    		$('#chartUsage').append('<div class="bar detail" style="background-color:' + bgcolor + '; width:'+width+'"><b>'+cmpName + '</b></div>');
     	}
     });
 
@@ -109,6 +165,14 @@
 		)
 	);
 
+
+     function generateColor() {
+            var ret = '#' + ((1 << 24) * Math.random() | 0).toString(16);
+            while (ret.length < 7) {
+                ret += '0';
+            }
+            return ret;
+        }
     </script>
 </body>
 </html>
