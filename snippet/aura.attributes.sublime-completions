@@ -1938,6 +1938,10 @@
       "contents": "titleHeadingLevel=\"${1:ui:datePicker - Optional - String}\""
     },
     {
+      "trigger": "ui-datePicker-closeOnClickOut\tAttr",
+      "contents": "closeOnClickOut=\"${1:ui:datePicker - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-datePicker-_today\tAttr",
       "contents": "_today=\"${1:ui:datePicker - Optional - String}\""
     },
@@ -3652,6 +3656,10 @@
     {
       "trigger": "ui-pill-iconBackgroundColor\tAttr",
       "contents": "iconBackgroundColor=\"${1:ui:pill - Optional - String}\""
+    },
+    {
+      "trigger": "ui-pill-iconAlt\tAttr",
+      "contents": "iconAlt=\"${1:ui:pill - Optional - String}\""
     },
     {
       "trigger": "ui-pill-accessibleDeleteLabel\tAttr",
@@ -8442,6 +8450,10 @@
       "contents": "visible=\"${1:uitest:autoComplete_CustomTemplate - Optional - Boolean}\""
     },
     {
+      "trigger": "uitest-autoComplete_Test-usePanel\tAttr",
+      "contents": "usePanel=\"${1:uitest:autoComplete_Test - Optional - Boolean}\""
+    },
+    {
       "trigger": "uitest-autocomplete_TestDataProvider-dataType\tAttr",
       "contents": "dataType=\"${1:uitest:autocomplete_TestDataProvider - Optional - String}\""
     },
@@ -9148,6 +9160,30 @@
     {
       "trigger": "uitest-pillContainer_WithAutoComplete-maxAllowed\tAttr",
       "contents": "maxAllowed=\"${1:uitest:pillContainer_WithAutoComplete - Optional - Integer}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteAndPlaceHolderText-flavor\tAttr",
+      "contents": "flavor=\"${1:uitest:pillContainer_WithAutoCompleteAndPlaceHolderText - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteAndPlaceHolderText-maxLines\tAttr",
+      "contents": "maxLines=\"${1:uitest:pillContainer_WithAutoCompleteAndPlaceHolderText - Optional - Integer}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteAndPlaceHolderText-maxAllowed\tAttr",
+      "contents": "maxAllowed=\"${1:uitest:pillContainer_WithAutoCompleteAndPlaceHolderText - Optional - Integer}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteUsePanelSet-flavor\tAttr",
+      "contents": "flavor=\"${1:uitest:pillContainer_WithAutoCompleteUsePanelSet - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteUsePanelSet-maxLines\tAttr",
+      "contents": "maxLines=\"${1:uitest:pillContainer_WithAutoCompleteUsePanelSet - Optional - Integer}\""
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteUsePanelSet-maxAllowed\tAttr",
+      "contents": "maxAllowed=\"${1:uitest:pillContainer_WithAutoCompleteUsePanelSet - Optional - Integer}\""
     },
     {
       "trigger": "uitest-pillContainer_WithTextInput-pillInsertFired\tAttr",

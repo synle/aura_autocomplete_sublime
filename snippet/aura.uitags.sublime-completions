@@ -1423,7 +1423,7 @@
     },
     {
       "trigger": "ui-datePicker\tTag Full",
-      "contents": "ui:datePicker hasTime=\"${1:Optional - Boolean}\" hours=\"${2:Optional - Integer}\" is24HourFormat=\"${3:Optional - Boolean}\" maxYear=\"${4:Optional - Integer}\" minYear=\"${5:Optional - Integer}\" minutes=\"${6:Optional - Integer}\" value=\"${7:Optional - String}\" visible=\"${8:Optional - Boolean}\" managed=\"${9:Optional - Boolean}\" referenceElement=\"${10:Optional - Object}\" showToday=\"${11:Optional - Boolean}\" hideOnSelect=\"${12:Optional - Boolean}\" setFocus=\"${13:Optional - Boolean}\" titleHeadingLevel=\"${14:Optional - String}\" rangeStart=\"${15:Optional - String}\" rangeEnd=\"${16:Optional - String}\" rangeClass=\"${17:Optional - String}\" selectDate=\"${18:Optional - ui:selectDate}\">${19:Implements ui:visible.\tRepresents a date picker, which can be used in input components such as ui:inputDate and ui:inputDateTime.}</ui:datePicker>"
+      "contents": "ui:datePicker hasTime=\"${1:Optional - Boolean}\" hours=\"${2:Optional - Integer}\" is24HourFormat=\"${3:Optional - Boolean}\" maxYear=\"${4:Optional - Integer}\" minYear=\"${5:Optional - Integer}\" minutes=\"${6:Optional - Integer}\" value=\"${7:Optional - String}\" visible=\"${8:Optional - Boolean}\" managed=\"${9:Optional - Boolean}\" referenceElement=\"${10:Optional - Object}\" showToday=\"${11:Optional - Boolean}\" hideOnSelect=\"${12:Optional - Boolean}\" setFocus=\"${13:Optional - Boolean}\" titleHeadingLevel=\"${14:Optional - String}\" closeOnClickOut=\"${15:Optional - Boolean}\" rangeStart=\"${16:Optional - String}\" rangeEnd=\"${17:Optional - String}\" rangeClass=\"${18:Optional - String}\" selectDate=\"${19:Optional - ui:selectDate}\">${20:Implements ui:visible.\tRepresents a date picker, which can be used in input components such as ui:inputDate and ui:inputDateTime.}</ui:datePicker>"
     },
     {
       "trigger": "ui-datePickerGrid\tTag Simple",
@@ -2167,7 +2167,7 @@
     },
     {
       "trigger": "ui-pill\tTag Full",
-      "contents": "ui:pill label=\"${1:Optional - String}\" id=\"${2:Optional - String}\" showDelete=\"${3:Optional - Boolean}\" iconUrl=\"${4:Optional - String}\" iconBackgroundColor=\"${5:Optional - String}\" accessibleDeleteLabel=\"${6:Optional - String}\" maxCharacters=\"${7:Optional - Integer}\" active=\"${8:Optional - Boolean}\" onHandledEvent=\"${9:Optional - ui:response}\" keydown=\"${10:Optional - ui:keydown}\" blur=\"${11:Optional - ui:blur}\">${12:Implements ui:visible, ui:focusable.\tA UI pill in a ui:pillContainer component}</ui:pill>"
+      "contents": "ui:pill label=\"${1:Optional - String}\" id=\"${2:Optional - String}\" showDelete=\"${3:Optional - Boolean}\" iconUrl=\"${4:Optional - String}\" iconBackgroundColor=\"${5:Optional - String}\" iconAlt=\"${6:Optional - String}\" accessibleDeleteLabel=\"${7:Optional - String}\" maxCharacters=\"${8:Optional - Integer}\" active=\"${9:Optional - Boolean}\" onHandledEvent=\"${10:Optional - ui:response}\" keydown=\"${11:Optional - ui:keydown}\" blur=\"${12:Optional - ui:blur}\">${13:Implements ui:visible, ui:focusable.\tA UI pill in a ui:pillContainer component}</ui:pill>"
     },
     {
       "trigger": "ui-pillContainer\tTag Simple",
@@ -7839,7 +7839,7 @@
     },
     {
       "trigger": "uitest-autoComplete_Test\tTag Full",
-      "contents": "uitest:autoComplete_Test>${1:}</uitest:autoComplete_Test>"
+      "contents": "uitest:autoComplete_Test usePanel=\"${1:Optional - Boolean}\">${2:}</uitest:autoComplete_Test>"
     },
     {
       "trigger": "uitest-autoComplete_updateOnTest\tTag Simple",
@@ -8770,12 +8770,28 @@
       "contents": "uitest:pillContainer_WithAutoComplete flavor=\"${1:Optional - String}\" maxLines=\"${2:Optional - Integer}\" maxAllowed=\"${3:Optional - Integer}\">${4:}</uitest:pillContainer_WithAutoComplete>"
     },
     {
+      "trigger": "uitest-pillContainer_WithAutoCompleteAndPlaceHolderText\tTag Simple",
+      "contents": "uitest:pillContainer_WithAutoCompleteAndPlaceHolderText$1>${2:}</uitest:pillContainer_WithAutoCompleteAndPlaceHolderText>"
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteAndPlaceHolderText\tTag Full",
+      "contents": "uitest:pillContainer_WithAutoCompleteAndPlaceHolderText flavor=\"${1:Optional - String}\" maxLines=\"${2:Optional - Integer}\" maxAllowed=\"${3:Optional - Integer}\">${4:}</uitest:pillContainer_WithAutoCompleteAndPlaceHolderText>"
+    },
+    {
       "trigger": "uitest-pillContainer_WithAutoCompleteHeader\tTag Simple",
       "contents": "uitest:pillContainer_WithAutoCompleteHeader$1>${2:}</uitest:pillContainer_WithAutoCompleteHeader>"
     },
     {
       "trigger": "uitest-pillContainer_WithAutoCompleteHeader\tTag Full",
       "contents": "uitest:pillContainer_WithAutoCompleteHeader>${1:}</uitest:pillContainer_WithAutoCompleteHeader>"
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteUsePanelSet\tTag Simple",
+      "contents": "uitest:pillContainer_WithAutoCompleteUsePanelSet$1>${2:}</uitest:pillContainer_WithAutoCompleteUsePanelSet>"
+    },
+    {
+      "trigger": "uitest-pillContainer_WithAutoCompleteUsePanelSet\tTag Full",
+      "contents": "uitest:pillContainer_WithAutoCompleteUsePanelSet flavor=\"${1:Optional - String}\" maxLines=\"${2:Optional - Integer}\" maxAllowed=\"${3:Optional - Integer}\">${4:}</uitest:pillContainer_WithAutoCompleteUsePanelSet>"
     },
     {
       "trigger": "uitest-pillContainer_WithTextInput\tTag Simple",

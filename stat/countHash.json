@@ -1697,7 +1697,7 @@
  "cmp.ui:datePicker": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 19,
+  "aura:attribute": 20,
   "aura:method": 1,
   "aura:registerevent": 1,
   "aura:handler": 2,
@@ -2193,7 +2193,7 @@
  "cmp.ui:pill": {
   "aura:component": 1,
   "aura:import": 1,
-  "aura:attribute": 8,
+  "aura:attribute": 9,
   "aura:registerevent": 3,
   "aura:handler": 2,
   "aura:if": 2,
@@ -5647,14 +5647,18 @@
  },
  "cmp.uitest:autoComplete_Test": {
   "aura:component": 1,
+  "aura:attribute": 1,
   "ui:autocomplete": 10,
-  "aura:set": 22,
+  "aura:set": 23,
   "uitest:autocomplete_testdataprovider": 10,
   "ui:autocompleteoption": 8,
   "ui:outputtext": 11,
   "uitest:autocomplete_customtemplate": 1,
   "uitest:autocomplete_customoption": 1,
-  "ui:button": 1
+  "ui:button": 1,
+  "ui:panelmanager2": 1,
+  "ui:panel": 1,
+  "ui:modal": 1
  },
  "cmp.uitest:autoComplete_updateOnTest": {
   "aura:component": 1,
@@ -5797,10 +5801,11 @@
  "cmp.uitest:datepicker_RegressionTest": {
   "aura:component": 1,
   "aura:attribute": 2,
-  "aura:if": 4,
-  "ui:inputdatetrigger": 3,
-  "ui:datepickermanager": 3,
-  "ui:datepicker": 1
+  "aura:if": 8,
+  "ui:datepicker": 4,
+  "ui:inputdate": 2,
+  "ui:inputdatetime": 3,
+  "ui:button": 2
  },
  "cmp.uitest:demoMenuTrigger": {
   "aura:component": 1,
@@ -6189,7 +6194,7 @@
  "cmp.uitest:label_Test": {
   "aura:component": 1,
   "aura:attribute": 2,
-  "ui:label": 4,
+  "ui:label": 9,
   "ui:inputtext": 6,
   "aura:iteration": 1,
   "ui:inputpercent": 2,
@@ -6413,6 +6418,16 @@
   "uitest:pillcontainerautocompletedataprovider": 1,
   "ui:pillcontainerautocompleteoption": 1
  },
+ "cmp.uitest:pillContainer_WithAutoCompleteAndPlaceHolderText": {
+  "aura:component": 1,
+  "aura:attribute": 3,
+  "aura:handler": 1,
+  "ui:pillcontainer": 1,
+  "aura:set": 3,
+  "ui:pillcontainerautocomplete": 1,
+  "uitest:pillcontainerautocompletedataprovider": 1,
+  "ui:pillcontainerautocompleteoption": 1
+ },
  "cmp.uitest:pillContainer_WithAutoCompleteHeader": {
   "aura:component": 1,
   "aura:handler": 1,
@@ -6423,6 +6438,18 @@
   "ui:inputselectoption": 2,
   "uitest:pillcontainerautocompletedataprovider": 1,
   "ui:pillcontainerautocompleteoption": 1
+ },
+ "cmp.uitest:pillContainer_WithAutoCompleteUsePanelSet": {
+  "aura:component": 1,
+  "aura:attribute": 3,
+  "ui:pillcontainer": 1,
+  "aura:set": 4,
+  "ui:pillcontainerautocomplete": 1,
+  "uitest:pillcontainerautocompletedataprovider": 1,
+  "ui:pillcontainerautocompleteoption": 1,
+  "ui:panelmanager2": 1,
+  "ui:panel": 1,
+  "ui:modal": 1
  },
  "cmp.uitest:pillContainer_WithTextInput": {
   "aura:component": 1,

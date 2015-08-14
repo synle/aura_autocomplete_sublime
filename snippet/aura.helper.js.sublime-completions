@@ -99,7 +99,7 @@
     },
     {
       "trigger": "helper-auradev-testDataProvider2-provide",
-      "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
+      "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event})"
     },
     {
       "trigger": "helper-auradocs-demoAuraError-helperThrow",
@@ -119,7 +119,7 @@
     },
     {
       "trigger": "helper-auradocs-demoDataProvider-provide",
-      "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().provide(${1:component})"
     },
     {
       "trigger": "helper-auradocs-demoEvents-getUnwrapped",
@@ -408,6 +408,10 @@
     {
       "trigger": "helper-ui-autocompleteList-showLoading",
       "contents": "cmp.getDef().getHelper().showLoading(${1:component},${2:visible})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-setUpEvents",
+      "contents": "cmp.getDef().getHelper().setUpEvents(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteOption-addOptionDomEvents",
@@ -1642,10 +1646,6 @@
       "contents": "cmp.getDef().getHelper().removeTokenFromString(${1:str},${2:token})"
     },
     {
-      "trigger": "helper-ui-input-addInputClass",
-      "contents": "cmp.getDef().getHelper().addInputClass(${1:component})"
-    },
-    {
       "trigger": "helper-ui-input-hasLabel",
       "contents": "cmp.getDef().getHelper().hasLabel(${1:cmp})"
     },
@@ -2339,7 +2339,7 @@
     },
     {
       "trigger": "helper-ui-menuList-setHandlersOnMenuItems",
-      "contents": "cmp.getDef().getHelper().setHandlersOnMenuItems(${1:component},${2:items},${3:children})"
+      "contents": "cmp.getDef().getHelper().setHandlersOnMenuItems(${1:component},${2:items},${3:children},${4:existingChildren})"
     },
     {
       "trigger": "helper-ui-menuList-getMenuItem",
@@ -2886,8 +2886,8 @@
       "contents": "cmp.getDef().getHelper().insertItems(${1:cmp},${2:newItems})"
     },
     {
-      "trigger": "helper-ui-pillContainer-onItemsChanged",
-      "contents": "cmp.getDef().getHelper().onItemsChanged(${1:cmp})"
+      "trigger": "helper-ui-pillContainer-updateDisplayedItems",
+      "contents": "cmp.getDef().getHelper().updateDisplayedItems(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-handlePillEvent",
@@ -2906,28 +2906,12 @@
       "contents": "cmp.getDef().getHelper().focusOnInputBox(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-pillContainer-setInputWidth",
-      "contents": "cmp.getDef().getHelper().setInputWidth(${1:cmp},${2:pillInput})"
-    },
-    {
-      "trigger": "helper-ui-pillContainer-_setInputWidthDirectly",
-      "contents": "cmp.getDef().getHelper()._setInputWidthDirectly(${1:cmp},${2:pillInput})"
-    },
-    {
       "trigger": "helper-ui-pillContainer-adjustHeight",
       "contents": "cmp.getDef().getHelper().adjustHeight(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-showMore",
       "contents": "cmp.getDef().getHelper().showMore(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-pillContainer-registerResizeHandler",
-      "contents": "cmp.getDef().getHelper().registerResizeHandler(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-pillContainer-deregisterResizeHandler",
-      "contents": "cmp.getDef().getHelper().deregisterResizeHandler(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-_getActualHeight",

@@ -10690,6 +10690,7 @@
     "labelposition": "{!v.labelPosition}",
     "placeholder": "{!v.placeholder}",
     "updateon": "{!v.updateOn}",
+    "ariadescribedby": "{!v.ariaDescribedBy}",
     "autocompletebutton": "{!v.autocompleteButton}"
    }
   ],
@@ -10702,6 +10703,7 @@
     "labelposition": "{!v.labelPosition}",
     "placeholder": "{!v.placeholder}",
     "updateon": "{!v.updateOn}",
+    "ariadescribedby": "{!v.ariaDescribedBy}",
     "autocompletebutton": "{!v.autocompleteButton}"
    }
   ],
@@ -12533,7 +12535,7 @@
    {
     "name": "hideOnSelect",
     "type": "Boolean",
-    "default": "true",
+    "default": "false",
     "description": "Close the datePicker after a date is selected"
    },
    {
@@ -12546,6 +12548,13 @@
     "name": "titleHeadingLevel",
     "type": "String",
     "description": "The heading level for the title. The default is h2."
+   },
+   {
+    "name": "closeOnClickOut",
+    "access": "INTERNAL",
+    "type": "Boolean",
+    "default": "false",
+    "description": "true if used with input date, work around for 198 REMOVE in 200"
    },
    {
     "name": "_today",
@@ -14106,6 +14115,8 @@
   "ui:datepicker": [
    {
     "aura:id": "datePicker",
+    "hideonselect": "true",
+    "closeonclickout": "true",
     "selectdate": "{!c.setValue}",
     "showtoday": "{!$Browser.isPhone || $Browser.isTablet}"
    }
@@ -16296,16 +16307,16 @@
    {
     "name": "altChecked",
     "type": "String",
-    "default": "checkbox checked",
+    "default": "True",
     "access": "GLOBAL",
-    "description": "The alternate text description when the checkbox is checked. Default value is “checkbox checked”."
+    "description": "The alternate text description when the checkbox is checked. Default value is “True”."
    },
    {
     "name": "altUnchecked",
     "type": "String",
-    "default": "checkbox unchecked",
+    "default": "False",
     "access": "GLOBAL",
-    "description": "The alternate text description when the checkbox is unchecked. Default value is “checkbox unchecked”."
+    "description": "The alternate text description when the checkbox is unchecked. Default value is “False”."
    }
   ],
   "ui:image": [
@@ -17395,6 +17406,11 @@
     "description": "The background color for the icon"
    },
    {
+    "name": "iconAlt",
+    "type": "String",
+    "description": "The alt attribute for the icon"
+   },
+   {
     "name": "accessibleDeleteLabel",
     "type": "String",
     "default": "Press Delete to Remove",
@@ -17454,7 +17470,8 @@
    {
     "aura:id": "icon",
     "src": "{!v.iconUrl}",
-    "imagetype": "decorative",
+    "imagetype": "{!empty(v.iconAlt) ? 'decorative' : 'informational'}",
+    "alt": "{!v.iconAlt}",
     "onerror": "{!c.onIconError}"
    }
   ]
@@ -17588,6 +17605,7 @@
     "aura:flavor": "{!v.pillFlavor}",
     "iconurl": "{!item.icon.url}",
     "iconbackgroundcolor": "{!item.icon.backgroundColor}",
+    "iconalt": "{!item.icon.alt}",
     "label": "{!item.label}",
     "id": "{!item.id}",
     "showdelete": "{!v.allowRemove}",
@@ -58891,8 +58909,16 @@
   "aura:component": [
    {}
   ],
+  "aura:attribute": [
+   {
+    "name": "usePanel",
+    "type": "Boolean",
+    "default": "false"
+   }
+  ],
   "ui:autocomplete": [
    {
+    "usepanel": "{!v.usePanel}",
     "aura:id": "autoComplete",
     "optionvar": "row",
     "matchdone": "{!c.handleInputChangeAutoCompleteMatchDone}",
@@ -59041,6 +59067,9 @@
    },
    {
     "attribute": "autocompleteButton"
+   },
+   {
+    "attribute": "registeredPanels"
    }
   ],
   "uitest:autocomplete_testdataprovider": [
@@ -59176,6 +59205,21 @@
    {
     "label": "Toggle",
     "press": "{!c.handleToggleActionToggle}"
+   }
+  ],
+  "ui:panelmanager2": [
+   {
+    "aura:id": "pm"
+   }
+  ],
+  "ui:panel": [
+   {
+    "alias": "panel"
+   }
+  ],
+  "ui:modal": [
+   {
+    "alias": "modal"
    }
   ]
  },
@@ -60529,45 +60573,78 @@
     "istrue": "{! v.renderItem == 'testSFXAccessibiltyCustomHeaderTag'}"
    },
    {
-    "istrue": "{! v.renderItem == 'testSetFocusOnDatepickerGridDefaultVal'}"
-   },
-   {
     "istrue": "{! v.renderItem == 'testDatepickerSetFocus'}"
-   }
-  ],
-  "ui:inputdatetrigger": [
-   {
-    "displaydatepicker": "true",
-    "format": "yyyy-MM-dd",
-    "value": "{!v.value}"
    },
    {
-    "displaydatepicker": "true",
-    "format": "yyyy-MM-dd",
-    "value": "{!v.value}"
+    "istrue": "{! v.renderItem == 'testSingleInputFlag'}"
    },
    {
-    "displaydatepicker": "true",
-    "format": "yyyy-MM-dd",
-    "value": "{!v.value}"
-   }
-  ],
-  "ui:datepickermanager": [
-   {
-    "aura:id": "datepickerManager"
+    "istrue": "{! v.renderItem == 'testDisabledInputDate'}"
    },
    {
-    "aura:id": "datepickerManager"
+    "istrue": "{! v.renderItem == 'testCloseOnClickOut'}"
    },
    {
-    "aura:id": "datepickerManager"
+    "istrue": "{! v.renderItem == 'testOpenOnClickOut'}"
+   },
+   {
+    "istrue": "{! v.renderItem == 'simpleInputDateTime'}"
    }
   ],
   "ui:datepicker": [
    {
     "aura:id": "standAloneDatepicker",
+    "visible": "true"
+   },
+   {
+    "aura:id": "standAloneDatepicker",
     "visible": "true",
     "titleheadinglevel": "h3"
+   },
+   {
+    "aura:id": "standAloneDatepicker",
+    "visible": "true",
+    "closeonclickout": "true"
+   },
+   {
+    "aura:id": "standAloneDatepicker",
+    "visible": "true",
+    "closeonclickout": "false"
+   }
+  ],
+  "ui:inputdate": [
+   {
+    "aura:id": "inputDate",
+    "displaydatepicker": "true"
+   },
+   {
+    "aura:id": "inputDate",
+    "disabled": "true"
+   }
+  ],
+  "ui:inputdatetime": [
+   {
+    "aura:id": "inputDatetime",
+    "usesingleinput": "true",
+    "displaydatepicker": "true"
+   },
+   {
+    "aura:id": "inputDatetime_disabled",
+    "usesingleinput": "false",
+    "displaydatepicker": "true"
+   },
+   {
+    "displaydatepicker": "true"
+   }
+  ],
+  "ui:button": [
+   {
+    "aura:id": "btnPressMe",
+    "label": "Press Me and The Datepicker will disappear"
+   },
+   {
+    "aura:id": "btnPressMe",
+    "label": "Press Me and the Datepicker still stays opened"
    }
   ]
  },
@@ -62678,7 +62755,8 @@
   "ui:inputselect": [
    {
     "class": "single",
-    "aura:id": "InputSelectSingle"
+    "aura:id": "InputSelectSingle",
+    "label": "test"
    },
    {
     "multiple": "true",
@@ -63517,6 +63595,21 @@
     "labeldisplay": "false",
     "for": "myHiddeninputtext",
     "label": "My Input Text"
+   },
+   {
+    "aura:id": "destroyLabel"
+   },
+   {
+    "aura:id": "destroyLabelHidden"
+   },
+   {
+    "aura:id": "destroyLabelNested"
+   },
+   {
+    "aura:id": "destroyLabelInner"
+   },
+   {
+    "aura:id": "destroyLabelInnermost"
    }
   ],
   "ui:inputtext": [
@@ -65134,6 +65227,80 @@
    }
   ]
  },
+ "cmp.uitest:pillContainer_WithAutoCompleteAndPlaceHolderText": {
+  "aura:component": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "flavor",
+    "type": "String",
+    "default": "default",
+    "description": ""
+   },
+   {
+    "name": "maxLines",
+    "type": "Integer",
+    "default": "0",
+    "description": "Maximum lines to show. Hidden lines can be expanded. Use 0 to disable."
+   },
+   {
+    "name": "maxAllowed",
+    "type": "Integer",
+    "default": "10",
+    "description": "Max pills this container should have."
+   }
+  ],
+  "aura:handler": [
+   {
+    "name": "init",
+    "value": "{!this}",
+    "action": "{!c.init}"
+   }
+  ],
+  "ui:pillcontainer": [
+   {
+    "aura:id": "pillContainer",
+    "maxlines": "{!v.maxLines}",
+    "aura:flavor": "{!v.flavor}",
+    "pillflavor": "{!v.flavor}",
+    "maxallowed": "{!v.maxAllowed}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "pillInput"
+   },
+   {
+    "attribute": "dataProvider"
+   },
+   {
+    "attribute": "listOption"
+   }
+  ],
+  "ui:pillcontainerautocomplete": [
+   {
+    "placeholder": "testPLaceHolder",
+    "aura:id": "autocomplete",
+    "optionvar": "row",
+    "label": "lookupLabel",
+    "labelposition": "hidden"
+   }
+  ],
+  "uitest:pillcontainerautocompletedataprovider": [
+   {}
+  ],
+  "ui:pillcontainerautocompleteoption": [
+   {
+    "label": "{!row.label}",
+    "keyword": "{!row.keyword}",
+    "value": "{!row}",
+    "visible": "{!row.visible}",
+    "iconurl": "{!row.icon.url}",
+    "iconbackgroundcolor": "{!row.icon.backgroundColor}"
+   }
+  ]
+ },
  "cmp.uitest:pillContainer_WithAutoCompleteHeader": {
   "aura:component": [
    {}
@@ -65196,6 +65363,91 @@
     "value": "{!row}",
     "visible": "{!row.visible}",
     "iconurl": "{!row.icon.url}"
+   }
+  ]
+ },
+ "cmp.uitest:pillContainer_WithAutoCompleteUsePanelSet": {
+  "aura:component": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "flavor",
+    "type": "String",
+    "default": "default",
+    "description": ""
+   },
+   {
+    "name": "maxLines",
+    "type": "Integer",
+    "default": "0",
+    "description": "Maximum lines to show. Hidden lines can be expanded. Use 0 to disable."
+   },
+   {
+    "name": "maxAllowed",
+    "type": "Integer",
+    "default": "10",
+    "description": "Max pills this container should have."
+   }
+  ],
+  "ui:pillcontainer": [
+   {
+    "aura:id": "pillContainer",
+    "maxlines": "{!v.maxLines}",
+    "aura:flavor": "{!v.flavor}",
+    "pillflavor": "{!v.flavor}",
+    "maxallowed": "{!v.maxAllowed}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "pillInput"
+   },
+   {
+    "attribute": "dataProvider"
+   },
+   {
+    "attribute": "listOption"
+   },
+   {
+    "attribute": "registeredPanels"
+   }
+  ],
+  "ui:pillcontainerautocomplete": [
+   {
+    "usepanel": "true",
+    "aura:id": "autocomplete",
+    "optionvar": "row",
+    "label": "lookupLabel",
+    "labelposition": "hidden"
+   }
+  ],
+  "uitest:pillcontainerautocompletedataprovider": [
+   {}
+  ],
+  "ui:pillcontainerautocompleteoption": [
+   {
+    "label": "{!row.label}",
+    "keyword": "{!row.keyword}",
+    "value": "{!row}",
+    "visible": "{!row.visible}",
+    "iconurl": "{!row.icon.url}",
+    "iconbackgroundcolor": "{!row.icon.backgroundColor}"
+   }
+  ],
+  "ui:panelmanager2": [
+   {
+    "aura:id": "pm"
+   }
+  ],
+  "ui:panel": [
+   {
+    "alias": "panel"
+   }
+  ],
+  "ui:modal": [
+   {
+    "alias": "modal"
    }
   ]
  },
