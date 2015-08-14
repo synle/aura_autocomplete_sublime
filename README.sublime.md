@@ -14,7 +14,8 @@ Please note that anything in {} and - is optional. Instead of attr-ui-menuitem-s
 
 Trigger | Example | Description
 ------- | ------- | -----------
-`evt-{COMPONENT_NAME}-{EVENT_NAME}` | **`evt-search`** | Autocompelte for events
+`evt-{COMPONENT_NAME}-{EVENT_NAME}` | **`evt-search`** | Autocomplete for events
+`helper-{COMPONENT_NAME}-{HELPER_METHODS}` | **`helper-ui-panel-show** | Autocomplete for component helpers
 `$a-test-{TEST_METHOD_NAME}` | **`$A.test.assertTru`** | All Test.js functions
 `$a-util-{UTIL_METHOD_NAME}` | **`$A-util-getbool`** | All Util.js functions
 `{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` | <a **`attr-ui-menuitem-select`** | all Aura tag attributes
