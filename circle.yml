@@ -3,5 +3,5 @@ dependencies:
     - npm install --dev
 test:
   post:
-  	- debug=1 npm run pkg
+    - debug=1 npm run pkg
     - npm test
