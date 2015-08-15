@@ -8,3 +8,8 @@ checkout:
 test:
   post:
     - debug=1 npm run pkg
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: aura-explorer
