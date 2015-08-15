@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - npm install --dev
+    - npm install
 checkout:
   post:
     - git submodule init 
