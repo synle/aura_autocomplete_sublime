@@ -4,4 +4,3 @@ dependencies:
 test:
   post:
     - debug=1 npm run pkg
-    - npm test
