@@ -314,10 +314,6 @@
       "contents": "afterAuraInit=\"${1:aura:template - Optional - String}\""
     },
     {
-      "trigger": "aura-template-auraLoading\tAttr",
-      "contents": "auraLoading=\"${1:aura:template - Optional - Aura.Component[]}\""
-    },
-    {
       "trigger": "aura-template-inlineStyle\tAttr",
       "contents": "inlineStyle=\"${1:aura:template - Optional - Aura.Component[]}\""
     },
@@ -1320,6 +1316,10 @@
     {
       "trigger": "ui-carousel-height\tAttr",
       "contents": "height=\"${1:ui:carousel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-carousel-swipeEnabled\tAttr",
+      "contents": "swipeEnabled=\"${1:ui:carousel - Optional - Boolean}\""
     },
     {
       "trigger": "ui-carousel-width\tAttr",

@@ -412,6 +412,14 @@
   "test:basiccspcmpextendstemplate": 1,
   "ui:button": 1
  },
+ "app.test:customLoadingTextTemplateApp": {
+  "aura:application": 1,
+  "ui:outputtext": 1
+ },
+ "app.test:defaultLoadingTemplateApp": {
+  "aura:application": 1,
+  "ui:outputtext": 1
+ },
  "app.test:fakeApplication": {
   "aura:application": 1,
   "aura:attribute": 1
@@ -743,8 +751,7 @@
  },
  "cmp.aura:template": {
   "aura:component": 1,
-  "aura:attribute": 30,
-  "aura:set": 1
+  "aura:attribute": 29
  },
  "cmp.aura:text": {
   "aura:component": 1,
@@ -1581,7 +1588,7 @@
  "cmp.ui:carousel": {
   "aura:component": 1,
   "aura:handler": 1,
-  "aura:attribute": 18,
+  "aura:attribute": 19,
   "ui:carouselindicator": 1,
   "ui:carouselpage": 1,
   "ui:scroller": 1
@@ -4914,6 +4921,14 @@
   "aura:component": 1,
   "aura:attribute": 1,
   "ui:button": 1
+ },
+ "cmp.test:customLoadingTextTemplate": {
+  "aura:component": 1,
+  "aura:set": 2
+ },
+ "cmp.test:defaultLoadingTemplate": {
+  "aura:component": 1,
+  "aura:set": 1
  },
  "cmp.test:extendsChild": {
   "aura:component": 1,

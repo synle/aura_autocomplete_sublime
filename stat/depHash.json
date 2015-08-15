@@ -2354,6 +2354,32 @@
    }
   ]
  },
+ "app.test:customLoadingTextTemplateApp": {
+  "aura:application": [
+   {
+    "template": "test:customLoadingTextTemplate",
+    "render": "client"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "value": "In customLoadingTextTemplate.app"
+   }
+  ]
+ },
+ "app.test:defaultLoadingTemplateApp": {
+  "aura:application": [
+   {
+    "template": "test:defaultLoadingTemplate",
+    "render": "client"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "value": "In defaultLoadingTemplateApp.app"
+   }
+  ]
+ },
  "app.test:fakeApplication": {
   "aura:application": [
    {
@@ -5941,11 +5967,6 @@
     "description": "Not used."
    },
    {
-    "name": "auraLoading",
-    "type": "Aura.Component[]",
-    "description": "Aura Loading Screen Markup"
-   },
-   {
     "name": "inlineStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display inline elements"
@@ -5954,11 +5975,6 @@
     "name": "appcacheProgressBarStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display appcache progress bar."
-   }
-  ],
-  "aura:set": [
-   {
-    "attribute": "auraLoading"
    }
   ]
  },
@@ -11224,6 +11240,12 @@
     "description": "Height of the carousel"
    },
    {
+    "name": "swipeEnabled",
+    "type": "Boolean",
+    "default": "true",
+    "description": "Enable swipe"
+   },
+   {
     "name": "width",
     "type": "Integer",
     "description": "Width of the carousel"
@@ -11331,7 +11353,7 @@
     "bindeventstoscroller": "{!v.bindEventsToScroller}",
     "scroll": "horizontal",
     "supportvoiceover": "false",
-    "enabled": "{! (v.pageModels.length > 1 || v.pageComponents.length > 1)}",
+    "enabled": "{! and( v.swipeEnabled, (v.pageModels.length > 1 || v.pageComponents.length > 1))}",
     "snap": "true",
     "lockondirection": "vertical",
     "plugins": "Indicators,Carousel",
@@ -55528,6 +55550,36 @@
   "ui:button": [
    {
     "label": "hi"
+   }
+  ]
+ },
+ "cmp.test:customLoadingTextTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "loadingText",
+    "value": "Set From Test"
+   },
+   {
+    "attribute": "auraPreInitBlock"
+   }
+  ]
+ },
+ "cmp.test:defaultLoadingTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "auraPreInitBlock"
    }
   ]
  },
