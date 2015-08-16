@@ -217,12 +217,17 @@
 
 	//hook up events
 	function hookupEvents(){
-	    $('#searchComponent').keypress(
+	    $('#searchComponent').keydown(
 	    	$.debounce(
 	    		1000,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
+
+	    			//toggle search highlight
 					$('#tree').toggleClass('search-hl', keyword.length > 0);
+
+					//remove previous highlight
+					$('.box.matched').removeClass('matched');
 
 					if(keyword.length > 0){
 						$('.box').each(function(){
@@ -233,9 +238,6 @@
 
 		    				$(this).toggleClass('matched', isVisible);
 		    			});
-					}
-					else{
-						$('.box.matched').removeClass('matched');
 					}
 			    }
 			)
