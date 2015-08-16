@@ -90,6 +90,10 @@
 	.search-hl .box{
 		display:none !important;
 	}
+
+	.search-hl .box.matched{
+		display:block !important;
+	}
 	</style>
 
     
@@ -218,14 +222,21 @@
 	    		1000,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
-					$('#tree').toggleClass('search-hl', keyword.length === 0);
+					$('#tree').toggleClass('search-hl', keyword.length > 0);
 
-	    			$('.box').each(function(){
-	    				var isVisible = false;
-	    				if ($(this).text().indexOf(keyword) >= 0){
-	    					isVisible = true;
-	    				}
-	    			});
+					if(keyword.length > 0){
+						$('.box').each(function(){
+		    				var isVisible = false;
+		    				if ($(this).text().indexOf(keyword) >= 0){
+		    					isVisible = true;
+		    				}
+
+		    				$(this).toggleClass('matched', isVisible);
+		    			});
+					}
+					else{
+						$('.box.matched').removeClass('matched');
+					}
 			    }
 			)
 		);
