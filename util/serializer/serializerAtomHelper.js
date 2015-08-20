@@ -24,9 +24,9 @@ var self = {
         var atomFormat = [];
 
         var contentTemplate = util.getTemplateFunc([
-            "\t'{{functionName}}':",
-            "\t\t'prefix': '{{normalizedFunctionName}}'",
-            "\t\t'body': '{{functionName}}({{annotatedParams}})'"
+            "\t'{{{functionName}}}':",
+            "\t\t'prefix': '{{{normalizedFunctionName}}}'",
+            "\t\t'body': '{{{functionName}}}({{{annotatedParams}}})'"
         ].join('\n'));
 
         for (var functionName in dictionary) {
@@ -61,16 +61,16 @@ var self = {
         var triggerTemplate = util.getTemplateFunc(
             [
                 "helper",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{namespace}}",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{componentName}}",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{functionName}}"
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{namespace}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{componentName}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{functionName}}}"
             ].join('')
         );
         var contentTemplate = util.getTemplateFunc(
-            "cmp.getDef().getHelper().{{functionName}}({{annotatedParams}})"
+            "cmp.getDef().getHelper().{{{functionName}}}({{{annotatedParams}}})"
         );
 
         // console.log(helperDictionary);
@@ -126,23 +126,23 @@ var self = {
         var triggerTemplate = util.getTemplateFunc(
             [
                 "evt",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{evtObj.namespace}}",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{evtObj.component}}",
-                "{{TRIGGER_SEPARATOR}}",
-                "{{actualEvt.name}}"
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{evtObj.namespace}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{evtObj.component}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{actualEvt.name}}}"
             ].join('')
         );
         var contentTemplate = util.getTemplateFunc(
             [
-                '//  component: {{evtObj.component}}',
-                '//    evtName: {{actualEvt.name}}',
-                '//    evtType: {{actualEvt.type}}',
-                '//description: {{actualEvt.description}}',
-                'var e = cmp.find("${1:{{evtObj.component}}}").get("e.{{actualEvt.name}}");',
+                '//  component: {{{evtObj.component}}}',
+                '//    evtName: {{{actualEvt.name}}}',
+                '//    evtType: {{{actualEvt.type}}}',
+                '//description: {{{actualEvt.description}}}',
+                'var e = cmp.find("${1:{{{evtObj.component}}}}").get("e.{{{actualEvt.name}}}");',
                 'e.setParams({',
-                '{{contentBody}}',//content body
+                '{{{contentBody}}}',//content body
                 '});',
                 'e.fire();'
             ].join('\n')
