@@ -136,9 +136,7 @@ var self = {
         ...]  
     **/
     consolidate_evt: function(arrayEvents) {
-        var sublimeFormat = self._getDefaultSublimeJSObject(
-            'source.js'
-        );
+        var atomFormat = [];
 
         var triggerTemplate = util.getTemplateFunc(
             [
@@ -153,10 +151,6 @@ var self = {
         );
         var contentTemplate = util.getTemplateFunc(
             [
-                '//  component: {{{evtObj.component}}}',
-                '//    evtName: {{{actualEvt.name}}}',
-                '//    evtType: {{{actualEvt.type}}}',
-                '//description: {{{actualEvt.description}}}',
                 'var e = cmp.find("${1:{{{evtObj.component}}}}").get("e.{{{actualEvt.name}}}");',
                 'e.setParams({',
                 '{{{contentBody}}}',//content body
@@ -164,6 +158,23 @@ var self = {
                 'e.fire();'
             ].join('\n')
         );
+
+
+        var atomRowTemplate = util.getTemplateFunc([
+            [
+                "\t'evt",
+                ".",
+                "{{{evtObj.namespace}}}",
+                ".",
+                "{{{evtObj.component}}}",
+                ".",
+                "{{{actualEvt.name}}}':"
+            ].join(''),
+            "\t\t'prefix': '{{{trigger}}}'",
+            "\t\t'body': \"\"\"",
+            "{{{contents}}}",
+            "\t\t\"\"\""
+        ].join('\n'));
 
         for (var evtName in arrayEvents) {
             var evtObj = arrayEvents[evtName];
@@ -196,16 +207,20 @@ var self = {
                 TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
             }
 
-            //push
-            sublimeFormat.completions.push({
-                trigger: triggerTemplate(viewObj),
-                contents: contentTemplate(viewObj)
-            });
+            //sublime format
+            viewObj.trigger = triggerTemplate(viewObj),
+            viewObj.contents = contentTemplate(viewObj)
+
+            //append
+            atomFormat.push(
+                atomRowTemplate(
+                    viewObj
+                )
+            );
         };
 
 
-        return '';
-        // return sublimeFormat;
+        return atomFormat.join('\n');
     },
 
 

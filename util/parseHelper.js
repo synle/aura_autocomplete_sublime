@@ -188,20 +188,19 @@ var self = {
 
 
         //consolidate atom files
-        var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
-        self.writeToFile(
-            snippetData,
-            path.join(
-                outputDir,
-                'aura.js.atom.cson'
-            ),
-            true // append
-        );
+        // var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
+        // self.writeToFile(
+        //     snippetData,
+        //     path.join(
+        //         outputDir,
+        //         'aura.js.atom.cson'
+        //     ),
+        //     true // append
+        // );
     },
     updateEvt: function(arrayEvents, outputDir){
         logger.debug('Updating Sublime File: Component Events'.bold.magenta.underline);
 
-        //consolidate js evt
         var snippetData = consolidatorSublime.consolidate_evt(arrayEvents);
         logger.info('updateEvt.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
@@ -213,16 +212,15 @@ var self = {
         );
 
 
-        //consolidate js evt
-        var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
-        self.writeToFile(
-            snippetData,
-            path.join(
-                outputDir,
-                'aura.js.atom.cson'
-            ),
-            true//append
-        );
+        // var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
+        // self.writeToFile(
+        //     snippetData,
+        //     path.join(
+        //         outputDir,
+        //         'aura.js.atom.cson'
+        //     ),
+        //     true//append
+        // );
     },
     updateTag: function(arrayComponents, outputDir){
         logger.debug('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
@@ -239,7 +237,6 @@ var self = {
         );
 
 
-        //consolidate js evt
         // var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
         // self.writeToFile(
         //     snippetData,
@@ -264,7 +261,6 @@ var self = {
         );
 
 
-        //consolidate js evt
         // logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         // var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
         // self.writeToFile(

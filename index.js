@@ -21,7 +21,7 @@ if (process.env.baseDir !== undefined){
 	//when start with environment variables
 	//debug=2 baseDir=/Users/sle/blt/app/main/core npm start
 	logger.debug('Retrived baseDir from Environment Variable');
-	processParser( 
+	processParser(
 		process.env.baseDir,
 		config.outputDir
 	);
@@ -35,10 +35,10 @@ else if(process.argv[2]){
 		baseDir = config.baseDir;
 	}
 	else{
-		baseDir = process.argv[2];	
+		baseDir = process.argv[2];
 	}
 
-	processParser( 
+	processParser(
 		baseDir,
 		config.outputDir
 	);
@@ -88,7 +88,7 @@ function processParser(baseDir, outputDir){
 
 
 
-	//setup stuffs	
+	//setup stuffs
 	//appendsource.js for cson (atom)
 	parseHelper.writeToFile(
         "'.source.js':\n",
@@ -98,7 +98,7 @@ function processParser(baseDir, outputDir){
         )
     );
 
-		
+
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files
 		outputDir//base output dir , snippet
@@ -108,7 +108,7 @@ function processParser(baseDir, outputDir){
 		generateJsAutoComplete(
 			componentFileNames,//dictionary containing all js, evt and cmp files
 			outputDir//base output dir , snippet
-		);	
+		);
 	}
 	catch(ex){
 		logger.error('Issue trying to parse JS files', ex);
