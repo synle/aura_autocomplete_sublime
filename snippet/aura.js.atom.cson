@@ -1,0 +1,559 @@
+'.source.js':
+	'A.test.addWaitFor':
+		'prefix': 'A-test-addWaitFor'
+		'body': 'A.test.addWaitFor(expected, testFunction, callback)'
+	'A.test.addWaitForWithFailureMessage':
+		'prefix': 'A-test-addWaitForWithFailureMessage'
+		'body': 'A.test.addWaitForWithFailureMessage(expected, testFunction, failureMessage, callback)'
+	'A.test.blockRequests':
+		'prefix': 'A-test-blockRequests'
+		'body': 'A.test.blockRequests()'
+	'A.test.blockForegroundRequests':
+		'prefix': 'A-test-blockForegroundRequests'
+		'body': 'A.test.blockForegroundRequests()'
+	'A.test.blockBackgroundRequests':
+		'prefix': 'A-test-blockBackgroundRequests'
+		'body': 'A.test.blockBackgroundRequests()'
+	'A.test.releaseRequests':
+		'prefix': 'A-test-releaseRequests'
+		'body': 'A.test.releaseRequests()'
+	'A.test.releaseForegroundRequests':
+		'prefix': 'A-test-releaseForegroundRequests'
+		'body': 'A.test.releaseForegroundRequests()'
+	'A.test.releaseBackgroundRequests':
+		'prefix': 'A-test-releaseBackgroundRequests'
+		'body': 'A.test.releaseBackgroundRequests()'
+	'A.test.getSentRequestCount':
+		'prefix': 'A-test-getSentRequestCount'
+		'body': 'A.test.getSentRequestCount()'
+	'A.test.areActionsComplete':
+		'prefix': 'A-test-areActionsComplete'
+		'body': 'A.test.areActionsComplete(actions)'
+	'A.test.addCleanup':
+		'prefix': 'A-test-addCleanup'
+		'body': 'A.test.addCleanup(cleanupFunction)'
+	'A.test.getAction':
+		'prefix': 'A-test-getAction'
+		'body': 'A.test.getAction(component, name, params, callback)'
+	'A.test.runActionsAsTransaction':
+		'prefix': 'A-test-runActionsAsTransaction'
+		'body': 'A.test.runActionsAsTransaction(actions, scope, callback)'
+	'A.test.enqueueAction':
+		'prefix': 'A-test-enqueueAction'
+		'body': 'A.test.enqueueAction(action, background)'
+	'A.test.getExternalAction':
+		'prefix': 'A-test-getExternalAction'
+		'body': 'A.test.getExternalAction(component, descriptor, params, returnType, callback)'
+	'A.test.clearAndAssertComponentConfigs':
+		'prefix': 'A-test-clearAndAssertComponentConfigs'
+		'body': 'A.test.clearAndAssertComponentConfigs(a)'
+	'A.test.isActionPending':
+		'prefix': 'A-test-isActionPending'
+		'body': 'A.test.isActionPending()'
+	'A.test.callServerAction':
+		'prefix': 'A-test-callServerAction'
+		'body': 'A.test.callServerAction(action, doImmediate)'
+	'A.test.setServerReachable':
+		'prefix': 'A-test-setServerReachable'
+		'body': 'A.test.setServerReachable(reachable)'
+	'A.test.runAfterIf':
+		'prefix': 'A-test-runAfterIf'
+		'body': 'A.test.runAfterIf(conditionFunction, callback, intervalInMs)'
+	'A.test.setTestTimeout':
+		'prefix': 'A-test-setTestTimeout'
+		'body': 'A.test.setTestTimeout(timeoutMsec)'
+	'A.test.isComplete':
+		'prefix': 'A-test-isComplete'
+		'body': 'A.test.isComplete()'
+	'A.test.getErrors':
+		'prefix': 'A-test-getErrors'
+		'body': 'A.test.getErrors()'
+	'A.test.print':
+		'prefix': 'A-test-print'
+		'body': 'A.test.print(value)'
+	'A.test.auraError':
+		'prefix': 'A-test-auraError'
+		'body': 'A.test.auraError(level, msg/*, error*/)'
+	'A.test.expectAuraError':
+		'prefix': 'A-test-expectAuraError'
+		'body': 'A.test.expectAuraError(e)'
+	'A.test.auraWarning':
+		'prefix': 'A-test-auraWarning'
+		'body': 'A.test.auraWarning(level, msg)'
+	'A.test.expectAuraWarning':
+		'prefix': 'A-test-expectAuraWarning'
+		'body': 'A.test.expectAuraWarning(w)'
+	'A.test.assertAccessible':
+		'prefix': 'A-test-assertAccessible'
+		'body': 'A.test.assertAccessible()'
+	'A.test.assertTruthy':
+		'prefix': 'A-test-assertTruthy'
+		'body': 'A.test.assertTruthy(condition, assertMessage)'
+	'A.test.assertFalsy':
+		'prefix': 'A-test-assertFalsy'
+		'body': 'A.test.assertFalsy(condition, assertMessage)'
+	'A.test.assert':
+		'prefix': 'A-test-assert'
+		'body': 'A.test.assert(condition, assertMessage)'
+	'A.test.assertEquals':
+		'prefix': 'A-test-assertEquals'
+		'body': 'A.test.assertEquals(arg1, arg2, assertMessage)'
+	'A.test.assertEqualsIgnoreWhitespace':
+		'prefix': 'A-test-assertEqualsIgnoreWhitespace'
+		'body': 'A.test.assertEqualsIgnoreWhitespace(arg1, arg2, assertMessage)'
+	'A.test.assertStartsWith':
+		'prefix': 'A-test-assertStartsWith'
+		'body': 'A.test.assertStartsWith(start, full, assertMessage)'
+	'A.test.assertNotEquals':
+		'prefix': 'A-test-assertNotEquals'
+		'body': 'A.test.assertNotEquals(arg1, arg2, assertMessage)'
+	'A.test.assertDefined':
+		'prefix': 'A-test-assertDefined'
+		'body': 'A.test.assertDefined(condition, assertMessage)'
+	'A.test.assertTrue':
+		'prefix': 'A-test-assertTrue'
+		'body': 'A.test.assertTrue(condition, assertMessage)'
+	'A.test.assertFalse':
+		'prefix': 'A-test-assertFalse'
+		'body': 'A.test.assertFalse(condition, assertMessage)'
+	'A.test.assertUndefined':
+		'prefix': 'A-test-assertUndefined'
+		'body': 'A.test.assertUndefined(condition, assertMessage)'
+	'A.test.assertNotUndefinedOrNull':
+		'prefix': 'A-test-assertNotUndefinedOrNull'
+		'body': 'A.test.assertNotUndefinedOrNull(condition, assertMessage)'
+	'A.test.assertUndefinedOrNull':
+		'prefix': 'A-test-assertUndefinedOrNull'
+		'body': 'A.test.assertUndefinedOrNull(condition, assertMessage)'
+	'A.test.assertNull':
+		'prefix': 'A-test-assertNull'
+		'body': 'A.test.assertNull(condition, assertMessage)'
+	'A.test.assertNotNull':
+		'prefix': 'A-test-assertNotNull'
+		'body': 'A.test.assertNotNull(condition, assertMessage)'
+	'A.test.assertAuraType':
+		'prefix': 'A-test-assertAuraType'
+		'body': 'A.test.assertAuraType(type, condition, assertMessage)'
+	'A.test.fail':
+		'prefix': 'A-test-fail'
+		'body': 'A.test.fail(assertMessage, extraInfoMessage)'
+	'A.test.getPrototype':
+		'prefix': 'A-test-getPrototype'
+		'body': 'A.test.getPrototype(instance)'
+	'A.test.overrideFunction':
+		'prefix': 'A-test-overrideFunction'
+		'body': 'A.test.overrideFunction(instance, name, newFunction)'
+	'A.test.addFunctionHandler':
+		'prefix': 'A-test-addFunctionHandler'
+		'body': 'A.test.addFunctionHandler(instance, name, newFunction, postProcess)'
+	'A.test.getOuterHtml':
+		'prefix': 'A-test-getOuterHtml'
+		'body': 'A.test.getOuterHtml(node)'
+	'A.test.getText':
+		'prefix': 'A-test-getText'
+		'body': 'A.test.getText(node)'
+	'A.test.getTextByComponent':
+		'prefix': 'A-test-getTextByComponent'
+		'body': 'A.test.getTextByComponent(component)'
+	'A.test.getStyle':
+		'prefix': 'A-test-getStyle'
+		'body': 'A.test.getStyle(elem, style)'
+	'A.test.getNonCommentNodes':
+		'prefix': 'A-test-getNonCommentNodes'
+		'body': 'A.test.getNonCommentNodes(nodes)'
+	'A.test.isNodeDeleted':
+		'prefix': 'A-test-isNodeDeleted'
+		'body': 'A.test.isNodeDeleted(node)'
+	'A.test.select':
+		'prefix': 'A-test-select'
+		'body': 'A.test.select()'
+	'A.test.contains':
+		'prefix': 'A-test-contains'
+		'body': 'A.test.contains(testString, targetString)'
+	'A.test.compareValues':
+		'prefix': 'A-test-compareValues'
+		'body': 'A.test.compareValues(expected, actual)'
+	'A.test.getActiveElement':
+		'prefix': 'A-test-getActiveElement'
+		'body': 'A.test.getActiveElement()'
+	'A.test.getActiveElementText':
+		'prefix': 'A-test-getActiveElementText'
+		'body': 'A.test.getActiveElementText()'
+	'A.test.walkTheDOM':
+		'prefix': 'A-test-walkTheDOM'
+		'body': 'A.test.walkTheDOM(node, func)'
+	'A.test.getElementsByClassNameCustom':
+		'prefix': 'A-test-getElementsByClassNameCustom'
+		'body': 'A.test.getElementsByClassNameCustom(className, parentElement)'
+	'A.test.findChildWithClassName':
+		'prefix': 'A-test-findChildWithClassName'
+		'body': 'A.test.findChildWithClassName(parentElement, className)'
+	'A.test.getElementByClass':
+		'prefix': 'A-test-getElementByClass'
+		'body': 'A.test.getElementByClass(classname)'
+	'A.test.fireDomEvent':
+		'prefix': 'A-test-fireDomEvent'
+		'body': 'A.test.fireDomEvent(element, eventName, canBubble, cancelable)'
+	'A.test.clickOrTouch':
+		'prefix': 'A-test-clickOrTouch'
+		'body': 'A.test.clickOrTouch(element, canBubble, cancelable)'
+	'A.test.isInstanceOfText':
+		'prefix': 'A-test-isInstanceOfText'
+		'body': 'A.test.isInstanceOfText(node)'
+	'A.test.isInstanceOfAnchorElement':
+		'prefix': 'A-test-isInstanceOfAnchorElement'
+		'body': 'A.test.isInstanceOfAnchorElement(element)'
+	'A.test.isInstanceOfInputElement':
+		'prefix': 'A-test-isInstanceOfInputElement'
+		'body': 'A.test.isInstanceOfInputElement(element)'
+	'A.test.isInstanceOfLiElement':
+		'prefix': 'A-test-isInstanceOfLiElement'
+		'body': 'A.test.isInstanceOfLiElement(element)'
+	'A.test.isInstanceOfParagraphElement':
+		'prefix': 'A-test-isInstanceOfParagraphElement'
+		'body': 'A.test.isInstanceOfParagraphElement(element)'
+	'A.test.isInstanceOfButtonElement':
+		'prefix': 'A-test-isInstanceOfButtonElement'
+		'body': 'A.test.isInstanceOfButtonElement(element)'
+	'A.test.isInstanceOfImageElement':
+		'prefix': 'A-test-isInstanceOfImageElement'
+		'body': 'A.test.isInstanceOfImageElement(element)'
+	'A.test.isInstanceOfDivElement':
+		'prefix': 'A-test-isInstanceOfDivElement'
+		'body': 'A.test.isInstanceOfDivElement(element)'
+	'A.test.isInstanceOfSpanElement':
+		'prefix': 'A-test-isInstanceOfSpanElement'
+		'body': 'A.test.isInstanceOfSpanElement(element)'
+	'A.test.isInstanceOf':
+		'prefix': 'A-test-isInstanceOf'
+		'body': 'A.test.isInstanceOf(element, elementType, tag)'
+	'A.test.objectKeys':
+		'prefix': 'A-test-objectKeys'
+		'body': 'A.test.objectKeys(obj)'
+	'A.test.getElementAttributeValue':
+		'prefix': 'A-test-getElementAttributeValue'
+		'body': 'A.test.getElementAttributeValue(element, attributeName)'
+	'A.test.addEventHandler':
+		'prefix': 'A-test-addEventHandler'
+		'body': 'A.test.addEventHandler(eventName, handler, component, insert)'
+	'A.test.dummyFunction':
+		'prefix': 'A-test-dummyFunction'
+		'body': 'A.test.dummyFunction()'
+	'A.test.getAppCacheEvents':
+		'prefix': 'A-test-getAppCacheEvents'
+		'body': 'A.test.getAppCacheEvents()'
+	'A.test.getAuraErrorMessage':
+		'prefix': 'A-test-getAuraErrorMessage'
+		'body': 'A.test.getAuraErrorMessage()'
+	'A.test.getAvailableXHROverride':
+		'prefix': 'A-test-getAvailableXHROverride'
+		'body': 'A.test.getAvailableXHROverride(config, isBackground)'
+	'A.test.sendOverride':
+		'prefix': 'A-test-sendOverride'
+		'body': 'A.test.sendOverride(config, auraXHR, actions, method, options)'
+	'A.test.decodeOverride':
+		'prefix': 'A-test-decodeOverride'
+		'body': 'A.test.decodeOverride(config, response, noStrip)'
+	'A.test.PrePostConfig':
+		'prefix': 'A-test-PrePostConfig'
+		'body': 'A.test.PrePostConfig(action, preSendCallback, postSendCallback)'
+	'A.test.addPrePostSendCallback':
+		'prefix': 'A-test-addPrePostSendCallback'
+		'body': 'A.test.addPrePostSendCallback(action, preSendCallback, postSendCallback)'
+	'A.test.removePrePostSendCallback':
+		'prefix': 'A-test-removePrePostSendCallback'
+		'body': 'A.test.removePrePostSendCallback(handle)'
+	'A.test.installOverride':
+		'prefix': 'A-test-installOverride'
+		'body': 'A.test.installOverride()'
+	'A.test.run':
+		'prefix': 'A-test-run'
+		'body': 'A.test.run(name, code, timeoutOverride, quickFixException)'
+	'A.test.runInternal':
+		'prefix': 'A-test-runInternal'
+		'body': 'A.test.runInternal(name)'
+	'A.test.executeAfterCkEditorIsReady':
+		'prefix': 'A-test-executeAfterCkEditorIsReady'
+		'body': 'A.test.executeAfterCkEditorIsReady(inputRichTextComponent, callback)'
+	'A.test.reloadGlobalValueProviders':
+		'prefix': 'A-test-reloadGlobalValueProviders'
+		'body': 'A.test.reloadGlobalValueProviders(gvp, callback)'
+	'A.test.getCreationPath':
+		'prefix': 'A-test-getCreationPath'
+		'body': 'A.test.getCreationPath(cmp)'
+	'A.test.createHttpRequest':
+		'prefix': 'A-test-createHttpRequest'
+		'body': 'A.test.createHttpRequest()'
+	'A.test.checkGlobalNamespacePollution':
+		'prefix': 'A-test-checkGlobalNamespacePollution'
+		'body': 'A.test.checkGlobalNamespacePollution(whitelistedPollutants)'
+	'A.util.isIOSWebView':
+		'prefix': 'A-util-isIOSWebView'
+		'body': 'A.util.isIOSWebView()'
+	'A.util.globalEval':
+		'prefix': 'A-util-globalEval'
+		'body': 'A.util.globalEval(src)'
+	'A.util.isArray':
+		'prefix': 'A-util-isArray'
+		'body': 'A.util.isArray()'
+	'A.util.isObject':
+		'prefix': 'A-util-isObject'
+		'body': 'A.util.isObject(obj)'
+	'A.util.isPlainObject':
+		'prefix': 'A-util-isPlainObject'
+		'body': 'A.util.isPlainObject(obj)'
+	'A.util.isError':
+		'prefix': 'A-util-isError'
+		'body': 'A.util.isError(obj)'
+	'A.util.isFunction':
+		'prefix': 'A-util-isFunction'
+		'body': 'A.util.isFunction(obj)'
+	'A.util.isString':
+		'prefix': 'A-util-isString'
+		'body': 'A.util.isString(obj)'
+	'A.util.isNumber':
+		'prefix': 'A-util-isNumber'
+		'body': 'A.util.isNumber(obj)'
+	'A.util.isFiniteNumber':
+		'prefix': 'A-util-isFiniteNumber'
+		'body': 'A.util.isFiniteNumber(obj)'
+	'A.util.isBoolean':
+		'prefix': 'A-util-isBoolean'
+		'body': 'A.util.isBoolean(obj)'
+	'A.util.isUndefined':
+		'prefix': 'A-util-isUndefined'
+		'body': 'A.util.isUndefined(obj)'
+	'A.util.isUndefinedOrNull':
+		'prefix': 'A-util-isUndefinedOrNull'
+		'body': 'A.util.isUndefinedOrNull(obj)'
+	'A.util.isEmpty':
+		'prefix': 'A-util-isEmpty'
+		'body': 'A.util.isEmpty(obj)'
+	'A.util.getBooleanValue':
+		'prefix': 'A-util-getBooleanValue'
+		'body': 'A.util.getBooleanValue(val)'
+	'A.util.createHtmlElement':
+		'prefix': 'A-util-createHtmlElement'
+		'body': 'A.util.createHtmlElement(tagName, attributes)'
+	'A.util.clearNode':
+		'prefix': 'A-util-clearNode'
+		'body': 'A.util.clearNode(node)'
+	'A.util.getElement':
+		'prefix': 'A-util-getElement'
+		'body': 'A.util.getElement(id)'
+	'A.util.copy':
+		'prefix': 'A-util-copy'
+		'body': 'A.util.copy(value)'
+	'A.util.compareValues':
+		'prefix': 'A-util-compareValues'
+		'body': 'A.util.compareValues(expected, actual)'
+	'A.util.hasClass':
+		'prefix': 'A-util-hasClass'
+		'body': 'A.util.hasClass(element, className)'
+	'A.util.addClass':
+		'prefix': 'A-util-addClass'
+		'body': 'A.util.addClass(element, newClass)'
+	'A.util.removeClass':
+		'prefix': 'A-util-removeClass'
+		'body': 'A.util.removeClass(element, newClass)'
+	'A.util.toggleClass':
+		'prefix': 'A-util-toggleClass'
+		'body': 'A.util.toggleClass(element, className, condition)'
+	'A.util.swapClass':
+		'prefix': 'A-util-swapClass'
+		'body': 'A.util.swapClass(element, oldClass, newClass)'
+	'A.util.setClass':
+		'prefix': 'A-util-setClass'
+		'body': 'A.util.setClass(element,newClass,remove)'
+	'A.util.buildClass':
+		'prefix': 'A-util-buildClass'
+		'body': 'A.util.buildClass(oldClass, newClass, remove)'
+	'A.util.buildFlavorClass':
+		'prefix': 'A-util-buildFlavorClass'
+		'body': 'A.util.buildFlavorClass(cmp, flavor)'
+	'A.util.createElementsFromMarkup':
+		'prefix': 'A-util-createElementsFromMarkup'
+		'body': 'A.util.createElementsFromMarkup(markup)'
+	'A.util.insertFirst':
+		'prefix': 'A-util-insertFirst'
+		'body': 'A.util.insertFirst(newEl, referenceEl)'
+	'A.util.insertBefore':
+		'prefix': 'A-util-insertBefore'
+		'body': 'A.util.insertBefore(newEl, referenceEl)'
+	'A.util.insertAfter':
+		'prefix': 'A-util-insertAfter'
+		'body': 'A.util.insertAfter(newEl, referenceEl)'
+	'A.util.appendChild':
+		'prefix': 'A-util-appendChild'
+		'body': 'A.util.appendChild(newEl, referenceEl)'
+	'A.util.removeElement':
+		'prefix': 'A-util-removeElement'
+		'body': 'A.util.removeElement(element)'
+	'A.util.urlDecode':
+		'prefix': 'A-util-urlDecode'
+		'body': 'A.util.urlDecode(url)'
+	'A.util.trim':
+		'prefix': 'A-util-trim'
+		'body': 'A.util.trim(value)'
+	'A.util.format':
+		'prefix': 'A-util-format'
+		'body': 'A.util.format(formatString,arg1,arg2,argN)'
+	'A.util.truncate':
+		'prefix': 'A-util-truncate'
+		'body': 'A.util.truncate(st, len, ellipsis, truncateByWord)'
+	'A.util.createTimeoutCallback':
+		'prefix': 'A-util-createTimeoutCallback'
+		'body': 'A.util.createTimeoutCallback(callback, toleranceMillis)'
+	'A.util.on':
+		'prefix': 'A-util-on'
+		'body': 'A.util.on(element, eventName, handler, useCapture, timeout)'
+	'A.util.removeOn':
+		'prefix': 'A-util-removeOn'
+		'body': 'A.util.removeOn(element, eventName, listener, useCapture)'
+	'A.util.formToMap':
+		'prefix': 'A-util-formToMap'
+		'body': 'A.util.formToMap(form)'
+	'A.util.getSelectValue':
+		'prefix': 'A-util-getSelectValue'
+		'body': 'A.util.getSelectValue(select)'
+	'A.util.addValueToMap':
+		'prefix': 'A-util-addValueToMap'
+		'body': 'A.util.addValueToMap(inputMap, key, value)'
+	'A.util.addMapValueToMap':
+		'prefix': 'A-util-addMapValueToMap'
+		'body': 'A.util.addMapValueToMap(inputMap, key, value, subMapKey)'
+	'A.util.isSubDef':
+		'prefix': 'A-util-isSubDef'
+		'body': 'A.util.isSubDef(def, qname)'
+	'A.util.apply':
+		'prefix': 'A-util-apply'
+		'body': 'A.util.apply(/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)'
+	'A.util.camelCaseToHyphens':
+		'prefix': 'A-util-camelCaseToHyphens'
+		'body': 'A.util.camelCaseToHyphens(str)'
+	'A.util.hyphensToCamelCase':
+		'prefix': 'A-util-hyphensToCamelCase'
+		'body': 'A.util.hyphensToCamelCase(str)'
+	'A.util.acceptsData':
+		'prefix': 'A-util-acceptsData'
+		'body': 'A.util.acceptsData(element)'
+	'A.util.getElementAttributeValue':
+		'prefix': 'A-util-getElementAttributeValue'
+		'body': 'A.util.getElementAttributeValue(element,attributeName)'
+	'A.util.getDataAttribute':
+		'prefix': 'A-util-getDataAttribute'
+		'body': 'A.util.getDataAttribute(element, key)'
+	'A.util.setDataAttribute':
+		'prefix': 'A-util-setDataAttribute'
+		'body': 'A.util.setDataAttribute(element, key, value)'
+	'A.util.getDataAttributeName':
+		'prefix': 'A-util-getDataAttributeName'
+		'body': 'A.util.getDataAttributeName(key)'
+	'A.util.hasDataAttribute':
+		'prefix': 'A-util-hasDataAttribute'
+		'body': 'A.util.hasDataAttribute(element, key)'
+	'A.util.isElement':
+		'prefix': 'A-util-isElement'
+		'body': 'A.util.isElement(obj)'
+	'A.util.attachToDocumentBody':
+		'prefix': 'A-util-attachToDocumentBody'
+		'body': 'A.util.attachToDocumentBody(element)'
+	'A.util.stringEndsWith':
+		'prefix': 'A-util-stringEndsWith'
+		'body': 'A.util.stringEndsWith(fullstr, substr)'
+	'A.util.bind':
+		'prefix': 'A-util-bind'
+		'body': 'A.util.bind(method /*, this, bind arguments*/)'
+	'A.util.keys':
+		'prefix': 'A-util-keys'
+		'body': 'A.util.keys(object, excludeFunctions)'
+	'A.util.lookup':
+		'prefix': 'A-util-lookup'
+		'body': 'A.util.lookup(object /*, var-args of arrays*/)'
+	'A.util.merge':
+		'prefix': 'A-util-merge'
+		'body': 'A.util.merge(first /*, var-args of arrays*/)'
+	'A.util.forEach':
+		'prefix': 'A-util-forEach'
+		'body': 'A.util.forEach(array, method, that)'
+	'A.util.map':
+		'prefix': 'A-util-map'
+		'body': 'A.util.map(array, method, that)'
+	'A.util.reduce':
+		'prefix': 'A-util-reduce'
+		'body': 'A.util.reduce(array, method, initial)'
+	'A.util.every':
+		'prefix': 'A-util-every'
+		'body': 'A.util.every(array, predicate, that)'
+	'A.util.some':
+		'prefix': 'A-util-some'
+		'body': 'A.util.some(array, predicate, that)'
+	'A.util.filter':
+		'prefix': 'A-util-filter'
+		'body': 'A.util.filter(array, predicate, that)'
+	'A.util.destroyAsync':
+		'prefix': 'A-util-destroyAsync'
+		'body': 'A.util.destroyAsync(cmp)'
+	'A.util.instanceOf':
+		'prefix': 'A-util-instanceOf'
+		'body': 'A.util.instanceOf(instance, constructor)'
+	'A.util.emptyComponentTrash':
+		'prefix': 'A-util-emptyComponentTrash'
+		'body': 'A.util.emptyComponentTrash()'
+	'A.util.contains':
+		'prefix': 'A-util-contains'
+		'body': 'A.util.contains(container, element)'
+	'A.util.squash':
+		'prefix': 'A-util-squash'
+		'body': 'A.util.squash(event, preventDefault)'
+	'A.util.stripTags':
+		'prefix': 'A-util-stripTags'
+		'body': 'A.util.stripTags(input, tags)'
+	'A.util.getWindowSize':
+		'prefix': 'A-util-getWindowSize'
+		'body': 'A.util.getWindowSize()'
+	'A.util.isComponent':
+		'prefix': 'A-util-isComponent'
+		'body': 'A.util.isComponent(obj)'
+	'A.util.isExpression':
+		'prefix': 'A-util-isExpression'
+		'body': 'A.util.isExpression(obj)'
+	'A.util.isValue':
+		'prefix': 'A-util-isValue'
+		'body': 'A.util.isValue(obj)'
+	'A.util.isAction':
+		'prefix': 'A-util-isAction'
+		'body': 'A.util.isAction(obj)'
+	'A.util.supportsTouchEvents':
+		'prefix': 'A-util-supportsTouchEvents'
+		'body': 'A.util.supportsTouchEvents()'
+	'A.util.estimateSize':
+		'prefix': 'A-util-estimateSize'
+		'body': 'A.util.estimateSize(obj)'
+	'A.util.toArray':
+		'prefix': 'A-util-toArray'
+		'body': 'A.util.toArray(collection)'
+	'A.util.setText':
+		'prefix': 'A-util-setText'
+		'body': 'A.util.setText(node, text)'
+	'A.util.getDebugToolComponent':
+		'prefix': 'A-util-getDebugToolComponent'
+		'body': 'A.util.getDebugToolComponent()'
+	'A.util.getDebugToolsAuraInstance':
+		'prefix': 'A-util-getDebugToolsAuraInstance'
+		'body': 'A.util.getDebugToolsAuraInstance()'
+	'A.util.setDebugToolWindow':
+		'prefix': 'A-util-setDebugToolWindow'
+		'body': 'A.util.setDebugToolWindow(debugWindow)'
+	'A.util.getUrl':
+		'prefix': 'A-util-getUrl'
+		'body': 'A.util.getUrl()'
+	'A.util.getText':
+		'prefix': 'A-util-getText'
+		'body': 'A.util.getText(node)'
+	'A.util.errorBasedOnMode':
+		'prefix': 'A-util-errorBasedOnMode'
+		'body': 'A.util.errorBasedOnMode(msg)'
+	'A.util.includeScript':
+		'prefix': 'A-util-includeScript'
+		'body': 'A.util.includeScript(url, callback)'

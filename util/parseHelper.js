@@ -62,13 +62,13 @@ var self = {
 
                         //special helper js
                         if(newDir.indexOf('Helper.js') >= 0){
-                            res.helperjs.push(newDir);    
+                            res.helperjs.push(newDir);
                         }
                         else if(newDir.indexOf('Controller.js') >= 0){
-                            res.controllerjs.push(newDir);    
+                            res.controllerjs.push(newDir);
                         }
                         else if(newDir.indexOf('Renderer.js') >= 0){
-                            res.rendererjs.push(newDir);    
+                            res.rendererjs.push(newDir);
                         }
 
                         break;
@@ -149,14 +149,14 @@ var self = {
 
 
         //consolidate atom files
-        // var snippetData = consolidatorAtom.consolidate_js(dictionary);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.js.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_js(dictionary);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.js.atom.cson'
+            )
+        );
     },
     updateHelper: function(helperDictionary, outputDir){
         logger.debug('Updating JS File: Component Helper JS:'.bold.magenta.underline);
@@ -174,14 +174,14 @@ var self = {
 
 
         //consolidate atom files
-        // var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.helper.js.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.helper.js.atom.cson'
+            )
+        );
     },
     updateEvt: function(arrayEvents, outputDir){
         logger.debug('Updating Sublime File: Component Events'.bold.magenta.underline);
@@ -199,14 +199,14 @@ var self = {
 
 
         //consolidate js evt
-        // var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.event.js.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.event.js.atom.cson'
+            )
+        );
     },
     updateTag: function(arrayComponents, outputDir){
         logger.debug('Updating Sublime File: Component UI Tags'.bold.magenta.underline);
@@ -224,14 +224,14 @@ var self = {
 
 
         //consolidate js evt
-        // var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.uitags.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.uitags.atom.cson'
+            )
+        );
     },
     updateTagAttr: function(arrayAttributes, outputDir){
         //consolidate component attribute
@@ -249,14 +249,14 @@ var self = {
 
         //consolidate js evt
         logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
-        // var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.attributes.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.attributes.atom.cson'
+            )
+        );
     },
     _getDefaultSublimeJSObject: function(incomingScope) {
         return {
@@ -278,4 +278,3 @@ var self = {
     }
 };
 module.exports = self;
-
