@@ -1,559 +1,559 @@
 '.source.js':
 	'A.test.addWaitFor':
 		'prefix': 'A-test-addWaitFor'
-		'body': 'A.test.addWaitFor(expected, testFunction, callback)'
+		'body': 'A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})'
 	'A.test.addWaitForWithFailureMessage':
 		'prefix': 'A-test-addWaitForWithFailureMessage'
-		'body': 'A.test.addWaitForWithFailureMessage(expected, testFunction, failureMessage, callback)'
+		'body': 'A.test.addWaitForWithFailureMessage(${1:expected},${2:testFunction},${3:failureMessage},${4:callback})'
 	'A.test.blockRequests':
 		'prefix': 'A-test-blockRequests'
-		'body': 'A.test.blockRequests()'
+		'body': 'A.test.blockRequests(${1:})'
 	'A.test.blockForegroundRequests':
 		'prefix': 'A-test-blockForegroundRequests'
-		'body': 'A.test.blockForegroundRequests()'
+		'body': 'A.test.blockForegroundRequests(${1:})'
 	'A.test.blockBackgroundRequests':
 		'prefix': 'A-test-blockBackgroundRequests'
-		'body': 'A.test.blockBackgroundRequests()'
+		'body': 'A.test.blockBackgroundRequests(${1:})'
 	'A.test.releaseRequests':
 		'prefix': 'A-test-releaseRequests'
-		'body': 'A.test.releaseRequests()'
+		'body': 'A.test.releaseRequests(${1:})'
 	'A.test.releaseForegroundRequests':
 		'prefix': 'A-test-releaseForegroundRequests'
-		'body': 'A.test.releaseForegroundRequests()'
+		'body': 'A.test.releaseForegroundRequests(${1:})'
 	'A.test.releaseBackgroundRequests':
 		'prefix': 'A-test-releaseBackgroundRequests'
-		'body': 'A.test.releaseBackgroundRequests()'
+		'body': 'A.test.releaseBackgroundRequests(${1:})'
 	'A.test.getSentRequestCount':
 		'prefix': 'A-test-getSentRequestCount'
-		'body': 'A.test.getSentRequestCount()'
+		'body': 'A.test.getSentRequestCount(${1:})'
 	'A.test.areActionsComplete':
 		'prefix': 'A-test-areActionsComplete'
-		'body': 'A.test.areActionsComplete(actions)'
+		'body': 'A.test.areActionsComplete(${1:actions})'
 	'A.test.addCleanup':
 		'prefix': 'A-test-addCleanup'
-		'body': 'A.test.addCleanup(cleanupFunction)'
+		'body': 'A.test.addCleanup(${1:cleanupFunction})'
 	'A.test.getAction':
 		'prefix': 'A-test-getAction'
-		'body': 'A.test.getAction(component, name, params, callback)'
+		'body': 'A.test.getAction(${1:component},${2:name},${3:params},${4:callback})'
 	'A.test.runActionsAsTransaction':
 		'prefix': 'A-test-runActionsAsTransaction'
-		'body': 'A.test.runActionsAsTransaction(actions, scope, callback)'
+		'body': 'A.test.runActionsAsTransaction(${1:actions},${2:scope},${3:callback})'
 	'A.test.enqueueAction':
 		'prefix': 'A-test-enqueueAction'
-		'body': 'A.test.enqueueAction(action, background)'
+		'body': 'A.test.enqueueAction(${1:action},${2:background})'
 	'A.test.getExternalAction':
 		'prefix': 'A-test-getExternalAction'
-		'body': 'A.test.getExternalAction(component, descriptor, params, returnType, callback)'
+		'body': 'A.test.getExternalAction(${1:component},${2:descriptor},${3:params},${4:returnType},${5:callback})'
 	'A.test.clearAndAssertComponentConfigs':
 		'prefix': 'A-test-clearAndAssertComponentConfigs'
-		'body': 'A.test.clearAndAssertComponentConfigs(a)'
+		'body': 'A.test.clearAndAssertComponentConfigs(${1:a})'
 	'A.test.isActionPending':
 		'prefix': 'A-test-isActionPending'
-		'body': 'A.test.isActionPending()'
+		'body': 'A.test.isActionPending(${1:})'
 	'A.test.callServerAction':
 		'prefix': 'A-test-callServerAction'
-		'body': 'A.test.callServerAction(action, doImmediate)'
+		'body': 'A.test.callServerAction(${1:action},${2:doImmediate})'
 	'A.test.setServerReachable':
 		'prefix': 'A-test-setServerReachable'
-		'body': 'A.test.setServerReachable(reachable)'
+		'body': 'A.test.setServerReachable(${1:reachable})'
 	'A.test.runAfterIf':
 		'prefix': 'A-test-runAfterIf'
-		'body': 'A.test.runAfterIf(conditionFunction, callback, intervalInMs)'
+		'body': 'A.test.runAfterIf(${1:conditionFunction},${2:callback},${3:intervalInMs})'
 	'A.test.setTestTimeout':
 		'prefix': 'A-test-setTestTimeout'
-		'body': 'A.test.setTestTimeout(timeoutMsec)'
+		'body': 'A.test.setTestTimeout(${1:timeoutMsec})'
 	'A.test.isComplete':
 		'prefix': 'A-test-isComplete'
-		'body': 'A.test.isComplete()'
+		'body': 'A.test.isComplete(${1:})'
 	'A.test.getErrors':
 		'prefix': 'A-test-getErrors'
-		'body': 'A.test.getErrors()'
+		'body': 'A.test.getErrors(${1:})'
 	'A.test.print':
 		'prefix': 'A-test-print'
-		'body': 'A.test.print(value)'
+		'body': 'A.test.print(${1:value})'
 	'A.test.auraError':
 		'prefix': 'A-test-auraError'
-		'body': 'A.test.auraError(level, msg/*, error*/)'
+		'body': 'A.test.auraError($1level, msg&#x2F;*, error*&#x2F;)'
 	'A.test.expectAuraError':
 		'prefix': 'A-test-expectAuraError'
-		'body': 'A.test.expectAuraError(e)'
+		'body': 'A.test.expectAuraError(${1:e})'
 	'A.test.auraWarning':
 		'prefix': 'A-test-auraWarning'
-		'body': 'A.test.auraWarning(level, msg)'
+		'body': 'A.test.auraWarning(${1:level},${2:msg})'
 	'A.test.expectAuraWarning':
 		'prefix': 'A-test-expectAuraWarning'
-		'body': 'A.test.expectAuraWarning(w)'
+		'body': 'A.test.expectAuraWarning(${1:w})'
 	'A.test.assertAccessible':
 		'prefix': 'A-test-assertAccessible'
-		'body': 'A.test.assertAccessible()'
+		'body': 'A.test.assertAccessible(${1:})'
 	'A.test.assertTruthy':
 		'prefix': 'A-test-assertTruthy'
-		'body': 'A.test.assertTruthy(condition, assertMessage)'
+		'body': 'A.test.assertTruthy(${1:condition},${2:assertMessage})'
 	'A.test.assertFalsy':
 		'prefix': 'A-test-assertFalsy'
-		'body': 'A.test.assertFalsy(condition, assertMessage)'
+		'body': 'A.test.assertFalsy(${1:condition},${2:assertMessage})'
 	'A.test.assert':
 		'prefix': 'A-test-assert'
-		'body': 'A.test.assert(condition, assertMessage)'
+		'body': 'A.test.assert(${1:condition},${2:assertMessage})'
 	'A.test.assertEquals':
 		'prefix': 'A-test-assertEquals'
-		'body': 'A.test.assertEquals(arg1, arg2, assertMessage)'
+		'body': 'A.test.assertEquals(${1:arg1},${2:arg2},${3:assertMessage})'
 	'A.test.assertEqualsIgnoreWhitespace':
 		'prefix': 'A-test-assertEqualsIgnoreWhitespace'
-		'body': 'A.test.assertEqualsIgnoreWhitespace(arg1, arg2, assertMessage)'
+		'body': 'A.test.assertEqualsIgnoreWhitespace(${1:arg1},${2:arg2},${3:assertMessage})'
 	'A.test.assertStartsWith':
 		'prefix': 'A-test-assertStartsWith'
-		'body': 'A.test.assertStartsWith(start, full, assertMessage)'
+		'body': 'A.test.assertStartsWith(${1:start},${2:full},${3:assertMessage})'
 	'A.test.assertNotEquals':
 		'prefix': 'A-test-assertNotEquals'
-		'body': 'A.test.assertNotEquals(arg1, arg2, assertMessage)'
+		'body': 'A.test.assertNotEquals(${1:arg1},${2:arg2},${3:assertMessage})'
 	'A.test.assertDefined':
 		'prefix': 'A-test-assertDefined'
-		'body': 'A.test.assertDefined(condition, assertMessage)'
+		'body': 'A.test.assertDefined(${1:condition},${2:assertMessage})'
 	'A.test.assertTrue':
 		'prefix': 'A-test-assertTrue'
-		'body': 'A.test.assertTrue(condition, assertMessage)'
+		'body': 'A.test.assertTrue(${1:condition},${2:assertMessage})'
 	'A.test.assertFalse':
 		'prefix': 'A-test-assertFalse'
-		'body': 'A.test.assertFalse(condition, assertMessage)'
+		'body': 'A.test.assertFalse(${1:condition},${2:assertMessage})'
 	'A.test.assertUndefined':
 		'prefix': 'A-test-assertUndefined'
-		'body': 'A.test.assertUndefined(condition, assertMessage)'
+		'body': 'A.test.assertUndefined(${1:condition},${2:assertMessage})'
 	'A.test.assertNotUndefinedOrNull':
 		'prefix': 'A-test-assertNotUndefinedOrNull'
-		'body': 'A.test.assertNotUndefinedOrNull(condition, assertMessage)'
+		'body': 'A.test.assertNotUndefinedOrNull(${1:condition},${2:assertMessage})'
 	'A.test.assertUndefinedOrNull':
 		'prefix': 'A-test-assertUndefinedOrNull'
-		'body': 'A.test.assertUndefinedOrNull(condition, assertMessage)'
+		'body': 'A.test.assertUndefinedOrNull(${1:condition},${2:assertMessage})'
 	'A.test.assertNull':
 		'prefix': 'A-test-assertNull'
-		'body': 'A.test.assertNull(condition, assertMessage)'
+		'body': 'A.test.assertNull(${1:condition},${2:assertMessage})'
 	'A.test.assertNotNull':
 		'prefix': 'A-test-assertNotNull'
-		'body': 'A.test.assertNotNull(condition, assertMessage)'
+		'body': 'A.test.assertNotNull(${1:condition},${2:assertMessage})'
 	'A.test.assertAuraType':
 		'prefix': 'A-test-assertAuraType'
-		'body': 'A.test.assertAuraType(type, condition, assertMessage)'
+		'body': 'A.test.assertAuraType(${1:type},${2:condition},${3:assertMessage})'
 	'A.test.fail':
 		'prefix': 'A-test-fail'
-		'body': 'A.test.fail(assertMessage, extraInfoMessage)'
+		'body': 'A.test.fail(${1:assertMessage},${2:extraInfoMessage})'
 	'A.test.getPrototype':
 		'prefix': 'A-test-getPrototype'
-		'body': 'A.test.getPrototype(instance)'
+		'body': 'A.test.getPrototype(${1:instance})'
 	'A.test.overrideFunction':
 		'prefix': 'A-test-overrideFunction'
-		'body': 'A.test.overrideFunction(instance, name, newFunction)'
+		'body': 'A.test.overrideFunction(${1:instance},${2:name},${3:newFunction})'
 	'A.test.addFunctionHandler':
 		'prefix': 'A-test-addFunctionHandler'
-		'body': 'A.test.addFunctionHandler(instance, name, newFunction, postProcess)'
+		'body': 'A.test.addFunctionHandler(${1:instance},${2:name},${3:newFunction},${4:postProcess})'
 	'A.test.getOuterHtml':
 		'prefix': 'A-test-getOuterHtml'
-		'body': 'A.test.getOuterHtml(node)'
+		'body': 'A.test.getOuterHtml(${1:node})'
 	'A.test.getText':
 		'prefix': 'A-test-getText'
-		'body': 'A.test.getText(node)'
+		'body': 'A.test.getText(${1:node})'
 	'A.test.getTextByComponent':
 		'prefix': 'A-test-getTextByComponent'
-		'body': 'A.test.getTextByComponent(component)'
+		'body': 'A.test.getTextByComponent(${1:component})'
 	'A.test.getStyle':
 		'prefix': 'A-test-getStyle'
-		'body': 'A.test.getStyle(elem, style)'
+		'body': 'A.test.getStyle(${1:elem},${2:style})'
 	'A.test.getNonCommentNodes':
 		'prefix': 'A-test-getNonCommentNodes'
-		'body': 'A.test.getNonCommentNodes(nodes)'
+		'body': 'A.test.getNonCommentNodes(${1:nodes})'
 	'A.test.isNodeDeleted':
 		'prefix': 'A-test-isNodeDeleted'
-		'body': 'A.test.isNodeDeleted(node)'
+		'body': 'A.test.isNodeDeleted(${1:node})'
 	'A.test.select':
 		'prefix': 'A-test-select'
-		'body': 'A.test.select()'
+		'body': 'A.test.select(${1:})'
 	'A.test.contains':
 		'prefix': 'A-test-contains'
-		'body': 'A.test.contains(testString, targetString)'
+		'body': 'A.test.contains(${1:testString},${2:targetString})'
 	'A.test.compareValues':
 		'prefix': 'A-test-compareValues'
-		'body': 'A.test.compareValues(expected, actual)'
+		'body': 'A.test.compareValues(${1:expected},${2:actual})'
 	'A.test.getActiveElement':
 		'prefix': 'A-test-getActiveElement'
-		'body': 'A.test.getActiveElement()'
+		'body': 'A.test.getActiveElement(${1:})'
 	'A.test.getActiveElementText':
 		'prefix': 'A-test-getActiveElementText'
-		'body': 'A.test.getActiveElementText()'
+		'body': 'A.test.getActiveElementText(${1:})'
 	'A.test.walkTheDOM':
 		'prefix': 'A-test-walkTheDOM'
-		'body': 'A.test.walkTheDOM(node, func)'
+		'body': 'A.test.walkTheDOM(${1:node},${2:func})'
 	'A.test.getElementsByClassNameCustom':
 		'prefix': 'A-test-getElementsByClassNameCustom'
-		'body': 'A.test.getElementsByClassNameCustom(className, parentElement)'
+		'body': 'A.test.getElementsByClassNameCustom(${1:className},${2:parentElement})'
 	'A.test.findChildWithClassName':
 		'prefix': 'A-test-findChildWithClassName'
-		'body': 'A.test.findChildWithClassName(parentElement, className)'
+		'body': 'A.test.findChildWithClassName(${1:parentElement},${2:className})'
 	'A.test.getElementByClass':
 		'prefix': 'A-test-getElementByClass'
-		'body': 'A.test.getElementByClass(classname)'
+		'body': 'A.test.getElementByClass(${1:classname})'
 	'A.test.fireDomEvent':
 		'prefix': 'A-test-fireDomEvent'
-		'body': 'A.test.fireDomEvent(element, eventName, canBubble, cancelable)'
+		'body': 'A.test.fireDomEvent(${1:element},${2:eventName},${3:canBubble},${4:cancelable})'
 	'A.test.clickOrTouch':
 		'prefix': 'A-test-clickOrTouch'
-		'body': 'A.test.clickOrTouch(element, canBubble, cancelable)'
+		'body': 'A.test.clickOrTouch(${1:element},${2:canBubble},${3:cancelable})'
 	'A.test.isInstanceOfText':
 		'prefix': 'A-test-isInstanceOfText'
-		'body': 'A.test.isInstanceOfText(node)'
+		'body': 'A.test.isInstanceOfText(${1:node})'
 	'A.test.isInstanceOfAnchorElement':
 		'prefix': 'A-test-isInstanceOfAnchorElement'
-		'body': 'A.test.isInstanceOfAnchorElement(element)'
+		'body': 'A.test.isInstanceOfAnchorElement(${1:element})'
 	'A.test.isInstanceOfInputElement':
 		'prefix': 'A-test-isInstanceOfInputElement'
-		'body': 'A.test.isInstanceOfInputElement(element)'
+		'body': 'A.test.isInstanceOfInputElement(${1:element})'
 	'A.test.isInstanceOfLiElement':
 		'prefix': 'A-test-isInstanceOfLiElement'
-		'body': 'A.test.isInstanceOfLiElement(element)'
+		'body': 'A.test.isInstanceOfLiElement(${1:element})'
 	'A.test.isInstanceOfParagraphElement':
 		'prefix': 'A-test-isInstanceOfParagraphElement'
-		'body': 'A.test.isInstanceOfParagraphElement(element)'
+		'body': 'A.test.isInstanceOfParagraphElement(${1:element})'
 	'A.test.isInstanceOfButtonElement':
 		'prefix': 'A-test-isInstanceOfButtonElement'
-		'body': 'A.test.isInstanceOfButtonElement(element)'
+		'body': 'A.test.isInstanceOfButtonElement(${1:element})'
 	'A.test.isInstanceOfImageElement':
 		'prefix': 'A-test-isInstanceOfImageElement'
-		'body': 'A.test.isInstanceOfImageElement(element)'
+		'body': 'A.test.isInstanceOfImageElement(${1:element})'
 	'A.test.isInstanceOfDivElement':
 		'prefix': 'A-test-isInstanceOfDivElement'
-		'body': 'A.test.isInstanceOfDivElement(element)'
+		'body': 'A.test.isInstanceOfDivElement(${1:element})'
 	'A.test.isInstanceOfSpanElement':
 		'prefix': 'A-test-isInstanceOfSpanElement'
-		'body': 'A.test.isInstanceOfSpanElement(element)'
+		'body': 'A.test.isInstanceOfSpanElement(${1:element})'
 	'A.test.isInstanceOf':
 		'prefix': 'A-test-isInstanceOf'
-		'body': 'A.test.isInstanceOf(element, elementType, tag)'
+		'body': 'A.test.isInstanceOf(${1:element},${2:elementType},${3:tag})'
 	'A.test.objectKeys':
 		'prefix': 'A-test-objectKeys'
-		'body': 'A.test.objectKeys(obj)'
+		'body': 'A.test.objectKeys(${1:obj})'
 	'A.test.getElementAttributeValue':
 		'prefix': 'A-test-getElementAttributeValue'
-		'body': 'A.test.getElementAttributeValue(element, attributeName)'
+		'body': 'A.test.getElementAttributeValue(${1:element},${2:attributeName})'
 	'A.test.addEventHandler':
 		'prefix': 'A-test-addEventHandler'
-		'body': 'A.test.addEventHandler(eventName, handler, component, insert)'
+		'body': 'A.test.addEventHandler(${1:eventName},${2:handler},${3:component},${4:insert})'
 	'A.test.dummyFunction':
 		'prefix': 'A-test-dummyFunction'
-		'body': 'A.test.dummyFunction()'
+		'body': 'A.test.dummyFunction(${1:})'
 	'A.test.getAppCacheEvents':
 		'prefix': 'A-test-getAppCacheEvents'
-		'body': 'A.test.getAppCacheEvents()'
+		'body': 'A.test.getAppCacheEvents(${1:})'
 	'A.test.getAuraErrorMessage':
 		'prefix': 'A-test-getAuraErrorMessage'
-		'body': 'A.test.getAuraErrorMessage()'
+		'body': 'A.test.getAuraErrorMessage(${1:})'
 	'A.test.getAvailableXHROverride':
 		'prefix': 'A-test-getAvailableXHROverride'
-		'body': 'A.test.getAvailableXHROverride(config, isBackground)'
+		'body': 'A.test.getAvailableXHROverride(${1:config},${2:isBackground})'
 	'A.test.sendOverride':
 		'prefix': 'A-test-sendOverride'
-		'body': 'A.test.sendOverride(config, auraXHR, actions, method, options)'
+		'body': 'A.test.sendOverride(${1:config},${2:auraXHR},${3:actions},${4:method},${5:options})'
 	'A.test.decodeOverride':
 		'prefix': 'A-test-decodeOverride'
-		'body': 'A.test.decodeOverride(config, response, noStrip)'
+		'body': 'A.test.decodeOverride(${1:config},${2:response},${3:noStrip})'
 	'A.test.PrePostConfig':
 		'prefix': 'A-test-PrePostConfig'
-		'body': 'A.test.PrePostConfig(action, preSendCallback, postSendCallback)'
+		'body': 'A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback})'
 	'A.test.addPrePostSendCallback':
 		'prefix': 'A-test-addPrePostSendCallback'
-		'body': 'A.test.addPrePostSendCallback(action, preSendCallback, postSendCallback)'
+		'body': 'A.test.addPrePostSendCallback(${1:action},${2:preSendCallback},${3:postSendCallback})'
 	'A.test.removePrePostSendCallback':
 		'prefix': 'A-test-removePrePostSendCallback'
-		'body': 'A.test.removePrePostSendCallback(handle)'
+		'body': 'A.test.removePrePostSendCallback(${1:handle})'
 	'A.test.installOverride':
 		'prefix': 'A-test-installOverride'
-		'body': 'A.test.installOverride()'
+		'body': 'A.test.installOverride(${1:})'
 	'A.test.run':
 		'prefix': 'A-test-run'
-		'body': 'A.test.run(name, code, timeoutOverride, quickFixException)'
+		'body': 'A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})'
 	'A.test.runInternal':
 		'prefix': 'A-test-runInternal'
-		'body': 'A.test.runInternal(name)'
+		'body': 'A.test.runInternal(${1:name})'
 	'A.test.executeAfterCkEditorIsReady':
 		'prefix': 'A-test-executeAfterCkEditorIsReady'
-		'body': 'A.test.executeAfterCkEditorIsReady(inputRichTextComponent, callback)'
+		'body': 'A.test.executeAfterCkEditorIsReady(${1:inputRichTextComponent},${2:callback})'
 	'A.test.reloadGlobalValueProviders':
 		'prefix': 'A-test-reloadGlobalValueProviders'
-		'body': 'A.test.reloadGlobalValueProviders(gvp, callback)'
+		'body': 'A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})'
 	'A.test.getCreationPath':
 		'prefix': 'A-test-getCreationPath'
-		'body': 'A.test.getCreationPath(cmp)'
+		'body': 'A.test.getCreationPath(${1:cmp})'
 	'A.test.createHttpRequest':
 		'prefix': 'A-test-createHttpRequest'
-		'body': 'A.test.createHttpRequest()'
+		'body': 'A.test.createHttpRequest(${1:})'
 	'A.test.checkGlobalNamespacePollution':
 		'prefix': 'A-test-checkGlobalNamespacePollution'
-		'body': 'A.test.checkGlobalNamespacePollution(whitelistedPollutants)'
+		'body': 'A.test.checkGlobalNamespacePollution(${1:whitelistedPollutants})'
 	'A.util.isIOSWebView':
 		'prefix': 'A-util-isIOSWebView'
-		'body': 'A.util.isIOSWebView()'
+		'body': 'A.util.isIOSWebView(${1:})'
 	'A.util.globalEval':
 		'prefix': 'A-util-globalEval'
-		'body': 'A.util.globalEval(src)'
+		'body': 'A.util.globalEval(${1:src})'
 	'A.util.isArray':
 		'prefix': 'A-util-isArray'
-		'body': 'A.util.isArray()'
+		'body': 'A.util.isArray(${1:})'
 	'A.util.isObject':
 		'prefix': 'A-util-isObject'
-		'body': 'A.util.isObject(obj)'
+		'body': 'A.util.isObject(${1:obj})'
 	'A.util.isPlainObject':
 		'prefix': 'A-util-isPlainObject'
-		'body': 'A.util.isPlainObject(obj)'
+		'body': 'A.util.isPlainObject(${1:obj})'
 	'A.util.isError':
 		'prefix': 'A-util-isError'
-		'body': 'A.util.isError(obj)'
+		'body': 'A.util.isError(${1:obj})'
 	'A.util.isFunction':
 		'prefix': 'A-util-isFunction'
-		'body': 'A.util.isFunction(obj)'
+		'body': 'A.util.isFunction(${1:obj})'
 	'A.util.isString':
 		'prefix': 'A-util-isString'
-		'body': 'A.util.isString(obj)'
+		'body': 'A.util.isString(${1:obj})'
 	'A.util.isNumber':
 		'prefix': 'A-util-isNumber'
-		'body': 'A.util.isNumber(obj)'
+		'body': 'A.util.isNumber(${1:obj})'
 	'A.util.isFiniteNumber':
 		'prefix': 'A-util-isFiniteNumber'
-		'body': 'A.util.isFiniteNumber(obj)'
+		'body': 'A.util.isFiniteNumber(${1:obj})'
 	'A.util.isBoolean':
 		'prefix': 'A-util-isBoolean'
-		'body': 'A.util.isBoolean(obj)'
+		'body': 'A.util.isBoolean(${1:obj})'
 	'A.util.isUndefined':
 		'prefix': 'A-util-isUndefined'
-		'body': 'A.util.isUndefined(obj)'
+		'body': 'A.util.isUndefined(${1:obj})'
 	'A.util.isUndefinedOrNull':
 		'prefix': 'A-util-isUndefinedOrNull'
-		'body': 'A.util.isUndefinedOrNull(obj)'
+		'body': 'A.util.isUndefinedOrNull(${1:obj})'
 	'A.util.isEmpty':
 		'prefix': 'A-util-isEmpty'
-		'body': 'A.util.isEmpty(obj)'
+		'body': 'A.util.isEmpty(${1:obj})'
 	'A.util.getBooleanValue':
 		'prefix': 'A-util-getBooleanValue'
-		'body': 'A.util.getBooleanValue(val)'
+		'body': 'A.util.getBooleanValue(${1:val})'
 	'A.util.createHtmlElement':
 		'prefix': 'A-util-createHtmlElement'
-		'body': 'A.util.createHtmlElement(tagName, attributes)'
+		'body': 'A.util.createHtmlElement(${1:tagName},${2:attributes})'
 	'A.util.clearNode':
 		'prefix': 'A-util-clearNode'
-		'body': 'A.util.clearNode(node)'
+		'body': 'A.util.clearNode(${1:node})'
 	'A.util.getElement':
 		'prefix': 'A-util-getElement'
-		'body': 'A.util.getElement(id)'
+		'body': 'A.util.getElement(${1:id})'
 	'A.util.copy':
 		'prefix': 'A-util-copy'
-		'body': 'A.util.copy(value)'
+		'body': 'A.util.copy(${1:value})'
 	'A.util.compareValues':
 		'prefix': 'A-util-compareValues'
-		'body': 'A.util.compareValues(expected, actual)'
+		'body': 'A.util.compareValues(${1:expected},${2:actual})'
 	'A.util.hasClass':
 		'prefix': 'A-util-hasClass'
-		'body': 'A.util.hasClass(element, className)'
+		'body': 'A.util.hasClass(${1:element},${2:className})'
 	'A.util.addClass':
 		'prefix': 'A-util-addClass'
-		'body': 'A.util.addClass(element, newClass)'
+		'body': 'A.util.addClass(${1:element},${2:newClass})'
 	'A.util.removeClass':
 		'prefix': 'A-util-removeClass'
-		'body': 'A.util.removeClass(element, newClass)'
+		'body': 'A.util.removeClass(${1:element},${2:newClass})'
 	'A.util.toggleClass':
 		'prefix': 'A-util-toggleClass'
-		'body': 'A.util.toggleClass(element, className, condition)'
+		'body': 'A.util.toggleClass(${1:element},${2:className},${3:condition})'
 	'A.util.swapClass':
 		'prefix': 'A-util-swapClass'
-		'body': 'A.util.swapClass(element, oldClass, newClass)'
+		'body': 'A.util.swapClass(${1:element},${2:oldClass},${3:newClass})'
 	'A.util.setClass':
 		'prefix': 'A-util-setClass'
-		'body': 'A.util.setClass(element,newClass,remove)'
+		'body': 'A.util.setClass(${1:element,newClass,remove})'
 	'A.util.buildClass':
 		'prefix': 'A-util-buildClass'
-		'body': 'A.util.buildClass(oldClass, newClass, remove)'
+		'body': 'A.util.buildClass(${1:oldClass},${2:newClass},${3:remove})'
 	'A.util.buildFlavorClass':
 		'prefix': 'A-util-buildFlavorClass'
-		'body': 'A.util.buildFlavorClass(cmp, flavor)'
+		'body': 'A.util.buildFlavorClass(${1:cmp},${2:flavor})'
 	'A.util.createElementsFromMarkup':
 		'prefix': 'A-util-createElementsFromMarkup'
-		'body': 'A.util.createElementsFromMarkup(markup)'
+		'body': 'A.util.createElementsFromMarkup(${1:markup})'
 	'A.util.insertFirst':
 		'prefix': 'A-util-insertFirst'
-		'body': 'A.util.insertFirst(newEl, referenceEl)'
+		'body': 'A.util.insertFirst(${1:newEl},${2:referenceEl})'
 	'A.util.insertBefore':
 		'prefix': 'A-util-insertBefore'
-		'body': 'A.util.insertBefore(newEl, referenceEl)'
+		'body': 'A.util.insertBefore(${1:newEl},${2:referenceEl})'
 	'A.util.insertAfter':
 		'prefix': 'A-util-insertAfter'
-		'body': 'A.util.insertAfter(newEl, referenceEl)'
+		'body': 'A.util.insertAfter(${1:newEl},${2:referenceEl})'
 	'A.util.appendChild':
 		'prefix': 'A-util-appendChild'
-		'body': 'A.util.appendChild(newEl, referenceEl)'
+		'body': 'A.util.appendChild(${1:newEl},${2:referenceEl})'
 	'A.util.removeElement':
 		'prefix': 'A-util-removeElement'
-		'body': 'A.util.removeElement(element)'
+		'body': 'A.util.removeElement(${1:element})'
 	'A.util.urlDecode':
 		'prefix': 'A-util-urlDecode'
-		'body': 'A.util.urlDecode(url)'
+		'body': 'A.util.urlDecode(${1:url})'
 	'A.util.trim':
 		'prefix': 'A-util-trim'
-		'body': 'A.util.trim(value)'
+		'body': 'A.util.trim(${1:value})'
 	'A.util.format':
 		'prefix': 'A-util-format'
-		'body': 'A.util.format(formatString,arg1,arg2,argN)'
+		'body': 'A.util.format(${1:formatString,arg1,arg2,argN})'
 	'A.util.truncate':
 		'prefix': 'A-util-truncate'
-		'body': 'A.util.truncate(st, len, ellipsis, truncateByWord)'
+		'body': 'A.util.truncate(${1:st},${2:len},${3:ellipsis},${4:truncateByWord})'
 	'A.util.createTimeoutCallback':
 		'prefix': 'A-util-createTimeoutCallback'
-		'body': 'A.util.createTimeoutCallback(callback, toleranceMillis)'
+		'body': 'A.util.createTimeoutCallback(${1:callback},${2:toleranceMillis})'
 	'A.util.on':
 		'prefix': 'A-util-on'
-		'body': 'A.util.on(element, eventName, handler, useCapture, timeout)'
+		'body': 'A.util.on(${1:element},${2:eventName},${3:handler},${4:useCapture},${5:timeout})'
 	'A.util.removeOn':
 		'prefix': 'A-util-removeOn'
-		'body': 'A.util.removeOn(element, eventName, listener, useCapture)'
+		'body': 'A.util.removeOn(${1:element},${2:eventName},${3:listener},${4:useCapture})'
 	'A.util.formToMap':
 		'prefix': 'A-util-formToMap'
-		'body': 'A.util.formToMap(form)'
+		'body': 'A.util.formToMap(${1:form})'
 	'A.util.getSelectValue':
 		'prefix': 'A-util-getSelectValue'
-		'body': 'A.util.getSelectValue(select)'
+		'body': 'A.util.getSelectValue(${1:select})'
 	'A.util.addValueToMap':
 		'prefix': 'A-util-addValueToMap'
-		'body': 'A.util.addValueToMap(inputMap, key, value)'
+		'body': 'A.util.addValueToMap(${1:inputMap},${2:key},${3:value})'
 	'A.util.addMapValueToMap':
 		'prefix': 'A-util-addMapValueToMap'
-		'body': 'A.util.addMapValueToMap(inputMap, key, value, subMapKey)'
+		'body': 'A.util.addMapValueToMap(${1:inputMap},${2:key},${3:value},${4:subMapKey})'
 	'A.util.isSubDef':
 		'prefix': 'A-util-isSubDef'
-		'body': 'A.util.isSubDef(def, qname)'
+		'body': 'A.util.isSubDef(${1:def},${2:qname})'
 	'A.util.apply':
 		'prefix': 'A-util-apply'
-		'body': 'A.util.apply(/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)'
+		'body': 'A.util.apply($1&#x2F;* Object|Function *&#x2F; baseObject, &#x2F;* Object|Function*&#x2F; members, &#x2F;* bool *&#x2F; forceCopy, &#x2F;* bool *&#x2F; deepCopy)'
 	'A.util.camelCaseToHyphens':
 		'prefix': 'A-util-camelCaseToHyphens'
-		'body': 'A.util.camelCaseToHyphens(str)'
+		'body': 'A.util.camelCaseToHyphens(${1:str})'
 	'A.util.hyphensToCamelCase':
 		'prefix': 'A-util-hyphensToCamelCase'
-		'body': 'A.util.hyphensToCamelCase(str)'
+		'body': 'A.util.hyphensToCamelCase(${1:str})'
 	'A.util.acceptsData':
 		'prefix': 'A-util-acceptsData'
-		'body': 'A.util.acceptsData(element)'
+		'body': 'A.util.acceptsData(${1:element})'
 	'A.util.getElementAttributeValue':
 		'prefix': 'A-util-getElementAttributeValue'
-		'body': 'A.util.getElementAttributeValue(element,attributeName)'
+		'body': 'A.util.getElementAttributeValue(${1:element,attributeName})'
 	'A.util.getDataAttribute':
 		'prefix': 'A-util-getDataAttribute'
-		'body': 'A.util.getDataAttribute(element, key)'
+		'body': 'A.util.getDataAttribute(${1:element},${2:key})'
 	'A.util.setDataAttribute':
 		'prefix': 'A-util-setDataAttribute'
-		'body': 'A.util.setDataAttribute(element, key, value)'
+		'body': 'A.util.setDataAttribute(${1:element},${2:key},${3:value})'
 	'A.util.getDataAttributeName':
 		'prefix': 'A-util-getDataAttributeName'
-		'body': 'A.util.getDataAttributeName(key)'
+		'body': 'A.util.getDataAttributeName(${1:key})'
 	'A.util.hasDataAttribute':
 		'prefix': 'A-util-hasDataAttribute'
-		'body': 'A.util.hasDataAttribute(element, key)'
+		'body': 'A.util.hasDataAttribute(${1:element},${2:key})'
 	'A.util.isElement':
 		'prefix': 'A-util-isElement'
-		'body': 'A.util.isElement(obj)'
+		'body': 'A.util.isElement(${1:obj})'
 	'A.util.attachToDocumentBody':
 		'prefix': 'A-util-attachToDocumentBody'
-		'body': 'A.util.attachToDocumentBody(element)'
+		'body': 'A.util.attachToDocumentBody(${1:element})'
 	'A.util.stringEndsWith':
 		'prefix': 'A-util-stringEndsWith'
-		'body': 'A.util.stringEndsWith(fullstr, substr)'
+		'body': 'A.util.stringEndsWith(${1:fullstr},${2:substr})'
 	'A.util.bind':
 		'prefix': 'A-util-bind'
-		'body': 'A.util.bind(method /*, this, bind arguments*/)'
+		'body': 'A.util.bind($1method &#x2F;*, this, bind arguments*&#x2F;)'
 	'A.util.keys':
 		'prefix': 'A-util-keys'
-		'body': 'A.util.keys(object, excludeFunctions)'
+		'body': 'A.util.keys(${1:object},${2:excludeFunctions})'
 	'A.util.lookup':
 		'prefix': 'A-util-lookup'
-		'body': 'A.util.lookup(object /*, var-args of arrays*/)'
+		'body': 'A.util.lookup($1object &#x2F;*, var-args of arrays*&#x2F;)'
 	'A.util.merge':
 		'prefix': 'A-util-merge'
-		'body': 'A.util.merge(first /*, var-args of arrays*/)'
+		'body': 'A.util.merge($1first &#x2F;*, var-args of arrays*&#x2F;)'
 	'A.util.forEach':
 		'prefix': 'A-util-forEach'
-		'body': 'A.util.forEach(array, method, that)'
+		'body': 'A.util.forEach(${1:array},${2:method},${3:that})'
 	'A.util.map':
 		'prefix': 'A-util-map'
-		'body': 'A.util.map(array, method, that)'
+		'body': 'A.util.map(${1:array},${2:method},${3:that})'
 	'A.util.reduce':
 		'prefix': 'A-util-reduce'
-		'body': 'A.util.reduce(array, method, initial)'
+		'body': 'A.util.reduce(${1:array},${2:method},${3:initial})'
 	'A.util.every':
 		'prefix': 'A-util-every'
-		'body': 'A.util.every(array, predicate, that)'
+		'body': 'A.util.every(${1:array},${2:predicate},${3:that})'
 	'A.util.some':
 		'prefix': 'A-util-some'
-		'body': 'A.util.some(array, predicate, that)'
+		'body': 'A.util.some(${1:array},${2:predicate},${3:that})'
 	'A.util.filter':
 		'prefix': 'A-util-filter'
-		'body': 'A.util.filter(array, predicate, that)'
+		'body': 'A.util.filter(${1:array},${2:predicate},${3:that})'
 	'A.util.destroyAsync':
 		'prefix': 'A-util-destroyAsync'
-		'body': 'A.util.destroyAsync(cmp)'
+		'body': 'A.util.destroyAsync(${1:cmp})'
 	'A.util.instanceOf':
 		'prefix': 'A-util-instanceOf'
-		'body': 'A.util.instanceOf(instance, constructor)'
+		'body': 'A.util.instanceOf(${1:instance},${2:constructor})'
 	'A.util.emptyComponentTrash':
 		'prefix': 'A-util-emptyComponentTrash'
-		'body': 'A.util.emptyComponentTrash()'
+		'body': 'A.util.emptyComponentTrash(${1:})'
 	'A.util.contains':
 		'prefix': 'A-util-contains'
-		'body': 'A.util.contains(container, element)'
+		'body': 'A.util.contains(${1:container},${2:element})'
 	'A.util.squash':
 		'prefix': 'A-util-squash'
-		'body': 'A.util.squash(event, preventDefault)'
+		'body': 'A.util.squash(${1:event},${2:preventDefault})'
 	'A.util.stripTags':
 		'prefix': 'A-util-stripTags'
-		'body': 'A.util.stripTags(input, tags)'
+		'body': 'A.util.stripTags(${1:input},${2:tags})'
 	'A.util.getWindowSize':
 		'prefix': 'A-util-getWindowSize'
-		'body': 'A.util.getWindowSize()'
+		'body': 'A.util.getWindowSize(${1:})'
 	'A.util.isComponent':
 		'prefix': 'A-util-isComponent'
-		'body': 'A.util.isComponent(obj)'
+		'body': 'A.util.isComponent(${1:obj})'
 	'A.util.isExpression':
 		'prefix': 'A-util-isExpression'
-		'body': 'A.util.isExpression(obj)'
+		'body': 'A.util.isExpression(${1:obj})'
 	'A.util.isValue':
 		'prefix': 'A-util-isValue'
-		'body': 'A.util.isValue(obj)'
+		'body': 'A.util.isValue(${1:obj})'
 	'A.util.isAction':
 		'prefix': 'A-util-isAction'
-		'body': 'A.util.isAction(obj)'
+		'body': 'A.util.isAction(${1:obj})'
 	'A.util.supportsTouchEvents':
 		'prefix': 'A-util-supportsTouchEvents'
-		'body': 'A.util.supportsTouchEvents()'
+		'body': 'A.util.supportsTouchEvents(${1:})'
 	'A.util.estimateSize':
 		'prefix': 'A-util-estimateSize'
-		'body': 'A.util.estimateSize(obj)'
+		'body': 'A.util.estimateSize(${1:obj})'
 	'A.util.toArray':
 		'prefix': 'A-util-toArray'
-		'body': 'A.util.toArray(collection)'
+		'body': 'A.util.toArray(${1:collection})'
 	'A.util.setText':
 		'prefix': 'A-util-setText'
-		'body': 'A.util.setText(node, text)'
+		'body': 'A.util.setText(${1:node},${2:text})'
 	'A.util.getDebugToolComponent':
 		'prefix': 'A-util-getDebugToolComponent'
-		'body': 'A.util.getDebugToolComponent()'
+		'body': 'A.util.getDebugToolComponent(${1:})'
 	'A.util.getDebugToolsAuraInstance':
 		'prefix': 'A-util-getDebugToolsAuraInstance'
-		'body': 'A.util.getDebugToolsAuraInstance()'
+		'body': 'A.util.getDebugToolsAuraInstance(${1:})'
 	'A.util.setDebugToolWindow':
 		'prefix': 'A-util-setDebugToolWindow'
-		'body': 'A.util.setDebugToolWindow(debugWindow)'
+		'body': 'A.util.setDebugToolWindow(${1:debugWindow})'
 	'A.util.getUrl':
 		'prefix': 'A-util-getUrl'
-		'body': 'A.util.getUrl()'
+		'body': 'A.util.getUrl(${1:})'
 	'A.util.getText':
 		'prefix': 'A-util-getText'
-		'body': 'A.util.getText(node)'
+		'body': 'A.util.getText(${1:node})'
 	'A.util.errorBasedOnMode':
 		'prefix': 'A-util-errorBasedOnMode'
-		'body': 'A.util.errorBasedOnMode(msg)'
+		'body': 'A.util.errorBasedOnMode(${1:msg})'
 	'A.util.includeScript':
 		'prefix': 'A-util-includeScript'
-		'body': 'A.util.includeScript(url, callback)'
+		'body': 'A.util.includeScript(${1:url},${2:callback})'

@@ -25,8 +25,12 @@ var self = {
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
 
-        var triggerTemplate = util.getTemplateFunc( "{{normalizedFunctionName}}" );
-        var contentTemplate = util.getTemplateFunc( "{{functionName}}({{annotatedParams}})" );
+        var triggerTemplate = util.getTemplateFunc(
+            "{{normalizedFunctionName}}"
+        );
+        var contentTemplate = util.getTemplateFunc(
+            "{{functionName}}({{annotatedParams}})"
+        );
 
         for (var functionName in dictionary) {
             var viewObj = {
@@ -37,16 +41,10 @@ var self = {
                 TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
             }
 
-            //triggers
-            var trigger = triggerTemplate(viewObj);
-
-            //contents
-            var contents = contentTemplate(viewObj);
-
             //sublime format
             sublimeFormat.completions.push({
-                trigger: trigger,
-                contents: contents
+                trigger: triggerTemplate(viewObj),
+                contents: contentTemplate(viewObj)
             });
         }
         return sublimeFormat;
@@ -63,6 +61,21 @@ var self = {
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
 
+        var triggerTemplate = util.getTemplateFunc(
+            [
+                "helper",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{namespace}}",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{componentName}}",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{functionName}}"
+            ].join('')
+        );
+        var contentTemplate = util.getTemplateFunc(
+            "cmp.getDef().getHelper().{{functionName}}({{annotatedParams}})"
+        );
+
         // console.log(helperDictionary);
 
         _.forEach(helperDictionary, function(cmpHelperObj, componentName){
@@ -70,21 +83,19 @@ var self = {
             var namespace = cmpHelperObj.namespace;
 
             _.forEach(cmpHelperObj.helpers, function(currentComponentHelperObj){
-                var annotatedParams = currentComponentHelperObj.annotatedValue || "";
-                var origParams = currentComponentHelperObj.origValue || "";
-                var functionName = currentComponentHelperObj.functionName || ''
-
-                //triggers
-                var trigger = 'helper' + TRIGGER_SEPARATOR + namespace + TRIGGER_SEPARATOR + componentName + TRIGGER_SEPARATOR + functionName ;
-
-                //contents
-                var contents = 'cmp.getDef().getHelper().' + functionName + "(" + annotatedParams + ")";
-
+                var viewObj = {
+                    componentName : componentName,
+                    namespace : namespace,
+                    functionName : currentComponentHelperObj.functionName || '',
+                    annotatedParams : currentComponentHelperObj.annotatedValue || "",
+                    origParams : currentComponentHelperObj.origValue || "",
+                    TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+                }
 
                 //sublime format
                 sublimeFormat.completions.push({
-                    trigger: trigger,
-                    contents: contents
+                    trigger: triggerTemplate(viewObj),
+                    contents: contentTemplate(viewObj)
                 });
             });
         });
@@ -112,6 +123,32 @@ var self = {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js'
         );
+
+        var triggerTemplate = util.getTemplateFunc(
+            [
+                "evt",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{evtObj.namespace}}",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{evtObj.component}}",
+                "{{TRIGGER_SEPARATOR}}",
+                "{{actualEvt.name}}"
+            ].join('')
+        );
+        var contentTemplate = util.getTemplateFunc(
+            [
+                '//  component: {{evtObj.component}}',
+                '//    evtName: {{actualEvt.name}}',
+                '//    evtType: {{actualEvt.type}}',
+                '//description: {{actualEvt.description}}',
+                'var e = cmp.find("${1:{{evtObj.component}}}").get("e.{{actualEvt.name}}");',
+                'e.setParams({',
+                '{{contentBody}}',//content body
+                '});',
+                'e.fire();'
+            ].join('\n')
+        );
+
         for (var evtName in arrayEvents) {
             var evtObj = arrayEvents[evtName];
             // console.log(evtObj);
@@ -121,36 +158,32 @@ var self = {
                 console.log('error'.red, evtObj);
                 continue;
             }
-            // var trigger = 'evt_' + actualEvt.name + '\t$A.Event.' + evtObj.component;
-            var trigger = 'evt' + TRIGGER_SEPARATOR  + evtObj.namespace + TRIGGER_SEPARATOR  + evtObj.component + TRIGGER_SEPARATOR  + actualEvt.name ;
-            var contents = [
-                '//' + '  component: ' + evtObj.component,
-                '//' + '    evtName: ' + actualEvt.name,
-                '//' + '    evtType: '+ actualEvt.type,
-                '//' + 'description: ' + (actualEvt.description || ''),
-                'var e = cmp.find("${1:' + evtObj.component + '}").get("e.' + actualEvt.name + '");',
-                'e.setParams({'
-            ];
+
             //loop through params and do stuffs
+            var contentBody = [];
             if (evt.params.length > 0) {
                 for (var i = 0; i < evt.params.length; i++) {
                     var evtDef = evt.params[i];
-                    contents.push(
+                    contentBody.push(
                         '\t' + evtDef.name + ': "' + '${' + (i + 2) + ':' + evtDef.type + '}"' + ',' + (evtDef.description ? '// ' + evtDef.description : '')
                         // '\t' + evtDef.name + ': "' + evtDef.type + '"' + ',' + (evtDef.description ? '//' + evtDef.description : '')
                     );
                 }
             }
+            contentBody = contentBody.join('\n');
 
-            contents.push('});');
-            contents.push('e.fire();');
-            //combine to the string
-            contents = contents.join('\n')
+
+            var viewObj = {
+                evtObj: evtObj,
+                actualEvt: actualEvt,
+                contentBody : contentBody,
+                TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+            }
 
             //push
             sublimeFormat.completions.push({
-                trigger: trigger,
-                contents: contents
+                trigger: triggerTemplate(viewObj),
+                contents: contentTemplate(viewObj)
             });
         };
 
