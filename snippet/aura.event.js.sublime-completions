@@ -19,11 +19,11 @@
     },
     {
       "trigger": "evt-aurajstest-jstestCase-done",
-      "contents": "//  component: jstestCase\n//    evtName: done\n//    evtType: aurajstest:testStatus\n//description: \nvar e = cmp.find(\"${1:jstestCase}\").get(\"e.done\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: jstestCase\n//    evtName: done\n//    evtType: aurajstest:testStatus\n//description: \nvar e = cmp.find(\"${1:jstestCase}\").get(\"e.done\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-abstractDataGrid-refresh",
-      "contents": "//  component: abstractDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:abstractDataGrid}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: abstractDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:abstractDataGrid}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-abstractDataGrid-addRemove",
@@ -39,7 +39,7 @@
     },
     {
       "trigger": "evt-ui-abstractList-refresh",
-      "contents": "//  component: abstractList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: The event fired when the component is refreshed.\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: abstractList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: The event fired when the component is refreshed.\nvar e = cmp.find(\"${1:abstractList}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-abstractList-addRemove",
@@ -51,7 +51,7 @@
     },
     {
       "trigger": "evt-ui-asyncImage-load",
-      "contents": "//  component: asyncImage\n//    evtName: load\n//    evtType: ui:load\n//description: \nvar e = cmp.find(\"${1:asyncImage}\").get(\"e.load\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: asyncImage\n//    evtName: load\n//    evtType: ui:load\n//description: \nvar e = cmp.find(\"${1:asyncImage}\").get(\"e.load\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocomplete-matchDone",
@@ -87,7 +87,7 @@
     },
     {
       "trigger": "evt-ui-autocompleteList-pressOnHighlighted",
-      "contents": "//  component: autocompleteList\n//    evtName: pressOnHighlighted\n//    evtType: ui:press\n//description: The event fired when a highlighted option is pressed.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.pressOnHighlighted\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: autocompleteList\n//    evtName: pressOnHighlighted\n//    evtType: ui:press\n//description: The event fired when a highlighted option is pressed.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.pressOnHighlighted\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocompleteList-selectListOption",
@@ -99,31 +99,31 @@
     },
     {
       "trigger": "evt-ui-autocompleteList-listExpand",
-      "contents": "//  component: autocompleteList\n//    evtName: listExpand\n//    evtType: ui:autocompleteListExpand\n//description: The event fired when the list is made visible\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listExpand\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: autocompleteList\n//    evtName: listExpand\n//    evtType: ui:autocompleteListExpand\n//description: The event fired when the list is made visible\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listExpand\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-keydown",
-      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The controller method that runs when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The controller method that runs when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-press",
-      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseover",
-      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseout",
-      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-focus",
-      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: The controller method that runs when the button receives focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: The controller method that runs when the button receives focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-blur",
-      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: The controller method that runs when the button loses focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: The controller method that runs when the button loses focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-carouselDeprecated-selectDefaultPage",
@@ -211,11 +211,11 @@
     },
     {
       "trigger": "evt-ui-dataTableRow-rowPress",
-      "contents": "//  component: dataTableRow\n//    evtName: rowPress\n//    evtType: ui:rowPress\n//description: The event fired when the row is pressed down. The element that is clicked on is checked before the event is fired.\nvar e = cmp.find(\"${1:dataTableRow}\").get(\"e.rowPress\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: dataTableRow\n//    evtName: rowPress\n//    evtType: ui:rowPress\n//description: The event fired when the row is pressed down. The element that is clicked on is checked before the event is fired.\nvar e = cmp.find(\"${1:dataTableRow}\").get(\"e.rowPress\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-dataWriter-write",
-      "contents": "//  component: dataWriter\n//    evtName: write\n//    evtType: ui:write\n//description: Command event to invoke writing.\nvar e = cmp.find(\"${1:dataWriter}\").get(\"e.write\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: dataWriter\n//    evtName: write\n//    evtType: ui:write\n//description: Command event to invoke writing.\nvar e = cmp.find(\"${1:dataWriter}\").get(\"e.write\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-dataWriter-onsuccess",
@@ -231,11 +231,11 @@
     },
     {
       "trigger": "evt-ui-datePickerGrid-hide",
-      "contents": "//  component: datePickerGrid\n//    evtName: hide\n//    evtType: ui:change\n//description: The event fired when the date picker is hidden from view.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.hide\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: datePickerGrid\n//    evtName: hide\n//    evtType: ui:change\n//description: The event fired when the date picker is hidden from view.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.hide\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-datePickerGrid-focus",
-      "contents": "//  component: datePickerGrid\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when a date is focused.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: datePickerGrid\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when a date is focused.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-datePickerGrid-selectDate",
@@ -299,27 +299,27 @@
     },
     {
       "trigger": "evt-ui-infiniteListRow-open",
-      "contents": "//  component: infiniteListRow\n//    evtName: open\n//    evtType: ui:open\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.open\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: infiniteListRow\n//    evtName: open\n//    evtType: ui:open\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.open\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-infiniteListRow-close",
-      "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-change",
-      "contents": "//  component: input\n//    evtName: change\n//    evtType: ui:change\n//description: The event fired when the user changes the content of the input.\nvar e = cmp.find(\"${1:input}\").get(\"e.change\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: change\n//    evtType: ui:change\n//description: The event fired when the user changes the content of the input.\nvar e = cmp.find(\"${1:input}\").get(\"e.change\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-copy",
-      "contents": "//  component: input\n//    evtName: copy\n//    evtType: ui:copy\n//description: The event fired when the user copies content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.copy\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: copy\n//    evtType: ui:copy\n//description: The event fired when the user copies content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.copy\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-cut",
-      "contents": "//  component: input\n//    evtName: cut\n//    evtType: ui:cut\n//description: The event fired when the user cuts content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.cut\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: cut\n//    evtType: ui:cut\n//description: The event fired when the user cuts content to the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.cut\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-paste",
-      "contents": "//  component: input\n//    evtName: paste\n//    evtType: ui:paste\n//description: The event fired when the user pastes content from the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.paste\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: paste\n//    evtType: ui:paste\n//description: The event fired when the user pastes content from the clipboard.\nvar e = cmp.find(\"${1:input}\").get(\"e.paste\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-onError",
@@ -327,23 +327,23 @@
     },
     {
       "trigger": "evt-ui-input-onClearErrors",
-      "contents": "//  component: input\n//    evtName: onClearErrors\n//    evtType: ui:clearErrors\n//description: The event fired when any validation errors should be cleared.\nvar e = cmp.find(\"${1:input}\").get(\"e.onClearErrors\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: onClearErrors\n//    evtType: ui:clearErrors\n//description: The event fired when any validation errors should be cleared.\nvar e = cmp.find(\"${1:input}\").get(\"e.onClearErrors\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-updateError",
-      "contents": "//  component: input\n//    evtName: updateError\n//    evtType: ui:updateError\n//description: The event fired to trigger the default error component and messages (deprecated).\nvar e = cmp.find(\"${1:input}\").get(\"e.updateError\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: updateError\n//    evtType: ui:updateError\n//description: The event fired to trigger the default error component and messages (deprecated).\nvar e = cmp.find(\"${1:input}\").get(\"e.updateError\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-input",
-      "contents": "//  component: input\n//    evtName: input\n//    evtType: ui:inputEvent\n//description: The event fired when the user enters an input.\nvar e = cmp.find(\"${1:input}\").get(\"e.input\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: input\n//    evtName: input\n//    evtType: ui:inputEvent\n//description: The event fired when the user enters an input.\nvar e = cmp.find(\"${1:input}\").get(\"e.input\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-inputDate-openPicker",
-      "contents": "//  component: inputDate\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDate}\").get(\"e.openPicker\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: inputDate\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDate}\").get(\"e.openPicker\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-inputDateTime-openPicker",
-      "contents": "//  component: inputDateTime\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDateTime}\").get(\"e.openPicker\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: inputDateTime\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDateTime}\").get(\"e.openPicker\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-inputSearch-search",
@@ -355,31 +355,31 @@
     },
     {
       "trigger": "evt-ui-interactive-blur",
-      "contents": "//  component: interactive\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.blur\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-interactive-focus",
-      "contents": "//  component: interactive\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when the user focuses on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.focus\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when the user focuses on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-interactive-keydown",
-      "contents": "//  component: interactive\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-interactive-keypress",
-      "contents": "//  component: interactive\n//    evtName: keypress\n//    evtType: ui:keypress\n//description: The event fired when the user presses or holds down a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keypress\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: keypress\n//    evtType: ui:keypress\n//description: The event fired when the user presses or holds down a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keypress\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-interactive-keyup",
-      "contents": "//  component: interactive\n//    evtName: keyup\n//    evtType: ui:keyup\n//description: The event fired when the user releases a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keyup\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: keyup\n//    evtType: ui:keyup\n//description: The event fired when the user releases a keyboard key on the component.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.keyup\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-interactive-select",
-      "contents": "//  component: interactive\n//    evtName: select\n//    evtType: ui:select\n//description: The event fired when the user selects some text.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.select\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: interactive\n//    evtName: select\n//    evtType: ui:select\n//description: The event fired when the user selects some text.\nvar e = cmp.find(\"${1:interactive}\").get(\"e.select\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-listSorter-refresh",
-      "contents": "//  component: listSorter\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: \nvar e = cmp.find(\"${1:listSorter}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: listSorter\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: \nvar e = cmp.find(\"${1:listSorter}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-listView-oncolumnsready",
@@ -599,11 +599,11 @@
     },
     {
       "trigger": "evt-ui-menuList-menuCollapse",
-      "contents": "//  component: menuList\n//    evtName: menuCollapse\n//    evtType: ui:collapse\n//description: The event fired when the menu list collapses.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuCollapse\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: menuList\n//    evtName: menuCollapse\n//    evtType: ui:collapse\n//description: The event fired when the menu list collapses.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuCollapse\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-menuList-menuExpand",
-      "contents": "//  component: menuList\n//    evtName: menuExpand\n//    evtType: ui:expand\n//description: The event fired when the menu list displays.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuExpand\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: menuList\n//    evtName: menuExpand\n//    evtType: ui:expand\n//description: The event fired when the menu list displays.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuExpand\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-menuList-menuSelect",
@@ -615,7 +615,7 @@
     },
     {
       "trigger": "evt-ui-menuList-refresh",
-      "contents": "//  component: menuList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the menuList.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: menuList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the menuList.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-menuTrigger-menuTriggerPress",
@@ -627,7 +627,7 @@
     },
     {
       "trigger": "evt-ui-outputURL-click",
-      "contents": "//  component: outputURL\n//    evtName: click\n//    evtType: ui:click\n//description: The event fired when the user clicks on the component.\nvar e = cmp.find(\"${1:outputURL}\").get(\"e.click\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: outputURL\n//    evtName: click\n//    evtType: ui:click\n//description: The event fired when the user clicks on the component.\nvar e = cmp.find(\"${1:outputURL}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-pager-onPageChange",
@@ -643,11 +643,11 @@
     },
     {
       "trigger": "evt-ui-pill-keydown",
-      "contents": "//  component: pill\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: pill\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-pill-blur",
-      "contents": "//  component: pill\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.blur\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: pill\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the component.\nvar e = cmp.find(\"${1:pill}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-pillContainer-pillInserted",
@@ -659,15 +659,15 @@
     },
     {
       "trigger": "evt-ui-popup-popupTriggerPress",
-      "contents": "//  component: popup\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when the popup trigger is pressed. Other components may also fire this event to simulate a trigger press.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTriggerPress\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when the popup trigger is pressed. Other components may also fire this event to simulate a trigger press.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTriggerPress\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popup-popupTargetShow",
-      "contents": "//  component: popup\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target. Other components may also fire this event to show the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetShow\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target. Other components may also fire this event to show the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetShow\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popup-popupTargetHide",
-      "contents": "//  component: popup\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target. Other components may also fire this event to hide the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetHide\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target. Other components may also fire this event to hide the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetHide\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popup-popupKeyboardEvent",
@@ -675,15 +675,15 @@
     },
     {
       "trigger": "evt-ui-popup-refresh",
-      "contents": "//  component: popup\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the popup\nvar e = cmp.find(\"${1:popup}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the popup\nvar e = cmp.find(\"${1:popup}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTarget-popupCollapse",
-      "contents": "//  component: popupTarget\n//    evtName: popupCollapse\n//    evtType: ui:collapse\n//description: The event fired when the popup target list collapses.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupCollapse\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTarget\n//    evtName: popupCollapse\n//    evtType: ui:collapse\n//description: The event fired when the popup target list collapses.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupCollapse\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTarget-popupExpand",
-      "contents": "//  component: popupTarget\n//    evtName: popupExpand\n//    evtType: ui:expand\n//description: The event fired when the popup target list displays.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupExpand\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTarget\n//    evtName: popupExpand\n//    evtType: ui:expand\n//description: The event fired when the popup target list displays.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.popupExpand\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTarget-popupKeyboardEvent",
@@ -691,19 +691,19 @@
     },
     {
       "trigger": "evt-ui-popupTarget-doClose",
-      "contents": "//  component: popupTarget\n//    evtName: doClose\n//    evtType: ui:collapse\n//description: Tell the target to close itself.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.doClose\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTarget\n//    evtName: doClose\n//    evtType: ui:collapse\n//description: Tell the target to close itself.\nvar e = cmp.find(\"${1:popupTarget}\").get(\"e.doClose\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupTriggerPress",
-      "contents": "//  component: popupTrigger\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when a popup trigger is pressed.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTriggerPress\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTrigger\n//    evtName: popupTriggerPress\n//    evtType: ui:popupTriggerPress\n//description: The event fired when a popup trigger is pressed.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTriggerPress\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupTargetShow",
-      "contents": "//  component: popupTrigger\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetShow\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetShow\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupTargetHide",
-      "contents": "//  component: popupTrigger\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetHide\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetHide\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupKeyboardEvent",
@@ -719,7 +719,7 @@
     },
     {
       "trigger": "evt-ui-scrollerDeprecated-refreshed",
-      "contents": "//  component: scrollerDeprecated\n//    evtName: refreshed\n//    evtType: ui:scrollerRefreshed\n//description: The event fired when the scroller is refreshed.\nvar e = cmp.find(\"${1:scrollerDeprecated}\").get(\"e.refreshed\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: scrollerDeprecated\n//    evtName: refreshed\n//    evtType: ui:scrollerRefreshed\n//description: The event fired when the scroller is refreshed.\nvar e = cmp.find(\"${1:scrollerDeprecated}\").get(\"e.refreshed\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-scrollerDeprecated-scrollTo",
@@ -811,11 +811,11 @@
     },
     {
       "trigger": "evt-ui-tabOverflowMenuList-forwardWrap",
-      "contents": "//  component: tabOverflowMenuList\n//    evtName: forwardWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a forward wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.forwardWrap\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: tabOverflowMenuList\n//    evtName: forwardWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a forward wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.forwardWrap\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabOverflowMenuList-reverseWrap",
-      "contents": "//  component: tabOverflowMenuList\n//    evtName: reverseWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a reverse wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.reverseWrap\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: tabOverflowMenuList\n//    evtName: reverseWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a reverse wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.reverseWrap\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabset-addTab",
@@ -851,7 +851,7 @@
     },
     {
       "trigger": "evt-ui-virtualDataGrid-refresh",
-      "contents": "//  component: virtualDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.refresh\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: virtualDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-virtualDataGrid-onsort",
@@ -863,15 +863,15 @@
     },
     {
       "trigger": "evt-actionsTest-chainBoundaryCases-press",
-      "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-actionsTest-chainExternalActions-press",
-      "contents": "//  component: chainExternalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainExternalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: chainExternalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainExternalActions}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-actionsTest-chainLocalActions-press",
-      "contents": "//  component: chainLocalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: chainLocalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-auratest-requireConsumer-versionEvt",
@@ -883,19 +883,19 @@
     },
     {
       "trigger": "evt-auratest-test_button-press",
-      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: auratest:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: auratest:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-aHandlesEventFromA-evt",
-      "contents": "//  component: aHandlesEventFromA\n//    evtName: evt\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:aHandlesEventFromA}\").get(\"e.evt\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: aHandlesEventFromA\n//    evtName: evt\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:aHandlesEventFromA}\").get(\"e.evt\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-bHandlesEventFromA-evtB",
-      "contents": "//  component: bHandlesEventFromA\n//    evtName: evtB\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:bHandlesEventFromA}\").get(\"e.evtB\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: bHandlesEventFromA\n//    evtName: evtB\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:bHandlesEventFromA}\").get(\"e.evtB\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-handlerWithNameAndEvent-somename",
-      "contents": "//  component: handlerWithNameAndEvent\n//    evtName: somename\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlerWithNameAndEvent}\").get(\"e.somename\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: handlerWithNameAndEvent\n//    evtName: somename\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlerWithNameAndEvent}\").get(\"e.somename\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-handlerWithNameForApplicationEvent-anApplicationEvent",
@@ -903,15 +903,15 @@
     },
     {
       "trigger": "evt-handleEventTest-handlesABAppEvents-A",
-      "contents": "//  component: handlesABAppEvents\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: handlesABAppEvents\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-handlesABAppEvents-B",
-      "contents": "//  component: handlesABAppEvents\n//    evtName: B\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.B\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: handlesABAppEvents\n//    evtName: B\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:handlesABAppEvents}\").get(\"e.B\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-multipleHandlersForEvent-A",
-      "contents": "//  component: multipleHandlersForEvent\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:multipleHandlersForEvent}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: multipleHandlersForEvent\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:multipleHandlersForEvent}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-registersApplicationEvent-anApplicationEvent",
@@ -919,7 +919,7 @@
     },
     {
       "trigger": "evt-renderingTest-testEventHandlerChain-A",
-      "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-test-parentComponent-parentEvent",
@@ -939,7 +939,7 @@
     },
     {
       "trigger": "evt-test-testEventBubblingEmitterExtended-bubblingEvent",
-      "contents": "//  component: testEventBubblingEmitterExtended\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventExtended\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterExtended}\").get(\"e.bubblingEvent\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: testEventBubblingEmitterExtended\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventExtended\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterExtended}\").get(\"e.bubblingEvent\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-test-testEventBubblingEmitterOther-bubblingEvent",
@@ -959,7 +959,7 @@
     },
     {
       "trigger": "evt-test-test_button-press",
-      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: test:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: test:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-uitest-panel2-notify",
@@ -971,7 +971,7 @@
     },
     {
       "trigger": "evt-uitest-pillContainer_InputText-keydown",
-      "contents": "//  component: pillContainer_InputText\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pillContainer_InputText}\").get(\"e.keydown\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: pillContainer_InputText\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pillContainer_InputText}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
@@ -979,7 +979,7 @@
     },
     {
       "trigger": "evt-updateTest-updateable-click",
-      "contents": "//  component: updateable\n//    evtName: click\n//    evtType: updateTest:updateableEvent\n//description: \nvar e = cmp.find(\"${1:updateable}\").get(\"e.click\");\ne.setParams({\n});\ne.fire();"
+      "contents": "//  component: updateable\n//    evtName: click\n//    evtType: updateTest:updateableEvent\n//description: \nvar e = cmp.find(\"${1:updateable}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
     }
   ]
 }

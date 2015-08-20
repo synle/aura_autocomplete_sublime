@@ -2,6 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
+var util = require('../util');
 
 //vars
 var TRIGGER_SEPARATOR = '-';
@@ -20,37 +21,109 @@ var self = {
      }
      */ 
     consolidate_js: function(dictionary) {
-        var atomFormat = '';
+        var atomFormat = [];
+
+        var contentTemplate = util.getTemplateFunc([
+            "\t'{{{functionName}}}':",
+            "\t\t'prefix': '{{{normalizedFunctionName}}}'",
+            "\t\t'body': '{{{functionName}}}({{{annotatedParams}}})'"
+        ].join('\n'));
+
         for (var functionName in dictionary) {
-            var annotatedParams = dictionary[functionName].annotatedValue || "";
-            var origParams = dictionary[functionName].origValue || "";
+            var viewObj = {
+                functionName : functionName,
+                annotatedParams : dictionary[functionName].annotatedValue || "",
+                origParams : dictionary[functionName].origValue || "",
+                normalizedFunctionName: functionName.replace(/[.]/g, TRIGGER_SEPARATOR), //replace the . with - so $A.test.assert will become $A-test-assert
+                TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+            }
 
-
-            var prefix = functionName.replace(/\./g, '-');
-            var body = functionName + "(" + origParams + ")";
-            
-
-            atomFormat += [
-                '".source.js":',
-                '\t"' + functionName + '":',
-                '\t\t"prefix":"' + prefix + '"',
-                '\t\t"body":"' + body + '"',
-            ].join('\n') + '\n';
+            //sublime format
+            atomFormat.push(
+                contentTemplate(viewObj)
+            );
         }
-        return atomFormat;
+
+        return atomFormat.join('\n');
     },
 
-
+    /**
+     { namespace: 'ui',
+     componentName: 'inputDateTime',
+     fullCompName: 'ui:inputDateTime',
+     helpers: [] }
+     **/
     consolidate_helperjs: function(helperDictionary){
+        var atomFormat = [];
 
+        var triggerTemplate = util.getTemplateFunc(
+            [
+                "helper",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{namespace}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{componentName}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{functionName}}}"
+            ].join('')
+        );
+        var contentTemplate = util.getTemplateFunc(
+            "cmp.getDef().getHelper().{{{functionName}}}({{{annotatedParams}}})"
+        );
+
+        var atomRowTemplate = util.getTemplateFunc([
+            [
+                "\t'helper",
+                ".",
+                "{{{namespace}}}",
+                ".",
+                "{{{componentName}}}",
+                ".",
+                "{{{functionName}}}",
+                "':"
+            ].join(''),
+            "\t\t'prefix': '{{{trigger}}}'",
+            "\t\t'body': '{{{contents}}})'"
+        ].join('\n'));
+
+        // console.log(helperDictionary);
+
+        _.forEach(helperDictionary, function(cmpHelperObj, componentName){
+            var componentName = cmpHelperObj.componentName;
+            var namespace = cmpHelperObj.namespace;
+
+            _.forEach(cmpHelperObj.helpers, function(currentComponentHelperObj){
+                var viewObj = {
+                    componentName : componentName,
+                    namespace : namespace,
+                    functionName : currentComponentHelperObj.functionName || '',
+                    annotatedParams : currentComponentHelperObj.annotatedValue || "",
+                    origParams : currentComponentHelperObj.origValue || "",
+                    TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+                }
+
+                //sublime format
+                viewObj.trigger = triggerTemplate(viewObj),
+                viewObj.contents = contentTemplate(viewObj)
+
+                //append
+                atomFormat.push(
+                    atomRowTemplate(
+                        viewObj
+                    )
+                );
+            });
+        });
+
+        return atomFormat.join('\n');
     },
-
 
     /**
         [...
             {
                 component: 'tabset',
-                    evt:
+                namespace: 'namespace'
+                evt:
                      { name: 'onActivate',
                        type: 'ui:tabsetEvent',
                        description: 'The event is triggered when the tab is activated.' },
@@ -63,6 +136,91 @@ var self = {
         ...]  
     **/
     consolidate_evt: function(arrayEvents) {
+        var atomFormat = [];
+
+        var triggerTemplate = util.getTemplateFunc(
+            [
+                "evt",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{evtObj.namespace}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{evtObj.component}}}",
+                "{{{TRIGGER_SEPARATOR}}}",
+                "{{{actualEvt.name}}}"
+            ].join('')
+        );
+        var contentTemplate = util.getTemplateFunc(
+            [
+                'var e = cmp.find("${1:{{{evtObj.component}}}}").get("e.{{{actualEvt.name}}}");',
+                'e.setParams({',
+                '{{{contentBody}}}',//content body
+                '});',
+                'e.fire();'
+            ].join('\n')
+        );
+
+
+        var atomRowTemplate = util.getTemplateFunc([
+            [
+                "\t'evt",
+                ".",
+                "{{{evtObj.namespace}}}",
+                ".",
+                "{{{evtObj.component}}}",
+                ".",
+                "{{{actualEvt.name}}}':"
+            ].join(''),
+            "\t\t'prefix': '{{{trigger}}}'",
+            "\t\t'body': \"\"\"",
+            "{{{contents}}}",
+            "\t\t\"\"\""
+        ].join('\n'));
+
+        for (var evtName in arrayEvents) {
+            var evtObj = arrayEvents[evtName];
+            // console.log(evtObj);
+            var evt = evtObj.evtDef;
+            var actualEvt = evtObj.evt;
+            if (evt === undefined) {
+                console.log('error'.red, evtObj);
+                continue;
+            }
+
+            //loop through params and do stuffs
+            var contentBody = [];
+            if (evt.params.length > 0) {
+                for (var i = 0; i < evt.params.length; i++) {
+                    var evtDef = evt.params[i];
+                    contentBody.push(
+                        '\t' + evtDef.name + ': "' + '${' + (i + 2) + ':' + evtDef.type + '}"' + ',' + (evtDef.description ? '// ' + evtDef.description : '')
+                        // '\t' + evtDef.name + ': "' + evtDef.type + '"' + ',' + (evtDef.description ? '//' + evtDef.description : '')
+                    );
+                }
+            }
+            contentBody = contentBody.join('\n');
+
+
+            var viewObj = {
+                evtObj: evtObj,
+                actualEvt: actualEvt,
+                contentBody : contentBody,
+                TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+            }
+
+            //sublime format
+            viewObj.trigger = triggerTemplate(viewObj),
+            viewObj.contents = contentTemplate(viewObj)
+
+            //append
+            atomFormat.push(
+                atomRowTemplate(
+                    viewObj
+                )
+            );
+        };
+
+
+        return atomFormat.join('\n');
     },
 
 
@@ -84,9 +242,59 @@ var self = {
         ]
      */
     consolidate_attributes: function(arrayAttributes){
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            'text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
+            // 'text.xml, meta.tag.no-content.xml, punctuation.definition.tag.end.xml'
+        );
+
+        // var access = {};
+        for (var attributeIdx in arrayAttributes){
+            var attributeComponent = arrayAttributes[attributeIdx].component;
+            var attributeObj = arrayAttributes[attributeIdx].attribute;
+            var attribType = arrayAttributes[attributeIdx].type;//type : attribute or event
+
+            //triggers
+            // var trigger = 'attr_' + attributeComponent.namespace + '_' + attributeComponent.name + '_' + attributeObj.name + '\t$A.attr.' + attributeComponent.fullComponentTag;
+            var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tAttr';
+
+
+            // console.log('attributeComponent', attributeComponent);
+            // console.log('attributeObj', attributeObj);
+            //contents
+            var contents = self._serializeAttr(
+                attributeObj.name,//attributeName
+                attributeComponent.fullComponentTag,//fullComponentTagStr
+                attributeObj.type,//atributeType
+                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                1,//sublime tab index
+                attributeObj.TAG
+            );
+
+            // console.log(contents);
+
+
+            //sublime format
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+
+            // console.log(attributeObj);
+        }
+        // console.log(access);
+
+
+        return '';
+        // return sublimeFormat;
     },
 
+    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
+        return  attributeName + '="${'+sublimeTabIdx+':' +  fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + ' - ' +atributeType+'}"';
+    },
 
+    _serializeAttr_short : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
+        return  attributeName + '="${'+sublimeTabIdx+':'  + (isRequired ? 'Required' : 'Optional') + ' - ' +atributeType+'}"';
+    },
 
     /**
      [
@@ -95,11 +303,147 @@ var self = {
             description: '',
             namespace: 'uiExamples',
             fullComponentTag: 'uiExamples:virtualDataGridKitchenSink',
-            implements: '' }
+            implements: '',
+            attributes: [...
+                { name: 'tabItemWidth', type: 'Integer', description: '' }
+            ...attributeObj] }
         ...
      ]
      */
     consolidate_uitags: function(arrayComponents){
+        var sublimeFormat = self._getDefaultSublimeJSObject(
+            // 'meta.tag.xml'
+            'text.xml'
+        );
+
+
+        for (var idx in arrayComponents){
+            var componentObj = arrayComponents[idx];
+            var attributeArray = componentObj.attributes;
+
+
+            //
+            //
+            //simplify content
+            //triggers
+            //
+            var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tTag Simple';
+
+
+            //not
+            //contents
+            var contents = [
+                componentObj.fullComponentTag + '$1>${2:',
+                componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\t' : '',
+                componentObj.description,
+                '}</'+componentObj.fullComponentTag+'>'
+            ].join('');
+            
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+
+
+            // 
+            //expanded content
+            //
+            var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tTag Full';
+
+            var contents = [
+                componentObj.fullComponentTag,
+            ];
+
+            var includedAttributeCount = 0;
+
+
+            //required attributes
+            _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
+                if ((attributeObj.access || '').toLowerCase() !== 'private' && attributeObj.name.indexOf('_') !== 0){
+                    if(attributeObj.required === true || attributeObj.required === 'true'){
+                        includedAttributeCount++;
+
+                        // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                        contents.push(
+                            ' ' + self._serializeAttr_short(
+                                attributeObj.name,//attributeName
+                                componentObj.fullComponentTag,//fullComponentTagStr
+                                attributeObj.type,//atributeType
+                                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                                includedAttributeCount,//sublime tab index
+                                attributeObj.TAG
+                            )
+                        );
+
+                        // console.log(componentObj.fullComponentTag)
+                    }
+                }
+            });
+
+
+            //optional attributes
+            _.forEach(attributeArray, function(attributeObj, attributeArrayIdx){
+                if ((attributeObj.access || '').toLowerCase() !== 'private' && attributeObj.name.indexOf('_') !== 0){
+                    if(attributeObj.required !== true && attributeObj.required !== 'true'){
+                        includedAttributeCount++;
+
+                        // contents.push(attributeObj.name + '="('+attributeObj.type+')"');
+                        contents.push(
+                            ' ' + self._serializeAttr_short(
+                                attributeObj.name,//attributeName
+                                componentObj.fullComponentTag,//fullComponentTagStr
+                                attributeObj.type,//atributeType
+                                attributeObj.required === 'true' || attributeObj.required === true,//isRequired
+                                includedAttributeCount,//sublime tab index
+                                attributeObj.TAG
+                            )
+                        );
+
+                        // console.log(componentObj.fullComponentTag)
+                    }
+                }
+            });
+
+
+            //increment tab index
+            if(includedAttributeCount === 0){
+                includedAttributeCount = 1;//special case where no index found
+            }
+            else{
+                //increment it
+                includedAttributeCount++;
+            }
+
+            contents.push( '>')
+            contents.push( '${'+ (includedAttributeCount) + ':')
+            contents.push( componentObj.implements.length > 0 ? 'Implements '+componentObj.implements + '.\t' : '')
+            contents.push( componentObj.description)
+            contents.push( '}</'+componentObj.fullComponentTag+'>')
+
+
+            contents = contents.join('');
+            // console.log(componentObj.name, attributeArray.length)
+            // console.log(componentObj);
+
+
+            //sublime format
+            sublimeFormat.completions.push({
+                trigger: trigger,
+                contents: contents
+            });
+        }
+
+
+
+        return '';
+        // return sublimeFormat;
+    },
+
+    _getDefaultSublimeJSObject: function(incomingScope) {
+        return {
+            "scope": incomingScope || "source",
+            "completions": []
+        };
     }
 };
 module.exports = self;

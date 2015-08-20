@@ -15,14 +15,13 @@ var promptSchema = config.prompt;
 //internal dependencies
 var generateXmlAutoComplete = require('./util/generateXmlAutoComplete');
 var generateJsAutoComplete = require('./util/generateJsAutoComplete');
-var generateRelationship = require('./util/generateRelationship');
 
 //setting debug=2 will trigger full logging mode
 if (process.env.baseDir !== undefined){
 	//when start with environment variables
 	//debug=2 baseDir=/Users/sle/blt/app/main/core npm start
 	logger.debug('Retrived baseDir from Environment Variable');
-	processParser( 
+	processParser(
 		process.env.baseDir,
 		config.outputDir
 	);
@@ -36,10 +35,10 @@ else if(process.argv[2]){
 		baseDir = config.baseDir;
 	}
 	else{
-		baseDir = process.argv[2];	
+		baseDir = process.argv[2];
 	}
 
-	processParser( 
+	processParser(
 		baseDir,
 		config.outputDir
 	);
@@ -89,11 +88,17 @@ function processParser(baseDir, outputDir){
 
 
 
-	generateRelationship(
-		componentFileNames,
-		outputDir
-	);
-		
+	//setup stuffs
+	//appendsource.js for cson (atom)
+	parseHelper.writeToFile(
+        "'.source.js':\n",
+        path.join(
+            outputDir,
+            'aura.js.atom.cson'
+        )
+    );
+
+
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files
 		outputDir//base output dir , snippet
@@ -103,7 +108,7 @@ function processParser(baseDir, outputDir){
 		generateJsAutoComplete(
 			componentFileNames,//dictionary containing all js, evt and cmp files
 			outputDir//base output dir , snippet
-		);	
+		);
 	}
 	catch(ex){
 		logger.error('Issue trying to parse JS files', ex);

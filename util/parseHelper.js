@@ -10,9 +10,22 @@ var logger = require('./logger');//internal logger
 
 //definitions
 var self = {
+    _getSimplePathString: function(path){
+        var pathString = '';
+        try{
+            var pathSplits = path.split('/');
+            pathString = [pathSplits[pathSplits.length - 3], pathSplits[pathSplits.length - 1]].join('/');
+        }
+        catch(ex){}
+
+        return pathString;
+    },
     readFromFile: function(path, silent) {
-        logger.debug('Reading file...'.magenta.bold);
-        logger.debug(path.yellow);
+        logger.debug(
+            'Reading file...'.magenta.bold,
+            self._getSimplePathString(path).yellow
+        );
+
         return fs.readFileSync(path, 'utf-8');
     },
     listDir: function listDir(dir, res) {
@@ -62,13 +75,13 @@ var self = {
 
                         //special helper js
                         if(newDir.indexOf('Helper.js') >= 0){
-                            res.helperjs.push(newDir);    
+                            res.helperjs.push(newDir);
                         }
                         else if(newDir.indexOf('Controller.js') >= 0){
-                            res.controllerjs.push(newDir);    
+                            res.controllerjs.push(newDir);
                         }
                         else if(newDir.indexOf('Renderer.js') >= 0){
-                            res.rendererjs.push(newDir);    
+                            res.rendererjs.push(newDir);
                         }
 
                         break;
@@ -149,14 +162,15 @@ var self = {
 
 
         //consolidate atom files
-        // var snippetData = consolidatorAtom.consolidate_js(dictionary);
-        // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
-        //     path.join(
-        //         outputDir,
-        //         'aura.js.atom.cson'
-        //     )
-        // );
+        var snippetData = consolidatorAtom.consolidate_js(dictionary);
+        self.writeToFile(
+            snippetData,
+            path.join(
+                outputDir,
+                'aura.js.atom.cson'
+            ),
+            true //append
+        );
     },
     updateHelper: function(helperDictionary, outputDir){
         logger.debug('Updating JS File: Component Helper JS:'.bold.magenta.underline);
@@ -176,17 +190,17 @@ var self = {
         //consolidate atom files
         // var snippetData = consolidatorAtom.consolidate_helperjs(helperDictionary);
         // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
+        //     snippetData,
         //     path.join(
         //         outputDir,
-        //         'aura.helper.js.atom.cson'
-        //     )
+        //         'aura.js.atom.cson'
+        //     ),
+        //     true // append
         // );
     },
     updateEvt: function(arrayEvents, outputDir){
         logger.debug('Updating Sublime File: Component Events'.bold.magenta.underline);
 
-        //consolidate js evt
         var snippetData = consolidatorSublime.consolidate_evt(arrayEvents);
         logger.info('updateEvt.sublime'.bold, snippetData.completions.length);
         self.writeToFile(
@@ -198,14 +212,14 @@ var self = {
         );
 
 
-        //consolidate js evt
         // var snippetData = consolidatorAtom.consolidate_evt(arrayEvents);
         // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
+        //     snippetData,
         //     path.join(
         //         outputDir,
-        //         'aura.event.js.atom.cson'
-        //     )
+        //         'aura.js.atom.cson'
+        //     ),
+        //     true//append
         // );
     },
     updateTag: function(arrayComponents, outputDir){
@@ -223,14 +237,14 @@ var self = {
         );
 
 
-        //consolidate js evt
         // var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
         // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
+        //     snippetData,
         //     path.join(
         //         outputDir,
         //         'aura.uitags.atom.cson'
-        //     )
+        //     ),
+        //     true //append
         // );
     },
     updateTagAttr: function(arrayAttributes, outputDir){
@@ -247,15 +261,15 @@ var self = {
         );
 
 
-        //consolidate js evt
-        logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        // logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
         // var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
         // self.writeToFile(
-        //     JSON.stringify(snippetData, null, 2),
+        //     snippetData,
         //     path.join(
         //         outputDir,
         //         'aura.attributes.atom.cson'
-        //     )
+        //     ),
+        //     true //apppend
         // );
     },
     _getDefaultSublimeJSObject: function(incomingScope) {
@@ -264,9 +278,14 @@ var self = {
             "completions": []
         };
     },
-    writeToFile: function(string, path) {
+    writeToFile: function(string, path, isAppend) {
         logger.debug(path.yellow);
-        fs.writeFileSync(path, string);
+        if (isAppend === true){
+            fs.appendFileSync(path, string);
+        }
+        else{
+            fs.writeFileSync(path, string);    
+        }
     },
     getBaseFileNameWithoutExtension: function(fileName){
         var shortFileName = path.basename(fileName);
@@ -278,4 +297,3 @@ var self = {
     }
 };
 module.exports = self;
-

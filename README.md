@@ -1,8 +1,18 @@
 ### Salesforce Aura (Lightning)  Autocomplete for Sublime Text 3 [![Build Status](https://travis-ci.org/synle/aura_autocomplete_sublime.svg?branch=master)](https://travis-ci.org/synle/aura_autocomplete_sublime)
 
-#### Salesforce Aura (Lightning) Autocomplete
+#### TLDR
+```
+   #install it on Sublime Text 3
+   sh install.sublime.sh
+
+   #install it on Atom IO (Github)
+   sh install.atom.sh
+```
+
+#### Salesforce Aura Autocomplete
 + [Salesforce Aura Github](https://github.com/forcedotcom/aura)
 + [Sublime Text 3 Instruction](https://github.com/synle/aura_autocomplete_sublime/blob/master/README.sublime.md)
++ [Atom IO Instruction](https://github.com/synle/aura_autocomplete_sublime/blob/master/README.atom.md)
 
 
 #### Cheatsheet
@@ -43,7 +53,10 @@ Trigger | Example | Description
    #to run in silent mode, please provide the base dir
    npm run pkg
 
-   #install it on local
+   #install it on Sublime Text 3
    sh install.sublime.sh
+
+   #install it on Atom IO (Github)
+   sh install.atom.sh
 ```
 ![](images/generate.jpg)

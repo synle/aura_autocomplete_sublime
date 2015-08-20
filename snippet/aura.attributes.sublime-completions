@@ -394,12 +394,12 @@
       "contents": "debugLoggingEnabled=\"${1:auraStorage:init - Optional - Boolean}\""
     },
     {
-      "trigger": "auraStorage-init-requireUseStorageQueryParam\tAttr",
-      "contents": "requireUseStorageQueryParam=\"${1:auraStorage:init - Optional - Boolean}\""
-    },
-    {
       "trigger": "auraStorage-init-version\tAttr",
       "contents": "version=\"${1:auraStorage:init - Optional - String}\""
+    },
+    {
+      "trigger": "auraStorage-init-requireUseStorageQueryParam\tAttr",
+      "contents": "requireUseStorageQueryParam=\"${1:auraStorage:init - Optional - Boolean}\""
     },
     {
       "trigger": "auraadmin-cacheView-name\tAttr",
@@ -3618,6 +3618,10 @@
       "contents": "referenceElement=\"${1:ui:panelDialog - Optional - Object}\""
     },
     {
+      "trigger": "ui-panelDialog-lastFocusedInput\tAttr",
+      "contents": "lastFocusedInput=\"${1:ui:panelDialog - Optional - Object}\""
+    },
+    {
       "trigger": "ui-panelDialog-callbacks\tAttr",
       "contents": "callbacks=\"${1:ui:panelDialog - Optional - Object}\""
     },
@@ -4570,6 +4574,10 @@
       "contents": "tooltipBody=\"${1:ui:tooltip - Optional - String}\""
     },
     {
+      "trigger": "ui-tooltip-tooltipStyle\tAttr",
+      "contents": "tooltipStyle=\"${1:ui:tooltip - Optional - String}\""
+    },
+    {
       "trigger": "ui-tooltip-disabled\tAttr",
       "contents": "disabled=\"${1:ui:tooltip - Optional - Boolean}\""
     },
@@ -4614,8 +4622,16 @@
       "contents": "class=\"${1:ui:tooltip - Optional - String}\""
     },
     {
+      "trigger": "ui-tooltip-classList\tAttr",
+      "contents": "classList=\"${1:ui:tooltip - Optional - String}\""
+    },
+    {
       "trigger": "ui-tooltip-tabIndex\tAttr",
       "contents": "tabIndex=\"${1:ui:tooltip - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-tooltip-tabIndexOverride\tAttr",
+      "contents": "tabIndexOverride=\"${1:ui:tooltip - Optional - Integer}\""
     },
     {
       "trigger": "ui-tooltip-direction\tAttr",
