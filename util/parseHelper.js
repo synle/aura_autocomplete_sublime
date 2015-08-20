@@ -226,14 +226,14 @@ var self = {
 
 
         //consolidate js evt
-        var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
-        self.writeToFile(
-            snippetData,
-            path.join(
-                outputDir,
-                'aura.uitags.atom.cson'
-            )
-        );
+        // var snippetData = consolidatorAtom.consolidate_uitags(arrayComponents);
+        // self.writeToFile(
+        //     snippetData,
+        //     path.join(
+        //         outputDir,
+        //         'aura.uitags.atom.cson'
+        //     )
+        // );
     },
     updateTagAttr: function(arrayAttributes, outputDir){
         //consolidate component attribute
@@ -250,15 +250,15 @@ var self = {
 
 
         //consolidate js evt
-        logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
-        var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
-        self.writeToFile(
-            snippetData,
-            path.join(
-                outputDir,
-                'aura.attributes.atom.cson'
-            )
-        );
+        // logger.debug('Updating Sublime File: Component Attributes'.bold.magenta.underline);
+        // var snippetData = consolidatorAtom.consolidate_attributes(arrayAttributes);
+        // self.writeToFile(
+        //     snippetData,
+        //     path.join(
+        //         outputDir,
+        //         'aura.attributes.atom.cson'
+        //     )
+        // );
     },
     _getDefaultSublimeJSObject: function(incomingScope) {
         return {
