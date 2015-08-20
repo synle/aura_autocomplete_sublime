@@ -135,7 +135,7 @@
     },
     {
       "trigger": "auraStorage-init\tTag Full",
-      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" requireUseStorageQueryParam=\"${9:Optional - Boolean}\" version=\"${10:Optional - String}\">${11:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
+      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" version=\"${9:Optional - String}\" requireUseStorageQueryParam=\"${10:Optional - Boolean}\">${11:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
     },
     {
       "trigger": "auraadmin-cacheView\tTag Simple",
@@ -2143,7 +2143,7 @@
     },
     {
       "trigger": "ui-panelDialog\tTag Full",
-      "contents": "ui:panelDialog closeOnClickOut=\"${1:Optional - Boolean}\" showCloseButton=\"${2:Optional - Boolean}\" closeAction=\"${3:Optional - Aura.Action}\" class=\"${4:Optional - String}\" animation=\"${5:Optional - String}\" title=\"${6:Optional - String}\" startOfDialogLabel=\"${7:Optional - String}\" closeDialogLabel=\"${8:Optional - String}\" detail=\"${9:Optional - String}\" icon=\"${10:Optional - Aura.Component[]}\" isVisible=\"${11:Optional - Boolean}\" autoFocus=\"${12:Optional - Boolean}\" titleDisplay=\"${13:Optional - Boolean}\" isTransient=\"${14:Optional - Boolean}\" isModal=\"${15:Optional - Boolean}\" referenceElement=\"${16:Optional - Object}\" callbacks=\"${17:Optional - Object}\" panelDoneRendering=\"${18:Optional - ui:panelDoneRendering}\">${19:A panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panelDialog>"
+      "contents": "ui:panelDialog closeOnClickOut=\"${1:Optional - Boolean}\" showCloseButton=\"${2:Optional - Boolean}\" closeAction=\"${3:Optional - Aura.Action}\" class=\"${4:Optional - String}\" animation=\"${5:Optional - String}\" title=\"${6:Optional - String}\" startOfDialogLabel=\"${7:Optional - String}\" closeDialogLabel=\"${8:Optional - String}\" detail=\"${9:Optional - String}\" icon=\"${10:Optional - Aura.Component[]}\" isVisible=\"${11:Optional - Boolean}\" autoFocus=\"${12:Optional - Boolean}\" titleDisplay=\"${13:Optional - Boolean}\" isTransient=\"${14:Optional - Boolean}\" isModal=\"${15:Optional - Boolean}\" referenceElement=\"${16:Optional - Object}\" lastFocusedInput=\"${17:Optional - Object}\" callbacks=\"${18:Optional - Object}\" panelDoneRendering=\"${19:Optional - ui:panelDoneRendering}\">${20:A panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panelDialog>"
     },
     {
       "trigger": "ui-panelManager\tTag Simple",
@@ -2343,7 +2343,7 @@
     },
     {
       "trigger": "ui-tooltip\tTag Full",
-      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" disabled=\"${2:Optional - Boolean}\" advanced=\"${3:Optional - Boolean}\" trigger=\"${4:Optional - String}\" triggerClass=\"${5:Optional - String}\" isVisible=\"${6:Optional - Boolean}\" fadeOut=\"${7:Optional - Boolean}\" fadeIn=\"${8:Optional - Boolean}\" fadeOutDuration=\"${9:Optional - Integer}\" fadeInDuration=\"${10:Optional - Integer}\" delay=\"${11:Optional - Integer}\" class=\"${12:Optional - String}\" tabIndex=\"${13:Optional - Integer}\" direction=\"${14:Optional - String}\" allowFlips=\"${15:Optional - Boolean}\" domId=\"${16:Optional - String}\">${17:}</ui:tooltip>"
+      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" tooltipStyle=\"${2:Optional - String}\" disabled=\"${3:Optional - Boolean}\" advanced=\"${4:Optional - Boolean}\" trigger=\"${5:Optional - String}\" triggerClass=\"${6:Optional - String}\" isVisible=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" classList=\"${14:Optional - String}\" tabIndex=\"${15:Optional - Integer}\" tabIndexOverride=\"${16:Optional - Integer}\" direction=\"${17:Optional - String}\" allowFlips=\"${18:Optional - Boolean}\" domId=\"${19:Optional - String}\">${20:}</ui:tooltip>"
     },
     {
       "trigger": "ui-tree\tTag Simple",

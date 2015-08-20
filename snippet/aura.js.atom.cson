@@ -73,7 +73,7 @@
 		'body': 'A.test.print(${1:value})'
 	'A.test.auraError':
 		'prefix': 'A-test-auraError'
-		'body': 'A.test.auraError($1level, msg&#x2F;*, error*&#x2F;)'
+		'body': 'A.test.auraError($1level, msg/*, error*/)'
 	'A.test.expectAuraError':
 		'prefix': 'A-test-expectAuraError'
 		'body': 'A.test.expectAuraError(${1:e})'
@@ -427,7 +427,7 @@
 		'body': 'A.util.isSubDef(${1:def},${2:qname})'
 	'A.util.apply':
 		'prefix': 'A-util-apply'
-		'body': 'A.util.apply($1&#x2F;* Object|Function *&#x2F; baseObject, &#x2F;* Object|Function*&#x2F; members, &#x2F;* bool *&#x2F; forceCopy, &#x2F;* bool *&#x2F; deepCopy)'
+		'body': 'A.util.apply($1/* Object|Function */ baseObject, /* Object|Function*/ members, /* bool */ forceCopy, /* bool */ deepCopy)'
 	'A.util.camelCaseToHyphens':
 		'prefix': 'A-util-camelCaseToHyphens'
 		'body': 'A.util.camelCaseToHyphens(${1:str})'
@@ -463,16 +463,16 @@
 		'body': 'A.util.stringEndsWith(${1:fullstr},${2:substr})'
 	'A.util.bind':
 		'prefix': 'A-util-bind'
-		'body': 'A.util.bind($1method &#x2F;*, this, bind arguments*&#x2F;)'
+		'body': 'A.util.bind($1method /*, this, bind arguments*/)'
 	'A.util.keys':
 		'prefix': 'A-util-keys'
 		'body': 'A.util.keys(${1:object},${2:excludeFunctions})'
 	'A.util.lookup':
 		'prefix': 'A-util-lookup'
-		'body': 'A.util.lookup($1object &#x2F;*, var-args of arrays*&#x2F;)'
+		'body': 'A.util.lookup($1object /*, var-args of arrays*/)'
 	'A.util.merge':
 		'prefix': 'A-util-merge'
-		'body': 'A.util.merge($1first &#x2F;*, var-args of arrays*&#x2F;)'
+		'body': 'A.util.merge($1first /*, var-args of arrays*/)'
 	'A.util.forEach':
 		'prefix': 'A-util-forEach'
 		'body': 'A.util.forEach(${1:array},${2:method},${3:that})'
