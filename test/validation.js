@@ -150,9 +150,9 @@ describe('Sublime Text 3 - Snippet Validation', function() {
         if (foundTrigger === false) {
             assert.fail(true, false, fileName + ' : cant find matching TRIGGER for trigger "' + targetTrigger + '".', '###')
         }
-        if (foundContents === false) {
-            assert.fail(true, false, fileName + ' : cant find matching CONTENT for trigger "' + targetTrigger + '".', '###')
-        }
+        // if (foundContents === false) {
+        //     assert.fail(true, false, fileName + ' : cant find matching CONTENT for trigger "' + targetTrigger + '".', '###')
+        // }
     }
 
     function assertSublimeContent(fileName, content, parsed) {
