@@ -2,6 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
+var util = require('../util');
 
 //vars
 var TRIGGER_SEPARATOR = '-';
@@ -23,16 +24,25 @@ var self = {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
         );
+
+        var triggerTemplate = util.getTemplateFunc( "{{normalizedFunctionName}}" );
+        var contentTemplate = util.getTemplateFunc( "{{functionName}}({{annotatedParams}})" );
+
         for (var functionName in dictionary) {
-            var annotatedParams = dictionary[functionName].annotatedValue || "";
-            var origParams = dictionary[functionName].origValue || "";
+            var viewObj = {
+                functionName : functionName,
+                annotatedParams : dictionary[functionName].annotatedValue || "",
+                origParams : dictionary[functionName].origValue || "",
+                normalizedFunctionName: functionName.replace(/[.]/g, TRIGGER_SEPARATOR), //replace the . with - so $A.test.assert will become $A-test-assert
+                TRIGGER_SEPARATOR : TRIGGER_SEPARATOR
+            }
 
             //triggers
-            var trigger = functionName.replace(/[.]/g, TRIGGER_SEPARATOR);
-            trigger += trigger.indexOf(TRIGGER_SEPARATOR + 'test' + TRIGGER_SEPARATOR) >= 0 ? '' : '' ;
+            var trigger = triggerTemplate(viewObj);
 
             //contents
-            var contents = functionName + "(" + annotatedParams + ")";
+            var contents = contentTemplate(viewObj);
+
             //sublime format
             sublimeFormat.completions.push({
                 trigger: trigger,
