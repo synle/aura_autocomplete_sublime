@@ -179,8 +179,9 @@ var self = {
             snippetData,
             path.join(
                 outputDir,
-                'aura.helper.js.atom.cson'
-            )
+                'aura.js.atom.cson'
+            ),
+            true // append
         );
     },
     updateEvt: function(arrayEvents, outputDir){
@@ -204,8 +205,9 @@ var self = {
             snippetData,
             path.join(
                 outputDir,
-                'aura.event.js.atom.cson'
-            )
+                'aura.js.atom.cson'
+            ),
+            true//append
         );
     },
     updateTag: function(arrayComponents, outputDir){
