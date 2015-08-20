@@ -90,6 +90,10 @@
 	.search-hl .box{
 		display:none !important;
 	}
+
+	.search-hl .box.matched{
+		display:block !important;
+	}
 	</style>
 
     
@@ -116,7 +120,7 @@
 
 
     <script>
-    var taskScheduler = new TaskScheduler(50);
+    var taskScheduler = new TaskScheduler();
 	$.debounce = function(ts, func){
 		var timer;
 
@@ -174,7 +178,7 @@
 							totalDepdenciesUse++;
 
 							//generate attributes in tag
-							for (var i = 0; i < r[k][cmpDep].length;i++){
+							$.each(r[k][cmpDep], function(i, v){
 								var wrapper_3 = createDomNode(
 									cmpDep + ' [<b class="ticker_2">'+i+'</b>]',
 									false,
@@ -183,8 +187,8 @@
 								)
 
 
-								if(Object.keys(r[k][cmpDep][i]).length > 0){
-									$.each(r[k][cmpDep][i], function(attrName, attrVal){
+								if(Object.keys(v).length > 0){
+									$.each(v, function(attrName, attrVal){
 										//simple mode
 										createDomNode(
 											'<b>'+attrName+':</b> ' + escapeHtml(attrVal),
@@ -194,7 +198,7 @@
 										)
 									});
 								}
-							}
+							});
 			    		}
 	    			}
 	    		})(key)
@@ -213,19 +217,28 @@
 
 	//hook up events
 	function hookupEvents(){
-	    $('#searchComponent').keypress(
+	    $('#searchComponent').keydown(
 	    	$.debounce(
 	    		1000,
 	    		function(){
 	    			var keyword = $('#searchComponent').val();
-					$('#tree').toggleClass('search-hl', keyword.length === 0);
 
-	    			$('.box').each(function(){
-	    				var isVisible = false;
-	    				if ($(this).text().indexOf(keyword) >= 0){
-	    					isVisible = true;
-	    				}
-	    			});
+	    			//toggle search highlight
+					$('#tree').toggleClass('search-hl', keyword.length > 0);
+
+					//remove previous highlight
+					$('.box.matched').removeClass('matched');
+
+					if(keyword.length > 0){
+						$('.box').each(function(){
+		    				var isVisible = false;
+		    				if ($(this).text().indexOf(keyword) >= 0){
+		    					isVisible = true;
+		    				}
+
+		    				$(this).toggleClass('matched', isVisible);
+		    			});
+					}
 			    }
 			)
 		);
@@ -279,8 +292,8 @@
 	}
 
 	function TaskScheduler(batchSize, intervalLength){
-		batchSize = batchSize || 100;//size of batch at a time
-		intervalLength = intervalLength || 200;//interval length
+		batchSize = batchSize || 150;//size of batch at a time
+		intervalLength = intervalLength || 3000;//interval length
 
 		var jobQueues = [];
 
