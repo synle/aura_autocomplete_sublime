@@ -10,9 +10,22 @@ var logger = require('./logger');//internal logger
 
 //definitions
 var self = {
+    _getSimplePathString: function(path){
+        var pathString = '';
+        try{
+            var pathSplits = path.split('/');
+            pathString = [pathSplits[pathSplits.length - 3], pathSplits[pathSplits.length - 1]].join('/');
+        }
+        catch(ex){}
+
+        return pathString;
+    },
     readFromFile: function(path, silent) {
-        logger.debug('Reading file...'.magenta.bold);
-        logger.debug(path.yellow);
+        logger.debug(
+            'Reading file...'.magenta.bold,
+            self._getSimplePathString(path).yellow
+        );
+
         return fs.readFileSync(path, 'utf-8');
     },
     listDir: function listDir(dir, res) {
@@ -155,7 +168,8 @@ var self = {
             path.join(
                 outputDir,
                 'aura.js.atom.cson'
-            )
+            ),
+            true //append
         );
     },
     updateHelper: function(helperDictionary, outputDir){
@@ -232,7 +246,8 @@ var self = {
         //     path.join(
         //         outputDir,
         //         'aura.uitags.atom.cson'
-        //     )
+        //     ),
+        //     true //append
         // );
     },
     updateTagAttr: function(arrayAttributes, outputDir){
@@ -257,7 +272,8 @@ var self = {
         //     path.join(
         //         outputDir,
         //         'aura.attributes.atom.cson'
-        //     )
+        //     ),
+        //     true //apppend
         // );
     },
     _getDefaultSublimeJSObject: function(incomingScope) {
@@ -266,9 +282,14 @@ var self = {
             "completions": []
         };
     },
-    writeToFile: function(string, path) {
+    writeToFile: function(string, path, isAppend) {
         logger.debug(path.yellow);
-        fs.writeFileSync(path, string);
+        if (isAppend === true){
+            fs.appendFileSync(path, string);
+        }
+        else{
+            fs.writeFileSync(path, string);    
+        }
     },
     getBaseFileNameWithoutExtension: function(fileName){
         var shortFileName = path.basename(fileName);

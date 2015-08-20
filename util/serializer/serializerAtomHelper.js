@@ -21,7 +21,7 @@ var self = {
      }
      */ 
     consolidate_js: function(dictionary) {
-        var atomFormat = ["'.source.js':"];
+        var atomFormat = [];
 
         var contentTemplate = util.getTemplateFunc([
             "\t'{{functionName}}':",

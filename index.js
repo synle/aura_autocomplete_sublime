@@ -86,6 +86,18 @@ function processParser(baseDir, outputDir){
 	logger.log('\tController.js Files:'.bold, componentFileNames.controllerjs.length);
 	logger.log('\tRenderrer.js Files:'.bold, componentFileNames.rendererjs.length);
 
+
+
+	//setup stuffs	
+	//appendsource.js for cson (atom)
+	parseHelper.writeToFile(
+        "'.source.js':\n",
+        path.join(
+            outputDir,
+            'aura.js.atom.cson'
+        )
+    );
+
 		
 	generateXmlAutoComplete(
 		componentFileNames,//dictionary containing all js, evt and cmp files
