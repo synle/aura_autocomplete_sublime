@@ -54,9 +54,7 @@ var self = {
      helpers: [] }
      **/
     consolidate_helperjs: function(helperDictionary){
-        var sublimeFormat = self._getDefaultSublimeJSObject(
-            'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
-        );
+        var atomFormat = [];
 
         var triggerTemplate = util.getTemplateFunc(
             [
@@ -72,6 +70,21 @@ var self = {
         var contentTemplate = util.getTemplateFunc(
             "cmp.getDef().getHelper().{{{functionName}}}({{{annotatedParams}}})"
         );
+
+        var atomRowTemplate = util.getTemplateFunc([
+            [
+                "\t'helper",
+                ".",
+                "{{{namespace}}}",
+                ".",
+                "{{{componentName}}}",
+                ".",
+                "{{{functionName}}}",
+                "':"
+            ].join(''),
+            "\t\t'prefix': '{{{trigger}}}'",
+            "\t\t'body': '{{{contents}}})'"
+        ].join('\n'));
 
         // console.log(helperDictionary);
 
@@ -90,15 +103,19 @@ var self = {
                 }
 
                 //sublime format
-                sublimeFormat.completions.push({
-                    trigger: triggerTemplate(viewObj),
-                    contents: contentTemplate(viewObj)
-                });
+                viewObj.trigger = triggerTemplate(viewObj),
+                viewObj.contents = contentTemplate(viewObj)
+
+                //append
+                atomFormat.push(
+                    atomRowTemplate(
+                        viewObj
+                    )
+                );
             });
         });
 
-        return '';
-        // return sublimeFormat;
+        return atomFormat.join('\n');
     },
 
     /**
