@@ -41,9 +41,13 @@ module.exports = function processParser(componentFileNames, outputDir){
 	//init Aura global obejct
 	var Aura = {
 		Utils: {
-			Util : {}
+			Util : {},
+			SecureFilters : {
+				html: ''
+			}
 		}
 	};
+	
 	var AuraLayoutService = window = {};
 	var $A = {
 		installOverride: function(){},
