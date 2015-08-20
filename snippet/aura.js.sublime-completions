@@ -2,16 +2,8 @@
   "scope": "source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json",
   "completions": [
     {
-      "trigger": "A-test-getInitialGlobalState",
-      "contents": "A.test.getInitialGlobalState(${1:})"
-    },
-    {
       "trigger": "A-test-addWaitFor",
       "contents": "A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})"
-    },
-    {
-      "trigger": "A-test-addWaitForAction",
-      "contents": "A.test.addWaitForAction(${1:success},${2:actionName},${3:callback})"
     },
     {
       "trigger": "A-test-addWaitForWithFailureMessage",

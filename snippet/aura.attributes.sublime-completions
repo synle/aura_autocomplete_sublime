@@ -314,10 +314,6 @@
       "contents": "afterAuraInit=\"${1:aura:template - Optional - String}\""
     },
     {
-      "trigger": "aura-template-auraLoading\tAttr",
-      "contents": "auraLoading=\"${1:aura:template - Optional - Aura.Component[]}\""
-    },
-    {
       "trigger": "aura-template-inlineStyle\tAttr",
       "contents": "inlineStyle=\"${1:aura:template - Optional - Aura.Component[]}\""
     },
@@ -1320,6 +1316,10 @@
     {
       "trigger": "ui-carousel-height\tAttr",
       "contents": "height=\"${1:ui:carousel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-carousel-swipeEnabled\tAttr",
+      "contents": "swipeEnabled=\"${1:ui:carousel - Optional - Boolean}\""
     },
     {
       "trigger": "ui-carousel-width\tAttr",
@@ -6162,6 +6162,46 @@
       "contents": "booleanForIf=\"${1:auratest:label - Optional - Boolean}\""
     },
     {
+      "trigger": "auratest-labelExpression-value\tAttr",
+      "contents": "value=\"${1:auratest:labelExpression - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-valueElse\tAttr",
+      "contents": "valueElse=\"${1:auratest:labelExpression - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-date\tAttr",
+      "contents": "date=\"${1:auratest:labelExpression - Optional - Date}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-string\tAttr",
+      "contents": "string=\"${1:auratest:labelExpression - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-boolean\tAttr",
+      "contents": "boolean=\"${1:auratest:labelExpression - Optional - boolean}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-double\tAttr",
+      "contents": "double=\"${1:auratest:labelExpression - Optional - double}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-undef\tAttr",
+      "contents": "undef=\"${1:auratest:labelExpression - Optional - Object}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-noll\tAttr",
+      "contents": "noll=\"${1:auratest:labelExpression - Optional - Object}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-list\tAttr",
+      "contents": "list=\"${1:auratest:labelExpression - Optional - List}\""
+    },
+    {
+      "trigger": "auratest-labelExpression-booleanForIf\tAttr",
+      "contents": "booleanForIf=\"${1:auratest:labelExpression - Optional - Boolean}\""
+    },
+    {
       "trigger": "auratest-logPanel-logs\tAttr",
       "contents": "logs=\"${1:auratest:logPanel - Optional - List}\""
     },
@@ -6212,6 +6252,10 @@
     {
       "trigger": "auratest-requireWithServerAction-version\tAttr",
       "contents": "version=\"${1:auratest:requireWithServerAction - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-requireWithServerAction-text\tAttr",
+      "contents": "text=\"${1:auratest:requireWithServerAction - Optional - String}\""
     },
     {
       "trigger": "auratest-requireWithServerAction-versionEvt\tAttr",
@@ -6604,6 +6648,22 @@
     {
       "trigger": "expressionTest-functions-object\tAttr",
       "contents": "object=\"${1:expressionTest:functions - Optional - Object}\""
+    },
+    {
+      "trigger": "expressionTest-functions-list\tAttr",
+      "contents": "list=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
+      "trigger": "expressionTest-functions-label0\tAttr",
+      "contents": "label0=\"${1:expressionTest:functions - Optional - String}\""
+    },
+    {
+      "trigger": "expressionTest-functions-label1\tAttr",
+      "contents": "label1=\"${1:expressionTest:functions - Optional - String}\""
+    },
+    {
+      "trigger": "expressionTest-functions-label2\tAttr",
+      "contents": "label2=\"${1:expressionTest:functions - Optional - String}\""
     },
     {
       "trigger": "expressionTest-mapValue-map\tAttr",
@@ -7932,6 +7992,22 @@
     {
       "trigger": "test-child1-attr\tAttr",
       "contents": "attr=\"${1:test:child1 - Optional - String}\""
+    },
+    {
+      "trigger": "test-cmpWithServerAction-actionDone\tAttr",
+      "contents": "actionDone=\"${1:test:cmpWithServerAction - Optional - Boolean}\""
+    },
+    {
+      "trigger": "test-cmpWithServerAction-isTextFromCache\tAttr",
+      "contents": "isTextFromCache=\"${1:test:cmpWithServerAction - Optional - Boolean}\""
+    },
+    {
+      "trigger": "test-cmpWithServerAction-text\tAttr",
+      "contents": "text=\"${1:test:cmpWithServerAction - Optional - String}\""
+    },
+    {
+      "trigger": "test-cmpWithServerAction-setStorableAction\tAttr",
+      "contents": "setStorableAction=\"${1:test:cmpWithServerAction - Optional - Boolean}\""
     },
     {
       "trigger": "test-componentDefRefArrayAttribute-cdrs\tAttr",

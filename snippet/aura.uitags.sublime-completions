@@ -103,7 +103,7 @@
     },
     {
       "trigger": "aura-template\tTag Full",
-      "contents": "aura:template title=\"${1:Optional - String}\" auraStyleTags=\"${2:Optional - String}\" auraScriptTags=\"${3:Optional - String}\" auraBaseScriptTags=\"${4:Optional - String}\" auraNamespacesScriptTags=\"${5:Optional - String}\" auraResetCss=\"${6:Optional - String}\" auraInlineStyle=\"${7:Optional - String}\" auraInit=\"${8:Optional - String}\" auraInitSync=\"${9:Optional - String}\" auraPreInitBlock=\"${10:Optional - Aura.Component[]}\" auraInitBlock=\"${11:Optional - Aura.Component[]}\" autoInitialize=\"${12:Optional - String}\" autoInitializeSync=\"${13:Optional - String}\" doctype=\"${14:Optional - String}\" loadingText=\"${15:Optional - String}\" errorTitle=\"${16:Optional - String}\" errorMessage=\"${17:Optional - String}\" defaultBodyClass=\"${18:Optional - String}\" bodyClass=\"${19:Optional - String}\" extraStyleTags=\"${20:Optional - Aura.Component[]}\" extraScriptTags=\"${21:Optional - Aura.Component[]}\" extraMetaTags=\"${22:Optional - Aura.Component[]}\" normalizeCss=\"${23:Optional - Boolean}\" forceError=\"${24:Optional - Boolean}\" manifest=\"${25:Optional - String}\" lastMod=\"${26:Optional - String}\" afterAuraInit=\"${27:Optional - String}\" auraLoading=\"${28:Optional - Aura.Component[]}\" inlineStyle=\"${29:Optional - Aura.Component[]}\" appcacheProgressBarStyle=\"${30:Optional - Aura.Component[]}\">${31:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
+      "contents": "aura:template title=\"${1:Optional - String}\" auraStyleTags=\"${2:Optional - String}\" auraScriptTags=\"${3:Optional - String}\" auraBaseScriptTags=\"${4:Optional - String}\" auraNamespacesScriptTags=\"${5:Optional - String}\" auraResetCss=\"${6:Optional - String}\" auraInlineStyle=\"${7:Optional - String}\" auraInit=\"${8:Optional - String}\" auraInitSync=\"${9:Optional - String}\" auraPreInitBlock=\"${10:Optional - Aura.Component[]}\" auraInitBlock=\"${11:Optional - Aura.Component[]}\" autoInitialize=\"${12:Optional - String}\" autoInitializeSync=\"${13:Optional - String}\" doctype=\"${14:Optional - String}\" loadingText=\"${15:Optional - String}\" errorTitle=\"${16:Optional - String}\" errorMessage=\"${17:Optional - String}\" defaultBodyClass=\"${18:Optional - String}\" bodyClass=\"${19:Optional - String}\" extraStyleTags=\"${20:Optional - Aura.Component[]}\" extraScriptTags=\"${21:Optional - Aura.Component[]}\" extraMetaTags=\"${22:Optional - Aura.Component[]}\" normalizeCss=\"${23:Optional - Boolean}\" forceError=\"${24:Optional - Boolean}\" manifest=\"${25:Optional - String}\" lastMod=\"${26:Optional - String}\" afterAuraInit=\"${27:Optional - String}\" inlineStyle=\"${28:Optional - Aura.Component[]}\" appcacheProgressBarStyle=\"${29:Optional - Aura.Component[]}\">${30:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
     },
     {
       "trigger": "aura-text\tTag Simple",
@@ -1271,7 +1271,7 @@
     },
     {
       "trigger": "ui-carousel\tTag Full",
-      "contents": "ui:carousel height=\"${1:Optional - Integer}\" width=\"${2:Optional - Integer}\" pageModels=\"${3:Optional - Object[]}\" pageComponents=\"${4:Optional - Aura.Component[]}\" prefetchedTab=\"${5:Optional - Aura.Component[]}\" isDotIndicator=\"${6:Optional - Boolean}\" initialPage=\"${7:Optional - String}\" prefetchFirstTab=\"${8:Optional - Boolean}\" lazyLoadTabs=\"${9:Optional - Boolean}\" indicatorStateClass=\"${10:Optional - String}\" pageScrollerPlugins=\"${11:Optional - String}\" justifyContent=\"${12:Optional - String}\" prefetchedTabIndex=\"${13:Optional - Integer}\" suppressIndicators=\"${14:Optional - String}\" isScrollable=\"${15:Optional - Boolean}\" bindEventsToScroller=\"${16:Optional - Boolean}\" pageIndicatorComponent=\"${17:Optional - Aura.Component[]}\" carouselPageComponent=\"${18:Optional - Aura.ComponentDefRef[]}\">${19:Implements ui:scrollerEmbeddable.\t}</ui:carousel>"
+      "contents": "ui:carousel height=\"${1:Optional - Integer}\" swipeEnabled=\"${2:Optional - Boolean}\" width=\"${3:Optional - Integer}\" pageModels=\"${4:Optional - Object[]}\" pageComponents=\"${5:Optional - Aura.Component[]}\" prefetchedTab=\"${6:Optional - Aura.Component[]}\" isDotIndicator=\"${7:Optional - Boolean}\" initialPage=\"${8:Optional - String}\" prefetchFirstTab=\"${9:Optional - Boolean}\" lazyLoadTabs=\"${10:Optional - Boolean}\" indicatorStateClass=\"${11:Optional - String}\" pageScrollerPlugins=\"${12:Optional - String}\" justifyContent=\"${13:Optional - String}\" prefetchedTabIndex=\"${14:Optional - Integer}\" suppressIndicators=\"${15:Optional - String}\" isScrollable=\"${16:Optional - Boolean}\" bindEventsToScroller=\"${17:Optional - Boolean}\" pageIndicatorComponent=\"${18:Optional - Aura.Component[]}\" carouselPageComponent=\"${19:Optional - Aura.ComponentDefRef[]}\">${20:Implements ui:scrollerEmbeddable.\t}</ui:carousel>"
     },
     {
       "trigger": "ui-carouselDeprecated\tTag Simple",
@@ -3426,6 +3426,14 @@
       "contents": "auratest:label value=\"${1:Optional - String}\" valueElse=\"${2:Optional - String}\" date=\"${3:Optional - Date}\" string=\"${4:Optional - String}\" boolean=\"${5:Optional - boolean}\" double=\"${6:Optional - double}\" undef=\"${7:Optional - Object}\" noll=\"${8:Optional - Object}\" booleanForIf=\"${9:Optional - Boolean}\">${10:}</auratest:label>"
     },
     {
+      "trigger": "auratest-labelExpression\tTag Simple",
+      "contents": "auratest:labelExpression$1>${2:}</auratest:labelExpression>"
+    },
+    {
+      "trigger": "auratest-labelExpression\tTag Full",
+      "contents": "auratest:labelExpression value=\"${1:Optional - String}\" valueElse=\"${2:Optional - String}\" date=\"${3:Optional - Date}\" string=\"${4:Optional - String}\" boolean=\"${5:Optional - boolean}\" double=\"${6:Optional - double}\" undef=\"${7:Optional - Object}\" noll=\"${8:Optional - Object}\" list=\"${9:Optional - List}\" booleanForIf=\"${10:Optional - Boolean}\">${11:}</auratest:labelExpression>"
+    },
+    {
       "trigger": "auratest-logPanel\tTag Simple",
       "contents": "auratest:logPanel$1>${2:}</auratest:logPanel>"
     },
@@ -3463,7 +3471,7 @@
     },
     {
       "trigger": "auratest-requireWithServerAction\tTag Full",
-      "contents": "auratest:requireWithServerAction actionDone=\"${1:Optional - Boolean}\" version=\"${2:Optional - String}\" versionEvt=\"${3:Optional - auratest:testEvent}\">${4:}</auratest:requireWithServerAction>"
+      "contents": "auratest:requireWithServerAction actionDone=\"${1:Optional - Boolean}\" version=\"${2:Optional - String}\" text=\"${3:Optional - String}\" versionEvt=\"${4:Optional - auratest:testEvent}\">${5:}</auratest:requireWithServerAction>"
     },
     {
       "trigger": "auratest-rerenderAbstract\tTag Simple",
@@ -4303,7 +4311,7 @@
     },
     {
       "trigger": "expressionTest-functions\tTag Full",
-      "contents": "expressionTest:functions integer=\"${1:Optional - integer}\" double=\"${2:Optional - double}\" doubleString=\"${3:Optional - String}\" string=\"${4:Optional - String}\" emptyString=\"${5:Optional - String}\" Infinity=\"${6:Optional - double}\" NegativeInfinity=\"${7:Optional - double}\" NaN=\"${8:Optional - double}\" object=\"${9:Optional - Object}\">${10:}</expressionTest:functions>"
+      "contents": "expressionTest:functions integer=\"${1:Optional - integer}\" double=\"${2:Optional - double}\" doubleString=\"${3:Optional - String}\" string=\"${4:Optional - String}\" emptyString=\"${5:Optional - String}\" Infinity=\"${6:Optional - double}\" NegativeInfinity=\"${7:Optional - double}\" NaN=\"${8:Optional - double}\" object=\"${9:Optional - Object}\" list=\"${10:Optional - List}\" label0=\"${11:Optional - String}\" label1=\"${12:Optional - String}\" label2=\"${13:Optional - String}\">${14:}</expressionTest:functions>"
     },
     {
       "trigger": "expressionTest-mapValue\tTag Simple",
@@ -4848,6 +4856,14 @@
     {
       "trigger": "forEachDefTest-singleComponentInForEach\tTag Full",
       "contents": "forEachDefTest:singleComponentInForEach>${1:}</forEachDefTest:singleComponentInForEach>"
+    },
+    {
+      "trigger": "frameworkPerformanceTest-createHTMLComponent\tTag Simple",
+      "contents": "frameworkPerformanceTest:createHTMLComponent$1>${2:Simple HTML creation perf test}</frameworkPerformanceTest:createHTMLComponent>"
+    },
+    {
+      "trigger": "frameworkPerformanceTest-createHTMLComponent\tTag Full",
+      "contents": "frameworkPerformanceTest:createHTMLComponent>${1:Simple HTML creation perf test}</frameworkPerformanceTest:createHTMLComponent>"
     },
     {
       "trigger": "gvpTest-basicTest\tTag Simple",
@@ -6458,12 +6474,36 @@
       "contents": "test:child2>${1:}</test:child2>"
     },
     {
+      "trigger": "test-cmpWithServerAction\tTag Simple",
+      "contents": "test:cmpWithServerAction$1>${2:}</test:cmpWithServerAction>"
+    },
+    {
+      "trigger": "test-cmpWithServerAction\tTag Full",
+      "contents": "test:cmpWithServerAction actionDone=\"${1:Optional - Boolean}\" isTextFromCache=\"${2:Optional - Boolean}\" text=\"${3:Optional - String}\" setStorableAction=\"${4:Optional - Boolean}\">${5:}</test:cmpWithServerAction>"
+    },
+    {
       "trigger": "test-componentDefRefArrayAttribute\tTag Simple",
       "contents": "test:componentDefRefArrayAttribute$1>${2:}</test:componentDefRefArrayAttribute>"
     },
     {
       "trigger": "test-componentDefRefArrayAttribute\tTag Full",
       "contents": "test:componentDefRefArrayAttribute cdrs=\"${1:Optional - Aura.ComponentDefRef[]}\">${2:}</test:componentDefRefArrayAttribute>"
+    },
+    {
+      "trigger": "test-customLoadingTextTemplate\tTag Simple",
+      "contents": "test:customLoadingTextTemplate$1>${2:}</test:customLoadingTextTemplate>"
+    },
+    {
+      "trigger": "test-customLoadingTextTemplate\tTag Full",
+      "contents": "test:customLoadingTextTemplate>${1:}</test:customLoadingTextTemplate>"
+    },
+    {
+      "trigger": "test-defaultLoadingTemplate\tTag Simple",
+      "contents": "test:defaultLoadingTemplate$1>${2:}</test:defaultLoadingTemplate>"
+    },
+    {
+      "trigger": "test-defaultLoadingTemplate\tTag Full",
+      "contents": "test:defaultLoadingTemplate>${1:}</test:defaultLoadingTemplate>"
     },
     {
       "trigger": "test-extendsChild\tTag Simple",

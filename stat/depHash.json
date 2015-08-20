@@ -2354,6 +2354,32 @@
    }
   ]
  },
+ "app.test:customLoadingTextTemplateApp": {
+  "aura:application": [
+   {
+    "template": "test:customLoadingTextTemplate",
+    "render": "client"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "value": "In customLoadingTextTemplate.app"
+   }
+  ]
+ },
+ "app.test:defaultLoadingTemplateApp": {
+  "aura:application": [
+   {
+    "template": "test:defaultLoadingTemplate",
+    "render": "client"
+   }
+  ],
+  "ui:outputtext": [
+   {
+    "value": "In defaultLoadingTemplateApp.app"
+   }
+  ]
+ },
  "app.test:fakeApplication": {
   "aura:application": [
    {
@@ -5941,11 +5967,6 @@
     "description": "Not used."
    },
    {
-    "name": "auraLoading",
-    "type": "Aura.Component[]",
-    "description": "Aura Loading Screen Markup"
-   },
-   {
     "name": "inlineStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display inline elements"
@@ -5954,11 +5975,6 @@
     "name": "appcacheProgressBarStyle",
     "type": "Aura.Component[]",
     "description": "The CSS style used to display appcache progress bar."
-   }
-  ],
-  "aura:set": [
-   {
-    "attribute": "auraLoading"
    }
   ]
  },
@@ -11224,6 +11240,12 @@
     "description": "Height of the carousel"
    },
    {
+    "name": "swipeEnabled",
+    "type": "Boolean",
+    "default": "true",
+    "description": "Enable swipe"
+   },
+   {
     "name": "width",
     "type": "Integer",
     "description": "Width of the carousel"
@@ -11331,7 +11353,7 @@
     "bindeventstoscroller": "{!v.bindEventsToScroller}",
     "scroll": "horizontal",
     "supportvoiceover": "false",
-    "enabled": "{! (v.pageModels.length > 1 || v.pageComponents.length > 1)}",
+    "enabled": "{! and( v.swipeEnabled, (v.pageModels.length > 1 || v.pageComponents.length > 1))}",
     "snap": "true",
     "lockondirection": "vertical",
     "plugins": "Indicators,Carousel",
@@ -12737,7 +12759,6 @@
    {
     "name": "_today",
     "type": "String",
-    "access": "private",
     "description": "The date string (yyyy-MM-dd) of today based on the Aura time zone."
    }
   ],
@@ -24383,6 +24404,11 @@
     "aura:id": "button",
     "label": "Get a stored action from the server"
    }
+  ],
+  "test:cmpwithserveraction": [
+   {
+    "aura:id": "test_cmpWithServerAction"
+   }
   ]
  },
  "cmp.auraStorageTest:teamFacet": {
@@ -26134,6 +26160,110 @@
    }
   ]
  },
+ "cmp.auratest:labelExpression": {
+  "aura:component": [
+   {}
+  ],
+  "aura:attribute": [
+   {
+    "name": "value",
+    "type": "String"
+   },
+   {
+    "name": "valueElse",
+    "type": "String"
+   },
+   {
+    "name": "date",
+    "type": "Date",
+    "default": "2015-09-08"
+   },
+   {
+    "name": "string",
+    "type": "String",
+    "default": "test"
+   },
+   {
+    "name": "boolean",
+    "type": "boolean",
+    "default": "false"
+   },
+   {
+    "name": "double",
+    "type": "double",
+    "default": "20"
+   },
+   {
+    "name": "undef",
+    "type": "Object"
+   },
+   {
+    "name": "noll",
+    "type": "Object"
+   },
+   {
+    "name": "list",
+    "type": "List",
+    "default": "1,2,3,4,5"
+   },
+   {
+    "name": "booleanForIf",
+    "type": "Boolean",
+    "default": "true"
+   }
+  ],
+  "aura:label": [
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.string + v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.value}"
+   },
+   {
+    "value": "{!v.valueElse}"
+   }
+  ],
+  "aura:if": [
+   {
+    "istrue": "{!(v.booleanForIf)}"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "else"
+   }
+  ]
+ },
  "cmp.auratest:logPanel": {
   "aura:component": [
    {}
@@ -26354,6 +26484,10 @@
    {
     "type": "String",
     "name": "version"
+   },
+   {
+    "type": "String",
+    "name": "text"
    }
   ],
   "aura:method": [
@@ -26364,6 +26498,10 @@
    {
     "name": "updateVersionFromServerController",
     "action": "{!c.updateVersionFromServerController}"
+   },
+   {
+    "name": "updateTextWithCallingDescriptor",
+    "action": "{!c.updateTextWithCallingDescriptor}"
    },
    {
     "name": "fireVersionEvent",
@@ -28011,6 +28149,11 @@
     "aura:id": "auratest_requireConsumer"
    }
   ],
+  "test:cmpwithserveraction": [
+   {
+    "aura:id": "test_cmpWithServerAction"
+   }
+  ],
   "aura:require": [
    {
     "namespace": "auratest",
@@ -28019,6 +28162,15 @@
    {
     "namespace": "test",
     "version": "5.0"
+   }
+  ],
+  "aurastorage:init": [
+   {
+    "name": "actions",
+    "secure": "true",
+    "debugloggingenabled": "true",
+    "defaultexpiration": "60",
+    "defaultautorefreshinterval": "60"
    }
   ]
  },
@@ -28711,6 +28863,22 @@
    {
     "name": "object",
     "type": "Object"
+   },
+   {
+    "name": "list",
+    "type": "List"
+   },
+   {
+    "name": "label0",
+    "type": "String"
+   },
+   {
+    "name": "label1",
+    "type": "String"
+   },
+   {
+    "name": "label2",
+    "type": "String"
    }
   ],
   "expressiontest:test": [
@@ -30148,6 +30316,136 @@
     "expression": "{!empty(v.object)}",
     "exprtext": "empty(v.object)",
     "expected": "true"
+   },
+   {
+    "expression": "{!format()}",
+    "exprtext": "format()",
+    "expected": "''"
+   },
+   {
+    "expression": "{!format(null)}",
+    "exprtext": "format(null)",
+    "expected": "''"
+   },
+   {
+    "expression": "{!format(undefined)}",
+    "exprtext": "format(undefined)",
+    "expected": "''"
+   },
+   {
+    "expression": "{!format(true)}",
+    "exprtext": "format(true)",
+    "expected": "'true'"
+   },
+   {
+    "expression": "{!format(false)}",
+    "exprtext": "format(false)",
+    "expected": "'false'"
+   },
+   {
+    "expression": "{!format(123)}",
+    "exprtext": "format(123)",
+    "expected": "'123'"
+   },
+   {
+    "expression": "{!format(123.4)}",
+    "exprtext": "format(123.4)",
+    "expected": "'123.4'"
+   },
+   {
+    "expression": "{!format(0)}",
+    "exprtext": "format(0)",
+    "expected": "'0'"
+   },
+   {
+    "expression": "{!format(0.0)}",
+    "exprtext": "format(0.0)",
+    "expected": "'0'"
+   },
+   {
+    "expression": "{!format('abc')}",
+    "exprtext": "format('abc')",
+    "expected": "'abc'"
+   },
+   {
+    "expression": "{!format('')}",
+    "exprtext": "format('')",
+    "expected": "''"
+   },
+   {
+    "expression": "{!format(NaN)}",
+    "exprtext": "format(NaN)",
+    "expected": "''"
+   },
+   {
+    "expression": "{!format(v.label2, null, undefined)}",
+    "exprtext": "format(v.label2, null, undefined",
+    "expected": "'Hello  and '"
+   },
+   {
+    "expression": "{!format(v.label2, true, false)}",
+    "exprtext": "format(v.label2, v.true, false)",
+    "expected": "'Hello true and false'"
+   },
+   {
+    "expression": "{!format(v.label2, 123, 123.4)}",
+    "exprtext": "format(v.label2, 123, 123.4)",
+    "expected": "'Hello 123 and 123.4'"
+   },
+   {
+    "expression": "{!format(v.label2, 0, 0.0)}",
+    "exprtext": "format(v.label2, 0, 0.0)",
+    "expected": "'Hello 0 and 0'"
+   },
+   {
+    "expression": "{!format(v.label2, m.stringEmpty, m.string)}",
+    "exprtext": "format(v.label2, m.stringEmpty, m.string)",
+    "expected": "'Hello  and Model'"
+   },
+   {
+    "expression": "{!format(v.label2, m.objectNull, m.object)}",
+    "exprtext": "format(v.label2, m.objectNull, m.object)",
+    "expected": "'Hello  and '"
+   },
+   {
+    "expression": "{!format(v.label2, m.emptyList, m.stringList)}",
+    "exprtext": "format(v.label2, m.emptyList, m.stringList)",
+    "expected": "'Hello  and one,two,three'"
+   },
+   {
+    "expression": "{!format(v.label0)}",
+    "exprtext": "format(v.label0)",
+    "expected": "'Hello'"
+   },
+   {
+    "expression": "{!format(v.label1)}",
+    "exprtext": "format(v.label1)",
+    "expected": "'Hello {0}'"
+   },
+   {
+    "expression": "{!format(v.label2)}",
+    "exprtext": "format(v.label2)",
+    "expected": "'Hello {0} and {1}'"
+   },
+   {
+    "expression": "{!format(v.label1)}",
+    "exprtext": "format(v.label1)",
+    "expected": "'Hello {0}'"
+   },
+   {
+    "expression": "{!format(v.label1, NaN)}",
+    "exprtext": "format(v.label1, NaN)",
+    "expected": "'Hello '"
+   },
+   {
+    "expression": "{!format(v.label1, v.string)}",
+    "exprtext": "format(v.label1, v.string)",
+    "expected": "'Hello Component'"
+   },
+   {
+    "expression": "{!format(v.label1, v.string, v.integer)}",
+    "exprtext": "format(v.label1, v.string, v.integer)",
+    "expected": "'Hello Component'"
    },
    {
     "expression": "{!m.booleanTrue && v.string == 'Model' ? null : abs(v.Infinity) >= m.double && (m.double + m.doubleString + 1)}",
@@ -31752,6 +32050,14 @@
    {
     "items": "{!v.body}",
     "var": "comp"
+   }
+  ]
+ },
+ "cmp.frameworkPerformanceTest:createHTMLComponent": {
+  "aura:component": [
+   {
+    "extends": "performance:perfTest",
+    "description": "Simple HTML creation perf test"
    }
   ]
  },
@@ -55513,6 +55819,40 @@
    {}
   ]
  },
+ "cmp.test:cmpWithServerAction": {
+  "aura:component": [
+   {
+    "controller": "java://org.auraframework.components.test.java.controller.TestController"
+   }
+  ],
+  "aura:attribute": [
+   {
+    "type": "Boolean",
+    "name": "actionDone",
+    "default": "false"
+   },
+   {
+    "type": "Boolean",
+    "name": "isTextFromCache",
+    "default": "false"
+   },
+   {
+    "type": "String",
+    "name": "text"
+   },
+   {
+    "name": "setStorableAction",
+    "type": "Boolean",
+    "default": "true"
+   }
+  ],
+  "aura:method": [
+   {
+    "name": "updateTextWithStringFromServerController",
+    "action": "{!c.updateTextWithStringFromServerController}"
+   }
+  ]
+ },
  "cmp.test:componentDefRefArrayAttribute": {
   "aura:component": [
    {
@@ -55528,6 +55868,36 @@
   "ui:button": [
    {
     "label": "hi"
+   }
+  ]
+ },
+ "cmp.test:customLoadingTextTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "loadingText",
+    "value": "Set From Test"
+   },
+   {
+    "attribute": "auraPreInitBlock"
+   }
+  ]
+ },
+ "cmp.test:defaultLoadingTemplate": {
+  "aura:component": [
+   {
+    "istemplate": "true",
+    "extends": "aura:template"
+   }
+  ],
+  "aura:set": [
+   {
+    "attribute": "auraPreInitBlock"
    }
   ]
  },

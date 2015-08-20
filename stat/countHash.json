@@ -412,6 +412,14 @@
   "test:basiccspcmpextendstemplate": 1,
   "ui:button": 1
  },
+ "app.test:customLoadingTextTemplateApp": {
+  "aura:application": 1,
+  "ui:outputtext": 1
+ },
+ "app.test:defaultLoadingTemplateApp": {
+  "aura:application": 1,
+  "ui:outputtext": 1
+ },
  "app.test:fakeApplication": {
   "aura:application": 1,
   "aura:attribute": 1
@@ -743,8 +751,7 @@
  },
  "cmp.aura:template": {
   "aura:component": 1,
-  "aura:attribute": 30,
-  "aura:set": 1
+  "aura:attribute": 29
  },
  "cmp.aura:text": {
   "aura:component": 1,
@@ -1581,7 +1588,7 @@
  "cmp.ui:carousel": {
   "aura:component": 1,
   "aura:handler": 1,
-  "aura:attribute": 18,
+  "aura:attribute": 19,
   "ui:carouselindicator": 1,
   "ui:carouselpage": 1,
   "ui:scroller": 1
@@ -2967,7 +2974,8 @@
   "aura:component": 1,
   "aura:attribute": 3,
   "aurastorage:init": 1,
-  "ui:button": 1
+  "ui:button": 1,
+  "test:cmpwithserveraction": 1
  },
  "cmp.auraStorageTest:teamFacet": {
   "aura:component": 1,
@@ -3168,6 +3176,13 @@
   "aura:set": 1,
   "ui:outputdate": 1
  },
+ "cmp.auratest:labelExpression": {
+  "aura:component": 1,
+  "aura:attribute": 10,
+  "aura:label": 13,
+  "aura:if": 1,
+  "aura:set": 1
+ },
  "cmp.auratest:logPanel": {
   "aura:component": 1,
   "aura:attribute": 2,
@@ -3199,8 +3214,8 @@
  },
  "cmp.auratest:requireWithServerAction": {
   "aura:component": 1,
-  "aura:attribute": 2,
-  "aura:method": 3,
+  "aura:attribute": 3,
+  "aura:method": 4,
   "aura:registerevent": 1,
   "aura:handler": 1
  },
@@ -3608,7 +3623,9 @@
   "aura:attribute": 3,
   "auratest:requirewithserveraction": 1,
   "auratest:requireconsumer": 1,
-  "aura:require": 2
+  "test:cmpwithserveraction": 1,
+  "aura:require": 2,
+  "aurastorage:init": 1
  },
  "cmp.componentTest:versioning": {
   "aura:component": 1,
@@ -3658,8 +3675,8 @@
  },
  "cmp.expressionTest:functions": {
   "aura:component": 1,
-  "aura:attribute": 9,
-  "expressiontest:test": 290
+  "aura:attribute": 13,
+  "expressiontest:test": 316
  },
  "cmp.expressionTest:mapValue": {
   "aura:component": 1,
@@ -3915,6 +3932,9 @@
  "cmp.forEachDefTest:singleComponentInForEach": {
   "aura:component": 1,
   "aura:iteration": 1
+ },
+ "cmp.frameworkPerformanceTest:createHTMLComponent": {
+  "aura:component": 1
  },
  "cmp.gvpTest:basicTest": {
   "aura:component": 1,
@@ -4910,10 +4930,23 @@
  "cmp.test:child2": {
   "aura:component": 1
  },
+ "cmp.test:cmpWithServerAction": {
+  "aura:component": 1,
+  "aura:attribute": 4,
+  "aura:method": 1
+ },
  "cmp.test:componentDefRefArrayAttribute": {
   "aura:component": 1,
   "aura:attribute": 1,
   "ui:button": 1
+ },
+ "cmp.test:customLoadingTextTemplate": {
+  "aura:component": 1,
+  "aura:set": 2
+ },
+ "cmp.test:defaultLoadingTemplate": {
+  "aura:component": 1,
+  "aura:set": 1
  },
  "cmp.test:extendsChild": {
   "aura:component": 1,

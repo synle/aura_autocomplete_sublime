@@ -4026,6 +4026,10 @@
       "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
     },
     {
+      "trigger": "helper-auratest-requireWithServerAction-updateText",
+      "contents": "cmp.getDef().getHelper().updateText(${1:cmp},${2:str})"
+    },
+    {
       "trigger": "helper-componentTest-componentBodyWithChanges-newComponent",
       "contents": "cmp.getDef().getHelper().newComponent(${1:cmp},${2:item})"
     },
