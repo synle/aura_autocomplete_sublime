@@ -256,13 +256,19 @@
 		'body': 'A.test.decodeOverride(${1:config},${2:response},${3:noStrip})'
 	'A.test.PrePostConfig':
 		'prefix': 'A-test-PrePostConfig'
-		'body': 'A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback})'
+		'body': 'A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback},${4:preDecodeCallback})'
 	'A.test.addPrePostSendCallback':
 		'prefix': 'A-test-addPrePostSendCallback'
 		'body': 'A.test.addPrePostSendCallback(${1:action},${2:preSendCallback},${3:postSendCallback})'
 	'A.test.removePrePostSendCallback':
 		'prefix': 'A-test-removePrePostSendCallback'
 		'body': 'A.test.removePrePostSendCallback(${1:handle})'
+	'A.test.addPreDecodeCallback':
+		'prefix': 'A-test-addPreDecodeCallback'
+		'body': 'A.test.addPreDecodeCallback(${1:preDecodeCallback})'
+	'A.test.removePreDecodeCallback':
+		'prefix': 'A-test-removePreDecodeCallback'
+		'body': 'A.test.removePreDecodeCallback(${1:handle})'
 	'A.test.installOverride':
 		'prefix': 'A-test-installOverride'
 		'body': 'A.test.installOverride(${1:})'

@@ -343,7 +343,7 @@
     },
     {
       "trigger": "A-test-PrePostConfig",
-      "contents": "A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback})"
+      "contents": "A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback},${4:preDecodeCallback})"
     },
     {
       "trigger": "A-test-addPrePostSendCallback",
@@ -352,6 +352,14 @@
     {
       "trigger": "A-test-removePrePostSendCallback",
       "contents": "A.test.removePrePostSendCallback(${1:handle})"
+    },
+    {
+      "trigger": "A-test-addPreDecodeCallback",
+      "contents": "A.test.addPreDecodeCallback(${1:preDecodeCallback})"
+    },
+    {
+      "trigger": "A-test-removePreDecodeCallback",
+      "contents": "A.test.removePreDecodeCallback(${1:handle})"
     },
     {
       "trigger": "A-test-installOverride",
