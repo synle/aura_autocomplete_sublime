@@ -218,20 +218,20 @@
       "contents": "auradev:createComponentDefQuickFix>${1:}</auradev:createComponentDefQuickFix>"
     },
     {
-      "trigger": "auradev-createThemeDefQuickFix\tTag Simple",
-      "contents": "auradev:createThemeDefQuickFix$1>${2:}</auradev:createThemeDefQuickFix>"
+      "trigger": "auradev-createTokenDefQuickFix\tTag Simple",
+      "contents": "auradev:createTokenDefQuickFix$1>${2:}</auradev:createTokenDefQuickFix>"
     },
     {
-      "trigger": "auradev-createThemeDefQuickFix\tTag Full",
-      "contents": "auradev:createThemeDefQuickFix>${1:}</auradev:createThemeDefQuickFix>"
+      "trigger": "auradev-createTokenDefQuickFix\tTag Full",
+      "contents": "auradev:createTokenDefQuickFix>${1:}</auradev:createTokenDefQuickFix>"
     },
     {
-      "trigger": "auradev-createThemeVarDefQuickFix\tTag Simple",
-      "contents": "auradev:createThemeVarDefQuickFix$1>${2:}</auradev:createThemeVarDefQuickFix>"
+      "trigger": "auradev-createTokensDefQuickFix\tTag Simple",
+      "contents": "auradev:createTokensDefQuickFix$1>${2:}</auradev:createTokensDefQuickFix>"
     },
     {
-      "trigger": "auradev-createThemeVarDefQuickFix\tTag Full",
-      "contents": "auradev:createThemeVarDefQuickFix>${1:}</auradev:createThemeVarDefQuickFix>"
+      "trigger": "auradev-createTokensDefQuickFix\tTag Full",
+      "contents": "auradev:createTokensDefQuickFix>${1:}</auradev:createTokensDefQuickFix>"
     },
     {
       "trigger": "auradev-dependencyItem\tTag Simple",
@@ -330,12 +330,12 @@
       "contents": "auradev:saveStyle def=\"${1:Optional - java://org.auraframework.def.StyleDef}\">${2:}</auradev:saveStyle>"
     },
     {
-      "trigger": "auradev-saveTheme\tTag Simple",
-      "contents": "auradev:saveTheme$1>${2:}</auradev:saveTheme>"
+      "trigger": "auradev-saveTokenList\tTag Simple",
+      "contents": "auradev:saveTokenList$1>${2:}</auradev:saveTokenList>"
     },
     {
-      "trigger": "auradev-saveTheme\tTag Full",
-      "contents": "auradev:saveTheme def=\"${1:Optional - java://org.auraframework.def.ComponentDef}\">${2:}</auradev:saveTheme>"
+      "trigger": "auradev-saveTokenList\tTag Full",
+      "contents": "auradev:saveTokenList def=\"${1:Optional - java://org.auraframework.def.ComponentDef}\">${2:}</auradev:saveTokenList>"
     },
     {
       "trigger": "auradev-showDependencies\tTag Simple",
@@ -3530,14 +3530,6 @@
       "contents": "auratest:testComponent3 myBoolean=\"${1:Optional - Boolean}\">${2:}</auratest:testComponent3>"
     },
     {
-      "trigger": "auratest-testForEachDefChild\tTag Simple",
-      "contents": "auratest:testForEachDefChild$1>${2:}</auratest:testForEachDefChild>"
-    },
-    {
-      "trigger": "auratest-testForEachDefChild\tTag Full",
-      "contents": "auratest:testForEachDefChild numbers=\"${1:Optional - Account}\">${2:}</auratest:testForEachDefChild>"
-    },
-    {
       "trigger": "auratest-testInterfaceChildImpl\tTag Simple",
       "contents": "auratest:testInterfaceChildImpl$1>${2:Implements auratest:testInterfaceChild.\t}</auratest:testInterfaceChildImpl>"
     },
@@ -4794,70 +4786,6 @@
       "contents": "flavorTest:x_sampleWithDefault>${1:test helper component: a component that sets an explicit default flavor}</flavorTest:x_sampleWithDefault>"
     },
     {
-      "trigger": "forEachDefTest-basicDataType\tTag Simple",
-      "contents": "forEachDefTest:basicDataType$1>${2:}</forEachDefTest:basicDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-basicDataType\tTag Full",
-      "contents": "forEachDefTest:basicDataType string=\"${1:Optional - String[]}\" number=\"${2:Optional - Integer[]}\" bool=\"${3:Optional - Boolean[]}\">${4:}</forEachDefTest:basicDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-collectionDataType\tTag Simple",
-      "contents": "forEachDefTest:collectionDataType$1>${2:}</forEachDefTest:collectionDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-collectionDataType\tTag Full",
-      "contents": "forEachDefTest:collectionDataType listofList=\"${1:Optional - List}\" Objects=\"${2:Optional - Object[]}\">${3:}</forEachDefTest:collectionDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-emptyLists\tTag Simple",
-      "contents": "forEachDefTest:emptyLists$1>${2:}</forEachDefTest:emptyLists>"
-    },
-    {
-      "trigger": "forEachDefTest-emptyLists\tTag Full",
-      "contents": "forEachDefTest:emptyLists string=\"${1:Optional - String[]}\" number=\"${2:Optional - Integer[]}\" bool=\"${3:Optional - Boolean[]}\">${4:}</forEachDefTest:emptyLists>"
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay\tTag Simple",
-      "contents": "forEachDefTest:forEachDefDisplay$1>${2:}</forEachDefTest:forEachDefDisplay>"
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay\tTag Full",
-      "contents": "forEachDefTest:forEachDefDisplay string=\"${1:Optional - String}\" number=\"${2:Optional - Integer}\" bool=\"${3:Optional - Boolean}\" obj=\"${4:Optional - Object}\" map=\"${5:Optional - Map}\" list=\"${6:Optional - List}\">${7:}</forEachDefTest:forEachDefDisplay>"
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefParent\tTag Simple",
-      "contents": "forEachDefTest:forEachDefParent$1>${2:}</forEachDefTest:forEachDefParent>"
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefParent\tTag Full",
-      "contents": "forEachDefTest:forEachDefParent>${1:}</forEachDefTest:forEachDefParent>"
-    },
-    {
-      "trigger": "forEachDefTest-nonListDataType\tTag Simple",
-      "contents": "forEachDefTest:nonListDataType$1>${2:}</forEachDefTest:nonListDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-nonListDataType\tTag Full",
-      "contents": "forEachDefTest:nonListDataType>${1:}</forEachDefTest:nonListDataType>"
-    },
-    {
-      "trigger": "forEachDefTest-singleComponentAttribute\tTag Simple",
-      "contents": "forEachDefTest:singleComponentAttribute$1>${2:}</forEachDefTest:singleComponentAttribute>"
-    },
-    {
-      "trigger": "forEachDefTest-singleComponentAttribute\tTag Full",
-      "contents": "forEachDefTest:singleComponentAttribute>${1:}</forEachDefTest:singleComponentAttribute>"
-    },
-    {
-      "trigger": "forEachDefTest-singleComponentInForEach\tTag Simple",
-      "contents": "forEachDefTest:singleComponentInForEach$1>${2:}</forEachDefTest:singleComponentInForEach>"
-    },
-    {
-      "trigger": "forEachDefTest-singleComponentInForEach\tTag Full",
-      "contents": "forEachDefTest:singleComponentInForEach>${1:}</forEachDefTest:singleComponentInForEach>"
-    },
-    {
       "trigger": "frameworkPerformanceTest-createHTMLComponent\tTag Simple",
       "contents": "frameworkPerformanceTest:createHTMLComponent$1>${2:Simple HTML creation perf test}</frameworkPerformanceTest:createHTMLComponent>"
     },
@@ -5608,14 +5536,6 @@
     {
       "trigger": "loadLevelTest-lazyLoadBasicTypes\tTag Full",
       "contents": "loadLevelTest:lazyLoadBasicTypes stringAttribute=\"${1:Optional - String}\" waitId=\"${2:Optional - String}\">${3:}</loadLevelTest:lazyLoadBasicTypes>"
-    },
-    {
-      "trigger": "loadLevelTest-lazyLoadForEach\tTag Simple",
-      "contents": "loadLevelTest:lazyLoadForEach$1>${2:}</loadLevelTest:lazyLoadForEach>"
-    },
-    {
-      "trigger": "loadLevelTest-lazyLoadForEach\tTag Full",
-      "contents": "loadLevelTest:lazyLoadForEach>${1:}</loadLevelTest:lazyLoadForEach>"
     },
     {
       "trigger": "loadLevelTest-lazyLoadHelper\tTag Simple",
@@ -7794,28 +7714,28 @@
       "contents": "test:text value=\"${1:Optional - String}\">${2:}</test:text>"
     },
     {
-      "trigger": "themeSanityTest-header\tTag Simple",
-      "contents": "themeSanityTest:header$1>${2:}</themeSanityTest:header>"
+      "trigger": "tokenSanityTest-header\tTag Simple",
+      "contents": "tokenSanityTest:header$1>${2:}</tokenSanityTest:header>"
     },
     {
-      "trigger": "themeSanityTest-header\tTag Full",
-      "contents": "themeSanityTest:header>${1:}</themeSanityTest:header>"
+      "trigger": "tokenSanityTest-header\tTag Full",
+      "contents": "tokenSanityTest:header>${1:}</tokenSanityTest:header>"
     },
     {
-      "trigger": "themeSanityTest-header2\tTag Simple",
-      "contents": "themeSanityTest:header2$1>${2:}</themeSanityTest:header2>"
+      "trigger": "tokenSanityTest-header2\tTag Simple",
+      "contents": "tokenSanityTest:header2$1>${2:}</tokenSanityTest:header2>"
     },
     {
-      "trigger": "themeSanityTest-header2\tTag Full",
-      "contents": "themeSanityTest:header2>${1:}</themeSanityTest:header2>"
+      "trigger": "tokenSanityTest-header2\tTag Full",
+      "contents": "tokenSanityTest:header2>${1:}</tokenSanityTest:header2>"
     },
     {
-      "trigger": "themeSanityTest-themeVariable\tTag Simple",
-      "contents": "themeSanityTest:themeVariable$1>${2:}</themeSanityTest:themeVariable>"
+      "trigger": "tokenSanityTest-tokenVariable\tTag Simple",
+      "contents": "tokenSanityTest:tokenVariable$1>${2:}</tokenSanityTest:tokenVariable>"
     },
     {
-      "trigger": "themeSanityTest-themeVariable\tTag Full",
-      "contents": "themeSanityTest:themeVariable>${1:}</themeSanityTest:themeVariable>"
+      "trigger": "tokenSanityTest-tokenVariable\tTag Full",
+      "contents": "tokenSanityTest:tokenVariable>${1:}</tokenSanityTest:tokenVariable>"
     },
     {
       "trigger": "uitest-InputSelect_OptionsAttributeInitValue\tTag Simple",
@@ -8231,7 +8151,7 @@
     },
     {
       "trigger": "uitest-inputDateTime_Test\tTag Full",
-      "contents": "uitest:inputDateTime_Test value=\"${1:Optional - String}\" format=\"${2:Optional - String}\" dateFormat=\"${3:Optional - String}\" timeFormat=\"${4:Optional - String}\">${5:}</uitest:inputDateTime_Test>"
+      "contents": "uitest:inputDateTime_Test value=\"${1:Optional - String}\" format=\"${2:Optional - String}\" dateFormat=\"${3:Optional - String}\" timeFormat=\"${4:Optional - String}\" timezone=\"${5:Optional - String}\">${6:}</uitest:inputDateTime_Test>"
     },
     {
       "trigger": "uitest-inputDate_Test\tTag Simple",
@@ -8239,7 +8159,7 @@
     },
     {
       "trigger": "uitest-inputDate_Test\tTag Full",
-      "contents": "uitest:inputDate_Test value=\"${1:Optional - String}\">${2:}</uitest:inputDate_Test>"
+      "contents": "uitest:inputDate_Test value=\"${1:Optional - String}\" format=\"${2:Optional - String}\">${3:}</uitest:inputDate_Test>"
     },
     {
       "trigger": "uitest-inputDate_TestCreation\tTag Simple",
@@ -9034,20 +8954,28 @@
       "contents": "uitest:virtualDataGridItem value=\"${1:Optional - String}\">${2:}</uitest:virtualDataGridItem>"
     },
     {
-      "trigger": "uitest-virtualDataGridProvider_test\tTag Simple",
-      "contents": "uitest:virtualDataGridProvider_test$1>${2:}</uitest:virtualDataGridProvider_test>"
+      "trigger": "uitest-virtualDataGridProvider_Test\tTag Simple",
+      "contents": "uitest:virtualDataGridProvider_Test$1>${2:}</uitest:virtualDataGridProvider_Test>"
     },
     {
-      "trigger": "uitest-virtualDataGridProvider_test\tTag Full",
-      "contents": "uitest:virtualDataGridProvider_test>${1:}</uitest:virtualDataGridProvider_test>"
+      "trigger": "uitest-virtualDataGridProvider_Test\tTag Full",
+      "contents": "uitest:virtualDataGridProvider_Test>${1:}</uitest:virtualDataGridProvider_Test>"
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests\tTag Simple",
-      "contents": "uitest:virtualDataGrid_columnsTests$1>${2:}</uitest:virtualDataGrid_columnsTests>"
+      "trigger": "uitest-virtualDataGrid_Test\tTag Simple",
+      "contents": "uitest:virtualDataGrid_Test$1>${2:}</uitest:virtualDataGrid_Test>"
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests\tTag Full",
-      "contents": "uitest:virtualDataGrid_columnsTests sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\" className=\"${7:Optional - String}\" rowIndex=\"${8:Optional - Integer}\" gridItems=\"${9:Optional - List}\" gridSelectedItems=\"${10:Optional - List}\" useRowHeaders=\"${11:Optional - Boolean}\" provideNoData=\"${12:Optional - Boolean}\">${13:}</uitest:virtualDataGrid_columnsTests>"
+      "trigger": "uitest-virtualDataGrid_Test\tTag Full",
+      "contents": "uitest:virtualDataGrid_Test testFixedHeader=\"${1:Optional - Boolean}\">${2:}</uitest:virtualDataGrid_Test>"
+    },
+    {
+      "trigger": "uitest-virtualDataGrid_columnsTest\tTag Simple",
+      "contents": "uitest:virtualDataGrid_columnsTest$1>${2:}</uitest:virtualDataGrid_columnsTest>"
+    },
+    {
+      "trigger": "uitest-virtualDataGrid_columnsTest\tTag Full",
+      "contents": "uitest:virtualDataGrid_columnsTest sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\" className=\"${7:Optional - String}\" rowIndex=\"${8:Optional - Integer}\" gridItems=\"${9:Optional - List}\" gridSelectedItems=\"${10:Optional - List}\" useRowHeaders=\"${11:Optional - Boolean}\" provideNoData=\"${12:Optional - Boolean}\">${13:}</uitest:virtualDataGrid_columnsTest>"
     },
     {
       "trigger": "uitest-virtualDataGrid_dataProvider\tTag Simple",
@@ -9064,14 +8992,6 @@
     {
       "trigger": "uitest-virtualDataGrid_onSortTest\tTag Full",
       "contents": "uitest:virtualDataGrid_onSortTest sortBy=\"${1:Optional - String}\">${2:}</uitest:virtualDataGrid_onSortTest>"
-    },
-    {
-      "trigger": "uitest-virtualDataGrid_test\tTag Simple",
-      "contents": "uitest:virtualDataGrid_test$1>${2:}</uitest:virtualDataGrid_test>"
-    },
-    {
-      "trigger": "uitest-virtualDataGrid_test\tTag Full",
-      "contents": "uitest:virtualDataGrid_test testFixedHeader=\"${1:Optional - Boolean}\">${2:}</uitest:virtualDataGrid_test>"
     },
     {
       "trigger": "uitest-virtualList_Test\tTag Simple",

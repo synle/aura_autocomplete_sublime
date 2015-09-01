@@ -1062,8 +1062,8 @@
       "contents": "cmp.getDef().getHelper().goToPrevYear(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-handleESCKey",
-      "contents": "cmp.getDef().getHelper().handleESCKey(${1:component},${2:event})"
+      "trigger": "helper-ui-datePicker-handleKeydown",
+      "contents": "cmp.getDef().getHelper().handleKeydown(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-datePicker-isElementInComponent",
@@ -1162,8 +1162,8 @@
       "contents": "cmp.getDef().getHelper().handleArrowKey(${1:component},${2:localId},${3:deltaDays})"
     },
     {
-      "trigger": "helper-ui-datePickerGrid-handleESC",
-      "contents": "cmp.getDef().getHelper().handleESC(${1:component})"
+      "trigger": "helper-ui-datePickerGrid-fireHideEvent",
+      "contents": "cmp.getDef().getHelper().fireHideEvent(${1:component})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-handleKeydown",
@@ -1815,7 +1815,7 @@
     },
     {
       "trigger": "helper-ui-inputDateTime-setDateTimeValue",
-      "contents": "cmp.getDef().getHelper().setDateTimeValue(${1:component},${2:dateTimeString},${3:hasTime},${4:langLocale})"
+      "contents": "cmp.getDef().getHelper().setDateTimeValue(${1:component},${2:dateString},${3:timeString},${4:langLocale})"
     },
     {
       "trigger": "helper-ui-inputDateTime-updateTimeFormat",
@@ -1823,7 +1823,7 @@
     },
     {
       "trigger": "helper-ui-inputDateTime-getDateTime",
-      "contents": "cmp.getDef().getHelper().getDateTime(${1:component},${2:langLocale},${3:dateTimeString})"
+      "contents": "cmp.getDef().getHelper().getDateTime(${1:component},${2:langLocale},${3:dateString},${4:timeString})"
     },
     {
       "trigger": "helper-ui-inputDateTime-getDateTimeString",
@@ -1840,6 +1840,10 @@
     {
       "trigger": "helper-ui-inputDateTime-isDesktopMode",
       "contents": "cmp.getDef().getHelper().isDesktopMode(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-parseDateTimeInput",
+      "contents": "cmp.getDef().getHelper().parseDateTimeInput(${1:isUTC},${2:component},${3:dateValue},${4:timeValue})"
     },
     {
       "trigger": "helper-ui-inputDateTrigger-displayDatePicker",
@@ -2438,6 +2442,10 @@
       "contents": "cmp.getDef().getHelper().init(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-modal-initCloseBtn",
+      "contents": "cmp.getDef().getHelper().initCloseBtn(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-modal-_getKeyHandler",
       "contents": "cmp.getDef().getHelper()._getKeyHandler(${1:cmp})"
     },
@@ -2464,6 +2472,14 @@
     {
       "trigger": "helper-ui-modal-mask",
       "contents": "cmp.getDef().getHelper().mask(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-modal-unmask",
+      "contents": "cmp.getDef().getHelper().unmask(${1:cmp},${2:useTransition},${3:panel})"
+    },
+    {
+      "trigger": "helper-ui-modal-unsetOverflow",
+      "contents": "cmp.getDef().getHelper().unsetOverflow(${1:cmp})"
     },
     {
       "trigger": "helper-ui-outputDate-formatDate",
@@ -4718,19 +4734,19 @@
       "contents": "cmp.getDef().getHelper().goToServer(${1:controller},${2:component},${3:event},${4:cmpName},${5:inValue})"
     },
     {
-      "trigger": "helper-uitest-virtualDataGridItem-fireAddRemove",
-      "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
-    },
-    {
-      "trigger": "helper-uitest-virtualDataGridProvider_test-init",
+      "trigger": "helper-uitest-virtualDataGridProvider_Test-init",
       "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
     },
     {
-      "trigger": "helper-uitest-virtualDataGridProvider_test-provide",
+      "trigger": "helper-uitest-virtualDataGridProvider_Test-provide",
       "contents": "cmp.getDef().getHelper().provide(${1:cmp},${2:event},${3:helper})"
     },
     {
-      "trigger": "helper-uitest-virtualDataGrid_columnsTests-generateColumnConfigs",
+      "trigger": "helper-uitest-virtualDataGrid_Test-fireAddRemove",
+      "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
+    },
+    {
+      "trigger": "helper-uitest-virtualDataGrid_columnsTest-generateColumnConfigs",
       "contents": "cmp.getDef().getHelper().generateColumnConfigs(${1:cmp})"
     },
     {
@@ -4740,10 +4756,6 @@
     {
       "trigger": "helper-uitest-virtualDataGrid_dataProvider-compare",
       "contents": "cmp.getDef().getHelper().compare(${1:sortBy})"
-    },
-    {
-      "trigger": "helper-uitest-virtualDataGrid_test-fireAddRemove",
-      "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
     },
     {
       "trigger": "helper-uitest-virtualList_TestDataProvider-createItems",

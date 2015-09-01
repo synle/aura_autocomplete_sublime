@@ -534,6 +534,10 @@
       "contents": "A.util.urlDecode(${1:url})"
     },
     {
+      "trigger": "A-util-generateUrl",
+      "contents": "A.util.generateUrl(${1:url},${2:params})"
+    },
+    {
       "trigger": "A-util-trim",
       "contents": "A.util.trim(${1:value})"
     },

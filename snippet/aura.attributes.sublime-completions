@@ -530,8 +530,8 @@
       "contents": "def=\"${1:auradev:saveStyle - Optional - java://org.auraframework.def.StyleDef}\""
     },
     {
-      "trigger": "auradev-saveTheme-def\tAttr",
-      "contents": "def=\"${1:auradev:saveTheme - Optional - java://org.auraframework.def.ComponentDef}\""
+      "trigger": "auradev-saveTokenList-def\tAttr",
+      "contents": "def=\"${1:auradev:saveTokenList - Optional - java://org.auraframework.def.ComponentDef}\""
     },
     {
       "trigger": "auradev-showDependencies-component\tAttr",
@@ -6314,10 +6314,6 @@
       "contents": "myBoolean=\"${1:auratest:testComponent3 - Optional - Boolean}\""
     },
     {
-      "trigger": "auratest-testForEachDefChild-numbers\tAttr",
-      "contents": "numbers=\"${1:auratest:testForEachDefChild - Optional - Account}\""
-    },
-    {
       "trigger": "auratest-test_CompoundFormula_NonString-NameString\tAttr",
       "contents": "NameString=\"${1:auratest:test_CompoundFormula_NonString - Optional - String}\""
     },
@@ -6740,62 +6736,6 @@
     {
       "trigger": "flavorTest-expressions-flav\tAttr",
       "contents": "flav=\"${1:flavorTest:expressions - Optional - String}\""
-    },
-    {
-      "trigger": "forEachDefTest-basicDataType-string\tAttr",
-      "contents": "string=\"${1:forEachDefTest:basicDataType - Optional - String[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-basicDataType-number\tAttr",
-      "contents": "number=\"${1:forEachDefTest:basicDataType - Optional - Integer[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-basicDataType-bool\tAttr",
-      "contents": "bool=\"${1:forEachDefTest:basicDataType - Optional - Boolean[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-collectionDataType-listofList\tAttr",
-      "contents": "listofList=\"${1:forEachDefTest:collectionDataType - Optional - List}\""
-    },
-    {
-      "trigger": "forEachDefTest-collectionDataType-Objects\tAttr",
-      "contents": "Objects=\"${1:forEachDefTest:collectionDataType - Optional - Object[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-emptyLists-string\tAttr",
-      "contents": "string=\"${1:forEachDefTest:emptyLists - Optional - String[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-emptyLists-number\tAttr",
-      "contents": "number=\"${1:forEachDefTest:emptyLists - Optional - Integer[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-emptyLists-bool\tAttr",
-      "contents": "bool=\"${1:forEachDefTest:emptyLists - Optional - Boolean[]}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-string\tAttr",
-      "contents": "string=\"${1:forEachDefTest:forEachDefDisplay - Optional - String}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-number\tAttr",
-      "contents": "number=\"${1:forEachDefTest:forEachDefDisplay - Optional - Integer}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-bool\tAttr",
-      "contents": "bool=\"${1:forEachDefTest:forEachDefDisplay - Optional - Boolean}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-obj\tAttr",
-      "contents": "obj=\"${1:forEachDefTest:forEachDefDisplay - Optional - Object}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-map\tAttr",
-      "contents": "map=\"${1:forEachDefTest:forEachDefDisplay - Optional - Map}\""
-    },
-    {
-      "trigger": "forEachDefTest-forEachDefDisplay-list\tAttr",
-      "contents": "list=\"${1:forEachDefTest:forEachDefDisplay - Optional - List}\""
     },
     {
       "trigger": "gvpTest-basicTest-attributeLabel\tAttr",
@@ -8882,8 +8822,16 @@
       "contents": "timeFormat=\"${1:uitest:inputDateTime_Test - Optional - String}\""
     },
     {
+      "trigger": "uitest-inputDateTime_Test-timezone\tAttr",
+      "contents": "timezone=\"${1:uitest:inputDateTime_Test - Optional - String}\""
+    },
+    {
       "trigger": "uitest-inputDate_Test-value\tAttr",
       "contents": "value=\"${1:uitest:inputDate_Test - Optional - String}\""
+    },
+    {
+      "trigger": "uitest-inputDate_Test-format\tAttr",
+      "contents": "format=\"${1:uitest:inputDate_Test - Optional - String}\""
     },
     {
       "trigger": "uitest-inputDate_TestCreation-addl\tAttr",
@@ -9390,60 +9338,60 @@
       "contents": "value=\"${1:uitest:virtualDataGridItem - Optional - String}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-sortBy\tAttr",
-      "contents": "sortBy=\"${1:uitest:virtualDataGrid_columnsTests - Optional - String}\""
+      "trigger": "uitest-virtualDataGrid_Test-testFixedHeader\tAttr",
+      "contents": "testFixedHeader=\"${1:uitest:virtualDataGrid_Test - Optional - Boolean}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-pageSize\tAttr",
-      "contents": "pageSize=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-sortBy\tAttr",
+      "contents": "sortBy=\"${1:uitest:virtualDataGrid_columnsTest - Optional - String}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-currentPage\tAttr",
-      "contents": "currentPage=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-pageSize\tAttr",
+      "contents": "pageSize=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-totalItems\tAttr",
-      "contents": "totalItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-currentPage\tAttr",
+      "contents": "currentPage=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-index\tAttr",
-      "contents": "index=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-totalItems\tAttr",
+      "contents": "totalItems=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-count\tAttr",
-      "contents": "count=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-index\tAttr",
+      "contents": "index=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-className\tAttr",
-      "contents": "className=\"${1:uitest:virtualDataGrid_columnsTests - Optional - String}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-count\tAttr",
+      "contents": "count=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-rowIndex\tAttr",
-      "contents": "rowIndex=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Integer}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-className\tAttr",
+      "contents": "className=\"${1:uitest:virtualDataGrid_columnsTest - Optional - String}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-gridItems\tAttr",
-      "contents": "gridItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - List}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-rowIndex\tAttr",
+      "contents": "rowIndex=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Integer}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-gridSelectedItems\tAttr",
-      "contents": "gridSelectedItems=\"${1:uitest:virtualDataGrid_columnsTests - Optional - List}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-gridItems\tAttr",
+      "contents": "gridItems=\"${1:uitest:virtualDataGrid_columnsTest - Optional - List}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-useRowHeaders\tAttr",
-      "contents": "useRowHeaders=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Boolean}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-gridSelectedItems\tAttr",
+      "contents": "gridSelectedItems=\"${1:uitest:virtualDataGrid_columnsTest - Optional - List}\""
     },
     {
-      "trigger": "uitest-virtualDataGrid_columnsTests-provideNoData\tAttr",
-      "contents": "provideNoData=\"${1:uitest:virtualDataGrid_columnsTests - Optional - Boolean}\""
+      "trigger": "uitest-virtualDataGrid_columnsTest-useRowHeaders\tAttr",
+      "contents": "useRowHeaders=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "uitest-virtualDataGrid_columnsTest-provideNoData\tAttr",
+      "contents": "provideNoData=\"${1:uitest:virtualDataGrid_columnsTest - Optional - Boolean}\""
     },
     {
       "trigger": "uitest-virtualDataGrid_onSortTest-sortBy\tAttr",
       "contents": "sortBy=\"${1:uitest:virtualDataGrid_onSortTest - Optional - String}\""
-    },
-    {
-      "trigger": "uitest-virtualDataGrid_test-testFixedHeader\tAttr",
-      "contents": "testFixedHeader=\"${1:uitest:virtualDataGrid_test - Optional - Boolean}\""
     },
     {
       "trigger": "uitest-virtualList_Test-pageSize\tAttr",
