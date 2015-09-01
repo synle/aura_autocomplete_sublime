@@ -634,10 +634,6 @@
       "contents": "A.util.bind($1method /*, this, bind arguments*/)"
     },
     {
-      "trigger": "A-util-keys",
-      "contents": "A.util.keys(${1:object},${2:excludeFunctions})"
-    },
-    {
       "trigger": "A-util-lookup",
       "contents": "A.util.lookup($1object /*, var-args of arrays*/)"
     },

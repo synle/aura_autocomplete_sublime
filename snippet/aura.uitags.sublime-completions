@@ -3290,12 +3290,28 @@
       "contents": "auratest:componentClassGrandChildServerProvider value=\"${1:Optional - String}\">${2:}</auratest:componentClassGrandChildServerProvider>"
     },
     {
+      "trigger": "auratest-componentClassInner\tTag Simple",
+      "contents": "auratest:componentClassInner$1>${2:}</auratest:componentClassInner>"
+    },
+    {
+      "trigger": "auratest-componentClassInner\tTag Full",
+      "contents": "auratest:componentClassInner valueInner=\"${1:Optional - String}\" errorOutFromHelper_Inner=\"${2:Optional - Boolean}\" errorOutFromRender_Inner=\"${3:Optional - Boolean}\" errorOutFromAfterRender_Inner=\"${4:Optional - Boolean}\" errorOutFromReRender_Inner=\"${5:Optional - Boolean}\" errorOutFromUnRender_Inner=\"${6:Optional - Boolean}\" value=\"${7:Optional - String}\">${8:}</auratest:componentClassInner>"
+    },
+    {
       "trigger": "auratest-componentClassLifecycleTest\tTag Simple",
       "contents": "auratest:componentClassLifecycleTest$1>${2:}</auratest:componentClassLifecycleTest>"
     },
     {
       "trigger": "auratest-componentClassLifecycleTest\tTag Full",
-      "contents": "auratest:componentClassLifecycleTest testParent=\"${1:Optional - Boolean}\" testParentInIteration=\"${2:Optional - Boolean}\" testChild=\"${3:Optional - Boolean}\" testChildInIteration=\"${4:Optional - Boolean}\" testGrandChildServer=\"${5:Optional - Boolean}\" testGrandChildServerInIteration=\"${6:Optional - Boolean}\" testGrandChildClient=\"${7:Optional - Boolean}\" testGrandChildClientInIteration=\"${8:Optional - Boolean}\" testServerProviderGrandChildClientProvider=\"${9:Optional - Boolean}\" testClientProviderGrandChildClientProvider=\"${10:Optional - Boolean}\" testClientProviderGrandChildClientProviderInIteration=\"${11:Optional - Boolean}\" testServerProviderGrandChildClientProviderInIteration=\"${12:Optional - Boolean}\" testServerProviderClientProviderGrandChildClientProvider=\"${13:Optional - Boolean}\" testServerProviderClientProviderGrandChildClientProviderInIteration=\"${14:Optional - Boolean}\" testServerProviderGrandChildServerProvider=\"${15:Optional - Boolean}\" testClientProviderGrandChildServerProvider=\"${16:Optional - Boolean}\" testServerProviderGrandChildServerProviderInIteration=\"${17:Optional - Boolean}\" testClientProviderGrandChildServerProviderInIteration=\"${18:Optional - Boolean}\" testServerProviderClientProviderGrandChildServerProvider=\"${19:Optional - Boolean}\" testServerProviderClientProviderGrandChildServerProviderInIteration=\"${20:Optional - Boolean}\" shouldRender=\"${21:Optional - Boolean}\" shouldCreate=\"${22:Optional - Boolean}\" iterationItems=\"${23:Optional - List}\" iterationForceServer=\"${24:Optional - Boolean}\" cmpDef=\"${25:Optional - String}\" errorOutFrom=\"${26:Optional - String}\" logFilter=\"${27:Optional - String}\">${28:}</auratest:componentClassLifecycleTest>"
+      "contents": "auratest:componentClassLifecycleTest testOuter=\"${1:Optional - Boolean}\" testOuterInIteration=\"${2:Optional - Boolean}\" testParent=\"${3:Optional - Boolean}\" testParentInIteration=\"${4:Optional - Boolean}\" testChild=\"${5:Optional - Boolean}\" testChildInIteration=\"${6:Optional - Boolean}\" testGrandChildServer=\"${7:Optional - Boolean}\" testGrandChildServerInIteration=\"${8:Optional - Boolean}\" testGrandChildClient=\"${9:Optional - Boolean}\" testGrandChildClientInIteration=\"${10:Optional - Boolean}\" testServerProviderGrandChildClientProvider=\"${11:Optional - Boolean}\" testClientProviderGrandChildClientProvider=\"${12:Optional - Boolean}\" testClientProviderGrandChildClientProviderInIteration=\"${13:Optional - Boolean}\" testServerProviderGrandChildClientProviderInIteration=\"${14:Optional - Boolean}\" testServerProviderClientProviderGrandChildClientProvider=\"${15:Optional - Boolean}\" testServerProviderClientProviderGrandChildClientProviderInIteration=\"${16:Optional - Boolean}\" testServerProviderGrandChildServerProvider=\"${17:Optional - Boolean}\" testClientProviderGrandChildServerProvider=\"${18:Optional - Boolean}\" testServerProviderGrandChildServerProviderInIteration=\"${19:Optional - Boolean}\" testClientProviderGrandChildServerProviderInIteration=\"${20:Optional - Boolean}\" testServerProviderClientProviderGrandChildServerProvider=\"${21:Optional - Boolean}\" testServerProviderClientProviderGrandChildServerProviderInIteration=\"${22:Optional - Boolean}\" shouldRender=\"${23:Optional - Boolean}\" shouldCreate=\"${24:Optional - Boolean}\" iterationItems=\"${25:Optional - List}\" iterationForceServer=\"${26:Optional - Boolean}\" cmpDef=\"${27:Optional - String}\" errorOutFrom=\"${28:Optional - String}\" logFilter=\"${29:Optional - String}\">${30:}</auratest:componentClassLifecycleTest>"
+    },
+    {
+      "trigger": "auratest-componentClassOuter\tTag Simple",
+      "contents": "auratest:componentClassOuter$1>${2:Implements auratest:componentClassProvidable.\t}</auratest:componentClassOuter>"
+    },
+    {
+      "trigger": "auratest-componentClassOuter\tTag Full",
+      "contents": "auratest:componentClassOuter id=\"${1:Optional - String}\" valueOuter=\"${2:Optional - String}\" errorOutFromHelper_Outer=\"${3:Optional - Boolean}\" errorOutFromRender_Outer=\"${4:Optional - Boolean}\" errorOutFromAfterRender_Outer=\"${5:Optional - Boolean}\" errorOutFromReRender_Outer=\"${6:Optional - Boolean}\" errorOutFromUnRender_Outer=\"${7:Optional - Boolean}\" value=\"${8:Optional - String}\">${9:Implements auratest:componentClassProvidable.\t}</auratest:componentClassOuter>"
     },
     {
       "trigger": "auratest-componentClassParent\tTag Simple",

@@ -473,9 +473,6 @@
 	'A.util.bind':
 		'prefix': 'A-util-bind'
 		'body': 'A.util.bind($1method /*, this, bind arguments*/)'
-	'A.util.keys':
-		'prefix': 'A-util-keys'
-		'body': 'A.util.keys(${1:object},${2:excludeFunctions})'
 	'A.util.lookup':
 		'prefix': 'A-util-lookup'
 		'body': 'A.util.lookup($1object /*, var-args of arrays*/)'

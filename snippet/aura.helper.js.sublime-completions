@@ -4018,6 +4018,14 @@
       "contents": "cmp.getDef().getHelper().getDelimiter(${1:})"
     },
     {
+      "trigger": "helper-auratest-componentClassInner-getDelimiter",
+      "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auratest-componentClassOuter-getDelimiter",
+      "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
+    },
+    {
       "trigger": "helper-auratest-componentClassParent-getDelimiter",
       "contents": "cmp.getDef().getHelper().getDelimiter(${1:cmp})"
     },

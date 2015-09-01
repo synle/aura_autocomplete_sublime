@@ -5898,6 +5898,42 @@
       "contents": "value=\"${1:auratest:componentClassGrandChildServerProvider - Optional - String}\""
     },
     {
+      "trigger": "auratest-componentClassInner-valueInner\tAttr",
+      "contents": "valueInner=\"${1:auratest:componentClassInner - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-errorOutFromHelper_Inner\tAttr",
+      "contents": "errorOutFromHelper_Inner=\"${1:auratest:componentClassInner - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-errorOutFromRender_Inner\tAttr",
+      "contents": "errorOutFromRender_Inner=\"${1:auratest:componentClassInner - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-errorOutFromAfterRender_Inner\tAttr",
+      "contents": "errorOutFromAfterRender_Inner=\"${1:auratest:componentClassInner - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-errorOutFromReRender_Inner\tAttr",
+      "contents": "errorOutFromReRender_Inner=\"${1:auratest:componentClassInner - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-errorOutFromUnRender_Inner\tAttr",
+      "contents": "errorOutFromUnRender_Inner=\"${1:auratest:componentClassInner - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassInner-value\tAttr",
+      "contents": "value=\"${1:auratest:componentClassInner - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-componentClassLifecycleTest-testOuter\tAttr",
+      "contents": "testOuter=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassLifecycleTest-testOuterInIteration\tAttr",
+      "contents": "testOuterInIteration=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
+    },
+    {
       "trigger": "auratest-componentClassLifecycleTest-testParent\tAttr",
       "contents": "testParent=\"${1:auratest:componentClassLifecycleTest - Optional - Boolean}\""
     },
@@ -6004,6 +6040,38 @@
     {
       "trigger": "auratest-componentClassLifecycleTest-logFilter\tAttr",
       "contents": "logFilter=\"${1:auratest:componentClassLifecycleTest - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-id\tAttr",
+      "contents": "id=\"${1:auratest:componentClassOuter - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-valueOuter\tAttr",
+      "contents": "valueOuter=\"${1:auratest:componentClassOuter - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-errorOutFromHelper_Outer\tAttr",
+      "contents": "errorOutFromHelper_Outer=\"${1:auratest:componentClassOuter - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-errorOutFromRender_Outer\tAttr",
+      "contents": "errorOutFromRender_Outer=\"${1:auratest:componentClassOuter - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-errorOutFromAfterRender_Outer\tAttr",
+      "contents": "errorOutFromAfterRender_Outer=\"${1:auratest:componentClassOuter - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-errorOutFromReRender_Outer\tAttr",
+      "contents": "errorOutFromReRender_Outer=\"${1:auratest:componentClassOuter - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-errorOutFromUnRender_Outer\tAttr",
+      "contents": "errorOutFromUnRender_Outer=\"${1:auratest:componentClassOuter - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auratest-componentClassOuter-value\tAttr",
+      "contents": "value=\"${1:auratest:componentClassOuter - Optional - String}\""
     },
     {
       "trigger": "auratest-componentClassParent-id\tAttr",
