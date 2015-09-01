@@ -57,6 +57,6 @@ Trigger | Example | Description
 
 
 #### Screenshots:
-![](images/evt1.jpg =700px)
-![](images/evt2.jpg =700px)
-![](images/generate.jpg =700px)
+![Sublime Autocomplete Snippet 1](images/evt1.jpg)
+![Sublime Autocomplete Snippet 2](images/evt2.jpg)
+![Console](images/generate.jpg)
