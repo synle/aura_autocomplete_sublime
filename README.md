@@ -27,11 +27,6 @@ Trigger | Example | Description
 `{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` | <a **`attr-ui-menuitem-select`** | all Aura tag attributes
 `{NAMESPACE}-{COMPONENT_NAME}-{ATTRIBUTE_NAME}` |  <**`tag-ui-inputtext`** | All Aura tag names
 
-#### Screenshots:
-![](images/evt1.jpg)
-![](images/evt2.jpg)
-
-
 #### To Compile the autocomplete from Aura github
 ```
    #download and install node
@@ -59,4 +54,9 @@ Trigger | Example | Description
    #install it on Atom IO (Github)
    sh install.atom.sh
 ```
+
+
+#### Screenshots:
+![](images/evt1.jpg)
+![](images/evt2.jpg)
 ![](images/generate.jpg)
