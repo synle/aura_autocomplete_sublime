@@ -57,6 +57,6 @@ Trigger | Example | Description
 
 
 #### Screenshots:
-![](images/evt1.jpg)
-![](images/evt2.jpg)
-![](images/generate.jpg)
+![](images/evt1.jpg =700px)
+![](images/evt2.jpg =700px)
+![](images/generate.jpg =700px)
