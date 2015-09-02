@@ -5,7 +5,7 @@ var _ = require('lodash');
 var util = require('../util');
 
 //vars
-var TRIGGER_SEPARATOR = '-';
+var TRIGGER_SEPARATOR = require('../../config').TRIGGER_SEPARATOR;
 
 //definitions
 var self = {

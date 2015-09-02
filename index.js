@@ -73,44 +73,47 @@ function processParser(baseDir, outputDir){
 	);
 
 	//find all cmp files in nested structures
-	var componentFileNames = parseHelper.listDir(componentBaseDir);
+	parseHelper.listDir(componentBaseDir).then( function( componentFileNames ){
+		//success
+		//print stats
+		logger.log('Statistics'.bold.underline.bgBlue.white);
+		logger.log('.app Files:'.bold, componentFileNames.app.length);
+		logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
+		logger.log('.evt Files:'.bold, componentFileNames.evt.length);
+		// logger.log('js Files:'.bold, componentFileNames.js.length);
+		logger.log('\tHelper.js Files:'.bold, componentFileNames.helperjs.length);
+		logger.log('\tController.js Files:'.bold, componentFileNames.controllerjs.length);
+		logger.log('\tRenderrer.js Files:'.bold, componentFileNames.rendererjs.length);
 
 
-	//print stats
-	logger.log('Statistics'.bold.underline.bgBlue.white);
-	logger.log('.app Files:'.bold, componentFileNames.app.length);
-	logger.log('.cmp Files:'.bold, componentFileNames.cmp.length);
-	logger.log('.evt Files:'.bold, componentFileNames.evt.length);
-	// logger.log('js Files:'.bold, componentFileNames.js.length);
-	logger.log('\tHelper.js Files:'.bold, componentFileNames.helperjs.length);
-	logger.log('\tController.js Files:'.bold, componentFileNames.controllerjs.length);
-	logger.log('\tRenderrer.js Files:'.bold, componentFileNames.rendererjs.length);
+
+		//setup stuffs
+		//appendsource.js for cson (atom)
+		parseHelper.writeToFile(
+	        "'.source.js':\n",
+	        path.join(
+	            outputDir,
+	            'aura.js.atom.cson'
+	        )
+	    );
 
 
-
-	//setup stuffs
-	//appendsource.js for cson (atom)
-	parseHelper.writeToFile(
-        "'.source.js':\n",
-        path.join(
-            outputDir,
-            'aura.js.atom.cson'
-        )
-    );
-
-
-	generateXmlAutoComplete(
-		componentFileNames,//dictionary containing all js, evt and cmp files
-		outputDir//base output dir , snippet
-	);
-
-	try{
-		generateJsAutoComplete(
+		generateXmlAutoComplete(
 			componentFileNames,//dictionary containing all js, evt and cmp files
 			outputDir//base output dir , snippet
 		);
-	}
-	catch(ex){
-		logger.error('Issue trying to parse JS files', ex);
-	}
+
+		try{
+			generateJsAutoComplete(
+				componentFileNames,//dictionary containing all js, evt and cmp files
+				outputDir//base output dir , snippet
+			);
+		}
+		catch(ex){
+			logger.error('Issue trying to parse JS files', ex);
+		}
+	}, function(err){
+		//fail callback
+		logger.error('index.js has issues with getting dir list', err);
+	});
 }

@@ -27,5 +27,6 @@ module.exports = {
         test : 1,
         uitest : 1,
         uiExamples : 1
-    }
+    },
+    TRIGGER_SEPARATOR : '-'
 };

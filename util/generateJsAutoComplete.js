@@ -2,7 +2,8 @@
 var path = require('path');
 var colors = require('colors');
 var _ = require('lodash');
-var jsdom = require('jsdom')
+var jsdom = require('jsdom');
+var Q = require('q');
 
 //internal dependencies
 var parseHelper = require('./parseHelper');
@@ -71,58 +72,56 @@ module.exports = function processParser(componentFileNames, outputDir){
 
 
 			//start parsing
-			//AURA TEST JS FILE
 			//generarte path for the test and util js file
 			//read content files
-			var fileContent = parseHelper.readFromFile(
+			Q.all([parseHelper.readFromFileAsync(
 				testJsPath,
 				true//silent
-			);
-
-
-			//parse test js
-			eval(fileContent);
-			var curNamespace = $A.test;
-			for (var k in $A.test){
-				var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
-				if(parsedStuffs.length >0){
-					var functionName = parsedStuffs[0];
-					masterDictionary[functionName] = {
-						annotatedValue: parsedStuffs[1],
-						origValue : parsedStuffs[2]
-					};
-				}
-			}
-
-
-
-			//AURA UTILS JS FILE
-			//read content files
-			var fileContent = parseHelper.readFromFile(
+			), parseHelper.readFromFileAsync(
 				utilJsPath,
 				true//silent
-			);
-
-
-			//parse test js
-			eval(fileContent);
-			var curNamespace = Aura.Utils.Util.prototype;
-			for (var k in curNamespace){
-				var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
-				if(parsedStuffs.length >0){
-					var functionName = parsedStuffs[0];
-
-					masterDictionary[functionName] = {
-						annotatedValue: parsedStuffs[1],
-						origValue : parsedStuffs[2]
-					};
+			)]).then(function(fileContents){
+				var fileContentAuraTest = fileContents[0];
+				var fileContentAuraUtil = fileContents[1];
+				
+				//AURA TEST JS FILE
+				//parse test js
+				eval(fileContentAuraTest);
+				var curNamespace = $A.test;
+				for (var k in $A.test){
+					var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.test.');
+					if(parsedStuffs.length >0){
+						var functionName = parsedStuffs[0];
+						masterDictionary[functionName] = {
+							annotatedValue: parsedStuffs[1],
+							origValue : parsedStuffs[2]
+						};
+					}
 				}
-			}
 
 
 
-			//consolidate js file
-			parseHelper.updateJs(masterDictionary, outputDir);
+				//AURA UTILS JS FILE
+				//parse test js
+				eval(fileContentAuraUtil);
+				var curNamespace = Aura.Utils.Util.prototype;
+				for (var k in curNamespace){
+					var parsedStuffs = parseHelper.parseFunctions(k, curNamespace[k], 'A.util.');
+					if(parsedStuffs.length >0){
+						var functionName = parsedStuffs[0];
+
+						masterDictionary[functionName] = {
+							annotatedValue: parsedStuffs[1],
+							origValue : parsedStuffs[2]
+						};
+					}
+				}
+
+
+
+				//consolidate js file
+				parseHelper.updateJs(masterDictionary, outputDir);
+			});
 	  }
 	});
 }

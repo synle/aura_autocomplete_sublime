@@ -2,6 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
+var Q = require('q');
 
 //internal
 var consolidatorAtom = require('./serializer/serializerAtomHelper');
@@ -26,9 +27,25 @@ var self = {
             self._getSimplePathString(path).yellow
         );
 
-        return fs.readFileSync(path, 'utf-8');
+        var res = fs.readFileSync(path, 'utf-8');
+        return res;
+    },
+    readFromFileAsync: function(path, silent) {
+        var defer = Q.defer();
+        
+        logger.debug(
+            'Reading file...'.magenta.bold,
+            self._getSimplePathString(path).yellow
+        );
+
+        var res = fs.readFileSync(path, 'utf-8');
+
+        defer.resolve(res);
+        return defer.promise;
     },
     listDir: function listDir(dir, res) {
+        var defer = Q.defer();
+
         res = res || {
             app: [],
             cmp: [],
@@ -89,7 +106,8 @@ var self = {
             }
         }
 
-        return res;
+        defer.resolve(res);
+        return defer.promise;
     },
     getParamsFromFuncDef: function(funcDefStr){
         var paramsStr = funcDefStr.match(/\(.*\)/)[0]; // match the first (...)
