@@ -284,6 +284,9 @@
 	'A.test.reloadGlobalValueProviders':
 		'prefix': 'A-test-reloadGlobalValueProviders'
 		'body': 'A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})'
+	'A.test.getGlobalValueProvider':
+		'prefix': 'A-test-getGlobalValueProvider'
+		'body': 'A.test.getGlobalValueProvider(${1:type})'
 	'A.test.getCreationPath':
 		'prefix': 'A-test-getCreationPath'
 		'body': 'A.test.getCreationPath(${1:cmp})'

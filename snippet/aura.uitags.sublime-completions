@@ -1135,7 +1135,7 @@
     },
     {
       "trigger": "aurajstest-jstestCase\tTag Full",
-      "contents": "aurajstest:jstestCase case=\"${1:Optional - java://org.auraframework.def.TestCaseDef}\" suite=\"${2:Optional - java://org.auraframework.def.TestSuiteDef}\" shortName=\"${3:Optional - String}\" url=\"${4:Optional - String}\" status=\"${5:Optional - String}\" individualTestUrl=\"${6:Optional - String}\" done=\"${7:Optional - aurajstest:testStatus}\">${8:}</aurajstest:jstestCase>"
+      "contents": "aurajstest:jstestCase case=\"${1:Optional - java://org.auraframework.def.TestCaseDef}\" suite=\"${2:Optional - java://org.auraframework.def.TestSuiteDef}\" shortName=\"${3:Optional - String}\" runTime=\"${4:Optional - String}\" url=\"${5:Optional - String}\" status=\"${6:Optional - String}\" individualTestUrl=\"${7:Optional - String}\" done=\"${8:Optional - aurajstest:testStatus}\">${9:}</aurajstest:jstestCase>"
     },
     {
       "trigger": "ui-abstractDataGrid\tTag Simple",
@@ -1359,7 +1359,7 @@
     },
     {
       "trigger": "ui-dataGridColumn\tTag Full",
-      "contents": "ui:dataGridColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" type=\"${3:Optional - String}\" sortable=\"${4:Optional - Boolean}\" disabled=\"${5:Optional - Boolean}\" required=\"${6:Optional - Boolean}\" direction=\"${7:Optional - String}\" initialDirectionOnSort=\"${8:Optional - String}\" ascLabel=\"${9:Optional - String}\" descLabel=\"${10:Optional - String}\" order=\"${11:Optional - Integer}\" scope=\"${12:Optional - String}\" onsortchange=\"${13:Optional - Aura.Action}\" outputComponent=\"${14:Optional - Aura.ComponentDefRef[]}\">${15:Implements ui:visible.\tA column of data in ui:dataGrid}</ui:dataGridColumn>"
+      "contents": "ui:dataGridColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" title=\"${3:Optional - String}\" type=\"${4:Optional - String}\" sortable=\"${5:Optional - Boolean}\" disabled=\"${6:Optional - Boolean}\" required=\"${7:Optional - Boolean}\" direction=\"${8:Optional - String}\" initialDirectionOnSort=\"${9:Optional - String}\" ascLabel=\"${10:Optional - String}\" descLabel=\"${11:Optional - String}\" order=\"${12:Optional - Integer}\" scope=\"${13:Optional - String}\" onsortchange=\"${14:Optional - Aura.Action}\" assistiveSortText=\"${15:Optional - String}\" width=\"${16:Optional - Integer}\" outputComponent=\"${17:Optional - Aura.ComponentDefRef[]}\">${18:Implements ui:visible.\tA column of data in ui:dataGrid}</ui:dataGridColumn>"
     },
     {
       "trigger": "ui-dataGridSelectionColumn\tTag Simple",
@@ -1455,7 +1455,7 @@
     },
     {
       "trigger": "ui-dialog\tTag Full",
-      "contents": "ui:dialog description=\"${1:Required - String}\" title=\"${2:Required - String}\" ariaRole=\"${3:Optional - String}\" autoFocus=\"${4:Optional - Boolean}\" buttons=\"${5:Optional - Aura.Component[]}\" clickOutToClose=\"${6:Optional - Boolean}\" isModal=\"${7:Optional - Boolean}\" width=\"${8:Optional - String}\" closeClass=\"${9:Optional - String}\" closeLabel=\"${10:Optional - String}\" closeTitle=\"${11:Optional - String}\" dialogClass=\"${12:Optional - String}\" maskClass=\"${13:Optional - String}\" close=\"${14:Optional - ui:closeDialog}\">${15:A dialog window used for overlays or modals.}</ui:dialog>"
+      "contents": "ui:dialog description=\"${1:Required - String}\" title=\"${2:Required - String}\" ariaRole=\"${3:Optional - String}\" autoFocus=\"${4:Optional - Boolean}\" buttons=\"${5:Optional - Aura.Component[]}\" clickOutToClose=\"${6:Optional - Boolean}\" isModal=\"${7:Optional - Boolean}\" width=\"${8:Optional - String}\" theme=\"${9:Optional - String}\" closeClass=\"${10:Optional - String}\" closeLabel=\"${11:Optional - String}\" closeTitle=\"${12:Optional - String}\" dialogClass=\"${13:Optional - String}\" maskClass=\"${14:Optional - String}\" close=\"${15:Optional - ui:closeDialog}\">${16:A dialog window used for overlays or modals.}</ui:dialog>"
     },
     {
       "trigger": "ui-dialogButtons\tTag Simple",
@@ -1487,7 +1487,7 @@
     },
     {
       "trigger": "ui-dragAndDropAccessibilityMenu\tTag Full",
-      "contents": "ui:dragAndDropAccessibilityMenu class=\"${1:Optional - String}\">${2:A drag and drop accessibility component.}</ui:dragAndDropAccessibilityMenu>"
+      "contents": "ui:dragAndDropAccessibilityMenu class=\"${1:Optional - String}\" draggables=\"${2:Optional - Aura.Component[]}\" dropzoneMenu=\"${3:Optional - List}\">${4:A drag and drop accessibility component.}</ui:dragAndDropAccessibilityMenu>"
     },
     {
       "trigger": "ui-draggable\tTag Simple",
@@ -1495,7 +1495,7 @@
     },
     {
       "trigger": "ui-draggable\tTag Full",
-      "contents": "ui:draggable type=\"${1:Optional - String}\" dataTransfer=\"${2:Optional - Map}\" class=\"${3:Optional - String}\" dragClass=\"${4:Optional - String}\" dragAccessibilityClass=\"${5:Optional - String}\" dragImageClass=\"${6:Optional - String}\" disable=\"${7:Optional - Boolean}\" accessibilityComponent=\"${8:Optional - String}\" isSuccessful=\"${9:Optional - Boolean}\" target=\"${10:Optional - Object}\" isValid=\"${11:Optional - Boolean}\" isInAccessibilityMode=\"${12:Optional - Boolean}\" dragStart=\"${13:Optional - ui:dragEvent}\" dragEnd=\"${14:Optional - ui:dragEvent}\" dropComplete=\"${15:Optional - ui:dragEvent}\">${16:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
+      "contents": "ui:draggable type=\"${1:Optional - String}\" dataTransfer=\"${2:Optional - Map}\" class=\"${3:Optional - String}\" dragClass=\"${4:Optional - String}\" dragAccessibilityClass=\"${5:Optional - String}\" dragImageClass=\"${6:Optional - String}\" disable=\"${7:Optional - Boolean}\" ariaGrabbed=\"${8:Optional - boolean}\" accessibilityComponent=\"${9:Optional - String}\" isSuccessful=\"${10:Optional - Boolean}\" target=\"${11:Optional - Object}\" isValid=\"${12:Optional - Boolean}\" isInAccessibilityMode=\"${13:Optional - Boolean}\" dragStart=\"${14:Optional - ui:dragEvent}\" dragEnd=\"${15:Optional - ui:dragEvent}\" dropComplete=\"${16:Optional - ui:dragEvent}\">${17:Implements ui:hasContextComponent.\tA draggable component in drag and drop operation.}</ui:draggable>"
     },
     {
       "trigger": "ui-dropzone\tTag Simple",
@@ -2071,7 +2071,7 @@
     },
     {
       "trigger": "ui-outputText\tTag Full",
-      "contents": "ui:outputText value=\"${1:Required - String}\">${2:Implements ui:visible.\tDisplays text as specified by the value attribute.}</ui:outputText>"
+      "contents": "ui:outputText value=\"${1:Required - String}\" title=\"${2:Optional - String}\">${3:Implements ui:visible.\tDisplays text as specified by the value attribute.}</ui:outputText>"
     },
     {
       "trigger": "ui-outputTextArea\tTag Simple",
@@ -2263,7 +2263,7 @@
     },
     {
       "trigger": "ui-spinner\tTag Full",
-      "contents": "ui:spinner isVisible=\"${1:Optional - Boolean}\" toggle=\"${2:Optional - ui:toggleLoadingIndicator}\">${3:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
+      "contents": "ui:spinner isVisible=\"${1:Optional - Boolean}\" class=\"${2:Optional - Boolean}\" toggle=\"${3:Optional - ui:toggleLoadingIndicator}\">${4:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
     },
     {
       "trigger": "ui-stamp\tTag Simple",
@@ -2392,382 +2392,6 @@
     {
       "trigger": "ui-virtualList\tTag Full",
       "contents": "ui:virtualList itemTemplate=\"${1:Required - Aura.ComponentDefRef[]}\" itemVar=\"${2:Required - String}\" items=\"${3:Optional - Object[]}\" forceRender=\"${4:Optional - Boolean}\" dataProvider=\"${5:Optional - Aura.Component[]}\">${6:Implements ui:scrollerEmbeddable.\tAura Virtual List}</ui:virtualList>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteDataProvider\tTag Simple",
-      "contents": "uiExamples:autocompleteDataProvider$1>${2:}</uiExamples:autocompleteDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteDataProvider\tTag Full",
-      "contents": "uiExamples:autocompleteDataProvider size=\"${1:Optional - Integer}\">${2:}</uiExamples:autocompleteDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteExample\tTag Simple",
-      "contents": "uiExamples:autocompleteExample$1>${2:}</uiExamples:autocompleteExample>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteExample\tTag Full",
-      "contents": "uiExamples:autocompleteExample autocompleteValue=\"${1:Optional - String}\" autocompleteExtendedOptsValue=\"${2:Optional - String}\" classes=\"${3:Optional - Boolean}\">${4:}</uiExamples:autocompleteExample>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteOptionExample\tTag Simple",
-      "contents": "uiExamples:autocompleteOptionExample$1>${2:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExample>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteOptionExample\tTag Full",
-      "contents": "uiExamples:autocompleteOptionExample>${1:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExample>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteOptionExampleExtended\tTag Simple",
-      "contents": "uiExamples:autocompleteOptionExampleExtended$1>${2:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExampleExtended>"
-    },
-    {
-      "trigger": "uiExamples-autocompleteOptionExampleExtended\tTag Full",
-      "contents": "uiExamples:autocompleteOptionExampleExtended>${1:This component provides a custom representation of a list item in an ui:autocomplete component.}</uiExamples:autocompleteOptionExampleExtended>"
-    },
-    {
-      "trigger": "uiExamples-buttonExample\tTag Simple",
-      "contents": "uiExamples:buttonExample$1>${2:}</uiExamples:buttonExample>"
-    },
-    {
-      "trigger": "uiExamples-buttonExample\tTag Full",
-      "contents": "uiExamples:buttonExample>${1:}</uiExamples:buttonExample>"
-    },
-    {
-      "trigger": "uiExamples-carouselExample\tTag Simple",
-      "contents": "uiExamples:carouselExample$1>${2:}</uiExamples:carouselExample>"
-    },
-    {
-      "trigger": "uiExamples-carouselExample\tTag Full",
-      "contents": "uiExamples:carouselExample>${1:}</uiExamples:carouselExample>"
-    },
-    {
-      "trigger": "uiExamples-checkbox\tTag Simple",
-      "contents": "uiExamples:checkbox$1>${2:}</uiExamples:checkbox>"
-    },
-    {
-      "trigger": "uiExamples-checkbox\tTag Full",
-      "contents": "uiExamples:checkbox myBool=\"${1:Optional - Boolean}\">${2:}</uiExamples:checkbox>"
-    },
-    {
-      "trigger": "uiExamples-currency\tTag Simple",
-      "contents": "uiExamples:currency$1>${2:}</uiExamples:currency>"
-    },
-    {
-      "trigger": "uiExamples-currency\tTag Full",
-      "contents": "uiExamples:currency>${1:}</uiExamples:currency>"
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns\tTag Simple",
-      "contents": "uiExamples:dataGridDynamicColumns$1>${2:}</uiExamples:dataGridDynamicColumns>"
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns\tTag Full",
-      "contents": "uiExamples:dataGridDynamicColumns sortBy=\"${1:Optional - String}\" pageSize=\"${2:Optional - Integer}\" currentPage=\"${3:Optional - Integer}\" totalItems=\"${4:Optional - Integer}\" index=\"${5:Optional - Integer}\" count=\"${6:Optional - Integer}\">${7:}</uiExamples:dataGridDynamicColumns>"
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink\tTag Simple",
-      "contents": "uiExamples:dataGridKitchenSink$1>${2:}</uiExamples:dataGridKitchenSink>"
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink\tTag Full",
-      "contents": "uiExamples:dataGridKitchenSink tableFlavor=\"${1:Optional - String}\" mode=\"${2:Optional - String}\" sortBy=\"${3:Optional - String}\" pageSize=\"${4:Optional - Integer}\" currentPage=\"${5:Optional - Integer}\" totalItems=\"${6:Optional - Integer}\" index=\"${7:Optional - Integer}\" count=\"${8:Optional - Integer}\" className=\"${9:Optional - String}\" rowIndex=\"${10:Optional - Integer}\" gridItems=\"${11:Optional - List}\" gridSelectedItems=\"${12:Optional - List}\">${13:}</uiExamples:dataGridKitchenSink>"
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSinkDataProvider\tTag Simple",
-      "contents": "uiExamples:dataGridKitchenSinkDataProvider$1>${2:}</uiExamples:dataGridKitchenSinkDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSinkDataProvider\tTag Full",
-      "contents": "uiExamples:dataGridKitchenSinkDataProvider sortBy=\"${1:Optional - String}\" empty=\"${2:Optional - Boolean}\" throwError=\"${3:Optional - Boolean}\">${4:}</uiExamples:dataGridKitchenSinkDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-dataProviderExample\tTag Simple",
-      "contents": "uiExamples:dataProviderExample$1>${2:Implements ui:pagingInterface, ui:scrollerEmbeddable.\t}</uiExamples:dataProviderExample>"
-    },
-    {
-      "trigger": "uiExamples-dataProviderExample\tTag Full",
-      "contents": "uiExamples:dataProviderExample>${1:Implements ui:pagingInterface, ui:scrollerEmbeddable.\t}</uiExamples:dataProviderExample>"
-    },
-    {
-      "trigger": "uiExamples-date\tTag Simple",
-      "contents": "uiExamples:date$1>${2:}</uiExamples:date>"
-    },
-    {
-      "trigger": "uiExamples-date\tTag Full",
-      "contents": "uiExamples:date today=\"${1:Optional - Date}\">${2:}</uiExamples:date>"
-    },
-    {
-      "trigger": "uiExamples-datePicker\tTag Simple",
-      "contents": "uiExamples:datePicker$1>${2:}</uiExamples:datePicker>"
-    },
-    {
-      "trigger": "uiExamples-datePicker\tTag Full",
-      "contents": "uiExamples:datePicker selectedDate=\"${1:Optional - Date}\">${2:}</uiExamples:datePicker>"
-    },
-    {
-      "trigger": "uiExamples-datetime\tTag Simple",
-      "contents": "uiExamples:datetime$1>${2:}</uiExamples:datetime>"
-    },
-    {
-      "trigger": "uiExamples-datetime\tTag Full",
-      "contents": "uiExamples:datetime today=\"${1:Optional - Date}\">${2:}</uiExamples:datetime>"
-    },
-    {
-      "trigger": "uiExamples-detailPopover\tTag Simple",
-      "contents": "uiExamples:detailPopover$1>${2:}</uiExamples:detailPopover>"
-    },
-    {
-      "trigger": "uiExamples-detailPopover\tTag Full",
-      "contents": "uiExamples:detailPopover>${1:}</uiExamples:detailPopover>"
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample\tTag Simple",
-      "contents": "uiExamples:dragAndDropExample$1>${2:}</uiExamples:dragAndDropExample>"
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample\tTag Full",
-      "contents": "uiExamples:dragAndDropExample>${1:}</uiExamples:dragAndDropExample>"
-    },
-    {
-      "trigger": "uiExamples-dragAndDropProvider\tTag Simple",
-      "contents": "uiExamples:dragAndDropProvider$1>${2:}</uiExamples:dragAndDropProvider>"
-    },
-    {
-      "trigger": "uiExamples-dragAndDropProvider\tTag Full",
-      "contents": "uiExamples:dragAndDropProvider prefix=\"${1:Optional - String}\" count=\"${2:Optional - Integer}\">${3:}</uiExamples:dragAndDropProvider>"
-    },
-    {
-      "trigger": "uiExamples-email\tTag Simple",
-      "contents": "uiExamples:email$1>${2:}</uiExamples:email>"
-    },
-    {
-      "trigger": "uiExamples-email\tTag Full",
-      "contents": "uiExamples:email>${1:}</uiExamples:email>"
-    },
-    {
-      "trigger": "uiExamples-infiniteDataProvider\tTag Simple",
-      "contents": "uiExamples:infiniteDataProvider$1>${2:}</uiExamples:infiniteDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-infiniteDataProvider\tTag Full",
-      "contents": "uiExamples:infiniteDataProvider listType=\"${1:Optional - String}\">${2:}</uiExamples:infiniteDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-infiniteList\tTag Simple",
-      "contents": "uiExamples:infiniteList$1>${2:}</uiExamples:infiniteList>"
-    },
-    {
-      "trigger": "uiExamples-infiniteList\tTag Full",
-      "contents": "uiExamples:infiniteList>${1:}</uiExamples:infiniteList>"
-    },
-    {
-      "trigger": "uiExamples-infiniteListDataProvider\tTag Simple",
-      "contents": "uiExamples:infiniteListDataProvider$1>${2:}</uiExamples:infiniteListDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-infiniteListDataProvider\tTag Full",
-      "contents": "uiExamples:infiniteListDataProvider>${1:}</uiExamples:infiniteListDataProvider>"
-    },
-    {
-      "trigger": "uiExamples-infiniteListRow\tTag Simple",
-      "contents": "uiExamples:infiniteListRow$1>${2:}</uiExamples:infiniteListRow>"
-    },
-    {
-      "trigger": "uiExamples-infiniteListRow\tTag Full",
-      "contents": "uiExamples:infiniteListRow item=\"${1:Optional - Object}\">${2:}</uiExamples:infiniteListRow>"
-    },
-    {
-      "trigger": "uiExamples-inputExample\tTag Simple",
-      "contents": "uiExamples:inputExample$1>${2:}</uiExamples:inputExample>"
-    },
-    {
-      "trigger": "uiExamples-inputExample\tTag Full",
-      "contents": "uiExamples:inputExample today=\"${1:Optional - Date}\" deadline=\"${2:Optional - Date}\" display=\"${3:Optional - Boolean}\">${4:}</uiExamples:inputExample>"
-    },
-    {
-      "trigger": "uiExamples-inputNumberExample\tTag Simple",
-      "contents": "uiExamples:inputNumberExample$1>${2:}</uiExamples:inputNumberExample>"
-    },
-    {
-      "trigger": "uiExamples-inputNumberExample\tTag Full",
-      "contents": "uiExamples:inputNumberExample>${1:}</uiExamples:inputNumberExample>"
-    },
-    {
-      "trigger": "uiExamples-inputTextExample\tTag Simple",
-      "contents": "uiExamples:inputTextExample$1>${2:}</uiExamples:inputTextExample>"
-    },
-    {
-      "trigger": "uiExamples-inputTextExample\tTag Full",
-      "contents": "uiExamples:inputTextExample>${1:}</uiExamples:inputTextExample>"
-    },
-    {
-      "trigger": "uiExamples-iterationExample\tTag Simple",
-      "contents": "uiExamples:iterationExample$1>${2:}</uiExamples:iterationExample>"
-    },
-    {
-      "trigger": "uiExamples-iterationExample\tTag Full",
-      "contents": "uiExamples:iterationExample>${1:}</uiExamples:iterationExample>"
-    },
-    {
-      "trigger": "uiExamples-libraryExample\tTag Simple",
-      "contents": "uiExamples:libraryExample$1>${2:}</uiExamples:libraryExample>"
-    },
-    {
-      "trigger": "uiExamples-libraryExample\tTag Full",
-      "contents": "uiExamples:libraryExample message=\"${1:Optional - String}\">${2:}</uiExamples:libraryExample>"
-    },
-    {
-      "trigger": "uiExamples-mobileViewport\tTag Simple",
-      "contents": "uiExamples:mobileViewport$1>${2:A component to remove the boilerplate neccessary for a mobile demo.}</uiExamples:mobileViewport>"
-    },
-    {
-      "trigger": "uiExamples-mobileViewport\tTag Full",
-      "contents": "uiExamples:mobileViewport>${1:A component to remove the boilerplate neccessary for a mobile demo.}</uiExamples:mobileViewport>"
-    },
-    {
-      "trigger": "uiExamples-modalContent\tTag Simple",
-      "contents": "uiExamples:modalContent$1>${2:}</uiExamples:modalContent>"
-    },
-    {
-      "trigger": "uiExamples-modalContent\tTag Full",
-      "contents": "uiExamples:modalContent>${1:}</uiExamples:modalContent>"
-    },
-    {
-      "trigger": "uiExamples-outputExample\tTag Simple",
-      "contents": "uiExamples:outputExample$1>${2:}</uiExamples:outputExample>"
-    },
-    {
-      "trigger": "uiExamples-outputExample\tTag Full",
-      "contents": "uiExamples:outputExample myText=\"${1:Optional - String}\" myNum=\"${2:Optional - Decimal}\" myCurr=\"${3:Optional - Decimal}\" myBool=\"${4:Optional - Boolean}\" myDate=\"${5:Optional - Date}\" myDateTime=\"${6:Optional - Date}\" myTextArea=\"${7:Optional - String}\" myURL=\"${8:Optional - String}\">${9:}</uiExamples:outputExample>"
-    },
-    {
-      "trigger": "uiExamples-panelContent\tTag Simple",
-      "contents": "uiExamples:panelContent$1>${2:}</uiExamples:panelContent>"
-    },
-    {
-      "trigger": "uiExamples-panelContent\tTag Full",
-      "contents": "uiExamples:panelContent class=\"${1:Optional - String}\">${2:}</uiExamples:panelContent>"
-    },
-    {
-      "trigger": "uiExamples-panelDialogExample\tTag Simple",
-      "contents": "uiExamples:panelDialogExample$1>${2:}</uiExamples:panelDialogExample>"
-    },
-    {
-      "trigger": "uiExamples-panelDialogExample\tTag Full",
-      "contents": "uiExamples:panelDialogExample>${1:}</uiExamples:panelDialogExample>"
-    },
-    {
-      "trigger": "uiExamples-panelFooter\tTag Simple",
-      "contents": "uiExamples:panelFooter$1>${2:}</uiExamples:panelFooter>"
-    },
-    {
-      "trigger": "uiExamples-panelFooter\tTag Full",
-      "contents": "uiExamples:panelFooter>${1:}</uiExamples:panelFooter>"
-    },
-    {
-      "trigger": "uiExamples-panelHeader\tTag Simple",
-      "contents": "uiExamples:panelHeader$1>${2:}</uiExamples:panelHeader>"
-    },
-    {
-      "trigger": "uiExamples-panelHeader\tTag Full",
-      "contents": "uiExamples:panelHeader notify=\"${1:Optional - ui:notify}\">${2:}</uiExamples:panelHeader>"
-    },
-    {
-      "trigger": "uiExamples-panelPositioningExample\tTag Simple",
-      "contents": "uiExamples:panelPositioningExample$1>${2:}</uiExamples:panelPositioningExample>"
-    },
-    {
-      "trigger": "uiExamples-panelPositioningExample\tTag Full",
-      "contents": "uiExamples:panelPositioningExample>${1:}</uiExamples:panelPositioningExample>"
-    },
-    {
-      "trigger": "uiExamples-phone\tTag Simple",
-      "contents": "uiExamples:phone$1>${2:}</uiExamples:phone>"
-    },
-    {
-      "trigger": "uiExamples-phone\tTag Full",
-      "contents": "uiExamples:phone>${1:}</uiExamples:phone>"
-    },
-    {
-      "trigger": "uiExamples-popupExample\tTag Simple",
-      "contents": "uiExamples:popupExample$1>${2:}</uiExamples:popupExample>"
-    },
-    {
-      "trigger": "uiExamples-popupExample\tTag Full",
-      "contents": "uiExamples:popupExample>${1:}</uiExamples:popupExample>"
-    },
-    {
-      "trigger": "uiExamples-radio\tTag Simple",
-      "contents": "uiExamples:radio$1>${2:}</uiExamples:radio>"
-    },
-    {
-      "trigger": "uiExamples-radio\tTag Full",
-      "contents": "uiExamples:radio stages=\"${1:Optional - String[]}\">${2:}</uiExamples:radio>"
-    },
-    {
-      "trigger": "uiExamples-renderIfExample\tTag Simple",
-      "contents": "uiExamples:renderIfExample$1>${2:}</uiExamples:renderIfExample>"
-    },
-    {
-      "trigger": "uiExamples-renderIfExample\tTag Full",
-      "contents": "uiExamples:renderIfExample display=\"${1:Optional - Boolean}\">${2:}</uiExamples:renderIfExample>"
-    },
-    {
-      "trigger": "uiExamples-secret\tTag Simple",
-      "contents": "uiExamples:secret$1>${2:}</uiExamples:secret>"
-    },
-    {
-      "trigger": "uiExamples-secret\tTag Full",
-      "contents": "uiExamples:secret>${1:}</uiExamples:secret>"
-    },
-    {
-      "trigger": "uiExamples-tabsetExample\tTag Simple",
-      "contents": "uiExamples:tabsetExample$1>${2:}</uiExamples:tabsetExample>"
-    },
-    {
-      "trigger": "uiExamples-tabsetExample\tTag Full",
-      "contents": "uiExamples:tabsetExample>${1:}</uiExamples:tabsetExample>"
-    },
-    {
-      "trigger": "uiExamples-text\tTag Simple",
-      "contents": "uiExamples:text$1>${2:}</uiExamples:text>"
-    },
-    {
-      "trigger": "uiExamples-text\tTag Full",
-      "contents": "uiExamples:text>${1:}</uiExamples:text>"
-    },
-    {
-      "trigger": "uiExamples-textarea\tTag Simple",
-      "contents": "uiExamples:textarea$1>${2:}</uiExamples:textarea>"
-    },
-    {
-      "trigger": "uiExamples-textarea\tTag Full",
-      "contents": "uiExamples:textarea>${1:}</uiExamples:textarea>"
-    },
-    {
-      "trigger": "uiExamples-tooltipExample\tTag Simple",
-      "contents": "uiExamples:tooltipExample$1>${2:}</uiExamples:tooltipExample>"
-    },
-    {
-      "trigger": "uiExamples-tooltipExample\tTag Full",
-      "contents": "uiExamples:tooltipExample>${1:}</uiExamples:tooltipExample>"
-    },
-    {
-      "trigger": "uiExamples-url\tTag Simple",
-      "contents": "uiExamples:url$1>${2:}</uiExamples:url>"
-    },
-    {
-      "trigger": "uiExamples-url\tTag Full",
-      "contents": "uiExamples:url>${1:}</uiExamples:url>"
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink\tTag Simple",
-      "contents": "uiExamples:virtualDataGridKitchenSink$1>${2:}</uiExamples:virtualDataGridKitchenSink>"
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink\tTag Full",
-      "contents": "uiExamples:virtualDataGridKitchenSink tableFlavor=\"${1:Optional - String}\" sortBy=\"${2:Optional - String}\" pageSize=\"${3:Optional - Integer}\" currentPage=\"${4:Optional - Integer}\" totalItems=\"${5:Optional - Integer}\" index=\"${6:Optional - Integer}\" count=\"${7:Optional - Integer}\" className=\"${8:Optional - String}\" rowIndex=\"${9:Optional - Integer}\" gridItems=\"${10:Optional - List}\" gridSelectedItems=\"${11:Optional - List}\" provideNoData=\"${12:Optional - Boolean}\">${13:}</uiExamples:virtualDataGridKitchenSink>"
     },
     {
       "trigger": "actionsTest-beanActionModel\tTag Simple",
@@ -2943,7 +2567,7 @@
     },
     {
       "trigger": "attributesTest-passByValue\tTag Full",
-      "contents": "attributesTest:passByValue initValue=\"${1:Optional - String}\" booleanValue=\"${2:Optional - Boolean}\" numberValue=\"${3:Optional - Double}\" stringValue=\"${4:Optional - String}\" listValue=\"${5:Optional - List}\" mapValue=\"${6:Optional - Map}\" changeEventTriggered=\"${7:Optional - boolean}\" pairAttr=\"${8:Optional - java://org.auraframework.util.type.CustomPairType}\">${9:}</attributesTest:passByValue>"
+      "contents": "attributesTest:passByValue initValue=\"${1:Optional - String}\" booleanValue=\"${2:Optional - Boolean}\" numberValue=\"${3:Optional - Double}\" stringValue=\"${4:Optional - String}\" map=\"${5:Optional - Map}\" listValue=\"${6:Optional - List}\" mapValue=\"${7:Optional - Map}\" changeEventTriggered=\"${8:Optional - boolean}\" pairAttr=\"${9:Optional - java://org.auraframework.util.type.CustomPairType}\">${10:}</attributesTest:passByValue>"
     },
     {
       "trigger": "attributesTest-passByValueInner\tTag Simple",
@@ -3103,7 +2727,7 @@
     },
     {
       "trigger": "auraStorageTest-isolationTest\tTag Full",
-      "contents": "auraStorageTest:isolationTest>${1:}</auraStorageTest:isolationTest>"
+      "contents": "auraStorageTest:isolationTest status=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" isolationKey=\"${3:Optional - String}\" storageItemValue=\"${4:Optional - String}\">${5:}</auraStorageTest:isolationTest>"
     },
     {
       "trigger": "auraStorageTest-memoryAdapterTest\tTag Simple",
@@ -3191,7 +2815,7 @@
     },
     {
       "trigger": "auratest-access\tTag Full",
-      "contents": "auratest:access currentTest=\"${1:Optional - String}\" Public=\"${2:Optional - String}\" Internal=\"${3:Optional - String}\" Global=\"${4:Optional - String}\">${5:An abstract component that provides a basic layout for the ui:list component.}</auratest:access>"
+      "contents": "auratest:access testType=\"${1:Optional - String}\" Public=\"${2:Optional - String}\" Internal=\"${3:Optional - String}\" Global=\"${4:Optional - String}\">${5:An abstract component that provides a basic layout for the ui:list component.}</auratest:access>"
     },
     {
       "trigger": "auratest-aisAsyncTemplate\tTag Simple",
@@ -4831,7 +4455,7 @@
     },
     {
       "trigger": "gvpTest-contextGVPTest\tTag Full",
-      "contents": "gvpTest:contextGVPTest>${1:}</gvpTest:contextGVPTest>"
+      "contents": "gvpTest:contextGVPTest name=\"${1:Optional - String}\" value=\"${2:Optional - String}\">${3:}</gvpTest:contextGVPTest>"
     },
     {
       "trigger": "gvpTest-customGVPInitInTemplateTest\tTag Simple",
@@ -4855,7 +4479,7 @@
     },
     {
       "trigger": "gvpTest-customGVPTest\tTag Full",
-      "contents": "gvpTest:customGVPTest>${1:}</gvpTest:customGVPTest>"
+      "contents": "gvpTest:customGVPTest stringValue=\"${1:Optional - String}\">${2:}</gvpTest:customGVPTest>"
     },
     {
       "trigger": "gvpTest-dynamicLabels\tTag Simple",

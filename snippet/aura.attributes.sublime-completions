@@ -866,6 +866,10 @@
       "contents": "shortName=\"${1:aurajstest:jstestCase - Optional - String}\""
     },
     {
+      "trigger": "aurajstest-jstestCase-runTime\tAttr",
+      "contents": "runTime=\"${1:aurajstest:jstestCase - Optional - String}\""
+    },
+    {
       "trigger": "aurajstest-jstestCase-url\tAttr",
       "contents": "url=\"${1:aurajstest:jstestCase - Optional - String}\""
     },
@@ -1726,6 +1730,10 @@
       "contents": "label=\"${1:ui:dataGridColumn - Optional - String}\""
     },
     {
+      "trigger": "ui-dataGridColumn-title\tAttr",
+      "contents": "title=\"${1:ui:dataGridColumn - Optional - String}\""
+    },
+    {
       "trigger": "ui-dataGridColumn-type\tAttr",
       "contents": "type=\"${1:ui:dataGridColumn - Optional - String}\""
     },
@@ -1768,6 +1776,14 @@
     {
       "trigger": "ui-dataGridColumn-onsortchange\tAttr",
       "contents": "onsortchange=\"${1:ui:dataGridColumn - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "ui-dataGridColumn-assistiveSortText\tAttr",
+      "contents": "assistiveSortText=\"${1:ui:dataGridColumn - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataGridColumn-width\tAttr",
+      "contents": "width=\"${1:ui:dataGridColumn - Optional - Integer}\""
     },
     {
       "trigger": "ui-dataGridColumn-outputComponent\tAttr",
@@ -2076,6 +2092,10 @@
     {
       "trigger": "ui-dialog-width\tAttr",
       "contents": "width=\"${1:ui:dialog - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dialog-theme\tAttr",
+      "contents": "theme=\"${1:ui:dialog - Optional - String}\""
     },
     {
       "trigger": "ui-dialog-closeClass\tAttr",
@@ -3394,6 +3414,10 @@
       "contents": "value=\"${1:ui:outputText - Required - String}\""
     },
     {
+      "trigger": "ui-outputText-title\tAttr",
+      "contents": "title=\"${1:ui:outputText - Optional - String}\""
+    },
+    {
       "trigger": "ui-outputTextArea-value\tAttr",
       "contents": "value=\"${1:ui:outputTextArea - Required - String}\""
     },
@@ -4250,6 +4274,10 @@
       "contents": "isVisible=\"${1:ui:spinner - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-spinner-class\tAttr",
+      "contents": "class=\"${1:ui:spinner - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-spinner-toggle\tAttr",
       "contents": "toggle=\"${1:ui:spinner - Optional - ui:toggleLoadingIndicator}\""
     },
@@ -4802,266 +4830,6 @@
       "contents": "dataProvider=\"${1:ui:virtualList - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "uiExamples-autocompleteDataProvider-size\tAttr",
-      "contents": "size=\"${1:uiExamples:autocompleteDataProvider - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-autocompleteExample-autocompleteValue\tAttr",
-      "contents": "autocompleteValue=\"${1:uiExamples:autocompleteExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-autocompleteExample-autocompleteExtendedOptsValue\tAttr",
-      "contents": "autocompleteExtendedOptsValue=\"${1:uiExamples:autocompleteExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-autocompleteExample-classes\tAttr",
-      "contents": "classes=\"${1:uiExamples:autocompleteExample - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-checkbox-myBool\tAttr",
-      "contents": "myBool=\"${1:uiExamples:checkbox - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-sortBy\tAttr",
-      "contents": "sortBy=\"${1:uiExamples:dataGridDynamicColumns - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-pageSize\tAttr",
-      "contents": "pageSize=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-currentPage\tAttr",
-      "contents": "currentPage=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-totalItems\tAttr",
-      "contents": "totalItems=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-index\tAttr",
-      "contents": "index=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridDynamicColumns-count\tAttr",
-      "contents": "count=\"${1:uiExamples:dataGridDynamicColumns - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-tableFlavor\tAttr",
-      "contents": "tableFlavor=\"${1:uiExamples:dataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-mode\tAttr",
-      "contents": "mode=\"${1:uiExamples:dataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-sortBy\tAttr",
-      "contents": "sortBy=\"${1:uiExamples:dataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-pageSize\tAttr",
-      "contents": "pageSize=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-currentPage\tAttr",
-      "contents": "currentPage=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-totalItems\tAttr",
-      "contents": "totalItems=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-index\tAttr",
-      "contents": "index=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-count\tAttr",
-      "contents": "count=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-className\tAttr",
-      "contents": "className=\"${1:uiExamples:dataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-rowIndex\tAttr",
-      "contents": "rowIndex=\"${1:uiExamples:dataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-gridItems\tAttr",
-      "contents": "gridItems=\"${1:uiExamples:dataGridKitchenSink - Optional - List}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSink-gridSelectedItems\tAttr",
-      "contents": "gridSelectedItems=\"${1:uiExamples:dataGridKitchenSink - Optional - List}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSinkDataProvider-sortBy\tAttr",
-      "contents": "sortBy=\"${1:uiExamples:dataGridKitchenSinkDataProvider - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSinkDataProvider-empty\tAttr",
-      "contents": "empty=\"${1:uiExamples:dataGridKitchenSinkDataProvider - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-dataGridKitchenSinkDataProvider-throwError\tAttr",
-      "contents": "throwError=\"${1:uiExamples:dataGridKitchenSinkDataProvider - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-date-today\tAttr",
-      "contents": "today=\"${1:uiExamples:date - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-datePicker-selectedDate\tAttr",
-      "contents": "selectedDate=\"${1:uiExamples:datePicker - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-datetime-today\tAttr",
-      "contents": "today=\"${1:uiExamples:datetime - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample-_context1\tAttr",
-      "contents": "_context1=\"${1:uiExamples:dragAndDropExample - Optional - Object}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample-_context2\tAttr",
-      "contents": "_context2=\"${1:uiExamples:dragAndDropExample - Optional - Object}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample-_context3\tAttr",
-      "contents": "_context3=\"${1:uiExamples:dragAndDropExample - Optional - Object}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropExample-_accessibilityComponent\tAttr",
-      "contents": "_accessibilityComponent=\"${1:uiExamples:dragAndDropExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropProvider-prefix\tAttr",
-      "contents": "prefix=\"${1:uiExamples:dragAndDropProvider - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-dragAndDropProvider-count\tAttr",
-      "contents": "count=\"${1:uiExamples:dragAndDropProvider - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-infiniteDataProvider-listType\tAttr",
-      "contents": "listType=\"${1:uiExamples:infiniteDataProvider - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-infiniteListRow-item\tAttr",
-      "contents": "item=\"${1:uiExamples:infiniteListRow - Optional - Object}\""
-    },
-    {
-      "trigger": "uiExamples-inputExample-today\tAttr",
-      "contents": "today=\"${1:uiExamples:inputExample - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-inputExample-deadline\tAttr",
-      "contents": "deadline=\"${1:uiExamples:inputExample - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-inputExample-display\tAttr",
-      "contents": "display=\"${1:uiExamples:inputExample - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-libraryExample-message\tAttr",
-      "contents": "message=\"${1:uiExamples:libraryExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myText\tAttr",
-      "contents": "myText=\"${1:uiExamples:outputExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myNum\tAttr",
-      "contents": "myNum=\"${1:uiExamples:outputExample - Optional - Decimal}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myCurr\tAttr",
-      "contents": "myCurr=\"${1:uiExamples:outputExample - Optional - Decimal}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myBool\tAttr",
-      "contents": "myBool=\"${1:uiExamples:outputExample - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myDate\tAttr",
-      "contents": "myDate=\"${1:uiExamples:outputExample - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myDateTime\tAttr",
-      "contents": "myDateTime=\"${1:uiExamples:outputExample - Optional - Date}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myTextArea\tAttr",
-      "contents": "myTextArea=\"${1:uiExamples:outputExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-outputExample-myURL\tAttr",
-      "contents": "myURL=\"${1:uiExamples:outputExample - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-panelContent-class\tAttr",
-      "contents": "class=\"${1:uiExamples:panelContent - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-panelHeader-notify\tAttr",
-      "contents": "notify=\"${1:uiExamples:panelHeader - Optional - ui:notify}\""
-    },
-    {
-      "trigger": "uiExamples-radio-stages\tAttr",
-      "contents": "stages=\"${1:uiExamples:radio - Optional - String[]}\""
-    },
-    {
-      "trigger": "uiExamples-renderIfExample-display\tAttr",
-      "contents": "display=\"${1:uiExamples:renderIfExample - Optional - Boolean}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-tableFlavor\tAttr",
-      "contents": "tableFlavor=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-sortBy\tAttr",
-      "contents": "sortBy=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-pageSize\tAttr",
-      "contents": "pageSize=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-currentPage\tAttr",
-      "contents": "currentPage=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-totalItems\tAttr",
-      "contents": "totalItems=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-index\tAttr",
-      "contents": "index=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-count\tAttr",
-      "contents": "count=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-className\tAttr",
-      "contents": "className=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - String}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-rowIndex\tAttr",
-      "contents": "rowIndex=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Integer}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-gridItems\tAttr",
-      "contents": "gridItems=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - List}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-gridSelectedItems\tAttr",
-      "contents": "gridSelectedItems=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - List}\""
-    },
-    {
-      "trigger": "uiExamples-virtualDataGridKitchenSink-provideNoData\tAttr",
-      "contents": "provideNoData=\"${1:uiExamples:virtualDataGridKitchenSink - Optional - Boolean}\""
-    },
-    {
       "trigger": "actionsTest-beanActionModel-counter\tAttr",
       "contents": "counter=\"${1:actionsTest:beanActionModel - Optional - string}\""
     },
@@ -5562,6 +5330,10 @@
       "contents": "stringValue=\"${1:attributesTest:passByValue - Optional - String}\""
     },
     {
+      "trigger": "attributesTest-passByValue-map\tAttr",
+      "contents": "map=\"${1:attributesTest:passByValue - Optional - Map}\""
+    },
+    {
       "trigger": "attributesTest-passByValue-listValue\tAttr",
       "contents": "listValue=\"${1:attributesTest:passByValue - Optional - List}\""
     },
@@ -5758,6 +5530,22 @@
       "contents": "dupNamedStorage=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
     },
     {
+      "trigger": "auraStorageTest-isolationTest-status\tAttr",
+      "contents": "status=\"${1:auraStorageTest:isolationTest - Optional - String}\""
+    },
+    {
+      "trigger": "auraStorageTest-isolationTest-items\tAttr",
+      "contents": "items=\"${1:auraStorageTest:isolationTest - Optional - Object}\""
+    },
+    {
+      "trigger": "auraStorageTest-isolationTest-isolationKey\tAttr",
+      "contents": "isolationKey=\"${1:auraStorageTest:isolationTest - Optional - String}\""
+    },
+    {
+      "trigger": "auraStorageTest-isolationTest-storageItemValue\tAttr",
+      "contents": "storageItemValue=\"${1:auraStorageTest:isolationTest - Optional - String}\""
+    },
+    {
       "trigger": "auraStorageTest-newComponent-defaultExpiration\tAttr",
       "contents": "defaultExpiration=\"${1:auraStorageTest:newComponent - Optional - Integer}\""
     },
@@ -5814,8 +5602,8 @@
       "contents": "version=\"${1:auraStorageTest:versionTest - Optional - String}\""
     },
     {
-      "trigger": "auratest-access-currentTest\tAttr",
-      "contents": "currentTest=\"${1:auratest:access - Optional - String}\""
+      "trigger": "auratest-access-testType\tAttr",
+      "contents": "testType=\"${1:auratest:access - Optional - String}\""
     },
     {
       "trigger": "auratest-access-Private\tAttr",
@@ -6810,6 +6598,14 @@
       "contents": "attributeLabel=\"${1:gvpTest:basicTest - Optional - String}\""
     },
     {
+      "trigger": "gvpTest-contextGVPTest-name\tAttr",
+      "contents": "name=\"${1:gvpTest:contextGVPTest - Optional - String}\""
+    },
+    {
+      "trigger": "gvpTest-contextGVPTest-value\tAttr",
+      "contents": "value=\"${1:gvpTest:contextGVPTest - Optional - String}\""
+    },
+    {
       "trigger": "gvpTest-customGVPInitInTemplateTest-valueChanged\tAttr",
       "contents": "valueChanged=\"${1:gvpTest:customGVPInitInTemplateTest - Optional - Boolean}\""
     },
@@ -6820,6 +6616,10 @@
     {
       "trigger": "gvpTest-customGVPTemplate-stringValue\tAttr",
       "contents": "stringValue=\"${1:gvpTest:customGVPTemplate - Optional - String}\""
+    },
+    {
+      "trigger": "gvpTest-customGVPTest-stringValue\tAttr",
+      "contents": "stringValue=\"${1:gvpTest:customGVPTest - Optional - String}\""
     },
     {
       "trigger": "gvpTest-labelProvider-simplevalue1\tAttr",
@@ -7340,6 +7140,10 @@
     {
       "trigger": "iterationTest-resetIteration-innerClassName\tAttr",
       "contents": "innerClassName=\"${1:iterationTest:resetIteration - Optional - String}\""
+    },
+    {
+      "trigger": "iterationTest-resetIteration-_initialized\tAttr",
+      "contents": "_initialized=\"${1:iterationTest:resetIteration - Optional - String}\""
     },
     {
       "trigger": "iterationTest-startAndEndIndexWithDefaults-items\tAttr",

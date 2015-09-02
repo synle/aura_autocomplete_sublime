@@ -142,6 +142,10 @@
       "contents": "cmp.getDef().getHelper().hideRefreshing(${1:cmp})"
     },
     {
+      "trigger": "helper-auradocs-docs-setLayout",
+      "contents": "cmp.getDef().getHelper().setLayout(${1:cmp},${2:layout},${3:parameters})"
+    },
+    {
       "trigger": "helper-auradocs-editorPanel-createCodeMirror",
       "contents": "cmp.getDef().getHelper().createCodeMirror(${1:cmp})"
     },
@@ -239,7 +243,7 @@
     },
     {
       "trigger": "helper-ui-abstractDataGrid-deriveItemShape",
-      "contents": "cmp.getDef().getHelper().deriveItemShape(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().deriveItemShape(${1:})"
     },
     {
       "trigger": "helper-ui-abstractDataGrid-handleDataChange",
@@ -247,15 +251,15 @@
     },
     {
       "trigger": "helper-ui-abstractDataGrid-handleModeChange",
-      "contents": "cmp.getDef().getHelper().handleModeChange(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().handleModeChange(${1:})"
     },
     {
       "trigger": "helper-ui-abstractDataGrid-handleSortByChange",
-      "contents": "cmp.getDef().getHelper().handleSortByChange(${1:concrete})"
+      "contents": "cmp.getDef().getHelper().handleSortByChange(${1:})"
     },
     {
       "trigger": "helper-ui-abstractDataGrid-handleAddRemove",
-      "contents": "cmp.getDef().getHelper().handleAddRemove(${1:cmp},${2:params})"
+      "contents": "cmp.getDef().getHelper().handleAddRemove(${1:cmp})"
     },
     {
       "trigger": "helper-ui-abstractList-handleDataChange",
@@ -263,7 +267,7 @@
     },
     {
       "trigger": "helper-ui-abstractList-beforeRefresh",
-      "contents": "cmp.getDef().getHelper().beforeRefresh(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().beforeRefresh(${1:component})"
     },
     {
       "trigger": "helper-ui-abstractList-updateEmptyListContent",
@@ -355,7 +359,7 @@
     },
     {
       "trigger": "helper-ui-autocompleteList-handleEsckeydown",
-      "contents": "cmp.getDef().getHelper().handleEsckeydown(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleEsckeydown(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteList-handleKeydown",
@@ -367,11 +371,11 @@
     },
     {
       "trigger": "helper-ui-autocompleteList-handlePressOnHighlighted",
-      "contents": "cmp.getDef().getHelper().handlePressOnHighlighted(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handlePressOnHighlighted(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteList-handleTabkeydown",
-      "contents": "cmp.getDef().getHelper().handleTabkeydown(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleTabkeydown(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteList-hasVisibleOption",
@@ -419,7 +423,7 @@
     },
     {
       "trigger": "helper-ui-autocompleteOption-displayText",
-      "contents": "cmp.getDef().getHelper().displayText(${1:component},${2:keyword})"
+      "contents": "cmp.getDef().getHelper().displayText(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteOption-handleMouseover",
@@ -443,7 +447,7 @@
     },
     {
       "trigger": "helper-ui-button-updateStatefulClasses",
-      "contents": "cmp.getDef().getHelper().updateStatefulClasses(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().updateStatefulClasses(${1:cmp})"
     },
     {
       "trigger": "helper-ui-carousel-initialize",
@@ -451,7 +455,7 @@
     },
     {
       "trigger": "helper-ui-carousel-_buildCarouselPlugin",
-      "contents": "cmp.getDef().getHelper()._buildCarouselPlugin(${1:cmp})"
+      "contents": "cmp.getDef().getHelper()._buildCarouselPlugin(${1:})"
     },
     {
       "trigger": "helper-ui-carousel-initializeInstrumentation",
@@ -559,7 +563,7 @@
     },
     {
       "trigger": "helper-ui-carouselDeprecated-refresh",
-      "contents": "cmp.getDef().getHelper().refresh(${1:cmp},${2:evt})"
+      "contents": "cmp.getDef().getHelper().refresh(${1:cmp})"
     },
     {
       "trigger": "helper-ui-carouselDeprecated-updateSize",
@@ -599,11 +603,11 @@
     },
     {
       "trigger": "helper-ui-carouselDeprecated-handleScrollMove",
-      "contents": "cmp.getDef().getHelper().handleScrollMove(${1:cmp},${2:evt})"
+      "contents": "cmp.getDef().getHelper().handleScrollMove(${1:cmp})"
     },
     {
       "trigger": "helper-ui-carouselDeprecated-handleScrollEnd",
-      "contents": "cmp.getDef().getHelper().handleScrollEnd(${1:cmp},${2:evt})"
+      "contents": "cmp.getDef().getHelper().handleScrollEnd(${1:cmp})"
     },
     {
       "trigger": "helper-ui-carouselDeprecated-showPage",
@@ -747,7 +751,7 @@
     },
     {
       "trigger": "helper-ui-carouselPage-_buildScrollerPagePlugin",
-      "contents": "cmp.getDef().getHelper()._buildScrollerPagePlugin(${1:cmp})"
+      "contents": "cmp.getDef().getHelper()._buildScrollerPagePlugin(${1:})"
     },
     {
       "trigger": "helper-ui-carouselPage-_initScrollerPagePlugin",
@@ -1682,16 +1686,8 @@
       "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputDate-handleUpdate",
-      "contents": "cmp.getDef().getHelper().handleUpdate(${1:component},${2:event})"
-    },
-    {
       "trigger": "helper-ui-inputDate-doUpdate",
       "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
-    },
-    {
-      "trigger": "helper-ui-inputDate-addDomHandler",
-      "contents": "cmp.getDef().getHelper().addDomHandler(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-inputDate-getInputElement",
@@ -3892,46 +3888,6 @@
     {
       "trigger": "helper-ui-virtualList-_eventDelegator",
       "contents": "cmp.getDef().getHelper()._eventDelegator(${1:cmp},${2:e})"
-    },
-    {
-      "trigger": "helper-uiExamples-autocompleteDataProvider-provide",
-      "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSink-fireAddRemove",
-      "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSink-changeRowDisabled",
-      "contents": "cmp.getDef().getHelper().changeRowDisabled(${1:cmp},${2:index},${3:disable})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSink-changeRowClass",
-      "contents": "cmp.getDef().getHelper().changeRowClass(${1:cmp},${2:index},${3:className},${4:op})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-sort",
-      "contents": "cmp.getDef().getHelper().sort(${1:items},${2:column},${3:descending})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-applyPagination",
-      "contents": "cmp.getDef().getHelper().applyPagination(${1:tasks},${2:currentPage},${3:pageSize})"
-    },
-    {
-      "trigger": "helper-uiExamples-dataGridKitchenSinkDataProvider-createTasks",
-      "contents": "cmp.getDef().getHelper().createTasks(${1:cmp})"
-    },
-    {
-      "trigger": "helper-uiExamples-libraryExample-getLoadedScriptMessage",
-      "contents": "cmp.getDef().getHelper().getLoadedScriptMessage(${1:})"
-    },
-    {
-      "trigger": "helper-uiExamples-panelPositioningExample-doSomething",
-      "contents": "cmp.getDef().getHelper().doSomething(${1:})"
-    },
-    {
-      "trigger": "helper-uiExamples-virtualDataGridKitchenSink-generateColumnConfigs",
-      "contents": "cmp.getDef().getHelper().generateColumnConfigs(${1:cmp})"
     },
     {
       "trigger": "helper-actionsTest-deferredServerAction-getSuccess",

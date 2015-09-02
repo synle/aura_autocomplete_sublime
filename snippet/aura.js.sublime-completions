@@ -382,6 +382,10 @@
       "contents": "A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})"
     },
     {
+      "trigger": "A-test-getGlobalValueProvider",
+      "contents": "A.test.getGlobalValueProvider(${1:type})"
+    },
+    {
       "trigger": "A-test-getCreationPath",
       "contents": "A.test.getCreationPath(${1:cmp})"
     },

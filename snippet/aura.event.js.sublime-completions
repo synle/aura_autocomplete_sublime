@@ -858,10 +858,6 @@
       "contents": "//  component: virtualDataGrid\n//    evtName: onsort\n//    evtType: ui:sort\n//description: \nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onsort\");\ne.setParams({\n\tsortBy: \"${2:String}\",\n\tcallback: \"${3:Object}\",\n});\ne.fire();"
     },
     {
-      "trigger": "evt-uiExamples-panelHeader-notify",
-      "contents": "//  component: panelHeader\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panelHeader}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-actionsTest-chainBoundaryCases-press",
       "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
