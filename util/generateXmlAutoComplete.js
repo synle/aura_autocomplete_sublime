@@ -9,6 +9,22 @@ var _ = require('lodash');
 var parseHelper = require('./parseHelper');
 var logger = require('./logger');//internal logger
 
+var BLACK_LIST_NAMESPACE = {
+	auraTest : 1,
+	test : 1,
+	uitest : 1
+}
+
+
+function isValidNamespace(namespace){
+	if(BLACK_LIST_NAMESPACE[namespace] !== undefined){
+		//black listed namespace, will be ignored
+		return false;
+	}
+
+	return true;
+}
+
 
 //componentFileNames: dictionary containing all js, evt and cmp files
 //outputDir: where to store the snippet
@@ -99,6 +115,11 @@ module.exports = function processParser(componentFileNames, outputDir){
 			attributes : []
 		}
 
+		if(isValidNamespace(namespace) === false){
+			//black listed namespace, will be ignored
+			return;
+		}
+
 
 		//parsing xml
 		$ = cheerio.load( fileContent );
@@ -176,6 +197,12 @@ module.exports = function processParser(componentFileNames, outputDir){
 		var componentName = fileBreakups[1];
 		var fullCompName = namespace + ':' + componentName;
 		var componentHelpers = [];
+
+
+		if(isValidNamespace(namespace) === false){
+			//black listed namespace, will be ignored
+			return;
+		}
 
 		var fileContent = parseHelper.readFromFile(
 			fileName,
