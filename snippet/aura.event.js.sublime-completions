@@ -922,62 +922,6 @@
       "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
-      "trigger": "evt-test-parentComponent-parentEvent",
-      "contents": "//  component: parentComponent\n//    evtName: parentEvent\n//    evtType: test:parentEvent\n//description: The Description\nvar e = cmp.find(\"${1:parentComponent}\").get(\"e.parentEvent\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-require-versionEvt",
-      "contents": "//  component: require\n//    evtName: versionEvt\n//    evtType: auratest:testEvent\n//description: \nvar e = cmp.find(\"${1:require}\").get(\"e.versionEvt\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-testActionEvent-local",
-      "contents": "//  component: testActionEvent\n//    evtName: local\n//    evtType: test:testActionEventEvent\n//description: \nvar e = cmp.find(\"${1:testActionEvent}\").get(\"e.local\");\ne.setParams({\n\tmsg: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-testEventBubblingEmitter-bubblingEvent",
-      "contents": "//  component: testEventBubblingEmitter\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEvent\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitter}\").get(\"e.bubblingEvent\");\ne.setParams({\n\tname: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-testEventBubblingEmitterExtended-bubblingEvent",
-      "contents": "//  component: testEventBubblingEmitterExtended\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventExtended\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterExtended}\").get(\"e.bubblingEvent\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-testEventBubblingEmitterOther-bubblingEvent",
-      "contents": "//  component: testEventBubblingEmitterOther\n//    evtName: bubblingEvent\n//    evtType: test:testEventBubblingEventOther\n//description: \nvar e = cmp.find(\"${1:testEventBubblingEmitterOther}\").get(\"e.bubblingEvent\");\ne.setParams({\n\tname: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-test_Events_BiggerComponentForEvent-testBiggerPress",
-      "contents": "//  component: test_Events_BiggerComponentForEvent\n//    evtName: testBiggerPress\n//    evtType: test:test_Events_Event2\n//description: \nvar e = cmp.find(\"${1:test_Events_BiggerComponentForEvent}\").get(\"e.testBiggerPress\");\ne.setParams({\n\ttestEvent2: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-test_Events_ComponentForEvent-testPress",
-      "contents": "//  component: test_Events_ComponentForEvent\n//    evtName: testPress\n//    evtType: test:test_Events_Event\n//description: \nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testPress\");\ne.setParams({\n\ttestEvent: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-test_Events_ComponentForEvent-testMouseOver",
-      "contents": "//  component: test_Events_ComponentForEvent\n//    evtName: testMouseOver\n//    evtType: test:test_Events_ParentEvent\n//description: \nvar e = cmp.find(\"${1:test_Events_ComponentForEvent}\").get(\"e.testMouseOver\");\ne.setParams({\n\ttestParentEvent: \"${2:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-test-test_button-press",
-      "contents": "//  component: test_button\n//    evtName: press\n//    evtType: test:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-uitest-panel2-notify",
-      "contents": "//  component: panel2\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panel2}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-uitest-panel2Content-notify",
-      "contents": "//  component: panel2Content\n//    evtName: notify\n//    evtType: ui:notify\n//description: \nvar e = cmp.find(\"${1:panel2Content}\").get(\"e.notify\");\ne.setParams({\n\tcurrentTarget: \"${2:String}\",// Refer to a parent component that holds some relevant information about the event\n\ttarget: \"${3:String}\",// Identifies the component on which the event occurred\n\tscope: \"${4:String}\",// all || id\n\ttypeOf: \"${5:String}\",// Interface to validate against\n\taction: \"${6:String}\",// Method to invoke\n\tpayload: \"${7:Object}\",// Attributes passed to the method\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-uitest-pillContainer_InputText-keydown",
-      "contents": "//  component: pillContainer_InputText\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:pillContainer_InputText}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-uitest-popupTestTriggerElement-popupTargetToggle",
-      "contents": "//  component: popupTestTriggerElement\n//    evtName: popupTargetToggle\n//    evtType: ui:popupTargetToggle\n//description: \nvar e = cmp.find(\"${1:popupTestTriggerElement}\").get(\"e.popupTargetToggle\");\ne.setParams({\n\tcomponent: \"${2:Aura.Component[]}\",// The custom popup trigger.\n\tshow: \"${3:Boolean}\",// Whether to show or hide the target.\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-updateTest-updateable-click",
       "contents": "//  component: updateable\n//    evtName: click\n//    evtType: updateTest:updateableEvent\n//description: \nvar e = cmp.find(\"${1:updateable}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
     }
