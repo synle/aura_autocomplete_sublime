@@ -32,7 +32,7 @@ module.exports = function processParser(componentFileNames, outputDir){
 		var fileContent = parseHelper.readFromFile(
 			fileName,
 			true
-		);	
+		);
 
 
 		//get file breakup which allows us to generate a more accurate component name
@@ -106,7 +106,7 @@ module.exports = function processParser(componentFileNames, outputDir){
 		//parsing componet stuffs
 		var parsedComponent = $('aura\\:component')[0];
 		if(parsedComponent === undefined){
-			logger.error('Error! cannot find aura:component tag in'.bold.red, fileName);
+			logger.info('Error! cannot find aura:component tag in'.bold.red, fileName);
 			return;//exit
 		}
 		// console.log('parsed'.red, parsedComponent);
@@ -142,9 +142,9 @@ module.exports = function processParser(componentFileNames, outputDir){
 
 			if (matchingEvtDef === undefined){
 				logger.error('Error! cant find in dictionary'.bold.red,evtObj.type);
-				return;	
+				return;
 			}
-			
+
 			//some events are treated as attribute
 			arrayAttributes.push({
 				component: componentObj,
@@ -161,14 +161,14 @@ module.exports = function processParser(componentFileNames, outputDir){
 			});
 
 
-			componentObj.attributes.push(evtObj);	
+			componentObj.attributes.push(evtObj);
 		});
 
 		arrayComponents.push(componentObj);
-		
+
 	});
 
-	
+
 	//look up the helper
 	componentFileNames.helperjs.forEach(function(fileName){
 		var fileBreakups = parseHelper.getComponentBreakup(fileName);
