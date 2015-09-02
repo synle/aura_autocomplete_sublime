@@ -21,5 +21,10 @@ module.exports = {
             //     required: true   
             // }
         }
+    },
+    BLACK_LIST_NAMESPACE : {
+        auraTest : 1,
+        test : 1,
+        uitest : 1
     }
 };

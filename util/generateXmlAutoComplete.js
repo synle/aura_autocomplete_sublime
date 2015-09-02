@@ -8,16 +8,11 @@ var _ = require('lodash');
 //internal dependencies
 var parseHelper = require('./parseHelper');
 var logger = require('./logger');//internal logger
-
-var BLACK_LIST_NAMESPACE = {
-	auraTest : 1,
-	test : 1,
-	uitest : 1
-}
+var config = require('../config');
 
 
 function isValidNamespace(namespace){
-	if(BLACK_LIST_NAMESPACE[namespace] !== undefined){
+	if(config.BLACK_LIST_NAMESPACE[namespace] !== undefined){
 		//black listed namespace, will be ignored
 		return false;
 	}
