@@ -26,7 +26,7 @@ describe('Sublime Text 3 - Snippet Validation', function() {
             );
         });
     })
-    
+
     describe('aura.attributes.sublime-completions', function(){
         var fileName;
         var content;
@@ -48,7 +48,7 @@ describe('Sublime Text 3 - Snippet Validation', function() {
             );
         });
     })
-    
+
     describe('aura.uitags.sublime-completions', function(){
         var fileName;
         var content;
@@ -79,7 +79,7 @@ describe('Sublime Text 3 - Snippet Validation', function() {
             );
         });
     })
-    
+
     describe('aura.event.js.sublime valid', function(){
         var fileName;
         var content;
@@ -101,7 +101,7 @@ describe('Sublime Text 3 - Snippet Validation', function() {
             );
         });
     })
-    
+
     describe('aura.helper.js.sublime valid', function(){
         var fileName;
         var content;
@@ -118,8 +118,8 @@ describe('Sublime Text 3 - Snippet Validation', function() {
             assertSampleSnippet(
                 fileName,
                 parsedContent,
-                "helper-test-testActionCallbacks-runTest", //target trigger
-                "cmp.getDef().getHelper().runTest(${1:component},${2:action},${3:callback},${4:expected})" //target contents
+                "helper-auraStorage-init-getStorage", //target trigger
+                "cmp.getDef().getHelper().getStorage(${1:cmp})" //target contents
             );
         });
     })
