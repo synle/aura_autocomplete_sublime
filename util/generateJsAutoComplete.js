@@ -66,7 +66,7 @@ module.exports = function processParser(componentFileNames, outputDir){
 			var Component = AuraLayoutService = function(){};
 
 			//needs to be injected via code
-	    var window = incomingWindow;
+	    	var window = incomingWindow;
 			var navigator = incomingWindow.navigator;
 
 
