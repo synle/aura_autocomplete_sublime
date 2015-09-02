@@ -25,6 +25,7 @@ module.exports = {
     BLACK_LIST_NAMESPACE : {
         auraTest : 1,
         test : 1,
-        uitest : 1
+        uitest : 1,
+        uiExamples : 1
     }
 };
