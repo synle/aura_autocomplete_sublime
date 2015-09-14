@@ -438,6 +438,18 @@
       "contents": "cmp.getDef().getHelper().htmlEscape(${1:str})"
     },
     {
+      "trigger": "helper-ui-autocompletePanel-_getScrollableParent",
+      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-cleanEvents",
+      "contents": "cmp.getDef().getHelper().cleanEvents(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-handleReferenceElement",
+      "contents": "cmp.getDef().getHelper().handleReferenceElement(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-button-catchAndFireEvent",
       "contents": "cmp.getDef().getHelper().catchAndFireEvent(${1:cmp},${2:event},${3:eventName})"
     },
