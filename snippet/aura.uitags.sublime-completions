@@ -3943,7 +3943,7 @@
     },
     {
       "trigger": "expressionTest-functions\tTag Full",
-      "contents": "expressionTest:functions integer=\"${1:Optional - integer}\" double=\"${2:Optional - double}\" doubleString=\"${3:Optional - String}\" string=\"${4:Optional - String}\" emptyString=\"${5:Optional - String}\" Infinity=\"${6:Optional - double}\" NegativeInfinity=\"${7:Optional - double}\" NaN=\"${8:Optional - double}\" object=\"${9:Optional - Object}\" list=\"${10:Optional - List}\" label0=\"${11:Optional - String}\" label1=\"${12:Optional - String}\" label2=\"${13:Optional - String}\">${14:}</expressionTest:functions>"
+      "contents": "expressionTest:functions integer=\"${1:Optional - integer}\" double=\"${2:Optional - double}\" doubleString=\"${3:Optional - String}\" string=\"${4:Optional - String}\" emptyString=\"${5:Optional - String}\" Infinity=\"${6:Optional - double}\" NegativeInfinity=\"${7:Optional - double}\" NaN=\"${8:Optional - double}\" nullObj=\"${9:Optional - Object}\" nullList=\"${10:Optional - List}\" object=\"${11:Optional - Object}\" map=\"${12:Optional - Map}\" list=\"${13:Optional - List}\" listWithNull=\"${14:Optional - List}\" listWithList=\"${15:Optional - List}\" listWithNested4Layers=\"${16:Optional - List}\" listWithLoop=\"${17:Optional - List}\" label0=\"${18:Optional - String}\" label1=\"${19:Optional - String}\" label2=\"${20:Optional - String}\">${21:}</expressionTest:functions>"
     },
     {
       "trigger": "expressionTest-mapValue\tTag Simple",

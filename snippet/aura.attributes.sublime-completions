@@ -6514,12 +6514,40 @@
       "contents": "NaN=\"${1:expressionTest:functions - Optional - double}\""
     },
     {
+      "trigger": "expressionTest-functions-nullObj\tAttr",
+      "contents": "nullObj=\"${1:expressionTest:functions - Optional - Object}\""
+    },
+    {
+      "trigger": "expressionTest-functions-nullList\tAttr",
+      "contents": "nullList=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
       "trigger": "expressionTest-functions-object\tAttr",
       "contents": "object=\"${1:expressionTest:functions - Optional - Object}\""
     },
     {
+      "trigger": "expressionTest-functions-map\tAttr",
+      "contents": "map=\"${1:expressionTest:functions - Optional - Map}\""
+    },
+    {
       "trigger": "expressionTest-functions-list\tAttr",
       "contents": "list=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
+      "trigger": "expressionTest-functions-listWithNull\tAttr",
+      "contents": "listWithNull=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
+      "trigger": "expressionTest-functions-listWithList\tAttr",
+      "contents": "listWithList=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
+      "trigger": "expressionTest-functions-listWithNested4Layers\tAttr",
+      "contents": "listWithNested4Layers=\"${1:expressionTest:functions - Optional - List}\""
+    },
+    {
+      "trigger": "expressionTest-functions-listWithLoop\tAttr",
+      "contents": "listWithLoop=\"${1:expressionTest:functions - Optional - List}\""
     },
     {
       "trigger": "expressionTest-functions-label0\tAttr",
