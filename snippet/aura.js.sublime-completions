@@ -539,7 +539,7 @@
     },
     {
       "trigger": "A-util-generateUrl",
-      "contents": "A.util.generateUrl(${1:url},${2:params})"
+      "contents": "A.util.generateUrl(${1:url},${2:params},${3:encoded})"
     },
     {
       "trigger": "A-util-trim",

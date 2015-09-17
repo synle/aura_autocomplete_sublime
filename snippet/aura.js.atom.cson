@@ -403,7 +403,7 @@
 		'body': 'A.util.urlDecode(${1:url})'
 	'A.util.generateUrl':
 		'prefix': 'A-util-generateUrl'
-		'body': 'A.util.generateUrl(${1:url},${2:params})'
+		'body': 'A.util.generateUrl(${1:url},${2:params},${3:encoded})'
 	'A.util.trim':
 		'prefix': 'A-util-trim'
 		'body': 'A.util.trim(${1:value})'
