@@ -259,7 +259,7 @@
     },
     {
       "trigger": "helper-ui-abstractDataGrid-handleAddRemove",
-      "contents": "cmp.getDef().getHelper().handleAddRemove(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().handleAddRemove(${1:})"
     },
     {
       "trigger": "helper-ui-abstractList-handleDataChange",
@@ -295,7 +295,7 @@
     },
     {
       "trigger": "helper-ui-abstractList-removeItem",
-      "contents": "cmp.getDef().getHelper().removeItem(${1:component},${2:array},${3:index},${4:timeout},${5:animate},${6:callback})"
+      "contents": "cmp.getDef().getHelper().removeItem(${1:component},${2:array},${3:index},${4:timeout},${5:animate})"
     },
     {
       "trigger": "helper-ui-abstractList-exclude",
@@ -899,7 +899,7 @@
     },
     {
       "trigger": "helper-ui-dataGrid-resize",
-      "contents": "cmp.getDef().getHelper().resize(${1:concrete},${2:length})"
+      "contents": "cmp.getDef().getHelper().resize(${1:concrete})"
     },
     {
       "trigger": "helper-ui-dataGrid-updateValueProvidersFromItems",
@@ -1003,7 +1003,7 @@
     },
     {
       "trigger": "helper-ui-dataGridSummaryCell-isValid",
-      "contents": "cmp.getDef().getHelper().isValid(${1:value})"
+      "contents": "cmp.getDef().getHelper().isValid(${1:})"
     },
     {
       "trigger": "helper-ui-dataGridSummaryCell-extractNumbers",
