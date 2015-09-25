@@ -1338,6 +1338,14 @@
       "contents": "ui:column>${1:A column template used to define layout behavior in ui:listView.}</ui:column>"
     },
     {
+      "trigger": "ui-containerManager\tTag Simple",
+      "contents": "ui:containerManager$1>${2:A manager for containers}</ui:containerManager>"
+    },
+    {
+      "trigger": "ui-containerManager\tTag Full",
+      "contents": "ui:containerManager registeredContainers=\"${1:Optional - Aura.ComponentDefRef[]}\">${2:A manager for containers}</ui:containerManager>"
+    },
+    {
       "trigger": "ui-dataGrid\tTag Simple",
       "contents": "ui:dataGrid$1>${2:Represents a table containing dynamic rows of data with inline edit support}</ui:dataGrid>"
     },
@@ -2055,7 +2063,7 @@
     },
     {
       "trigger": "ui-outputRichText\tTag Full",
-      "contents": "ui:outputRichText value=\"${1:Optional - String}\" supportedTags=\"${2:Optional - String}\">${3:Implements ui:visible.\tDisplays richly-formatted text including tags such as paragraph, image, and hyperlink, as specified in the value attribute.}</ui:outputRichText>"
+      "contents": "ui:outputRichText value=\"${1:Optional - String}\" supportedTags=\"${2:Optional - String}\" supportedAttrs=\"${3:Optional - String}\">${4:Implements ui:visible.\tDisplays richly-formatted text including tags such as paragraph, image, and hyperlink, as specified in the value attribute.}</ui:outputRichText>"
     },
     {
       "trigger": "ui-outputSelect\tTag Simple",
@@ -2155,11 +2163,11 @@
     },
     {
       "trigger": "ui-panelManager2\tTag Simple",
-      "contents": "ui:panelManager2$1>${2:Panel manager 2}</ui:panelManager2>"
+      "contents": "ui:panelManager2$1>${2:Panel manager}</ui:panelManager2>"
     },
     {
       "trigger": "ui-panelManager2\tTag Full",
-      "contents": "ui:panelManager2 registeredPanels=\"${1:Optional - Aura.ComponentDefRef[]}\">${2:Panel manager 2}</ui:panelManager2>"
+      "contents": "ui:panelManager2 registeredPanels=\"${1:Optional - Aura.ComponentDefRef[]}\" useSharedContainer=\"${2:Optional - Boolean}\">${3:Panel manager}</ui:panelManager2>"
     },
     {
       "trigger": "ui-pill\tTag Simple",

@@ -2538,6 +2538,14 @@
       "contents": "cmp.getDef().getHelper().validateElement(${1:element},${2:supportedTags})"
     },
     {
+      "trigger": "helper-ui-outputRichText-getSupportedTags",
+      "contents": "cmp.getDef().getHelper().getSupportedTags(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-outputRichText-getSupportedAttributes",
+      "contents": "cmp.getDef().getHelper().getSupportedAttributes(${1:component})"
+    },
+    {
       "trigger": "helper-ui-outputText-appendTextElements",
       "contents": "cmp.getDef().getHelper().appendTextElements(${1:textValue},${2:containerEl})"
     },
@@ -2851,7 +2859,7 @@
     },
     {
       "trigger": "helper-ui-panelManager2-createPanelInstance",
-      "contents": "cmp.getDef().getHelper().createPanelInstance(${1:cmp},${2:panelDef},${3:config})"
+      "contents": "cmp.getDef().getHelper().createPanelInstance(${1:cmp},${2:config})"
     },
     {
       "trigger": "helper-ui-panelManager2-beforeShow",
@@ -2870,8 +2878,8 @@
       "contents": "cmp.getDef().getHelper().deactivateAllPanelInstances(${1:cmp},${2:activePanel})"
     },
     {
-      "trigger": "helper-ui-panelManager2-renderPanel",
-      "contents": "cmp.getDef().getHelper().renderPanel(${1:cmp},${2:panel})"
+      "trigger": "helper-ui-panelManager2-renderPanelInstance",
+      "contents": "cmp.getDef().getHelper().renderPanelInstance(${1:cmp},${2:panel},${3:config})"
     },
     {
       "trigger": "helper-ui-panelManager2-notifyPanelContent",
@@ -3535,7 +3543,7 @@
     },
     {
       "trigger": "helper-ui-tabset-createTabComponent",
-      "contents": "cmp.getDef().getHelper().createTabComponent(${1:cmp},${2:tabConfig},${3:callback},${4:async})"
+      "contents": "cmp.getDef().getHelper().createTabComponent(${1:cmp},${2:tabConfig},${3:callback})"
     },
     {
       "trigger": "helper-ui-tabset-getTabItemConfig",
@@ -3611,7 +3619,7 @@
     },
     {
       "trigger": "helper-ui-tooltip-_doUpdatePosition",
-      "contents": "cmp.getDef().getHelper()._doUpdatePosition(${1:component})"
+      "contents": "cmp.getDef().getHelper()._doUpdatePosition(${1:})"
     },
     {
       "trigger": "helper-ui-tooltip-_handlePositionEvents",
@@ -3683,7 +3691,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-verifyInterfaces",
-      "contents": "cmp.getDef().getHelper().verifyInterfaces(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().verifyInterfaces(${1:})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-initializeDataModel",
@@ -3711,7 +3719,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-onItemChange",
-      "contents": "cmp.getDef().getHelper().onItemChange(${1:ptv},${2:evt})"
+      "contents": "cmp.getDef().getHelper().onItemChange(${1:ptv})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-getGridBody",

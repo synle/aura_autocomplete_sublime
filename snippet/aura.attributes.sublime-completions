@@ -1686,6 +1686,10 @@
       "contents": "pageSelected=\"${1:ui:carouselPageIndicatorItem - Optional - ui:carouselPageEvent}\""
     },
     {
+      "trigger": "ui-containerManager-registeredContainers\tAttr",
+      "contents": "registeredContainers=\"${1:ui:containerManager - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
       "trigger": "ui-dataGrid-summary\tAttr",
       "contents": "summary=\"${1:ui:dataGrid - Optional - String}\""
     },
@@ -3410,6 +3414,10 @@
       "contents": "supportedTags=\"${1:ui:outputRichText - Optional - String}\""
     },
     {
+      "trigger": "ui-outputRichText-supportedAttrs\tAttr",
+      "contents": "supportedAttrs=\"${1:ui:outputRichText - Optional - String}\""
+    },
+    {
       "trigger": "ui-outputText-value\tAttr",
       "contents": "value=\"${1:ui:outputText - Required - String}\""
     },
@@ -3664,6 +3672,10 @@
     {
       "trigger": "ui-panelManager2-registeredPanels\tAttr",
       "contents": "registeredPanels=\"${1:ui:panelManager2 - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "ui-panelManager2-useSharedContainer\tAttr",
+      "contents": "useSharedContainer=\"${1:ui:panelManager2 - Optional - Boolean}\""
     },
     {
       "trigger": "ui-pill-label\tAttr",
