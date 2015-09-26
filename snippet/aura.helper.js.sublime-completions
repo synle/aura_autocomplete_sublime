@@ -295,7 +295,7 @@
     },
     {
       "trigger": "helper-ui-abstractList-removeItem",
-      "contents": "cmp.getDef().getHelper().removeItem(${1:component},${2:array},${3:index},${4:timeout},${5:animate})"
+      "contents": "cmp.getDef().getHelper().removeItem(${1:component},${2:array})"
     },
     {
       "trigger": "helper-ui-abstractList-exclude",
@@ -1035,7 +1035,7 @@
     },
     {
       "trigger": "helper-ui-dataWriter-handleItemsChange",
-      "contents": "cmp.getDef().getHelper().handleItemsChange(${1:cmp},${2:params})"
+      "contents": "cmp.getDef().getHelper().handleItemsChange(${1:cmp})"
     },
     {
       "trigger": "helper-ui-dataWriter-handleWrite",
@@ -1095,7 +1095,7 @@
     },
     {
       "trigger": "helper-ui-datePicker-handleWinResize",
-      "contents": "cmp.getDef().getHelper().handleWinResize(${1:component},${2:e})"
+      "contents": "cmp.getDef().getHelper().handleWinResize(${1:component})"
     },
     {
       "trigger": "helper-ui-datePicker-position",
@@ -1123,7 +1123,7 @@
     },
     {
       "trigger": "helper-ui-datePicker-updateMobileMonthYear",
-      "contents": "cmp.getDef().getHelper().updateMobileMonthYear(${1:component},${2:value})"
+      "contents": "cmp.getDef().getHelper().updateMobileMonthYear(${1:component})"
     },
     {
       "trigger": "helper-ui-datePicker-yearChange",
@@ -1167,11 +1167,11 @@
     },
     {
       "trigger": "helper-ui-datePickerGrid-goToFirstOfMonth",
-      "contents": "cmp.getDef().getHelper().goToFirstOfMonth(${1:component},${2:localId})"
+      "contents": "cmp.getDef().getHelper().goToFirstOfMonth(${1:component})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-goToLastOfMonth",
-      "contents": "cmp.getDef().getHelper().goToLastOfMonth(${1:component},${2:localId})"
+      "contents": "cmp.getDef().getHelper().goToLastOfMonth(${1:component})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-handleArrowKey",
@@ -1475,7 +1475,7 @@
     },
     {
       "trigger": "helper-ui-infiniteList-ontouchcancel",
-      "contents": "cmp.getDef().getHelper().ontouchcancel(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().ontouchcancel(${1:cmp})"
     },
     {
       "trigger": "helper-ui-infiniteList-ontouchmove",
@@ -1891,7 +1891,7 @@
     },
     {
       "trigger": "helper-ui-inputRichText-isLibraryLoaded",
-      "contents": "cmp.getDef().getHelper().isLibraryLoaded(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().isLibraryLoaded(${1:})"
     },
     {
       "trigger": "helper-ui-inputRichText-toggle",
@@ -1915,7 +1915,7 @@
     },
     {
       "trigger": "helper-ui-inputRichText-getLocale",
-      "contents": "cmp.getDef().getHelper().getLocale(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().getLocale(${1:})"
     },
     {
       "trigger": "helper-ui-inputRichText-getEditorConfig",
@@ -2019,7 +2019,7 @@
     },
     {
       "trigger": "helper-ui-inputTimePicker-appendListElement",
-      "contents": "cmp.getDef().getHelper().appendListElement(${1:listElem},${2:displayValue},${3:hourValue},${4:minuteValue},${5:selected})"
+      "contents": "cmp.getDef().getHelper().appendListElement(${1:listElem},${2:displayValue},${3:hourValue},${4:minuteValue})"
     },
     {
       "trigger": "helper-ui-inputTimePicker-scrollToSelectedTime",
