@@ -334,10 +334,6 @@
       "contents": "cmp.getDef().getHelper().getEventSourceOptionComponent(${1:component},${2:event})"
     },
     {
-      "trigger": "helper-ui-autocompleteList-getNextVisibleOption",
-      "contents": "cmp.getDef().getHelper().getNextVisibleOption(${1:iters},${2:k})"
-    },
-    {
       "trigger": "helper-ui-autocompleteList-getOnClickEndFunction",
       "contents": "cmp.getDef().getHelper().getOnClickEndFunction(${1:component})"
     },
@@ -348,10 +344,6 @@
     {
       "trigger": "helper-ui-autocompleteList-getOnClickStartFunction",
       "contents": "cmp.getDef().getHelper().getOnClickStartFunction(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-autocompleteList-getPrevVisibleOption",
-      "contents": "cmp.getDef().getHelper().getPrevVisibleOption(${1:iters},${2:k})"
     },
     {
       "trigger": "helper-ui-autocompleteList-handleDataChange",
@@ -368,6 +360,38 @@
     {
       "trigger": "helper-ui-autocompleteList-handleListHighlight",
       "contents": "cmp.getDef().getHelper().handleListHighlight(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-createKeyboardTraversalList",
+      "contents": "cmp.getDef().getHelper().createKeyboardTraversalList(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-_createBasicKeyboardTraversalSection",
+      "contents": "cmp.getDef().getHelper()._createBasicKeyboardTraversalSection(${1:})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-_createKeyboardTraversalItemsSection",
+      "contents": "cmp.getDef().getHelper()._createKeyboardTraversalItemsSection(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-addHeaderAndFooterClassesAndAttributes",
+      "contents": "cmp.getDef().getHelper().addHeaderAndFooterClassesAndAttributes(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-getHeader",
+      "contents": "cmp.getDef().getHelper().getHeader(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-getFooter",
+      "contents": "cmp.getDef().getHelper().getFooter(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-_getComponentElementByAttribute",
+      "contents": "cmp.getDef().getHelper()._getComponentElementByAttribute(${1:component},${2:attribute})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-_getComponentByAttribute",
+      "contents": "cmp.getDef().getHelper()._getComponentByAttribute(${1:component},${2:attribute})"
     },
     {
       "trigger": "helper-ui-autocompleteList-handlePressOnHighlighted",
@@ -400,6 +424,10 @@
     {
       "trigger": "helper-ui-autocompleteList-toggleListVisibility",
       "contents": "cmp.getDef().getHelper().toggleListVisibility(${1:component},${2:items})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-updateAriaAttributesFromIdAttribute",
+      "contents": "cmp.getDef().getHelper().updateAriaAttributesFromIdAttribute(${1:component},${2:highlightedCmp})"
     },
     {
       "trigger": "helper-ui-autocompleteList-updateAriaAttributes",

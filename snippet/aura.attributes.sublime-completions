@@ -1098,12 +1098,20 @@
       "contents": "autocompleteButton=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "ui-autocomplete-header\tAttr",
-      "contents": "header=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+      "trigger": "ui-autocomplete-listHeader\tAttr",
+      "contents": "listHeader=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "ui-autocomplete-footer\tAttr",
-      "contents": "footer=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+      "trigger": "ui-autocomplete-listFooter\tAttr",
+      "contents": "listFooter=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-autocomplete-showListHeader\tAttr",
+      "contents": "showListHeader=\"${1:ui:autocomplete - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-autocomplete-showListFooter\tAttr",
+      "contents": "showListFooter=\"${1:ui:autocomplete - Optional - Boolean}\""
     },
     {
       "trigger": "ui-autocomplete-usePanel\tAttr",
@@ -1148,6 +1156,30 @@
     {
       "trigger": "ui-autocompleteList-matchFunc\tAttr",
       "contents": "matchFunc=\"${1:ui:autocompleteList - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-footerSelected\tAttr",
+      "contents": "footerSelected=\"${1:ui:autocompleteList - Optional - boolean}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-headerSelected\tAttr",
+      "contents": "headerSelected=\"${1:ui:autocompleteList - Optional - boolean}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-listHeader\tAttr",
+      "contents": "listHeader=\"${1:ui:autocompleteList - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-listFooter\tAttr",
+      "contents": "listFooter=\"${1:ui:autocompleteList - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-showListHeader\tAttr",
+      "contents": "showListHeader=\"${1:ui:autocompleteList - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-showListFooter\tAttr",
+      "contents": "showListFooter=\"${1:ui:autocompleteList - Optional - Boolean}\""
     },
     {
       "trigger": "ui-autocompleteList-matchDone\tAttr",
