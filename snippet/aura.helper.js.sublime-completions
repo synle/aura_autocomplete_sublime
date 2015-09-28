@@ -1371,7 +1371,7 @@
     },
     {
       "trigger": "helper-ui-draggable-getDataTransfer",
-      "contents": "cmp.getDef().getHelper().getDataTransfer(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().getDataTransfer(${1:component})"
     },
     {
       "trigger": "helper-ui-draggable-fireDragStart",
@@ -1411,7 +1411,7 @@
     },
     {
       "trigger": "helper-ui-draggable-exitDragOperation",
-      "contents": "cmp.getDef().getHelper().exitDragOperation(${1:component},${2:isInAccessibilityMode})"
+      "contents": "cmp.getDef().getHelper().exitDragOperation(${1:component})"
     },
     {
       "trigger": "helper-ui-dropzone-resetCssClass",
@@ -2215,7 +2215,7 @@
     },
     {
       "trigger": "helper-ui-listSorter-unrender",
-      "contents": "cmp.getDef().getHelper().unrender(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().unrender(${1:})"
     },
     {
       "trigger": "helper-ui-listSorter-refreshMenu",
@@ -2331,7 +2331,7 @@
     },
     {
       "trigger": "helper-ui-menu-handleRefresh",
-      "contents": "cmp.getDef().getHelper().handleRefresh(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleRefresh(${1:component})"
     },
     {
       "trigger": "helper-ui-menu-setTargetEventHandlers",
@@ -2411,7 +2411,7 @@
     },
     {
       "trigger": "helper-ui-menuList-handleEsckeydown",
-      "contents": "cmp.getDef().getHelper().handleEsckeydown(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleEsckeydown(${1:component})"
     },
     {
       "trigger": "helper-ui-menuList-setFocusToTrigger",
@@ -2431,7 +2431,7 @@
     },
     {
       "trigger": "helper-ui-menuList-handleTabkeydown",
-      "contents": "cmp.getDef().getHelper().handleTabkeydown(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleTabkeydown(${1:component})"
     },
     {
       "trigger": "helper-ui-menuList-setFocusToTypingChars",
@@ -2471,7 +2471,7 @@
     },
     {
       "trigger": "helper-ui-menuTriggerLink-fireMenuTriggerPress",
-      "contents": "cmp.getDef().getHelper().fireMenuTriggerPress(${1:component},${2:index})"
+      "contents": "cmp.getDef().getHelper().fireMenuTriggerPress(${1:component})"
     },
     {
       "trigger": "helper-ui-modal-init",
@@ -2515,7 +2515,7 @@
     },
     {
       "trigger": "helper-ui-modal-unsetOverflow",
-      "contents": "cmp.getDef().getHelper().unsetOverflow(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().unsetOverflow(${1:})"
     },
     {
       "trigger": "helper-ui-outputDate-formatDate",
