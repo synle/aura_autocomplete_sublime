@@ -870,6 +870,22 @@
       "contents": "//  component: chainLocalActions\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainLocalActions}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-auratest-access-globalEvent",
+      "contents": "//  component: access\n//    evtName: globalEvent\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.globalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-access-publicEvent",
+      "contents": "//  component: access\n//    evtName: publicEvent\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.publicEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-access-internalEvent",
+      "contents": "//  component: access\n//    evtName: internalEvent\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.internalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-access-privateEvent",
+      "contents": "//  component: access\n//    evtName: privateEvent\n//    evtType: auratest:accessPrivateEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.privateEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",// private\n\tPublic: \"${3:String}\",// private\n\tInternal: \"${4:String}\",// private\n\tGlobal: \"${5:String}\",// private\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-auratest-requireConsumer-versionEvt",
       "contents": "//  component: requireConsumer\n//    evtName: versionEvt\n//    evtType: auratest:testEvent\n//description: \nvar e = cmp.find(\"${1:requireConsumer}\").get(\"e.versionEvt\");\ne.setParams({\n\tatt1: \"${2:String}\",\n\tatt2: \"${3:Boolean}\",\n});\ne.fire();"
     },
@@ -880,6 +896,22 @@
     {
       "trigger": "evt-auratest-test_button-press",
       "contents": "//  component: test_button\n//    evtName: press\n//    evtType: auratest:test_press\n//description: \nvar e = cmp.find(\"${1:test_button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-componentTest-accessAttributes-globalEvent",
+      "contents": "//  component: accessAttributes\n//    evtName: globalEvent\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.globalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-componentTest-accessAttributes-publicEvent",
+      "contents": "//  component: accessAttributes\n//    evtName: publicEvent\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.publicEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-componentTest-accessAttributes-internalEvent",
+      "contents": "//  component: accessAttributes\n//    evtName: internalEvent\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.internalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-componentTest-accessAttributes-privateEvent",
+      "contents": "//  component: accessAttributes\n//    evtName: privateEvent\n//    evtType: auratest:accessPrivateEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.privateEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",// private\n\tPublic: \"${3:String}\",// private\n\tInternal: \"${4:String}\",// private\n\tGlobal: \"${5:String}\",// private\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-aHandlesEventFromA-evt",

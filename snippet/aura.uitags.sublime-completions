@@ -2819,11 +2819,83 @@
     },
     {
       "trigger": "auratest-access\tTag Simple",
-      "contents": "auratest:access$1>${2:An abstract component that provides a basic layout for the ui:list component.}</auratest:access>"
+      "contents": "auratest:access$1>${2:}</auratest:access>"
     },
     {
       "trigger": "auratest-access\tTag Full",
-      "contents": "auratest:access testType=\"${1:Optional - String}\" Public=\"${2:Optional - String}\" Internal=\"${3:Optional - String}\" Global=\"${4:Optional - String}\">${5:An abstract component that provides a basic layout for the ui:list component.}</auratest:access>"
+      "contents": "auratest:access testType=\"${1:Optional - String}\" output=\"${2:Optional - Object}\" testDone=\"${3:Optional - Boolean}\" Public=\"${4:Optional - String}\" Internal=\"${5:Optional - String}\" Global=\"${6:Optional - String}\" globalEvent=\"${7:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${8:Optional - auratest:accessPublicEvent}\" internalEvent=\"${9:Optional - auratest:accessInternalEvent}\" privateEvent=\"${10:Optional - auratest:accessPrivateEvent}\">${11:}</auratest:access>"
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithAttributes\tTag Simple",
+      "contents": "auratest:accessExtendsGlobalWithAttributes$1>${2:}</auratest:accessExtendsGlobalWithAttributes>"
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithAttributes\tTag Full",
+      "contents": "auratest:accessExtendsGlobalWithAttributes output=\"${1:Optional - String}\" attrName=\"${2:Optional - String}\">${3:}</auratest:accessExtendsGlobalWithAttributes>"
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithSets\tTag Simple",
+      "contents": "auratest:accessExtendsGlobalWithSets$1>${2:}</auratest:accessExtendsGlobalWithSets>"
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithSets\tTag Full",
+      "contents": "auratest:accessExtendsGlobalWithSets>${1:}</auratest:accessExtendsGlobalWithSets>"
+    },
+    {
+      "trigger": "auratest-accessGlobalAttribute\tTag Simple",
+      "contents": "auratest:accessGlobalAttribute$1>${2:}</auratest:accessGlobalAttribute>"
+    },
+    {
+      "trigger": "auratest-accessGlobalAttribute\tTag Full",
+      "contents": "auratest:accessGlobalAttribute attr=\"${1:Optional - String}\">${2:}</auratest:accessGlobalAttribute>"
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent\tTag Simple",
+      "contents": "auratest:accessGlobalComponent$1>${2:}</auratest:accessGlobalComponent>"
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent\tTag Full",
+      "contents": "auratest:accessGlobalComponent>${1:}</auratest:accessGlobalComponent>"
+    },
+    {
+      "trigger": "auratest-accessInternalAttribute\tTag Simple",
+      "contents": "auratest:accessInternalAttribute$1>${2:}</auratest:accessInternalAttribute>"
+    },
+    {
+      "trigger": "auratest-accessInternalAttribute\tTag Full",
+      "contents": "auratest:accessInternalAttribute attr=\"${1:Optional - String}\">${2:}</auratest:accessInternalAttribute>"
+    },
+    {
+      "trigger": "auratest-accessInternalComponent\tTag Simple",
+      "contents": "auratest:accessInternalComponent$1>${2:}</auratest:accessInternalComponent>"
+    },
+    {
+      "trigger": "auratest-accessInternalComponent\tTag Full",
+      "contents": "auratest:accessInternalComponent>${1:}</auratest:accessInternalComponent>"
+    },
+    {
+      "trigger": "auratest-accessPrivateAttribute\tTag Simple",
+      "contents": "auratest:accessPrivateAttribute$1>${2:}</auratest:accessPrivateAttribute>"
+    },
+    {
+      "trigger": "auratest-accessPrivateAttribute\tTag Full",
+      "contents": "auratest:accessPrivateAttribute attrDefault=\"${1:Optional - String}\">${2:}</auratest:accessPrivateAttribute>"
+    },
+    {
+      "trigger": "auratest-accessPublicAttribute\tTag Simple",
+      "contents": "auratest:accessPublicAttribute$1>${2:}</auratest:accessPublicAttribute>"
+    },
+    {
+      "trigger": "auratest-accessPublicAttribute\tTag Full",
+      "contents": "auratest:accessPublicAttribute attr=\"${1:Optional - String}\">${2:}</auratest:accessPublicAttribute>"
+    },
+    {
+      "trigger": "auratest-accessPublicComponent\tTag Simple",
+      "contents": "auratest:accessPublicComponent$1>${2:}</auratest:accessPublicComponent>"
+    },
+    {
+      "trigger": "auratest-accessPublicComponent\tTag Full",
+      "contents": "auratest:accessPublicComponent>${1:}</auratest:accessPublicComponent>"
     },
     {
       "trigger": "auratest-aisAsyncTemplate\tTag Simple",
@@ -3664,6 +3736,30 @@
     {
       "trigger": "cmpQueryLanguage-query\tTag Full",
       "contents": "cmpQueryLanguage:query>${1:}</cmpQueryLanguage:query>"
+    },
+    {
+      "trigger": "componentTest-accessAttributes\tTag Simple",
+      "contents": "componentTest:accessAttributes$1>${2:}</componentTest:accessAttributes>"
+    },
+    {
+      "trigger": "componentTest-accessAttributes\tTag Full",
+      "contents": "componentTest:accessAttributes Public=\"${1:Optional - String}\" Internal=\"${2:Optional - String}\" Global=\"${3:Optional - String}\" globalEvent=\"${4:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${5:Optional - auratest:accessPublicEvent}\" internalEvent=\"${6:Optional - auratest:accessInternalEvent}\" privateEvent=\"${7:Optional - auratest:accessPrivateEvent}\">${8:}</componentTest:accessAttributes>"
+    },
+    {
+      "trigger": "componentTest-accessExtendsPublic\tTag Simple",
+      "contents": "componentTest:accessExtendsPublic$1>${2:}</componentTest:accessExtendsPublic>"
+    },
+    {
+      "trigger": "componentTest-accessExtendsPublic\tTag Full",
+      "contents": "componentTest:accessExtendsPublic>${1:}</componentTest:accessExtendsPublic>"
+    },
+    {
+      "trigger": "componentTest-accessUnprivilegedNamespace\tTag Simple",
+      "contents": "componentTest:accessUnprivilegedNamespace$1>${2:}</componentTest:accessUnprivilegedNamespace>"
+    },
+    {
+      "trigger": "componentTest-accessUnprivilegedNamespace\tTag Full",
+      "contents": "componentTest:accessUnprivilegedNamespace cmpToCreate=\"${1:Optional - String}\" completed=\"${2:Optional - Boolean}\" attrName=\"${3:Optional - String}\">${4:}</componentTest:accessUnprivilegedNamespace>"
     },
     {
       "trigger": "componentTest-appendComponent\tTag Simple",

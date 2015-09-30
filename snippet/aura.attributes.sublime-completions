@@ -5650,6 +5650,14 @@
       "contents": "testType=\"${1:auratest:access - Optional - String}\""
     },
     {
+      "trigger": "auratest-access-output\tAttr",
+      "contents": "output=\"${1:auratest:access - Optional - Object}\""
+    },
+    {
+      "trigger": "auratest-access-testDone\tAttr",
+      "contents": "testDone=\"${1:auratest:access - Optional - Boolean}\""
+    },
+    {
       "trigger": "auratest-access-Private\tAttr",
       "contents": "Private=\"${1:auratest:access - Optional - String}\""
     },
@@ -5664,6 +5672,50 @@
     {
       "trigger": "auratest-access-Global\tAttr",
       "contents": "Global=\"${1:auratest:access - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-access-globalEvent\tAttr",
+      "contents": "globalEvent=\"${1:auratest:access - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "auratest-access-publicEvent\tAttr",
+      "contents": "publicEvent=\"${1:auratest:access - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "auratest-access-internalEvent\tAttr",
+      "contents": "internalEvent=\"${1:auratest:access - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "auratest-access-privateEvent\tAttr",
+      "contents": "privateEvent=\"${1:auratest:access - Optional - auratest:accessPrivateEvent}\""
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithAttributes-output\tAttr",
+      "contents": "output=\"${1:auratest:accessExtendsGlobalWithAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessExtendsGlobalWithAttributes-attrName\tAttr",
+      "contents": "attrName=\"${1:auratest:accessExtendsGlobalWithAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:auratest:accessGlobalAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessInternalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:auratest:accessInternalAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPrivateAttribute-attr\tAttr",
+      "contents": "attr=\"${1:auratest:accessPrivateAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPrivateAttribute-attrDefault\tAttr",
+      "contents": "attrDefault=\"${1:auratest:accessPrivateAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPublicAttribute-attr\tAttr",
+      "contents": "attr=\"${1:auratest:accessPublicAttribute - Optional - String}\""
     },
     {
       "trigger": "auratest-auraMethod-outputStringAttr\tAttr",
@@ -6316,6 +6368,50 @@
     {
       "trigger": "clientServiceTest-enqueueAction-log\tAttr",
       "contents": "log=\"${1:clientServiceTest:enqueueAction - Optional - List}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-Private\tAttr",
+      "contents": "Private=\"${1:componentTest:accessAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-Public\tAttr",
+      "contents": "Public=\"${1:componentTest:accessAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-Internal\tAttr",
+      "contents": "Internal=\"${1:componentTest:accessAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-Global\tAttr",
+      "contents": "Global=\"${1:componentTest:accessAttributes - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-globalEvent\tAttr",
+      "contents": "globalEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-publicEvent\tAttr",
+      "contents": "publicEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-internalEvent\tAttr",
+      "contents": "internalEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-privateEvent\tAttr",
+      "contents": "privateEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessPrivateEvent}\""
+    },
+    {
+      "trigger": "componentTest-accessUnprivilegedNamespace-cmpToCreate\tAttr",
+      "contents": "cmpToCreate=\"${1:componentTest:accessUnprivilegedNamespace - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-accessUnprivilegedNamespace-completed\tAttr",
+      "contents": "completed=\"${1:componentTest:accessUnprivilegedNamespace - Optional - Boolean}\""
+    },
+    {
+      "trigger": "componentTest-accessUnprivilegedNamespace-attrName\tAttr",
+      "contents": "attrName=\"${1:componentTest:accessUnprivilegedNamespace - Optional - String}\""
     },
     {
       "trigger": "componentTest-appendComponent-descriptor\tAttr",
