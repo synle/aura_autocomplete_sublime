@@ -1119,7 +1119,7 @@
     },
     {
       "trigger": "helper-ui-datePicker-getNormalizedLang",
-      "contents": "cmp.getDef().getHelper().getNormalizedLang(${1:component})"
+      "contents": "cmp.getDef().getHelper().getNormalizedLang(${1:})"
     },
     {
       "trigger": "helper-ui-datePicker-handleWinResize",
