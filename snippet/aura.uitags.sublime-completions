@@ -2823,7 +2823,7 @@
     },
     {
       "trigger": "auratest-access\tTag Full",
-      "contents": "auratest:access testType=\"${1:Optional - String}\" output=\"${2:Optional - Object}\" testDone=\"${3:Optional - Boolean}\" Public=\"${4:Optional - String}\" Internal=\"${5:Optional - String}\" Global=\"${6:Optional - String}\" globalEvent=\"${7:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${8:Optional - auratest:accessPublicEvent}\" internalEvent=\"${9:Optional - auratest:accessInternalEvent}\" privateEvent=\"${10:Optional - auratest:accessPrivateEvent}\">${11:}</auratest:access>"
+      "contents": "auratest:access testType=\"${1:Optional - String}\" output=\"${2:Optional - Object}\" testDone=\"${3:Optional - Boolean}\" accessLevel=\"${4:Optional - String}\" Public=\"${5:Optional - String}\" Internal=\"${6:Optional - String}\" Global=\"${7:Optional - String}\" globalEvent=\"${8:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${9:Optional - auratest:accessPublicEvent}\" internalEvent=\"${10:Optional - auratest:accessInternalEvent}\" privateEvent=\"${11:Optional - auratest:accessPrivateEvent}\">${12:}</auratest:access>"
     },
     {
       "trigger": "auratest-accessExtendsGlobalWithAttributes\tTag Simple",
@@ -3743,7 +3743,7 @@
     },
     {
       "trigger": "componentTest-accessAttributes\tTag Full",
-      "contents": "componentTest:accessAttributes Public=\"${1:Optional - String}\" Internal=\"${2:Optional - String}\" Global=\"${3:Optional - String}\" globalEvent=\"${4:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${5:Optional - auratest:accessPublicEvent}\" internalEvent=\"${6:Optional - auratest:accessInternalEvent}\" privateEvent=\"${7:Optional - auratest:accessPrivateEvent}\">${8:}</componentTest:accessAttributes>"
+      "contents": "componentTest:accessAttributes output=\"${1:Optional - String}\" Public=\"${2:Optional - String}\" Internal=\"${3:Optional - String}\" Global=\"${4:Optional - String}\" globalEvent=\"${5:Optional - auratest:accessGlobalEvent}\" publicEvent=\"${6:Optional - auratest:accessPublicEvent}\" internalEvent=\"${7:Optional - auratest:accessInternalEvent}\" privateEvent=\"${8:Optional - auratest:accessPrivateEvent}\">${9:}</componentTest:accessAttributes>"
     },
     {
       "trigger": "componentTest-accessExtendsPublic\tTag Simple",
@@ -3752,6 +3752,30 @@
     {
       "trigger": "componentTest-accessExtendsPublic\tTag Full",
       "contents": "componentTest:accessExtendsPublic>${1:}</componentTest:accessExtendsPublic>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesGlobal\tTag Simple",
+      "contents": "componentTest:accessGlobalProvidesGlobal$1>${2:}</componentTest:accessGlobalProvidesGlobal>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesGlobal\tTag Full",
+      "contents": "componentTest:accessGlobalProvidesGlobal>${1:}</componentTest:accessGlobalProvidesGlobal>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesInternal\tTag Simple",
+      "contents": "componentTest:accessGlobalProvidesInternal$1>${2:}</componentTest:accessGlobalProvidesInternal>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesInternal\tTag Full",
+      "contents": "componentTest:accessGlobalProvidesInternal>${1:}</componentTest:accessGlobalProvidesInternal>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesPublic\tTag Simple",
+      "contents": "componentTest:accessGlobalProvidesPublic$1>${2:}</componentTest:accessGlobalProvidesPublic>"
+    },
+    {
+      "trigger": "componentTest-accessGlobalProvidesPublic\tTag Full",
+      "contents": "componentTest:accessGlobalProvidesPublic>${1:}</componentTest:accessGlobalProvidesPublic>"
     },
     {
       "trigger": "componentTest-accessUnprivilegedNamespace\tTag Simple",

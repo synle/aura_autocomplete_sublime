@@ -5658,6 +5658,10 @@
       "contents": "testDone=\"${1:auratest:access - Optional - Boolean}\""
     },
     {
+      "trigger": "auratest-access-accessLevel\tAttr",
+      "contents": "accessLevel=\"${1:auratest:access - Optional - String}\""
+    },
+    {
       "trigger": "auratest-access-Private\tAttr",
       "contents": "Private=\"${1:auratest:access - Optional - String}\""
     },
@@ -6368,6 +6372,10 @@
     {
       "trigger": "clientServiceTest-enqueueAction-log\tAttr",
       "contents": "log=\"${1:clientServiceTest:enqueueAction - Optional - List}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-output\tAttr",
+      "contents": "output=\"${1:componentTest:accessAttributes - Optional - String}\""
     },
     {
       "trigger": "componentTest-accessAttributes-Private\tAttr",
