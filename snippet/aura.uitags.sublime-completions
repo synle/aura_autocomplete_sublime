@@ -1487,7 +1487,7 @@
     },
     {
       "trigger": "ui-dragAndDropAccessibility\tTag Full",
-      "contents": "ui:dragAndDropAccessibility draggables=\"${1:Required - Aura.Component[]}\" target=\"${2:Required - Object}\">${3:A drag and drop accessibility component.}</ui:dragAndDropAccessibility>"
+      "contents": "ui:dragAndDropAccessibility draggables=\"${1:Required - Aura.Component[]}\" target=\"${2:Required - Object}\" draggables=\"${3:Optional - Aura.Component[]}\">${4:A drag and drop accessibility component.}</ui:dragAndDropAccessibility>"
     },
     {
       "trigger": "ui-dragAndDropAccessibilityMenu\tTag Simple",
