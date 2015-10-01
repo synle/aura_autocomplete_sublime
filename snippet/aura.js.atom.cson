@@ -560,9 +560,6 @@
 	'A.util.getText':
 		'prefix': 'A-util-getText'
 		'body': 'A.util.getText(${1:node})'
-	'A.util.errorBasedOnMode':
-		'prefix': 'A-util-errorBasedOnMode'
-		'body': 'A.util.errorBasedOnMode(${1:msg})'
 	'A.util.includeScript':
 		'prefix': 'A-util-includeScript'
 		'body': 'A.util.includeScript(${1:url},${2:callback})'

@@ -750,10 +750,6 @@
       "contents": "A.util.getText(${1:node})"
     },
     {
-      "trigger": "A-util-errorBasedOnMode",
-      "contents": "A.util.errorBasedOnMode(${1:msg})"
-    },
-    {
       "trigger": "A-util-includeScript",
       "contents": "A.util.includeScript(${1:url},${2:callback})"
     }
