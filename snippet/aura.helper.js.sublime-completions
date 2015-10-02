@@ -2611,7 +2611,7 @@
     },
     {
       "trigger": "helper-ui-panel-init",
-      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().init(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panel-_getReferenceElement",
@@ -2671,7 +2671,7 @@
     },
     {
       "trigger": "helper-ui-panelDialog-close",
-      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().close(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panelDialog-_findContainedComponent",
@@ -2687,7 +2687,7 @@
     },
     {
       "trigger": "helper-ui-panelManager-initialize",
-      "contents": "cmp.getDef().getHelper().initialize(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panelManager-_copy",
@@ -2899,7 +2899,7 @@
     },
     {
       "trigger": "helper-ui-panelManager2-activateNextPanel",
-      "contents": "cmp.getDef().getHelper().activateNextPanel(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().activateNextPanel(${1:})"
     },
     {
       "trigger": "helper-ui-panelManager2-deactivateAllPanelInstances",
