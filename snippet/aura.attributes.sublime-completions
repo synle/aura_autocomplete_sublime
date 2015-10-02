@@ -3614,6 +3614,30 @@
       "contents": "showPointer=\"${1:ui:panel - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-panel-boundingElement\tAttr",
+      "contents": "boundingElement=\"${1:ui:panel - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-panel-inside\tAttr",
+      "contents": "inside=\"${1:ui:panel - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-panel-advanced\tAttr",
+      "contents": "advanced=\"${1:ui:panel - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-panel-align\tAttr",
+      "contents": "align=\"${1:ui:panel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-panel-targetAlign\tAttr",
+      "contents": "targetAlign=\"${1:ui:panel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-panel-pad\tAttr",
+      "contents": "pad=\"${1:ui:panel - Optional - Integer}\""
+    },
+    {
       "trigger": "ui-panel-closeButton\tAttr",
       "contents": "closeButton=\"${1:ui:panel - Optional - Aura.Component[]}\""
     },

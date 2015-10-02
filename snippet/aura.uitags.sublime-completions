@@ -2143,7 +2143,7 @@
     },
     {
       "trigger": "ui-panel\tTag Full",
-      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" closeButton=\"${17:Optional - Aura.Component[]}\">${18:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
+      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" boundingElement=\"${17:Optional - Object}\" inside=\"${18:Optional - Boolean}\" advanced=\"${19:Optional - Boolean}\" align=\"${20:Optional - String}\" targetAlign=\"${21:Optional - String}\" pad=\"${22:Optional - Integer}\" closeButton=\"${23:Optional - Aura.Component[]}\">${24:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
     },
     {
       "trigger": "ui-panelDialog\tTag Simple",
@@ -5560,14 +5560,6 @@
     {
       "trigger": "miscTest-myDataProvider\tTag Full",
       "contents": "miscTest:myDataProvider>${1:A test data provider to test per-component perf test.}</miscTest:myDataProvider>"
-    },
-    {
-      "trigger": "miscTest-newComponent\tTag Simple",
-      "contents": "miscTest:newComponent$1>${2:}</miscTest:newComponent>"
-    },
-    {
-      "trigger": "miscTest-newComponent\tTag Full",
-      "contents": "miscTest:newComponent>${1:}</miscTest:newComponent>"
     },
     {
       "trigger": "miscTest-parent\tTag Simple",

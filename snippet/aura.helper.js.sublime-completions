@@ -39,7 +39,7 @@
     },
     {
       "trigger": "helper-aura-iteration-createBody",
-      "contents": "cmp.getDef().getHelper().createBody(${1:component})"
+      "contents": "cmp.getDef().getHelper().createBody(${1:component},${2:localCreation})"
     },
     {
       "trigger": "helper-aura-iteration-clearUnrenderedBody",
@@ -4132,14 +4132,6 @@
     {
       "trigger": "helper-miscTest-myDataProvider-provide",
       "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event},${3:controller})"
-    },
-    {
-      "trigger": "helper-miscTest-newComponent-createComponentAndPushToBody",
-      "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config})"
-    },
-    {
-      "trigger": "helper-miscTest-newComponent-createComponentAndPushToBodyDeprecated",
-      "contents": "cmp.getDef().getHelper().createComponentAndPushToBodyDeprecated(${1:cmp},${2:config})"
     },
     {
       "trigger": "helper-perfTest-perf-_rafPolyfill",
