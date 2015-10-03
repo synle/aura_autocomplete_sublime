@@ -2731,7 +2731,7 @@
     },
     {
       "trigger": "helper-ui-panelManager-getCloseActionForModal",
-      "contents": "cmp.getDef().getHelper().getCloseActionForModal(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().getCloseActionForModal(${1:})"
     },
     {
       "trigger": "helper-ui-panelManager-_createPanel",
@@ -3023,7 +3023,7 @@
     },
     {
       "trigger": "helper-ui-pillContainerAutoComplete-handleListExpand",
-      "contents": "cmp.getDef().getHelper().handleListExpand(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleListExpand(${1:component})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoComplete-_getPillContainerListElement",
