@@ -122,6 +122,14 @@
       "contents": "aura:unescapedHtml body=\"${1:Optional - Aura.Component[]}\" value=\"${2:Optional - String}\">${3:The value assigned to this component will be rendered as-is, without altering its contents. It's intended for outputting pre-formatted HTML, for example, where the formatting is arbitrary, or expensive to calculate. The body of this component is ignored, and won't be rendered. Warning: this component outputs value as unescaped HTML, which introduces the possibility of security vulnerabilities in your code. You must sanitize user input before rendering it unescaped, or you will create a cross-site scripting (XSS) vulnerability. Only use <aura:unescapedHtml> with trusted or sanitized sources of data.}</aura:unescapedHtml>"
     },
     {
+      "trigger": "auraStorage-crypto\tTag Simple",
+      "contents": "auraStorage:crypto$1>${2:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
+    },
+    {
+      "trigger": "auraStorage-crypto\tTag Full",
+      "contents": "auraStorage:crypto>${1:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
+    },
+    {
       "trigger": "auraStorage-fuelGauge\tTag Simple",
       "contents": "auraStorage:fuelGauge$1>${2:}</auraStorage:fuelGauge>"
     },
@@ -2682,6 +2690,14 @@
       "contents": "auraStorageTest:adapterSelectionTest>${1:}</auraStorageTest:adapterSelectionTest>"
     },
     {
+      "trigger": "auraStorageTest-cryptoRegistrationTemplate\tTag Simple",
+      "contents": "auraStorageTest:cryptoRegistrationTemplate$1>${2:}</auraStorageTest:cryptoRegistrationTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-cryptoRegistrationTemplate\tTag Full",
+      "contents": "auraStorageTest:cryptoRegistrationTemplate>${1:}</auraStorageTest:cryptoRegistrationTemplate>"
+    },
+    {
       "trigger": "auraStorageTest-failedStorageTemplate\tTag Simple",
       "contents": "auraStorageTest:failedStorageTemplate$1>${2:}</auraStorageTest:failedStorageTemplate>"
     },
@@ -2704,14 +2720,6 @@
     {
       "trigger": "auraStorageTest-fuelGaugeTestStub\tTag Full",
       "contents": "auraStorageTest:fuelGaugeTestStub>${1:}</auraStorageTest:fuelGaugeTestStub>"
-    },
-    {
-      "trigger": "auraStorageTest-indexedDBCmp\tTag Simple",
-      "contents": "auraStorageTest:indexedDBCmp$1>${2:}</auraStorageTest:indexedDBCmp>"
-    },
-    {
-      "trigger": "auraStorageTest-indexedDBCmp\tTag Full",
-      "contents": "auraStorageTest:indexedDBCmp key=\"${1:Optional - String}\" value=\"${2:Optional - String}\" return=\"${3:Optional - String}\" status=\"${4:Optional - String}\">${5:}</auraStorageTest:indexedDBCmp>"
     },
     {
       "trigger": "auraStorageTest-indexedDBtemplate\tTag Simple",

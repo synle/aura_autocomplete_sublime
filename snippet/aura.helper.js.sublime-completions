@@ -3958,10 +3958,6 @@
       "contents": "cmp.getDef().getHelper().sendAction(${1:cmp},${2:abortable},${3:transactionId},${4:callback})"
     },
     {
-      "trigger": "helper-auraStorageTest-indexedDBStorageTest-appendLine",
-      "contents": "cmp.getDef().getHelper().appendLine(${1:cmp},${2:text})"
-    },
-    {
       "trigger": "helper-auraStorageTest-initTest-resetCounters",
       "contents": "cmp.getDef().getHelper().resetCounters(${1:cmp},${2:_testName})"
     },

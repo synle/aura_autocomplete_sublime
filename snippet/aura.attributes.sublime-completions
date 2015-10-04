@@ -5546,22 +5546,6 @@
       "contents": "actionsStorageOn=\"${1:auraStorageTest:actionsStorageTest - Optional - Boolean}\""
     },
     {
-      "trigger": "auraStorageTest-indexedDBCmp-key\tAttr",
-      "contents": "key=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-indexedDBCmp-value\tAttr",
-      "contents": "value=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-indexedDBCmp-return\tAttr",
-      "contents": "return=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-indexedDBCmp-status\tAttr",
-      "contents": "status=\"${1:auraStorageTest:indexedDBCmp - Optional - String}\""
-    },
-    {
       "trigger": "auraStorageTest-initTest-clearStorageOnInit\tAttr",
       "contents": "clearStorageOnInit=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
     },
