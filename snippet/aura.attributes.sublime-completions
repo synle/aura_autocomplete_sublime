@@ -7254,6 +7254,14 @@
       "contents": "fromparent=\"${1:iterationTest:iterationChildWithModel - Optional - string}\""
     },
     {
+      "trigger": "iterationTest-iterationTemplateChange-items\tAttr",
+      "contents": "items=\"${1:iterationTest:iterationTemplateChange - Optional - List}\""
+    },
+    {
+      "trigger": "iterationTest-iterationTemplateChange-status\tAttr",
+      "contents": "status=\"${1:iterationTest:iterationTemplateChange - Optional - String}\""
+    },
+    {
       "trigger": "iterationTest-iterationWJSProviderOnly-cmpDescriptorName\tAttr",
       "contents": "cmpDescriptorName=\"${1:iterationTest:iterationWJSProviderOnly - Optional - String}\""
     },

@@ -5050,6 +5050,14 @@
       "contents": "iterationTest:iterationOfCmpWithDefaultAtt>${1:}</iterationTest:iterationOfCmpWithDefaultAtt>"
     },
     {
+      "trigger": "iterationTest-iterationTemplateChange\tTag Simple",
+      "contents": "iterationTest:iterationTemplateChange$1>${2:}</iterationTest:iterationTemplateChange>"
+    },
+    {
+      "trigger": "iterationTest-iterationTemplateChange\tTag Full",
+      "contents": "iterationTest:iterationTemplateChange items=\"${1:Optional - List}\" status=\"${2:Optional - String}\">${3:}</iterationTest:iterationTemplateChange>"
+    },
+    {
       "trigger": "iterationTest-iterationWJSProviderOnly\tTag Simple",
       "contents": "iterationTest:iterationWJSProviderOnly$1>${2:}</iterationTest:iterationWJSProviderOnly>"
     },
