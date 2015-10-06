@@ -534,10 +534,6 @@
       "contents": "A.util.removeElement(${1:element})"
     },
     {
-      "trigger": "A-util-urlDecode",
-      "contents": "A.util.urlDecode(${1:url})"
-    },
-    {
       "trigger": "A-util-generateUrl",
       "contents": "A.util.generateUrl(${1:url},${2:params},${3:encoded})"
     },

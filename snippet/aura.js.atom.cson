@@ -398,9 +398,6 @@
 	'A.util.removeElement':
 		'prefix': 'A-util-removeElement'
 		'body': 'A.util.removeElement(${1:element})'
-	'A.util.urlDecode':
-		'prefix': 'A-util-urlDecode'
-		'body': 'A.util.urlDecode(${1:url})'
 	'A.util.generateUrl':
 		'prefix': 'A-util-generateUrl'
 		'body': 'A.util.generateUrl(${1:url},${2:params},${3:encoded})'
