@@ -1,6 +1,6 @@
 {
   "name": "aura_autocomplete",
-  "version": "1.0.62",
+  "version": "1.0.63",
   "description": "Generate autocomplete for Salesforce Aura code snippet",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test",

@@ -1991,7 +1991,7 @@
     },
     {
       "trigger": "helper-ui-inputSelect-updateOptionsFromValue",
-      "contents": "cmp.getDef().getHelper().updateOptionsFromValue(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().updateOptionsFromValue(${1:cmp},${2:createNewOptions})"
     },
     {
       "trigger": "helper-ui-inputSelect-isAlreadySelected",
