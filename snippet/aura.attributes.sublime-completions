@@ -3638,6 +3638,10 @@
       "contents": "pad=\"${1:ui:panel - Optional - Integer}\""
     },
     {
+      "trigger": "ui-panel-padTop\tAttr",
+      "contents": "padTop=\"${1:ui:panel - Optional - Integer}\""
+    },
+    {
       "trigger": "ui-panel-closeButton\tAttr",
       "contents": "closeButton=\"${1:ui:panel - Optional - Aura.Component[]}\""
     },
