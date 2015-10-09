@@ -6,10 +6,6 @@
       "contents": "//  component: iteration\n//    evtName: iterationComplete\n//    evtType: aura:operationComplete\n//description: The event fired when this component has finished asynchronously constructing the children of the iteration from the template provided.\nvar e = cmp.find(\"${1:iteration}\").get(\"e.iterationComplete\");\ne.setParams({\n\toperation: \"${2:String}\",// The type of operation that has completed.\n\tresult: \"${3:Object}\",// The result, if any, of the operation. This will depend on the type and outcome of the operation.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-auradev-quickFixButton-showUI",
-      "contents": "//  component: quickFixButton\n//    evtName: showUI\n//    evtType: auradev:showQuickFixUI\n//description: \nvar e = cmp.find(\"${1:quickFixButton}\").get(\"e.showUI\");\ne.setParams({\n\tui: \"${2:Aura.Component}\",\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-auradocs-editorPanel-open",
       "contents": "//  component: editorPanel\n//    evtName: open\n//    evtType: auradocs:openDef\n//description: \nvar e = cmp.find(\"${1:editorPanel}\").get(\"e.open\");\ne.setParams({\n\tdescriptor: \"${2:String}\",\n\tdefType: \"${3:String}\",\n});\ne.fire();"
     },

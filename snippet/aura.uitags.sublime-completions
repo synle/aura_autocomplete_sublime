@@ -194,54 +194,6 @@
       "contents": "auradev:componentClass fullyQualifiedName=\"${1:Required - String}\" superFullyQualifiedName=\"${2:Required - String}\" className=\"${3:Required - String}\" superClassName=\"${4:Required - String}\" helperProperties=\"${5:Required - java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>}\" renderMethods=\"${6:Required - java://List<org.auraframework.util.json.JsFunction>}\" isRootComponent=\"${7:Required - Boolean}\" hasSuperClass=\"${8:Required - Boolean}\" hasUnrenderMethod=\"${9:Required - Boolean}\">${10:Renders the concrete javascript class for a component.}</auradev:componentClass>"
     },
     {
-      "trigger": "auradev-createApplicationDefQuickFix\tTag Simple",
-      "contents": "auradev:createApplicationDefQuickFix$1>${2:}</auradev:createApplicationDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createApplicationDefQuickFix\tTag Full",
-      "contents": "auradev:createApplicationDefQuickFix>${1:}</auradev:createApplicationDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createAttributeDefQuickFix\tTag Simple",
-      "contents": "auradev:createAttributeDefQuickFix$1>${2:}</auradev:createAttributeDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createAttributeDefQuickFix\tTag Full",
-      "contents": "auradev:createAttributeDefQuickFix>${1:}</auradev:createAttributeDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createBaseComponentDefQuickFix\tTag Simple",
-      "contents": "auradev:createBaseComponentDefQuickFix$1>${2:}</auradev:createBaseComponentDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createBaseComponentDefQuickFix\tTag Full",
-      "contents": "auradev:createBaseComponentDefQuickFix defType=\"${1:Optional - String}\">${2:}</auradev:createBaseComponentDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createComponentDefQuickFix\tTag Simple",
-      "contents": "auradev:createComponentDefQuickFix$1>${2:}</auradev:createComponentDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createComponentDefQuickFix\tTag Full",
-      "contents": "auradev:createComponentDefQuickFix>${1:}</auradev:createComponentDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createTokenDefQuickFix\tTag Simple",
-      "contents": "auradev:createTokenDefQuickFix$1>${2:}</auradev:createTokenDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createTokenDefQuickFix\tTag Full",
-      "contents": "auradev:createTokenDefQuickFix>${1:}</auradev:createTokenDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createTokensDefQuickFix\tTag Simple",
-      "contents": "auradev:createTokensDefQuickFix$1>${2:}</auradev:createTokensDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-createTokensDefQuickFix\tTag Full",
-      "contents": "auradev:createTokensDefQuickFix>${1:}</auradev:createTokensDefQuickFix>"
-    },
-    {
       "trigger": "auradev-dependencyItem\tTag Simple",
       "contents": "auradev:dependencyItem$1>${2:}</auradev:dependencyItem>"
     },
@@ -258,92 +210,12 @@
       "contents": "auradev:lintc name=\"${1:Optional - String}\">${2:}</auradev:lintc>"
     },
     {
-      "trigger": "auradev-quickFix\tTag Simple",
-      "contents": "auradev:quickFix$1>${2:}</auradev:quickFix>"
-    },
-    {
-      "trigger": "auradev-quickFix\tTag Full",
-      "contents": "auradev:quickFix quickFix=\"${1:Optional - java://org.auraframework.throwable.quickfix.AuraQuickFix}\">${2:}</auradev:quickFix>"
-    },
-    {
-      "trigger": "auradev-quickFixButton\tTag Simple",
-      "contents": "auradev:quickFixButton$1>${2:}</auradev:quickFixButton>"
-    },
-    {
-      "trigger": "auradev-quickFixButton\tTag Full",
-      "contents": "auradev:quickFixButton quickFix=\"${1:Optional - java://org.auraframework.throwable.quickfix.AuraQuickFix}\" showUI=\"${2:Optional - auradev:showQuickFixUI}\">${3:}</auradev:quickFixButton>"
-    },
-    {
-      "trigger": "auradev-quickFixException\tTag Simple",
-      "contents": "auradev:quickFixException$1>${2:}</auradev:quickFixException>"
-    },
-    {
-      "trigger": "auradev-quickFixException\tTag Full",
-      "contents": "auradev:quickFixException exception=\"${1:Optional - java://org.auraframework.throwable.quickfix.QuickFixException}\" cause=\"${2:Optional - String}\">${3:}</auradev:quickFixException>"
-    },
-    {
       "trigger": "auradev-quickFixTemplate\tTag Simple",
       "contents": "auradev:quickFixTemplate$1>${2:}</auradev:quickFixTemplate>"
     },
     {
       "trigger": "auradev-quickFixTemplate\tTag Full",
       "contents": "auradev:quickFixTemplate>${1:}</auradev:quickFixTemplate>"
-    },
-    {
-      "trigger": "auradev-removeAttributeDefQuickFix\tTag Simple",
-      "contents": "auradev:removeAttributeDefQuickFix$1>${2:}</auradev:removeAttributeDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-removeAttributeDefQuickFix\tTag Full",
-      "contents": "auradev:removeAttributeDefQuickFix>${1:}</auradev:removeAttributeDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-removeBodyDefQuickFix\tTag Simple",
-      "contents": "auradev:removeBodyDefQuickFix$1>${2:}</auradev:removeBodyDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-removeBodyDefQuickFix\tTag Full",
-      "contents": "auradev:removeBodyDefQuickFix>${1:}</auradev:removeBodyDefQuickFix>"
-    },
-    {
-      "trigger": "auradev-saveApplication\tTag Simple",
-      "contents": "auradev:saveApplication$1>${2:}</auradev:saveApplication>"
-    },
-    {
-      "trigger": "auradev-saveApplication\tTag Full",
-      "contents": "auradev:saveApplication def=\"${1:Optional - java://org.auraframework.def.ApplicationDef}\">${2:}</auradev:saveApplication>"
-    },
-    {
-      "trigger": "auradev-saveComponent\tTag Simple",
-      "contents": "auradev:saveComponent$1>${2:}</auradev:saveComponent>"
-    },
-    {
-      "trigger": "auradev-saveComponent\tTag Full",
-      "contents": "auradev:saveComponent def=\"${1:Optional - java://org.auraframework.def.ComponentDef}\">${2:}</auradev:saveComponent>"
-    },
-    {
-      "trigger": "auradev-saveComponentJava\tTag Simple",
-      "contents": "auradev:saveComponentJava$1>${2:}</auradev:saveComponentJava>"
-    },
-    {
-      "trigger": "auradev-saveComponentJava\tTag Full",
-      "contents": "auradev:saveComponentJava def=\"${1:Optional - java://org.auraframework.def.ComponentDef}\">${2:}</auradev:saveComponentJava>"
-    },
-    {
-      "trigger": "auradev-saveStyle\tTag Simple",
-      "contents": "auradev:saveStyle$1>${2:}</auradev:saveStyle>"
-    },
-    {
-      "trigger": "auradev-saveStyle\tTag Full",
-      "contents": "auradev:saveStyle def=\"${1:Optional - java://org.auraframework.def.StyleDef}\">${2:}</auradev:saveStyle>"
-    },
-    {
-      "trigger": "auradev-saveTokenList\tTag Simple",
-      "contents": "auradev:saveTokenList$1>${2:}</auradev:saveTokenList>"
-    },
-    {
-      "trigger": "auradev-saveTokenList\tTag Full",
-      "contents": "auradev:saveTokenList def=\"${1:Optional - java://org.auraframework.def.ComponentDef}\">${2:}</auradev:saveTokenList>"
     },
     {
       "trigger": "auradev-showDependencies\tTag Simple",
@@ -3058,6 +2930,14 @@
       "contents": "auratest:componentClassServerProviderIteration iterationForceServer=\"${1:Optional - Boolean}\" shouldCreate1=\"${2:Optional - Boolean}\" shouldCreate2=\"${3:Optional - Boolean}\" shouldCreate3=\"${4:Optional - Boolean}\" shouldCreate4=\"${5:Optional - Boolean}\" iterationItems=\"${6:Optional - List}\">${7:}</auratest:componentClassServerProviderIteration>"
     },
     {
+      "trigger": "auratest-componentClassUnloaded\tTag Simple",
+      "contents": "auratest:componentClassUnloaded$1>${2:}</auratest:componentClassUnloaded>"
+    },
+    {
+      "trigger": "auratest-componentClassUnloaded\tTag Full",
+      "contents": "auratest:componentClassUnloaded>${1:}</auratest:componentClassUnloaded>"
+    },
+    {
       "trigger": "auratest-componentInstanceOf\tTag Simple",
       "contents": "auratest:componentInstanceOf$1>${2:}</auratest:componentInstanceOf>"
     },
@@ -3072,22 +2952,6 @@
     {
       "trigger": "auratest-context\tTag Full",
       "contents": "auratest:context>${1:}</auratest:context>"
-    },
-    {
-      "trigger": "auratest-createAttributeQuickFix\tTag Simple",
-      "contents": "auratest:createAttributeQuickFix$1>${2:}</auratest:createAttributeQuickFix>"
-    },
-    {
-      "trigger": "auratest-createAttributeQuickFix\tTag Full",
-      "contents": "auratest:createAttributeQuickFix>${1:}</auratest:createAttributeQuickFix>"
-    },
-    {
-      "trigger": "auratest-createInnerCmpQuickFixCmp\tTag Simple",
-      "contents": "auratest:createInnerCmpQuickFixCmp$1>${2:}</auratest:createInnerCmpQuickFixCmp>"
-    },
-    {
-      "trigger": "auratest-createInnerCmpQuickFixCmp\tTag Full",
-      "contents": "auratest:createInnerCmpQuickFixCmp>${1:}</auratest:createInnerCmpQuickFixCmp>"
     },
     {
       "trigger": "auratest-eventCounter\tTag Simple",

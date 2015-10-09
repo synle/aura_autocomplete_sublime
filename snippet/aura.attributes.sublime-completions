@@ -470,10 +470,6 @@
       "contents": "hasUnrenderMethod=\"${1:auradev:componentClass - Required - Boolean}\""
     },
     {
-      "trigger": "auradev-createBaseComponentDefQuickFix-defType\tAttr",
-      "contents": "defType=\"${1:auradev:createBaseComponentDefQuickFix - Optional - String}\""
-    },
-    {
       "trigger": "auradev-dependencyItem-descriptor\tAttr",
       "contents": "descriptor=\"${1:auradev:dependencyItem - Optional - String}\""
     },
@@ -492,46 +488,6 @@
     {
       "trigger": "auradev-lintc-name\tAttr",
       "contents": "name=\"${1:auradev:lintc - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-quickFix-quickFix\tAttr",
-      "contents": "quickFix=\"${1:auradev:quickFix - Optional - java://org.auraframework.throwable.quickfix.AuraQuickFix}\""
-    },
-    {
-      "trigger": "auradev-quickFixButton-quickFix\tAttr",
-      "contents": "quickFix=\"${1:auradev:quickFixButton - Optional - java://org.auraframework.throwable.quickfix.AuraQuickFix}\""
-    },
-    {
-      "trigger": "auradev-quickFixButton-showUI\tAttr",
-      "contents": "showUI=\"${1:auradev:quickFixButton - Optional - auradev:showQuickFixUI}\""
-    },
-    {
-      "trigger": "auradev-quickFixException-exception\tAttr",
-      "contents": "exception=\"${1:auradev:quickFixException - Optional - java://org.auraframework.throwable.quickfix.QuickFixException}\""
-    },
-    {
-      "trigger": "auradev-quickFixException-cause\tAttr",
-      "contents": "cause=\"${1:auradev:quickFixException - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-saveApplication-def\tAttr",
-      "contents": "def=\"${1:auradev:saveApplication - Optional - java://org.auraframework.def.ApplicationDef}\""
-    },
-    {
-      "trigger": "auradev-saveComponent-def\tAttr",
-      "contents": "def=\"${1:auradev:saveComponent - Optional - java://org.auraframework.def.ComponentDef}\""
-    },
-    {
-      "trigger": "auradev-saveComponentJava-def\tAttr",
-      "contents": "def=\"${1:auradev:saveComponentJava - Optional - java://org.auraframework.def.ComponentDef}\""
-    },
-    {
-      "trigger": "auradev-saveStyle-def\tAttr",
-      "contents": "def=\"${1:auradev:saveStyle - Optional - java://org.auraframework.def.StyleDef}\""
-    },
-    {
-      "trigger": "auradev-saveTokenList-def\tAttr",
-      "contents": "def=\"${1:auradev:saveTokenList - Optional - java://org.auraframework.def.ComponentDef}\""
     },
     {
       "trigger": "auradev-showDependencies-component\tAttr",
