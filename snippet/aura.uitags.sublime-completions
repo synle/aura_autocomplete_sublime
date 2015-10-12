@@ -1210,14 +1210,6 @@
       "contents": "ui:checkboxMenuItem>${1:​A menu item with a checkbox that supports multiple selection and can be used to invoke an action. This component is nested in a ui:menu component.}</ui:checkboxMenuItem>"
     },
     {
-      "trigger": "ui-column\tTag Simple",
-      "contents": "ui:column$1>${2:A column template used to define layout behavior in ui:listView.}</ui:column>"
-    },
-    {
-      "trigger": "ui-column\tTag Full",
-      "contents": "ui:column>${1:A column template used to define layout behavior in ui:listView.}</ui:column>"
-    },
-    {
       "trigger": "ui-containerManager\tTag Simple",
       "contents": "ui:containerManager$1>${2:A manager for containers}</ui:containerManager>"
     },
@@ -1688,86 +1680,6 @@
     {
       "trigger": "ui-listSorter\tTag Full",
       "contents": "ui:listSorter dataProvider=\"${1:Optional - Aura.Component[]}\" class=\"${2:Optional - String}\" title=\"${3:Optional - String}\" cancelLabel=\"${4:Optional - String}\" applyLabel=\"${5:Optional - String}\" visible=\"${6:Optional - Boolean}\" items=\"${7:Optional - Object[]}\" defaultSelectedItems=\"${8:Optional - Object}\" triggerLabel=\"${9:Optional - String}\" ascendingLabel=\"${10:Optional - String}\" descendingLabel=\"${11:Optional - String}\" trigger=\"${12:Optional - Aura.Component[]}\" modal=\"${13:Optional - Boolean}\" rowVar=\"${14:Optional - String}\" rowDef=\"${15:Optional - Aura.ComponentDefRef[]}\" onApply=\"${16:Optional - Aura.Action}\" onOpen=\"${17:Optional - Aura.Action}\" onCancel=\"${18:Optional - Aura.Action}\" refresh=\"${19:Optional - ui:refresh}\">${20:This component provides the user selected items with sort order based on the data from the data provider.}</ui:listSorter>"
-    },
-    {
-      "trigger": "ui-listView\tTag Simple",
-      "contents": "ui:listView$1>${2:Implements ui:elementInterface.\tDeprecated. A column based listview with comprehensive event support.}</ui:listView>"
-    },
-    {
-      "trigger": "ui-listView\tTag Full",
-      "contents": "ui:listView id=\"${1:Optional - String}\" alternateRowClass=\"${2:Optional - String}\" blockSize=\"${3:Optional - Integer}\" columns=\"${4:Optional - List}\" dataColumns=\"${5:Optional - List}\" dataTemplates=\"${6:Optional - List}\" emptyMessage=\"${7:Optional - String}\" footer=\"${8:Optional - Aura.Component[]}\" items=\"${9:Optional - List}\" rowClass=\"${10:Optional - String}\" rowTooltip=\"${11:Optional - String}\" oncolumnsready=\"${12:Optional - ui:listViewEvent}\" onitemsready=\"${13:Optional - ui:listViewEvent}\" oncellclick=\"${14:Optional - ui:listViewEvent}\" onheaderclick=\"${15:Optional - ui:listViewEvent}\" onrowclick=\"${16:Optional - ui:listViewEvent}\" onclick=\"${17:Optional - ui:listViewEvent}\" oncelldblclick=\"${18:Optional - ui:listViewEvent}\" onheaderdblclick=\"${19:Optional - ui:listViewEvent}\" onrowdblclick=\"${20:Optional - ui:listViewEvent}\" ondblclick=\"${21:Optional - ui:listViewEvent}\" oncellmousedown=\"${22:Optional - ui:listViewEvent}\" onheadermousedown=\"${23:Optional - ui:listViewEvent}\" onrowmousedown=\"${24:Optional - ui:listViewEvent}\" onmousedown=\"${25:Optional - ui:listViewEvent}\" oncellmouseup=\"${26:Optional - ui:listViewEvent}\" onheadermouseup=\"${27:Optional - ui:listViewEvent}\" onrowmouseup=\"${28:Optional - ui:listViewEvent}\" onmouseup=\"${29:Optional - ui:listViewEvent}\" oncellmouseover=\"${30:Optional - ui:listViewEvent}\" onheadermouseover=\"${31:Optional - ui:listViewEvent}\" onrowmouseover=\"${32:Optional - ui:listViewEvent}\" onmouseover=\"${33:Optional - ui:listViewEvent}\" oncellmouseout=\"${34:Optional - ui:listViewEvent}\" onheadermouseout=\"${35:Optional - ui:listViewEvent}\" onrowmouseout=\"${36:Optional - ui:listViewEvent}\" onmouseout=\"${37:Optional - ui:listViewEvent}\" oncellkeydown=\"${38:Optional - ui:listViewEvent}\" onheaderkeydown=\"${39:Optional - ui:listViewEvent}\" onrowkeydown=\"${40:Optional - ui:listViewEvent}\" onkeydown=\"${41:Optional - ui:listViewEvent}\" oncellkeyup=\"${42:Optional - ui:listViewEvent}\" onheaderkeyup=\"${43:Optional - ui:listViewEvent}\" onrowkeyup=\"${44:Optional - ui:listViewEvent}\" onkeyup=\"${45:Optional - ui:listViewEvent}\" oncellkeypress=\"${46:Optional - ui:listViewEvent}\" onheaderkeypress=\"${47:Optional - ui:listViewEvent}\" onrowkeypress=\"${48:Optional - ui:listViewEvent}\" onkeypress=\"${49:Optional - ui:listViewEvent}\" oncelltouchstart=\"${50:Optional - ui:listViewEvent}\" onheadertouchstart=\"${51:Optional - ui:listViewEvent}\" onrowtouchstart=\"${52:Optional - ui:listViewEvent}\" ontouchstart=\"${53:Optional - ui:listViewEvent}\" oncelltouchmove=\"${54:Optional - ui:listViewEvent}\" onheadertouchmove=\"${55:Optional - ui:listViewEvent}\" onrowtouchmove=\"${56:Optional - ui:listViewEvent}\" ontouchmove=\"${57:Optional - ui:listViewEvent}\" oncelltouchend=\"${58:Optional - ui:listViewEvent}\" onheadertouchend=\"${59:Optional - ui:listViewEvent}\" onrowtouchend=\"${60:Optional - ui:listViewEvent}\" ontouchend=\"${61:Optional - ui:listViewEvent}\">${62:Implements ui:elementInterface.\tDeprecated. A column based listview with comprehensive event support.}</ui:listView>"
-    },
-    {
-      "trigger": "ui-listViewColumn\tTag Simple",
-      "contents": "ui:listViewColumn$1>${2:Implements ui:elementInterface,ui:listViewColumnInterface.\tAn abstract column template component, used to specify column display information in ui:listView.}</ui:listViewColumn>"
-    },
-    {
-      "trigger": "ui-listViewColumn\tTag Full",
-      "contents": "ui:listViewColumn column=\"${1:Optional - Object}\" index=\"${2:Optional - Integer}\" item=\"${3:Optional - Object}\" scope=\"${4:Optional - String}\" type=\"${5:Optional - String}\">${6:Implements ui:elementInterface,ui:listViewColumnInterface.\tAn abstract column template component, used to specify column display information in ui:listView.}</ui:listViewColumn>"
-    },
-    {
-      "trigger": "ui-listViewColumnCell\tTag Simple",
-      "contents": "ui:listViewColumnCell$1>${2:A simple column template definition, describes a barebones table data cell.}</ui:listViewColumnCell>"
-    },
-    {
-      "trigger": "ui-listViewColumnCell\tTag Full",
-      "contents": "ui:listViewColumnCell>${1:A simple column template definition, describes a barebones table data cell.}</ui:listViewColumnCell>"
-    },
-    {
-      "trigger": "ui-listViewColumnCheckbox\tTag Simple",
-      "contents": "ui:listViewColumnCheckbox$1>${2:A checkbox column template definition, describes a checkbox in a table data cell.}</ui:listViewColumnCheckbox>"
-    },
-    {
-      "trigger": "ui-listViewColumnCheckbox\tTag Full",
-      "contents": "ui:listViewColumnCheckbox label=\"${1:Optional - String}\" labelClass=\"${2:Optional - String}\" checked=\"${3:Optional - Boolean}\" onchange=\"${4:Optional - ui:listViewEvent}\">${5:A checkbox column template definition, describes a checkbox in a table data cell.}</ui:listViewColumnCheckbox>"
-    },
-    {
-      "trigger": "ui-listViewColumnEmail\tTag Simple",
-      "contents": "ui:listViewColumnEmail$1>${2:An email column template definition, describes an email mailto: link reference in a table data cell.}</ui:listViewColumnEmail>"
-    },
-    {
-      "trigger": "ui-listViewColumnEmail\tTag Full",
-      "contents": "ui:listViewColumnEmail text=\"${1:Optional - String}\" url=\"${2:Optional - String}\" onclick=\"${3:Optional - ui:listViewEvent}\">${4:An email column template definition, describes an email mailto: link reference in a table data cell.}</ui:listViewColumnEmail>"
-    },
-    {
-      "trigger": "ui-listViewColumnHeader\tTag Simple",
-      "contents": "ui:listViewColumnHeader$1>${2:A simple column template definition, describes a barebones table header cell.}</ui:listViewColumnHeader>"
-    },
-    {
-      "trigger": "ui-listViewColumnHeader\tTag Full",
-      "contents": "ui:listViewColumnHeader>${1:A simple column template definition, describes a barebones table header cell.}</ui:listViewColumnHeader>"
-    },
-    {
-      "trigger": "ui-listViewColumnHtml\tTag Simple",
-      "contents": "ui:listViewColumnHtml$1>${2:An html column template definition, describes unescaped markup in a table data cell.}</ui:listViewColumnHtml>"
-    },
-    {
-      "trigger": "ui-listViewColumnHtml\tTag Full",
-      "contents": "ui:listViewColumnHtml markup=\"${1:Optional - Object}\">${2:An html column template definition, describes unescaped markup in a table data cell.}</ui:listViewColumnHtml>"
-    },
-    {
-      "trigger": "ui-listViewColumnIndex\tTag Simple",
-      "contents": "ui:listViewColumnIndex$1>${2:An index column template definition, describes the (one-based) number of the current item being processed in a table data cell.}</ui:listViewColumnIndex>"
-    },
-    {
-      "trigger": "ui-listViewColumnIndex\tTag Full",
-      "contents": "ui:listViewColumnIndex>${1:An index column template definition, describes the (one-based) number of the current item being processed in a table data cell.}</ui:listViewColumnIndex>"
-    },
-    {
-      "trigger": "ui-listViewColumnLink\tTag Simple",
-      "contents": "ui:listViewColumnLink$1>${2:A link column template definition, describes a hyperlink reference in a table data cell.}</ui:listViewColumnLink>"
-    },
-    {
-      "trigger": "ui-listViewColumnLink\tTag Full",
-      "contents": "ui:listViewColumnLink target=\"${1:Optional - String}\" text=\"${2:Optional - String}\" url=\"${3:Optional - String}\" onclick=\"${4:Optional - ui:listViewEvent}\">${5:A link column template definition, describes a hyperlink reference in a table data cell.}</ui:listViewColumnLink>"
-    },
-    {
-      "trigger": "ui-listViewRow\tTag Simple",
-      "contents": "ui:listViewRow$1>${2:Implements ui:elementInterface.\tA basic row component used by the listView.}</ui:listViewRow>"
-    },
-    {
-      "trigger": "ui-listViewRow\tTag Full",
-      "contents": "ui:listViewRow index=\"${1:Optional - Integer}\" item=\"${2:Optional - Object}\">${3:Implements ui:elementInterface.\tA basic row component used by the listView.}</ui:listViewRow>"
     },
     {
       "trigger": "ui-manifest\tTag Simple",
