@@ -4514,6 +4514,10 @@
       "contents": "refresh=\"${1:ui:virtualDataGrid - Optional - ui:refresh}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-gridAction\tAttr",
+      "contents": "gridAction=\"${1:ui:virtualDataGrid - Optional - ui:gridAction}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-onsort\tAttr",
       "contents": "onsort=\"${1:ui:virtualDataGrid - Optional - ui:sort}\""
     },

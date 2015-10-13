@@ -638,6 +638,10 @@
       "contents": "//  component: virtualDataGrid\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-virtualDataGrid-gridAction",
+      "contents": "//  component: virtualDataGrid\n//    evtName: gridAction\n//    evtType: ui:gridAction\n//description: Notifies listeners when actions were triggered by grid cells\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.gridAction\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Automatically populated by the containing grid component. Index of the row containing this cell.\n\taction: \"${3:String}\",// Which grid action this event contains\n\tpayload: \"${4:Object}\",// Attributes passed to the action\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-virtualDataGrid-onsort",
       "contents": "//  component: virtualDataGrid\n//    evtName: onsort\n//    evtType: ui:sort\n//description: \nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onsort\");\ne.setParams({\n\tsortBy: \"${2:String}\",\n\tcallback: \"${3:Object}\",\n});\ne.fire();"
     },

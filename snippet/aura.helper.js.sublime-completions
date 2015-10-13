@@ -3703,7 +3703,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_generateVirtualRow",
-      "contents": "cmp.getDef().getHelper()._generateVirtualRow(${1:cmp},${2:item})"
+      "contents": "cmp.getDef().getHelper()._generateVirtualRow(${1:cmp},${2:item},${3:index})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_getItemAttached",
@@ -3714,12 +3714,24 @@
       "contents": "cmp.getDef().getHelper()._attachItemToElement(${1:dom},${2:item})"
     },
     {
+      "trigger": "helper-ui-virtualDataGrid-_attachIndexToElement",
+      "contents": "cmp.getDef().getHelper()._attachIndexToElement(${1:dom},${2:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_getRowIndex",
+      "contents": "cmp.getDef().getHelper()._getRowIndex(${1:el})"
+    },
+    {
       "trigger": "helper-ui-virtualDataGrid-appendVirtualRows",
       "contents": "cmp.getDef().getHelper().appendVirtualRows(${1:cmp},${2:items})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-createVirtualRows",
       "contents": "cmp.getDef().getHelper().createVirtualRows(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-selectRow",
+      "contents": "cmp.getDef().getHelper().selectRow(${1:cmp},${2:index},${3:value})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-initializeSorting",
