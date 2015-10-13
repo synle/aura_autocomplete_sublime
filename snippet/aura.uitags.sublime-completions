@@ -127,7 +127,7 @@
     },
     {
       "trigger": "auraStorage-crypto\tTag Full",
-      "contents": "auraStorage:crypto>${1:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
+      "contents": "auraStorage:crypto debugLoggingEnabled=\"${1:Optional - Boolean}\">${2:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
     },
     {
       "trigger": "auraStorage-fuelGauge\tTag Simple",

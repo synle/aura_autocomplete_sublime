@@ -346,6 +346,10 @@
       "contents": "value=\"${1:aura:unescapedHtml - Optional - String}\""
     },
     {
+      "trigger": "auraStorage-crypto-debugLoggingEnabled\tAttr",
+      "contents": "debugLoggingEnabled=\"${1:auraStorage:crypto - Optional - Boolean}\""
+    },
+    {
       "trigger": "auraStorage-fuelGauge-storageName\tAttr",
       "contents": "storageName=\"${1:auraStorage:fuelGauge - Required - String}\""
     },
