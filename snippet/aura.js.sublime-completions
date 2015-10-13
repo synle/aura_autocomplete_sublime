@@ -343,19 +343,47 @@
     },
     {
       "trigger": "A-test-PrePostConfig",
-      "contents": "A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback},${4:preDecodeCallback})"
+      "contents": "A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback},${4:preDecodeCallback},${5:postDecodeCallback})"
     },
     {
       "trigger": "A-test-addPrePostSendCallback",
       "contents": "A.test.addPrePostSendCallback(${1:action},${2:preSendCallback},${3:postSendCallback})"
     },
     {
+      "trigger": "A-test-addPreSendCallback",
+      "contents": "A.test.addPreSendCallback(${1:action},${2:preSendCallback})"
+    },
+    {
+      "trigger": "A-test-addPostSendCallback",
+      "contents": "A.test.addPostSendCallback(${1:action},${2:postSendCallback})"
+    },
+    {
       "trigger": "A-test-removePrePostSendCallback",
       "contents": "A.test.removePrePostSendCallback(${1:handle})"
     },
     {
+      "trigger": "A-test-removePreSendCallback",
+      "contents": "A.test.removePreSendCallback(${1:handle})"
+    },
+    {
+      "trigger": "A-test-removePostSendCallback",
+      "contents": "A.test.removePostSendCallback(${1:handle})"
+    },
+    {
       "trigger": "A-test-addPreDecodeCallback",
       "contents": "A.test.addPreDecodeCallback(${1:preDecodeCallback})"
+    },
+    {
+      "trigger": "A-test-addPrePostDecodeCallback",
+      "contents": "A.test.addPrePostDecodeCallback(${1:preDecodeCallback},${2:postDecodeCallback})"
+    },
+    {
+      "trigger": "A-test-removePrePostDecodeCallback",
+      "contents": "A.test.removePrePostDecodeCallback(${1:handle})"
+    },
+    {
+      "trigger": "A-test-removePostDecodeCallback",
+      "contents": "A.test.removePostDecodeCallback(${1:handle})"
     },
     {
       "trigger": "A-test-removePreDecodeCallback",

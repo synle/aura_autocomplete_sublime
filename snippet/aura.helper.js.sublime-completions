@@ -3354,6 +3354,10 @@
       "contents": "cmp.getDef().getHelper().swapOverflowTabs(${1:cmp},${2:overflowTab},${3:oldTab},${4:newTab})"
     },
     {
+      "trigger": "helper-ui-tabBar-overflowIsInitialized",
+      "contents": "cmp.getDef().getHelper().overflowIsInitialized(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-tabBar-toggleTab",
       "contents": "cmp.getDef().getHelper().toggleTab(${1:tab},${2:condition})"
     },
