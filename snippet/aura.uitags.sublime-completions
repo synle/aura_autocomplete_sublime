@@ -210,14 +210,6 @@
       "contents": "auradev:lintc name=\"${1:Optional - String}\">${2:}</auradev:lintc>"
     },
     {
-      "trigger": "auradev-quickFixTemplate\tTag Simple",
-      "contents": "auradev:quickFixTemplate$1>${2:}</auradev:quickFixTemplate>"
-    },
-    {
-      "trigger": "auradev-quickFixTemplate\tTag Full",
-      "contents": "auradev:quickFixTemplate>${1:}</auradev:quickFixTemplate>"
-    },
-    {
       "trigger": "auradev-showDependencies\tTag Simple",
       "contents": "auradev:showDependencies$1>${2:}</auradev:showDependencies>"
     },
@@ -368,14 +360,6 @@
     {
       "trigger": "auradocs-defOverview\tTag Full",
       "contents": "auradocs:defOverview descriptor=\"${1:Required - String}\" defType=\"${2:Optional - String}\">${3:}</auradocs:defOverview>"
-    },
-    {
-      "trigger": "auradocs-demoAuraError\tTag Simple",
-      "contents": "auradocs:demoAuraError$1>${2:}</auradocs:demoAuraError>"
-    },
-    {
-      "trigger": "auradocs-demoAuraError\tTag Full",
-      "contents": "auradocs:demoAuraError>${1:}</auradocs:demoAuraError>"
     },
     {
       "trigger": "auradocs-demoAutocomplete\tTag Simple",

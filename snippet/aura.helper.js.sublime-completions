@@ -102,10 +102,6 @@
       "contents": "cmp.getDef().getHelper().provide(${1:component},${2:event})"
     },
     {
-      "trigger": "helper-auradocs-demoAuraError-helperThrow",
-      "contents": "cmp.getDef().getHelper().helperThrow(${1:})"
-    },
-    {
       "trigger": "helper-auradocs-demoAutocomplete-handleInputChange",
       "contents": "cmp.getDef().getHelper().handleInputChange(${1:cmp},${2:event},${3:autoCompleteCmpName})"
     },
@@ -308,10 +304,6 @@
     {
       "trigger": "helper-ui-abstractList-triggerDataProvider",
       "contents": "cmp.getDef().getHelper().triggerDataProvider(${1:component},${2:index},${3:refresh})"
-    },
-    {
-      "trigger": "helper-ui-abstractList-handleError",
-      "contents": "cmp.getDef().getHelper().handleError(${1:cmp},${2:errorMsg})"
     },
     {
       "trigger": "helper-ui-action-getInputElement",
