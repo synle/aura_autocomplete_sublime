@@ -2938,6 +2938,14 @@
       "contents": "menuTriggerPress=\"${1:ui:menuTriggerLink - Optional - ui:menuTriggerPress}\""
     },
     {
+      "trigger": "ui-menuTriggerLink-blur\tAttr",
+      "contents": "blur=\"${1:ui:menuTriggerLink - Optional - ui:blur}\""
+    },
+    {
+      "trigger": "ui-menuTriggerLink-focus\tAttr",
+      "contents": "focus=\"${1:ui:menuTriggerLink - Optional - ui:focus}\""
+    },
+    {
       "trigger": "ui-message-title\tAttr",
       "contents": "title=\"${1:ui:message - Optional - String}\""
     },

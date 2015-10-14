@@ -410,6 +410,14 @@
       "contents": "//  component: menuTriggerLink\n//    evtName: menuTriggerPress\n//    evtType: ui:menuTriggerPress\n//description: The event that is fired when the trigger is clicked.\nvar e = cmp.find(\"${1:menuTriggerLink}\").get(\"e.menuTriggerPress\");\ne.setParams({\n\tfocusItemIndex: \"${2:Integer}\",// The index of the item which should be on focus when the menu displays.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-menuTriggerLink-blur",
+      "contents": "//  component: menuTriggerLink\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired when the user moves off from the trigger.\nvar e = cmp.find(\"${1:menuTriggerLink}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuTriggerLink-focus",
+      "contents": "//  component: menuTriggerLink\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when the user focuses on the trigger.\nvar e = cmp.find(\"${1:menuTriggerLink}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-outputURL-click",
       "contents": "//  component: outputURL\n//    evtName: click\n//    evtType: ui:click\n//description: The event fired when the user clicks on the component.\nvar e = cmp.find(\"${1:outputURL}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
     },

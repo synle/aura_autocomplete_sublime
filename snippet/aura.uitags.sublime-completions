@@ -1735,7 +1735,7 @@
     },
     {
       "trigger": "ui-menuTriggerLink\tTag Full",
-      "contents": "ui:menuTriggerLink label=\"${1:Optional - String}\" menuTriggerPress=\"${2:Optional - ui:menuTriggerPress}\">${3:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
+      "contents": "ui:menuTriggerLink label=\"${1:Optional - String}\" menuTriggerPress=\"${2:Optional - ui:menuTriggerPress}\" blur=\"${3:Optional - ui:blur}\" focus=\"${4:Optional - ui:focus}\">${5:A link that triggers a dropdown menu.}</ui:menuTriggerLink>"
     },
     {
       "trigger": "ui-message\tTag Simple",
