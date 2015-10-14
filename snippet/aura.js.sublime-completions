@@ -374,6 +374,10 @@
       "contents": "A.test.addPreDecodeCallback(${1:preDecodeCallback})"
     },
     {
+      "trigger": "A-test-addPostDecodeCallback",
+      "contents": "A.test.addPostDecodeCallback(${1:postDecodeCallback})"
+    },
+    {
       "trigger": "A-test-addPrePostDecodeCallback",
       "contents": "A.test.addPrePostDecodeCallback(${1:preDecodeCallback},${2:postDecodeCallback})"
     },

@@ -278,6 +278,9 @@
 	'A.test.addPreDecodeCallback':
 		'prefix': 'A-test-addPreDecodeCallback'
 		'body': 'A.test.addPreDecodeCallback(${1:preDecodeCallback})'
+	'A.test.addPostDecodeCallback':
+		'prefix': 'A-test-addPostDecodeCallback'
+		'body': 'A.test.addPostDecodeCallback(${1:postDecodeCallback})'
 	'A.test.addPrePostDecodeCallback':
 		'prefix': 'A-test-addPrePostDecodeCallback'
 		'body': 'A.test.addPrePostDecodeCallback(${1:preDecodeCallback},${2:postDecodeCallback})'
