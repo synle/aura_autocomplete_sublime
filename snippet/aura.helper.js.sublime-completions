@@ -314,6 +314,74 @@
       "contents": "cmp.getDef().getHelper().loadComponents(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-autocomplete-fetchData",
+      "contents": "cmp.getDef().getHelper().fetchData(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-fireInputChangeEvent",
+      "contents": "cmp.getDef().getHelper().fireInputChangeEvent(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-hideList",
+      "contents": "cmp.getDef().getHelper().hideList(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleEnterkey",
+      "contents": "cmp.getDef().getHelper().handleEnterkey(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleEnterkeyOnList",
+      "contents": "cmp.getDef().getHelper().handleEnterkeyOnList(${1:component},${2:list})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleEnterKeyOnInput",
+      "contents": "cmp.getDef().getHelper().handleEnterKeyOnInput(${1:component},${2:input})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleEsckey",
+      "contents": "cmp.getDef().getHelper().handleEsckey(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleKeyAction",
+      "contents": "cmp.getDef().getHelper().handleKeyAction(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleOtherKeyAction",
+      "contents": "cmp.getDef().getHelper().handleOtherKeyAction(${1:component},${2:input},${3:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleTabkey",
+      "contents": "cmp.getDef().getHelper().handleTabkey(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-highlightNextItem",
+      "contents": "cmp.getDef().getHelper().highlightNextItem(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-highlightPrevItem",
+      "contents": "cmp.getDef().getHelper().highlightPrevItem(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-relayEvents",
+      "contents": "cmp.getDef().getHelper().relayEvents(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-setIgnoredElements",
+      "contents": "cmp.getDef().getHelper().setIgnoredElements(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-addIgnoredElement",
+      "contents": "cmp.getDef().getHelper().addIgnoredElement(${1:component},${2:element})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-updateAriaAttributes",
+      "contents": "cmp.getDef().getHelper().updateAriaAttributes(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-handleListExpand",
+      "contents": "cmp.getDef().getHelper().handleListExpand(${1:component},${2:event})"
+    },
+    {
       "trigger": "helper-ui-autocompleteList-findHighlightedOptionIndex",
       "contents": "cmp.getDef().getHelper().findHighlightedOptionIndex(${1:iters})"
     },
