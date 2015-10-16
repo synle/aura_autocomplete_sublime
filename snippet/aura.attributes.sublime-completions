@@ -6434,6 +6434,10 @@
       "contents": "flav=\"${1:flavorTest:expressions - Optional - String}\""
     },
     {
+      "trigger": "gvpTest-basicTest-xxx\tAttr",
+      "contents": "xxx=\"${1:gvpTest:basicTest - Optional - String}\""
+    },
+    {
       "trigger": "gvpTest-basicTest-attributeLabel\tAttr",
       "contents": "attributeLabel=\"${1:gvpTest:basicTest - Optional - String}\""
     },

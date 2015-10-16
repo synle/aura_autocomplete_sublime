@@ -99,7 +99,7 @@
     },
     {
       "trigger": "A-test-auraError",
-      "contents": "A.test.auraError($1level, msg/*, error*/)"
+      "contents": "A.test.auraError($1level, msg/* , error */)"
     },
     {
       "trigger": "A-test-expectAuraError",
@@ -400,6 +400,10 @@
     {
       "trigger": "A-test-run",
       "contents": "A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})"
+    },
+    {
+      "trigger": "A-test-waitForRoot",
+      "contents": "A.test.waitForRoot(${1:callback})"
     },
     {
       "trigger": "A-test-runInternal",

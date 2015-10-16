@@ -73,7 +73,7 @@
 		'body': 'A.test.print(${1:value})'
 	'A.test.auraError':
 		'prefix': 'A-test-auraError'
-		'body': 'A.test.auraError($1level, msg/*, error*/)'
+		'body': 'A.test.auraError($1level, msg/* , error */)'
 	'A.test.expectAuraError':
 		'prefix': 'A-test-expectAuraError'
 		'body': 'A.test.expectAuraError(${1:e})'
@@ -299,6 +299,9 @@
 	'A.test.run':
 		'prefix': 'A-test-run'
 		'body': 'A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})'
+	'A.test.waitForRoot':
+		'prefix': 'A-test-waitForRoot'
+		'body': 'A.test.waitForRoot(${1:callback})'
 	'A.test.runInternal':
 		'prefix': 'A-test-runInternal'
 		'body': 'A.test.runInternal(${1:name})'

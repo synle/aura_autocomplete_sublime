@@ -986,14 +986,6 @@
       "contents": "auradocs:welcomeTopic>${1:}</auradocs:welcomeTopic>"
     },
     {
-      "trigger": "aurajstest-emptyTemplate\tTag Simple",
-      "contents": "aurajstest:emptyTemplate$1>${2:Used by aurajstest:inject so that TestInjectionRenderer is entirely responsible for output}</aurajstest:emptyTemplate>"
-    },
-    {
-      "trigger": "aurajstest-emptyTemplate\tTag Full",
-      "contents": "aurajstest:emptyTemplate>${1:Used by aurajstest:inject so that TestInjectionRenderer is entirely responsible for output}</aurajstest:emptyTemplate>"
-    },
-    {
       "trigger": "aurajstest-jstestCase\tTag Simple",
       "contents": "aurajstest:jstestCase$1>${2:}</aurajstest:jstestCase>"
     },
@@ -4335,7 +4327,7 @@
     },
     {
       "trigger": "gvpTest-basicTest\tTag Full",
-      "contents": "gvpTest:basicTest attributeLabel=\"${1:Optional - String}\">${2:}</gvpTest:basicTest>"
+      "contents": "gvpTest:basicTest xxx=\"${1:Optional - String}\" attributeLabel=\"${2:Optional - String}\">${3:}</gvpTest:basicTest>"
     },
     {
       "trigger": "gvpTest-browserProvider\tTag Simple",
