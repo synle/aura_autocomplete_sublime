@@ -5235,11 +5235,11 @@
     },
     {
       "trigger": "performanceTest-runnerExample\tTag Simple",
-      "contents": "performanceTest:runnerExample$1>${2:Implements performance:test.\t}</performanceTest:runnerExample>"
+      "contents": "performanceTest:runnerExample$1>${2:}</performanceTest:runnerExample>"
     },
     {
       "trigger": "performanceTest-runnerExample\tTag Full",
-      "contents": "performanceTest:runnerExample loaded=\"${1:Optional - Boolean}\">${2:Implements performance:test.\t}</performanceTest:runnerExample>"
+      "contents": "performanceTest:runnerExample loaded=\"${1:Optional - Boolean}\">${2:}</performanceTest:runnerExample>"
     },
     {
       "trigger": "performanceTest-runnerExample2\tTag Simple",
