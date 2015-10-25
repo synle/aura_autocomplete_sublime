@@ -1071,7 +1071,7 @@
     },
     {
       "trigger": "ui-autocomplete\tTag Full",
-      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" listOption=\"${2:Required - Aura.ComponentDefRef[]}\" optionVar=\"${3:Required - String}\" emptyListContent=\"${4:Optional - Aura.Component[]}\" loadingIndicator=\"${5:Optional - Aura.Component[]}\" inputClass=\"${6:Optional - String}\" inputType=\"${7:Optional - String}\" placeholder=\"${8:Optional - String}\" propertyToMatch=\"${9:Optional - String}\" theme=\"${10:Optional - String}\" matchFunc=\"${11:Optional - Aura.Action}\" autocompleteButton=\"${12:Optional - Aura.Component[]}\" listHeader=\"${13:Optional - Aura.Component[]}\" listFooter=\"${14:Optional - Aura.Component[]}\" showListHeader=\"${15:Optional - Boolean}\" showListFooter=\"${16:Optional - Boolean}\" usePanel=\"${17:Optional - boolean}\" matchDone=\"${18:Optional - ui:matchDone}\" inputChange=\"${19:Optional - ui:inputChange}\" selectListOption=\"${20:Optional - ui:selectListOption}\" fetchData=\"${21:Optional - ui:fetchData}\" matchText=\"${22:Optional - ui:matchText}\">${23:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
+      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" listOption=\"${2:Required - Aura.ComponentDefRef[]}\" optionVar=\"${3:Required - String}\" emptyListContent=\"${4:Optional - Aura.Component[]}\" loadingIndicator=\"${5:Optional - Aura.Component[]}\" inputClass=\"${6:Optional - String}\" inputType=\"${7:Optional - String}\" placeholder=\"${8:Optional - String}\" propertyToMatch=\"${9:Optional - String}\" theme=\"${10:Optional - String}\" matchFunc=\"${11:Optional - Aura.Action}\" autocompleteButton=\"${12:Optional - Aura.Component[]}\" listHeader=\"${13:Optional - Aura.Component[]}\" listFooter=\"${14:Optional - Aura.Component[]}\" showListHeader=\"${15:Optional - Boolean}\" showListFooter=\"${16:Optional - Boolean}\" usePanel=\"${17:Optional - boolean}\" setDefaultHighlight=\"${18:Optional - boolean}\" matchDone=\"${19:Optional - ui:matchDone}\" inputChange=\"${20:Optional - ui:inputChange}\" selectListOption=\"${21:Optional - ui:selectListOption}\" fetchData=\"${22:Optional - ui:fetchData}\" matchText=\"${23:Optional - ui:matchText}\">${24:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
     },
     {
       "trigger": "ui-autocompleteList\tTag Simple",
@@ -1079,7 +1079,7 @@
     },
     {
       "trigger": "ui-autocompleteList\tTag Full",
-      "contents": "ui:autocompleteList ignoredElements=\"${1:Optional - Object}\" keyword=\"${2:Optional - String}\" propertyToMatch=\"${3:Optional - String}\" theme=\"${4:Optional - String}\" matchFunc=\"${5:Optional - Aura.Action}\" footerSelected=\"${6:Optional - boolean}\" headerSelected=\"${7:Optional - boolean}\" listHeader=\"${8:Optional - Aura.Component[]}\" listFooter=\"${9:Optional - Aura.Component[]}\" showListHeader=\"${10:Optional - Boolean}\" showListFooter=\"${11:Optional - Boolean}\" matchDone=\"${12:Optional - ui:matchDone}\" listHighlight=\"${13:Optional - ui:listHighlight}\" matchText=\"${14:Optional - ui:matchText}\" pressOnHighlighted=\"${15:Optional - ui:press}\" selectListOption=\"${16:Optional - ui:selectListOption}\" updateAriaAttributes=\"${17:Optional - ui:updateAriaAttributes}\" listExpand=\"${18:Optional - ui:autocompleteListExpand}\">${19:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
+      "contents": "ui:autocompleteList ignoredElements=\"${1:Optional - Object}\" keyword=\"${2:Optional - String}\" propertyToMatch=\"${3:Optional - String}\" theme=\"${4:Optional - String}\" matchFunc=\"${5:Optional - Aura.Action}\" footerSelected=\"${6:Optional - boolean}\" headerSelected=\"${7:Optional - boolean}\" listHeader=\"${8:Optional - Aura.Component[]}\" listFooter=\"${9:Optional - Aura.Component[]}\" showListHeader=\"${10:Optional - Boolean}\" showListFooter=\"${11:Optional - Boolean}\" setDefaultHighlight=\"${12:Optional - boolean}\" matchDone=\"${13:Optional - ui:matchDone}\" listHighlight=\"${14:Optional - ui:listHighlight}\" matchText=\"${15:Optional - ui:matchText}\" pressOnHighlighted=\"${16:Optional - ui:press}\" selectListOption=\"${17:Optional - ui:selectListOption}\" updateAriaAttributes=\"${18:Optional - ui:updateAriaAttributes}\" listExpand=\"${19:Optional - ui:autocompleteListExpand}\">${20:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
     },
     {
       "trigger": "ui-autocompleteOption\tTag Simple",
@@ -1691,11 +1691,11 @@
     },
     {
       "trigger": "ui-menuList\tTag Simple",
-      "contents": "ui:menuList$1>${2:Implements ui:visible.\tA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+      "contents": "ui:menuList$1>${2:Implements ui:visible.\tA menu component that can contain menu items:\n                ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component\n                ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used\n                together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuList\tTag Full",
-      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that can contain menu items: ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that can contain menu items:\n                ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component\n                ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used\n                together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuTrigger\tTag Simple",
@@ -1911,7 +1911,7 @@
     },
     {
       "trigger": "ui-panel\tTag Full",
-      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" boundingElement=\"${17:Optional - Object}\" inside=\"${18:Optional - Boolean}\" advanced=\"${19:Optional - Boolean}\" align=\"${20:Optional - String}\" targetAlign=\"${21:Optional - String}\" pad=\"${22:Optional - Integer}\" padTop=\"${23:Optional - Integer}\" closeButton=\"${24:Optional - Aura.Component[]}\">${25:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
+      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" boundingElement=\"${17:Optional - Object}\" inside=\"${18:Optional - Boolean}\" advancedConfig=\"${19:Optional - Object}\" pad=\"${20:Optional - Integer}\" closeButton=\"${21:Optional - Aura.Component[]}\">${22:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
     },
     {
       "trigger": "ui-panelDialog\tTag Simple",
@@ -2842,6 +2842,22 @@
       "contents": "auratest:context>${1:}</auratest:context>"
     },
     {
+      "trigger": "auratest-errorHandling\tTag Simple",
+      "contents": "auratest:errorHandling$1>${2:}</auratest:errorHandling>"
+    },
+    {
+      "trigger": "auratest-errorHandling\tTag Full",
+      "contents": "auratest:errorHandling requiredAttribute=\"${1:Required - String}\" message=\"${2:Optional - String}\" error=\"${3:Optional - String}\" handleSystemError=\"${4:Optional - Boolean}\" throwErrorFromInit=\"${5:Optional - Boolean}\" throwErrorFromRender=\"${6:Optional - boolean}\" throwErrorFromRerender=\"${7:Optional - Boolean}\" throwErrorFromAfterRender=\"${8:Optional - Boolean}\" throwErrorFromUnrender=\"${9:Optional - Boolean}\">${10:}</auratest:errorHandling>"
+    },
+    {
+      "trigger": "auratest-errorHandlingErrorModelCmp\tTag Simple",
+      "contents": "auratest:errorHandlingErrorModelCmp$1>${2:}</auratest:errorHandlingErrorModelCmp>"
+    },
+    {
+      "trigger": "auratest-errorHandlingErrorModelCmp\tTag Full",
+      "contents": "auratest:errorHandlingErrorModelCmp>${1:}</auratest:errorHandlingErrorModelCmp>"
+    },
+    {
       "trigger": "auratest-eventCounter\tTag Simple",
       "contents": "auratest:eventCounter$1>${2:}</auratest:eventCounter>"
     },
@@ -3056,22 +3072,6 @@
     {
       "trigger": "auratest-testInterfaceMultipleImpl\tTag Full",
       "contents": "auratest:testInterfaceMultipleImpl>${1:Implements auratest:testInterface,auratest:testInterface2,auratest:test_Instantiate_Interface.\t}</auratest:testInterfaceMultipleImpl>"
-    },
-    {
-      "trigger": "auratest-testModelThatThrows\tTag Simple",
-      "contents": "auratest:testModelThatThrows$1>${2:}</auratest:testModelThatThrows>"
-    },
-    {
-      "trigger": "auratest-testModelThatThrows\tTag Full",
-      "contents": "auratest:testModelThatThrows>${1:}</auratest:testModelThatThrows>"
-    },
-    {
-      "trigger": "auratest-testModelThatThrowsInRenderer\tTag Simple",
-      "contents": "auratest:testModelThatThrowsInRenderer$1>${2:}</auratest:testModelThatThrowsInRenderer>"
-    },
-    {
-      "trigger": "auratest-testModelThatThrowsInRenderer\tTag Full",
-      "contents": "auratest:testModelThatThrowsInRenderer>${1:}</auratest:testModelThatThrowsInRenderer>"
     },
     {
       "trigger": "auratest-test_Abstract\tTag Simple",
@@ -3392,6 +3392,14 @@
     {
       "trigger": "clientApiTest-eventBinding\tTag Full",
       "contents": "clientApiTest:eventBinding focusEvent=\"${1:Optional - Boolean}\" blurEvent=\"${2:Optional - Boolean}\" clickCount=\"${3:Optional - Integer}\">${4:}</clientApiTest:eventBinding>"
+    },
+    {
+      "trigger": "clientApiTest-getDefinition\tTag Simple",
+      "contents": "clientApiTest:getDefinition$1>${2:}</clientApiTest:getDefinition>"
+    },
+    {
+      "trigger": "clientApiTest-getDefinition\tTag Full",
+      "contents": "clientApiTest:getDefinition>${1:}</clientApiTest:getDefinition>"
     },
     {
       "trigger": "clientApiTest-jsonMethodExposure\tTag Simple",
@@ -3720,22 +3728,6 @@
     {
       "trigger": "componentTest-stubComponent\tTag Full",
       "contents": "componentTest:stubComponent>${1:}</componentTest:stubComponent>"
-    },
-    {
-      "trigger": "componentTest-throwError\tTag Simple",
-      "contents": "componentTest:throwError$1>${2:}</componentTest:throwError>"
-    },
-    {
-      "trigger": "componentTest-throwError\tTag Full",
-      "contents": "componentTest:throwError throwErrorFromRender=\"${1:Optional - Boolean}\" throwErrorFromReRender=\"${2:Optional - Boolean}\" throwErrorFromUnRender=\"${3:Optional - Boolean}\" outputValue=\"${4:Optional - String}\" throwErrorInnerFromRender=\"${5:Optional - Boolean}\" throwErrorInnerFromReRender=\"${6:Optional - Boolean}\" throwErrorInnerFromUnRender=\"${7:Optional - Boolean}\" newCmp=\"${8:Optional - Aura.Component[]}\">${9:}</componentTest:throwError>"
-    },
-    {
-      "trigger": "componentTest-throwErrorInner\tTag Simple",
-      "contents": "componentTest:throwErrorInner$1>${2:}</componentTest:throwErrorInner>"
-    },
-    {
-      "trigger": "componentTest-throwErrorInner\tTag Full",
-      "contents": "componentTest:throwErrorInner throwErrorFromRender=\"${1:Optional - Boolean}\" throwErrorFromReRender=\"${2:Optional - Boolean}\" throwErrorFromUnRender=\"${3:Optional - Boolean}\" outputValue=\"${4:Optional - String}\">${5:}</componentTest:throwErrorInner>"
     },
     {
       "trigger": "componentTest-toJSON\tTag Simple",

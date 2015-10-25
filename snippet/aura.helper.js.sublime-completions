@@ -35,7 +35,7 @@
     },
     {
       "trigger": "helper-aura-if-createBody",
-      "contents": "cmp.getDef().getHelper().createBody(${1:cmp},${2:isTrue},${3:localCreation})"
+      "contents": "cmp.getDef().getHelper().createBody(${1:cmp},${2:isTrue})"
     },
     {
       "trigger": "helper-aura-iteration-createBody",
@@ -500,6 +500,10 @@
     {
       "trigger": "helper-ui-autocompleteList-showLoading",
       "contents": "cmp.getDef().getHelper().showLoading(${1:component},${2:visible})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-setDefaultHighlight",
+      "contents": "cmp.getDef().getHelper().setDefaultHighlight(${1:component})"
     },
     {
       "trigger": "helper-ui-autocompleteList-setUpEvents",
