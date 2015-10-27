@@ -319,7 +319,7 @@
     },
     {
       "trigger": "helper-ui-autocomplete-fireInputChangeEvent",
-      "contents": "cmp.getDef().getHelper().fireInputChangeEvent(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().fireInputChangeEvent(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-hideList",
@@ -327,7 +327,7 @@
     },
     {
       "trigger": "helper-ui-autocomplete-handleEnterkey",
-      "contents": "cmp.getDef().getHelper().handleEnterkey(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleEnterkey(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-handleEnterkeyOnList",
@@ -335,11 +335,11 @@
     },
     {
       "trigger": "helper-ui-autocomplete-handleEnterKeyOnInput",
-      "contents": "cmp.getDef().getHelper().handleEnterKeyOnInput(${1:component},${2:input})"
+      "contents": "cmp.getDef().getHelper().handleEnterKeyOnInput(${1:})"
     },
     {
       "trigger": "helper-ui-autocomplete-handleEsckey",
-      "contents": "cmp.getDef().getHelper().handleEsckey(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleEsckey(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-handleKeyAction",
@@ -347,15 +347,15 @@
     },
     {
       "trigger": "helper-ui-autocomplete-handleOtherKeyAction",
-      "contents": "cmp.getDef().getHelper().handleOtherKeyAction(${1:component},${2:input},${3:event})"
+      "contents": "cmp.getDef().getHelper().handleOtherKeyAction(${1:})"
     },
     {
       "trigger": "helper-ui-autocomplete-handleTabkey",
-      "contents": "cmp.getDef().getHelper().handleTabkey(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleTabkey(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-highlightNextItem",
-      "contents": "cmp.getDef().getHelper().highlightNextItem(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().highlightNextItem(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-highlightPrevItem",
@@ -379,7 +379,7 @@
     },
     {
       "trigger": "helper-ui-autocomplete-handleListExpand",
-      "contents": "cmp.getDef().getHelper().handleListExpand(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleListExpand(${1:})"
     },
     {
       "trigger": "helper-ui-autocompleteList-findHighlightedOptionIndex",
@@ -1135,7 +1135,7 @@
     },
     {
       "trigger": "helper-ui-dataWriter-write",
-      "contents": "cmp.getDef().getHelper().write(${1:concrete},${2:cfg},${3:callback})"
+      "contents": "cmp.getDef().getHelper().write(${1:})"
     },
     {
       "trigger": "helper-ui-datePicker-_getScrollableParent",
@@ -2167,7 +2167,7 @@
     },
     {
       "trigger": "helper-ui-interactive-preEventFiring",
-      "contents": "cmp.getDef().getHelper().preEventFiring(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().preEventFiring(${1:})"
     },
     {
       "trigger": "helper-ui-interactive-setEventParams",
@@ -2611,7 +2611,7 @@
     },
     {
       "trigger": "helper-ui-panelDialog-beforeTransitionEnd",
-      "contents": "cmp.getDef().getHelper().beforeTransitionEnd(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().beforeTransitionEnd(${1:})"
     },
     {
       "trigger": "helper-ui-panelDialog-position",
@@ -2679,7 +2679,7 @@
     },
     {
       "trigger": "helper-ui-panelManager-beforeCreatePanel",
-      "contents": "cmp.getDef().getHelper().beforeCreatePanel(${1:cmp},${2:config})"
+      "contents": "cmp.getDef().getHelper().beforeCreatePanel(${1:})"
     },
     {
       "trigger": "helper-ui-panelManager-isModal",
@@ -2739,7 +2739,7 @@
     },
     {
       "trigger": "helper-ui-panelManager-destroyAllPanels",
-      "contents": "cmp.getDef().getHelper().destroyAllPanels(${1:cmp},${2:event})"
+      "contents": "cmp.getDef().getHelper().destroyAllPanels(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panelManager-getActiveInstance",
@@ -2751,7 +2751,7 @@
     },
     {
       "trigger": "helper-ui-panelManager-afterSetActiveInstance",
-      "contents": "cmp.getDef().getHelper().afterSetActiveInstance(${1:panel})"
+      "contents": "cmp.getDef().getHelper().afterSetActiveInstance(${1:})"
     },
     {
       "trigger": "helper-ui-panelManager-_updateModalGlasszIndex",
@@ -2995,15 +2995,15 @@
     },
     {
       "trigger": "helper-ui-pillContainerAutoCompleteOption-displayText",
-      "contents": "cmp.getDef().getHelper().displayText(${1:component},${2:keyword})"
+      "contents": "cmp.getDef().getHelper().displayText(${1:})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoCompleteOption-handleMouseover",
-      "contents": "cmp.getDef().getHelper().handleMouseover(${1:component})"
+      "contents": "cmp.getDef().getHelper().handleMouseover(${1:})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoCompleteOption-handleMouseout",
-      "contents": "cmp.getDef().getHelper().handleMouseout(${1:component})"
+      "contents": "cmp.getDef().getHelper().handleMouseout(${1:})"
     },
     {
       "trigger": "helper-ui-popup-getTargetComponent",
@@ -3127,7 +3127,7 @@
     },
     {
       "trigger": "helper-ui-popupTarget-handleKeyboardEvent",
-      "contents": "cmp.getDef().getHelper().handleKeyboardEvent(${1:component},${2:event})"
+      "contents": "cmp.getDef().getHelper().handleKeyboardEvent(${1:})"
     },
     {
       "trigger": "helper-ui-popupTrigger-addTriggerDomEvents",
