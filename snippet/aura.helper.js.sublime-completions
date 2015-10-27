@@ -2851,7 +2851,7 @@
     },
     {
       "trigger": "helper-ui-panelManager2-destroyPanelInstance",
-      "contents": "cmp.getDef().getHelper().destroyPanelInstance(${1:cmp},${2:config})"
+      "contents": "cmp.getDef().getHelper().destroyPanelInstance(${1:cmp},${2:config},${3:doActivateNext})"
     },
     {
       "trigger": "helper-ui-panelManager2-activateNextPanel",
