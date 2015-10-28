@@ -2159,7 +2159,7 @@
     },
     {
       "trigger": "ui-virtualDataGrid\tTag Full",
-      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" sortBy=\"${3:Optional - String}\" class=\"${4:Optional - String}\" items=\"${5:Optional - List}\" headerColumns=\"${6:Optional - Aura.Component[]}\" columns=\"${7:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${8:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${9:Optional - Aura.Component[]}\" itemVar=\"${10:Optional - String}\" useRowHeaders=\"${11:Optional - Boolean}\" fixedHeader=\"${12:Optional - Boolean}\" refresh=\"${13:Optional - ui:refresh}\" gridAction=\"${14:Optional - ui:gridAction}\" onsort=\"${15:Optional - ui:sort}\">${16:}</ui:virtualDataGrid>"
+      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" widths=\"${3:Optional - Integer[]}\" sortBy=\"${4:Optional - String}\" class=\"${5:Optional - String}\" items=\"${6:Optional - List}\" headerColumns=\"${7:Optional - Aura.Component[]}\" columns=\"${8:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${9:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${10:Optional - Aura.Component[]}\" itemVar=\"${11:Optional - String}\" useRowHeaders=\"${12:Optional - Boolean}\" fixedHeader=\"${13:Optional - Boolean}\" enableResizableColumns=\"${14:Optional - Boolean}\" resizableColumnsConfig=\"${15:Optional - Object}\" refresh=\"${16:Optional - ui:refresh}\" gridAction=\"${17:Optional - ui:gridAction}\" onsort=\"${18:Optional - ui:sort}\" onColumnResize=\"${19:Optional - ui:resize}\">${20:}</ui:virtualDataGrid>"
     },
     {
       "trigger": "ui-virtualList\tTag Simple",

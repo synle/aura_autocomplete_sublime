@@ -654,6 +654,10 @@
       "contents": "//  component: virtualDataGrid\n//    evtName: onsort\n//    evtType: ui:sort\n//description: \nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onsort\");\ne.setParams({\n\tsortBy: \"${2:String}\",\n\tcallback: \"${3:Object}\",\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-virtualDataGrid-onColumnResize",
+      "contents": "//  component: virtualDataGrid\n//    evtName: onColumnResize\n//    evtType: ui:resize\n//description: \nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onColumnResize\");\ne.setParams({\n\tsrc: \"${2:Object}\",// Object containing info about what has resized\n\toldSize: \"${3:Integer}\",// Previous size of the object\n\tnewSize: \"${4:Integer}\",// New size of the object\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-actionsTest-chainBoundaryCases-press",
       "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },

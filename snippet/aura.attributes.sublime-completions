@@ -4466,6 +4466,10 @@
       "contents": "items=\"${1:ui:virtualDataGrid - Optional - Object}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-widths\tAttr",
+      "contents": "widths=\"${1:ui:virtualDataGrid - Optional - Integer[]}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-sortBy\tAttr",
       "contents": "sortBy=\"${1:ui:virtualDataGrid - Optional - String}\""
     },
@@ -4514,6 +4518,14 @@
       "contents": "fixedHeader=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-enableResizableColumns\tAttr",
+      "contents": "enableResizableColumns=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-virtualDataGrid-resizableColumnsConfig\tAttr",
+      "contents": "resizableColumnsConfig=\"${1:ui:virtualDataGrid - Optional - Object}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-refresh\tAttr",
       "contents": "refresh=\"${1:ui:virtualDataGrid - Optional - ui:refresh}\""
     },
@@ -4524,6 +4536,10 @@
     {
       "trigger": "ui-virtualDataGrid-onsort\tAttr",
       "contents": "onsort=\"${1:ui:virtualDataGrid - Optional - ui:sort}\""
+    },
+    {
+      "trigger": "ui-virtualDataGrid-onColumnResize\tAttr",
+      "contents": "onColumnResize=\"${1:ui:virtualDataGrid - Optional - ui:resize}\""
     },
     {
       "trigger": "ui-virtualList-_dirty\tAttr",

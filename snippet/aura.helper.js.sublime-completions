@@ -3810,6 +3810,26 @@
       "contents": "cmp.getDef().getHelper().sortCallback(${1:cmp},${2:response})"
     },
     {
+      "trigger": "helper-ui-virtualDataGrid-enableColumnResizer",
+      "contents": "cmp.getDef().getHelper().enableColumnResizer(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-updateColumnResizer",
+      "contents": "cmp.getDef().getHelper().updateColumnResizer(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-updateResizerAccessibilityLabels",
+      "contents": "cmp.getDef().getHelper().updateResizerAccessibilityLabels(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-attachColResizerHandlers",
+      "contents": "cmp.getDef().getHelper().attachColResizerHandlers(${1:cmp},${2:resizer})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-resizeColumns",
+      "contents": "cmp.getDef().getHelper().resizeColumns(${1:cmp},${2:widths})"
+    },
+    {
       "trigger": "helper-ui-virtualDataGrid-destroyTemplates",
       "contents": "cmp.getDef().getHelper().destroyTemplates(${1:cmp})"
     },
