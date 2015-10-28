@@ -6066,6 +6066,14 @@
       "contents": "clickCount=\"${1:clientApiTest:eventBinding - Optional - Integer}\""
     },
     {
+      "trigger": "clientApiTest-getDefinition-definitionNames\tAttr",
+      "contents": "definitionNames=\"${1:clientApiTest:getDefinition - Optional - String[]}\""
+    },
+    {
+      "trigger": "clientApiTest-getDefinition-complete\tAttr",
+      "contents": "complete=\"${1:clientApiTest:getDefinition - Optional - Boolean}\""
+    },
+    {
       "trigger": "clientServiceTest-enqueueAction-log\tAttr",
       "contents": "log=\"${1:clientServiceTest:enqueueAction - Optional - List}\""
     },

@@ -3399,7 +3399,15 @@
     },
     {
       "trigger": "clientApiTest-getDefinition\tTag Full",
-      "contents": "clientApiTest:getDefinition>${1:}</clientApiTest:getDefinition>"
+      "contents": "clientApiTest:getDefinition definitionNames=\"${1:Optional - String[]}\" complete=\"${2:Optional - Boolean}\">${3:}</clientApiTest:getDefinition>"
+    },
+    {
+      "trigger": "clientApiTest-hasDefinition\tTag Simple",
+      "contents": "clientApiTest:hasDefinition$1>${2:}</clientApiTest:hasDefinition>"
+    },
+    {
+      "trigger": "clientApiTest-hasDefinition\tTag Full",
+      "contents": "clientApiTest:hasDefinition>${1:}</clientApiTest:hasDefinition>"
     },
     {
       "trigger": "clientApiTest-jsonMethodExposure\tTag Simple",
