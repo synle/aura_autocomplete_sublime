@@ -2847,7 +2847,7 @@
     },
     {
       "trigger": "auratest-errorHandling\tTag Full",
-      "contents": "auratest:errorHandling requiredAttribute=\"${1:Required - String}\" message=\"${2:Optional - String}\" error=\"${3:Optional - String}\" handleSystemError=\"${4:Optional - Boolean}\" throwErrorFromInit=\"${5:Optional - Boolean}\" throwErrorFromRender=\"${6:Optional - boolean}\" throwErrorFromRerender=\"${7:Optional - Boolean}\" throwErrorFromAfterRender=\"${8:Optional - Boolean}\" throwErrorFromUnrender=\"${9:Optional - Boolean}\">${10:}</auratest:errorHandling>"
+      "contents": "auratest:errorHandling requiredAttribute=\"${1:Required - String}\" message=\"${2:Optional - String}\" error=\"${3:Optional - String}\" eventHandled=\"${4:Optional - String}\" handleSystemError=\"${5:Optional - Boolean}\" throwErrorFromInit=\"${6:Optional - Boolean}\" throwErrorFromRender=\"${7:Optional - boolean}\" throwErrorFromRerender=\"${8:Optional - Boolean}\" throwErrorFromAfterRender=\"${9:Optional - Boolean}\" throwErrorFromUnrender=\"${10:Optional - Boolean}\">${11:}</auratest:errorHandling>"
     },
     {
       "trigger": "auratest-errorHandlingErrorModelCmp\tTag Simple",
