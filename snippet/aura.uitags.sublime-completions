@@ -127,7 +127,7 @@
     },
     {
       "trigger": "auraStorage-crypto\tTag Full",
-      "contents": "auraStorage:crypto debugLoggingEnabled=\"${1:Optional - Boolean}\">${2:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
+      "contents": "auraStorage:crypto debugLoggingEnabled=\"${1:Optional - Boolean}\" requireQueryParam=\"${2:Optional - Boolean}\">${3:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
     },
     {
       "trigger": "auraStorage-fuelGauge\tTag Simple",
@@ -135,7 +135,7 @@
     },
     {
       "trigger": "auraStorage-fuelGauge\tTag Full",
-      "contents": "auraStorage:fuelGauge storageName=\"${1:Required - String}\" value=\"${2:Optional - Decimal}\" enabled=\"${3:Optional - Boolean}\" implementation=\"${4:Optional - String}\">${5:}</auraStorage:fuelGauge>"
+      "contents": "auraStorage:fuelGauge storageName=\"${1:Required - String}\" value=\"${2:Optional - Decimal}\" enabled=\"${3:Optional - Boolean}\">${4:}</auraStorage:fuelGauge>"
     },
     {
       "trigger": "auraStorage-init\tTag Simple",
@@ -143,7 +143,7 @@
     },
     {
       "trigger": "auraStorage-init\tTag Full",
-      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" version=\"${9:Optional - String}\" requireUseStorageQueryParam=\"${10:Optional - Boolean}\">${11:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
+      "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" version=\"${9:Optional - String}\">${10:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
     },
     {
       "trigger": "auraadmin-cacheView\tTag Simple",
@@ -2495,7 +2495,7 @@
     },
     {
       "trigger": "auraStorageTest-initTest\tTag Full",
-      "contents": "auraStorageTest:initTest clearStorageOnInit=\"${1:Optional - Boolean}\" defaultExpiration=\"${2:Optional - Integer}\" defaultAutoRefreshInterval=\"${3:Optional - Integer}\" requireUseStorageQueryParam=\"${4:Optional - Boolean}\" persistent=\"${5:Optional - Boolean}\" version=\"${6:Optional - String}\" host=\"${7:Optional - String}\" actionStatus=\"${8:Optional - String}\" dupNamedStorage=\"${9:Optional - Boolean}\">${10:Implements auraStorage:refreshObserver.\t}</auraStorageTest:initTest>"
+      "contents": "auraStorageTest:initTest clearStorageOnInit=\"${1:Optional - Boolean}\" defaultExpiration=\"${2:Optional - Integer}\" defaultAutoRefreshInterval=\"${3:Optional - Integer}\" persistent=\"${4:Optional - Boolean}\" version=\"${5:Optional - String}\" host=\"${6:Optional - String}\" actionStatus=\"${7:Optional - String}\" dupNamedStorage=\"${8:Optional - Boolean}\">${9:Implements auraStorage:refreshObserver.\t}</auraStorageTest:initTest>"
     },
     {
       "trigger": "auraStorageTest-isolationTest\tTag Simple",
@@ -2583,7 +2583,7 @@
     },
     {
       "trigger": "auraStorageTest-versionTest\tTag Full",
-      "contents": "auraStorageTest:versionTest defaultExpiration=\"${1:Optional - Integer}\" defaultAutoRefreshInterval=\"${2:Optional - Integer}\" requireUseStorageQueryParam=\"${3:Optional - Boolean}\" persistent=\"${4:Optional - Boolean}\" version=\"${5:Optional - String}\">${6:}</auraStorageTest:versionTest>"
+      "contents": "auraStorageTest:versionTest defaultExpiration=\"${1:Optional - Integer}\" defaultAutoRefreshInterval=\"${2:Optional - Integer}\" persistent=\"${3:Optional - Boolean}\" version=\"${4:Optional - String}\">${5:}</auraStorageTest:versionTest>"
     },
     {
       "trigger": "auratest-access\tTag Simple",

@@ -350,6 +350,10 @@
       "contents": "debugLoggingEnabled=\"${1:auraStorage:crypto - Optional - Boolean}\""
     },
     {
+      "trigger": "auraStorage-crypto-requireQueryParam\tAttr",
+      "contents": "requireQueryParam=\"${1:auraStorage:crypto - Optional - Boolean}\""
+    },
+    {
       "trigger": "auraStorage-fuelGauge-storageName\tAttr",
       "contents": "storageName=\"${1:auraStorage:fuelGauge - Required - String}\""
     },
@@ -360,10 +364,6 @@
     {
       "trigger": "auraStorage-fuelGauge-enabled\tAttr",
       "contents": "enabled=\"${1:auraStorage:fuelGauge - Optional - Boolean}\""
-    },
-    {
-      "trigger": "auraStorage-fuelGauge-implementation\tAttr",
-      "contents": "implementation=\"${1:auraStorage:fuelGauge - Optional - String}\""
     },
     {
       "trigger": "auraStorage-init-name\tAttr",
@@ -400,10 +400,6 @@
     {
       "trigger": "auraStorage-init-version\tAttr",
       "contents": "version=\"${1:auraStorage:init - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorage-init-requireUseStorageQueryParam\tAttr",
-      "contents": "requireUseStorageQueryParam=\"${1:auraStorage:init - Optional - Boolean}\""
     },
     {
       "trigger": "auraadmin-cacheView-name\tAttr",
@@ -5226,10 +5222,6 @@
       "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:initTest - Optional - Integer}\""
     },
     {
-      "trigger": "auraStorageTest-initTest-requireUseStorageQueryParam\tAttr",
-      "contents": "requireUseStorageQueryParam=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
-    },
-    {
       "trigger": "auraStorageTest-initTest-persistent\tAttr",
       "contents": "persistent=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
     },
@@ -5308,10 +5300,6 @@
     {
       "trigger": "auraStorageTest-versionTest-defaultAutoRefreshInterval\tAttr",
       "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:versionTest - Optional - Integer}\""
-    },
-    {
-      "trigger": "auraStorageTest-versionTest-requireUseStorageQueryParam\tAttr",
-      "contents": "requireUseStorageQueryParam=\"${1:auraStorageTest:versionTest - Optional - Boolean}\""
     },
     {
       "trigger": "auraStorageTest-versionTest-persistent\tAttr",
