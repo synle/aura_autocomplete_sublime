@@ -226,8 +226,12 @@
       "contents": "auraNamespacesScriptTags=\"${1:aura:template - Optional - String}\""
     },
     {
-      "trigger": "aura-template-auraResetCss\tAttr",
-      "contents": "auraResetCss=\"${1:aura:template - Optional - String}\""
+      "trigger": "aura-template-auraResetStyle\tAttr",
+      "contents": "auraResetStyle=\"${1:aura:template - Optional - String}\""
+    },
+    {
+      "trigger": "aura-template-auraResetTags\tAttr",
+      "contents": "auraResetTags=\"${1:aura:template - Optional - String}\""
     },
     {
       "trigger": "aura-template-auraInlineStyle\tAttr",
@@ -292,10 +296,6 @@
     {
       "trigger": "aura-template-extraMetaTags\tAttr",
       "contents": "extraMetaTags=\"${1:aura:template - Optional - Aura.Component[]}\""
-    },
-    {
-      "trigger": "aura-template-normalizeCss\tAttr",
-      "contents": "normalizeCss=\"${1:aura:template - Optional - Boolean}\""
     },
     {
       "trigger": "aura-template-forceError\tAttr",
