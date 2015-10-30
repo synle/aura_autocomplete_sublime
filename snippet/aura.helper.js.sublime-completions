@@ -2530,6 +2530,14 @@
       "contents": "cmp.getDef().getHelper().getSupportedAttributes(${1:component})"
     },
     {
+      "trigger": "helper-ui-outputRichText-getDefaultSupportedTags",
+      "contents": "cmp.getDef().getHelper().getDefaultSupportedTags(${1:})"
+    },
+    {
+      "trigger": "helper-ui-outputRichText-getDefaultSupportedAttributes",
+      "contents": "cmp.getDef().getHelper().getDefaultSupportedAttributes(${1:})"
+    },
+    {
       "trigger": "helper-ui-outputText-appendTextElements",
       "contents": "cmp.getDef().getHelper().appendTextElements(${1:textValue},${2:containerEl})"
     },
