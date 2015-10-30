@@ -434,42 +434,6 @@
       "contents": "buttons=\"${1:auraadmin:registryView - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "auradev-componentClass-fullyQualifiedName\tAttr",
-      "contents": "fullyQualifiedName=\"${1:auradev:componentClass - Required - String}\""
-    },
-    {
-      "trigger": "auradev-componentClass-superFullyQualifiedName\tAttr",
-      "contents": "superFullyQualifiedName=\"${1:auradev:componentClass - Required - String}\""
-    },
-    {
-      "trigger": "auradev-componentClass-className\tAttr",
-      "contents": "className=\"${1:auradev:componentClass - Required - String}\""
-    },
-    {
-      "trigger": "auradev-componentClass-superClassName\tAttr",
-      "contents": "superClassName=\"${1:auradev:componentClass - Required - String}\""
-    },
-    {
-      "trigger": "auradev-componentClass-helperProperties\tAttr",
-      "contents": "helperProperties=\"${1:auradev:componentClass - Required - java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>}\""
-    },
-    {
-      "trigger": "auradev-componentClass-renderMethods\tAttr",
-      "contents": "renderMethods=\"${1:auradev:componentClass - Required - java://List<org.auraframework.util.json.JsFunction>}\""
-    },
-    {
-      "trigger": "auradev-componentClass-isRootComponent\tAttr",
-      "contents": "isRootComponent=\"${1:auradev:componentClass - Required - Boolean}\""
-    },
-    {
-      "trigger": "auradev-componentClass-hasSuperClass\tAttr",
-      "contents": "hasSuperClass=\"${1:auradev:componentClass - Required - Boolean}\""
-    },
-    {
-      "trigger": "auradev-componentClass-hasUnrenderMethod\tAttr",
-      "contents": "hasUnrenderMethod=\"${1:auradev:componentClass - Required - Boolean}\""
-    },
-    {
       "trigger": "auradev-dependencyItem-descriptor\tAttr",
       "contents": "descriptor=\"${1:auradev:dependencyItem - Optional - String}\""
     },

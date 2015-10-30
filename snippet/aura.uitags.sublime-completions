@@ -186,14 +186,6 @@
       "contents": "auradev:blankTemplate>${1:}</auradev:blankTemplate>"
     },
     {
-      "trigger": "auradev-componentClass\tTag Simple",
-      "contents": "auradev:componentClass$1>${2:Renders the concrete javascript class for a component.}</auradev:componentClass>"
-    },
-    {
-      "trigger": "auradev-componentClass\tTag Full",
-      "contents": "auradev:componentClass fullyQualifiedName=\"${1:Required - String}\" superFullyQualifiedName=\"${2:Required - String}\" className=\"${3:Required - String}\" superClassName=\"${4:Required - String}\" helperProperties=\"${5:Required - java://List<org.auraframework.impl.ServerServiceImpl.HelperInfo>}\" renderMethods=\"${6:Required - java://List<org.auraframework.util.json.JsFunction>}\" isRootComponent=\"${7:Required - Boolean}\" hasSuperClass=\"${8:Required - Boolean}\" hasUnrenderMethod=\"${9:Required - Boolean}\">${10:Renders the concrete javascript class for a component.}</auradev:componentClass>"
-    },
-    {
       "trigger": "auradev-dependencyItem\tTag Simple",
       "contents": "auradev:dependencyItem$1>${2:}</auradev:dependencyItem>"
     },
