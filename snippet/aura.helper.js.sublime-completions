@@ -3814,6 +3814,10 @@
       "contents": "cmp.getDef().getHelper().enableColumnResizer(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-virtualDataGrid-getResizer",
+      "contents": "cmp.getDef().getHelper().getResizer(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-virtualDataGrid-updateColumnResizer",
       "contents": "cmp.getDef().getHelper().updateColumnResizer(${1:cmp})"
     },
