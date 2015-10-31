@@ -2055,7 +2055,7 @@
     },
     {
       "trigger": "ui-tabBar\tTag Full",
-      "contents": "ui:tabBar tabs=\"${1:Optional - List}\" class=\"${2:Optional - String}\" useOverflowMenu=\"${3:Optional - Boolean}\" overflowLabel=\"${4:Optional - String}\" barWidth=\"${5:Optional - Integer}\" tabItemWidth=\"${6:Optional - Integer}\" setActive=\"${7:Optional - ui:tabsetEvent}\" addTab=\"${8:Optional - ui:tabsetEvent}\" closeTab=\"${9:Optional - ui:tabsetEvent}\" onTabClosed=\"${10:Optional - ui:tabsetEvent}\" onTabActivated=\"${11:Optional - ui:tabsetEvent}\" onTabHover=\"${12:Optional - ui:onTabHover}\" onTabUnhover=\"${13:Optional - ui:onTabHover}\">${14:A list wrapper for tabs in a ui:tabset component}</ui:tabBar>"
+      "contents": "ui:tabBar tabs=\"${1:Optional - List}\" class=\"${2:Optional - String}\" useOverflowMenu=\"${3:Optional - Boolean}\" overflowLabel=\"${4:Optional - String}\" overflowIcon=\"${5:Optional - Aura.Component[]}\" setActive=\"${6:Optional - ui:tabsetEvent}\" addTab=\"${7:Optional - ui:tabsetEvent}\" closeTab=\"${8:Optional - ui:tabsetEvent}\" onTabClosed=\"${9:Optional - ui:tabsetEvent}\" onTabActivated=\"${10:Optional - ui:tabsetEvent}\" onTabHover=\"${11:Optional - ui:onTabHover}\" onTabUnhover=\"${12:Optional - ui:onTabHover}\">${13:A list wrapper for tabs in a ui:tabset component}</ui:tabBar>"
     },
     {
       "trigger": "ui-tabItem\tTag Simple",
@@ -2063,7 +2063,7 @@
     },
     {
       "trigger": "ui-tabItem\tTag Full",
-      "contents": "ui:tabItem class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" name=\"${3:Optional - String}\" icon=\"${4:Optional - Aura.Component[]}\" active=\"${5:Optional - Boolean}\" hidden=\"${6:Optional - Boolean}\" iconClass=\"${7:Optional - String}\" closable=\"${8:Optional - Boolean}\" ariaControlId=\"${9:Optional - String}\" activateTab=\"${10:Optional - ui:tabsetEvent}\" onActivate=\"${11:Optional - ui:tabsetEvent}\" onClose=\"${12:Optional - ui:tabsetEvent}\" onTabHover=\"${13:Optional - ui:onTabHover}\" onTabUnhover=\"${14:Optional - ui:onTabHover}\">${15:A tab that is rendered by the ui:tabBar component}</ui:tabItem>"
+      "contents": "ui:tabItem class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" name=\"${3:Optional - String}\" icon=\"${4:Optional - Aura.Component[]}\" active=\"${5:Optional - Boolean}\" hidden=\"${6:Optional - Boolean}\" iconClass=\"${7:Optional - String}\" closable=\"${8:Optional - Boolean}\" ariaControlId=\"${9:Optional - String}\" active=\"${10:Optional - Boolean}\" focus=\"${11:Optional - Boolean}\" callback=\"${12:Optional - Object}\" onActivate=\"${13:Optional - ui:tabsetEvent}\" onClose=\"${14:Optional - ui:tabsetEvent}\" onTabHover=\"${15:Optional - ui:onTabHover}\" onTabUnhover=\"${16:Optional - ui:onTabHover}\">${17:A tab that is rendered by the ui:tabBar component}</ui:tabItem>"
     },
     {
       "trigger": "ui-tabOverflowMenuItem\tTag Simple",
@@ -2071,7 +2071,7 @@
     },
     {
       "trigger": "ui-tabOverflowMenuItem\tTag Full",
-      "contents": "ui:tabOverflowMenuItem class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" icon=\"${3:Optional - Aura.Component[]}\" active=\"${4:Optional - Boolean}\" iconClass=\"${5:Optional - String}\" ariaControlId=\"${6:Optional - String}\" menuItems=\"${7:Optional - Object[]}\" activateTab=\"${8:Optional - ui:tabsetEvent}\" onTabHover=\"${9:Optional - ui:onTabHover}\" onTabUnhover=\"${10:Optional - ui:onTabHover}\" onTabSelection=\"${11:Optional - ui:tabsetEvent}\">${12:A tab that is rendered by the ui:tabBar component for its overflow menu}</ui:tabOverflowMenuItem>"
+      "contents": "ui:tabOverflowMenuItem class=\"${1:Optional - String}\" title=\"${2:Optional - String}\" icon=\"${3:Optional - Aura.Component[]}\" active=\"${4:Optional - Boolean}\" iconClass=\"${5:Optional - String}\" ariaControlId=\"${6:Optional - String}\" menuItems=\"${7:Optional - Object[]}\" active=\"${8:Optional - Boolean}\" index=\"${9:Optional - Integer}\" onTabHover=\"${10:Optional - ui:onTabHover}\" onTabUnhover=\"${11:Optional - ui:onTabHover}\" onTabSelection=\"${12:Optional - ui:tabsetEvent}\">${13:A tab that is rendered by the ui:tabBar component for its overflow menu}</ui:tabOverflowMenuItem>"
     },
     {
       "trigger": "ui-tabOverflowMenuList\tTag Simple",
@@ -2087,7 +2087,7 @@
     },
     {
       "trigger": "ui-tabset\tTag Full",
-      "contents": "ui:tabset tabs=\"${1:Optional - List}\" class=\"${2:Optional - String}\" lazyRenderTabs=\"${3:Optional - Boolean}\" useOverflowMenu=\"${4:Optional - Boolean}\" barWidth=\"${5:Optional - Integer}\" tabItemWidth=\"${6:Optional - Integer}\" overflowLabel=\"${7:Optional - String}\" addTab=\"${8:Optional - ui:tabsetEvent}\" removeTab=\"${9:Optional - ui:tabsetEvent}\" activateTab=\"${10:Optional - ui:tabsetEvent}\" getActiveTab=\"${11:Optional - ui:tabsetEvent}\" beforeActivate=\"${12:Optional - ui:tabsetEvent}\" onActivate=\"${13:Optional - ui:tabsetEvent}\">${14:Implements ui:visible.\tA tab set that displays a list of tabs in an unordered list.}</ui:tabset>"
+      "contents": "ui:tabset tabs=\"${1:Optional - List}\" class=\"${2:Optional - String}\" lazyRenderTabs=\"${3:Optional - Boolean}\" useOverflowMenu=\"${4:Optional - Boolean}\" overflowLabel=\"${5:Optional - String}\" addTab=\"${6:Optional - ui:tabsetEvent}\" removeTab=\"${7:Optional - ui:tabsetEvent}\" activateTab=\"${8:Optional - ui:tabsetEvent}\" getActiveTab=\"${9:Optional - ui:tabsetEvent}\" beforeActivate=\"${10:Optional - ui:tabsetEvent}\" onActivate=\"${11:Optional - ui:tabsetEvent}\">${12:Implements ui:visible.\tA tab set that displays a list of tabs in an unordered list.}</ui:tabset>"
     },
     {
       "trigger": "ui-timePicker\tTag Simple",

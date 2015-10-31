@@ -3378,10 +3378,6 @@
       "contents": "cmp.getDef().getHelper().closeTab(${1:cmp},${2:index})"
     },
     {
-      "trigger": "helper-ui-tabBar-getTabItems",
-      "contents": "cmp.getDef().getHelper().getTabItems(${1:cmp})"
-    },
-    {
       "trigger": "helper-ui-tabBar-addTab",
       "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:index},${3:tab})"
     },
@@ -3395,7 +3391,7 @@
     },
     {
       "trigger": "helper-ui-tabBar-getTabIndex",
-      "contents": "cmp.getDef().getHelper().getTabIndex(${1:cmp},${2:element})"
+      "contents": "cmp.getDef().getHelper().getTabIndex(${1:cmp},${2:element},${3:visible})"
     },
     {
       "trigger": "helper-ui-tabBar-setTabItems",
@@ -3410,24 +3406,52 @@
       "contents": "cmp.getDef().getHelper().calculateMaxTabs(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-tabBar-calculateOverflowStartIndex",
-      "contents": "cmp.getDef().getHelper().calculateOverflowStartIndex(${1:cmp},${2:maxTabs})"
+      "trigger": "helper-ui-tabBar-getMustShowTabs",
+      "contents": "cmp.getDef().getHelper().getMustShowTabs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-getActiveTabWidth",
+      "contents": "cmp.getDef().getHelper().getActiveTabWidth(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-getOverflowMenuWidth",
+      "contents": "cmp.getDef().getHelper().getOverflowMenuWidth(${1:cmp})"
     },
     {
       "trigger": "helper-ui-tabBar-initializeOverflowData",
-      "contents": "cmp.getDef().getHelper().initializeOverflowData(${1:cmp},${2:startIndex})"
+      "contents": "cmp.getDef().getHelper().initializeOverflowData(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-getBarWidth",
+      "contents": "cmp.getDef().getHelper().getBarWidth(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-getOuterWidth",
+      "contents": "cmp.getDef().getHelper().getOuterWidth(${1:el})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-adjustOverflow",
+      "contents": "cmp.getDef().getHelper().adjustOverflow(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-updateVisibleTabs",
+      "contents": "cmp.getDef().getHelper().updateVisibleTabs(${1:overflowData},${2:tabItems},${3:startIndex})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-toggleOverflowMenu",
+      "contents": "cmp.getDef().getHelper().toggleOverflowMenu(${1:cmp},${2:visible})"
     },
     {
       "trigger": "helper-ui-tabBar-updateOverflowTab",
       "contents": "cmp.getDef().getHelper().updateOverflowTab(${1:cmp},${2:index})"
     },
     {
-      "trigger": "helper-ui-tabBar-swapOverflowTabs",
-      "contents": "cmp.getDef().getHelper().swapOverflowTabs(${1:cmp},${2:overflowTab},${3:oldTab},${4:newTab})"
+      "trigger": "helper-ui-tabBar-findVisibleTabsToReplace",
+      "contents": "cmp.getDef().getHelper().findVisibleTabsToReplace(${1:cmp},${2:overflowData},${3:sourceTab},${4:targetTab})"
     },
     {
-      "trigger": "helper-ui-tabBar-overflowIsInitialized",
-      "contents": "cmp.getDef().getHelper().overflowIsInitialized(${1:cmp})"
+      "trigger": "helper-ui-tabBar-insertMenuItem",
+      "contents": "cmp.getDef().getHelper().insertMenuItem(${1:cmp},${2:tabItem},${3:menuList})"
     },
     {
       "trigger": "helper-ui-tabBar-toggleTab",
@@ -3435,7 +3459,7 @@
     },
     {
       "trigger": "helper-ui-tabBar-isInOverflow",
-      "contents": "cmp.getDef().getHelper().isInOverflow(${1:cmp},${2:index})"
+      "contents": "cmp.getDef().getHelper().isInOverflow(${1:cmp},${2:key})"
     },
     {
       "trigger": "helper-ui-tabBar-getTabName",
@@ -3447,19 +3471,27 @@
     },
     {
       "trigger": "helper-ui-tabBar-createMenuItemFromTab",
-      "contents": "cmp.getDef().getHelper().createMenuItemFromTab(${1:tab})"
+      "contents": "cmp.getDef().getHelper().createMenuItemFromTab(${1:tab},${2:tabIndex})"
     },
     {
       "trigger": "helper-ui-tabBar-createMenuItem",
-      "contents": "cmp.getDef().getHelper().createMenuItem(${1:id},${2:label})"
+      "contents": "cmp.getDef().getHelper().createMenuItem(${1:id},${2:label},${3:value})"
     },
     {
       "trigger": "helper-ui-tabItem-setActive",
       "contents": "cmp.getDef().getHelper().setActive(${1:cmp},${2:active},${3:focus})"
     },
     {
+      "trigger": "helper-ui-tabItem-getTabItemElement",
+      "contents": "cmp.getDef().getHelper().getTabItemElement(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-tabItem-handleHoverEvent",
       "contents": "cmp.getDef().getHelper().handleHoverEvent(${1:cmp},${2:eventName})"
+    },
+    {
+      "trigger": "helper-ui-tabItem-initWidth",
+      "contents": "cmp.getDef().getHelper().initWidth(${1:cmp})"
     },
     {
       "trigger": "helper-ui-tabOverflowMenuItem-handleHoverEvent",

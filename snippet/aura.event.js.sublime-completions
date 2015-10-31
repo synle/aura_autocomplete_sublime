@@ -566,10 +566,6 @@
       "contents": "//  component: tabBar\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-tabItem-activateTab",
-      "contents": "//  component: tabItem\n//    evtName: activateTab\n//    evtType: ui:tabsetEvent\n//description: The event is fired to activate the tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-tabItem-onActivate",
       "contents": "//  component: tabItem\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is fired when the tab is clicked to activate.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
@@ -584,10 +580,6 @@
     {
       "trigger": "evt-ui-tabItem-onTabUnhover",
       "contents": "//  component: tabItem\n//    evtName: onTabUnhover\n//    evtType: ui:onTabHover\n//description: The event is fired when the mouse moves off of a tab or when focus is moved away from a tab.\nvar e = cmp.find(\"${1:tabItem}\").get(\"e.onTabUnhover\");\ne.setParams({\n\ttabComponent: \"${2:Aura.Component}\",// The tab component that the mouse has moved over or away from.\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-tabOverflowMenuItem-activateTab",
-      "contents": "//  component: tabOverflowMenuItem\n//    evtName: activateTab\n//    evtType: ui:tabsetEvent\n//description: The event is fired to activate the tab.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.activateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabOverflowMenuItem-onTabHover",

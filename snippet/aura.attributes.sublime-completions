@@ -4038,16 +4038,16 @@
       "contents": "overflowLabel=\"${1:ui:tabBar - Optional - String}\""
     },
     {
-      "trigger": "ui-tabBar-barWidth\tAttr",
-      "contents": "barWidth=\"${1:ui:tabBar - Optional - Integer}\""
-    },
-    {
-      "trigger": "ui-tabBar-tabItemWidth\tAttr",
-      "contents": "tabItemWidth=\"${1:ui:tabBar - Optional - Integer}\""
+      "trigger": "ui-tabBar-overflowIcon\tAttr",
+      "contents": "overflowIcon=\"${1:ui:tabBar - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-tabBar-overflowData\tAttr",
-      "contents": "overflowData=\"${1:ui:tabBar - Optional - Object}\""
+      "contents": "overflowData=\"${1:ui:tabBar - Optional - Map}\""
+    },
+    {
+      "trigger": "ui-tabBar-tabHeaders\tAttr",
+      "contents": "tabHeaders=\"${1:ui:tabBar - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-tabBar-setActive\tAttr",
@@ -4114,8 +4114,16 @@
       "contents": "ariaControlId=\"${1:ui:tabItem - Optional - String}\""
     },
     {
-      "trigger": "ui-tabItem-activateTab\tAttr",
-      "contents": "activateTab=\"${1:ui:tabItem - Optional - ui:tabsetEvent}\""
+      "trigger": "ui-tabItem-active\tAttr",
+      "contents": "active=\"${1:ui:tabItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tabItem-focus\tAttr",
+      "contents": "focus=\"${1:ui:tabItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tabItem-callback\tAttr",
+      "contents": "callback=\"${1:ui:tabItem - Optional - Object}\""
     },
     {
       "trigger": "ui-tabItem-onActivate\tAttr",
@@ -4170,8 +4178,12 @@
       "contents": "focusedItemName=\"${1:ui:tabOverflowMenuItem - Optional - String}\""
     },
     {
-      "trigger": "ui-tabOverflowMenuItem-activateTab\tAttr",
-      "contents": "activateTab=\"${1:ui:tabOverflowMenuItem - Optional - ui:tabsetEvent}\""
+      "trigger": "ui-tabOverflowMenuItem-active\tAttr",
+      "contents": "active=\"${1:ui:tabOverflowMenuItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tabOverflowMenuItem-index\tAttr",
+      "contents": "index=\"${1:ui:tabOverflowMenuItem - Optional - Integer}\""
     },
     {
       "trigger": "ui-tabOverflowMenuItem-onTabHover\tAttr",
@@ -4212,14 +4224,6 @@
     {
       "trigger": "ui-tabset-useOverflowMenu\tAttr",
       "contents": "useOverflowMenu=\"${1:ui:tabset - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-tabset-barWidth\tAttr",
-      "contents": "barWidth=\"${1:ui:tabset - Optional - Integer}\""
-    },
-    {
-      "trigger": "ui-tabset-tabItemWidth\tAttr",
-      "contents": "tabItemWidth=\"${1:ui:tabset - Optional - Integer}\""
     },
     {
       "trigger": "ui-tabset-overflowLabel\tAttr",
