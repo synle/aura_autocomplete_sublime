@@ -5659,7 +5659,7 @@
     },
     {
       "trigger": "auratest-errorHandling-eventHandled\tAttr",
-      "contents": "eventHandled=\"${1:auratest:errorHandling - Optional - String}\""
+      "contents": "eventHandled=\"${1:auratest:errorHandling - Optional - Boolean}\""
     },
     {
       "trigger": "auratest-errorHandling-handleSystemError\tAttr",
