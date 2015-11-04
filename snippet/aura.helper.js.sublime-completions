@@ -2498,6 +2498,10 @@
       "contents": "cmp.getDef().getHelper().buildBody(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-outputMultiSelect-updateValue",
+      "contents": "cmp.getDef().getHelper().updateValue(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-outputPhone-updateValue",
       "contents": "cmp.getDef().getHelper().updateValue(${1:cmp})"
     },
