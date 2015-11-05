@@ -3878,6 +3878,10 @@
       "contents": "cmp.getDef().getHelper().resizeColumns(${1:cmp},${2:widths})"
     },
     {
+      "trigger": "helper-ui-virtualDataGrid-hasResizerHandles",
+      "contents": "cmp.getDef().getHelper().hasResizerHandles(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-virtualDataGrid-destroyTemplates",
       "contents": "cmp.getDef().getHelper().destroyTemplates(${1:cmp})"
     },
