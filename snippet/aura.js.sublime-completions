@@ -306,10 +306,6 @@
       "contents": "A.test.isInstanceOf(${1:element},${2:elementType},${3:tag})"
     },
     {
-      "trigger": "A-test-objectKeys",
-      "contents": "A.test.objectKeys(${1:obj})"
-    },
-    {
       "trigger": "A-test-getElementAttributeValue",
       "contents": "A.test.getElementAttributeValue(${1:element},${2:attributeName})"
     },
