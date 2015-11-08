@@ -6434,6 +6434,14 @@
       "contents": "stringValue=\"${1:gvpTest:customGVPTest - Optional - String}\""
     },
     {
+      "trigger": "gvpTest-customGVPTest-handleSystemError\tAttr",
+      "contents": "handleSystemError=\"${1:gvpTest:customGVPTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "gvpTest-customGVPTest-debuggingMessage\tAttr",
+      "contents": "debuggingMessage=\"${1:gvpTest:customGVPTest - Optional - String}\""
+    },
+    {
       "trigger": "gvpTest-labelProvider-simplevalue1\tAttr",
       "contents": "simplevalue1=\"${1:gvpTest:labelProvider - Optional - Object}\""
     },

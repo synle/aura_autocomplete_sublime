@@ -4359,7 +4359,7 @@
     },
     {
       "trigger": "gvpTest-customGVPTest\tTag Full",
-      "contents": "gvpTest:customGVPTest stringValue=\"${1:Optional - String}\">${2:}</gvpTest:customGVPTest>"
+      "contents": "gvpTest:customGVPTest stringValue=\"${1:Optional - String}\" handleSystemError=\"${2:Optional - Boolean}\" debuggingMessage=\"${3:Optional - String}\">${4:}</gvpTest:customGVPTest>"
     },
     {
       "trigger": "gvpTest-dynamicLabels\tTag Simple",
