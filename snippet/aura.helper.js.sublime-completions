@@ -4098,12 +4098,44 @@
       "contents": "cmp.getDef().getHelper().updateText(${1:cmp},${2:str})"
     },
     {
+      "trigger": "helper-componentTest-componentApi-helperFunction",
+      "contents": "cmp.getDef().getHelper().helperFunction(${1:})"
+    },
+    {
       "trigger": "helper-componentTest-componentBodyWithChanges-newComponent",
       "contents": "cmp.getDef().getHelper().newComponent(${1:cmp},${2:item})"
     },
     {
       "trigger": "helper-componentTest-componentBodyWithChanges-newComponentList",
       "contents": "cmp.getDef().getHelper().newComponentList(${1:cmp},${2:items})"
+    },
+    {
+      "trigger": "helper-componentTest-helperContainedCmp-getMessage",
+      "contents": "cmp.getDef().getHelper().getMessage(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperExplicit-getMessageFromAutowiredHelperMethod",
+      "contents": "cmp.getDef().getHelper().getMessageFromAutowiredHelperMethod(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperSuper-getMessageFromSuperCmp",
+      "contents": "cmp.getDef().getHelper().getMessageFromSuperCmp(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperSuper-getAwesomeMessage",
+      "contents": "cmp.getDef().getHelper().getAwesomeMessage(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperSuper-getSuperAwesomeMessage",
+      "contents": "cmp.getDef().getHelper().getSuperAwesomeMessage(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperSuperSuper-getMessageFromSuperSuperCmp",
+      "contents": "cmp.getDef().getHelper().getMessageFromSuperSuperCmp(${1:})"
+    },
+    {
+      "trigger": "helper-componentTest-helperSuperSuper-getSuperAwesomeMessage",
+      "contents": "cmp.getDef().getHelper().getSuperAwesomeMessage(${1:})"
     },
     {
       "trigger": "helper-componentTest-versionInServer-updateVersion",

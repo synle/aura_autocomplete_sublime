@@ -6042,6 +6042,10 @@
       "contents": "clickCount=\"${1:clientApiTest:eventBinding - Optional - Integer}\""
     },
     {
+      "trigger": "clientApiTest-getComponent-cmpGlobalId\tAttr",
+      "contents": "cmpGlobalId=\"${1:clientApiTest:getComponent - Optional - String}\""
+    },
+    {
       "trigger": "clientApiTest-getDefinition-definitionNames\tAttr",
       "contents": "definitionNames=\"${1:clientApiTest:getDefinition - Optional - String[]}\""
     },
@@ -6154,10 +6158,6 @@
       "contents": "dupElement=\"${1:componentTest:findWithDefRefs - Optional - Aura.ComponentDefRef[]}\""
     },
     {
-      "trigger": "componentTest-getComponent-cmpGlobalId\tAttr",
-      "contents": "cmpGlobalId=\"${1:componentTest:getComponent - Optional - String}\""
-    },
-    {
       "trigger": "componentTest-hasModel-value\tAttr",
       "contents": "value=\"${1:componentTest:hasModel - Optional - String}\""
     },
@@ -6172,6 +6172,30 @@
     {
       "trigger": "componentTest-hasModel-footerComponents\tAttr",
       "contents": "footerComponents=\"${1:componentTest:hasModel - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "componentTest-helper-message\tAttr",
+      "contents": "message=\"${1:componentTest:helper - Optional - String}\""
+    },
+    {
+      "trigger": "componentTest-helper-callsHelperMethodInRender\tAttr",
+      "contents": "callsHelperMethodInRender=\"${1:componentTest:helper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "componentTest-helper-callsHelperMethodInAfterRender\tAttr",
+      "contents": "callsHelperMethodInAfterRender=\"${1:componentTest:helper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "componentTest-helper-callsHelperMethodInRerender\tAttr",
+      "contents": "callsHelperMethodInRerender=\"${1:componentTest:helper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "componentTest-helper-callsHelperMethodInUnrender\tAttr",
+      "contents": "callsHelperMethodInUnrender=\"${1:componentTest:helper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "componentTest-helper-newMessage\tAttr",
+      "contents": "newMessage=\"${1:componentTest:helper - Optional - String}\""
     },
     {
       "trigger": "componentTest-knowParent-parent\tAttr",

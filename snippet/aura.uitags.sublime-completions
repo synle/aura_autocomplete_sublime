@@ -3386,6 +3386,14 @@
       "contents": "clientApiTest:eventBinding focusEvent=\"${1:Optional - Boolean}\" blurEvent=\"${2:Optional - Boolean}\" clickCount=\"${3:Optional - Integer}\">${4:}</clientApiTest:eventBinding>"
     },
     {
+      "trigger": "clientApiTest-getComponent\tTag Simple",
+      "contents": "clientApiTest:getComponent$1>${2:}</clientApiTest:getComponent>"
+    },
+    {
+      "trigger": "clientApiTest-getComponent\tTag Full",
+      "contents": "clientApiTest:getComponent cmpGlobalId=\"${1:Optional - String}\">${2:}</clientApiTest:getComponent>"
+    },
+    {
       "trigger": "clientApiTest-getDefinition\tTag Simple",
       "contents": "clientApiTest:getDefinition$1>${2:}</clientApiTest:getDefinition>"
     },
@@ -3618,6 +3626,22 @@
       "contents": "componentTest:cmpWithDestroyHandlerWrapper>${1:}</componentTest:cmpWithDestroyHandlerWrapper>"
     },
     {
+      "trigger": "componentTest-componentApi\tTag Simple",
+      "contents": "componentTest:componentApi$1>${2:}</componentTest:componentApi>"
+    },
+    {
+      "trigger": "componentTest-componentApi\tTag Full",
+      "contents": "componentTest:componentApi>${1:}</componentTest:componentApi>"
+    },
+    {
+      "trigger": "componentTest-componentApiPlain\tTag Simple",
+      "contents": "componentTest:componentApiPlain$1>${2:}</componentTest:componentApiPlain>"
+    },
+    {
+      "trigger": "componentTest-componentApiPlain\tTag Full",
+      "contents": "componentTest:componentApiPlain>${1:}</componentTest:componentApiPlain>"
+    },
+    {
       "trigger": "componentTest-componentBodyWithChanges\tTag Simple",
       "contents": "componentTest:componentBodyWithChanges$1>${2:}</componentTest:componentBodyWithChanges>"
     },
@@ -3658,14 +3682,6 @@
       "contents": "componentTest:findWithDefRefs singleElement=\"${1:Optional - Aura.ComponentDefRef[]}\" dupElement=\"${2:Optional - Aura.ComponentDefRef[]}\">${3:}</componentTest:findWithDefRefs>"
     },
     {
-      "trigger": "componentTest-getComponent\tTag Simple",
-      "contents": "componentTest:getComponent$1>${2:}</componentTest:getComponent>"
-    },
-    {
-      "trigger": "componentTest-getComponent\tTag Full",
-      "contents": "componentTest:getComponent cmpGlobalId=\"${1:Optional - String}\">${2:}</componentTest:getComponent>"
-    },
-    {
       "trigger": "componentTest-hasBody\tTag Simple",
       "contents": "componentTest:hasBody$1>${2:}</componentTest:hasBody>"
     },
@@ -3680,6 +3696,46 @@
     {
       "trigger": "componentTest-hasModel\tTag Full",
       "contents": "componentTest:hasModel value=\"${1:Optional - String}\" headerComponents=\"${2:Optional - Aura.Component[]}\" innerComponents=\"${3:Optional - Aura.Component[]}\" footerComponents=\"${4:Optional - Aura.Component[]}\">${5:}</componentTest:hasModel>"
+    },
+    {
+      "trigger": "componentTest-helper\tTag Simple",
+      "contents": "componentTest:helper$1>${2:}</componentTest:helper>"
+    },
+    {
+      "trigger": "componentTest-helper\tTag Full",
+      "contents": "componentTest:helper message=\"${1:Optional - String}\" callsHelperMethodInRender=\"${2:Optional - Boolean}\" callsHelperMethodInAfterRender=\"${3:Optional - Boolean}\" callsHelperMethodInRerender=\"${4:Optional - Boolean}\" callsHelperMethodInUnrender=\"${5:Optional - Boolean}\" newMessage=\"${6:Optional - String}\">${7:}</componentTest:helper>"
+    },
+    {
+      "trigger": "componentTest-helperContainedCmp\tTag Simple",
+      "contents": "componentTest:helperContainedCmp$1>${2:}</componentTest:helperContainedCmp>"
+    },
+    {
+      "trigger": "componentTest-helperContainedCmp\tTag Full",
+      "contents": "componentTest:helperContainedCmp>${1:}</componentTest:helperContainedCmp>"
+    },
+    {
+      "trigger": "componentTest-helperExplicit\tTag Simple",
+      "contents": "componentTest:helperExplicit$1>${2:}</componentTest:helperExplicit>"
+    },
+    {
+      "trigger": "componentTest-helperExplicit\tTag Full",
+      "contents": "componentTest:helperExplicit>${1:}</componentTest:helperExplicit>"
+    },
+    {
+      "trigger": "componentTest-helperSuper\tTag Simple",
+      "contents": "componentTest:helperSuper$1>${2:}</componentTest:helperSuper>"
+    },
+    {
+      "trigger": "componentTest-helperSuper\tTag Full",
+      "contents": "componentTest:helperSuper>${1:}</componentTest:helperSuper>"
+    },
+    {
+      "trigger": "componentTest-helperSuperSuper\tTag Simple",
+      "contents": "componentTest:helperSuperSuper$1>${2:}</componentTest:helperSuperSuper>"
+    },
+    {
+      "trigger": "componentTest-helperSuperSuper\tTag Full",
+      "contents": "componentTest:helperSuperSuper>${1:}</componentTest:helperSuperSuper>"
     },
     {
       "trigger": "componentTest-informFacetOfParent\tTag Simple",
