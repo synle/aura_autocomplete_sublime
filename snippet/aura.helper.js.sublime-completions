@@ -4210,6 +4210,18 @@
       "contents": "cmp.getDef().getHelper().queryStringToJson(${1:queryString})"
     },
     {
+      "trigger": "helper-performanceTest-child-init",
+      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
+    },
+    {
+      "trigger": "helper-performanceTest-grandparent-init",
+      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
+    },
+    {
+      "trigger": "helper-performanceTest-parent-init",
+      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
+    },
+    {
       "trigger": "helper-renderingTest-cmpWithRenderer-plusOne",
       "contents": "cmp.getDef().getHelper().plusOne(${1:component},${2:attributeName})"
     },

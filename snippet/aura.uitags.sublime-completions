@@ -5282,6 +5282,38 @@
       "contents": "performance:perfTest>${1:Implements performance:test.\tAbstract component for performance tests}</performance:perfTest>"
     },
     {
+      "trigger": "performance-runnerTemplate\tTag Simple",
+      "contents": "performance:runnerTemplate$1>${2:}</performance:runnerTemplate>"
+    },
+    {
+      "trigger": "performance-runnerTemplate\tTag Full",
+      "contents": "performance:runnerTemplate>${1:}</performance:runnerTemplate>"
+    },
+    {
+      "trigger": "performanceTest-child\tTag Simple",
+      "contents": "performanceTest:child$1>${2:}</performanceTest:child>"
+    },
+    {
+      "trigger": "performanceTest-child\tTag Full",
+      "contents": "performanceTest:child name=\"${1:Optional - String}\">${2:}</performanceTest:child>"
+    },
+    {
+      "trigger": "performanceTest-grandparent\tTag Simple",
+      "contents": "performanceTest:grandparent$1>${2:}</performanceTest:grandparent>"
+    },
+    {
+      "trigger": "performanceTest-grandparent\tTag Full",
+      "contents": "performanceTest:grandparent name=\"${1:Optional - String}\">${2:}</performanceTest:grandparent>"
+    },
+    {
+      "trigger": "performanceTest-parent\tTag Simple",
+      "contents": "performanceTest:parent$1>${2:}</performanceTest:parent>"
+    },
+    {
+      "trigger": "performanceTest-parent\tTag Full",
+      "contents": "performanceTest:parent name=\"${1:Optional - String}\">${2:}</performanceTest:parent>"
+    },
+    {
       "trigger": "performanceTest-runnerExample\tTag Simple",
       "contents": "performanceTest:runnerExample$1>${2:}</performanceTest:runnerExample>"
     },

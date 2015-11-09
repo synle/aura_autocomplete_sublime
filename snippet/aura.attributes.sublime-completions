@@ -7214,6 +7214,18 @@
       "contents": "count=\"${1:miscTest:aura_iteration - Optional - integer}\""
     },
     {
+      "trigger": "performanceTest-child-name\tAttr",
+      "contents": "name=\"${1:performanceTest:child - Optional - String}\""
+    },
+    {
+      "trigger": "performanceTest-grandparent-name\tAttr",
+      "contents": "name=\"${1:performanceTest:grandparent - Optional - String}\""
+    },
+    {
+      "trigger": "performanceTest-parent-name\tAttr",
+      "contents": "name=\"${1:performanceTest:parent - Optional - String}\""
+    },
+    {
       "trigger": "performanceTest-runnerExample-loaded\tAttr",
       "contents": "loaded=\"${1:performanceTest:runnerExample - Optional - Boolean}\""
     },
