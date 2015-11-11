@@ -1666,6 +1666,10 @@
       "contents": "label=\"${1:ui:dataGridActionColumn - Optional - String}\""
     },
     {
+      "trigger": "ui-dataGridActionColumn-assistiveLabel\tAttr",
+      "contents": "assistiveLabel=\"${1:ui:dataGridActionColumn - Optional - String}\""
+    },
+    {
       "trigger": "ui-dataGridActionColumn-class\tAttr",
       "contents": "class=\"${1:ui:dataGridActionColumn - Optional - String}\""
     },

@@ -1199,7 +1199,7 @@
     },
     {
       "trigger": "ui-dataGridActionColumn\tTag Full",
-      "contents": "ui:dataGridActionColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" class=\"${3:Optional - String}\" scope=\"${4:Optional - String}\" header=\"${5:Optional - Aura.Component[]}\" outputComponent=\"${6:Optional - Aura.ComponentDefRef[]}\" body=\"${7:Optional - Aura.ComponentDefRef[]}\">${8:A column of actionable buttons or links in ui:dataGrid}</ui:dataGridActionColumn>"
+      "contents": "ui:dataGridActionColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" assistiveLabel=\"${3:Optional - String}\" class=\"${4:Optional - String}\" scope=\"${5:Optional - String}\" header=\"${6:Optional - Aura.Component[]}\" outputComponent=\"${7:Optional - Aura.ComponentDefRef[]}\" body=\"${8:Optional - Aura.ComponentDefRef[]}\">${9:A column of actionable buttons or links in ui:dataGrid}</ui:dataGridActionColumn>"
     },
     {
       "trigger": "ui-dataGridColumn\tTag Simple",
