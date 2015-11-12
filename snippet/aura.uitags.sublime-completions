@@ -3370,14 +3370,6 @@
       "contents": "clientApiTest:cssStyleTest>${1:}</clientApiTest:cssStyleTest>"
     },
     {
-      "trigger": "clientApiTest-errorTest\tTag Simple",
-      "contents": "clientApiTest:errorTest$1>${2:}</clientApiTest:errorTest>"
-    },
-    {
-      "trigger": "clientApiTest-errorTest\tTag Full",
-      "contents": "clientApiTest:errorTest>${1:}</clientApiTest:errorTest>"
-    },
-    {
       "trigger": "clientApiTest-eventBinding\tTag Simple",
       "contents": "clientApiTest:eventBinding$1>${2:}</clientApiTest:eventBinding>"
     },
@@ -4415,7 +4407,7 @@
     },
     {
       "trigger": "gvpTest-customGVPTest\tTag Full",
-      "contents": "gvpTest:customGVPTest stringValue=\"${1:Optional - String}\" handleSystemError=\"${2:Optional - Boolean}\" debuggingMessage=\"${3:Optional - String}\">${4:}</gvpTest:customGVPTest>"
+      "contents": "gvpTest:customGVPTest stringValue=\"${1:Optional - String}\">${2:}</gvpTest:customGVPTest>"
     },
     {
       "trigger": "gvpTest-dynamicLabels\tTag Simple",
