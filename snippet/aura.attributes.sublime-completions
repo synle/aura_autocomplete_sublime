@@ -1698,6 +1698,10 @@
       "contents": "label=\"${1:ui:dataGridColumn - Optional - String}\""
     },
     {
+      "trigger": "ui-dataGridColumn-hideLabel\tAttr",
+      "contents": "hideLabel=\"${1:ui:dataGridColumn - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-dataGridColumn-title\tAttr",
       "contents": "title=\"${1:ui:dataGridColumn - Optional - String}\""
     },

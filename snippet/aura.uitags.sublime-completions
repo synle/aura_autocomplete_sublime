@@ -1207,7 +1207,7 @@
     },
     {
       "trigger": "ui-dataGridColumn\tTag Full",
-      "contents": "ui:dataGridColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" title=\"${3:Optional - String}\" type=\"${4:Optional - String}\" sortable=\"${5:Optional - Boolean}\" disabled=\"${6:Optional - Boolean}\" required=\"${7:Optional - Boolean}\" direction=\"${8:Optional - String}\" initialDirectionOnSort=\"${9:Optional - String}\" ascLabel=\"${10:Optional - String}\" descLabel=\"${11:Optional - String}\" order=\"${12:Optional - Integer}\" scope=\"${13:Optional - String}\" onsortchange=\"${14:Optional - Aura.Action}\" assistiveSortText=\"${15:Optional - String}\" width=\"${16:Optional - Integer}\" outputComponent=\"${17:Optional - Aura.ComponentDefRef[]}\">${18:Implements ui:visible.\tA column of data in ui:dataGrid}</ui:dataGridColumn>"
+      "contents": "ui:dataGridColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" hideLabel=\"${3:Optional - Boolean}\" title=\"${4:Optional - String}\" type=\"${5:Optional - String}\" sortable=\"${6:Optional - Boolean}\" disabled=\"${7:Optional - Boolean}\" required=\"${8:Optional - Boolean}\" direction=\"${9:Optional - String}\" initialDirectionOnSort=\"${10:Optional - String}\" ascLabel=\"${11:Optional - String}\" descLabel=\"${12:Optional - String}\" order=\"${13:Optional - Integer}\" scope=\"${14:Optional - String}\" onsortchange=\"${15:Optional - Aura.Action}\" assistiveSortText=\"${16:Optional - String}\" width=\"${17:Optional - Integer}\" outputComponent=\"${18:Optional - Aura.ComponentDefRef[]}\">${19:Implements ui:visible.\tA column of data in ui:dataGrid}</ui:dataGridColumn>"
     },
     {
       "trigger": "ui-dataGridSelectionColumn\tTag Simple",
