@@ -3178,10 +3178,6 @@
       "contents": "cmp.getDef().getHelper().handleClick(${1:component})"
     },
     {
-      "trigger": "helper-ui-radioMenuItem-setSelected",
-      "contents": "cmp.getDef().getHelper().setSelected(${1:component})"
-    },
-    {
       "trigger": "helper-ui-radioToggleMenuItem-handleClick",
       "contents": "cmp.getDef().getHelper().handleClick(${1:cmp})"
     },
