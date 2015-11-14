@@ -1654,6 +1654,10 @@
       "contents": "summary=\"${1:ui:dataGrid - Optional - String}\""
     },
     {
+      "trigger": "ui-dataGrid-useRowHeaders\tAttr",
+      "contents": "useRowHeaders=\"${1:ui:dataGrid - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-dataGrid-updateRowAttributes\tAttr",
       "contents": "updateRowAttributes=\"${1:ui:dataGrid - Optional - ui:updateGridRow}\""
     },
@@ -7232,6 +7236,14 @@
     {
       "trigger": "performanceTest-runnerExample2-loaded\tAttr",
       "contents": "loaded=\"${1:performanceTest:runnerExample2 - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-storageEvictionTest-loaded\tAttr",
+      "contents": "loaded=\"${1:performanceTest:storageEvictionTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-storageEvictionTest-load\tAttr",
+      "contents": "load=\"${1:performanceTest:storageEvictionTest - Optional - String}\""
     },
     {
       "trigger": "preloadTest-test_dynamicNamespace-whatToDo\tAttr",

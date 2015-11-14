@@ -1191,7 +1191,7 @@
     },
     {
       "trigger": "ui-dataGrid\tTag Full",
-      "contents": "ui:dataGrid summary=\"${1:Optional - String}\" updateRowAttributes=\"${2:Optional - ui:updateGridRow}\">${3:Represents a table containing dynamic rows of data with inline edit support}</ui:dataGrid>"
+      "contents": "ui:dataGrid summary=\"${1:Optional - String}\" useRowHeaders=\"${2:Optional - Boolean}\" updateRowAttributes=\"${3:Optional - ui:updateGridRow}\">${4:Represents a table containing dynamic rows of data with inline edit support}</ui:dataGrid>"
     },
     {
       "trigger": "ui-dataGridActionColumn\tTag Simple",
@@ -5320,6 +5320,14 @@
     {
       "trigger": "performanceTest-runnerExample2\tTag Full",
       "contents": "performanceTest:runnerExample2 loaded=\"${1:Optional - Boolean}\">${2:}</performanceTest:runnerExample2>"
+    },
+    {
+      "trigger": "performanceTest-storageEvictionTest\tTag Simple",
+      "contents": "performanceTest:storageEvictionTest$1>${2:}</performanceTest:storageEvictionTest>"
+    },
+    {
+      "trigger": "performanceTest-storageEvictionTest\tTag Full",
+      "contents": "performanceTest:storageEvictionTest loaded=\"${1:Optional - Boolean}\" load=\"${2:Optional - String}\">${3:}</performanceTest:storageEvictionTest>"
     },
     {
       "trigger": "preloadTest-test_SpecialCharacter\tTag Simple",

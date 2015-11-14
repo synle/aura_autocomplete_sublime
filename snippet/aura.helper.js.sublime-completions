@@ -1042,6 +1042,10 @@
       "contents": "cmp.getDef().getHelper().updateColumns(${1:concrete},${2:attribute},${3:value})"
     },
     {
+      "trigger": "helper-ui-dataGrid-destroyTemplates",
+      "contents": "cmp.getDef().getHelper().destroyTemplates(${1:concrete})"
+    },
+    {
       "trigger": "helper-ui-dataGrid-componentMap",
       "contents": "cmp.getDef().getHelper().componentMap(${1:concrete},${2:batch},${3:op})"
     },
@@ -2020,6 +2024,10 @@
     {
       "trigger": "helper-ui-inputRichText-getToolbarConfig",
       "contents": "cmp.getDef().getHelper().getToolbarConfig(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputRichText-getExtraAllowedContent",
+      "contents": "cmp.getDef().getHelper().getExtraAllowedContent(${1:})"
     },
     {
       "trigger": "helper-ui-inputRichText-unrender",
