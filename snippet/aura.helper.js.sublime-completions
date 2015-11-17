@@ -2975,7 +2975,7 @@
     },
     {
       "trigger": "helper-ui-pillContainer-_setActiveItem",
-      "contents": "cmp.getDef().getHelper()._setActiveItem(${1:cmp},${2:firstActive})"
+      "contents": "cmp.getDef().getHelper()._setActiveItem(${1:cmp},${2:index})"
     },
     {
       "trigger": "helper-ui-pillContainerAutoComplete-handleEnterKeyOnInput",

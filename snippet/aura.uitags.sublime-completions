@@ -1379,11 +1379,11 @@
     },
     {
       "trigger": "ui-infiniteList\tTag Simple",
-      "contents": "ui:infiniteList$1>${2:Implements ui:scrollerEmbeddable.\tA list component that iterates over and displays the items in the ui:dataProvider component.}</ui:infiniteList>"
+      "contents": "ui:infiniteList$1>${2:Implements ui:scrollerEmbeddable.\tA list component that iterates over and displays the items from the data provider.}</ui:infiniteList>"
     },
     {
       "trigger": "ui-infiniteList\tTag Full",
-      "contents": "ui:infiniteList enableRowSwipe=\"${1:Optional - Boolean}\" onRowOpen=\"${2:Optional - ui:openRow}\" onRowClose=\"${3:Optional - ui:closeRow}\">${4:Implements ui:scrollerEmbeddable.\tA list component that iterates over and displays the items in the ui:dataProvider component.}</ui:infiniteList>"
+      "contents": "ui:infiniteList enableRowSwipe=\"${1:Optional - Boolean}\" onRowOpen=\"${2:Optional - ui:openRow}\" onRowClose=\"${3:Optional - ui:closeRow}\">${4:Implements ui:scrollerEmbeddable.\tA list component that iterates over and displays the items from the data provider.}</ui:infiniteList>"
     },
     {
       "trigger": "ui-infiniteListRow\tTag Simple",
@@ -1555,19 +1555,19 @@
     },
     {
       "trigger": "ui-inputSelectOption\tTag Simple",
-      "contents": "ui:inputSelectOption$1>${2:Implements ui:inputBaseOption.\tAn HTML option element that is nested in a <ui:inputSelect> element. Denotes the available options in the list.}</ui:inputSelectOption>"
+      "contents": "ui:inputSelectOption$1>${2:Implements ui:inputBaseOption.\tAn HTML option element that is nested in a ui:inputSelect component. Denotes the available options in the list.}</ui:inputSelectOption>"
     },
     {
       "trigger": "ui-inputSelectOption\tTag Full",
-      "contents": "ui:inputSelectOption>${1:Implements ui:inputBaseOption.\tAn HTML option element that is nested in a <ui:inputSelect> element. Denotes the available options in the list.}</ui:inputSelectOption>"
+      "contents": "ui:inputSelectOption>${1:Implements ui:inputBaseOption.\tAn HTML option element that is nested in a ui:inputSelect component. Denotes the available options in the list.}</ui:inputSelectOption>"
     },
     {
       "trigger": "ui-inputSelectOptionGroup\tTag Simple",
-      "contents": "ui:inputSelectOptionGroup$1>${2:An HTML optgroup element that groups related options in a <ui:inputSelect> element.}</ui:inputSelectOptionGroup>"
+      "contents": "ui:inputSelectOptionGroup$1>${2:An HTML optgroup element that groups related options in a ui:inputSelect component.}</ui:inputSelectOptionGroup>"
     },
     {
       "trigger": "ui-inputSelectOptionGroup\tTag Full",
-      "contents": "ui:inputSelectOptionGroup class=\"${1:Optional - String}\" label=\"${2:Optional - String}\">${3:An HTML optgroup element that groups related options in a <ui:inputSelect> element.}</ui:inputSelectOptionGroup>"
+      "contents": "ui:inputSelectOptionGroup class=\"${1:Optional - String}\" label=\"${2:Optional - String}\">${3:An HTML optgroup element that groups related options in a ui:inputSelect component.}</ui:inputSelectOptionGroup>"
     },
     {
       "trigger": "ui-inputText\tTag Simple",
@@ -1667,11 +1667,11 @@
     },
     {
       "trigger": "ui-menuItem\tTag Simple",
-      "contents": "ui:menuItem$1>${2:A UI menu item in a ui:menuList component.}</ui:menuItem>"
+      "contents": "ui:menuItem$1>${2:An abstract component for menu items like ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem. Nest a menu item in a ui:menuList component.}</ui:menuItem>"
     },
     {
       "trigger": "ui-menuItem\tTag Full",
-      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" hideMenuAfterSelected=\"${3:Optional - Boolean}\" label=\"${4:Optional - String}\" menuSelect=\"${5:Optional - ui:menuSelect}\">${6:A UI menu item in a ui:menuList component.}</ui:menuItem>"
+      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" hideMenuAfterSelected=\"${3:Optional - Boolean}\" label=\"${4:Optional - String}\" menuSelect=\"${5:Optional - ui:menuSelect}\">${6:An abstract component for menu items like ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem. Nest a menu item in a ui:menuList component.}</ui:menuItem>"
     },
     {
       "trigger": "ui-menuItemSeparator\tTag Simple",
@@ -1683,19 +1683,19 @@
     },
     {
       "trigger": "ui-menuList\tTag Simple",
-      "contents": "ui:menuList$1>${2:Implements ui:visible.\tA menu component that can contain menu items:\n                ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component\n                ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used\n                together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+      "contents": "ui:menuList$1>${2:Implements ui:visible.\tA menu component that contains menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuList\tTag Full",
-      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that can contain menu items:\n                ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem, and a separator component\n                ui:menuItemSeparator. This component can be nested in a ui:menu component and can be used\n                together with a ui:menuTriggerLink component, which triggers the menu items.}</ui:menuList>"
+      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that contains menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuTrigger\tTag Simple",
-      "contents": "ui:menuTrigger$1>${2:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:menuTrigger>"
+      "contents": "ui:menuTrigger$1>${2:A clickable link that expands and collapses a menu, used in a ui:menu component.}</ui:menuTrigger>"
     },
     {
       "trigger": "ui-menuTrigger\tTag Full",
-      "contents": "ui:menuTrigger menuTriggerPress=\"${1:Optional - ui:menuTriggerPress}\">${2:A trigger that expands and collapses a menu, used in a ui:menu component.}</ui:menuTrigger>"
+      "contents": "ui:menuTrigger menuTriggerPress=\"${1:Optional - ui:menuTriggerPress}\">${2:A clickable link that expands and collapses a menu, used in a ui:menu component.}</ui:menuTrigger>"
     },
     {
       "trigger": "ui-menuTriggerLink\tTag Simple",
@@ -1923,11 +1923,11 @@
     },
     {
       "trigger": "ui-panelManager2\tTag Simple",
-      "contents": "ui:panelManager2$1>${2:Panel manager}</ui:panelManager2>"
+      "contents": "ui:panelManager2$1>${2:Panel manager for the ui:panel and ui:modal components.}</ui:panelManager2>"
     },
     {
       "trigger": "ui-panelManager2\tTag Full",
-      "contents": "ui:panelManager2 registeredPanels=\"${1:Optional - Aura.ComponentDefRef[]}\" useSharedContainer=\"${2:Optional - Boolean}\">${3:Panel manager}</ui:panelManager2>"
+      "contents": "ui:panelManager2 registeredPanels=\"${1:Optional - Aura.ComponentDefRef[]}\" useSharedContainer=\"${2:Optional - Boolean}\">${3:Panel manager for the ui:panel and ui:modal components.}</ui:panelManager2>"
     },
     {
       "trigger": "ui-pill\tTag Simple",
@@ -2155,11 +2155,11 @@
     },
     {
       "trigger": "ui-virtualList\tTag Simple",
-      "contents": "ui:virtualList$1>${2:Implements ui:scrollerEmbeddable.\tAura Virtual List}</ui:virtualList>"
+      "contents": "ui:virtualList$1>${2:Implements ui:scrollerEmbeddable.\tList of items generated by using the same component.}</ui:virtualList>"
     },
     {
       "trigger": "ui-virtualList\tTag Full",
-      "contents": "ui:virtualList itemTemplate=\"${1:Required - Aura.ComponentDefRef[]}\" itemVar=\"${2:Required - String}\" items=\"${3:Optional - Object[]}\" forceRender=\"${4:Optional - Boolean}\" dataProvider=\"${5:Optional - Aura.Component[]}\">${6:Implements ui:scrollerEmbeddable.\tAura Virtual List}</ui:virtualList>"
+      "contents": "ui:virtualList itemTemplate=\"${1:Required - Aura.ComponentDefRef[]}\" itemVar=\"${2:Required - String}\" items=\"${3:Optional - Object[]}\" forceRender=\"${4:Optional - Boolean}\" dataProvider=\"${5:Optional - Aura.Component[]}\">${6:Implements ui:scrollerEmbeddable.\tList of items generated by using the same component.}</ui:virtualList>"
     },
     {
       "trigger": "actionsTest-beanActionModel\tTag Simple",
