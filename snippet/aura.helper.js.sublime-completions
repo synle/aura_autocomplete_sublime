@@ -1198,6 +1198,10 @@
       "contents": "cmp.getDef().getHelper().position(${1:component})"
     },
     {
+      "trigger": "helper-ui-datePicker-shouldFlip",
+      "contents": "cmp.getDef().getHelper().shouldFlip(${1:element},${2:targetElement})"
+    },
+    {
       "trigger": "helper-ui-datePicker-refreshYearSelection",
       "contents": "cmp.getDef().getHelper().refreshYearSelection(${1:component})"
     },
