@@ -3714,6 +3714,14 @@
       "contents": "componentTest:helperExplicit>${1:}</componentTest:helperExplicit>"
     },
     {
+      "trigger": "componentTest-helperInheritedOnly\tTag Simple",
+      "contents": "componentTest:helperInheritedOnly$1>${2:}</componentTest:helperInheritedOnly>"
+    },
+    {
+      "trigger": "componentTest-helperInheritedOnly\tTag Full",
+      "contents": "componentTest:helperInheritedOnly>${1:}</componentTest:helperInheritedOnly>"
+    },
+    {
       "trigger": "componentTest-helperSuper\tTag Simple",
       "contents": "componentTest:helperSuper$1>${2:}</componentTest:helperSuper>"
     },
