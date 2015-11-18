@@ -342,6 +342,10 @@
       "contents": "//  component: inputDateTime\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: \nvar e = cmp.find(\"${1:inputDateTime}\").get(\"e.openPicker\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-inputRichText-editorInstanceReady",
+      "contents": "//  component: inputRichText\n//    evtName: editorInstanceReady\n//    evtType: ui:load\n//description: Fired when the rich text instance is ready\nvar e = cmp.find(\"${1:inputRichText}\").get(\"e.editorInstanceReady\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-inputSearch-search",
       "contents": "//  component: inputSearch\n//    evtName: search\n//    evtType: ui:searchEvent\n//description: The event fired when the user runs a search.\nvar e = cmp.find(\"${1:inputSearch}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
     },

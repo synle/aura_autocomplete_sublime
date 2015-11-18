@@ -1527,7 +1527,7 @@
     },
     {
       "trigger": "ui-inputRichText\tTag Full",
-      "contents": "ui:inputRichText toolbar=\"${1:Optional - String}\" customToolbarConfig=\"${2:Optional - Object}\" toolbarLocation=\"${3:Optional - String}\" width=\"${4:Optional - String}\" height=\"${5:Optional - String}\" isRichText=\"${6:Optional - Boolean}\">${7:An input field for entering rich text.}</ui:inputRichText>"
+      "contents": "ui:inputRichText toolbar=\"${1:Optional - String}\" customToolbarConfig=\"${2:Optional - Object}\" toolbarLocation=\"${3:Optional - String}\" width=\"${4:Optional - String}\" height=\"${5:Optional - String}\" isRichText=\"${6:Optional - Boolean}\" editorInstanceReady=\"${7:Optional - ui:load}\">${8:An input field for entering rich text.}</ui:inputRichText>"
     },
     {
       "trigger": "ui-inputSearch\tTag Simple",

@@ -2574,6 +2574,10 @@
       "contents": "isRichText=\"${1:ui:inputRichText - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-inputRichText-editorInstanceReady\tAttr",
+      "contents": "editorInstanceReady=\"${1:ui:inputRichText - Optional - ui:load}\""
+    },
+    {
       "trigger": "ui-inputSearch-updateOn\tAttr",
       "contents": "updateOn=\"${1:ui:inputSearch - Optional - String}\""
     },
