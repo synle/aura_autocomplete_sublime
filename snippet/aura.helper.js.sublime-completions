@@ -507,7 +507,7 @@
     },
     {
       "trigger": "helper-ui-autocompleteList-setUpEvents",
-      "contents": "cmp.getDef().getHelper().setUpEvents(${1:component})"
+      "contents": "cmp.getDef().getHelper().setUpEvents(${1:component},${2:onVisibleChange})"
     },
     {
       "trigger": "helper-ui-autocompleteOption-addOptionDomEvents",

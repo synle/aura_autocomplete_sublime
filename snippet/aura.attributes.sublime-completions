@@ -1138,6 +1138,10 @@
       "contents": "listExpand=\"${1:ui:autocompleteList - Optional - ui:autocompleteListExpand}\""
     },
     {
+      "trigger": "ui-autocompleteList-listCollapse\tAttr",
+      "contents": "listCollapse=\"${1:ui:autocompleteList - Optional - ui:autocompleteListCollapse}\""
+    },
+    {
       "trigger": "ui-autocompleteOption-displayText\tAttr",
       "contents": "displayText=\"${1:ui:autocompleteOption - Optional - String}\""
     },
