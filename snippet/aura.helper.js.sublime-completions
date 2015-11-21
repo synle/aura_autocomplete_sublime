@@ -4230,6 +4230,14 @@
       "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
     },
     {
+      "trigger": "helper-performanceTest-virtualDataGridTestSwapColumns-generateColumnConfigs",
+      "contents": "cmp.getDef().getHelper().generateColumnConfigs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-performanceTest-virtualDataGridTestSwapColumns-shuffle",
+      "contents": "cmp.getDef().getHelper().shuffle(${1:array})"
+    },
+    {
       "trigger": "helper-renderingTest-cmpWithRenderer-plusOne",
       "contents": "cmp.getDef().getHelper().plusOne(${1:component},${2:attributeName})"
     },

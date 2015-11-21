@@ -7254,6 +7254,42 @@
       "contents": "load=\"${1:performanceTest:storageEvictionTest - Optional - String}\""
     },
     {
+      "trigger": "performanceTest-tabSetTest-testDynamicTabLoading\tAttr",
+      "contents": "testDynamicTabLoading=\"${1:performanceTest:tabSetTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-tabSetTest-_lazyRenderTabs\tAttr",
+      "contents": "_lazyRenderTabs=\"${1:performanceTest:tabSetTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-tabSetTest-_useOverflowMenu\tAttr",
+      "contents": "_useOverflowMenu=\"${1:performanceTest:tabSetTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-uiMenuTest-testManyItems\tAttr",
+      "contents": "testManyItems=\"${1:performanceTest:uiMenuTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-uiMenuTest-testVisible\tAttr",
+      "contents": "testVisible=\"${1:performanceTest:uiMenuTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestAppendRows-data\tAttr",
+      "contents": "data=\"${1:performanceTest:virtualDataGridTestAppendRows - Optional - List}\""
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestNoProvider-data\tAttr",
+      "contents": "data=\"${1:performanceTest:virtualDataGridTestNoProvider - Optional - List}\""
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestReloadData-data\tAttr",
+      "contents": "data=\"${1:performanceTest:virtualDataGridTestReloadData - Optional - List}\""
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestSwapColumns-data\tAttr",
+      "contents": "data=\"${1:performanceTest:virtualDataGridTestSwapColumns - Optional - List}\""
+    },
+    {
       "trigger": "preloadTest-test_dynamicNamespace-whatToDo\tAttr",
       "contents": "whatToDo=\"${1:preloadTest:test_dynamicNamespace - Optional - String}\""
     },

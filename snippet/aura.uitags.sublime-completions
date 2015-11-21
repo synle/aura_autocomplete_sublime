@@ -5338,6 +5338,86 @@
       "contents": "performanceTest:storageEvictionTest loaded=\"${1:Optional - Boolean}\" load=\"${2:Optional - String}\">${3:}</performanceTest:storageEvictionTest>"
     },
     {
+      "trigger": "performanceTest-tabSetTest\tTag Simple",
+      "contents": "performanceTest:tabSetTest$1>${2:}</performanceTest:tabSetTest>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTest\tTag Full",
+      "contents": "performanceTest:tabSetTest testDynamicTabLoading=\"${1:Optional - Boolean}\">${2:}</performanceTest:tabSetTest>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestLoadTabsDynamic\tTag Simple",
+      "contents": "performanceTest:tabSetTestLoadTabsDynamic$1>${2:}</performanceTest:tabSetTestLoadTabsDynamic>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestLoadTabsDynamic\tTag Full",
+      "contents": "performanceTest:tabSetTestLoadTabsDynamic>${1:}</performanceTest:tabSetTestLoadTabsDynamic>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestOverflowMenu\tTag Simple",
+      "contents": "performanceTest:tabSetTestOverflowMenu$1>${2:}</performanceTest:tabSetTestOverflowMenu>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestOverflowMenu\tTag Full",
+      "contents": "performanceTest:tabSetTestOverflowMenu>${1:}</performanceTest:tabSetTestOverflowMenu>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestStatic\tTag Simple",
+      "contents": "performanceTest:tabSetTestStatic$1>${2:}</performanceTest:tabSetTestStatic>"
+    },
+    {
+      "trigger": "performanceTest-tabSetTestStatic\tTag Full",
+      "contents": "performanceTest:tabSetTestStatic>${1:}</performanceTest:tabSetTestStatic>"
+    },
+    {
+      "trigger": "performanceTest-uiMenuTest\tTag Simple",
+      "contents": "performanceTest:uiMenuTest$1>${2:}</performanceTest:uiMenuTest>"
+    },
+    {
+      "trigger": "performanceTest-uiMenuTest\tTag Full",
+      "contents": "performanceTest:uiMenuTest testManyItems=\"${1:Optional - Boolean}\" testVisible=\"${2:Optional - Boolean}\">${3:}</performanceTest:uiMenuTest>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestAppendRows\tTag Simple",
+      "contents": "performanceTest:virtualDataGridTestAppendRows$1>${2:}</performanceTest:virtualDataGridTestAppendRows>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestAppendRows\tTag Full",
+      "contents": "performanceTest:virtualDataGridTestAppendRows data=\"${1:Optional - List}\">${2:}</performanceTest:virtualDataGridTestAppendRows>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestNoProvider\tTag Simple",
+      "contents": "performanceTest:virtualDataGridTestNoProvider$1>${2:}</performanceTest:virtualDataGridTestNoProvider>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestNoProvider\tTag Full",
+      "contents": "performanceTest:virtualDataGridTestNoProvider data=\"${1:Optional - List}\">${2:}</performanceTest:virtualDataGridTestNoProvider>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestReloadData\tTag Simple",
+      "contents": "performanceTest:virtualDataGridTestReloadData$1>${2:}</performanceTest:virtualDataGridTestReloadData>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestReloadData\tTag Full",
+      "contents": "performanceTest:virtualDataGridTestReloadData data=\"${1:Optional - List}\">${2:}</performanceTest:virtualDataGridTestReloadData>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestSwapColumns\tTag Simple",
+      "contents": "performanceTest:virtualDataGridTestSwapColumns$1>${2:}</performanceTest:virtualDataGridTestSwapColumns>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestSwapColumns\tTag Full",
+      "contents": "performanceTest:virtualDataGridTestSwapColumns data=\"${1:Optional - List}\">${2:}</performanceTest:virtualDataGridTestSwapColumns>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestWithProvider\tTag Simple",
+      "contents": "performanceTest:virtualDataGridTestWithProvider$1>${2:Implements performance:test.\t}</performanceTest:virtualDataGridTestWithProvider>"
+    },
+    {
+      "trigger": "performanceTest-virtualDataGridTestWithProvider\tTag Full",
+      "contents": "performanceTest:virtualDataGridTestWithProvider>${1:Implements performance:test.\t}</performanceTest:virtualDataGridTestWithProvider>"
+    },
+    {
       "trigger": "preloadTest-test_SpecialCharacter\tTag Simple",
       "contents": "preloadTest:test_SpecialCharacter$1>${2:}</preloadTest:test_SpecialCharacter>"
     },
