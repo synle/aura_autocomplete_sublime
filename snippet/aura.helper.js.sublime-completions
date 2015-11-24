@@ -3642,20 +3642,12 @@
       "contents": "cmp.getDef().getHelper().validateMinutes(${1:component})"
     },
     {
-      "trigger": "helper-ui-tooltip-setTransform",
-      "contents": "cmp.getDef().getHelper().setTransform(${1:el},${2:transformValue})"
-    },
-    {
       "trigger": "helper-ui-tooltip-initStyle",
       "contents": "cmp.getDef().getHelper().initStyle(${1:component})"
     },
     {
-      "trigger": "helper-ui-tooltip-updateConstraints",
-      "contents": "cmp.getDef().getHelper().updateConstraints(${1:component})"
-    },
-    {
       "trigger": "helper-ui-tooltip-buildTooltip",
-      "contents": "cmp.getDef().getHelper().buildTooltip(${1:component})"
+      "contents": "cmp.getDef().getHelper().buildTooltip(${1:component},${2:cb})"
     },
     {
       "trigger": "helper-ui-tooltip-_doUpdatePosition",
@@ -3688,6 +3680,30 @@
     {
       "trigger": "helper-ui-tooltip-makeTrigger",
       "contents": "cmp.getDef().getHelper().makeTrigger(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-getClassList",
+      "contents": "cmp.getDef().getHelper().getClassList(${1:})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-initStyle",
+      "contents": "cmp.getDef().getHelper().initStyle(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-show",
+      "contents": "cmp.getDef().getHelper().show(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-hide",
+      "contents": "cmp.getDef().getHelper().hide(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-position",
+      "contents": "cmp.getDef().getHelper().position(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-tooltipAdvanced-updateConstraints",
+      "contents": "cmp.getDef().getHelper().updateConstraints(${1:component})"
     },
     {
       "trigger": "helper-ui-treeNode-getChildren",

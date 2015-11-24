@@ -4362,6 +4362,10 @@
       "contents": "tabIndexOverride=\"${1:ui:tooltip - Optional - Integer}\""
     },
     {
+      "trigger": "ui-tooltip-disableFocusTrigger\tAttr",
+      "contents": "disableFocusTrigger=\"${1:ui:tooltip - Optional - Integer}\""
+    },
+    {
       "trigger": "ui-tooltip-direction\tAttr",
       "contents": "direction=\"${1:ui:tooltip - Optional - String}\""
     },
@@ -4372,6 +4376,74 @@
     {
       "trigger": "ui-tooltip-domId\tAttr",
       "contents": "domId=\"${1:ui:tooltip - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-isVisible\tAttr",
+      "contents": "isVisible=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-tooltipBody\tAttr",
+      "contents": "tooltipBody=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-target\tAttr",
+      "contents": "target=\"${1:ui:tooltipAdvanced - Optional - Aura.Component}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-classList\tAttr",
+      "contents": "classList=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-direction\tAttr",
+      "contents": "direction=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-advanced\tAttr",
+      "contents": "advanced=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-fadeOut\tAttr",
+      "contents": "fadeOut=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-fadeIn\tAttr",
+      "contents": "fadeIn=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-fadeOutDuration\tAttr",
+      "contents": "fadeOutDuration=\"${1:ui:tooltipAdvanced - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-fadeInDuration\tAttr",
+      "contents": "fadeInDuration=\"${1:ui:tooltipAdvanced - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-delay\tAttr",
+      "contents": "delay=\"${1:ui:tooltipAdvanced - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-class\tAttr",
+      "contents": "class=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-tooltipStyle\tAttr",
+      "contents": "tooltipStyle=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-domClass\tAttr",
+      "contents": "domClass=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-allowFlips\tAttr",
+      "contents": "allowFlips=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-tooltipAdvanced-domId\tAttr",
+      "contents": "domId=\"${1:ui:tooltipAdvanced - Optional - String}\""
     },
     {
       "trigger": "ui-tree-nodes\tAttr",

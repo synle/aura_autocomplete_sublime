@@ -2111,7 +2111,15 @@
     },
     {
       "trigger": "ui-tooltip\tTag Full",
-      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" tooltipStyle=\"${2:Optional - String}\" disabled=\"${3:Optional - Boolean}\" advanced=\"${4:Optional - Boolean}\" trigger=\"${5:Optional - String}\" triggerClass=\"${6:Optional - String}\" isVisible=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" classList=\"${14:Optional - String}\" tabIndex=\"${15:Optional - Integer}\" tabIndexOverride=\"${16:Optional - Integer}\" direction=\"${17:Optional - String}\" allowFlips=\"${18:Optional - Boolean}\" domId=\"${19:Optional - String}\">${20:}</ui:tooltip>"
+      "contents": "ui:tooltip tooltipBody=\"${1:Optional - String}\" tooltipStyle=\"${2:Optional - String}\" disabled=\"${3:Optional - Boolean}\" advanced=\"${4:Optional - Boolean}\" trigger=\"${5:Optional - String}\" triggerClass=\"${6:Optional - String}\" isVisible=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" classList=\"${14:Optional - String}\" tabIndex=\"${15:Optional - Integer}\" tabIndexOverride=\"${16:Optional - Integer}\" disableFocusTrigger=\"${17:Optional - Integer}\" direction=\"${18:Optional - String}\" allowFlips=\"${19:Optional - Boolean}\" domId=\"${20:Optional - String}\">${21:}</ui:tooltip>"
+    },
+    {
+      "trigger": "ui-tooltipAdvanced\tTag Simple",
+      "contents": "ui:tooltipAdvanced$1>${2:This is the tooltip advanced subcomponent, used by tooltip.cmp. DO NOT USE ALONE}</ui:tooltipAdvanced>"
+    },
+    {
+      "trigger": "ui-tooltipAdvanced\tTag Full",
+      "contents": "ui:tooltipAdvanced isVisible=\"${1:Optional - Boolean}\" tooltipBody=\"${2:Optional - String}\" target=\"${3:Optional - Aura.Component}\" classList=\"${4:Optional - String}\" direction=\"${5:Optional - String}\" advanced=\"${6:Optional - Boolean}\" disabled=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" tooltipStyle=\"${14:Optional - String}\" domClass=\"${15:Optional - String}\" allowFlips=\"${16:Optional - Boolean}\" domId=\"${17:Optional - String}\">${18:This is the tooltip advanced subcomponent, used by tooltip.cmp. DO NOT USE ALONE}</ui:tooltipAdvanced>"
     },
     {
       "trigger": "ui-tree\tTag Simple",
