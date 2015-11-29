@@ -2450,6 +2450,22 @@
       "contents": "auraStorageTest:adapterSelectionTest>${1:}</auraStorageTest:adapterSelectionTest>"
     },
     {
+      "trigger": "auraStorageTest-componentDefStorageContainer\tTag Simple",
+      "contents": "auraStorageTest:componentDefStorageContainer$1>${2:}</auraStorageTest:componentDefStorageContainer>"
+    },
+    {
+      "trigger": "auraStorageTest-componentDefStorageContainer\tTag Full",
+      "contents": "auraStorageTest:componentDefStorageContainer>${1:}</auraStorageTest:componentDefStorageContainer>"
+    },
+    {
+      "trigger": "auraStorageTest-componentDefStorageTemplate\tTag Simple",
+      "contents": "auraStorageTest:componentDefStorageTemplate$1>${2:}</auraStorageTest:componentDefStorageTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-componentDefStorageTemplate\tTag Full",
+      "contents": "auraStorageTest:componentDefStorageTemplate>${1:}</auraStorageTest:componentDefStorageTemplate>"
+    },
+    {
       "trigger": "auraStorageTest-cryptoRegistrationTemplate\tTag Simple",
       "contents": "auraStorageTest:cryptoRegistrationTemplate$1>${2:}</auraStorageTest:cryptoRegistrationTemplate>"
     },

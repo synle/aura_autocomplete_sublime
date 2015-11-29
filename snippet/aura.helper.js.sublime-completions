@@ -1778,6 +1778,10 @@
       "contents": "cmp.getDef().getHelper().domEventHandler(${1:event})"
     },
     {
+      "trigger": "helper-ui-input-updateAriaRequired",
+      "contents": "cmp.getDef().getHelper().updateAriaRequired(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputCheckbox-getDomElementValue",
       "contents": "cmp.getDef().getHelper().getDomElementValue(${1:element})"
     },
