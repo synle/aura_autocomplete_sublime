@@ -2474,20 +2474,28 @@
       "contents": "auraStorageTest:cryptoRegistrationTemplate>${1:}</auraStorageTest:cryptoRegistrationTemplate>"
     },
     {
-      "trigger": "auraStorageTest-failedStorageTemplate\tTag Simple",
-      "contents": "auraStorageTest:failedStorageTemplate$1>${2:}</auraStorageTest:failedStorageTemplate>"
+      "trigger": "auraStorageTest-failedActionStorageTemplate\tTag Simple",
+      "contents": "auraStorageTest:failedActionStorageTemplate$1>${2:}</auraStorageTest:failedActionStorageTemplate>"
     },
     {
-      "trigger": "auraStorageTest-failedStorageTemplate\tTag Full",
-      "contents": "auraStorageTest:failedStorageTemplate>${1:}</auraStorageTest:failedStorageTemplate>"
+      "trigger": "auraStorageTest-failedActionStorageTemplate\tTag Full",
+      "contents": "auraStorageTest:failedActionStorageTemplate>${1:}</auraStorageTest:failedActionStorageTemplate>"
     },
     {
-      "trigger": "auraStorageTest-failedStorageTest\tTag Simple",
-      "contents": "auraStorageTest:failedStorageTest$1>${2:}</auraStorageTest:failedStorageTest>"
+      "trigger": "auraStorageTest-failedActionStorageTest\tTag Simple",
+      "contents": "auraStorageTest:failedActionStorageTest$1>${2:}</auraStorageTest:failedActionStorageTest>"
     },
     {
-      "trigger": "auraStorageTest-failedStorageTest\tTag Full",
-      "contents": "auraStorageTest:failedStorageTest>${1:}</auraStorageTest:failedStorageTest>"
+      "trigger": "auraStorageTest-failedActionStorageTest\tTag Full",
+      "contents": "auraStorageTest:failedActionStorageTest>${1:}</auraStorageTest:failedActionStorageTest>"
+    },
+    {
+      "trigger": "auraStorageTest-failedDefStorageTemplate\tTag Simple",
+      "contents": "auraStorageTest:failedDefStorageTemplate$1>${2:}</auraStorageTest:failedDefStorageTemplate>"
+    },
+    {
+      "trigger": "auraStorageTest-failedDefStorageTemplate\tTag Full",
+      "contents": "auraStorageTest:failedDefStorageTemplate>${1:}</auraStorageTest:failedDefStorageTemplate>"
     },
     {
       "trigger": "auraStorageTest-fuelGaugeTestStub\tTag Simple",
@@ -2864,14 +2872,6 @@
     {
       "trigger": "auratest-errorHandling\tTag Full",
       "contents": "auratest:errorHandling requiredAttribute=\"${1:Required - String}\" message=\"${2:Optional - String}\" error=\"${3:Optional - String}\" eventHandled=\"${4:Optional - Boolean}\" handleSystemError=\"${5:Optional - Boolean}\" throwErrorFromInit=\"${6:Optional - Boolean}\" throwErrorFromRender=\"${7:Optional - boolean}\" throwErrorFromRerender=\"${8:Optional - Boolean}\" throwErrorFromAfterRender=\"${9:Optional - Boolean}\" throwErrorFromUnrender=\"${10:Optional - Boolean}\">${11:}</auratest:errorHandling>"
-    },
-    {
-      "trigger": "auratest-errorHandlingErrorModelCmp\tTag Simple",
-      "contents": "auratest:errorHandlingErrorModelCmp$1>${2:}</auratest:errorHandlingErrorModelCmp>"
-    },
-    {
-      "trigger": "auratest-errorHandlingErrorModelCmp\tTag Full",
-      "contents": "auratest:errorHandlingErrorModelCmp>${1:}</auratest:errorHandlingErrorModelCmp>"
     },
     {
       "trigger": "auratest-eventCounter\tTag Simple",
