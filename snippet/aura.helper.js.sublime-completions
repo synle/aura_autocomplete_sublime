@@ -26,12 +26,20 @@
       "contents": "cmp.getDef().getHelper().domEventHandler(${1:event})"
     },
     {
+      "trigger": "helper-aura-html-dispatchAction",
+      "contents": "cmp.getDef().getHelper().dispatchAction(${1:action},${2:event})"
+    },
+    {
       "trigger": "helper-aura-html-canHaveBody",
       "contents": "cmp.getDef().getHelper().canHaveBody(${1:component})"
     },
     {
       "trigger": "helper-aura-html-createHtmlAttribute",
       "contents": "cmp.getDef().getHelper().createHtmlAttribute(${1:component},${2:element},${3:name},${4:attribute})"
+    },
+    {
+      "trigger": "helper-aura-html-destroyHtmlAttribute",
+      "contents": "cmp.getDef().getHelper().destroyHtmlAttribute(${1:component},${2:name},${3:attribute})"
     },
     {
       "trigger": "helper-aura-if-createBody",
@@ -2482,6 +2490,10 @@
       "contents": "cmp.getDef().getHelper().mask(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-modal-scopeScrollables",
+      "contents": "cmp.getDef().getHelper().scopeScrollables(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-modal-unmask",
       "contents": "cmp.getDef().getHelper().unmask(${1:cmp},${2:useTransition},${3:panel})"
     },
@@ -2596,6 +2608,14 @@
     {
       "trigger": "helper-ui-panel-init",
       "contents": "cmp.getDef().getHelper().init(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-panel-_getKeyHandler",
+      "contents": "cmp.getDef().getHelper()._getKeyHandler(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-panel-_getMouseHandler",
+      "contents": "cmp.getDef().getHelper()._getMouseHandler(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panel-_getReferenceElement",
@@ -2848,6 +2868,10 @@
     {
       "trigger": "helper-ui-panelManager2-initializeRegisteredPanels",
       "contents": "cmp.getDef().getHelper().initializeRegisteredPanels(${1:cmp},${2:newPanels})"
+    },
+    {
+      "trigger": "helper-ui-panelManager2-registerPanels",
+      "contents": "cmp.getDef().getHelper().registerPanels(${1:cmp},${2:params})"
     },
     {
       "trigger": "helper-ui-panelManager2-createPanel",
@@ -3650,6 +3674,10 @@
       "contents": "cmp.getDef().getHelper().initStyle(${1:component})"
     },
     {
+      "trigger": "helper-ui-tooltip-updateBodyText",
+      "contents": "cmp.getDef().getHelper().updateBodyText(${1:component})"
+    },
+    {
       "trigger": "helper-ui-tooltip-buildTooltip",
       "contents": "cmp.getDef().getHelper().buildTooltip(${1:component},${2:cb})"
     },
@@ -4228,6 +4256,34 @@
     {
       "trigger": "helper-loadLevelTest-newCmpWithValueProvider-createComponentAndPushToBody",
       "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config},${3:attributeValueProvider},${4:localCreation},${5:doForce},${6:forceServer})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-helperMethod",
+      "contents": "cmp.getDef().getHelper().helperMethod(${1:})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-log",
+      "contents": "cmp.getDef().getHelper().log(${1:component},${2:message})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-testSymbol",
+      "contents": "cmp.getDef().getHelper().testSymbol(${1:symbol})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-verifyElementCount",
+      "contents": "cmp.getDef().getHelper().verifyElementCount(${1:className},${2:expected})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-indexOfLeftMatchingBracket",
+      "contents": "cmp.getDef().getHelper().indexOfLeftMatchingBracket(${1:text})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-findBoundsOfExpression",
+      "contents": "cmp.getDef().getHelper().findBoundsOfExpression(${1:text})"
+    },
+    {
+      "trigger": "helper-lockerTest-basic-createSafeCtorExpression",
+      "contents": "cmp.getDef().getHelper().createSafeCtorExpression(${1:text})"
     },
     {
       "trigger": "helper-performance-runner-urlToJson",

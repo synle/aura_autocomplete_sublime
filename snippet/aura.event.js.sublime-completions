@@ -299,11 +299,11 @@
     },
     {
       "trigger": "evt-ui-infiniteListRow-open",
-      "contents": "//  component: infiniteListRow\n//    evtName: open\n//    evtType: ui:open\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.open\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: infiniteListRow\n//    evtName: open\n//    evtType: ui:open\n//description: The event fired when the user swipes a row to expose additional content.\nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.open\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-infiniteListRow-close",
-      "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: \nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: The event fired when the user swipes a row to hide additional content.\nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-input-change",

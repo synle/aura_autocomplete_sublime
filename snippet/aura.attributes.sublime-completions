@@ -206,6 +206,10 @@
       "contents": "else=\"${1:aura:renderIf - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "aura-showDependencies-component\tAttr",
+      "contents": "component=\"${1:aura:showDependencies - Optional - String}\""
+    },
+    {
       "trigger": "aura-template-title\tAttr",
       "contents": "title=\"${1:aura:template - Optional - String}\""
     },
@@ -402,38 +406,6 @@
       "contents": "version=\"${1:auraStorage:init - Optional - String}\""
     },
     {
-      "trigger": "auraadmin-cacheView-name\tAttr",
-      "contents": "name=\"${1:auraadmin:cacheView - Required - String}\""
-    },
-    {
-      "trigger": "auraadmin-cacheView-expanded\tAttr",
-      "contents": "expanded=\"${1:auraadmin:cacheView - Optional - boolean}\""
-    },
-    {
-      "trigger": "auraadmin-cacheView-showDefs\tAttr",
-      "contents": "showDefs=\"${1:auraadmin:cacheView - Optional - boolean}\""
-    },
-    {
-      "trigger": "auraadmin-cacheView-data\tAttr",
-      "contents": "data=\"${1:auraadmin:cacheView - Required - Map}\""
-    },
-    {
-      "trigger": "auraadmin-cachingRegistryView-expanded\tAttr",
-      "contents": "expanded=\"${1:auraadmin:cachingRegistryView - Optional - boolean}\""
-    },
-    {
-      "trigger": "auraadmin-counterBeans-beans\tAttr",
-      "contents": "beans=\"${1:auraadmin:counterBeans - Optional - List}\""
-    },
-    {
-      "trigger": "auraadmin-registryView-registry\tAttr",
-      "contents": "registry=\"${1:auraadmin:registryView - Required - Map}\""
-    },
-    {
-      "trigger": "auraadmin-registryView-buttons\tAttr",
-      "contents": "buttons=\"${1:auraadmin:registryView - Optional - Aura.Component[]}\""
-    },
-    {
       "trigger": "auradev-dependencyItem-descriptor\tAttr",
       "contents": "descriptor=\"${1:auradev:dependencyItem - Optional - String}\""
     },
@@ -452,10 +424,6 @@
     {
       "trigger": "auradev-lintc-name\tAttr",
       "contents": "name=\"${1:auradev:lintc - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-showDependencies-component\tAttr",
-      "contents": "component=\"${1:auradev:showDependencies - Optional - String}\""
     },
     {
       "trigger": "auradocs-apiParam-symbol\tAttr",
@@ -2994,6 +2962,10 @@
       "contents": "autoFocus=\"${1:ui:modal - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-modal-icon\tAttr",
+      "contents": "icon=\"${1:ui:modal - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "ui-output-value\tAttr",
       "contents": "value=\"${1:ui:output - Required - Object}\""
     },
@@ -4574,6 +4546,10 @@
       "contents": "fixedHeader=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-keyboardNavigation\tAttr",
+      "contents": "keyboardNavigation=\"${1:ui:virtualDataGrid - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-enableResizableColumns\tAttr",
       "contents": "enableResizableColumns=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
     },
@@ -4654,8 +4630,8 @@
       "contents": "press=\"${1:actionsTest:chainLocalActions - Optional - ui:press}\""
     },
     {
-      "trigger": "actionsTest-clientAction-value\tAttr",
-      "contents": "value=\"${1:actionsTest:clientAction - Optional - String}\""
+      "trigger": "actionsTest-clientActionWithServerController-value\tAttr",
+      "contents": "value=\"${1:actionsTest:clientActionWithServerController - Optional - String}\""
     },
     {
       "trigger": "actionsTest-deferredServerAction-result\tAttr",
@@ -6302,6 +6278,14 @@
       "contents": "title=\"${1:componentTest:simpleExtends - Optional - String}\""
     },
     {
+      "trigger": "componentTest-toJSON-components\tAttr",
+      "contents": "components=\"${1:componentTest:toJSON - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "componentTest-toJSON-object\tAttr",
+      "contents": "object=\"${1:componentTest:toJSON - Optional - Object}\""
+    },
+    {
       "trigger": "componentTest-versionInServer-newComponent\tAttr",
       "contents": "newComponent=\"${1:componentTest:versionInServer - Optional - Aura.Component}\""
     },
@@ -7276,6 +7260,10 @@
     {
       "trigger": "loadLevelTest-serverWithLazyChild-waitId\tAttr",
       "contents": "waitId=\"${1:loadLevelTest:serverWithLazyChild - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-basic-xss\tAttr",
+      "contents": "xss=\"${1:lockerTest:basic - Optional - String}\""
     },
     {
       "trigger": "miscTest-aura_iteration-tochange\tAttr",

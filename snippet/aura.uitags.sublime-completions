@@ -98,6 +98,14 @@
       "contents": "aura:renderIf isTrue=\"${1:Required - Boolean}\" else=\"${2:Optional - Aura.Component[]}\">${3:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
     },
     {
+      "trigger": "aura-showDependencies\tTag Simple",
+      "contents": "aura:showDependencies$1>${2:}</aura:showDependencies>"
+    },
+    {
+      "trigger": "aura-showDependencies\tTag Full",
+      "contents": "aura:showDependencies component=\"${1:Optional - String}\">${2:}</aura:showDependencies>"
+    },
+    {
       "trigger": "aura-template\tTag Simple",
       "contents": "aura:template$1>${2:Default template used to bootstrap Aura framework. To use another template, extend aura:template and set attributes using aura:set.}</aura:template>"
     },
@@ -146,38 +154,6 @@
       "contents": "auraStorage:init name=\"${1:Required - String}\" persistent=\"${2:Optional - Boolean}\" secure=\"${3:Optional - Boolean}\" clearStorageOnInit=\"${4:Optional - Boolean}\" defaultExpiration=\"${5:Optional - Integer}\" defaultAutoRefreshInterval=\"${6:Optional - Integer}\" maxSize=\"${7:Optional - Integer}\" debugLoggingEnabled=\"${8:Optional - Boolean}\" version=\"${9:Optional - String}\">${10:Initializes a storage instance using an adapter that satisfies the provided criteria.}</auraStorage:init>"
     },
     {
-      "trigger": "auraadmin-cacheView\tTag Simple",
-      "contents": "auraadmin:cacheView$1>${2:}</auraadmin:cacheView>"
-    },
-    {
-      "trigger": "auraadmin-cacheView\tTag Full",
-      "contents": "auraadmin:cacheView name=\"${1:Required - String}\" data=\"${2:Required - Map}\" expanded=\"${3:Optional - boolean}\" showDefs=\"${4:Optional - boolean}\">${5:}</auraadmin:cacheView>"
-    },
-    {
-      "trigger": "auraadmin-cachingRegistryView\tTag Simple",
-      "contents": "auraadmin:cachingRegistryView$1>${2:}</auraadmin:cachingRegistryView>"
-    },
-    {
-      "trigger": "auraadmin-cachingRegistryView\tTag Full",
-      "contents": "auraadmin:cachingRegistryView expanded=\"${1:Optional - boolean}\">${2:}</auraadmin:cachingRegistryView>"
-    },
-    {
-      "trigger": "auraadmin-counterBeans\tTag Simple",
-      "contents": "auraadmin:counterBeans$1>${2:}</auraadmin:counterBeans>"
-    },
-    {
-      "trigger": "auraadmin-counterBeans\tTag Full",
-      "contents": "auraadmin:counterBeans beans=\"${1:Optional - List}\">${2:}</auraadmin:counterBeans>"
-    },
-    {
-      "trigger": "auraadmin-registryView\tTag Simple",
-      "contents": "auraadmin:registryView$1>${2:}</auraadmin:registryView>"
-    },
-    {
-      "trigger": "auraadmin-registryView\tTag Full",
-      "contents": "auraadmin:registryView registry=\"${1:Required - Map}\" buttons=\"${2:Optional - Aura.Component[]}\">${3:}</auraadmin:registryView>"
-    },
-    {
       "trigger": "auradev-blankTemplate\tTag Simple",
       "contents": "auradev:blankTemplate$1>${2:}</auradev:blankTemplate>"
     },
@@ -200,14 +176,6 @@
     {
       "trigger": "auradev-lintc\tTag Full",
       "contents": "auradev:lintc name=\"${1:Optional - String}\">${2:}</auradev:lintc>"
-    },
-    {
-      "trigger": "auradev-showDependencies\tTag Simple",
-      "contents": "auradev:showDependencies$1>${2:}</auradev:showDependencies>"
-    },
-    {
-      "trigger": "auradev-showDependencies\tTag Full",
-      "contents": "auradev:showDependencies component=\"${1:Optional - String}\">${2:}</auradev:showDependencies>"
     },
     {
       "trigger": "auradev-testDataProvider\tTag Simple",
@@ -1083,11 +1051,11 @@
     },
     {
       "trigger": "ui-autocompletePanel\tTag Simple",
-      "contents": "ui:autocompletePanel$1>${2:}</ui:autocompletePanel>"
+      "contents": "ui:autocompletePanel$1>${2:A list of results for the ui:autocomplete component that uses the panel positioning library.}</ui:autocompletePanel>"
     },
     {
       "trigger": "ui-autocompletePanel\tTag Full",
-      "contents": "ui:autocompletePanel referenceElement=\"${1:Optional - Object}\" visible=\"${2:Optional - boolean}\" zIndex=\"${3:Optional - Integer}\">${4:}</ui:autocompletePanel>"
+      "contents": "ui:autocompletePanel referenceElement=\"${1:Optional - Object}\" visible=\"${2:Optional - boolean}\" zIndex=\"${3:Optional - Integer}\">${4:A list of results for the ui:autocomplete component that uses the panel positioning library.}</ui:autocompletePanel>"
     },
     {
       "trigger": "ui-block\tTag Simple",
@@ -1115,11 +1083,11 @@
     },
     {
       "trigger": "ui-carousel\tTag Simple",
-      "contents": "ui:carousel$1>${2:Implements ui:scrollerEmbeddable.\t}</ui:carousel>"
+      "contents": "ui:carousel$1>${2:Implements ui:scrollerEmbeddable.\tDisplays a list of items horizontally, which can be swiped through or clicked through using page indicators.}</ui:carousel>"
     },
     {
       "trigger": "ui-carousel\tTag Full",
-      "contents": "ui:carousel height=\"${1:Optional - Integer}\" swipeEnabled=\"${2:Optional - Boolean}\" width=\"${3:Optional - Integer}\" pageModels=\"${4:Optional - Object[]}\" pageComponents=\"${5:Optional - Aura.Component[]}\" prefetchedTab=\"${6:Optional - Aura.Component[]}\" isDotIndicator=\"${7:Optional - Boolean}\" initialPage=\"${8:Optional - String}\" prefetchFirstTab=\"${9:Optional - Boolean}\" lazyLoadTabs=\"${10:Optional - Boolean}\" indicatorStateClass=\"${11:Optional - String}\" pageScrollerPlugins=\"${12:Optional - String}\" justifyContent=\"${13:Optional - String}\" prefetchedTabIndex=\"${14:Optional - Integer}\" suppressIndicators=\"${15:Optional - String}\" isScrollable=\"${16:Optional - Boolean}\" bindEventsToScroller=\"${17:Optional - Boolean}\" pageIndicatorComponent=\"${18:Optional - Aura.Component[]}\" carouselPageComponent=\"${19:Optional - Aura.ComponentDefRef[]}\">${20:Implements ui:scrollerEmbeddable.\t}</ui:carousel>"
+      "contents": "ui:carousel height=\"${1:Optional - Integer}\" swipeEnabled=\"${2:Optional - Boolean}\" width=\"${3:Optional - Integer}\" pageModels=\"${4:Optional - Object[]}\" pageComponents=\"${5:Optional - Aura.Component[]}\" prefetchedTab=\"${6:Optional - Aura.Component[]}\" isDotIndicator=\"${7:Optional - Boolean}\" initialPage=\"${8:Optional - String}\" prefetchFirstTab=\"${9:Optional - Boolean}\" lazyLoadTabs=\"${10:Optional - Boolean}\" indicatorStateClass=\"${11:Optional - String}\" pageScrollerPlugins=\"${12:Optional - String}\" justifyContent=\"${13:Optional - String}\" prefetchedTabIndex=\"${14:Optional - Integer}\" suppressIndicators=\"${15:Optional - String}\" isScrollable=\"${16:Optional - Boolean}\" bindEventsToScroller=\"${17:Optional - Boolean}\" pageIndicatorComponent=\"${18:Optional - Aura.Component[]}\" carouselPageComponent=\"${19:Optional - Aura.ComponentDefRef[]}\">${20:Implements ui:scrollerEmbeddable.\tDisplays a list of items horizontally, which can be swiped through or clicked through using page indicators.}</ui:carousel>"
     },
     {
       "trigger": "ui-carouselDeprecated\tTag Simple",
@@ -1131,19 +1099,19 @@
     },
     {
       "trigger": "ui-carouselIndicator\tTag Simple",
-      "contents": "ui:carouselIndicator$1>${2:}</ui:carouselIndicator>"
+      "contents": "ui:carouselIndicator$1>${2:Page indicators for the ui:carousel component.}</ui:carouselIndicator>"
     },
     {
       "trigger": "ui-carouselIndicator\tTag Full",
-      "contents": "ui:carouselIndicator pageModels=\"${1:Optional - Object[]}\" pageComponents=\"${2:Optional - Object[]}\" justifyContent=\"${3:Optional - String}\" isDotIndicator=\"${4:Optional - Boolean}\" pagerClicked=\"${5:Optional - ui:pagerClicked}\">${6:}</ui:carouselIndicator>"
+      "contents": "ui:carouselIndicator pageModels=\"${1:Optional - Object[]}\" pageComponents=\"${2:Optional - Object[]}\" justifyContent=\"${3:Optional - String}\" isDotIndicator=\"${4:Optional - Boolean}\" pagerClicked=\"${5:Optional - ui:pagerClicked}\">${6:Page indicators for the ui:carousel component.}</ui:carouselIndicator>"
     },
     {
       "trigger": "ui-carouselPage\tTag Simple",
-      "contents": "ui:carouselPage$1>${2:}</ui:carouselPage>"
+      "contents": "ui:carouselPage$1>${2:A carousel page for the ui:carousel component, which can be swiped horizontally to display its content.}</ui:carouselPage>"
     },
     {
       "trigger": "ui-carouselPage\tTag Full",
-      "contents": "ui:carouselPage content=\"${1:Optional - Object}\" pageIndex=\"${2:Optional - Integer}\" scrollerPlugins=\"${3:Optional - String}\" isContentLoaded=\"${4:Optional - Boolean}\" isScrollable=\"${5:Optional - Boolean}\" placeholder=\"${6:Optional - Aura.ComponentDefRef[]}\">${7:}</ui:carouselPage>"
+      "contents": "ui:carouselPage content=\"${1:Optional - Object}\" pageIndex=\"${2:Optional - Integer}\" scrollerPlugins=\"${3:Optional - String}\" isContentLoaded=\"${4:Optional - Boolean}\" isScrollable=\"${5:Optional - Boolean}\" placeholder=\"${6:Optional - Aura.ComponentDefRef[]}\">${7:A carousel page for the ui:carousel component, which can be swiped horizontally to display its content.}</ui:carouselPage>"
     },
     {
       "trigger": "ui-carouselPageDeprecated\tTag Simple",
@@ -1387,11 +1355,11 @@
     },
     {
       "trigger": "ui-infiniteListRow\tTag Simple",
-      "contents": "ui:infiniteListRow$1>${2:}</ui:infiniteListRow>"
+      "contents": "ui:infiniteListRow$1>${2:A row in a list that supports swiping to expose more content. Each row touch event is resolved by ui:infiniteList via the uiInfiniteListRow CSS class}</ui:infiniteListRow>"
     },
     {
       "trigger": "ui-infiniteListRow\tTag Full",
-      "contents": "ui:infiniteListRow class=\"${1:Optional - String}\" swipeBody=\"${2:Optional - Aura.Component[]}\" open=\"${3:Optional - ui:open}\" close=\"${4:Optional - ui:close}\">${5:}</ui:infiniteListRow>"
+      "contents": "ui:infiniteListRow class=\"${1:Optional - String}\" swipeBody=\"${2:Optional - Aura.Component[]}\" open=\"${3:Optional - ui:open}\" close=\"${4:Optional - ui:close}\">${5:A row in a list that supports swiping to expose more content. Each row touch event is resolved by ui:infiniteList via the uiInfiniteListRow CSS class}</ui:infiniteListRow>"
     },
     {
       "trigger": "ui-input\tTag Simple",
@@ -1651,11 +1619,11 @@
     },
     {
       "trigger": "ui-manifest\tTag Simple",
-      "contents": "ui:manifest$1>${2:}</ui:manifest>"
+      "contents": "ui:manifest$1>${2:A cache manifest file.}</ui:manifest>"
     },
     {
       "trigger": "ui-manifest\tTag Full",
-      "contents": "ui:manifest lastMod=\"${1:Optional - String}\" resourceURLs=\"${2:Optional - String}\">${3:}</ui:manifest>"
+      "contents": "ui:manifest lastMod=\"${1:Optional - String}\" resourceURLs=\"${2:Optional - String}\">${3:A cache manifest file.}</ui:manifest>"
     },
     {
       "trigger": "ui-menu\tTag Simple",
@@ -1715,11 +1683,11 @@
     },
     {
       "trigger": "ui-modal\tTag Simple",
-      "contents": "ui:modal$1>${2:Implements ui:panelType.\t}</ui:modal>"
+      "contents": "ui:modal$1>${2:Implements ui:panelType.\tA modal dialog displayed over the main UI, interrupting the process to prompt user for information or a response. It holds focus until the dialog is closed or submitted.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse one instance of ui:panelManager2 to manage your modals.}</ui:modal>"
     },
     {
       "trigger": "ui-modal\tTag Full",
-      "contents": "ui:modal title=\"${1:Optional - String}\" titleDisplay=\"${2:Optional - Boolean}\" class=\"${3:Optional - String}\" startOfDialogLabel=\"${4:Optional - String}\" showCloseButton=\"${5:Optional - Boolean}\" closeButton=\"${6:Optional - Aura.Component[]}\" closeAction=\"${7:Optional - Object}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\">${13:Implements ui:panelType.\t}</ui:modal>"
+      "contents": "ui:modal title=\"${1:Optional - String}\" titleDisplay=\"${2:Optional - Boolean}\" class=\"${3:Optional - String}\" startOfDialogLabel=\"${4:Optional - String}\" showCloseButton=\"${5:Optional - Boolean}\" closeButton=\"${6:Optional - Aura.Component[]}\" closeAction=\"${7:Optional - Object}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" icon=\"${13:Optional - Aura.Component[]}\">${14:Implements ui:panelType.\tA modal dialog displayed over the main UI, interrupting the process to prompt user for information or a response. It holds focus until the dialog is closed or submitted.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse one instance of ui:panelManager2 to manage your modals.}</ui:modal>"
     },
     {
       "trigger": "ui-output\tTag Simple",
@@ -1899,11 +1867,11 @@
     },
     {
       "trigger": "ui-panel\tTag Simple",
-      "contents": "ui:panel$1>${2:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
+      "contents": "ui:panel$1>${2:Implements ui:panelType.\tA panel slides out to display a form for input or other information over the main UI, and it can be full screen or not. Use only one instance of ui:panelManager2 to manage your panels.}</ui:panel>"
     },
     {
       "trigger": "ui-panel\tTag Full",
-      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" boundingElement=\"${17:Optional - Object}\" inside=\"${18:Optional - Boolean}\" advancedConfig=\"${19:Optional - Object}\" pad=\"${20:Optional - Integer}\" closeButton=\"${21:Optional - Aura.Component[]}\">${22:Implements ui:panelType.\tA panel for dialogs. Use only one instance of ui:panelManager to manage your modal or non-modal dialogs.}</ui:panel>"
+      "contents": "ui:panel title=\"${1:Optional - String}\" class=\"${2:Optional - String}\" titleDisplay=\"${3:Optional - Boolean}\" startOfDialogLabel=\"${4:Optional - String}\" closeOnClickOut=\"${5:Optional - Boolean}\" closeAction=\"${6:Optional - Object}\" showCloseButton=\"${7:Optional - Boolean}\" closeDialogLabel=\"${8:Optional - String}\" useTransition=\"${9:Optional - Boolean}\" animation=\"${10:Optional - String}\" closeAnimation=\"${11:Optional - String}\" autoFocus=\"${12:Optional - Boolean}\" referenceElementSelector=\"${13:Optional - String}\" referenceElement=\"${14:Optional - Object}\" direction=\"${15:Optional - String}\" showPointer=\"${16:Optional - Boolean}\" boundingElement=\"${17:Optional - Object}\" inside=\"${18:Optional - Boolean}\" advancedConfig=\"${19:Optional - Object}\" pad=\"${20:Optional - Integer}\" closeButton=\"${21:Optional - Aura.Component[]}\">${22:Implements ui:panelType.\tA panel slides out to display a form for input or other information over the main UI, and it can be full screen or not. Use only one instance of ui:panelManager2 to manage your panels.}</ui:panel>"
     },
     {
       "trigger": "ui-panelDialog\tTag Simple",
@@ -2035,11 +2003,11 @@
     },
     {
       "trigger": "ui-stamp\tTag Simple",
-      "contents": "ui:stamp$1>${2:Implements ui:visible.\tA decorated stamp containing text}</ui:stamp>"
+      "contents": "ui:stamp$1>${2:Implements ui:visible.\tAn actionable label colored by severity level.}</ui:stamp>"
     },
     {
       "trigger": "ui-stamp\tTag Full",
-      "contents": "ui:stamp severity=\"${1:Optional - String}\" title=\"${2:Optional - String}\" onclick=\"${3:Optional - Aura.Action}\">${4:Implements ui:visible.\tA decorated stamp containing text}</ui:stamp>"
+      "contents": "ui:stamp severity=\"${1:Optional - String}\" title=\"${2:Optional - String}\" onclick=\"${3:Optional - Aura.Action}\">${4:Implements ui:visible.\tAn actionable label colored by severity level.}</ui:stamp>"
     },
     {
       "trigger": "ui-tab\tTag Simple",
@@ -2115,11 +2083,11 @@
     },
     {
       "trigger": "ui-tooltipAdvanced\tTag Simple",
-      "contents": "ui:tooltipAdvanced$1>${2:This is the tooltip advanced subcomponent, used by tooltip.cmp. DO NOT USE ALONE}</ui:tooltipAdvanced>"
+      "contents": "ui:tooltipAdvanced$1>${2:A tooltip advanced subcomponent for use in tooltip.cmp. DO NOT USE.}</ui:tooltipAdvanced>"
     },
     {
       "trigger": "ui-tooltipAdvanced\tTag Full",
-      "contents": "ui:tooltipAdvanced isVisible=\"${1:Optional - Boolean}\" tooltipBody=\"${2:Optional - String}\" target=\"${3:Optional - Aura.Component}\" classList=\"${4:Optional - String}\" direction=\"${5:Optional - String}\" advanced=\"${6:Optional - Boolean}\" disabled=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" tooltipStyle=\"${14:Optional - String}\" domClass=\"${15:Optional - String}\" allowFlips=\"${16:Optional - Boolean}\" domId=\"${17:Optional - String}\">${18:This is the tooltip advanced subcomponent, used by tooltip.cmp. DO NOT USE ALONE}</ui:tooltipAdvanced>"
+      "contents": "ui:tooltipAdvanced isVisible=\"${1:Optional - Boolean}\" tooltipBody=\"${2:Optional - String}\" target=\"${3:Optional - Aura.Component}\" classList=\"${4:Optional - String}\" direction=\"${5:Optional - String}\" advanced=\"${6:Optional - Boolean}\" disabled=\"${7:Optional - Boolean}\" fadeOut=\"${8:Optional - Boolean}\" fadeIn=\"${9:Optional - Boolean}\" fadeOutDuration=\"${10:Optional - Integer}\" fadeInDuration=\"${11:Optional - Integer}\" delay=\"${12:Optional - Integer}\" class=\"${13:Optional - String}\" tooltipStyle=\"${14:Optional - String}\" domClass=\"${15:Optional - String}\" allowFlips=\"${16:Optional - Boolean}\" domId=\"${17:Optional - String}\">${18:A tooltip advanced subcomponent for use in tooltip.cmp. DO NOT USE.}</ui:tooltipAdvanced>"
     },
     {
       "trigger": "ui-tree\tTag Simple",
@@ -2155,11 +2123,11 @@
     },
     {
       "trigger": "ui-virtualDataGrid\tTag Simple",
-      "contents": "ui:virtualDataGrid$1>${2:}</ui:virtualDataGrid>"
+      "contents": "ui:virtualDataGrid$1>${2:Displays a table of data}</ui:virtualDataGrid>"
     },
     {
       "trigger": "ui-virtualDataGrid\tTag Full",
-      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" widths=\"${3:Optional - Integer[]}\" sortBy=\"${4:Optional - String}\" class=\"${5:Optional - String}\" items=\"${6:Optional - List}\" headerColumns=\"${7:Optional - Aura.Component[]}\" columns=\"${8:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${9:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${10:Optional - Aura.Component[]}\" itemVar=\"${11:Optional - String}\" useRowHeaders=\"${12:Optional - Boolean}\" fixedHeader=\"${13:Optional - Boolean}\" enableResizableColumns=\"${14:Optional - Boolean}\" resizableColumnsConfig=\"${15:Optional - Object}\" refresh=\"${16:Optional - ui:refresh}\" gridAction=\"${17:Optional - ui:gridAction}\" onsort=\"${18:Optional - ui:sort}\" onColumnResize=\"${19:Optional - ui:resize}\">${20:}</ui:virtualDataGrid>"
+      "contents": "ui:virtualDataGrid sortBy=\"${1:Optional - String}\" items=\"${2:Optional - Object}\" widths=\"${3:Optional - Integer[]}\" sortBy=\"${4:Optional - String}\" class=\"${5:Optional - String}\" items=\"${6:Optional - List}\" headerColumns=\"${7:Optional - Aura.Component[]}\" columns=\"${8:Optional - Aura.ComponentDefRef[]}\" columnsEdit=\"${9:Optional - Aura.ComponentDefRef[]}\" dataModel=\"${10:Optional - Aura.Component[]}\" itemVar=\"${11:Optional - String}\" useRowHeaders=\"${12:Optional - Boolean}\" fixedHeader=\"${13:Optional - Boolean}\" keyboardNavigation=\"${14:Optional - boolean}\" enableResizableColumns=\"${15:Optional - Boolean}\" resizableColumnsConfig=\"${16:Optional - Object}\" refresh=\"${17:Optional - ui:refresh}\" gridAction=\"${18:Optional - ui:gridAction}\" onsort=\"${19:Optional - ui:sort}\" onColumnResize=\"${20:Optional - ui:resize}\">${21:Displays a table of data}</ui:virtualDataGrid>"
     },
     {
       "trigger": "ui-virtualList\tTag Simple",
@@ -2210,12 +2178,20 @@
       "contents": "actionsTest:chainLocalActions responseOrder=\"${1:Optional - String}\" press=\"${2:Optional - ui:press}\">${3:}</actionsTest:chainLocalActions>"
     },
     {
-      "trigger": "actionsTest-clientAction\tTag Simple",
-      "contents": "actionsTest:clientAction$1>${2:}</actionsTest:clientAction>"
+      "trigger": "actionsTest-clientActionNoServerController\tTag Simple",
+      "contents": "actionsTest:clientActionNoServerController$1>${2:}</actionsTest:clientActionNoServerController>"
     },
     {
-      "trigger": "actionsTest-clientAction\tTag Full",
-      "contents": "actionsTest:clientAction value=\"${1:Optional - String}\">${2:}</actionsTest:clientAction>"
+      "trigger": "actionsTest-clientActionNoServerController\tTag Full",
+      "contents": "actionsTest:clientActionNoServerController>${1:}</actionsTest:clientActionNoServerController>"
+    },
+    {
+      "trigger": "actionsTest-clientActionWithServerController\tTag Simple",
+      "contents": "actionsTest:clientActionWithServerController$1>${2:}</actionsTest:clientActionWithServerController>"
+    },
+    {
+      "trigger": "actionsTest-clientActionWithServerController\tTag Full",
+      "contents": "actionsTest:clientActionWithServerController value=\"${1:Optional - String}\">${2:}</actionsTest:clientActionWithServerController>"
     },
     {
       "trigger": "actionsTest-deferredServerAction\tTag Simple",
@@ -3815,7 +3791,7 @@
     },
     {
       "trigger": "componentTest-toJSON\tTag Full",
-      "contents": "componentTest:toJSON>${1:}</componentTest:toJSON>"
+      "contents": "componentTest:toJSON components=\"${1:Optional - Aura.Component[]}\" object=\"${2:Optional - Object}\">${3:}</componentTest:toJSON>"
     },
     {
       "trigger": "componentTest-usesBody\tTag Simple",
@@ -5248,6 +5224,14 @@
     {
       "trigger": "loadLevelTest-sleepyServerComponent\tTag Full",
       "contents": "loadLevelTest:sleepyServerComponent>${1:}</loadLevelTest:sleepyServerComponent>"
+    },
+    {
+      "trigger": "lockerTest-basic\tTag Simple",
+      "contents": "lockerTest:basic$1>${2:Implements aura:requireLocker.\t}</lockerTest:basic>"
+    },
+    {
+      "trigger": "lockerTest-basic\tTag Full",
+      "contents": "lockerTest:basic xss=\"${1:Optional - String}\">${2:Implements aura:requireLocker.\t}</lockerTest:basic>"
     },
     {
       "trigger": "metricsPluginTest-auraContextPlugin\tTag Simple",
