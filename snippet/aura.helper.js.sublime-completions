@@ -286,6 +286,10 @@
       "contents": "cmp.getDef().getHelper().init(${1:component})"
     },
     {
+      "trigger": "helper-ui-abstractList-initItems",
+      "contents": "cmp.getDef().getHelper().initItems(${1:component})"
+    },
+    {
       "trigger": "helper-ui-abstractList-initDataProvider",
       "contents": "cmp.getDef().getHelper().initDataProvider(${1:component})"
     },
@@ -1900,10 +1904,6 @@
     {
       "trigger": "helper-ui-inputDateTime-handleUpdate",
       "contents": "cmp.getDef().getHelper().handleUpdate(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-inputDateTime-doUpdate",
-      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value},${3:hasTime})"
     },
     {
       "trigger": "helper-ui-inputDateTime-formatDateTime",
