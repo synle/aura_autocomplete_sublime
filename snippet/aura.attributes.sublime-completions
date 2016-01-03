@@ -1226,12 +1226,24 @@
       "contents": "selected=\"${1:ui:button - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-button-keydown\tAttr",
-      "contents": "keydown=\"${1:ui:button - Optional - ui:keydown}\""
+      "trigger": "ui-button-eventName\tAttr",
+      "contents": "eventName=\"${1:ui:button - Optional - String}\""
+    },
+    {
+      "trigger": "ui-button-valueProvider\tAttr",
+      "contents": "valueProvider=\"${1:ui:button - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-button-actionExpression\tAttr",
+      "contents": "actionExpression=\"${1:ui:button - Optional - Aura.Action}\""
     },
     {
       "trigger": "ui-button-press\tAttr",
       "contents": "press=\"${1:ui:button - Optional - ui:press}\""
+    },
+    {
+      "trigger": "ui-button-keydown\tAttr",
+      "contents": "keydown=\"${1:ui:button - Optional - ui:keydown}\""
     },
     {
       "trigger": "ui-button-mouseover\tAttr",

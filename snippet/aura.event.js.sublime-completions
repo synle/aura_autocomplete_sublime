@@ -102,28 +102,28 @@
       "contents": "//  component: autocompleteList\n//    evtName: listCollapse\n//    evtType: ui:autocompleteListCollapse\n//description: The event fired when the list is made invisible\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listCollapse\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-button-keydown",
-      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The controller method that runs when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
+      "trigger": "evt-ui-button-press",
+      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-button-press",
-      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: The controller method that runs when the button is clicked. For example, press=\"{!c.showMsg}\" references the showMsg method in the controller.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
+      "trigger": "evt-ui-button-keydown",
+      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseover",
-      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseout",
-      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: The controller method that runs when the button is hovered.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-focus",
-      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: The controller method that runs when the button receives focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-blur",
-      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: The controller method that runs when the button loses focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-carouselDeprecated-selectDefaultPage",

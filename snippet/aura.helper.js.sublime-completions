@@ -286,10 +286,6 @@
       "contents": "cmp.getDef().getHelper().init(${1:component})"
     },
     {
-      "trigger": "helper-ui-abstractList-initItems",
-      "contents": "cmp.getDef().getHelper().initItems(${1:component})"
-    },
-    {
       "trigger": "helper-ui-abstractList-initDataProvider",
       "contents": "cmp.getDef().getHelper().initDataProvider(${1:component})"
     },
@@ -552,6 +548,14 @@
     {
       "trigger": "helper-ui-autocompletePanel-handleReferenceElement",
       "contents": "cmp.getDef().getHelper().handleReferenceElement(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-button-initializeHandlers",
+      "contents": "cmp.getDef().getHelper().initializeHandlers(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-button-addHandler",
+      "contents": "cmp.getDef().getHelper().addHandler(${1:cmp},${2:handlerParams})"
     },
     {
       "trigger": "helper-ui-button-catchAndFireEvent",
