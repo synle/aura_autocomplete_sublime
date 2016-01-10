@@ -746,6 +746,10 @@
       "contents": "//  component: registersApplicationEvent\n//    evtName: anApplicationEvent\n//    evtType: handleEventTest:applicationEvent\n//description: \nvar e = cmp.find(\"${1:registersApplicationEvent}\").get(\"e.anApplicationEvent\");\ne.setParams({\n\tstrAttr: \"${2:String}\",\n});\ne.fire();"
     },
     {
+      "trigger": "evt-lockerTest-basic-foo",
+      "contents": "//  component: basic\n//    evtName: foo\n//    evtType: ui:selectDate\n//description: The event fired when foo.\nvar e = cmp.find(\"${1:basic}\").get(\"e.foo\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-renderingTest-testEventHandlerChain-A",
       "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },

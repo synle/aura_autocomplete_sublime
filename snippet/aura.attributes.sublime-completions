@@ -7278,6 +7278,18 @@
       "contents": "xss=\"${1:lockerTest:basic - Optional - String}\""
     },
     {
+      "trigger": "lockerTest-basic-foo\tAttr",
+      "contents": "foo=\"${1:lockerTest:basic - Optional - ui:selectDate}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-log\tAttr",
+      "contents": "log=\"${1:lockerTest:basicTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-symbol\tAttr",
+      "contents": "symbol=\"${1:lockerTest:basicTest - Optional - String}\""
+    },
+    {
       "trigger": "miscTest-aura_iteration-tochange\tAttr",
       "contents": "tochange=\"${1:miscTest:aura_iteration - Optional - Integer}\""
     },
@@ -7336,6 +7348,10 @@
     {
       "trigger": "performanceTest-tabSetTest-_useOverflowMenu\tAttr",
       "contents": "_useOverflowMenu=\"${1:performanceTest:tabSetTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-tabSetTestOverflowMenu-NUM_TABS\tAttr",
+      "contents": "NUM_TABS=\"${1:performanceTest:tabSetTestOverflowMenu - Optional - Integer}\""
     },
     {
       "trigger": "performanceTest-uiMenuTest-testManyItems\tAttr",

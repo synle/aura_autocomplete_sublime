@@ -3066,6 +3066,22 @@
       "contents": "auratest:testInterfaceMultipleImpl>${1:Implements auratest:testInterface,auratest:testInterface2,auratest:test_Instantiate_Interface.\t}</auratest:testInterfaceMultipleImpl>"
     },
     {
+      "trigger": "auratest-testMarkupCaseSensitivityInnerCmp\tTag Simple",
+      "contents": "auratest:testMarkupCaseSensitivityInnerCmp$1>${2:}</auratest:testMarkupCaseSensitivityInnerCmp>"
+    },
+    {
+      "trigger": "auratest-testMarkupCaseSensitivityInnerCmp\tTag Full",
+      "contents": "auratest:testMarkupCaseSensitivityInnerCmp>${1:}</auratest:testMarkupCaseSensitivityInnerCmp>"
+    },
+    {
+      "trigger": "auratest-testMarkupCaseSensitivityOuterCmp\tTag Simple",
+      "contents": "auratest:testMarkupCaseSensitivityOuterCmp$1>${2:}</auratest:testMarkupCaseSensitivityOuterCmp>"
+    },
+    {
+      "trigger": "auratest-testMarkupCaseSensitivityOuterCmp\tTag Full",
+      "contents": "auratest:testMarkupCaseSensitivityOuterCmp>${1:}</auratest:testMarkupCaseSensitivityOuterCmp>"
+    },
+    {
       "trigger": "auratest-test_Abstract\tTag Simple",
       "contents": "auratest:test_Abstract$1>${2:}</auratest:test_Abstract>"
     },
@@ -5231,7 +5247,15 @@
     },
     {
       "trigger": "lockerTest-basic\tTag Full",
-      "contents": "lockerTest:basic xss=\"${1:Optional - String}\">${2:Implements aura:requireLocker.\t}</lockerTest:basic>"
+      "contents": "lockerTest:basic xss=\"${1:Optional - String}\" foo=\"${2:Optional - ui:selectDate}\">${3:Implements aura:requireLocker.\t}</lockerTest:basic>"
+    },
+    {
+      "trigger": "lockerTest-basicTest\tTag Simple",
+      "contents": "lockerTest:basicTest$1>${2:Implements aura:requireLocker.\t}</lockerTest:basicTest>"
+    },
+    {
+      "trigger": "lockerTest-basicTest\tTag Full",
+      "contents": "lockerTest:basicTest log=\"${1:Optional - Object}\" symbol=\"${2:Optional - String}\">${3:Implements aura:requireLocker.\t}</lockerTest:basicTest>"
     },
     {
       "trigger": "metricsPluginTest-auraContextPlugin\tTag Simple",
@@ -5367,7 +5391,7 @@
     },
     {
       "trigger": "performanceTest-tabSetTestOverflowMenu\tTag Full",
-      "contents": "performanceTest:tabSetTestOverflowMenu>${1:}</performanceTest:tabSetTestOverflowMenu>"
+      "contents": "performanceTest:tabSetTestOverflowMenu NUM_TABS=\"${1:Optional - Integer}\">${2:}</performanceTest:tabSetTestOverflowMenu>"
     },
     {
       "trigger": "performanceTest-tabSetTestStatic\tTag Simple",

@@ -2982,8 +2982,12 @@
       "contents": "cmp.getDef().getHelper().adjustHeight(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-pillContainer-showMore",
-      "contents": "cmp.getDef().getHelper().showMore(${1:cmp})"
+      "trigger": "helper-ui-pillContainer-expand",
+      "contents": "cmp.getDef().getHelper().expand(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-pillContainer-collapse",
+      "contents": "cmp.getDef().getHelper().collapse(${1:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-_getActualHeight",
@@ -4288,6 +4292,26 @@
     {
       "trigger": "helper-lockerTest-basic-createSafeCtorExpression",
       "contents": "cmp.getDef().getHelper().createSafeCtorExpression(${1:text})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-getWrappersFromHelper",
+      "contents": "cmp.getDef().getHelper().getWrappersFromHelper(${1:})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-accessDocumentBody",
+      "contents": "cmp.getDef().getHelper().accessDocumentBody(${1:cmp})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-testFunction",
+      "contents": "cmp.getDef().getHelper().testFunction(${1:})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-getSecureElementDynamically",
+      "contents": "cmp.getDef().getHelper().getSecureElementDynamically(${1:cmp})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-getSecureElementFromMarkup",
+      "contents": "cmp.getDef().getHelper().getSecureElementFromMarkup(${1:cmp})"
     },
     {
       "trigger": "helper-performance-runner-urlToJson",
