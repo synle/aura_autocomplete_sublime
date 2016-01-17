@@ -1007,7 +1007,7 @@
     },
     {
       "trigger": "ui-actionMenuItem\tTag Full",
-      "contents": "ui:actionMenuItem id=\"${1:Optional - String}\" hideMenuAfterSelected=\"${2:Optional - Boolean}\">${3:​A menu item that triggers an action. This component is nested in a ui:menu component.}</ui:actionMenuItem>"
+      "contents": "ui:actionMenuItem id=\"${1:Optional - String}\">${2:​A menu item that triggers an action. This component is nested in a ui:menu component.}</ui:actionMenuItem>"
     },
     {
       "trigger": "ui-asyncComponentManager\tTag Simple",
@@ -1635,11 +1635,11 @@
     },
     {
       "trigger": "ui-menuItem\tTag Simple",
-      "contents": "ui:menuItem$1>${2:An abstract component for menu items like ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem. Nest a menu item in a ui:menuList component.}</ui:menuItem>"
+      "contents": "ui:menuItem$1>${2:A UI menu item in a ui:menuList component.}</ui:menuItem>"
     },
     {
       "trigger": "ui-menuItem\tTag Full",
-      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" hideMenuAfterSelected=\"${3:Optional - Boolean}\" label=\"${4:Optional - String}\" menuSelect=\"${5:Optional - ui:menuSelect}\">${6:An abstract component for menu items like ui:actionMenuItem, ui:checkboxMenuItem, and ui:radioMenuItem. Nest a menu item in a ui:menuList component.}</ui:menuItem>"
+      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" label=\"${3:Optional - String}\" hideMenuAfterSelected=\"${4:Optional - Boolean}\" menuSelect=\"${5:Optional - ui:menuSelect}\">${6:A UI menu item in a ui:menuList component.}</ui:menuItem>"
     },
     {
       "trigger": "ui-menuItemSeparator\tTag Simple",
@@ -1655,7 +1655,7 @@
     },
     {
       "trigger": "ui-menuList\tTag Full",
-      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" menuCollapse=\"${7:Optional - ui:collapse}\" menuExpand=\"${8:Optional - ui:expand}\" menuSelect=\"${9:Optional - ui:menuSelect}\" menuFocusChange=\"${10:Optional - ui:menuFocusChange}\" refresh=\"${11:Optional - ui:refresh}\">${12:Implements ui:visible.\tA menu component that contains menu items.}</ui:menuList>"
+      "contents": "ui:menuList menuItems=\"${1:Optional - List}\" visible=\"${2:Optional - Boolean}\" focusItemIndex=\"${3:Optional - Integer}\" focusTrigger=\"${4:Optional - Aura.Action}\" headerText=\"${5:Optional - String}\" childMenuItems=\"${6:Optional - Aura.Component[]}\" hideMenuAfterSelected=\"${7:Optional - Boolean}\" menuCollapse=\"${8:Optional - ui:collapse}\" menuExpand=\"${9:Optional - ui:expand}\" menuSelect=\"${10:Optional - ui:menuSelect}\" menuFocusChange=\"${11:Optional - ui:menuFocusChange}\" refresh=\"${12:Optional - ui:refresh}\">${13:Implements ui:visible.\tA menu component that contains menu items.}</ui:menuList>"
     },
     {
       "trigger": "ui-menuTrigger\tTag Simple",

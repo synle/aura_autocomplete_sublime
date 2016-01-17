@@ -922,10 +922,6 @@
       "contents": "id=\"${1:ui:actionMenuItem - Optional - String}\""
     },
     {
-      "trigger": "ui-actionMenuItem-hideMenuAfterSelected\tAttr",
-      "contents": "hideMenuAfterSelected=\"${1:ui:actionMenuItem - Optional - Boolean}\""
-    },
-    {
       "trigger": "ui-asyncComponentManager-maxConcurrency\tAttr",
       "contents": "maxConcurrency=\"${1:ui:asyncComponentManager - Required - Integer}\""
     },
@@ -2838,12 +2834,12 @@
       "contents": "type=\"${1:ui:menuItem - Optional - String}\""
     },
     {
-      "trigger": "ui-menuItem-hideMenuAfterSelected\tAttr",
-      "contents": "hideMenuAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
-    },
-    {
       "trigger": "ui-menuItem-label\tAttr",
       "contents": "label=\"${1:ui:menuItem - Optional - String}\""
+    },
+    {
+      "trigger": "ui-menuItem-hideMenuAfterSelected\tAttr",
+      "contents": "hideMenuAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
     },
     {
       "trigger": "ui-menuItem-menuSelect\tAttr",
@@ -2872,6 +2868,10 @@
     {
       "trigger": "ui-menuList-childMenuItems\tAttr",
       "contents": "childMenuItems=\"${1:ui:menuList - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-menuList-hideMenuAfterSelected\tAttr",
+      "contents": "hideMenuAfterSelected=\"${1:ui:menuList - Optional - Boolean}\""
     },
     {
       "trigger": "ui-menuList-menuCollapse\tAttr",

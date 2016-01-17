@@ -2114,6 +2114,14 @@
       "contents": "cmp.getDef().getHelper().position(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputTimePicker-_getScrollableParent",
+      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-shouldFlip",
+      "contents": "cmp.getDef().getHelper().shouldFlip(${1:element},${2:targetElement})"
+    },
+    {
       "trigger": "helper-ui-inputTimePicker-selectTime",
       "contents": "cmp.getDef().getHelper().selectTime(${1:component},${2:event})"
     },
@@ -2328,6 +2336,10 @@
     {
       "trigger": "helper-ui-menuItem-fireEvent",
       "contents": "cmp.getDef().getHelper().fireEvent(${1:component},${2:event},${3:helper})"
+    },
+    {
+      "trigger": "helper-ui-menuItem-isDisabled",
+      "contents": "cmp.getDef().getHelper().isDisabled(${1:component})"
     },
     {
       "trigger": "helper-ui-menuItem-fireSelectEvent",
@@ -3220,14 +3232,6 @@
     {
       "trigger": "helper-ui-popupTrigger-firePopupEvent",
       "contents": "cmp.getDef().getHelper().firePopupEvent(${1:component},${2:eventName},${3:params})"
-    },
-    {
-      "trigger": "helper-ui-radioMenuItem-handleClick",
-      "contents": "cmp.getDef().getHelper().handleClick(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-radioToggleMenuItem-handleClick",
-      "contents": "cmp.getDef().getHelper().handleClick(${1:cmp})"
     },
     {
       "trigger": "helper-ui-radioToggleMenuItem-toggleState",
@@ -4172,6 +4176,14 @@
     {
       "trigger": "helper-componentTest-componentBodyWithChanges-newComponentList",
       "contents": "cmp.getDef().getHelper().newComponentList(${1:cmp},${2:items})"
+    },
+    {
+      "trigger": "helper-componentTest-helper-getMessage",
+      "contents": "cmp.getDef().getHelper().getMessage(${1:message})"
+    },
+    {
+      "trigger": "helper-componentTest-helper-getAwesomeMessage",
+      "contents": "cmp.getDef().getHelper().getAwesomeMessage(${1:})"
     },
     {
       "trigger": "helper-componentTest-helperContainedCmp-getMessage",
