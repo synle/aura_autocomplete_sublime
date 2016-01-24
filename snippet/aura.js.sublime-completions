@@ -447,7 +447,7 @@
     },
     {
       "trigger": "A-util-isPlainObject",
-      "contents": "A.util.isPlainObject(${1:obj})"
+      "contents": "A.util.isPlainObject(${1:o})"
     },
     {
       "trigger": "A-util-isError",

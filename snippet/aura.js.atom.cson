@@ -334,7 +334,7 @@
 		'body': 'A.util.isObject(${1:obj})'
 	'A.util.isPlainObject':
 		'prefix': 'A-util-isPlainObject'
-		'body': 'A.util.isPlainObject(${1:obj})'
+		'body': 'A.util.isPlainObject(${1:o})'
 	'A.util.isError':
 		'prefix': 'A-util-isError'
 		'body': 'A.util.isError(${1:obj})'

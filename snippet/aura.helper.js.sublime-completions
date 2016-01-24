@@ -518,6 +518,10 @@
       "contents": "cmp.getDef().getHelper().setUpEvents(${1:component},${2:onVisibleChange})"
     },
     {
+      "trigger": "helper-ui-autocompleteList-positionList",
+      "contents": "cmp.getDef().getHelper().positionList(${1:component})"
+    },
+    {
       "trigger": "helper-ui-autocompleteOption-addOptionDomEvents",
       "contents": "cmp.getDef().getHelper().addOptionDomEvents(${1:component})"
     },

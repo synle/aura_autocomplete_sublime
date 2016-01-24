@@ -1006,6 +1006,10 @@
       "contents": "setDefaultHighlight=\"${1:ui:autocomplete - Optional - boolean}\""
     },
     {
+      "trigger": "ui-autocomplete-listReferenceComponent\tAttr",
+      "contents": "listReferenceComponent=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "ui-autocomplete-matchDone\tAttr",
       "contents": "matchDone=\"${1:ui:autocomplete - Optional - ui:matchDone}\""
     },
@@ -1072,6 +1076,10 @@
     {
       "trigger": "ui-autocompleteList-setDefaultHighlight\tAttr",
       "contents": "setDefaultHighlight=\"${1:ui:autocompleteList - Optional - boolean}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-listReferenceComponent\tAttr",
+      "contents": "listReferenceComponent=\"${1:ui:autocompleteList - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-autocompleteList-matchDone\tAttr",
@@ -2870,10 +2878,6 @@
       "contents": "childMenuItems=\"${1:ui:menuList - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "ui-menuList-hideMenuAfterSelected\tAttr",
-      "contents": "hideMenuAfterSelected=\"${1:ui:menuList - Optional - Boolean}\""
-    },
-    {
       "trigger": "ui-menuList-menuCollapse\tAttr",
       "contents": "menuCollapse=\"${1:ui:menuList - Optional - ui:collapse}\""
     },
@@ -3568,6 +3572,10 @@
     {
       "trigger": "ui-popupTrigger-popupKeyboardEvent\tAttr",
       "contents": "popupKeyboardEvent=\"${1:ui:popupTrigger - Optional - ui:popupKeyboardEvent}\""
+    },
+    {
+      "trigger": "ui-radioMenuItem-hideMenuAfterSelected\tAttr",
+      "contents": "hideMenuAfterSelected=\"${1:ui:radioMenuItem - Optional - Boolean}\""
     },
     {
       "trigger": "ui-radioToggleMenuItem-isAscending\tAttr",
