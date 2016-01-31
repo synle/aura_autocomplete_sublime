@@ -2086,6 +2086,10 @@
       "contents": "cmp.getDef().getHelper().getOptionsWithStrategy(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-inputSelect-getOptionsFromBody",
+      "contents": "cmp.getDef().getHelper().getOptionsFromBody(${1:body})"
+    },
+    {
       "trigger": "helper-ui-inputSelect-updateOptionsFromValue",
       "contents": "cmp.getDef().getHelper().updateOptionsFromValue(${1:cmp},${2:createNewOptions})"
     },
@@ -4364,6 +4368,46 @@
     {
       "trigger": "helper-renderingTest-renderCounter-updateMetrics",
       "contents": "cmp.getDef().getHelper().updateMetrics(${1:component},${2:attributeName})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-createStorage",
+      "contents": "cmp.getDef().getHelper().createStorage(${1:cmp})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runTests",
+      "contents": "cmp.getDef().getHelper().runTests(${1:cmp})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-postProcessing",
+      "contents": "cmp.getDef().getHelper().postProcessing(${1:cmp,results})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runListOfOperations",
+      "contents": "cmp.getDef().getHelper().runListOfOperations(${1:cmp},${2:prefix},${3:operations},${4:opsIterations})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runOperation",
+      "contents": "cmp.getDef().getHelper().runOperation(${1:cmp},${2:prefix},${3:opsIterations},${4:op})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-getOperations",
+      "contents": "cmp.getDef().getHelper().getOperations(${1:cmp})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-analyzeOperation",
+      "contents": "cmp.getDef().getHelper().analyzeOperation(${1:cmp},${2:operation},${3:opsIterations},${4:prefix})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-log",
+      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:operation},${3:opsIterations},${4:avg},${5:ept95},${6:max},${7:sumOfMarks},${8:total},${9:storeSize})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-doOperation",
+      "contents": "cmp.getDef().getHelper().doOperation(${1:op},${2:storage},${3:key},${4:payload})"
+    },
+    {
+      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-getPayload",
+      "contents": "cmp.getDef().getHelper().getPayload(${1:cmp})"
     }
   ]
 }

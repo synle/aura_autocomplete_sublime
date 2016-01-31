@@ -91,11 +91,11 @@
     },
     {
       "trigger": "aura-renderIf\tTag Simple",
-      "contents": "aura:renderIf$1>${2:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
+      "contents": "aura:renderIf$1>${2:Deprecated. Use aura:if instead. This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
     },
     {
       "trigger": "aura-renderIf\tTag Full",
-      "contents": "aura:renderIf isTrue=\"${1:Required - Boolean}\" else=\"${2:Optional - Aura.Component[]}\">${3:This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
+      "contents": "aura:renderIf isTrue=\"${1:Required - Boolean}\" else=\"${2:Optional - Aura.Component[]}\">${3:Deprecated. Use aura:if instead. This component allows you to conditionally render its contents. It renders its body only if isTrue evaluates to true. The else attribute allows you to render an alternative when isTrue evaluates to false.}</aura:renderIf>"
     },
     {
       "trigger": "aura-showDependencies\tTag Simple",
@@ -135,7 +135,7 @@
     },
     {
       "trigger": "auraStorage-crypto\tTag Full",
-      "contents": "auraStorage:crypto debugLoggingEnabled=\"${1:Optional - Boolean}\" requireQueryParam=\"${2:Optional - Boolean}\">${3:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
+      "contents": "auraStorage:crypto debugLoggingEnabled=\"${1:Optional - Boolean}\">${2:Initializes CryptoAdapter for secure, persistent storage. Also sends GET request for encryption key.}</auraStorage:crypto>"
     },
     {
       "trigger": "auraStorage-fuelGauge\tTag Simple",
@@ -295,7 +295,7 @@
     },
     {
       "trigger": "auradocs-defLayout\tTag Full",
-      "contents": "auradocs:defLayout title=\"${1:Optional - String}\" subtitle=\"${2:Optional - Aura.Component[]}\" description=\"${3:Optional - Aura.Component[]}\" labels=\"${4:Optional - Aura.Component[]}\" status=\"${5:Optional - Aura.Component[]}\">${6:}</auradocs:defLayout>"
+      "contents": "auradocs:defLayout title=\"${1:Optional - String}\" scrollContentClass=\"${2:Optional - String}\" subtitle=\"${3:Optional - Aura.Component[]}\" description=\"${4:Optional - Aura.Component[]}\" labels=\"${5:Optional - Aura.Component[]}\" status=\"${6:Optional - Aura.Component[]}\">${7:}</auradocs:defLayout>"
     },
     {
       "trigger": "auradocs-defLink\tTag Simple",
@@ -1167,7 +1167,7 @@
     },
     {
       "trigger": "ui-dataGridActionColumn\tTag Full",
-      "contents": "ui:dataGridActionColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" assistiveLabel=\"${3:Optional - String}\" class=\"${4:Optional - String}\" scope=\"${5:Optional - String}\" header=\"${6:Optional - Aura.Component[]}\" outputComponent=\"${7:Optional - Aura.ComponentDefRef[]}\" body=\"${8:Optional - Aura.ComponentDefRef[]}\">${9:A column of actionable buttons or links in ui:dataGrid}</ui:dataGridActionColumn>"
+      "contents": "ui:dataGridActionColumn name=\"${1:Optional - String}\" label=\"${2:Optional - String}\" assistiveLabel=\"${3:Optional - String}\" class=\"${4:Optional - String}\" scope=\"${5:Optional - String}\" header=\"${6:Optional - Aura.Component[]}\" outputComponent=\"${7:Optional - Aura.ComponentDefRef[]}\" body=\"${8:Optional - Aura.ComponentDefRef[]}\" disabled=\"${9:Optional - Boolean}\">${10:A column of actionable buttons or links in ui:dataGrid}</ui:dataGridActionColumn>"
     },
     {
       "trigger": "ui-dataGridColumn\tTag Simple",
@@ -1639,7 +1639,7 @@
     },
     {
       "trigger": "ui-menuItem\tTag Full",
-      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" label=\"${3:Optional - String}\" hideMenuAfterSelected=\"${4:Optional - Boolean}\" menuSelect=\"${5:Optional - ui:menuSelect}\">${6:A UI menu item in a ui:menuList component.}</ui:menuItem>"
+      "contents": "ui:menuItem selected=\"${1:Optional - Boolean}\" type=\"${2:Optional - String}\" label=\"${3:Optional - String}\" hideMenuAfterSelected=\"${4:Optional - Boolean}\" focusTriggerAfterSelected=\"${5:Optional - Boolean}\" menuSelect=\"${6:Optional - ui:menuSelect}\">${7:A UI menu item in a ui:menuList component.}</ui:menuItem>"
     },
     {
       "trigger": "ui-menuItemSeparator\tTag Simple",
@@ -1999,7 +1999,7 @@
     },
     {
       "trigger": "ui-spinner\tTag Full",
-      "contents": "ui:spinner isVisible=\"${1:Optional - Boolean}\" class=\"${2:Optional - Boolean}\" toggle=\"${3:Optional - ui:toggleLoadingIndicator}\">${4:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
+      "contents": "ui:spinner isVisible=\"${1:Optional - Boolean}\" class=\"${2:Optional - String}\" toggle=\"${3:Optional - ui:toggleLoadingIndicator}\">${4:A loading spinner to be used while the real component body is being loaded}</ui:spinner>"
     },
     {
       "trigger": "ui-stamp\tTag Simple",
@@ -2200,6 +2200,70 @@
     {
       "trigger": "actionsTest-deferredServerAction\tTag Full",
       "contents": "actionsTest:deferredServerAction result=\"${1:Optional - String}\" error=\"${2:Optional - String}\">${3:}</actionsTest:deferredServerAction>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionChildCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionChildCmp$1>${2:}</actionsTest:inheritanceByExtensionChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionChildCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionChildCmp WhichControllerWasCalledChild=\"${1:Optional - string}\">${2:}</actionsTest:inheritanceByExtensionChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionParentCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionParentCmp$1>${2:}</actionsTest:inheritanceByExtensionParentCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionParentCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionParentCmp attributeAuraAction=\"${1:Optional - Aura.Action}\" WhichControllerWasCalledParent=\"${2:Optional - string}\">${3:}</actionsTest:inheritanceByExtensionParentCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithDiffJavaControllerChildCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionWithDiffJavaControllerChildCmp$1>${2:}</actionsTest:inheritanceByExtensionWithDiffJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithDiffJavaControllerChildCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionWithDiffJavaControllerChildCmp WhichControllerWasCalledChild=\"${1:Optional - string}\">${2:}</actionsTest:inheritanceByExtensionWithDiffJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithJavaControllerChildCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionWithJavaControllerChildCmp$1>${2:}</actionsTest:inheritanceByExtensionWithJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithJavaControllerChildCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionWithJavaControllerChildCmp WhichControllerWasCalledChild=\"${1:Optional - string}\">${2:}</actionsTest:inheritanceByExtensionWithJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerChildCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionWithoutJavaControllerChildCmp$1>${2:}</actionsTest:inheritanceByExtensionWithoutJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerChildCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionWithoutJavaControllerChildCmp WhichControllerWasCalledChild=\"${1:Optional - string}\">${2:}</actionsTest:inheritanceByExtensionWithoutJavaControllerChildCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerParentCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp$1>${2:}</actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerParentCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp attributeAuraAction=\"${1:Optional - Aura.Action}\" WhichControllerWasCalledParent=\"${2:Optional - string}\">${3:}</actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderAbstractCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByProviderAbstractCmp$1>${2:}</actionsTest:inheritanceByProviderAbstractCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderAbstractCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByProviderAbstractCmp whichCmpToProvide=\"${1:Optional - String}\" attributeAuraActionAbstract=\"${2:Optional - Aura.Action}\" WhichControllerWasCalledAbstract=\"${3:Optional - string}\">${4:}</actionsTest:inheritanceByProviderAbstractCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderThenExtensionCmp\tTag Simple",
+      "contents": "actionsTest:inheritanceByProviderThenExtensionCmp$1>${2:}</actionsTest:inheritanceByProviderThenExtensionCmp>"
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderThenExtensionCmp\tTag Full",
+      "contents": "actionsTest:inheritanceByProviderThenExtensionCmp WhichControllerWasCalledSolid=\"${1:Optional - string}\">${2:}</actionsTest:inheritanceByProviderThenExtensionCmp>"
     },
     {
       "trigger": "actionsTest-serverAction\tTag Simple",

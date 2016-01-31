@@ -354,10 +354,6 @@
       "contents": "debugLoggingEnabled=\"${1:auraStorage:crypto - Optional - Boolean}\""
     },
     {
-      "trigger": "auraStorage-crypto-requireQueryParam\tAttr",
-      "contents": "requireQueryParam=\"${1:auraStorage:crypto - Optional - Boolean}\""
-    },
-    {
       "trigger": "auraStorage-fuelGauge-storageName\tAttr",
       "contents": "storageName=\"${1:auraStorage:fuelGauge - Required - String}\""
     },
@@ -480,6 +476,10 @@
     {
       "trigger": "auradocs-defLayout-title\tAttr",
       "contents": "title=\"${1:auradocs:defLayout - Optional - String}\""
+    },
+    {
+      "trigger": "auradocs-defLayout-scrollContentClass\tAttr",
+      "contents": "scrollContentClass=\"${1:auradocs:defLayout - Optional - String}\""
     },
     {
       "trigger": "auradocs-defLayout-subtitle\tAttr",
@@ -1682,6 +1682,10 @@
       "contents": "body=\"${1:ui:dataGridActionColumn - Optional - Aura.ComponentDefRef[]}\""
     },
     {
+      "trigger": "ui-dataGridActionColumn-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:dataGridActionColumn - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-dataGridColumn-name\tAttr",
       "contents": "name=\"${1:ui:dataGridColumn - Optional - String}\""
     },
@@ -2850,6 +2854,10 @@
       "contents": "hideMenuAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-menuItem-focusTriggerAfterSelected\tAttr",
+      "contents": "focusTriggerAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-menuItem-menuSelect\tAttr",
       "contents": "menuSelect=\"${1:ui:menuItem - Optional - ui:menuSelect}\""
     },
@@ -3963,7 +3971,7 @@
     },
     {
       "trigger": "ui-spinner-class\tAttr",
-      "contents": "class=\"${1:ui:spinner - Optional - Boolean}\""
+      "contents": "class=\"${1:ui:spinner - Optional - String}\""
     },
     {
       "trigger": "ui-spinner-toggle\tAttr",
@@ -4660,6 +4668,54 @@
     {
       "trigger": "actionsTest-deferredServerAction-error\tAttr",
       "contents": "error=\"${1:actionsTest:deferredServerAction - Optional - String}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionChildCmp-WhichControllerWasCalledChild\tAttr",
+      "contents": "WhichControllerWasCalledChild=\"${1:actionsTest:inheritanceByExtensionChildCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionParentCmp-attributeAuraAction\tAttr",
+      "contents": "attributeAuraAction=\"${1:actionsTest:inheritanceByExtensionParentCmp - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionParentCmp-WhichControllerWasCalledParent\tAttr",
+      "contents": "WhichControllerWasCalledParent=\"${1:actionsTest:inheritanceByExtensionParentCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithDiffJavaControllerChildCmp-WhichControllerWasCalledChild\tAttr",
+      "contents": "WhichControllerWasCalledChild=\"${1:actionsTest:inheritanceByExtensionWithDiffJavaControllerChildCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithJavaControllerChildCmp-WhichControllerWasCalledChild\tAttr",
+      "contents": "WhichControllerWasCalledChild=\"${1:actionsTest:inheritanceByExtensionWithJavaControllerChildCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerChildCmp-WhichControllerWasCalledChild\tAttr",
+      "contents": "WhichControllerWasCalledChild=\"${1:actionsTest:inheritanceByExtensionWithoutJavaControllerChildCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerParentCmp-attributeAuraAction\tAttr",
+      "contents": "attributeAuraAction=\"${1:actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByExtensionWithoutJavaControllerParentCmp-WhichControllerWasCalledParent\tAttr",
+      "contents": "WhichControllerWasCalledParent=\"${1:actionsTest:inheritanceByExtensionWithoutJavaControllerParentCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderAbstractCmp-whichCmpToProvide\tAttr",
+      "contents": "whichCmpToProvide=\"${1:actionsTest:inheritanceByProviderAbstractCmp - Optional - String}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderAbstractCmp-attributeAuraActionAbstract\tAttr",
+      "contents": "attributeAuraActionAbstract=\"${1:actionsTest:inheritanceByProviderAbstractCmp - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderAbstractCmp-WhichControllerWasCalledAbstract\tAttr",
+      "contents": "WhichControllerWasCalledAbstract=\"${1:actionsTest:inheritanceByProviderAbstractCmp - Optional - string}\""
+    },
+    {
+      "trigger": "actionsTest-inheritanceByProviderThenExtensionCmp-WhichControllerWasCalledSolid\tAttr",
+      "contents": "WhichControllerWasCalledSolid=\"${1:actionsTest:inheritanceByProviderThenExtensionCmp - Optional - string}\""
     },
     {
       "trigger": "actionsTest-serverAction-text\tAttr",
