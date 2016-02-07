@@ -390,6 +390,14 @@
       "contents": "cmp.getDef().getHelper().handleListExpand(${1:})"
     },
     {
+      "trigger": "helper-ui-autocomplete-getListComponent",
+      "contents": "cmp.getDef().getHelper().getListComponent(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-isDefaultList",
+      "contents": "cmp.getDef().getHelper().isDefaultList(${1:component})"
+    },
+    {
       "trigger": "helper-ui-autocompleteList-findHighlightedOptionIndex",
       "contents": "cmp.getDef().getHelper().findHighlightedOptionIndex(${1:iters})"
     },
@@ -540,14 +548,6 @@
     {
       "trigger": "helper-ui-autocompleteOption-htmlEscape",
       "contents": "cmp.getDef().getHelper().htmlEscape(${1:str})"
-    },
-    {
-      "trigger": "helper-ui-autocompletePanel-_getScrollableParent",
-      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
-    },
-    {
-      "trigger": "helper-ui-autocompletePanel-cleanEvents",
-      "contents": "cmp.getDef().getHelper().cleanEvents(${1:cmp})"
     },
     {
       "trigger": "helper-ui-autocompletePanel-handleReferenceElement",
@@ -1160,10 +1160,6 @@
     {
       "trigger": "helper-ui-dataWriter-write",
       "contents": "cmp.getDef().getHelper().write(${1:})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-_getScrollableParent",
-      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
     },
     {
       "trigger": "helper-ui-datePicker-attachToDocumentBody",
@@ -1842,6 +1838,10 @@
       "contents": "cmp.getDef().getHelper().toggleOpenIconVisibility(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputDateHtml-formatValue",
+      "contents": "cmp.getDef().getHelper().formatValue(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputDateRange-openStartDatePicker",
       "contents": "cmp.getDef().getHelper().openStartDatePicker(${1:component},${2:selectedDate})"
     },
@@ -1974,6 +1974,14 @@
       "contents": "cmp.getDef().getHelper().parseDateTimeInput(${1:isUTC},${2:component},${3:dateValue},${4:timeValue})"
     },
     {
+      "trigger": "helper-ui-inputDateTimeHtml-formatValue",
+      "contents": "cmp.getDef().getHelper().formatValue(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTimeHtml-doUpdate",
+      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
+    },
+    {
       "trigger": "helper-ui-inputDateTrigger-displayDatePicker",
       "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
     },
@@ -2032,6 +2040,10 @@
     {
       "trigger": "helper-ui-inputRichText-setContent",
       "contents": "cmp.getDef().getHelper().setContent(${1:cmp},${2:content})"
+    },
+    {
+      "trigger": "helper-ui-inputRichText-_setData",
+      "contents": "cmp.getDef().getHelper()._setData(${1:editorInstance},${2:content})"
     },
     {
       "trigger": "helper-ui-inputRichText-getLocale",
@@ -4024,6 +4036,10 @@
     {
       "trigger": "helper-ui-virtualList-createEventDelegates",
       "contents": "cmp.getDef().getHelper().createEventDelegates(${1:cmp},${2:container})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-appendVirtualRows",
+      "contents": "cmp.getDef().getHelper().appendVirtualRows(${1:cmp},${2:items})"
     },
     {
       "trigger": "helper-ui-virtualList-_findVirtualElementPosition",

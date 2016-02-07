@@ -1031,15 +1031,15 @@
     },
     {
       "trigger": "ui-autocomplete\tTag Full",
-      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" listOption=\"${2:Required - Aura.ComponentDefRef[]}\" optionVar=\"${3:Required - String}\" emptyListContent=\"${4:Optional - Aura.Component[]}\" loadingIndicator=\"${5:Optional - Aura.Component[]}\" inputClass=\"${6:Optional - String}\" inputType=\"${7:Optional - String}\" placeholder=\"${8:Optional - String}\" propertyToMatch=\"${9:Optional - String}\" theme=\"${10:Optional - String}\" matchFunc=\"${11:Optional - Aura.Action}\" autocompleteButton=\"${12:Optional - Aura.Component[]}\" listHeader=\"${13:Optional - Aura.Component[]}\" listFooter=\"${14:Optional - Aura.Component[]}\" showListHeader=\"${15:Optional - Boolean}\" showListFooter=\"${16:Optional - Boolean}\" usePanel=\"${17:Optional - boolean}\" setDefaultHighlight=\"${18:Optional - boolean}\" listReferenceComponent=\"${19:Optional - Aura.Component[]}\" matchDone=\"${20:Optional - ui:matchDone}\" inputChange=\"${21:Optional - ui:inputChange}\" selectListOption=\"${22:Optional - ui:selectListOption}\" fetchData=\"${23:Optional - ui:fetchData}\" matchText=\"${24:Optional - ui:matchText}\">${25:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
+      "contents": "ui:autocomplete dataProvider=\"${1:Required - Aura.Component[]}\" optionVar=\"${2:Required - String}\" listOption=\"${3:Required - Aura.ComponentDefRef[]}\" inputClass=\"${4:Optional - String}\" inputType=\"${5:Optional - String}\" placeholder=\"${6:Optional - String}\" theme=\"${7:Optional - String}\" autocompleteButton=\"${8:Optional - Aura.Component[]}\" usePanel=\"${9:Optional - boolean}\" emptyListContent=\"${10:Optional - Aura.Component[]}\" loadingIndicator=\"${11:Optional - Aura.Component[]}\" propertyToMatch=\"${12:Optional - String}\" matchFunc=\"${13:Optional - Aura.Action}\" listHeader=\"${14:Optional - Aura.Component[]}\" listFooter=\"${15:Optional - Aura.Component[]}\" showListHeader=\"${16:Optional - Boolean}\" showListFooter=\"${17:Optional - Boolean}\" setDefaultHighlight=\"${18:Optional - boolean}\" listReferenceComponent=\"${19:Optional - Aura.Component[]}\" autocompleteList=\"${20:Optional - Aura.Component[]}\" matchDone=\"${21:Optional - ui:matchDone}\" selectListOption=\"${22:Optional - ui:selectListOption}\" inputChange=\"${23:Optional - ui:inputChange}\" fetchData=\"${24:Optional - ui:fetchData}\" matchText=\"${25:Optional - ui:matchText}\">${26:Represents an input field that suggests a list of values from the data provider as you type.}</ui:autocomplete>"
     },
     {
       "trigger": "ui-autocompleteList\tTag Simple",
-      "contents": "ui:autocompleteList$1>${2:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
+      "contents": "ui:autocompleteList$1>${2:Implements ui:autocompleteListInterface.\tThis component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
     },
     {
       "trigger": "ui-autocompleteList\tTag Full",
-      "contents": "ui:autocompleteList ignoredElements=\"${1:Optional - Object}\" keyword=\"${2:Optional - String}\" propertyToMatch=\"${3:Optional - String}\" theme=\"${4:Optional - String}\" matchFunc=\"${5:Optional - Aura.Action}\" footerSelected=\"${6:Optional - boolean}\" headerSelected=\"${7:Optional - boolean}\" listHeader=\"${8:Optional - Aura.Component[]}\" listFooter=\"${9:Optional - Aura.Component[]}\" showListHeader=\"${10:Optional - Boolean}\" showListFooter=\"${11:Optional - Boolean}\" setDefaultHighlight=\"${12:Optional - boolean}\" listReferenceComponent=\"${13:Optional - Aura.Component[]}\" matchDone=\"${14:Optional - ui:matchDone}\" listHighlight=\"${15:Optional - ui:listHighlight}\" matchText=\"${16:Optional - ui:matchText}\" pressOnHighlighted=\"${17:Optional - ui:press}\" selectListOption=\"${18:Optional - ui:selectListOption}\" updateAriaAttributes=\"${19:Optional - ui:updateAriaAttributes}\" listExpand=\"${20:Optional - ui:autocompleteListExpand}\" listCollapse=\"${21:Optional - ui:autocompleteListCollapse}\">${22:This component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
+      "contents": "ui:autocompleteList propertyToMatch=\"${1:Optional - String}\" theme=\"${2:Optional - String}\" matchFunc=\"${3:Optional - Aura.Action}\" footerSelected=\"${4:Optional - boolean}\" headerSelected=\"${5:Optional - boolean}\" listHeader=\"${6:Optional - Aura.Component[]}\" listFooter=\"${7:Optional - Aura.Component[]}\" showListHeader=\"${8:Optional - Boolean}\" showListFooter=\"${9:Optional - Boolean}\" setDefaultHighlight=\"${10:Optional - boolean}\" listReferenceComponent=\"${11:Optional - Aura.Component[]}\" matchDone=\"${12:Optional - ui:matchDone}\" selectListOption=\"${13:Optional - ui:selectListOption}\" listExpand=\"${14:Optional - ui:autocompleteListExpand}\" listCollapse=\"${15:Optional - ui:autocompleteListCollapse}\">${16:Implements ui:autocompleteListInterface.\tThis component is used in ui:autocomplete to provide a list of options to the input component.To customize the list option behavior, use the selectListOption, listHighlight, and updateAriaAttributes events.}</ui:autocompleteList>"
     },
     {
       "trigger": "ui-autocompleteOption\tTag Simple",
@@ -1394,6 +1394,14 @@
       "contents": "ui:inputDate placeholder=\"${1:Optional - String}\" loadDatePicker=\"${2:Optional - Boolean}\" openPicker=\"${3:Optional - ui:openPicker}\">${4:Implements ui:inputDateComponent.\tAn input field for entering a date.}</ui:inputDate>"
     },
     {
+      "trigger": "ui-inputDateHtml\tTag Simple",
+      "contents": "ui:inputDateHtml$1>${2:HTML5 date picker, used for phone and tablet.}</ui:inputDateHtml>"
+    },
+    {
+      "trigger": "ui-inputDateHtml\tTag Full",
+      "contents": "ui:inputDateHtml>${1:HTML5 date picker, used for phone and tablet.}</ui:inputDateHtml>"
+    },
+    {
       "trigger": "ui-inputDateRange\tTag Simple",
       "contents": "ui:inputDateRange$1>${2:Implements ui:inputDateComponent.\tA component for entering a date range.}</ui:inputDateRange>"
     },
@@ -1408,6 +1416,14 @@
     {
       "trigger": "ui-inputDateTime\tTag Full",
       "contents": "ui:inputDateTime useSingleInput=\"${1:Optional - Boolean}\" value=\"${2:Optional - String}\" placeholder=\"${3:Optional - String}\" timePlaceholder=\"${4:Optional - String}\" openPicker=\"${5:Optional - ui:openPicker}\">${6:Implements ui:inputDateTimeComponent.\tAn input field for entering a date and time.}</ui:inputDateTime>"
+    },
+    {
+      "trigger": "ui-inputDateTimeHtml\tTag Simple",
+      "contents": "ui:inputDateTimeHtml$1>${2:HTML5 date/time picker, used for phone and tablet.}</ui:inputDateTimeHtml>"
+    },
+    {
+      "trigger": "ui-inputDateTimeHtml\tTag Full",
+      "contents": "ui:inputDateTimeHtml timezone=\"${1:Optional - String}\">${2:HTML5 date/time picker, used for phone and tablet.}</ui:inputDateTimeHtml>"
     },
     {
       "trigger": "ui-inputDateTrigger\tTag Simple",
@@ -2135,23 +2151,7 @@
     },
     {
       "trigger": "ui-virtualList\tTag Full",
-      "contents": "ui:virtualList itemTemplate=\"${1:Required - Aura.ComponentDefRef[]}\" itemVar=\"${2:Required - String}\" items=\"${3:Optional - Object[]}\" forceRender=\"${4:Optional - Boolean}\" dataProvider=\"${5:Optional - Aura.Component[]}\">${6:Implements ui:scrollerEmbeddable.\tList of items generated by using the same component.}</ui:virtualList>"
-    },
-    {
-      "trigger": "actionsTest-beanActionModel\tTag Simple",
-      "contents": "actionsTest:beanActionModel$1>${2:}</actionsTest:beanActionModel>"
-    },
-    {
-      "trigger": "actionsTest-beanActionModel\tTag Full",
-      "contents": "actionsTest:beanActionModel counter=\"${1:Optional - string}\">${2:}</actionsTest:beanActionModel>"
-    },
-    {
-      "trigger": "actionsTest-beanActionModelChild\tTag Simple",
-      "contents": "actionsTest:beanActionModelChild$1>${2:}</actionsTest:beanActionModelChild>"
-    },
-    {
-      "trigger": "actionsTest-beanActionModelChild\tTag Full",
-      "contents": "actionsTest:beanActionModelChild childCounter=\"${1:Optional - string}\">${2:}</actionsTest:beanActionModelChild>"
+      "contents": "ui:virtualList itemTemplate=\"${1:Required - Aura.ComponentDefRef[]}\" itemVar=\"${2:Required - String}\" items=\"${3:Optional - Object[]}\" forceRender=\"${4:Optional - Boolean}\" dataProvider=\"${5:Optional - Aura.Component[]}\" items=\"${6:Optional - Object}\">${7:Implements ui:scrollerEmbeddable.\tList of items generated by using the same component.}</ui:virtualList>"
     },
     {
       "trigger": "actionsTest-chainBoundaryCases\tTag Simple",
@@ -3560,6 +3560,14 @@
     {
       "trigger": "clientServiceTest-enqueueAction\tTag Full",
       "contents": "clientServiceTest:enqueueAction log=\"${1:Optional - List}\">${2:}</clientServiceTest:enqueueAction>"
+    },
+    {
+      "trigger": "clientServiceTest-loadComponentFailTemplate\tTag Simple",
+      "contents": "clientServiceTest:loadComponentFailTemplate$1>${2:}</clientServiceTest:loadComponentFailTemplate>"
+    },
+    {
+      "trigger": "clientServiceTest-loadComponentFailTemplate\tTag Full",
+      "contents": "clientServiceTest:loadComponentFailTemplate>${1:}</clientServiceTest:loadComponentFailTemplate>"
     },
     {
       "trigger": "clientServiceTest-resetToken\tTag Simple",

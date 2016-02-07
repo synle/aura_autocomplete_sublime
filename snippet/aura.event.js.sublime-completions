@@ -54,12 +54,12 @@
       "contents": "//  component: autocomplete\n//    evtName: matchDone\n//    evtType: ui:matchDone\n//description: The event fired when the matching is done.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.matchDone\");\ne.setParams({\n\tsize: \"${2:Integer}\",// The number of matched options in the list.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-autocomplete-inputChange",
-      "contents": "//  component: autocomplete\n//    evtName: inputChange\n//    evtType: ui:inputChange\n//description: The event fired when the input value changes.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.inputChange\");\ne.setParams({\n\tvalue: \"${2:String}\",// The updated text in the component.\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-autocomplete-selectListOption",
       "contents": "//  component: autocomplete\n//    evtName: selectListOption\n//    evtType: ui:selectListOption\n//description: The event fired when a list option is displayed.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.selectListOption\");\ne.setParams({\n\toption: \"${2:Aura.Component[]}\",// The option component selected.\n\tisHeader: \"${3:Boolean}\",// True if the selected option is the header option\n\tisFooter: \"${4:Boolean}\",// True if the selected option is the footer option\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-inputChange",
+      "contents": "//  component: autocomplete\n//    evtName: inputChange\n//    evtType: ui:inputChange\n//description: The event fired when the input value changes.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.inputChange\");\ne.setParams({\n\tvalue: \"${2:String}\",// The updated text in the component.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocomplete-fetchData",
@@ -74,24 +74,8 @@
       "contents": "//  component: autocompleteList\n//    evtName: matchDone\n//    evtType: ui:matchDone\n//description: The event fired when the matching is done.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.matchDone\");\ne.setParams({\n\tsize: \"${2:Integer}\",// The number of matched options in the list.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-autocompleteList-listHighlight",
-      "contents": "//  component: autocompleteList\n//    evtName: listHighlight\n//    evtType: ui:listHighlight\n//description: The event fired when a list option is highlighted.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listHighlight\");\ne.setParams({\n\tactiveIndex: \"${2:Integer}\",// The list option should be highlighted.\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-autocompleteList-matchText",
-      "contents": "//  component: autocompleteList\n//    evtName: matchText\n//    evtType: ui:matchText\n//description: The event fired when a text match occurs.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.matchText\");\ne.setParams({\n\tkeyword: \"${2:String}\",// The keyword to be matched.\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-autocompleteList-pressOnHighlighted",
-      "contents": "//  component: autocompleteList\n//    evtName: pressOnHighlighted\n//    evtType: ui:press\n//description: The event fired when a highlighted option is pressed.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.pressOnHighlighted\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-autocompleteList-selectListOption",
       "contents": "//  component: autocompleteList\n//    evtName: selectListOption\n//    evtType: ui:selectListOption\n//description: The event fired when a list option is selected.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.selectListOption\");\ne.setParams({\n\toption: \"${2:Aura.Component[]}\",// The option component selected.\n\tisHeader: \"${3:Boolean}\",// True if the selected option is the header option\n\tisFooter: \"${4:Boolean}\",// True if the selected option is the footer option\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-autocompleteList-updateAriaAttributes",
-      "contents": "//  component: autocompleteList\n//    evtName: updateAriaAttributes\n//    evtType: ui:updateAriaAttributes\n//description: The event fired when a new option is highlighted.\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.updateAriaAttributes\");\ne.setParams({\n\tattrs: \"${2:Object}\",// An object including all updated attributes.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocompleteList-listExpand",

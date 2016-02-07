@@ -934,6 +934,30 @@
       "contents": "load=\"${1:ui:asyncImage - Optional - ui:load}\""
     },
     {
+      "trigger": "ui-autocomplete-inputClass\tAttr",
+      "contents": "inputClass=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-inputType\tAttr",
+      "contents": "inputType=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-placeholder\tAttr",
+      "contents": "placeholder=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-theme\tAttr",
+      "contents": "theme=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-autocompleteButton\tAttr",
+      "contents": "autocompleteButton=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-autocomplete-usePanel\tAttr",
+      "contents": "usePanel=\"${1:ui:autocomplete - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocomplete-dataProvider\tAttr",
       "contents": "dataProvider=\"${1:ui:autocomplete - Required - Aura.Component[]}\""
     },
@@ -946,40 +970,20 @@
       "contents": "loadingIndicator=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "ui-autocomplete-inputClass\tAttr",
-      "contents": "inputClass=\"${1:ui:autocomplete - Optional - String}\""
-    },
-    {
-      "trigger": "ui-autocomplete-inputType\tAttr",
-      "contents": "inputType=\"${1:ui:autocomplete - Optional - String}\""
-    },
-    {
-      "trigger": "ui-autocomplete-listOption\tAttr",
-      "contents": "listOption=\"${1:ui:autocomplete - Required - Aura.ComponentDefRef[]}\""
-    },
-    {
       "trigger": "ui-autocomplete-optionVar\tAttr",
       "contents": "optionVar=\"${1:ui:autocomplete - Required - String}\""
-    },
-    {
-      "trigger": "ui-autocomplete-placeholder\tAttr",
-      "contents": "placeholder=\"${1:ui:autocomplete - Optional - String}\""
     },
     {
       "trigger": "ui-autocomplete-propertyToMatch\tAttr",
       "contents": "propertyToMatch=\"${1:ui:autocomplete - Optional - String}\""
     },
     {
-      "trigger": "ui-autocomplete-theme\tAttr",
-      "contents": "theme=\"${1:ui:autocomplete - Optional - String}\""
-    },
-    {
       "trigger": "ui-autocomplete-matchFunc\tAttr",
       "contents": "matchFunc=\"${1:ui:autocomplete - Optional - Aura.Action}\""
     },
     {
-      "trigger": "ui-autocomplete-autocompleteButton\tAttr",
-      "contents": "autocompleteButton=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+      "trigger": "ui-autocomplete-listOption\tAttr",
+      "contents": "listOption=\"${1:ui:autocomplete - Required - Aura.ComponentDefRef[]}\""
     },
     {
       "trigger": "ui-autocomplete-listHeader\tAttr",
@@ -998,10 +1002,6 @@
       "contents": "showListFooter=\"${1:ui:autocomplete - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-autocomplete-usePanel\tAttr",
-      "contents": "usePanel=\"${1:ui:autocomplete - Optional - boolean}\""
-    },
-    {
       "trigger": "ui-autocomplete-setDefaultHighlight\tAttr",
       "contents": "setDefaultHighlight=\"${1:ui:autocomplete - Optional - boolean}\""
     },
@@ -1010,16 +1010,20 @@
       "contents": "listReferenceComponent=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-autocomplete-autocompleteList\tAttr",
+      "contents": "autocompleteList=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "ui-autocomplete-matchDone\tAttr",
       "contents": "matchDone=\"${1:ui:autocomplete - Optional - ui:matchDone}\""
     },
     {
-      "trigger": "ui-autocomplete-inputChange\tAttr",
-      "contents": "inputChange=\"${1:ui:autocomplete - Optional - ui:inputChange}\""
-    },
-    {
       "trigger": "ui-autocomplete-selectListOption\tAttr",
       "contents": "selectListOption=\"${1:ui:autocomplete - Optional - ui:selectListOption}\""
+    },
+    {
+      "trigger": "ui-autocomplete-inputChange\tAttr",
+      "contents": "inputChange=\"${1:ui:autocomplete - Optional - ui:inputChange}\""
     },
     {
       "trigger": "ui-autocomplete-fetchData\tAttr",
@@ -1028,14 +1032,6 @@
     {
       "trigger": "ui-autocomplete-matchText\tAttr",
       "contents": "matchText=\"${1:ui:autocomplete - Optional - ui:matchText}\""
-    },
-    {
-      "trigger": "ui-autocompleteList-ignoredElements\tAttr",
-      "contents": "ignoredElements=\"${1:ui:autocompleteList - Optional - Object}\""
-    },
-    {
-      "trigger": "ui-autocompleteList-keyword\tAttr",
-      "contents": "keyword=\"${1:ui:autocompleteList - Optional - String}\""
     },
     {
       "trigger": "ui-autocompleteList-propertyToMatch\tAttr",
@@ -1086,24 +1082,8 @@
       "contents": "matchDone=\"${1:ui:autocompleteList - Optional - ui:matchDone}\""
     },
     {
-      "trigger": "ui-autocompleteList-listHighlight\tAttr",
-      "contents": "listHighlight=\"${1:ui:autocompleteList - Optional - ui:listHighlight}\""
-    },
-    {
-      "trigger": "ui-autocompleteList-matchText\tAttr",
-      "contents": "matchText=\"${1:ui:autocompleteList - Optional - ui:matchText}\""
-    },
-    {
-      "trigger": "ui-autocompleteList-pressOnHighlighted\tAttr",
-      "contents": "pressOnHighlighted=\"${1:ui:autocompleteList - Optional - ui:press}\""
-    },
-    {
       "trigger": "ui-autocompleteList-selectListOption\tAttr",
       "contents": "selectListOption=\"${1:ui:autocompleteList - Optional - ui:selectListOption}\""
-    },
-    {
-      "trigger": "ui-autocompleteList-updateAriaAttributes\tAttr",
-      "contents": "updateAriaAttributes=\"${1:ui:autocompleteList - Optional - ui:updateAriaAttributes}\""
     },
     {
       "trigger": "ui-autocompleteList-listExpand\tAttr",
@@ -2504,6 +2484,10 @@
     {
       "trigger": "ui-inputDateTime-openPicker\tAttr",
       "contents": "openPicker=\"${1:ui:inputDateTime - Optional - ui:openPicker}\""
+    },
+    {
+      "trigger": "ui-inputDateTimeHtml-timezone\tAttr",
+      "contents": "timezone=\"${1:ui:inputDateTimeHtml - Optional - String}\""
     },
     {
       "trigger": "ui-inputDefaultError-value\tAttr",
@@ -4626,12 +4610,8 @@
       "contents": "dataProvider=\"${1:ui:virtualList - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "actionsTest-beanActionModel-counter\tAttr",
-      "contents": "counter=\"${1:actionsTest:beanActionModel - Optional - string}\""
-    },
-    {
-      "trigger": "actionsTest-beanActionModelChild-childCounter\tAttr",
-      "contents": "childCounter=\"${1:actionsTest:beanActionModelChild - Optional - string}\""
+      "trigger": "ui-virtualList-items\tAttr",
+      "contents": "items=\"${1:ui:virtualList - Optional - Object}\""
     },
     {
       "trigger": "actionsTest-chainBoundaryCases-responseOrder\tAttr",
