@@ -1802,12 +1802,36 @@
       "contents": "cmp.getDef().getHelper().getDomElementValue(${1:element})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-doUpdate",
-      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
+      "trigger": "helper-ui-inputCurrency-isNumberInRange",
+      "contents": "cmp.getDef().getHelper().isNumberInRange(${1:number},${2:cmp})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-getNumber",
-      "contents": "cmp.getDef().getHelper().getNumber(${1:cmp})"
+      "trigger": "helper-ui-inputCurrency-isValueValid",
+      "contents": "cmp.getDef().getHelper().isValueValid(${1:number},${2:formatter})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-handleNewValue",
+      "contents": "cmp.getDef().getHelper().handleNewValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-setAttributes",
+      "contents": "cmp.getDef().getHelper().setAttributes(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-getElementInput",
+      "contents": "cmp.getDef().getHelper().getElementInput(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-setInvalidValueError",
+      "contents": "cmp.getDef().getHelper().setInvalidValueError(${1:cmp},${2:value})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-removeErrors",
+      "contents": "cmp.getDef().getHelper().removeErrors(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputCurrency-setValue",
+      "contents": "cmp.getDef().getHelper().setValue(${1:cmp},${2:newValue},${3:isFromOutside})"
     },
     {
       "trigger": "helper-ui-inputDate-displayValue",
@@ -2472,6 +2496,10 @@
     {
       "trigger": "helper-ui-menuTrigger-fireMenuTriggerPress",
       "contents": "cmp.getDef().getHelper().fireMenuTriggerPress(${1:component},${2:index})"
+    },
+    {
+      "trigger": "helper-ui-menuTriggerLink-initializeHandlers",
+      "contents": "cmp.getDef().getHelper().initializeHandlers(${1:cmp})"
     },
     {
       "trigger": "helper-ui-menuTriggerLink-focus",
@@ -3550,6 +3578,14 @@
       "contents": "cmp.getDef().getHelper().createMenuItem(${1:id},${2:label},${3:value})"
     },
     {
+      "trigger": "helper-ui-tabItem-initializeHandlers",
+      "contents": "cmp.getDef().getHelper().initializeHandlers(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabItem-addHandler",
+      "contents": "cmp.getDef().getHelper().addHandler(${1:cmp},${2:handlerParams})"
+    },
+    {
       "trigger": "helper-ui-tabItem-setActive",
       "contents": "cmp.getDef().getHelper().setActive(${1:cmp},${2:active},${3:focus})"
     },
@@ -4059,7 +4095,7 @@
     },
     {
       "trigger": "helper-ui-virtualList-_dispatchAction",
-      "contents": "cmp.getDef().getHelper()._dispatchAction(${1:actionHandler},${2:event})"
+      "contents": "cmp.getDef().getHelper()._dispatchAction(${1:action},${2:event})"
     },
     {
       "trigger": "helper-ui-virtualList-_getItemAttached",

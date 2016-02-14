@@ -2366,6 +2366,10 @@
       "contents": "updateOn=\"${1:ui:input - Optional - String}\""
     },
     {
+      "trigger": "ui-input-updateOnDisabled\tAttr",
+      "contents": "updateOnDisabled=\"${1:ui:input - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-input-value\tAttr",
       "contents": "value=\"${1:ui:input - Optional - String}\""
     },
@@ -2436,6 +2440,18 @@
     {
       "trigger": "ui-inputCheckbox-updateOn\tAttr",
       "contents": "updateOn=\"${1:ui:inputCheckbox - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputCurrency-inputValue\tAttr",
+      "contents": "inputValue=\"${1:ui:inputCurrency - Optional - string}\""
+    },
+    {
+      "trigger": "ui-inputCurrency-lastValue\tAttr",
+      "contents": "lastValue=\"${1:ui:inputCurrency - Optional - string}\""
+    },
+    {
+      "trigger": "ui-inputCurrency-updateWasFromOutside\tAttr",
+      "contents": "updateWasFromOutside=\"${1:ui:inputCurrency - Optional - boolean}\""
     },
     {
       "trigger": "ui-inputDate-placeholder\tAttr",
