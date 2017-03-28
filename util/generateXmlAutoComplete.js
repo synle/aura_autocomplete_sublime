@@ -26,6 +26,11 @@ function isValidComponent(fullCompName){
     return true;
 }
 
+function isAccessEligibleForExpose(propAccess){
+    propAccess = propAccess || '';
+    return propAccess.toUpperCase() !== 'PRIVATE';
+}
+
 //componentFileNames: dictionary containing all js, evt and cmp files
 //outputDir: where to store the snippet
 module.exports = function processParser(componentFileNames, outputDir) {
@@ -153,8 +158,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                         var attributeObj = curAttribute.attribs;
 
                         // respect access (private attributes are not going to be exposed...)
-                        attributeObj.access = attributeObj.access || '';
-                        if(attributeObj.access.toUpperCase() !== 'PRIVATE'){
+                        if(isAccessEligibleForExpose(attributeObj.access)){
                             arrayAttributes.push({
                                 component: componentObj,
                                 attribute: attributeObj
@@ -169,24 +173,27 @@ module.exports = function processParser(componentFileNames, outputDir) {
                         var evtObj = curCmpEvt.attribs;
                         var matchingEvtDef = eventDictionary[evtObj.type];
                         evtObj.TAG = 'event';
-                        if (matchingEvtDef === undefined) {
-                            errorHash[evtObj.type] = errorHash[evtObj.type] || 1;
-                            errorHash[evtObj.type]++;
-                            return;
+
+                        if(isAccessEligibleForExpose(evtObj.access)){
+                            if (matchingEvtDef === undefined) {
+                                errorHash[evtObj.type] = errorHash[evtObj.type] || 1;
+                                errorHash[evtObj.type]++;
+                                return;
+                            }
+                            //some events are treated as attribute
+                            arrayAttributes.push({
+                                component: componentObj,
+                                attribute: evtObj
+                            });
+                            //push event
+                            arrayEvents.push({
+                                namespace: namespace,
+                                component: componentName,
+                                evt: evtObj,
+                                evtDef: matchingEvtDef
+                            });
+                            componentObj.attributes.push(evtObj);
                         }
-                        //some events are treated as attribute
-                        arrayAttributes.push({
-                            component: componentObj,
-                            attribute: evtObj
-                        });
-                        //push event
-                        arrayEvents.push({
-                            namespace: namespace,
-                            component: componentName,
-                            evt: evtObj,
-                            evtDef: matchingEvtDef
-                        });
-                        componentObj.attributes.push(evtObj);
                     });
                     arrayComponents.push(componentObj);
                     defer.resolve();
