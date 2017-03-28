@@ -225,7 +225,7 @@ var self = {
             var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tAttr';
 
 
-            console.log('attributeComponent', attributeComponent);
+            // console.log('attributeComponent', attributeComponent);
             // console.log('attributeObj', attributeObj);
             //contents
             var contents = self._serializeAttr(
@@ -234,7 +234,8 @@ var self = {
                 attributeObj.type,//atributeType
                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
                 1,//sublime tab index
-                attributeObj.TAG
+                attributeObj.TAG,
+                attributeObj.default
             );
 
             // console.log(contents);
@@ -342,7 +343,8 @@ var self = {
                                 attributeObj.type,//atributeType
                                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
                                 includedAttributeCount,//sublime tab index
-                                attributeObj.TAG
+                                attributeObj.TAG,
+                                attributeObj.default
                             )
                         );
 
@@ -366,7 +368,8 @@ var self = {
                                 attributeObj.type,//atributeType
                                 attributeObj.required === 'true' || attributeObj.required === true,//isRequired
                                 includedAttributeCount,//sublime tab index
-                                attributeObj.TAG
+                                attributeObj.TAG,
+                                attributeObj.default
                             )
                         );
 
