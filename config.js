@@ -18,7 +18,7 @@ module.exports = {
             // outputDir :{
             //  message: 'Directory to output files'.bold.red,
             //     default: './snippet',
-            //     required: true   
+            //     required: true
             // }
         }
     },
@@ -27,6 +27,9 @@ module.exports = {
         test : 1,
         uitest : 1,
         uiExamples : 1
+    },
+    BLACK_LIST_COMPONENTS: {
+        'aura:util' : 1
     },
     TRIGGER_SEPARATOR : '-'
 };

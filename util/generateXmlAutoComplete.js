@@ -17,6 +17,15 @@ function isValidNamespace(namespace) {
     }
     return true;
 }
+
+function isValidComponent(fullCompName){
+    if (config.BLACK_LIST_COMPONENTS[fullCompName] !== undefined) {
+        //black listed namespace, will be ignored
+        return false;
+    }
+    return true;
+}
+
 //componentFileNames: dictionary containing all js, evt and cmp files
 //outputDir: where to store the snippet
 module.exports = function processParser(componentFileNames, outputDir) {
@@ -34,7 +43,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
 
 
     var errorHash = {};
-    
+
 
     //events stuffs
     //reading and parsing the events
@@ -90,7 +99,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
     }, function(ex){
     	logger.error('componentFileNames.evt failed:'.red + '\t' + ex);
     });
-    
+
 
 
 
@@ -201,7 +210,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 //black listed namespace, will be ignored
                 return;
             }
-            
+
             //setup and install promise
             var defer = Q.defer();
             promise.all.push(defer.promise);
@@ -215,15 +224,23 @@ module.exports = function processParser(componentFileNames, outputDir) {
                     fullCompName: fullCompName,
                     helpers: componentHelpers
                 };
+
+                if(!isValidComponent(fullCompName)){
+                    return;
+                }
+
                 //attached custom js for parser
                 //try parse
                 try {
+                    // console.log(fullCompName, namespace, componentName);
+
                     var METHOD_PLACEHOLDER = {};
                     fileContent = fileContent.replace(/(?:\/\*(?:[\s\S]*?)\*\/)|(?:([\s;])+\/\/(?:.*)$)/gm, '$1');
                     fileContent = fileContent.substr(fileContent.indexOf('('));
                     fileContent = ['(function MAGIC_PARSER(dummyObj){', 'METHOD_PLACEHOLDER = dummyObj;', '})'].join('\n') + fileContent;
                     // console.log('fileName'.blue, fileName)
                     eval(fileContent);
+
                     for (var methodName in METHOD_PLACEHOLDER) {
                         var methodDef = METHOD_PLACEHOLDER[methodName];
                         if (typeof methodDef === 'function') {
