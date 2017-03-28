@@ -1,4 +1,7 @@
 '.source.js':
+	'A.test.time':
+		'prefix': 'A-test-time'
+		'body': 'A.test.time(${1:){return Date.now(})'
 	'A.test.addWaitFor':
 		'prefix': 'A-test-addWaitFor'
 		'body': 'A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})'
@@ -50,6 +53,9 @@
 	'A.test.isActionPending':
 		'prefix': 'A-test-isActionPending'
 		'body': 'A.test.isActionPending(${1:})'
+	'A.test.isActionQueued':
+		'prefix': 'A-test-isActionQueued'
+		'body': 'A.test.isActionQueued(${1:})'
 	'A.test.callServerAction':
 		'prefix': 'A-test-callServerAction'
 		'body': 'A.test.callServerAction(${1:action},${2:doImmediate})'
@@ -61,7 +67,7 @@
 		'body': 'A.test.runAfterIf(${1:conditionFunction},${2:callback},${3:intervalInMs})'
 	'A.test.setTestTimeout':
 		'prefix': 'A-test-setTestTimeout'
-		'body': 'A.test.setTestTimeout(${1:timeoutMsec})'
+		'body': 'A.test.setTestTimeout(${1:timeoutMs})'
 	'A.test.isComplete':
 		'prefix': 'A-test-isComplete'
 		'body': 'A.test.isComplete(${1:})'
@@ -236,12 +242,12 @@
 	'A.test.dummyFunction':
 		'prefix': 'A-test-dummyFunction'
 		'body': 'A.test.dummyFunction(${1:})'
-	'A.test.getAppCacheEvents':
-		'prefix': 'A-test-getAppCacheEvents'
-		'body': 'A.test.getAppCacheEvents(${1:})'
 	'A.test.getAuraErrorMessage':
 		'prefix': 'A-test-getAuraErrorMessage'
 		'body': 'A.test.getAuraErrorMessage(${1:})'
+	'A.test.getPopOverErrorMessage':
+		'prefix': 'A-test-getPopOverErrorMessage'
+		'body': 'A.test.getPopOverErrorMessage(${1:errorMessage},${2:delimiter},${3:targetCmp},${4:accessingCmp})'
 	'A.test.getAvailableXHROverride':
 		'prefix': 'A-test-getAvailableXHROverride'
 		'body': 'A.test.getAvailableXHROverride(${1:config},${2:isBackground})'
@@ -250,7 +256,7 @@
 		'body': 'A.test.sendOverride(${1:config},${2:auraXHR},${3:actions},${4:method},${5:options})'
 	'A.test.decodeOverride':
 		'prefix': 'A-test-decodeOverride'
-		'body': 'A.test.decodeOverride(${1:config},${2:response},${3:noStrip})'
+		'body': 'A.test.decodeOverride(${1:config},${2:response},${3:noStrip},${4:timeOut})'
 	'A.test.PrePostConfig':
 		'prefix': 'A-test-PrePostConfig'
 		'body': 'A.test.PrePostConfig(${1:action},${2:preSendCallback},${3:postSendCallback},${4:preDecodeCallback},${5:postDecodeCallback})'
@@ -296,21 +302,33 @@
 	'A.test.run':
 		'prefix': 'A-test-run'
 		'body': 'A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})'
+	'A.test.getTestName':
+		'prefix': 'A-test-getTestName'
+		'body': 'A.test.getTestName(${1:})'
 	'A.test.waitForRoot':
 		'prefix': 'A-test-waitForRoot'
 		'body': 'A.test.waitForRoot(${1:callback})'
 	'A.test.runInternal':
 		'prefix': 'A-test-runInternal'
 		'body': 'A.test.runInternal(${1:name})'
+	'A.test.callSetUp':
+		'prefix': 'A-test-callSetUp'
+		'body': 'A.test.callSetUp(${1:callback})'
 	'A.test.executeAfterCkEditorIsReady':
 		'prefix': 'A-test-executeAfterCkEditorIsReady'
 		'body': 'A.test.executeAfterCkEditorIsReady(${1:inputRichTextComponent},${2:callback})'
-	'A.test.reloadGlobalValueProviders':
-		'prefix': 'A-test-reloadGlobalValueProviders'
-		'body': 'A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})'
 	'A.test.getGlobalValueProvider':
 		'prefix': 'A-test-getGlobalValueProvider'
 		'body': 'A.test.getGlobalValueProvider(${1:type})'
+	'A.test.storageSweep':
+		'prefix': 'A-test-storageSweep'
+		'body': 'A.test.storageSweep(${1:storage})'
+	'A.test.storageAdapterSetItems':
+		'prefix': 'A-test-storageAdapterSetItems'
+		'body': 'A.test.storageAdapterSetItems(${1:storage},${2:tuples})'
+	'A.test.getAllComponentDefsFromStorage':
+		'prefix': 'A-test-getAllComponentDefsFromStorage'
+		'body': 'A.test.getAllComponentDefsFromStorage(${1:})'
 	'A.test.getCreationPath':
 		'prefix': 'A-test-getCreationPath'
 		'body': 'A.test.getCreationPath(${1:cmp})'
@@ -320,12 +338,27 @@
 	'A.test.checkGlobalNamespacePollution':
 		'prefix': 'A-test-checkGlobalNamespacePollution'
 		'body': 'A.test.checkGlobalNamespacePollution(${1:whitelistedPollutants})'
+	'A.util.isLocalStorageEnabled':
+		'prefix': 'A-util-isLocalStorageEnabled'
+		'body': 'A.util.isLocalStorageEnabled(${1:})'
+	'A.util.isSessionStorageEnabled':
+		'prefix': 'A-util-isSessionStorageEnabled'
+		'body': 'A.util.isSessionStorageEnabled(${1:})'
+	'A.util.setCookie':
+		'prefix': 'A-util-setCookie'
+		'body': 'A.util.setCookie(${1:key},${2:value},${3:duration})'
+	'A.util.getCookie':
+		'prefix': 'A-util-getCookie'
+		'body': 'A.util.getCookie(${1:key})'
+	'A.util.clearCookie':
+		'prefix': 'A-util-clearCookie'
+		'body': 'A.util.clearCookie(${1:key})'
 	'A.util.isIOSWebView':
 		'prefix': 'A-util-isIOSWebView'
 		'body': 'A.util.isIOSWebView(${1:})'
 	'A.util.globalEval':
 		'prefix': 'A-util-globalEval'
-		'body': 'A.util.globalEval(${1:src})'
+		'body': 'A.util.globalEval(${1:src},${2:globals},${3:optionalSourceURL})'
 	'A.util.isArray':
 		'prefix': 'A-util-isArray'
 		'body': 'A.util.isArray(${1:})'
@@ -371,6 +404,9 @@
 	'A.util.clearNode':
 		'prefix': 'A-util-clearNode'
 		'body': 'A.util.clearNode(${1:node})'
+	'A.util.sanitizeDOM':
+		'prefix': 'A-util-sanitizeDOM'
+		'body': 'A.util.sanitizeDOM(${1:dirty},${2:config})'
 	'A.util.getElement':
 		'prefix': 'A-util-getElement'
 		'body': 'A.util.getElement(${1:id})'
@@ -467,6 +503,9 @@
 	'A.util.hyphensToCamelCase':
 		'prefix': 'A-util-hyphensToCamelCase'
 		'body': 'A.util.hyphensToCamelCase(${1:str})'
+	'A.util.toCamelCase':
+		'prefix': 'A-util-toCamelCase'
+		'body': 'A.util.toCamelCase(${1:str})'
 	'A.util.acceptsData':
 		'prefix': 'A-util-acceptsData'
 		'body': 'A.util.acceptsData(${1:element})'
@@ -485,9 +524,12 @@
 	'A.util.hasDataAttribute':
 		'prefix': 'A-util-hasDataAttribute'
 		'body': 'A.util.hasDataAttribute(${1:element},${2:key})'
-	'A.util.isElement':
-		'prefix': 'A-util-isElement'
-		'body': 'A.util.isElement(${1:obj})'
+	'A.util.isHTMLElement':
+		'prefix': 'A-util-isHTMLElement'
+		'body': 'A.util.isHTMLElement(${1:obj})'
+	'A.util.isSVGElement':
+		'prefix': 'A-util-isSVGElement'
+		'body': 'A.util.isSVGElement(${1:obj})'
 	'A.util.attachToDocumentBody':
 		'prefix': 'A-util-attachToDocumentBody'
 		'body': 'A.util.attachToDocumentBody(${1:element})'
@@ -548,12 +590,12 @@
 	'A.util.isExpression':
 		'prefix': 'A-util-isExpression'
 		'body': 'A.util.isExpression(${1:obj})'
-	'A.util.isValue':
-		'prefix': 'A-util-isValue'
-		'body': 'A.util.isValue(${1:obj})'
 	'A.util.isAction':
 		'prefix': 'A-util-isAction'
 		'body': 'A.util.isAction(${1:obj})'
+	'A.util.isValue':
+		'prefix': 'A-util-isValue'
+		'body': 'A.util.isValue(${1:obj})'
 	'A.util.supportsTouchEvents':
 		'prefix': 'A-util-supportsTouchEvents'
 		'body': 'A.util.supportsTouchEvents(${1:})'
@@ -566,6 +608,12 @@
 	'A.util.setText':
 		'prefix': 'A-util-setText'
 		'body': 'A.util.setText(${1:node},${2:text})'
+	'A.util.postMessage':
+		'prefix': 'A-util-postMessage'
+		'body': 'A.util.postMessage(${1:targetWindow},${2:argsArray})'
+	'A.util.getComponentHierarchy':
+		'prefix': 'A-util-getComponentHierarchy'
+		'body': 'A.util.getComponentHierarchy(${1:component})'
 	'A.util.getDebugToolComponent':
 		'prefix': 'A-util-getDebugToolComponent'
 		'body': 'A.util.getDebugToolComponent(${1:})'

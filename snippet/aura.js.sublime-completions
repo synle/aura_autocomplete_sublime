@@ -2,6 +2,10 @@
   "scope": "source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json",
   "completions": [
     {
+      "trigger": "A-test-time",
+      "contents": "A.test.time(${1:){return Date.now(})"
+    },
+    {
       "trigger": "A-test-addWaitFor",
       "contents": "A.test.addWaitFor(${1:expected},${2:testFunction},${3:callback})"
     },
@@ -70,6 +74,10 @@
       "contents": "A.test.isActionPending(${1:})"
     },
     {
+      "trigger": "A-test-isActionQueued",
+      "contents": "A.test.isActionQueued(${1:})"
+    },
+    {
       "trigger": "A-test-callServerAction",
       "contents": "A.test.callServerAction(${1:action},${2:doImmediate})"
     },
@@ -83,7 +91,7 @@
     },
     {
       "trigger": "A-test-setTestTimeout",
-      "contents": "A.test.setTestTimeout(${1:timeoutMsec})"
+      "contents": "A.test.setTestTimeout(${1:timeoutMs})"
     },
     {
       "trigger": "A-test-isComplete",
@@ -318,12 +326,12 @@
       "contents": "A.test.dummyFunction(${1:})"
     },
     {
-      "trigger": "A-test-getAppCacheEvents",
-      "contents": "A.test.getAppCacheEvents(${1:})"
-    },
-    {
       "trigger": "A-test-getAuraErrorMessage",
       "contents": "A.test.getAuraErrorMessage(${1:})"
+    },
+    {
+      "trigger": "A-test-getPopOverErrorMessage",
+      "contents": "A.test.getPopOverErrorMessage(${1:errorMessage},${2:delimiter},${3:targetCmp},${4:accessingCmp})"
     },
     {
       "trigger": "A-test-getAvailableXHROverride",
@@ -335,7 +343,7 @@
     },
     {
       "trigger": "A-test-decodeOverride",
-      "contents": "A.test.decodeOverride(${1:config},${2:response},${3:noStrip})"
+      "contents": "A.test.decodeOverride(${1:config},${2:response},${3:noStrip},${4:timeOut})"
     },
     {
       "trigger": "A-test-PrePostConfig",
@@ -398,6 +406,10 @@
       "contents": "A.test.run(${1:name},${2:code},${3:timeoutOverride},${4:quickFixException})"
     },
     {
+      "trigger": "A-test-getTestName",
+      "contents": "A.test.getTestName(${1:})"
+    },
+    {
       "trigger": "A-test-waitForRoot",
       "contents": "A.test.waitForRoot(${1:callback})"
     },
@@ -406,16 +418,28 @@
       "contents": "A.test.runInternal(${1:name})"
     },
     {
+      "trigger": "A-test-callSetUp",
+      "contents": "A.test.callSetUp(${1:callback})"
+    },
+    {
       "trigger": "A-test-executeAfterCkEditorIsReady",
       "contents": "A.test.executeAfterCkEditorIsReady(${1:inputRichTextComponent},${2:callback})"
     },
     {
-      "trigger": "A-test-reloadGlobalValueProviders",
-      "contents": "A.test.reloadGlobalValueProviders(${1:gvp},${2:callback})"
-    },
-    {
       "trigger": "A-test-getGlobalValueProvider",
       "contents": "A.test.getGlobalValueProvider(${1:type})"
+    },
+    {
+      "trigger": "A-test-storageSweep",
+      "contents": "A.test.storageSweep(${1:storage})"
+    },
+    {
+      "trigger": "A-test-storageAdapterSetItems",
+      "contents": "A.test.storageAdapterSetItems(${1:storage},${2:tuples})"
+    },
+    {
+      "trigger": "A-test-getAllComponentDefsFromStorage",
+      "contents": "A.test.getAllComponentDefsFromStorage(${1:})"
     },
     {
       "trigger": "A-test-getCreationPath",
@@ -430,12 +454,32 @@
       "contents": "A.test.checkGlobalNamespacePollution(${1:whitelistedPollutants})"
     },
     {
+      "trigger": "A-util-isLocalStorageEnabled",
+      "contents": "A.util.isLocalStorageEnabled(${1:})"
+    },
+    {
+      "trigger": "A-util-isSessionStorageEnabled",
+      "contents": "A.util.isSessionStorageEnabled(${1:})"
+    },
+    {
+      "trigger": "A-util-setCookie",
+      "contents": "A.util.setCookie(${1:key},${2:value},${3:duration})"
+    },
+    {
+      "trigger": "A-util-getCookie",
+      "contents": "A.util.getCookie(${1:key})"
+    },
+    {
+      "trigger": "A-util-clearCookie",
+      "contents": "A.util.clearCookie(${1:key})"
+    },
+    {
       "trigger": "A-util-isIOSWebView",
       "contents": "A.util.isIOSWebView(${1:})"
     },
     {
       "trigger": "A-util-globalEval",
-      "contents": "A.util.globalEval(${1:src})"
+      "contents": "A.util.globalEval(${1:src},${2:globals},${3:optionalSourceURL})"
     },
     {
       "trigger": "A-util-isArray",
@@ -496,6 +540,10 @@
     {
       "trigger": "A-util-clearNode",
       "contents": "A.util.clearNode(${1:node})"
+    },
+    {
+      "trigger": "A-util-sanitizeDOM",
+      "contents": "A.util.sanitizeDOM(${1:dirty},${2:config})"
     },
     {
       "trigger": "A-util-getElement",
@@ -626,6 +674,10 @@
       "contents": "A.util.hyphensToCamelCase(${1:str})"
     },
     {
+      "trigger": "A-util-toCamelCase",
+      "contents": "A.util.toCamelCase(${1:str})"
+    },
+    {
       "trigger": "A-util-acceptsData",
       "contents": "A.util.acceptsData(${1:element})"
     },
@@ -650,8 +702,12 @@
       "contents": "A.util.hasDataAttribute(${1:element},${2:key})"
     },
     {
-      "trigger": "A-util-isElement",
-      "contents": "A.util.isElement(${1:obj})"
+      "trigger": "A-util-isHTMLElement",
+      "contents": "A.util.isHTMLElement(${1:obj})"
+    },
+    {
+      "trigger": "A-util-isSVGElement",
+      "contents": "A.util.isSVGElement(${1:obj})"
     },
     {
       "trigger": "A-util-attachToDocumentBody",
@@ -734,12 +790,12 @@
       "contents": "A.util.isExpression(${1:obj})"
     },
     {
-      "trigger": "A-util-isValue",
-      "contents": "A.util.isValue(${1:obj})"
-    },
-    {
       "trigger": "A-util-isAction",
       "contents": "A.util.isAction(${1:obj})"
+    },
+    {
+      "trigger": "A-util-isValue",
+      "contents": "A.util.isValue(${1:obj})"
     },
     {
       "trigger": "A-util-supportsTouchEvents",
@@ -756,6 +812,14 @@
     {
       "trigger": "A-util-setText",
       "contents": "A.util.setText(${1:node},${2:text})"
+    },
+    {
+      "trigger": "A-util-postMessage",
+      "contents": "A.util.postMessage(${1:targetWindow},${2:argsArray})"
+    },
+    {
+      "trigger": "A-util-getComponentHierarchy",
+      "contents": "A.util.getComponentHierarchy(${1:component})"
     },
     {
       "trigger": "A-util-getDebugToolComponent",
