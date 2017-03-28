@@ -97,7 +97,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                     description: curEvtAttr.attribs.description
                 });
             });
-            defer.resolve();
+            defer.resolve('success');
         }, function(){
         	defer.reject('evt failed');
         });
@@ -138,7 +138,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 //early exit if it is invalid namespace
                 if (isValidNamespace(namespace) === false) {
                     //black listed namespace, will be ignored
-                    return defer.resolve();
+                    return defer.resolve('black list');
                 }
                 else{
                     //parsing xml
@@ -200,7 +200,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                         }
                     });
                     arrayComponents.push(componentObj);
-                    defer.resolve();
+                    defer.resolve('success');
                 }
             }, function(){
 	        	defer.reject('cmp failed');
@@ -230,7 +230,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
             //early exit if it is invalid namespace
             if (isValidNamespace(namespace) === false) {
                 //black listed namespace, will be ignored
-                return defer.resolve();
+                return defer.resolve('black list');
             }
 
             parseHelper.readFromFileAsync(fileName, true).then(function(fileContent) {
@@ -244,7 +244,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 };
 
                 if(!isValidComponent(fullCompName)){
-                    return defer.resolve();
+                    return defer.resolve('black list full component');
                 }
 
                 //attached custom js for parser
@@ -274,7 +274,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 } catch (e) {
                     logger.error('Error! Problem processing the file'.bold.underline.red, fileName.blue, e.toString());
                 }
-                defer.resolve();
+                defer.resolve('success');
             }, function(){
 	        	defer.reject('helperjs failed');
 	        });
