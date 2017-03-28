@@ -255,6 +255,7 @@ var self = {
     },
 
     _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType, defaultValue){
+        defaultValue = defaultValue || '';
         if(defaultValue){
             defaultValue = '( Default: ' + defaultValue + ' )';
         }
@@ -262,6 +263,7 @@ var self = {
     },
 
     _serializeAttr_short : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType, defaultValue){
+        defaultValue = defaultValue || '';
         if(defaultValue){
             defaultValue = '( Default: ' + defaultValue + ')';
         }
