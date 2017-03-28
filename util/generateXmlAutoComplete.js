@@ -151,12 +151,17 @@ module.exports = function processParser(componentFileNames, outputDir) {
                     var componentAuraAttributes = $('aura\\:attribute');
                     _.forEach(componentAuraAttributes, function(curAttribute) {
                         var attributeObj = curAttribute.attribs;
-                        arrayAttributes.push({
-                            component: componentObj,
-                            attribute: attributeObj
-                        });
-                        attributeObj.TAG = 'attribute';
-                        componentObj.attributes.push(attributeObj);
+
+                        // respect access (private attributes are not going to be exposed...)
+                        attributeObj.access = attributeObj.access || '';
+                        if(attributeObj.access.toUpperCase() !== 'PRIVATE'){
+                            arrayAttributes.push({
+                                component: componentObj,
+                                attribute: attributeObj
+                            });
+                            attributeObj.TAG = 'attribute';
+                            componentObj.attributes.push(attributeObj);
+                        }
                     });
                     //aura events
                     var componentAuraEvents = $('aura\\:registerevent');
