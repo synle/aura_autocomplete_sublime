@@ -138,7 +138,7 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 //early exit if it is invalid namespace
                 if (isValidNamespace(namespace) === false) {
                     //black listed namespace, will be ignored
-                    defer.resolve();
+                    return defer.resolve();
                 }
                 else{
                     //parsing xml
@@ -165,6 +165,8 @@ module.exports = function processParser(componentFileNames, outputDir) {
                             });
                             attributeObj.TAG = 'attribute';
                             componentObj.attributes.push(attributeObj);
+                        } else {
+                            defer.resolve('ignore due to private access');
                         }
                     });
                     //aura events
@@ -193,6 +195,8 @@ module.exports = function processParser(componentFileNames, outputDir) {
                                 evtDef: matchingEvtDef
                             });
                             componentObj.attributes.push(evtObj);
+                        } else {
+                            defer.resolve('ignore due to private access');
                         }
                     });
                     arrayComponents.push(componentObj);
@@ -217,15 +221,17 @@ module.exports = function processParser(componentFileNames, outputDir) {
             var fullCompName = namespace + ':' + componentName;
             var componentHelpers = [];
 
-            //early exit if it is invalid namespace
-            if (isValidNamespace(namespace) === false) {
-                //black listed namespace, will be ignored
-                return;
-            }
 
             //setup and install promise
             var defer = Q.defer();
             promise.all.push(defer.promise);
+
+
+            //early exit if it is invalid namespace
+            if (isValidNamespace(namespace) === false) {
+                //black listed namespace, will be ignored
+                return defer.resolve();
+            }
 
             parseHelper.readFromFileAsync(fileName, true).then(function(fileContent) {
                 //success
@@ -238,14 +244,12 @@ module.exports = function processParser(componentFileNames, outputDir) {
                 };
 
                 if(!isValidComponent(fullCompName)){
-                    return;
+                    return defer.resolve();
                 }
 
                 //attached custom js for parser
                 //try parse
                 try {
-                    // console.log(fullCompName, namespace, componentName);
-
                     var METHOD_PLACEHOLDER = {};
                     fileContent = fileContent.replace(/(?:\/\*(?:[\s\S]*?)\*\/)|(?:([\s;])+\/\/(?:.*)$)/gm, '$1');
                     fileContent = fileContent.substr(fileContent.indexOf('('));
