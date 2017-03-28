@@ -15,11 +15,11 @@ var self = {
          'A.util.map':
             {
                 annotatedValue: [ '${1:array}', '${2:method}', '${3:that}' ],
-                origValue: 'array, method, that' 
+                origValue: 'array, method, that'
             }
         ...
      }
-     */ 
+     */
     consolidate_js: function(dictionary) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
             'source.js, source.json, meta.structure.dictionary.json, meta.structure.dictionary.value.json, meta.structure.array.json'
@@ -116,8 +116,8 @@ var self = {
                        description: 'Event for ui:tabset component.',
                        params: [Object],
                        fileName: '/Users/sle/git/typeahead_aura/aura_upstream/aura-components/src/main/components/ui/tabsetEvent/tabsetEvent.evt' }
-            } 
-        ...]  
+            }
+        ...]
     **/
     consolidate_evt: function(arrayEvents) {
         var sublimeFormat = self._getDefaultSublimeJSObject(
@@ -193,7 +193,7 @@ var self = {
 
     /**
      * sample entries
-     * 
+     *
         [
         ...
             {
@@ -202,7 +202,7 @@ var self = {
                 description: 'A tab set that displays a list of tabs in an unordered list.',
                 namespace: 'ui',
                 fullComponentTag: 'ui:tabset',
-                implements: 'ui:visible' 
+                implements: 'ui:visible'
                 }
             }
         ...
@@ -225,7 +225,7 @@ var self = {
             var trigger = attributeComponent.namespace + TRIGGER_SEPARATOR + attributeComponent.name + TRIGGER_SEPARATOR + attributeObj.name + '\tAttr';
 
 
-            // console.log('attributeComponent', attributeComponent);
+            console.log('attributeComponent', attributeComponent);
             // console.log('attributeObj', attributeObj);
             //contents
             var contents = self._serializeAttr(
@@ -253,12 +253,18 @@ var self = {
         return sublimeFormat;
     },
 
-    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
-        return  attributeName + '="${'+sublimeTabIdx+':' +  fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + ' - ' +atributeType+'}"';
+    _serializeAttr : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType, defaultValue){
+        if(defaultValue){
+            defaultValue = '( Default: ' + defaultValue + ' )';
+        }
+        return  attributeName + '="${'+sublimeTabIdx+':' +  fullComponentTagStr + (isRequired ? ' - Required' : ' - Optional') + defaultValue + ' - ' +atributeType+'}"';
     },
 
-    _serializeAttr_short : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType){
-        return  attributeName + '="${'+sublimeTabIdx+':'  + (isRequired ? 'Required' : 'Optional') + ' - ' +atributeType+'}"';
+    _serializeAttr_short : function(attributeName, fullComponentTagStr, atributeType, isRequired, sublimeTabIdx, attribType, defaultValue){
+        if(defaultValue){
+            defaultValue = '( Default: ' + defaultValue + ')';
+        }
+        return  attributeName + '="${'+sublimeTabIdx+':'  + (isRequired ? 'Required' : 'Optional') + defaultValue + ' - ' +atributeType+'}"';
     },
 
     /**
@@ -303,14 +309,14 @@ var self = {
                 componentObj.description,
                 '}</'+componentObj.fullComponentTag+'>'
             ].join('');
-            
+
             sublimeFormat.completions.push({
                 trigger: trigger,
                 contents: contents
             });
 
 
-            // 
+            //
             //expanded content
             //
             var trigger = componentObj.namespace + TRIGGER_SEPARATOR + componentObj.name  + '\tTag Full';
