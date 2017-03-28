@@ -14,70 +14,6 @@
       "contents": "cmp.getDef().getHelper().getAuraStats(${1:cmp},${2:viewName})"
     },
     {
-      "trigger": "helper-aura-html-caseAttribute",
-      "contents": "cmp.getDef().getHelper().caseAttribute(${1:attribute})"
-    },
-    {
-      "trigger": "helper-aura-html-addNamedClickHandler",
-      "contents": "cmp.getDef().getHelper().addNamedClickHandler(${1:element},${2:handler},${3:handlerName})"
-    },
-    {
-      "trigger": "helper-aura-html-domEventHandler",
-      "contents": "cmp.getDef().getHelper().domEventHandler(${1:event})"
-    },
-    {
-      "trigger": "helper-aura-html-dispatchAction",
-      "contents": "cmp.getDef().getHelper().dispatchAction(${1:action},${2:event})"
-    },
-    {
-      "trigger": "helper-aura-html-canHaveBody",
-      "contents": "cmp.getDef().getHelper().canHaveBody(${1:component})"
-    },
-    {
-      "trigger": "helper-aura-html-createHtmlAttribute",
-      "contents": "cmp.getDef().getHelper().createHtmlAttribute(${1:component},${2:element},${3:name},${4:attribute})"
-    },
-    {
-      "trigger": "helper-aura-html-destroyHtmlAttribute",
-      "contents": "cmp.getDef().getHelper().destroyHtmlAttribute(${1:component},${2:name},${3:attribute})"
-    },
-    {
-      "trigger": "helper-aura-if-createBody",
-      "contents": "cmp.getDef().getHelper().createBody(${1:cmp},${2:isTrue})"
-    },
-    {
-      "trigger": "helper-aura-iteration-createBody",
-      "contents": "cmp.getDef().getHelper().createBody(${1:component},${2:localCreation})"
-    },
-    {
-      "trigger": "helper-aura-iteration-clearUnrenderedBody",
-      "contents": "cmp.getDef().getHelper().clearUnrenderedBody(${1:component})"
-    },
-    {
-      "trigger": "helper-aura-iteration-updateBody",
-      "contents": "cmp.getDef().getHelper().updateBody(${1:component})"
-    },
-    {
-      "trigger": "helper-aura-iteration-buildBody",
-      "contents": "cmp.getDef().getHelper().buildBody(${1:component},${2:itemHandler},${3:completeHandler})"
-    },
-    {
-      "trigger": "helper-aura-iteration-buildTemplate",
-      "contents": "cmp.getDef().getHelper().buildTemplate(${1:component},${2:template},${3:item},${4:index},${5:itemVar},${6:indexVar},${7:templateValueProvider},${8:localCreation},${9:forceServer},${10:callback})"
-    },
-    {
-      "trigger": "helper-aura-iteration-getStart",
-      "contents": "cmp.getDef().getHelper().getStart(${1:cmp})"
-    },
-    {
-      "trigger": "helper-aura-iteration-getEnd",
-      "contents": "cmp.getDef().getHelper().getEnd(${1:cmp})"
-    },
-    {
-      "trigger": "helper-aura-iteration-trackItem",
-      "contents": "cmp.getDef().getHelper().trackItem(${1:component},${2:item},${3:index},${4:components})"
-    },
-    {
       "trigger": "helper-aura-label-tokenize",
       "contents": "cmp.getDef().getHelper().tokenize(${1:base},${2:vPattern},${3:vEndPattern})"
     },
@@ -230,6 +166,10 @@
       "contents": "cmp.getDef().getHelper().fireSelectedItemsChange(${1:cmp},${2:data})"
     },
     {
+      "trigger": "helper-ui-abstractDataGrid-secureCallHandler",
+      "contents": "cmp.getDef().getHelper().secureCallHandler(${1:cmp},${2:handlerName},${3:param})"
+    },
+    {
       "trigger": "helper-ui-abstractDataGrid-fireProvide",
       "contents": "cmp.getDef().getHelper().fireProvide(${1:concrete})"
     },
@@ -318,12 +258,20 @@
       "contents": "cmp.getDef().getHelper().getInputElement(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-actionMenuItem-buildBody",
+      "contents": "cmp.getDef().getHelper().buildBody(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-asyncComponentManager-loadComponents",
       "contents": "cmp.getDef().getHelper().loadComponents(${1:cmp})"
     },
     {
       "trigger": "helper-ui-autocomplete-fetchData",
       "contents": "cmp.getDef().getHelper().fetchData(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-autocomplete-abortFetchData",
+      "contents": "cmp.getDef().getHelper().abortFetchData(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-autocomplete-fireInputChangeEvent",
@@ -334,8 +282,8 @@
       "contents": "cmp.getDef().getHelper().hideList(${1:component})"
     },
     {
-      "trigger": "helper-ui-autocomplete-handleEnterkey",
-      "contents": "cmp.getDef().getHelper().handleEnterkey(${1:component})"
+      "trigger": "helper-ui-autocomplete-handleEnterKey",
+      "contents": "cmp.getDef().getHelper().handleEnterKey(${1:component})"
     },
     {
       "trigger": "helper-ui-autocomplete-handleEnterkeyOnList",
@@ -358,8 +306,8 @@
       "contents": "cmp.getDef().getHelper().handleOtherKeyAction(${1:})"
     },
     {
-      "trigger": "helper-ui-autocomplete-handleTabkey",
-      "contents": "cmp.getDef().getHelper().handleTabkey(${1:component})"
+      "trigger": "helper-ui-autocomplete-handleTabKey",
+      "contents": "cmp.getDef().getHelper().handleTabKey(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-autocomplete-highlightNextItem",
@@ -398,12 +346,24 @@
       "contents": "cmp.getDef().getHelper().isDefaultList(${1:component})"
     },
     {
+      "trigger": "helper-ui-autocomplete-initPanelPositionHandlers",
+      "contents": "cmp.getDef().getHelper().initPanelPositionHandlers(${1:component})"
+    },
+    {
       "trigger": "helper-ui-autocompleteList-findHighlightedOptionIndex",
       "contents": "cmp.getDef().getHelper().findHighlightedOptionIndex(${1:iters})"
     },
     {
       "trigger": "helper-ui-autocompleteList-fireMatchDoneEvent",
       "contents": "cmp.getDef().getHelper().fireMatchDoneEvent(${1:component},${2:items})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-fireDataProvideEvent",
+      "contents": "cmp.getDef().getHelper().fireDataProvideEvent(${1:component},${2:options},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-fireAbortEvent",
+      "contents": "cmp.getDef().getHelper().fireAbortEvent(${1:component},${2:options},${3:index})"
     },
     {
       "trigger": "helper-ui-autocompleteList-getEventSourceOptionComponent",
@@ -426,14 +386,6 @@
       "contents": "cmp.getDef().getHelper().handleDataChange(${1:component},${2:event})"
     },
     {
-      "trigger": "helper-ui-autocompleteList-handleEsckeydown",
-      "contents": "cmp.getDef().getHelper().handleEsckeydown(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-autocompleteList-handleKeydown",
-      "contents": "cmp.getDef().getHelper().handleKeydown(${1:component},${2:event})"
-    },
-    {
       "trigger": "helper-ui-autocompleteList-handleListHighlight",
       "contents": "cmp.getDef().getHelper().handleListHighlight(${1:component},${2:event})"
     },
@@ -448,6 +400,14 @@
     {
       "trigger": "helper-ui-autocompleteList-_createKeyboardTraversalItemsSection",
       "contents": "cmp.getDef().getHelper()._createKeyboardTraversalItemsSection(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-scrollIntoViewIfNeeded",
+      "contents": "cmp.getDef().getHelper().scrollIntoViewIfNeeded(${1:element})"
+    },
+    {
+      "trigger": "helper-ui-autocompleteList-isInViewport",
+      "contents": "cmp.getDef().getHelper().isInViewport(${1:element})"
     },
     {
       "trigger": "helper-ui-autocompleteList-addHeaderAndFooterClassesAndAttributes",
@@ -550,8 +510,24 @@
       "contents": "cmp.getDef().getHelper().htmlEscape(${1:str})"
     },
     {
-      "trigger": "helper-ui-autocompletePanel-handleReferenceElement",
-      "contents": "cmp.getDef().getHelper().handleReferenceElement(${1:cmp})"
+      "trigger": "helper-ui-autocompletePanel-positionList",
+      "contents": "cmp.getDef().getHelper().positionList(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-shouldFlip",
+      "contents": "cmp.getDef().getHelper().shouldFlip(${1:element},${2:targetElement})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-addPositionConstraintAndReposition",
+      "contents": "cmp.getDef().getHelper().addPositionConstraintAndReposition(${1:component},${2:listElement},${3:referenceElement})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-reposition",
+      "contents": "cmp.getDef().getHelper().reposition(${1:component},${2:callback})"
+    },
+    {
+      "trigger": "helper-ui-autocompletePanel-clearPositionConstraint",
+      "contents": "cmp.getDef().getHelper().clearPositionConstraint(${1:component})"
     },
     {
       "trigger": "helper-ui-button-initializeHandlers",
@@ -564,14 +540,6 @@
     {
       "trigger": "helper-ui-button-catchAndFireEvent",
       "contents": "cmp.getDef().getHelper().catchAndFireEvent(${1:cmp},${2:event},${3:eventName})"
-    },
-    {
-      "trigger": "helper-ui-button-getClassList",
-      "contents": "cmp.getDef().getHelper().getClassList(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-button-updateStatefulClasses",
-      "contents": "cmp.getDef().getHelper().updateStatefulClasses(${1:cmp})"
     },
     {
       "trigger": "helper-ui-carousel-initialize",
@@ -942,8 +910,8 @@
       "contents": "cmp.getDef().getHelper().onPageSelected(${1:cmp},${2:evt})"
     },
     {
-      "trigger": "helper-ui-checkboxMenuItem-setSelected",
-      "contents": "cmp.getDef().getHelper().setSelected(${1:component})"
+      "trigger": "helper-ui-checkboxMenuItem-buildBody",
+      "contents": "cmp.getDef().getHelper().buildBody(${1:cmp})"
     },
     {
       "trigger": "helper-ui-dataGrid-initializeCaches",
@@ -1086,12 +1054,12 @@
       "contents": "cmp.getDef().getHelper().generateNewItemShape(${1:concrete})"
     },
     {
-      "trigger": "helper-ui-dataGridColumn-intialize",
-      "contents": "cmp.getDef().getHelper().intialize(${1:cmp})"
+      "trigger": "helper-ui-dataGridColumn-initialize",
+      "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-dataGridColumn-intializeDefaultOutputComponent",
-      "contents": "cmp.getDef().getHelper().intializeDefaultOutputComponent(${1:cmp})"
+      "trigger": "helper-ui-dataGridColumn-initializeDefaultOutputComponent",
+      "contents": "cmp.getDef().getHelper().initializeDefaultOutputComponent(${1:cmp})"
     },
     {
       "trigger": "helper-ui-dataGridColumn-updateNameRef",
@@ -1150,6 +1118,30 @@
       "contents": "cmp.getDef().getHelper().invokeProvide(${1:component})"
     },
     {
+      "trigger": "helper-ui-dataTableHeader-initialize",
+      "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-dataTableHeader-initializeDefaultOutputComponent",
+      "contents": "cmp.getDef().getHelper().initializeDefaultOutputComponent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-dataTableHeader-updateNameRef",
+      "contents": "cmp.getDef().getHelper().updateNameRef(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-dataTableHeader-wireComponentDefRef",
+      "contents": "cmp.getDef().getHelper().wireComponentDefRef(${1:cmp},${2:defRef})"
+    },
+    {
+      "trigger": "helper-ui-dataTableHeader-createPropertyReference",
+      "contents": "cmp.getDef().getHelper().createPropertyReference(${1:descriptor},${2:path})"
+    },
+    {
+      "trigger": "helper-ui-dataTableHeader-toggleSort",
+      "contents": "cmp.getDef().getHelper().toggleSort(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-dataWriter-handleItemsChange",
       "contents": "cmp.getDef().getHelper().handleItemsChange(${1:cmp})"
     },
@@ -1166,48 +1158,40 @@
       "contents": "cmp.getDef().getHelper().attachToDocumentBody(${1:component})"
     },
     {
+      "trigger": "helper-ui-datePicker-show",
+      "contents": "cmp.getDef().getHelper().show(${1:component},${2:event})"
+    },
+    {
       "trigger": "helper-ui-datePicker-focusDate",
       "contents": "cmp.getDef().getHelper().focusDate(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-getOnClickEndFunction",
-      "contents": "cmp.getDef().getHelper().getOnClickEndFunction(${1:component})"
+      "trigger": "helper-ui-datePicker-goToPrevMonth",
+      "contents": "cmp.getDef().getHelper().goToPrevMonth(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-getOnClickEventProp",
-      "contents": "cmp.getDef().getHelper().getOnClickEventProp(${1:prop})"
+      "trigger": "helper-ui-datePicker-goToNextMonth",
+      "contents": "cmp.getDef().getHelper().goToNextMonth(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-getOnClickStartFunction",
-      "contents": "cmp.getDef().getHelper().getOnClickStartFunction(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-goToNextYear",
-      "contents": "cmp.getDef().getHelper().goToNextYear(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-goToPrevYear",
-      "contents": "cmp.getDef().getHelper().goToPrevYear(${1:component})"
+      "trigger": "helper-ui-datePicker-changeCalendar",
+      "contents": "cmp.getDef().getHelper().changeCalendar(${1:component},${2:monthChange},${3:yearChange})"
     },
     {
       "trigger": "helper-ui-datePicker-handleKeydown",
       "contents": "cmp.getDef().getHelper().handleKeydown(${1:component},${2:event})"
     },
     {
+      "trigger": "helper-ui-datePicker-updateGlobalEventListeners",
+      "contents": "cmp.getDef().getHelper().updateGlobalEventListeners(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-getOnClickFunction",
+      "contents": "cmp.getDef().getHelper().getOnClickFunction(${1:component})"
+    },
+    {
       "trigger": "helper-ui-datePicker-isElementInComponent",
       "contents": "cmp.getDef().getHelper().isElementInComponent(${1:component},${2:targetElem})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-localizeToday",
-      "contents": "cmp.getDef().getHelper().localizeToday(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-getNormalizedLang",
-      "contents": "cmp.getDef().getHelper().getNormalizedLang(${1:})"
-    },
-    {
-      "trigger": "helper-ui-datePicker-handleWinResize",
-      "contents": "cmp.getDef().getHelper().handleWinResize(${1:component})"
     },
     {
       "trigger": "helper-ui-datePicker-position",
@@ -1218,48 +1202,204 @@
       "contents": "cmp.getDef().getHelper().shouldFlip(${1:element},${2:targetElement})"
     },
     {
+      "trigger": "helper-ui-datePicker-shouldAlignToRight",
+      "contents": "cmp.getDef().getHelper().shouldAlignToRight(${1:element},${2:targetElement})"
+    },
+    {
       "trigger": "helper-ui-datePicker-refreshYearSelection",
       "contents": "cmp.getDef().getHelper().refreshYearSelection(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-setGridInitialValue",
-      "contents": "cmp.getDef().getHelper().setGridInitialValue(${1:component})"
+      "trigger": "helper-ui-datePicker-setInitialValuesOnChildren",
+      "contents": "cmp.getDef().getHelper().setInitialValuesOnChildren(${1:component})"
     },
     {
-      "trigger": "helper-ui-datePicker-setTitleTag",
-      "contents": "cmp.getDef().getHelper().setTitleTag(${1:component})"
+      "trigger": "helper-ui-datePicker-setGridValue",
+      "contents": "cmp.getDef().getHelper().setGridValue(${1:component},${2:value})"
     },
     {
-      "trigger": "helper-ui-datePicker-updateGlobalEventListeners",
-      "contents": "cmp.getDef().getHelper().updateGlobalEventListeners(${1:component})"
+      "trigger": "helper-ui-datePicker-setInitialFocus",
+      "contents": "cmp.getDef().getHelper().setInitialFocus(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-setTimePickerInitialValues",
+      "contents": "cmp.getDef().getHelper().setTimePickerInitialValues(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-initializeMonthYear",
+      "contents": "cmp.getDef().getHelper().initializeMonthYear(${1:component},${2:value})"
     },
     {
       "trigger": "helper-ui-datePicker-updateMonthYear",
-      "contents": "cmp.getDef().getHelper().updateMonthYear(${1:component},${2:value})"
+      "contents": "cmp.getDef().getHelper().updateMonthYear(${1:component},${2:date})"
     },
     {
-      "trigger": "helper-ui-datePicker-updateMobileMonthYear",
-      "contents": "cmp.getDef().getHelper().updateMobileMonthYear(${1:component})"
+      "trigger": "helper-ui-datePicker-updateMobileMonth",
+      "contents": "cmp.getDef().getHelper().updateMobileMonth(${1:component},${2:date})"
     },
     {
       "trigger": "helper-ui-datePicker-yearChange",
       "contents": "cmp.getDef().getHelper().yearChange(${1:component})"
     },
     {
+      "trigger": "helper-ui-datePicker-toggleVisibility",
+      "contents": "cmp.getDef().getHelper().toggleVisibility(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-closeOnClickOut",
+      "contents": "cmp.getDef().getHelper().closeOnClickOut(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-hideOnSelect",
+      "contents": "cmp.getDef().getHelper().hideOnSelect(${1:component})"
+    },
+    {
       "trigger": "helper-ui-datePicker-hide",
       "contents": "cmp.getDef().getHelper().hide(${1:component},${2:shouldFocusReferenceElem})"
     },
     {
-      "trigger": "helper-ui-datePickerGrid-changeCalendar",
-      "contents": "cmp.getDef().getHelper().changeCalendar(${1:component},${2:localId},${3:deltaMonth},${4:deltaYear})"
+      "trigger": "helper-ui-datePicker-getDateStringFromGrid",
+      "contents": "cmp.getDef().getHelper().getDateStringFromGrid(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-setDate",
+      "contents": "cmp.getDef().getHelper().setDate(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-setDateTime",
+      "contents": "cmp.getDef().getHelper().setDateTime(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePicker-unposition",
+      "contents": "cmp.getDef().getHelper().unposition(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-initializeGrid",
+      "contents": "cmp.getDef().getHelper().initializeGrid(${1:component},${2:todayString})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-setCalendarAttributes",
+      "contents": "cmp.getDef().getHelper().setCalendarAttributes(${1:component},${2:date})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-localizeToday",
+      "contents": "cmp.getDef().getHelper().localizeToday(${1:component})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-changeMonthYear",
       "contents": "cmp.getDef().getHelper().changeMonthYear(${1:component},${2:monthChange},${3:yearChange},${4:date})"
     },
     {
-      "trigger": "helper-ui-datePickerGrid-dateCompare",
-      "contents": "cmp.getDef().getHelper().dateCompare(${1:date1},${2:date2})"
+      "trigger": "helper-ui-datePickerGrid-changeRenderedCalendar",
+      "contents": "cmp.getDef().getHelper().changeRenderedCalendar(${1:component},${2:newDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-highlightRange",
+      "contents": "cmp.getDef().getHelper().highlightRange(${1:component},${2:rangeStart},${3:rangeEnd},${4:highlightClass})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-createCalendarHeader",
+      "contents": "cmp.getDef().getHelper().createCalendarHeader(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-createCalendarBody",
+      "contents": "cmp.getDef().getHelper().createCalendarBody(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-addRowComponents",
+      "contents": "cmp.getDef().getHelper().addRowComponents(${1:component},${2:rowComponents},${3:calendarBody})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-updateCalendar",
+      "contents": "cmp.getDef().getHelper().updateCalendar(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-calculateCellAttributes",
+      "contents": "cmp.getDef().getHelper().calculateCellAttributes(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-goToFirstOfMonth",
+      "contents": "cmp.getDef().getHelper().goToFirstOfMonth(${1:component},${2:highlightedDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-goToLastOfMonth",
+      "contents": "cmp.getDef().getHelper().goToLastOfMonth(${1:component},${2:highlightedDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-handlePageKey",
+      "contents": "cmp.getDef().getHelper().handlePageKey(${1:component},${2:highlightedDate},${3:deltaMonth},${4:deltaYear})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-handleArrowKey",
+      "contents": "cmp.getDef().getHelper().handleArrowKey(${1:component},${2:highlightedDate},${3:deltaDays})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-fireHideEvent",
+      "contents": "cmp.getDef().getHelper().fireHideEvent(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-setKeyboardEventHandlers",
+      "contents": "cmp.getDef().getHelper().setKeyboardEventHandlers(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-removeKeyboardEventHandlers",
+      "contents": "cmp.getDef().getHelper().removeKeyboardEventHandlers(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getKeyboardInteractionHandler",
+      "contents": "cmp.getDef().getHelper().getKeyboardInteractionHandler(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-handleKeyboardSelect",
+      "contents": "cmp.getDef().getHelper().handleKeyboardSelect(${1:component},${2:selectedDateString})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-handleDateCellSelected",
+      "contents": "cmp.getDef().getHelper().handleDateCellSelected(${1:component},${2:selectedDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-selectDate",
+      "contents": "cmp.getDef().getHelper().selectDate(${1:component},${2:newSelectedDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-focusDate",
+      "contents": "cmp.getDef().getHelper().focusDate(${1:component},${2:date})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-findDateComponent",
+      "contents": "cmp.getDef().getHelper().findDateComponent(${1:component},${2:date})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-updateTitle",
+      "contents": "cmp.getDef().getHelper().updateTitle(${1:component},${2:month},${3:year})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getNameOfWeekDays",
+      "contents": "cmp.getDef().getHelper().getNameOfWeekDays(${1:})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-createCalendar",
+      "contents": "cmp.getDef().getHelper().createCalendar(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getToday",
+      "contents": "cmp.getDef().getHelper().getToday(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getHighlightedDate",
+      "contents": "cmp.getDef().getHelper().getHighlightedDate(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getChangeInMonthYear",
+      "contents": "cmp.getDef().getHelper().getChangeInMonthYear(${1:component},${2:newDate})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getCalendarStartDate",
+      "contents": "cmp.getDef().getHelper().getCalendarStartDate(${1:component},${2:month},${3:year})"
+    },
+    {
+      "trigger": "helper-ui-datePickerGrid-getDateFromString",
+      "contents": "cmp.getDef().getHelper().getDateFromString(${1:date})"
     },
     {
       "trigger": "helper-ui-datePickerGrid-dateEquals",
@@ -1270,72 +1410,16 @@
       "contents": "cmp.getDef().getHelper().dateInRange(${1:date},${2:rangeStart},${3:rangeEnd})"
     },
     {
-      "trigger": "helper-ui-datePickerGrid-findDateComponent",
-      "contents": "cmp.getDef().getHelper().findDateComponent(${1:component},${2:date})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-generateMonth",
-      "contents": "cmp.getDef().getHelper().generateMonth(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-getEventTarget",
-      "contents": "cmp.getDef().getHelper().getEventTarget(${1:e})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-goToFirstOfMonth",
-      "contents": "cmp.getDef().getHelper().goToFirstOfMonth(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-goToLastOfMonth",
-      "contents": "cmp.getDef().getHelper().goToLastOfMonth(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-handleArrowKey",
-      "contents": "cmp.getDef().getHelper().handleArrowKey(${1:component},${2:localId},${3:deltaDays})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-fireHideEvent",
-      "contents": "cmp.getDef().getHelper().fireHideEvent(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-handleKeydown",
-      "contents": "cmp.getDef().getHelper().handleKeydown(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-handleSpaceBar",
-      "contents": "cmp.getDef().getHelper().handleSpaceBar(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-renderGrid",
-      "contents": "cmp.getDef().getHelper().renderGrid(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-selectDate",
-      "contents": "cmp.getDef().getHelper().selectDate(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-setFocus",
-      "contents": "cmp.getDef().getHelper().setFocus(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-updateTitle",
-      "contents": "cmp.getDef().getHelper().updateTitle(${1:component},${2:month},${3:year})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-getDateFromString",
-      "contents": "cmp.getDef().getHelper().getDateFromString(${1:date})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-clearSelectStyles",
-      "contents": "cmp.getDef().getHelper().clearSelectStyles(${1:tdNode},${2:dayOfWeek})"
-    },
-    {
-      "trigger": "helper-ui-datePickerGrid-updateNameOfWeekDays",
-      "contents": "cmp.getDef().getHelper().updateNameOfWeekDays(${1:component})"
-    },
-    {
       "trigger": "helper-ui-dayInMonthCell-updateCell",
       "contents": "cmp.getDef().getHelper().updateCell(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-dayInMonthCell-setCalendarAttributes",
+      "contents": "cmp.getDef().getHelper().setCalendarAttributes(${1:component},${2:config})"
+    },
+    {
+      "trigger": "helper-ui-dayInMonthCell-dateCellSelected",
+      "contents": "cmp.getDef().getHelper().dateCellSelected(${1:component})"
     },
     {
       "trigger": "helper-ui-dialogButtons-confirmOrCancel",
@@ -1622,6 +1706,10 @@
       "contents": "cmp.getDef().getHelper().closeRowBlockAndReset(${1:cmp},${2:body},${3:useTransition})"
     },
     {
+      "trigger": "helper-ui-infiniteList-updateAttributes",
+      "contents": "cmp.getDef().getHelper().updateAttributes(${1:row},${2:isOpen})"
+    },
+    {
       "trigger": "helper-ui-infiniteList-isBlocked",
       "contents": "cmp.getDef().getHelper().isBlocked(${1:cmp})"
     },
@@ -1682,8 +1770,56 @@
       "contents": "cmp.getDef().getHelper().createAndDispatch(${1:el},${2:name},${3:detail})"
     },
     {
+      "trigger": "helper-ui-inlineEditPanelBody-submit",
+      "contents": "cmp.getDef().getHelper().submit(${1:cmp},${2:closeBehavior})"
+    },
+    {
+      "trigger": "helper-ui-inlineEditPanelBody-_submit",
+      "contents": "cmp.getDef().getHelper()._submit(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inlineEditPanelBody-updateNestedMap",
+      "contents": "cmp.getDef().getHelper().updateNestedMap(${1:inputMap},${2:name},${3:value})"
+    },
+    {
+      "trigger": "helper-ui-inlinePanel-_getHandler",
+      "contents": "cmp.getDef().getHelper()._getHandler(${1:cmp},${2:type})"
+    },
+    {
+      "trigger": "helper-ui-inlinePanel-hide",
+      "contents": "cmp.getDef().getHelper().hide(${1:cmp},${2:callback})"
+    },
+    {
+      "trigger": "helper-ui-inlinePanel-show",
+      "contents": "cmp.getDef().getHelper().show(${1:cmp},${2:callback})"
+    },
+    {
+      "trigger": "helper-ui-inlinePanel-close",
+      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback})"
+    },
+    {
       "trigger": "helper-ui-input-buildBody",
       "contents": "cmp.getDef().getHelper().buildBody(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-input-addLabelToBody",
+      "contents": "cmp.getDef().getHelper().addLabelToBody(${1:component},${2:labelAttribute})"
+    },
+    {
+      "trigger": "helper-ui-input-addLegendToBody",
+      "contents": "cmp.getDef().getHelper().addLegendToBody(${1:component},${2:labelAttribute})"
+    },
+    {
+      "trigger": "helper-ui-input-addSpanLabelToBody",
+      "contents": "cmp.getDef().getHelper().addSpanLabelToBody(${1:component},${2:labelAttribute})"
+    },
+    {
+      "trigger": "helper-ui-input-renderFieldHelpComponent",
+      "contents": "cmp.getDef().getHelper().renderFieldHelpComponent(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-input-getGlobalId",
+      "contents": "cmp.getDef().getHelper().getGlobalId(${1:component})"
     },
     {
       "trigger": "helper-ui-input-resetLabelPosition",
@@ -1739,7 +1875,19 @@
     },
     {
       "trigger": "helper-ui-input-updateError",
-      "contents": "cmp.getDef().getHelper().updateError(${1:component},${2:errors})"
+      "contents": "cmp.getDef().getHelper().updateError(${1:cmp},${2:errors})"
+    },
+    {
+      "trigger": "helper-ui-input-_thereIsErrorComponent",
+      "contents": "cmp.getDef().getHelper()._thereIsErrorComponent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-input-_updateErrorComponent",
+      "contents": "cmp.getDef().getHelper()._updateErrorComponent(${1:cmp},${2:errors})"
+    },
+    {
+      "trigger": "helper-ui-input-_createDefaultErrorComponent",
+      "contents": "cmp.getDef().getHelper()._createDefaultErrorComponent(${1:cmp},${2:errors})"
     },
     {
       "trigger": "helper-ui-input-updateAriaDescribedBy",
@@ -1798,40 +1946,28 @@
       "contents": "cmp.getDef().getHelper().updateAriaRequired(${1:component})"
     },
     {
+      "trigger": "helper-ui-input-shouldShowError",
+      "contents": "cmp.getDef().getHelper().shouldShowError(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputCheckbox-getDomElementValue",
       "contents": "cmp.getDef().getHelper().getDomElementValue(${1:element})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-isNumberInRange",
-      "contents": "cmp.getDef().getHelper().isNumberInRange(${1:number},${2:cmp})"
+      "trigger": "helper-ui-inputCurrency-setDefaultAttrs",
+      "contents": "cmp.getDef().getHelper().setDefaultAttrs(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-isValueValid",
-      "contents": "cmp.getDef().getHelper().isValueValid(${1:number},${2:formatter})"
+      "trigger": "helper-ui-inputCurrency-doUpdate",
+      "contents": "cmp.getDef().getHelper().doUpdate(${1:})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-handleNewValue",
-      "contents": "cmp.getDef().getHelper().handleNewValue(${1:cmp})"
+      "trigger": "helper-ui-inputDate-init",
+      "contents": "cmp.getDef().getHelper().init(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputCurrency-setAttributes",
-      "contents": "cmp.getDef().getHelper().setAttributes(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-inputCurrency-getElementInput",
-      "contents": "cmp.getDef().getHelper().getElementInput(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-inputCurrency-setInvalidValueError",
-      "contents": "cmp.getDef().getHelper().setInvalidValueError(${1:cmp},${2:value})"
-    },
-    {
-      "trigger": "helper-ui-inputCurrency-removeErrors",
-      "contents": "cmp.getDef().getHelper().removeErrors(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-inputCurrency-setValue",
-      "contents": "cmp.getDef().getHelper().setValue(${1:cmp},${2:newValue},${3:isFromOutside})"
+      "trigger": "helper-ui-inputDate-cacheDefaultValues",
+      "contents": "cmp.getDef().getHelper().cacheDefaultValues(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDate-displayValue",
@@ -1839,7 +1975,7 @@
     },
     {
       "trigger": "helper-ui-inputDate-displayDatePicker",
-      "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
+      "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component},${2:focusDatePicker})"
     },
     {
       "trigger": "helper-ui-inputDate-doUpdate",
@@ -1850,20 +1986,56 @@
       "contents": "cmp.getDef().getHelper().getInputElement(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputDate-getDateValueForDatePicker",
+      "contents": "cmp.getDef().getHelper().getDateValueForDatePicker(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputDate-getDateString",
       "contents": "cmp.getDef().getHelper().getDateString(${1:date})"
     },
     {
-      "trigger": "helper-ui-inputDate-toggleClearButton",
-      "contents": "cmp.getDef().getHelper().toggleClearButton(${1:component})"
+      "trigger": "helper-ui-inputDate-togglePickerIcon",
+      "contents": "cmp.getDef().getHelper().togglePickerIcon(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputDate-toggleOpenIconVisibility",
-      "contents": "cmp.getDef().getHelper().toggleOpenIconVisibility(${1:component})"
+      "trigger": "helper-ui-inputDate-loadDatePicker",
+      "contents": "cmp.getDef().getHelper().loadDatePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-initializeDatePicker",
+      "contents": "cmp.getDef().getHelper().initializeDatePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-checkManagerExists",
+      "contents": "cmp.getDef().getHelper().checkManagerExists(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-registerManager",
+      "contents": "cmp.getDef().getHelper().registerManager(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-openDatepickerWithManager",
+      "contents": "cmp.getDef().getHelper().openDatepickerWithManager(${1:component},${2:focusDatePicker},${3:toggleVisibility})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-handleDateSelectionByManager",
+      "contents": "cmp.getDef().getHelper().handleDateSelectionByManager(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-setInputValue",
+      "contents": "cmp.getDef().getHelper().setInputValue(${1:component},${2:displayValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDate-handlePickerTab",
+      "contents": "cmp.getDef().getHelper().handlePickerTab(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-inputDateHtml-formatValue",
       "contents": "cmp.getDef().getHelper().formatValue(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateHtml-setInputValue",
+      "contents": "cmp.getDef().getHelper().setInputValue(${1:component},${2:displayValue})"
     },
     {
       "trigger": "helper-ui-inputDateRange-openStartDatePicker",
@@ -1914,20 +2086,20 @@
       "contents": "cmp.getDef().getHelper().getDateFromString(${1:date})"
     },
     {
+      "trigger": "helper-ui-inputDateTime-init",
+      "contents": "cmp.getDef().getHelper().init(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-cacheDefaultValues",
+      "contents": "cmp.getDef().getHelper().cacheDefaultValues(${1:component})"
+    },
+    {
       "trigger": "helper-ui-inputDateTime-displayDatePicker",
-      "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
+      "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component},${2:focusDatePicker})"
     },
     {
       "trigger": "helper-ui-inputDateTime-displayTimePicker",
-      "contents": "cmp.getDef().getHelper().displayTimePicker(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-inputDateTime-displayDateTime",
-      "contents": "cmp.getDef().getHelper().displayDateTime(${1:component},${2:dateDisplayValue},${3:timeDisplayValue})"
-    },
-    {
-      "trigger": "helper-ui-inputDateTime-addInputClass",
-      "contents": "cmp.getDef().getHelper().addInputClass(${1:component})"
+      "contents": "cmp.getDef().getHelper().displayTimePicker(${1:component},${2:focusTimePicker})"
     },
     {
       "trigger": "helper-ui-inputDateTime-addDomHandler",
@@ -1938,8 +2110,8 @@
       "contents": "cmp.getDef().getHelper().handleUpdate(${1:component},${2:event})"
     },
     {
-      "trigger": "helper-ui-inputDateTime-formatDateTime",
-      "contents": "cmp.getDef().getHelper().formatDateTime(${1:component})"
+      "trigger": "helper-ui-inputDateTime-displayValue",
+      "contents": "cmp.getDef().getHelper().displayValue(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDateTime-getUTCDateString",
@@ -1951,11 +2123,51 @@
     },
     {
       "trigger": "helper-ui-inputDateTime-popUpDatePicker",
-      "contents": "cmp.getDef().getHelper().popUpDatePicker(${1:component},${2:date})"
+      "contents": "cmp.getDef().getHelper().popUpDatePicker(${1:component},${2:date},${3:focusDatePicker})"
     },
     {
-      "trigger": "helper-ui-inputDateTime-toggleClearButton",
-      "contents": "cmp.getDef().getHelper().toggleClearButton(${1:component})"
+      "trigger": "helper-ui-inputDateTime-popupTimePicker",
+      "contents": "cmp.getDef().getHelper().popupTimePicker(${1:component},${2:hours},${3:minutes},${4:focusTimePicker})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-loadDatePicker",
+      "contents": "cmp.getDef().getHelper().loadDatePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-loadTimePicker",
+      "contents": "cmp.getDef().getHelper().loadTimePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-initializeDatePicker",
+      "contents": "cmp.getDef().getHelper().initializeDatePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-initializeTimePicker",
+      "contents": "cmp.getDef().getHelper().initializeTimePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-checkManagerExists",
+      "contents": "cmp.getDef().getHelper().checkManagerExists(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-registerManager",
+      "contents": "cmp.getDef().getHelper().registerManager(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-openDatepickerWithManager",
+      "contents": "cmp.getDef().getHelper().openDatepickerWithManager(${1:component},${2:currentDate},${3:focusDatePicker},${4:toggleVisibility})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-handleDateSelectionByManager",
+      "contents": "cmp.getDef().getHelper().handleDateSelectionByManager(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-togglePickerIcon",
+      "contents": "cmp.getDef().getHelper().togglePickerIcon(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-handleDateTimeSelection",
+      "contents": "cmp.getDef().getHelper().handleDateTimeSelection(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-inputDateTime-setDateValue",
@@ -1967,19 +2179,23 @@
     },
     {
       "trigger": "helper-ui-inputDateTime-setDateTimeValue",
-      "contents": "cmp.getDef().getHelper().setDateTimeValue(${1:component},${2:dateString},${3:timeString},${4:langLocale})"
+      "contents": "cmp.getDef().getHelper().setDateTimeValue(${1:component},${2:dateString},${3:timeString})"
     },
     {
       "trigger": "helper-ui-inputDateTime-updateTimeFormat",
       "contents": "cmp.getDef().getHelper().updateTimeFormat(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputDateTime-getDateTime",
-      "contents": "cmp.getDef().getHelper().getDateTime(${1:component},${2:langLocale},${3:dateString},${4:timeString})"
+      "trigger": "helper-ui-inputDateTime-setPlaceHolder",
+      "contents": "cmp.getDef().getHelper().setPlaceHolder(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputDateTime-getDateTimeString",
-      "contents": "cmp.getDef().getHelper().getDateTimeString(${1:component})"
+      "trigger": "helper-ui-inputDateTime-getDateValueForDatePicker",
+      "contents": "cmp.getDef().getHelper().getDateValueForDatePicker(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-getDateTime",
+      "contents": "cmp.getDef().getHelper().getDateTime(${1:component},${2:dateString},${3:timeString})"
     },
     {
       "trigger": "helper-ui-inputDateTime-getDateString",
@@ -1990,12 +2206,36 @@
       "contents": "cmp.getDef().getHelper().getTimeString(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputDateTime-isDesktopMode",
-      "contents": "cmp.getDef().getHelper().isDesktopMode(${1:component})"
+      "trigger": "helper-ui-inputDateTime-displayDate",
+      "contents": "cmp.getDef().getHelper().displayDate(${1:component},${2:dateDisplayValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-displayTime",
+      "contents": "cmp.getDef().getHelper().displayTime(${1:component},${2:timeDisplayValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-formatDateString",
+      "contents": "cmp.getDef().getHelper().formatDateString(${1:component},${2:dateString})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-formatTimeString",
+      "contents": "cmp.getDef().getHelper().formatTimeString(${1:component},${2:hours},${3:minutes})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-shouldUpdateDisplayValue",
+      "contents": "cmp.getDef().getHelper().shouldUpdateDisplayValue(${1:component})"
     },
     {
       "trigger": "helper-ui-inputDateTime-parseDateTimeInput",
       "contents": "cmp.getDef().getHelper().parseDateTimeInput(${1:isUTC},${2:component},${3:dateValue},${4:timeValue})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-handlePickerTab",
+      "contents": "cmp.getDef().getHelper().handlePickerTab(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputDateTime-shouldShowError",
+      "contents": "cmp.getDef().getHelper().shouldShowError(${1:})"
     },
     {
       "trigger": "helper-ui-inputDateTimeHtml-formatValue",
@@ -2010,16 +2250,136 @@
       "contents": "cmp.getDef().getHelper().displayDatePicker(${1:component})"
     },
     {
-      "trigger": "helper-ui-inputNumber-getNumber",
-      "contents": "cmp.getDef().getHelper().getNumber(${1:cmp})"
+      "trigger": "helper-ui-inputFile-updateInputFile",
+      "contents": "cmp.getDef().getHelper().updateInputFile(${1:cmp},${2:files})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-updateFilesAttr",
+      "contents": "cmp.getDef().getHelper().updateFilesAttr(${1:cmp},${2:files})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-attachFormElement",
+      "contents": "cmp.getDef().getHelper().attachFormElement(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-getFormElement",
+      "contents": "cmp.getDef().getHelper().getFormElement(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-customBody",
+      "contents": "cmp.getDef().getHelper().customBody(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-findAllHelperCmps",
+      "contents": "cmp.getDef().getHelper().findAllHelperCmps(${1:body})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-isValidHelperCmp",
+      "contents": "cmp.getDef().getHelper().isValidHelperCmp(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-storeHelperCmpRefs",
+      "contents": "cmp.getDef().getHelper().storeHelperCmpRefs(${1:cmp},${2:refs})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-thereIsHelperCmps",
+      "contents": "cmp.getDef().getHelper().thereIsHelperCmps(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-setCmpContext",
+      "contents": "cmp.getDef().getHelper().setCmpContext(${1:cmp},${2:cmpRef})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-updateHelperCmpContext",
+      "contents": "cmp.getDef().getHelper().updateHelperCmpContext(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-getMappedFiles",
+      "contents": "cmp.getDef().getHelper().getMappedFiles(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-registerActions",
+      "contents": "cmp.getDef().getHelper().registerActions(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFile-fireChangeEvent",
+      "contents": "cmp.getDef().getHelper().fireChangeEvent(${1:cmp},${2:files})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-setElementOverStyleClass",
+      "contents": "cmp.getDef().getHelper().setElementOverStyleClass(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-removeElementOverStyleClass",
+      "contents": "cmp.getDef().getHelper().removeElementOverStyleClass(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-setDropZoneClassNames",
+      "contents": "cmp.getDef().getHelper().setDropZoneClassNames(${1:cmp},${2:obj})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-thereAreFiles",
+      "contents": "cmp.getDef().getHelper().thereAreFiles(${1:dragEvent})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-filesAreValid",
+      "contents": "cmp.getDef().getHelper().filesAreValid(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-meetsMultipleConditions",
+      "contents": "cmp.getDef().getHelper().meetsMultipleConditions(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-meetsAcceptAndSizeConditions",
+      "contents": "cmp.getDef().getHelper().meetsAcceptAndSizeConditions(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-_getFileArr",
+      "contents": "cmp.getDef().getHelper()._getFileArr(${1:dragEvent})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-_fileMeetsSize",
+      "contents": "cmp.getDef().getHelper()._fileMeetsSize(${1:file},${2:size})"
+    },
+    {
+      "trigger": "helper-ui-inputFileDroppableZone-fireDropEvent",
+      "contents": "cmp.getDef().getHelper().fireDropEvent(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFileOpenBrowse-createHTMLElement",
+      "contents": "cmp.getDef().getHelper().createHTMLElement(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFileOpenBrowse-createInputFileElementAndSetListener",
+      "contents": "cmp.getDef().getHelper().createInputFileElementAndSetListener(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputFileOpenBrowse-handleChangeEvent",
+      "contents": "cmp.getDef().getHelper().handleChangeEvent(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-inputFileOpenBrowse-_meetsSizeConditions",
+      "contents": "cmp.getDef().getHelper()._meetsSizeConditions(${1:cmp},${2:files})"
+    },
+    {
+      "trigger": "helper-ui-inputFileOpenBrowse-_getFilesArr",
+      "contents": "cmp.getDef().getHelper()._getFilesArr(${1:files})"
+    },
+    {
+      "trigger": "helper-ui-inputNumber-setDefaultAttrs",
+      "contents": "cmp.getDef().getHelper().setDefaultAttrs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputNumber-doUpdate",
+      "contents": "cmp.getDef().getHelper().doUpdate(${1:})"
+    },
+    {
+      "trigger": "helper-ui-inputPercent-setDefaultAttrs",
+      "contents": "cmp.getDef().getHelper().setDefaultAttrs(${1:cmp})"
     },
     {
       "trigger": "helper-ui-inputPercent-doUpdate",
-      "contents": "cmp.getDef().getHelper().doUpdate(${1:component},${2:value})"
-    },
-    {
-      "trigger": "helper-ui-inputPercent-getNumber",
-      "contents": "cmp.getDef().getHelper().getNumber(${1:component})"
+      "contents": "cmp.getDef().getHelper().doUpdate(${1:})"
     },
     {
       "trigger": "helper-ui-inputRadio-getDomElementValue",
@@ -2039,7 +2399,7 @@
     },
     {
       "trigger": "helper-ui-inputRichText-initEditor",
-      "contents": "cmp.getDef().getHelper().initEditor(${1:cmp})"
+      "contents": "cmp.getDef().getHelper().initEditor(${1:cmp},${2:callback})"
     },
     {
       "trigger": "helper-ui-inputRichText-isLibraryLoaded",
@@ -2072,6 +2432,10 @@
     {
       "trigger": "helper-ui-inputRichText-getLocale",
       "contents": "cmp.getDef().getHelper().getLocale(${1:})"
+    },
+    {
+      "trigger": "helper-ui-inputRichText-_HTMLEntities",
+      "contents": "cmp.getDef().getHelper()._HTMLEntities(${1:str})"
     },
     {
       "trigger": "helper-ui-inputRichText-getEditorConfig",
@@ -2114,6 +2478,10 @@
       "contents": "cmp.getDef().getHelper().init(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-inputSelect-updateMenuListWidth",
+      "contents": "cmp.getDef().getHelper().updateMenuListWidth(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-inputSelect-getDomElementValue",
       "contents": "cmp.getDef().getHelper().getDomElementValue(${1:el})"
     },
@@ -2122,8 +2490,16 @@
       "contents": "cmp.getDef().getHelper().getOptionsWithStrategy(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-inputSelect-getOptionsFromBody",
-      "contents": "cmp.getDef().getHelper().getOptionsFromBody(${1:body})"
+      "trigger": "helper-ui-inputSelect-menuOptionSelected",
+      "contents": "cmp.getDef().getHelper().menuOptionSelected(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSelect-createMenuItems",
+      "contents": "cmp.getDef().getHelper().createMenuItems(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSelect-updateMenuLabel",
+      "contents": "cmp.getDef().getHelper().updateMenuLabel(${1:cmp})"
     },
     {
       "trigger": "helper-ui-inputSelect-updateOptionsFromValue",
@@ -2150,8 +2526,108 @@
       "contents": "cmp.getDef().getHelper().getInternalText(${1:option})"
     },
     {
+      "trigger": "helper-ui-inputSmartNumber-setDefaultAttrs",
+      "contents": "cmp.getDef().getHelper().setDefaultAttrs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-setDefaultStyle",
+      "contents": "cmp.getDef().getHelper().setDefaultStyle(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-setDefaultFormat",
+      "contents": "cmp.getDef().getHelper().setDefaultFormat(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-setDefaultUpdateOn",
+      "contents": "cmp.getDef().getHelper().setDefaultUpdateOn(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-isNumberInRange",
+      "contents": "cmp.getDef().getHelper().isNumberInRange(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-isValidValue",
+      "contents": "cmp.getDef().getHelper().isValidValue(${1:number},${2:formatter})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-isInputValueValid",
+      "contents": "cmp.getDef().getHelper().isInputValueValid(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-isFormattedValue",
+      "contents": "cmp.getDef().getHelper().isFormattedValue(${1:string},${2:formatter})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-isPercentStyle",
+      "contents": "cmp.getDef().getHelper().isPercentStyle(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-hasInputElementFocus",
+      "contents": "cmp.getDef().getHelper().hasInputElementFocus(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-weHaveToUpdate",
+      "contents": "cmp.getDef().getHelper().weHaveToUpdate(${1:cmp},${2:eventType})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-handleNewValue",
+      "contents": "cmp.getDef().getHelper().handleNewValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-setValueEmpty",
+      "contents": "cmp.getDef().getHelper().setValueEmpty(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-formatInputValue",
+      "contents": "cmp.getDef().getHelper().formatInputValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-convertInputValueToInternalValue",
+      "contents": "cmp.getDef().getHelper().convertInputValueToInternalValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-getScaledValue",
+      "contents": "cmp.getDef().getHelper().getScaledValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-getUnScaledValue",
+      "contents": "cmp.getDef().getHelper().getUnScaledValue(${1:cmp},${2:inputValue})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-updateLastInputValue",
+      "contents": "cmp.getDef().getHelper().updateLastInputValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-restoreLastInputValue",
+      "contents": "cmp.getDef().getHelper().restoreLastInputValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-getElementInput",
+      "contents": "cmp.getDef().getHelper().getElementInput(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-setNewValue",
+      "contents": "cmp.getDef().getHelper().setNewValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-fireChangeEvent",
+      "contents": "cmp.getDef().getHelper().fireChangeEvent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-hasChangedValue",
+      "contents": "cmp.getDef().getHelper().hasChangedValue(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-inputSmartNumber-removeSymbols",
+      "contents": "cmp.getDef().getHelper().removeSymbols(${1:string})"
+    },
+    {
       "trigger": "helper-ui-inputTextArea-setDomElementValue",
       "contents": "cmp.getDef().getHelper().setDomElementValue(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-inputTimePicker-show",
+      "contents": "cmp.getDef().getHelper().show(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-inputTimePicker-position",
@@ -2198,6 +2674,10 @@
       "contents": "cmp.getDef().getHelper().scrollToSelectedTime(${1:component})"
     },
     {
+      "trigger": "helper-ui-inputTimePicker-focusElement",
+      "contents": "cmp.getDef().getHelper().focusElement(${1:component},${2:element})"
+    },
+    {
       "trigger": "helper-ui-inputTimePicker-setEventHandlers",
       "contents": "cmp.getDef().getHelper().setEventHandlers(${1:component})"
     },
@@ -2228,6 +2708,18 @@
     {
       "trigger": "helper-ui-interactive-addDomHandler",
       "contents": "cmp.getDef().getHelper().addDomHandler(${1:component},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-interactive-getUid",
+      "contents": "cmp.getDef().getHelper().getUid(${1:element})"
+    },
+    {
+      "trigger": "helper-ui-interactive-newUid",
+      "contents": "cmp.getDef().getHelper().newUid(${1:element})"
+    },
+    {
+      "trigger": "helper-ui-interactive-removeDomEventsFromMap",
+      "contents": "cmp.getDef().getHelper().removeDomEventsFromMap(${1:component})"
     },
     {
       "trigger": "helper-ui-interactive-domEventHandler",
@@ -2378,8 +2870,8 @@
       "contents": "cmp.getDef().getHelper().addMenuItemDomEvents(${1:component})"
     },
     {
-      "trigger": "helper-ui-menuItem-fireEvent",
-      "contents": "cmp.getDef().getHelper().fireEvent(${1:component},${2:event},${3:helper})"
+      "trigger": "helper-ui-menuItem-domEventHandler",
+      "contents": "cmp.getDef().getHelper().domEventHandler(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-menuItem-isDisabled",
@@ -2390,28 +2882,8 @@
       "contents": "cmp.getDef().getHelper().fireSelectEvent(${1:component},${2:event},${3:options})"
     },
     {
-      "trigger": "helper-ui-menuItem-handleSpacekeydown",
-      "contents": "cmp.getDef().getHelper().handleSpacekeydown(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-menuItem-preEventFiring",
-      "contents": "cmp.getDef().getHelper().preEventFiring(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-menuItem-setDisabled",
-      "contents": "cmp.getDef().getHelper().setDisabled(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-menuItem-setFocus",
-      "contents": "cmp.getDef().getHelper().setFocus(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-menuItem-getAnchorElement",
-      "contents": "cmp.getDef().getHelper().getAnchorElement(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-menuItem-supportKeyboardInteraction",
-      "contents": "cmp.getDef().getHelper().supportKeyboardInteraction(${1:component},${2:event})"
+      "trigger": "helper-ui-menuItem-focus",
+      "contents": "cmp.getDef().getHelper().focus(${1:component})"
     },
     {
       "trigger": "helper-ui-menuList-setEventHandlersOnChildren",
@@ -2432,10 +2904,6 @@
     {
       "trigger": "helper-ui-menuList-setMenuItemFocus",
       "contents": "cmp.getDef().getHelper().setMenuItemFocus(${1:component},${2:index})"
-    },
-    {
-      "trigger": "helper-ui-menuList-setFocus",
-      "contents": "cmp.getDef().getHelper().setFocus(${1:component},${2:currentlyVisible})"
     },
     {
       "trigger": "helper-ui-menuList-setKeyboardEventHandlers",
@@ -2543,7 +3011,7 @@
     },
     {
       "trigger": "helper-ui-modal-close",
-      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback})"
+      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback},${3:shouldReturnFocus})"
     },
     {
       "trigger": "helper-ui-modal-hide",
@@ -2568,6 +3036,10 @@
     {
       "trigger": "helper-ui-outputDate-formatDate",
       "contents": "cmp.getDef().getHelper().formatDate(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-outputDate-setOutputValue",
+      "contents": "cmp.getDef().getHelper().setOutputValue(${1:component},${2:displayValue})"
     },
     {
       "trigger": "helper-ui-outputDateTime-displayDateTime",
@@ -2610,8 +3082,8 @@
       "contents": "cmp.getDef().getHelper().removeEventHandlers(${1:element})"
     },
     {
-      "trigger": "helper-ui-outputRichText-validate",
-      "contents": "cmp.getDef().getHelper().validate(${1:component})"
+      "trigger": "helper-ui-outputRichText-sanitize",
+      "contents": "cmp.getDef().getHelper().sanitize(${1:component},${2:value})"
     },
     {
       "trigger": "helper-ui-outputRichText-validateElement",
@@ -2634,6 +3106,10 @@
       "contents": "cmp.getDef().getHelper().getDefaultSupportedAttributes(${1:})"
     },
     {
+      "trigger": "helper-ui-outputRichText-escapeAndLinkifyText",
+      "contents": "cmp.getDef().getHelper().escapeAndLinkifyText(${1:component})"
+    },
+    {
       "trigger": "helper-ui-outputText-appendTextElements",
       "contents": "cmp.getDef().getHelper().appendTextElements(${1:textValue},${2:containerEl})"
     },
@@ -2642,8 +3118,8 @@
       "contents": "cmp.getDef().getHelper().removeChildren(${1:element})"
     },
     {
-      "trigger": "helper-ui-outputURL-makeAbsolute",
-      "contents": "cmp.getDef().getHelper().makeAbsolute(${1:url})"
+      "trigger": "helper-ui-outputTextArea-linkifyText",
+      "contents": "cmp.getDef().getHelper().linkifyText(${1:component})"
     },
     {
       "trigger": "helper-ui-outputURL-buildLinkBody",
@@ -2674,6 +3150,10 @@
       "contents": "cmp.getDef().getHelper().init(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-panel-_initCloseBtn",
+      "contents": "cmp.getDef().getHelper()._initCloseBtn(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-panel-_getKeyHandler",
       "contents": "cmp.getDef().getHelper()._getKeyHandler(${1:cmp})"
     },
@@ -2684,6 +3164,10 @@
     {
       "trigger": "helper-ui-panel-_getReferenceElement",
       "contents": "cmp.getDef().getHelper()._getReferenceElement(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-panel-_getRootPanelCmp",
+      "contents": "cmp.getDef().getHelper()._getRootPanelCmp(${1:cmp})"
     },
     {
       "trigger": "helper-ui-panel-show",
@@ -2699,7 +3183,7 @@
     },
     {
       "trigger": "helper-ui-panel-close",
-      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback})"
+      "contents": "cmp.getDef().getHelper().close(${1:cmp},${2:callback},${3:shouldReturnFocus})"
     },
     {
       "trigger": "helper-ui-panel-cleanPositioning",
@@ -2710,220 +3194,48 @@
       "contents": "cmp.getDef().getHelper().position(${1:cmp},${2:referenceEl},${3:callback})"
     },
     {
-      "trigger": "helper-ui-panelDialog-init",
-      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event})"
+      "trigger": "helper-ui-panel-_buildConfig",
+      "contents": "cmp.getDef().getHelper()._buildConfig(${1:cmp},${2:referenceEl})"
     },
     {
-      "trigger": "helper-ui-panelDialog-hide",
-      "contents": "cmp.getDef().getHelper().hide(${1:cmp},${2:event})"
+      "trigger": "helper-ui-panel-_buildClassList",
+      "contents": "cmp.getDef().getHelper()._buildClassList(${1:cmp},${2:config})"
     },
     {
-      "trigger": "helper-ui-panelDialog-show",
-      "contents": "cmp.getDef().getHelper().show(${1:cmp})"
+      "trigger": "helper-ui-panel-_mapRelativeToCardinal",
+      "contents": "cmp.getDef().getHelper()._mapRelativeToCardinal(${1:config})"
     },
     {
-      "trigger": "helper-ui-panelDialog-beforeTransitionEnd",
-      "contents": "cmp.getDef().getHelper().beforeTransitionEnd(${1:})"
+      "trigger": "helper-ui-panel-_createRelationship",
+      "contents": "cmp.getDef().getHelper()._createRelationship(${1:config})"
     },
     {
-      "trigger": "helper-ui-panelDialog-position",
-      "contents": "cmp.getDef().getHelper().position(${1:cmp})"
+      "trigger": "helper-ui-panel-_createConstraints",
+      "contents": "cmp.getDef().getHelper()._createConstraints(${1:cmp},${2:config})"
     },
     {
-      "trigger": "helper-ui-panelDialog-getModalGlassElement",
-      "contents": "cmp.getDef().getHelper().getModalGlassElement(${1:cmp})"
+      "trigger": "helper-ui-panel-scopeScrollables",
+      "contents": "cmp.getDef().getHelper().scopeScrollables(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-panelDialog-getPanelElement",
-      "contents": "cmp.getDef().getHelper().getPanelElement(${1:cmp})"
+      "trigger": "helper-ui-panel-iNoBounce",
+      "contents": "cmp.getDef().getHelper().iNoBounce(${1:el})"
     },
     {
-      "trigger": "helper-ui-panelDialog-close",
-      "contents": "cmp.getDef().getHelper().close(${1:cmp})"
+      "trigger": "helper-ui-panel-enableINoBounce",
+      "contents": "cmp.getDef().getHelper().enableINoBounce(${1:el})"
     },
     {
-      "trigger": "helper-ui-panelDialog-_findContainedComponent",
-      "contents": "cmp.getDef().getHelper()._findContainedComponent(${1:cmp},${2:localId})"
+      "trigger": "helper-ui-panel-handleTouchstart",
+      "contents": "cmp.getDef().getHelper().handleTouchstart(${1:evt})"
     },
     {
-      "trigger": "helper-ui-panelDialog-getPrefix",
-      "contents": "cmp.getDef().getHelper().getPrefix(${1:})"
+      "trigger": "helper-ui-panel-handleTouchmove",
+      "contents": "cmp.getDef().getHelper().handleTouchmove(${1:evt})"
     },
     {
-      "trigger": "helper-ui-panelDialog-getAnimationEndEventName",
-      "contents": "cmp.getDef().getHelper().getAnimationEndEventName(${1:})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-initialize",
-      "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_copy",
-      "contents": "cmp.getDef().getHelper()._copy(${1:obj1})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-getManager",
-      "contents": "cmp.getDef().getHelper().getManager(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-createCancelButton",
-      "contents": "cmp.getDef().getHelper().createCancelButton(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-updatePanel",
-      "contents": "cmp.getDef().getHelper().updatePanel(${1:cmp},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-getHeaderButtons",
-      "contents": "cmp.getDef().getHelper().getHeaderButtons(${1:cmp},${2:headerActions},${3:maxButtons})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-openPanel",
-      "contents": "cmp.getDef().getHelper().openPanel(${1:cmp},${2:config})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-createPanel",
-      "contents": "cmp.getDef().getHelper().createPanel(${1:cmp},${2:config},${3:callback})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-createPanelDialog",
-      "contents": "cmp.getDef().getHelper().createPanelDialog(${1:cmp},${2:config},${3:callback})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-beforeCreatePanel",
-      "contents": "cmp.getDef().getHelper().beforeCreatePanel(${1:})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-isModal",
-      "contents": "cmp.getDef().getHelper().isModal(${1:panelType})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-getCloseActionForModal",
-      "contents": "cmp.getDef().getHelper().getCloseActionForModal(${1:})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_createPanel",
-      "contents": "cmp.getDef().getHelper()._createPanel(${1:cmp},${2:def},${3:config},${4:callback})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_createComponent",
-      "contents": "cmp.getDef().getHelper()._createComponent(${1:def},${2:attr},${3:callback})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-attachPanelInstance",
-      "contents": "cmp.getDef().getHelper().attachPanelInstance(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_findContainer",
-      "contents": "cmp.getDef().getHelper()._findContainer(${1:cmp},${2:id})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-openInstance",
-      "contents": "cmp.getDef().getHelper().openInstance(${1:cmp},${2:panel},${3:config})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-isPanel",
-      "contents": "cmp.getDef().getHelper().isPanel(${1:component})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-closeInstance",
-      "contents": "cmp.getDef().getHelper().closeInstance(${1:cmp},${2:panel},${3:options})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-emptyDeleteQueue",
-      "contents": "cmp.getDef().getHelper().emptyDeleteQueue(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-removeInstance",
-      "contents": "cmp.getDef().getHelper().removeInstance(${1:cmp},${2:panel},${3:forceImmediateDestroy})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_removePanel",
-      "contents": "cmp.getDef().getHelper()._removePanel(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-destroySlidePanelDEPRECATED",
-      "contents": "cmp.getDef().getHelper().destroySlidePanelDEPRECATED(${1:cmp},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-destroyPanel",
-      "contents": "cmp.getDef().getHelper().destroyPanel(${1:cmp},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-destroyAllPanels",
-      "contents": "cmp.getDef().getHelper().destroyAllPanels(${1:cmp})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-getActiveInstance",
-      "contents": "cmp.getDef().getHelper().getActiveInstance(${1:manager})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-setActiveInstance",
-      "contents": "cmp.getDef().getHelper().setActiveInstance(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-afterSetActiveInstance",
-      "contents": "cmp.getDef().getHelper().afterSetActiveInstance(${1:})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_updateModalGlasszIndex",
-      "contents": "cmp.getDef().getHelper()._updateModalGlasszIndex(${1:panelHelper},${2:panel},${3:stackIndex})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-_updatePanelElementzIndex",
-      "contents": "cmp.getDef().getHelper()._updatePanelElementzIndex(${1:panelHelper},${2:panel},${3:stackIndex})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-stackPanel",
-      "contents": "cmp.getDef().getHelper().stackPanel(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-unstackPanel",
-      "contents": "cmp.getDef().getHelper().unstackPanel(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-isVisible",
-      "contents": "cmp.getDef().getHelper().isVisible(${1:el})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-focusAllowed",
-      "contents": "cmp.getDef().getHelper().focusAllowed(${1:el})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-getFocusables",
-      "contents": "cmp.getDef().getHelper().getFocusables(${1:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-bindKeyHandler",
-      "contents": "cmp.getDef().getHelper().bindKeyHandler(${1:manager})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-unbindKeyHandler",
-      "contents": "cmp.getDef().getHelper().unbindKeyHandler(${1:manager})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-bindClickHandler",
-      "contents": "cmp.getDef().getHelper().bindClickHandler(${1:manager})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-unbindClickHandler",
-      "contents": "cmp.getDef().getHelper().unbindClickHandler(${1:manager})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-transitionBegin",
-      "contents": "cmp.getDef().getHelper().transitionBegin(${1:cmp},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-transitionEnd",
-      "contents": "cmp.getDef().getHelper().transitionEnd(${1:cmp},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-setFocus",
-      "contents": "cmp.getDef().getHelper().setFocus(${1:cmp},${2:panel})"
-    },
-    {
-      "trigger": "helper-ui-panelManager-onPanelLoaded",
-      "contents": "cmp.getDef().getHelper().onPanelLoaded(${1:cmp},${2:event})"
+      "trigger": "helper-ui-panel-isScrollSupported",
+      "contents": "cmp.getDef().getHelper().isScrollSupported(${1:})"
     },
     {
       "trigger": "helper-ui-panelManager2-initialize",
@@ -2966,8 +3278,8 @@
       "contents": "cmp.getDef().getHelper().beforeShow(${1:cmp},${2:config})"
     },
     {
-      "trigger": "helper-ui-panelManager2-destroyPanelInstance",
-      "contents": "cmp.getDef().getHelper().destroyPanelInstance(${1:cmp},${2:config},${3:doActivateNext})"
+      "trigger": "helper-ui-panelManager2-destroyPanel",
+      "contents": "cmp.getDef().getHelper().destroyPanel(${1:cmp},${2:config},${3:doActivateNext})"
     },
     {
       "trigger": "helper-ui-panelManager2-activateNextPanel",
@@ -2994,6 +3306,14 @@
       "contents": "cmp.getDef().getHelper().getContainerPanelId(${1:source})"
     },
     {
+      "trigger": "helper-ui-panelManager2-getLocationChangeFlag",
+      "contents": "cmp.getDef().getHelper().getLocationChangeFlag(${1:cmp},${2:config})"
+    },
+    {
+      "trigger": "helper-ui-panelManager2-setReturnFocusElement",
+      "contents": "cmp.getDef().getHelper().setReturnFocusElement(${1:panelComponent})"
+    },
+    {
       "trigger": "helper-ui-pill-handledInteraction",
       "contents": "cmp.getDef().getHelper().handledInteraction(${1:component},${2:event})"
     },
@@ -3015,7 +3335,7 @@
     },
     {
       "trigger": "helper-ui-pillContainer-insertItems",
-      "contents": "cmp.getDef().getHelper().insertItems(${1:cmp},${2:newItems})"
+      "contents": "cmp.getDef().getHelper().insertItems(${1:cmp},${2:newItems},${3:fireInsertedEvent})"
     },
     {
       "trigger": "helper-ui-pillContainer-updateDisplayedItems",
@@ -3027,7 +3347,7 @@
     },
     {
       "trigger": "helper-ui-pillContainer-deleteItem",
-      "contents": "cmp.getDef().getHelper().deleteItem(${1:cmp},${2:data})"
+      "contents": "cmp.getDef().getHelper().deleteItem(${1:cmp},${2:data},${3:fireRemovedEvent})"
     },
     {
       "trigger": "helper-ui-pillContainer-focusItem",
@@ -3067,7 +3387,11 @@
     },
     {
       "trigger": "helper-ui-pillContainer-_deleteItem",
-      "contents": "cmp.getDef().getHelper()._deleteItem(${1:cmp},${2:data})"
+      "contents": "cmp.getDef().getHelper()._deleteItem(${1:cmp},${2:data},${3:fireRemovedEvent})"
+    },
+    {
+      "trigger": "helper-ui-pillContainer-setFocusRightPill",
+      "contents": "cmp.getDef().getHelper().setFocusRightPill(${1:index},${2:cmp})"
     },
     {
       "trigger": "helper-ui-pillContainer-_setActiveItem",
@@ -3143,11 +3467,11 @@
     },
     {
       "trigger": "helper-ui-popup-handleTargetShow",
-      "contents": "cmp.getDef().getHelper().handleTargetShow(${1:component})"
+      "contents": "cmp.getDef().getHelper().handleTargetShow(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-popup-handleTargetHide",
-      "contents": "cmp.getDef().getHelper().handleTargetHide(${1:component})"
+      "contents": "cmp.getDef().getHelper().handleTargetHide(${1:component},${2:event})"
     },
     {
       "trigger": "helper-ui-popup-handleKeyboardEvent",
@@ -3202,8 +3526,24 @@
       "contents": "cmp.getDef().getHelper().position(${1:component})"
     },
     {
+      "trigger": "helper-ui-popupTarget-_getScrollableParent",
+      "contents": "cmp.getDef().getHelper()._getScrollableParent(${1:elem})"
+    },
+    {
       "trigger": "helper-ui-popupTarget-positionAsBodyChild",
       "contents": "cmp.getDef().getHelper().positionAsBodyChild(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-popupTarget-unposition",
+      "contents": "cmp.getDef().getHelper().unposition(${1:component})"
+    },
+    {
+      "trigger": "helper-ui-popupTarget-rightCornerFitsInViewport",
+      "contents": "cmp.getDef().getHelper().rightCornerFitsInViewport(${1:viewPort},${2:elemRect},${3:referenceElemRect})"
+    },
+    {
+      "trigger": "helper-ui-popupTarget-bottomCornerFitsInViewport",
+      "contents": "cmp.getDef().getHelper().bottomCornerFitsInViewport(${1:viewPort},${2:elemRect},${3:referenceElemRect})"
     },
     {
       "trigger": "helper-ui-popupTarget-setAriaAttributes",
@@ -3280,6 +3620,10 @@
     {
       "trigger": "helper-ui-popupTrigger-firePopupEvent",
       "contents": "cmp.getDef().getHelper().firePopupEvent(${1:component},${2:eventName},${3:params})"
+    },
+    {
+      "trigger": "helper-ui-radioMenuItem-buildBody",
+      "contents": "cmp.getDef().getHelper().buildBody(${1:cmp})"
     },
     {
       "trigger": "helper-ui-radioToggleMenuItem-toggleState",
@@ -3470,6 +3814,46 @@
       "contents": "cmp.getDef().getHelper().initIScroll(${1:})"
     },
     {
+      "trigger": "helper-ui-scrollerWrapper-canScroll",
+      "contents": "cmp.getDef().getHelper().canScroll(${1:el})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-isElementThatScrollAlways",
+      "contents": "cmp.getDef().getHelper().isElementThatScrollAlways(${1:target})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-isElementWithNativeScroll",
+      "contents": "cmp.getDef().getHelper().isElementWithNativeScroll(${1:target})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-isAtTop",
+      "contents": "cmp.getDef().getHelper().isAtTop(${1:el})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-isAtBottom",
+      "contents": "cmp.getDef().getHelper().isAtBottom(${1:el})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-skipUIScroller",
+      "contents": "cmp.getDef().getHelper().skipUIScroller(${1:event})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-enableUIScroller",
+      "contents": "cmp.getDef().getHelper().enableUIScroller(${1:event})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-getWrapperElement",
+      "contents": "cmp.getDef().getHelper().getWrapperElement(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-handleScrollTo",
+      "contents": "cmp.getDef().getHelper().handleScrollTo(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-scrollerWrapper-updateStyle",
+      "contents": "cmp.getDef().getHelper().updateStyle(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-tabBar-activateTab",
       "contents": "cmp.getDef().getHelper().activateTab(${1:cmp},${2:index},${3:focus})"
     },
@@ -3479,7 +3863,11 @@
     },
     {
       "trigger": "helper-ui-tabBar-addTab",
-      "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:index},${3:tab})"
+      "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:index},${3:tab},${4:callback})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-updateTab",
+      "contents": "cmp.getDef().getHelper().updateTab(${1:cmp},${2:index},${3:tab},${4:callback},${5:name})"
     },
     {
       "trigger": "helper-ui-tabBar-deactivateTab",
@@ -3532,6 +3920,10 @@
     {
       "trigger": "helper-ui-tabBar-adjustOverflow",
       "contents": "cmp.getDef().getHelper().adjustOverflow(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-tabBar-onResize",
+      "contents": "cmp.getDef().getHelper().onResize(${1:cmp})"
     },
     {
       "trigger": "helper-ui-tabBar-updateVisibleTabs",
@@ -3602,10 +3994,6 @@
       "contents": "cmp.getDef().getHelper().initWidth(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-tabOverflowMenuItem-handleHoverEvent",
-      "contents": "cmp.getDef().getHelper().handleHoverEvent(${1:cmp},${2:eventName})"
-    },
-    {
       "trigger": "helper-ui-tabOverflowMenuItem-updateMenuItems",
       "contents": "cmp.getDef().getHelper().updateMenuItems(${1:cmp})"
     },
@@ -3622,20 +4010,16 @@
       "contents": "cmp.getDef().getHelper().triggerTab(${1:cmp},${2:name},${3:index},${4:focus})"
     },
     {
-      "trigger": "helper-ui-tabOverflowMenuList-setFocusToNextItem",
-      "contents": "cmp.getDef().getHelper().setFocusToNextItem(${1:component},${2:event})"
-    },
-    {
-      "trigger": "helper-ui-tabOverflowMenuList-setFocusToPreviousItem",
-      "contents": "cmp.getDef().getHelper().setFocusToPreviousItem(${1:component},${2:event})"
-    },
-    {
       "trigger": "helper-ui-tabset-setActive",
       "contents": "cmp.getDef().getHelper().setActive(${1:cmp},${2:option})"
     },
     {
       "trigger": "helper-ui-tabset-addTab",
-      "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:index},${3:tab},${4:callback})"
+      "contents": "cmp.getDef().getHelper().addTab(${1:cmp},${2:index},${3:tab},${4:callback},${5:name})"
+    },
+    {
+      "trigger": "helper-ui-tabset-updateTab",
+      "contents": "cmp.getDef().getHelper().updateTab(${1:cmp},${2:index},${3:tab},${4:callback},${5:name})"
     },
     {
       "trigger": "helper-ui-tabset-removeTab",
@@ -3698,8 +4082,8 @@
       "contents": "cmp.getDef().getHelper()._getSuperest(${1:cmp})"
     },
     {
-      "trigger": "helper-ui-tabset-unrender",
-      "contents": "cmp.getDef().getHelper().unrender(${1:cmp})"
+      "trigger": "helper-ui-tabset-handleDestroy",
+      "contents": "cmp.getDef().getHelper().handleDestroy(${1:cmp})"
     },
     {
       "trigger": "helper-ui-tabset-createTabCollection",
@@ -3790,6 +4174,10 @@
       "contents": "cmp.getDef().getHelper().initStyle(${1:component})"
     },
     {
+      "trigger": "helper-ui-tooltipAdvanced-setStyle",
+      "contents": "cmp.getDef().getHelper().setStyle(${1:component})"
+    },
+    {
       "trigger": "helper-ui-tooltipAdvanced-show",
       "contents": "cmp.getDef().getHelper().show(${1:cmp})"
     },
@@ -3847,7 +4235,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-verifyInterfaces",
-      "contents": "cmp.getDef().getHelper().verifyInterfaces(${1:})"
+      "contents": "cmp.getDef().getHelper().verifyInterfaces(${1:cmp})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-initializeDataModel",
@@ -3891,7 +4279,11 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_initializeRowTemplate",
-      "contents": "cmp.getDef().getHelper()._initializeRowTemplate(${1:templates},${2:useRowHeader})"
+      "contents": "cmp.getDef().getHelper()._initializeRowTemplate(${1:templates},${2:rowHeaderIndex})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_wrapColumn",
+      "contents": "cmp.getDef().getHelper()._wrapColumn(${1:template},${2:isRowHeader})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_createColumn",
@@ -3923,7 +4315,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_findVirtualElementPosition",
-      "contents": "cmp.getDef().getHelper()._findVirtualElementPosition(${1:items},${2:elmt})"
+      "contents": "cmp.getDef().getHelper()._findVirtualElementPosition(${1:items},${2:target})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_replaceDOMElement",
@@ -3931,7 +4323,7 @@
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_rerenderDirtyElement",
-      "contents": "cmp.getDef().getHelper()._rerenderDirtyElement(${1:cmp},${2:item},${3:oldElement})"
+      "contents": "cmp.getDef().getHelper()._rerenderDirtyElement(${1:cmp},${2:item},${3:target},${4:index})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-_generateVirtualRow",
@@ -3964,6 +4356,22 @@
     {
       "trigger": "helper-ui-virtualDataGrid-selectRow",
       "contents": "cmp.getDef().getHelper().selectRow(${1:cmp},${2:index},${3:value})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-updateItem",
+      "contents": "cmp.getDef().getHelper().updateItem(${1:cmp},${2:item},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_getRootComponent",
+      "contents": "cmp.getDef().getHelper()._getRootComponent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_selectiveRerender",
+      "contents": "cmp.getDef().getHelper()._selectiveRerender(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataGrid-_rerender",
+      "contents": "cmp.getDef().getHelper()._rerender(${1:cmp})"
     },
     {
       "trigger": "helper-ui-virtualDataGrid-initializeSorting",
@@ -4010,8 +4418,204 @@
       "contents": "cmp.getDef().getHelper().destroyTemplates(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-virtualDataTable-initialize",
+      "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-reset",
+      "contents": "cmp.getDef().getHelper().reset(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-verifyInterfaces",
+      "contents": "cmp.getDef().getHelper().verifyInterfaces(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-initializeDataModel",
+      "contents": "cmp.getDef().getHelper().initializeDataModel(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-initializeItems",
+      "contents": "cmp.getDef().getHelper().initializeItems(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-initializeHeaderColumns",
+      "contents": "cmp.getDef().getHelper().initializeHeaderColumns(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-initializeTemplates",
+      "contents": "cmp.getDef().getHelper().initializeTemplates(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-virtualRerender",
+      "contents": "cmp.getDef().getHelper().virtualRerender(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-onItemChange",
+      "contents": "cmp.getDef().getHelper().onItemChange(${1:ptv})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-getGridBody",
+      "contents": "cmp.getDef().getHelper().getGridBody(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-markClean",
+      "contents": "cmp.getDef().getHelper().markClean(${1:cmp},${2:value})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-markDirty",
+      "contents": "cmp.getDef().getHelper().markDirty(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_initializeRowTemplate",
+      "contents": "cmp.getDef().getHelper()._initializeRowTemplate(${1:templates},${2:rowHeaderIndex})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_wrapColumn",
+      "contents": "cmp.getDef().getHelper()._wrapColumn(${1:template},${2:isRowHeader})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_createColumn",
+      "contents": "cmp.getDef().getHelper()._createColumn(${1:elementTemplate},${2:columnTemplate})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_createPassthroughValue",
+      "contents": "cmp.getDef().getHelper()._createPassthroughValue(${1:cmp},${2:itemVar},${3:item},${4:rowIndex})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-createEventDelegates",
+      "contents": "cmp.getDef().getHelper().createEventDelegates(${1:cmp},${2:container})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_getRenderingComponentForElement",
+      "contents": "cmp.getDef().getHelper()._getRenderingComponentForElement(${1:domElement})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_dispatchAction",
+      "contents": "cmp.getDef().getHelper()._dispatchAction(${1:actionHandler},${2:event})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_getActionHandler",
+      "contents": "cmp.getDef().getHelper()._getActionHandler(${1:htmlCmp},${2:eventType})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_eventDelegator",
+      "contents": "cmp.getDef().getHelper()._eventDelegator(${1:cmp},${2:e})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_findVirtualElementPosition",
+      "contents": "cmp.getDef().getHelper()._findVirtualElementPosition(${1:items},${2:target})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_replaceDOMElement",
+      "contents": "cmp.getDef().getHelper()._replaceDOMElement(${1:parent},${2:newChild},${3:oldChild})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_rerenderDirtyElement",
+      "contents": "cmp.getDef().getHelper()._rerenderDirtyElement(${1:cmp},${2:item},${3:target},${4:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_generateVirtualRow",
+      "contents": "cmp.getDef().getHelper()._generateVirtualRow(${1:cmp},${2:item},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_getItemAttached",
+      "contents": "cmp.getDef().getHelper()._getItemAttached(${1:dom})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_attachItemToElement",
+      "contents": "cmp.getDef().getHelper()._attachItemToElement(${1:dom},${2:item})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_attachIndexToElement",
+      "contents": "cmp.getDef().getHelper()._attachIndexToElement(${1:dom},${2:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_getRowIndex",
+      "contents": "cmp.getDef().getHelper()._getRowIndex(${1:el})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-appendVirtualRows",
+      "contents": "cmp.getDef().getHelper().appendVirtualRows(${1:cmp},${2:items})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-createVirtualRows",
+      "contents": "cmp.getDef().getHelper().createVirtualRows(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-selectRow",
+      "contents": "cmp.getDef().getHelper().selectRow(${1:cmp},${2:index},${3:value})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-updateItem",
+      "contents": "cmp.getDef().getHelper().updateItem(${1:cmp},${2:item},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_getRootComponent",
+      "contents": "cmp.getDef().getHelper()._getRootComponent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_selectiveRerender",
+      "contents": "cmp.getDef().getHelper()._selectiveRerender(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-_rerender",
+      "contents": "cmp.getDef().getHelper()._rerender(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-fireRenderEvent",
+      "contents": "cmp.getDef().getHelper().fireRenderEvent(${1:cmp},${2:type},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-initializeSorting",
+      "contents": "cmp.getDef().getHelper().initializeSorting(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-updateSortData",
+      "contents": "cmp.getDef().getHelper().updateSortData(${1:cmp},${2:sortBy})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-sortCallback",
+      "contents": "cmp.getDef().getHelper().sortCallback(${1:cmp},${2:response})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-enableColumnResizer",
+      "contents": "cmp.getDef().getHelper().enableColumnResizer(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-getResizer",
+      "contents": "cmp.getDef().getHelper().getResizer(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-updateColumnResizer",
+      "contents": "cmp.getDef().getHelper().updateColumnResizer(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-updateResizerAccessibilityLabels",
+      "contents": "cmp.getDef().getHelper().updateResizerAccessibilityLabels(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-attachColResizerHandlers",
+      "contents": "cmp.getDef().getHelper().attachColResizerHandlers(${1:cmp},${2:resizer})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-resizeColumns",
+      "contents": "cmp.getDef().getHelper().resizeColumns(${1:cmp},${2:widths})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-hasResizerHandles",
+      "contents": "cmp.getDef().getHelper().hasResizerHandles(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualDataTable-destroyTemplates",
+      "contents": "cmp.getDef().getHelper().destroyTemplates(${1:cmp})"
+    },
+    {
       "trigger": "helper-ui-virtualList-initialize",
       "contents": "cmp.getDef().getHelper().initialize(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-reset",
+      "contents": "cmp.getDef().getHelper().reset(${1:cmp})"
     },
     {
       "trigger": "helper-ui-virtualList-initializeBody",
@@ -4042,6 +4646,18 @@
       "contents": "cmp.getDef().getHelper().initializeTemplate(${1:cmp})"
     },
     {
+      "trigger": "helper-ui-virtualList-addTemplate",
+      "contents": "cmp.getDef().getHelper().addTemplate(${1:cmp},${2:key},${3:template})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-createTemplateData",
+      "contents": "cmp.getDef().getHelper().createTemplateData(${1:cmp},${2:template},${3:ref})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-handleTemplateChange",
+      "contents": "cmp.getDef().getHelper().handleTemplateChange(${1:cmp},${2:templateAttribute})"
+    },
+    {
       "trigger": "helper-ui-virtualList-initializeItems",
       "contents": "cmp.getDef().getHelper().initializeItems(${1:cmp})"
     },
@@ -4056,6 +4672,10 @@
     {
       "trigger": "helper-ui-virtualList-createVirtualList",
       "contents": "cmp.getDef().getHelper().createVirtualList(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-appendVirtualRows",
+      "contents": "cmp.getDef().getHelper().appendVirtualRows(${1:cmp},${2:items})"
     },
     {
       "trigger": "helper-ui-virtualList-getListBody",
@@ -4074,8 +4694,12 @@
       "contents": "cmp.getDef().getHelper().createEventDelegates(${1:cmp},${2:container})"
     },
     {
-      "trigger": "helper-ui-virtualList-appendVirtualRows",
-      "contents": "cmp.getDef().getHelper().appendVirtualRows(${1:cmp},${2:items})"
+      "trigger": "helper-ui-virtualList-updateItem",
+      "contents": "cmp.getDef().getHelper().updateItem(${1:cmp},${2:item},${3:index})"
+    },
+    {
+      "trigger": "helper-ui-virtualList-getComponentByIndex",
+      "contents": "cmp.getDef().getHelper().getComponentByIndex(${1:cmp},${2:index},${3:callback})"
     },
     {
       "trigger": "helper-ui-virtualList-_findVirtualElementPosition",
@@ -4087,7 +4711,7 @@
     },
     {
       "trigger": "helper-ui-virtualList-_rerenderDirtyElement",
-      "contents": "cmp.getDef().getHelper()._rerenderDirtyElement(${1:cmp},${2:item},${3:oldElement})"
+      "contents": "cmp.getDef().getHelper()._rerenderDirtyElement(${1:cmp},${2:item},${3:oldElement},${4:index})"
     },
     {
       "trigger": "helper-ui-virtualList-_getRenderingComponentForElement",
@@ -4110,24 +4734,68 @@
       "contents": "cmp.getDef().getHelper()._eventDelegator(${1:cmp},${2:e})"
     },
     {
-      "trigger": "helper-actionsTest-deferredServerAction-getSuccess",
-      "contents": "cmp.getDef().getHelper().getSuccess(${1:cmp})"
+      "trigger": "helper-ui-virtualList-_getRootComponent",
+      "contents": "cmp.getDef().getHelper()._getRootComponent(${1:cmp})"
     },
     {
-      "trigger": "helper-actionsTest-deferredServerAction-getError",
-      "contents": "cmp.getDef().getHelper().getError(${1:cmp})"
+      "trigger": "helper-ui-virtualList-_setTemplateCache",
+      "contents": "cmp.getDef().getHelper()._setTemplateCache(${1:cmp},${2:key},${3:value})"
     },
     {
-      "trigger": "helper-actionsTest-transactions-insertResponse",
-      "contents": "cmp.getDef().getHelper().insertResponse(${1:cmp},${2:a})"
+      "trigger": "helper-ui-virtualList-_getTemplateData",
+      "contents": "cmp.getDef().getHelper()._getTemplateData(${1:cmp},${2:item})"
     },
     {
-      "trigger": "helper-actionsTest-transactions-handleCb",
-      "contents": "cmp.getDef().getHelper().handleCb(${1:cmp},${2:action},${3:callback})"
+      "trigger": "helper-ui-virtualList-_templateCacheContains",
+      "contents": "cmp.getDef().getHelper()._templateCacheContains(${1:cmp},${2:key})"
     },
     {
-      "trigger": "helper-actionsTest-transactions-sendAction",
-      "contents": "cmp.getDef().getHelper().sendAction(${1:cmp},${2:abortable},${3:transactionId},${4:callback})"
+      "trigger": "helper-ui-virtualList-_destroyShapes",
+      "contents": "cmp.getDef().getHelper()._destroyShapes(${1:cmp})"
+    },
+    {
+      "trigger": "helper-ui-virtualMenuWrapper-setupMenu",
+      "contents": "cmp.getDef().getHelper().setupMenu(${1:cmp},${2:target})"
+    },
+    {
+      "trigger": "helper-ui-virtualMenuWrapper-handleKeydown",
+      "contents": "cmp.getDef().getHelper().handleKeydown(${1:cmp},${2:event})"
+    },
+    {
+      "trigger": "helper-auraStoragePerformanceTest-operations-runTests",
+      "contents": "cmp.getDef().getHelper().runTests(${1:cmp},${2:msAsyncFn})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-restoreLog",
+      "contents": "cmp.getDef().getHelper().restoreLog(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-saveLog",
+      "contents": "cmp.getDef().getHelper().saveLog(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-setStatus",
+      "contents": "cmp.getDef().getHelper().setStatus(${1:cmp},${2:status})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-log",
+      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:log})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-logDefs",
+      "contents": "cmp.getDef().getHelper().logDefs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-logComponentDefStorage",
+      "contents": "cmp.getDef().getHelper().logComponentDefStorage(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-clearActionAndDefStorage",
+      "contents": "cmp.getDef().getHelper().clearActionAndDefStorage(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-componentDefStorage-reset",
+      "contents": "cmp.getDef().getHelper().reset(${1:cmp})"
     },
     {
       "trigger": "helper-auraStorageTest-initTest-resetCounters",
@@ -4142,36 +4810,88 @@
       "contents": "cmp.getDef().getHelper().findAndSetText(${1:cmp},${2:targetCmpId},${3:msg})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-resetCounters",
-      "contents": "cmp.getDef().getHelper().resetCounters(${1:cmp},${2:_testName})"
+      "trigger": "helper-auraStorageTest-manualTester-start",
+      "contents": "cmp.getDef().getHelper().start(${1:cmp})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-setCounter",
-      "contents": "cmp.getDef().getHelper().setCounter(${1:cmp},${2:newValue})"
+      "trigger": "helper-auraStorageTest-manualTester-openWindows",
+      "contents": "cmp.getDef().getHelper().openWindows(${1:cmp},${2:windowCount})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-getTeamAndPlayers",
-      "contents": "cmp.getDef().getHelper().getTeamAndPlayers(${1:cmp},${2:storable})"
+      "trigger": "helper-auraStorageTest-manualTester-reset",
+      "contents": "cmp.getDef().getHelper().reset(${1:cmp})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-getTeamAndTeam",
-      "contents": "cmp.getDef().getHelper().getTeamAndTeam(${1:cmp},${2:storable})"
+      "trigger": "helper-auraStorageTest-manualTester-waitForWindowsLoaded",
+      "contents": "cmp.getDef().getHelper().waitForWindowsLoaded(${1:cmp},${2:callback})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-getTeamOnly",
-      "contents": "cmp.getDef().getHelper().getTeamOnly(${1:cmp,storable})"
+      "trigger": "helper-auraStorageTest-manualTester-startJobs",
+      "contents": "cmp.getDef().getHelper().startJobs(${1:cmp})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-getPlayersOnly",
-      "contents": "cmp.getDef().getHelper().getPlayersOnly(${1:cmp,storable})"
+      "trigger": "helper-auraStorageTest-manualTester-waitForJobCompletion",
+      "contents": "cmp.getDef().getHelper().waitForJobCompletion(${1:cmp})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-findAndSetText",
-      "contents": "cmp.getDef().getHelper().findAndSetText(${1:cmp},${2:targetCmpId},${3:msg})"
+      "trigger": "helper-auraStorageTest-manualTester-collectAndProcessLogs",
+      "contents": "cmp.getDef().getHelper().collectAndProcessLogs(${1:cmp},${2:failedWindowIndex},${3:errorMsg})"
     },
     {
-      "trigger": "helper-auraStorageTest-newComponent-findAndAppendText",
-      "contents": "cmp.getDef().getHelper().findAndAppendText(${1:cmp},${2:targetCmpId},${3:msg})"
+      "trigger": "helper-auraStorageTest-manualTester-prettyPrintLogs",
+      "contents": "cmp.getDef().getHelper().prettyPrintLogs(${1:cmp},${2:logs})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTester-stopJobs",
+      "contents": "cmp.getDef().getHelper().stopJobs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTester-closeTabs",
+      "contents": "cmp.getDef().getHelper().closeTabs(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTester-log",
+      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:msg})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-start",
+      "contents": "cmp.getDef().getHelper().start(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-loadIFrameAndStart",
+      "contents": "cmp.getDef().getHelper().loadIFrameAndStart(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-spinCycle",
+      "contents": "cmp.getDef().getHelper().spinCycle(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-executeEvent",
+      "contents": "cmp.getDef().getHelper().executeEvent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-log",
+      "contents": "cmp.getDef().getHelper().log(${1:event})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-fetchDef",
+      "contents": "cmp.getDef().getHelper().fetchDef(${1:cmp},${2:def},${3:delay})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-reload",
+      "contents": "cmp.getDef().getHelper().reload(${1:cmp})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-clearCache",
+      "contents": "cmp.getDef().getHelper().clearCache(${1:cmp},${2:delay})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-manualTesterCmp-failValidityCheck",
+      "contents": "cmp.getDef().getHelper().failValidityCheck(${1:cmp},${2:msg},${3:e})"
+    },
+    {
+      "trigger": "helper-auraStorageTest-persistentStorage-setEncryptionKey",
+      "contents": "cmp.getDef().getHelper().setEncryptionKey(${1:encryptionKey})"
     },
     {
       "trigger": "helper-auratest-componentClassChild-getDelimiter",
@@ -4224,6 +4944,46 @@
     {
       "trigger": "helper-auratest-requireWithServerAction-updateText",
       "contents": "cmp.getDef().getHelper().updateText(${1:cmp},${2:str})"
+    },
+    {
+      "trigger": "helper-bootstrapTest-bootTest-setStatus",
+      "contents": "cmp.getDef().getHelper().setStatus(${1:cmp},${2:status})"
+    },
+    {
+      "trigger": "helper-bootstrapTest-bootTest-log",
+      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:log})"
+    },
+    {
+      "trigger": "helper-bootstrapTest-bootTest-clearActionAndDefStorage",
+      "contents": "cmp.getDef().getHelper().clearActionAndDefStorage(${1:cmp})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-log",
+      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:home},${3:msg})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-getAction",
+      "contents": "cmp.getDef().getHelper().getAction(${1:cmp},${2:parent},${3:commands},${4:label},${5:options})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-buildHierarchy",
+      "contents": "cmp.getDef().getHelper().buildHierarchy(${1:cmp})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-deleteChild",
+      "contents": "cmp.getDef().getHelper().deleteChild(${1:cmp},${2:name})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-addChildren",
+      "contents": "cmp.getDef().getHelper().addChildren(${1:cmp},${2:children},${3:base},${4:levels})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-reindex",
+      "contents": "cmp.getDef().getHelper().reindex(${1:cmp},${2:child})"
+    },
+    {
+      "trigger": "helper-clientServiceTest-enqueueAction-buildHierarchyInternal",
+      "contents": "cmp.getDef().getHelper().buildHierarchyInternal(${1:cmp},${2:base},${3:levels})"
     },
     {
       "trigger": "helper-componentTest-componentApi-helperFunction",
@@ -4282,6 +5042,10 @@
       "contents": "cmp.getDef().getHelper().updateVersion(${1:cmp},${2:version})"
     },
     {
+      "trigger": "helper-crossTabTest-multiTab-initializeMutex",
+      "contents": "cmp.getDef().getHelper().initializeMutex(${1:})"
+    },
+    {
       "trigger": "helper-expressionTest-bodyAttribute-clearCmpBody",
       "contents": "cmp.getDef().getHelper().clearCmpBody(${1:cmp},${2:id})"
     },
@@ -4326,6 +5090,14 @@
       "contents": "cmp.getDef().getHelper().anotherCuriousCase(${1:})"
     },
     {
+      "trigger": "helper-injectActionTest-injectApp-triggerAction",
+      "contents": "cmp.getDef().getHelper().triggerAction(${1:cmp})"
+    },
+    {
+      "trigger": "helper-integrationService-injectableWithEverything-returnAString",
+      "contents": "cmp.getDef().getHelper().returnAString(${1:})"
+    },
+    {
       "trigger": "helper-loadLevelTest-lazyLoadHelper-verifyLazyLoading",
       "contents": "cmp.getDef().getHelper().verifyLazyLoading(${1:cmp},${2:lazyCmpId_qualifiedName_map},${3:waitIds},${4:callbackAfterLoad})"
     },
@@ -4335,7 +5107,7 @@
     },
     {
       "trigger": "helper-loadLevelTest-newCmpWithValueProvider-createComponentAndPushToBody",
-      "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config},${3:attributeValueProvider},${4:localCreation},${5:doForce},${6:forceServer})"
+      "contents": "cmp.getDef().getHelper().createComponentAndPushToBody(${1:cmp},${2:config})"
     },
     {
       "trigger": "helper-lockerTest-basic-helperMethod",
@@ -4343,47 +5115,159 @@
     },
     {
       "trigger": "helper-lockerTest-basic-log",
-      "contents": "cmp.getDef().getHelper().log(${1:component},${2:message})"
+      "contents": "cmp.getDef().getHelper().log(${1:component},${2:message},${3:blockedExploit})"
     },
     {
       "trigger": "helper-lockerTest-basic-testSymbol",
-      "contents": "cmp.getDef().getHelper().testSymbol(${1:symbol})"
+      "contents": "cmp.getDef().getHelper().testSymbol(${1:testCase})"
     },
     {
       "trigger": "helper-lockerTest-basic-verifyElementCount",
       "contents": "cmp.getDef().getHelper().verifyElementCount(${1:className},${2:expected})"
     },
     {
-      "trigger": "helper-lockerTest-basic-indexOfLeftMatchingBracket",
-      "contents": "cmp.getDef().getHelper().indexOfLeftMatchingBracket(${1:text})"
+      "trigger": "helper-lockerTest-basicTest-testCanAccessDocumentBodyFromHelper",
+      "contents": "cmp.getDef().getHelper().testCanAccessDocumentBodyFromHelper(${1:testUtils})"
     },
     {
-      "trigger": "helper-lockerTest-basic-findBoundsOfExpression",
-      "contents": "cmp.getDef().getHelper().findBoundsOfExpression(${1:text})"
+      "trigger": "helper-lockerTest-basicTest-testCanAccessDocumentHeadFromHelper",
+      "contents": "cmp.getDef().getHelper().testCanAccessDocumentHeadFromHelper(${1:testUtils})"
     },
     {
-      "trigger": "helper-lockerTest-basic-createSafeCtorExpression",
-      "contents": "cmp.getDef().getHelper().createSafeCtorExpression(${1:text})"
+      "trigger": "helper-lockerTest-basicTest-testAuraLockerInHelper",
+      "contents": "cmp.getDef().getHelper().testAuraLockerInHelper(${1:testUtils})"
     },
     {
-      "trigger": "helper-lockerTest-basicTest-getWrappersFromHelper",
-      "contents": "cmp.getDef().getHelper().getWrappersFromHelper(${1:})"
+      "trigger": "helper-lockerTest-basicTest-testDocumentLockerInHelper",
+      "contents": "cmp.getDef().getHelper().testDocumentLockerInHelper(${1:testUtils})"
     },
     {
-      "trigger": "helper-lockerTest-basicTest-accessDocumentBody",
-      "contents": "cmp.getDef().getHelper().accessDocumentBody(${1:cmp})"
+      "trigger": "helper-lockerTest-basicTest-testWindowLockerInHelper",
+      "contents": "cmp.getDef().getHelper().testWindowLockerInHelper(${1:testUtils})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-doTestSecureElementFrozenAfterCreation",
+      "contents": "cmp.getDef().getHelper().doTestSecureElementFrozenAfterCreation(${1:testUtils},${2:div})"
     },
     {
       "trigger": "helper-lockerTest-basicTest-testFunction",
       "contents": "cmp.getDef().getHelper().testFunction(${1:})"
     },
     {
-      "trigger": "helper-lockerTest-basicTest-getSecureElementDynamically",
-      "contents": "cmp.getDef().getHelper().getSecureElementDynamically(${1:cmp})"
+      "trigger": "helper-lockerTest-basicTest-doTestEvalForUndefined",
+      "contents": "cmp.getDef().getHelper().doTestEvalForUndefined(${1:cmp},${2:testCase},${3:testUtils})"
     },
     {
-      "trigger": "helper-lockerTest-basicTest-getSecureElementFromMarkup",
-      "contents": "cmp.getDef().getHelper().getSecureElementFromMarkup(${1:cmp})"
+      "trigger": "helper-lockerTest-basicTest-doTestEvalForSecureWindow",
+      "contents": "cmp.getDef().getHelper().doTestEvalForSecureWindow(${1:cmp},${2:testCase},${3:testUtils})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-doTestEvalForSecureIFrameContentWindow",
+      "contents": "cmp.getDef().getHelper().doTestEvalForSecureIFrameContentWindow(${1:cmp},${2:testCase},${3:testUtils})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-testExpression",
+      "contents": "cmp.getDef().getHelper().testExpression(${1:testCase})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-verifySharedSecureElement",
+      "contents": "cmp.getDef().getHelper().verifySharedSecureElement(${1:testUtils},${2:property})"
+    },
+    {
+      "trigger": "helper-lockerTest-basicTest-passCmpViaCreateComponent",
+      "contents": "cmp.getDef().getHelper().passCmpViaCreateComponent(${1:cmp})"
+    },
+    {
+      "trigger": "helper-lockerTest-dataGridTest-fireAddRemove",
+      "contents": "cmp.getDef().getHelper().fireAddRemove(${1:cmp},${2:params})"
+    },
+    {
+      "trigger": "helper-lockerTest-dataGridTest-fireRefresh",
+      "contents": "cmp.getDef().getHelper().fireRefresh(${1:cmp},${2:params})"
+    },
+    {
+      "trigger": "helper-lockerTest-platformApiTracker-collectExposedApis",
+      "contents": "cmp.getDef().getHelper().collectExposedApis(${1:map},${2:name},${3:api})"
+    },
+    {
+      "trigger": "helper-lockerTest-promisesTest-getSimplePromise",
+      "contents": "cmp.getDef().getHelper().getSimplePromise(${1:shouldSucceed})"
+    },
+    {
+      "trigger": "helper-lockerTest-secureElementTest-findSecureObject",
+      "contents": "cmp.getDef().getHelper().findSecureObject(${1:list})"
+    },
+    {
+      "trigger": "helper-lockerTest-secureElementTest-contains",
+      "contents": "cmp.getDef().getHelper().contains(${1:container},${2:element})"
+    },
+    {
+      "trigger": "helper-lockerTest-secureStorageTest-verifyStorage",
+      "contents": "cmp.getDef().getHelper().verifyStorage(${1:cmp},${2:storage},${3:storageType})"
+    },
+    {
+      "trigger": "helper-lockerTest-secureXHRTest-createXHRHandler",
+      "contents": "cmp.getDef().getHelper().createXHRHandler(${1:cmp},${2:testUtils})"
+    },
+    {
+      "trigger": "helper-lockerTest-secureXHRTest-testCallback",
+      "contents": "cmp.getDef().getHelper().testCallback(${1:cmp},${2:wireUpEventHandler})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-dataGrid-handleAddRemove",
+      "contents": "cmp.getDef().getHelper().handleAddRemove(${1:cmp},${2:param})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-dataGridDataProvider-sort",
+      "contents": "cmp.getDef().getHelper().sort(${1:items},${2:column},${3:descending})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-dataGridDataProvider-applyPagination",
+      "contents": "cmp.getDef().getHelper().applyPagination(${1:tasks},${2:currentPage},${3:pageSize})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-dataGridDataProvider-createTasks",
+      "contents": "cmp.getDef().getHelper().createTasks(${1:cmp})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-facetLocked-querySelector",
+      "contents": "cmp.getDef().getHelper().querySelector(${1:el},${2:selectors},${3:results})"
+    },
+    {
+      "trigger": "helper-lockerTestOtherNamespace-facetUnlocked-querySelector",
+      "contents": "cmp.getDef().getHelper().querySelector(${1:el},${2:selectors},${3:results})"
+    },
+    {
+      "trigger": "helper-performance-bootstrap-boot",
+      "contents": "cmp.getDef().getHelper().boot(${1:})"
+    },
+    {
+      "trigger": "helper-performance-caches-updateCache",
+      "contents": "cmp.getDef().getHelper().updateCache(${1:cmp})"
+    },
+    {
+      "trigger": "helper-performance-dependencies-getWhitelist",
+      "contents": "cmp.getDef().getHelper().getWhitelist(${1:cmp})"
+    },
+    {
+      "trigger": "helper-performance-dependencies-retrieveDeps",
+      "contents": "cmp.getDef().getHelper().retrieveDeps(${1:cmp},${2:def},${3:whitelist},${4:callback})"
+    },
+    {
+      "trigger": "helper-performance-dependencies-dependencyList",
+      "contents": "cmp.getDef().getHelper().dependencyList(${1:cmp},${2:list},${3:whitelist},${4:callback})"
+    },
+    {
+      "trigger": "helper-performance-expensive-isProfilingEnabled",
+      "contents": "cmp.getDef().getHelper().isProfilingEnabled(${1:component})"
+    },
+    {
+      "trigger": "helper-performance-expensive-profile",
+      "contents": "cmp.getDef().getHelper().profile(${1:component},${2:label})"
+    },
+    {
+      "trigger": "helper-performance-expensive-profileEnd",
+      "contents": "cmp.getDef().getHelper().profileEnd(${1:component},${2:label})"
     },
     {
       "trigger": "helper-performance-runner-urlToJson",
@@ -4392,18 +5276,6 @@
     {
       "trigger": "helper-performance-runner-queryStringToJson",
       "contents": "cmp.getDef().getHelper().queryStringToJson(${1:queryString})"
-    },
-    {
-      "trigger": "helper-performanceTest-child-init",
-      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
-    },
-    {
-      "trigger": "helper-performanceTest-grandparent-init",
-      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
-    },
-    {
-      "trigger": "helper-performanceTest-parent-init",
-      "contents": "cmp.getDef().getHelper().init(${1:cmp},${2:event},${3:helper})"
     },
     {
       "trigger": "helper-performanceTest-virtualDataGridTestSwapColumns-generateColumnConfigs",
@@ -4422,44 +5294,8 @@
       "contents": "cmp.getDef().getHelper().updateMetrics(${1:component},${2:attributeName})"
     },
     {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-createStorage",
-      "contents": "cmp.getDef().getHelper().createStorage(${1:cmp})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runTests",
-      "contents": "cmp.getDef().getHelper().runTests(${1:cmp})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-postProcessing",
-      "contents": "cmp.getDef().getHelper().postProcessing(${1:cmp,results})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runListOfOperations",
-      "contents": "cmp.getDef().getHelper().runListOfOperations(${1:cmp},${2:prefix},${3:operations},${4:opsIterations})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-runOperation",
-      "contents": "cmp.getDef().getHelper().runOperation(${1:cmp},${2:prefix},${3:opsIterations},${4:op})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-getOperations",
-      "contents": "cmp.getDef().getHelper().getOperations(${1:cmp})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-analyzeOperation",
-      "contents": "cmp.getDef().getHelper().analyzeOperation(${1:cmp},${2:operation},${3:opsIterations},${4:prefix})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-log",
-      "contents": "cmp.getDef().getHelper().log(${1:cmp},${2:operation},${3:opsIterations},${4:avg},${5:ept95},${6:max},${7:sumOfMarks},${8:total},${9:storeSize})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-doOperation",
-      "contents": "cmp.getDef().getHelper().doOperation(${1:op},${2:storage},${3:key},${4:payload})"
-    },
-    {
-      "trigger": "helper-storagePerformanceTest-storageAdapterPerf-getPayload",
-      "contents": "cmp.getDef().getHelper().getPayload(${1:cmp})"
+      "trigger": "helper-moduletest-bootstrap-boot",
+      "contents": "cmp.getDef().getHelper().boot(${1:})"
     }
   ]
 }

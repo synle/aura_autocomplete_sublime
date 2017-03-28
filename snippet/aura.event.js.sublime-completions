@@ -43,11 +43,11 @@
     },
     {
       "trigger": "evt-ui-actionDelegate-onaction",
-      "contents": "//  component: actionDelegate\n//    evtName: onaction\n//    evtType: ui:actionEvent\n//description: \nvar e = cmp.find(\"${1:actionDelegate}\").get(\"e.onaction\");\ne.setParams({\n\tname: \"${2:String}\",\n\tindex: \"${3:Integer}\",\n\tvalue: \"${4:String}\",\n\titem: \"${5:Object}\",\n\tcomponent: \"${6:Aura.Component[]}\",// ui:action which fired the event\n});\ne.fire();"
+      "contents": "//  component: actionDelegate\n//    evtName: onaction\n//    evtType: ui:actionEvent\n//description: The event fired when the value is changed on a ui:action component.\nvar e = cmp.find(\"${1:actionDelegate}\").get(\"e.onaction\");\ne.setParams({\n\tname: \"${2:String}\",\n\tindex: \"${3:Integer}\",\n\tvalue: \"${4:String}\",\n\titem: \"${5:Object}\",\n\tcomponent: \"${6:Aura.Component[]}\",// ui:action which fired the event\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-asyncImage-load",
-      "contents": "//  component: asyncImage\n//    evtName: load\n//    evtType: ui:load\n//description: \nvar e = cmp.find(\"${1:asyncImage}\").get(\"e.load\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: asyncImage\n//    evtName: load\n//    evtType: ui:load\n//description: Event fired when the image is being loaded.\nvar e = cmp.find(\"${1:asyncImage}\").get(\"e.load\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocomplete-matchDone",
@@ -64,6 +64,10 @@
     {
       "trigger": "evt-ui-autocomplete-fetchData",
       "contents": "//  component: autocomplete\n//    evtName: fetchData\n//    evtType: ui:fetchData\n//description: The event indicates we need to fetch data through a data provider.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.fetchData\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters data provider can use to fetch data.\n\tindex: \"${3:Integer}\",// From which data provider to fetch data.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocomplete-abortFetchData",
+      "contents": "//  component: autocomplete\n//    evtName: abortFetchData\n//    evtType: ui:abortFetchData\n//description: This event indicates that we want to abort a fetch data request sent by a data provider.\nvar e = cmp.find(\"${1:autocomplete}\").get(\"e.abortFetchData\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters the data provider can use to process the data cancel request.\n\tindex: \"${3:Integer}\",// From which data provider to cancel the data request.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-autocomplete-matchText",
@@ -86,28 +90,36 @@
       "contents": "//  component: autocompleteList\n//    evtName: listCollapse\n//    evtType: ui:autocompleteListCollapse\n//description: The event fired when the list is made invisible\nvar e = cmp.find(\"${1:autocompleteList}\").get(\"e.listCollapse\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-autocompleteOption-listHighlight",
+      "contents": "//  component: autocompleteOption\n//    evtName: listHighlight\n//    evtType: ui:listHighlight\n//description: The event fired when a list option is highlighted, e.g. keyboard navigation.\nvar e = cmp.find(\"${1:autocompleteOption}\").get(\"e.listHighlight\");\ne.setParams({\n\tactiveIndex: \"${2:Integer}\",// The list option should be highlighted.\n\tactiveOption: \"${3:Aura.Component}\",// The list component option should be highlighted.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-autocompletePanel-listCollapse",
+      "contents": "//  component: autocompletePanel\n//    evtName: listCollapse\n//    evtType: ui:autocompleteListCollapse\n//description: The event fired when the list is made invisible\nvar e = cmp.find(\"${1:autocompletePanel}\").get(\"e.listCollapse\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-button-press",
-      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: press\n//    evtType: ui:press\n//description: The event fired when the button is clicked.\nvar e = cmp.find(\"${1:button}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-keydown",
-      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: keydown\n//    evtType: ui:keydown\n//description: The event fired when a key is pressed down on the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.keydown\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseover",
-      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseover\n//    evtType: ui:mouseover\n//description: The event fired when the mouse hovers over the button.\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseover\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-mouseout",
-      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: mouseout\n//    evtType: ui:mouseout\n//description: The event fired when the mouse moves off the button\nvar e = cmp.find(\"${1:button}\").get(\"e.mouseout\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-focus",
-      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when the button receives focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-button-blur",
-      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: \nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: button\n//    evtName: blur\n//    evtType: ui:blur\n//description: The event fired the button loses focus.\nvar e = cmp.find(\"${1:button}\").get(\"e.blur\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-carouselDeprecated-selectDefaultPage",
@@ -179,7 +191,7 @@
     },
     {
       "trigger": "evt-ui-dataGrid-updateRowAttributes",
-      "contents": "//  component: dataGrid\n//    evtName: updateRowAttributes\n//    evtType: ui:updateGridRow\n//description: \nvar e = cmp.find(\"${1:dataGrid}\").get(\"e.updateRowAttributes\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Index of the row to update\n\tclassName: \"${3:String}\",// Class attribute to update. An undefined or null value will leave the class attribute unchanged\n\tclassOp: \"${4:String}\",// Operation to do for the class: add, remove, toggle. Any other value will leave the class attribute unchanged.\n\tattributes: \"${5:List}\",// Attributes to update on the row. Each item in the list should be of the form {name: attrName, value: attrValue}. Currently, only the 'disabled' attribute is supported\n});\ne.fire();"
+      "contents": "//  component: dataGrid\n//    evtName: updateRowAttributes\n//    evtType: ui:updateGridRow\n//description: The event fired when the attributes on a dataGrid row is updated.\nvar e = cmp.find(\"${1:dataGrid}\").get(\"e.updateRowAttributes\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Index of the row to update\n\tclassName: \"${3:String}\",// Class attribute to update. An undefined or null value will leave the class attribute unchanged\n\tclassOp: \"${4:String}\",// Operation to do for the class: add, remove, toggle. Any other value will leave the class attribute unchanged.\n\tattributes: \"${5:List}\",// Attributes to update on the row. Each item in the list should be of the form {name: attrName, value: attrValue}. Currently, only the 'disabled' attribute is supported\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-dataProvider-provide",
@@ -188,6 +200,10 @@
     {
       "trigger": "evt-ui-dataProvider-onchange",
       "contents": "//  component: dataProvider\n//    evtName: onchange\n//    evtType: ui:dataChanged\n//description: The event fired when the list data changes.\nvar e = cmp.find(\"${1:dataProvider}\").get(\"e.onchange\");\ne.setParams({\n\tdata: \"${2:Object}\",\n\tcurrentPage: \"${3:Integer}\",// Gets or sets the current page of the pager. The first page is 1, the last page is pageCount.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dataProvider-abort",
+      "contents": "//  component: dataProvider\n//    evtName: abort\n//    evtType: ui:abortFetchData\n//description: The event fired when aborting a data request.\nvar e = cmp.find(\"${1:dataProvider}\").get(\"e.abort\");\ne.setParams({\n\tparameters: \"${2:Object}\",// The parameters the data provider can use to process the data cancel request.\n\tindex: \"${3:Integer}\",// From which data provider to cancel the data request.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-dataProvider-error",
@@ -218,20 +234,16 @@
       "contents": "//  component: datePickerGrid\n//    evtName: hide\n//    evtType: ui:change\n//description: The event fired when the date picker is hidden from view.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.hide\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-datePickerGrid-focus",
-      "contents": "//  component: datePickerGrid\n//    evtName: focus\n//    evtType: ui:focus\n//description: The event fired when a date is focused.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.focus\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-datePickerGrid-selectDate",
       "contents": "//  component: datePickerGrid\n//    evtName: selectDate\n//    evtType: ui:selectDate\n//description: The event fired when a date is selected.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-datePickerGrid-updateCalendar",
-      "contents": "//  component: datePickerGrid\n//    evtName: updateCalendar\n//    evtType: ui:updateCalendar\n//description: The event fired when the calendar is updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendar\");\ne.setParams({\n\tmonthChange: \"${2:Integer}\",\n\tyearChange: \"${3:Integer}\",\n\tsetFocus: \"${4:Boolean}\",\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-datePickerGrid-updateCalendarTitle",
       "contents": "//  component: datePickerGrid\n//    evtName: updateCalendarTitle\n//    evtType: ui:updateCalendarTitle\n//description: The event fired when the calendar month and year are updated.\nvar e = cmp.find(\"${1:datePickerGrid}\").get(\"e.updateCalendarTitle\");\ne.setParams({\n\tmonth: \"${2:Integer}\",\n\tyear: \"${3:Integer}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-dayInMonthCell-selectDate",
+      "contents": "//  component: dayInMonthCell\n//    evtName: selectDate\n//    evtType: ui:selectDate\n//description: The event fired when a date is selected.\nvar e = cmp.find(\"${1:dayInMonthCell}\").get(\"e.selectDate\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-dialog-close",
@@ -290,6 +302,10 @@
       "contents": "//  component: infiniteListRow\n//    evtName: close\n//    evtType: ui:close\n//description: The event fired when the user swipes a row to hide additional content.\nvar e = cmp.find(\"${1:infiniteListRow}\").get(\"e.close\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-inlineEditPanelBody-submit",
+      "contents": "//  component: inlineEditPanelBody\n//    evtName: submit\n//    evtType: ui:gridAction\n//description: The event fired when a change is submitted on the edit panel.\nvar e = cmp.find(\"${1:inlineEditPanelBody}\").get(\"e.submit\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Automatically populated by the containing grid component. Index of the row containing this cell.\n\taction: \"${3:String}\",// Which grid action this event contains\n\tpayload: \"${4:Object}\",// Attributes passed to the action\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-input-change",
       "contents": "//  component: input\n//    evtName: change\n//    evtType: ui:change\n//description: The event fired when the user changes the content of the input.\nvar e = cmp.find(\"${1:input}\").get(\"e.change\");\ne.setParams({\n\n});\ne.fire();"
     },
@@ -330,12 +346,28 @@
       "contents": "//  component: inputDateTime\n//    evtName: openPicker\n//    evtType: ui:openPicker\n//description: The event fired when the date picker is opened.\nvar e = cmp.find(\"${1:inputDateTime}\").get(\"e.openPicker\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-inputFile-change",
+      "contents": "//  component: inputFile\n//    evtName: change\n//    evtType: ui:inputFileChangeEvent\n//description: The event fired when the list of files to be uploaded changes.\nvar e = cmp.find(\"${1:inputFile}\").get(\"e.change\");\ne.setParams({\n\tfiles: \"${2:Object}\",\n\tform: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputFileDroppableZone-change",
+      "contents": "//  component: inputFileDroppableZone\n//    evtName: change\n//    evtType: ui:inputFileChangeEvent\n//description: The event fired when the list of files to be uploaded changes.\nvar e = cmp.find(\"${1:inputFileDroppableZone}\").get(\"e.change\");\ne.setParams({\n\tfiles: \"${2:Object}\",\n\tform: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputFileOpenBrowse-change",
+      "contents": "//  component: inputFileOpenBrowse\n//    evtName: change\n//    evtType: ui:inputFileChangeEvent\n//description: The event fired when the list of files to be uploaded changes.\nvar e = cmp.find(\"${1:inputFileOpenBrowse}\").get(\"e.change\");\ne.setParams({\n\tfiles: \"${2:Object}\",\n\tform: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-inputRichText-editorInstanceReady",
       "contents": "//  component: inputRichText\n//    evtName: editorInstanceReady\n//    evtType: ui:load\n//description: Fired when the rich text instance is ready\nvar e = cmp.find(\"${1:inputRichText}\").get(\"e.editorInstanceReady\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-inputSearch-search",
       "contents": "//  component: inputSearch\n//    evtName: search\n//    evtType: ui:searchEvent\n//description: The event fired when the user runs a search.\nvar e = cmp.find(\"${1:inputSearch}\").get(\"e.search\");\ne.setParams({\n\ttype: \"${2:String}\",// The type of search event that was fired.\n\tcontext: \"${3:Object}\",// Context relevant to the search event that was fired.\n\tsearchTerm: \"${4:String}\",// The term that was specified to search.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-inputSmartNumber-change",
+      "contents": "//  component: inputSmartNumber\n//    evtName: change\n//    evtType: ui:change\n//description: The event fired when the user changes the content of the input.\nvar e = cmp.find(\"${1:inputSmartNumber}\").get(\"e.change\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-inputTimePicker-selectDate",
@@ -374,6 +406,10 @@
       "contents": "//  component: menuItem\n//    evtName: menuSelect\n//    evtType: ui:menuSelect\n//description: The event that is fired when the menu item is selected.\nvar e = cmp.find(\"${1:menuItem}\").get(\"e.menuSelect\");\ne.setParams({\n\tselectedItem: \"${2:Aura.Component[]}\",// The menu item which is selected.\n\thideMenu: \"${3:Boolean}\",// Hide menu if set to true.\n\tdeselectSiblings: \"${4:Boolean}\",// Deselect the siblings of the currently selected menu item.\n\tfocusTrigger: \"${5:Boolean}\",// Set focus to menuTrigger.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-menuItem-click",
+      "contents": "//  component: menuItem\n//    evtName: click\n//    evtType: ui:click\n//description: The event fired when the user clicks on the component.\nvar e = cmp.find(\"${1:menuItem}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-ui-menuList-menuCollapse",
       "contents": "//  component: menuList\n//    evtName: menuCollapse\n//    evtType: ui:collapse\n//description: The event fired when the menu list collapses.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.menuCollapse\");\ne.setParams({\n\n});\ne.fire();"
     },
@@ -392,6 +428,10 @@
     {
       "trigger": "evt-ui-menuList-refresh",
       "contents": "//  component: menuList\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Fire this event to refresh the menuList.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-menuList-popupKeyboardEvent",
+      "contents": "//  component: menuList\n//    evtName: popupKeyboardEvent\n//    evtType: ui:popupKeyboardEvent\n//description: The event fired when the user presses a keyboard key on the component.\nvar e = cmp.find(\"${1:menuList}\").get(\"e.popupKeyboardEvent\");\ne.setParams({\n\tevent: \"${2:Object}\",// The keyboard event.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-menuTrigger-menuTriggerPress",
@@ -416,10 +456,6 @@
     {
       "trigger": "evt-ui-pager-onPageChange",
       "contents": "//  component: pager\n//    evtName: onPageChange\n//    evtType: ui:pagerEvent\n//description: The event that is fired when a concrete pager triggers a paging event.\nvar e = cmp.find(\"${1:pager}\").get(\"e.onPageChange\");\ne.setParams({\n\tpageSize: \"${2:Integer}\",// The desired pageSize to be set.\n\tcurrentPage: \"${3:Integer}\",// The desired page to be set.\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-panelDialog-panelDoneRendering",
-      "contents": "//  component: panelDialog\n//    evtName: panelDoneRendering\n//    evtType: ui:panelDoneRendering\n//description: \nvar e = cmp.find(\"${1:panelDialog}\").get(\"e.panelDoneRendering\");\ne.setParams({\n\tpanelId: \"${2:Integer}\",\n\tpanelType: \"${3:String}\",\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-pill-onHandledEvent",
@@ -447,11 +483,11 @@
     },
     {
       "trigger": "evt-ui-popup-popupTargetShow",
-      "contents": "//  component: popup\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target. Other components may also fire this event to show the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetShow\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target. Other components may also fire this event to show the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetShow\");\ne.setParams({\n\tevent: \"${2:Object}\",// The event that triggered the popup show.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popup-popupTargetHide",
-      "contents": "//  component: popup\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target. Other components may also fire this event to hide the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetHide\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: popup\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target. Other components may also fire this event to hide the target.\nvar e = cmp.find(\"${1:popup}\").get(\"e.popupTargetHide\");\ne.setParams({\n\tevent: \"${2:Object}\",// The associated event that triggered the hiding of the popup.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popup-popupKeyboardEvent",
@@ -483,11 +519,11 @@
     },
     {
       "trigger": "evt-ui-popupTrigger-popupTargetShow",
-      "contents": "//  component: popupTrigger\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetShow\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetShow\n//    evtType: ui:popupTargetShow\n//description: The trigger fires this event to show the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetShow\");\ne.setParams({\n\tevent: \"${2:Object}\",// The event that triggered the popup show.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupTargetHide",
-      "contents": "//  component: popupTrigger\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetHide\");\ne.setParams({\n\n});\ne.fire();"
+      "contents": "//  component: popupTrigger\n//    evtName: popupTargetHide\n//    evtType: ui:popupTargetHide\n//description: The trigger fires this event to hide the target.\nvar e = cmp.find(\"${1:popupTrigger}\").get(\"e.popupTargetHide\");\ne.setParams({\n\tevent: \"${2:Object}\",// The associated event that triggered the hiding of the popup.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-popupTrigger-popupKeyboardEvent",
@@ -531,15 +567,19 @@
     },
     {
       "trigger": "evt-ui-tabBar-setActive",
-      "contents": "//  component: tabBar\n//    evtName: setActive\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to activate a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.setActive\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+      "contents": "//  component: tabBar\n//    evtName: setActive\n//    evtType: ui:tabsetEvent\n//description: This event is fired from the parent component to activate a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.setActive\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabBar-addTab",
-      "contents": "//  component: tabBar\n//    evtName: addTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to add a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+      "contents": "//  component: tabBar\n//    evtName: addTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from the parent component to add a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabBar-closeTab",
-      "contents": "//  component: tabBar\n//    evtName: closeTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from parent component to close a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.closeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+      "contents": "//  component: tabBar\n//    evtName: closeTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from the parent component to close a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.closeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabBar-updateTab",
+      "contents": "//  component: tabBar\n//    evtName: updateTab\n//    evtType: ui:tabsetEvent\n//description: This event is fired from the parent component to update a tab item.\nvar e = cmp.find(\"${1:tabBar}\").get(\"e.updateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabBar-onTabClosed",
@@ -586,20 +626,20 @@
       "contents": "//  component: tabOverflowMenuItem\n//    evtName: onTabSelection\n//    evtType: ui:tabsetEvent\n//description: The event is fired when a tab from the overflow menu is selected.\nvar e = cmp.find(\"${1:tabOverflowMenuItem}\").get(\"e.onTabSelection\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
-      "trigger": "evt-ui-tabOverflowMenuList-forwardWrap",
-      "contents": "//  component: tabOverflowMenuList\n//    evtName: forwardWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a forward wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.forwardWrap\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-ui-tabOverflowMenuList-reverseWrap",
-      "contents": "//  component: tabOverflowMenuList\n//    evtName: reverseWrap\n//    evtType: ui:collapse\n//description: The event fired when the menu list attempts a reverse wrap due to a key press.\nvar e = cmp.find(\"${1:tabOverflowMenuList}\").get(\"e.reverseWrap\");\ne.setParams({\n\n});\ne.fire();"
-    },
-    {
       "trigger": "evt-ui-tabset-addTab",
       "contents": "//  component: tabset\n//    evtName: addTab\n//    evtType: ui:tabsetEvent\n//description: Add new tab to the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.addTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabset-removeTab",
       "contents": "//  component: tabset\n//    evtName: removeTab\n//    evtType: ui:tabsetEvent\n//description: Remove a tab from the component.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.removeTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-updateTab",
+      "contents": "//  component: tabset\n//    evtName: updateTab\n//    evtType: ui:tabsetEvent\n//description: Update an existing tab.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.updateTab\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-clearTabs",
+      "contents": "//  component: tabset\n//    evtName: clearTabs\n//    evtType: ui:tabsetEvent\n//description: Removes all the tabs in the tabset.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.clearTabs\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tabset-activateTab",
@@ -616,6 +656,10 @@
     {
       "trigger": "evt-ui-tabset-onActivate",
       "contents": "//  component: tabset\n//    evtName: onActivate\n//    evtType: ui:tabsetEvent\n//description: The event is triggered when the tab is activated.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onActivate\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-tabset-onRemove",
+      "contents": "//  component: tabset\n//    evtName: onRemove\n//    evtType: ui:tabsetEvent\n//description: The event is triggered when the tab is removed.\nvar e = cmp.find(\"${1:tabset}\").get(\"e.onRemove\");\ne.setParams({\n\tindex: \"${2:Integer}\",// The index position of the tab.\n\tname: \"${3:String}\",// The internal name of the tab.\n\tfocus: \"${4:Boolean}\",// Whether to focus the tabset item or not.\n\ttab: \"${5:Object}\",// The tab object.\n\toldTab: \"${6:Object}\",// The tab that was just deactivated.\n\tactive: \"${7:Boolean}\",// Indicates the tab is active or not.\n\tcallback: \"${8:Object}\",// A callback function.\n});\ne.fire();"
     },
     {
       "trigger": "evt-ui-tree-getChildren",
@@ -642,6 +686,22 @@
       "contents": "//  component: virtualDataGrid\n//    evtName: onColumnResize\n//    evtType: ui:resize\n//description: The event fired when a column is resized.\nvar e = cmp.find(\"${1:virtualDataGrid}\").get(\"e.onColumnResize\");\ne.setParams({\n\tsrc: \"${2:Object}\",// Object containing info about what has resized\n\toldSize: \"${3:Integer}\",// Previous size of the object\n\tnewSize: \"${4:Integer}\",// New size of the object\n});\ne.fire();"
     },
     {
+      "trigger": "evt-ui-virtualDataTable-refresh",
+      "contents": "//  component: virtualDataTable\n//    evtName: refresh\n//    evtType: ui:refresh\n//description: Provides fresh data from the dataProvider.\nvar e = cmp.find(\"${1:virtualDataTable}\").get(\"e.refresh\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-virtualDataTable-gridAction",
+      "contents": "//  component: virtualDataTable\n//    evtName: gridAction\n//    evtType: ui:gridAction\n//description: Notifies listeners when actions were triggered by grid cells\nvar e = cmp.find(\"${1:virtualDataTable}\").get(\"e.gridAction\");\ne.setParams({\n\tindex: \"${2:Integer}\",// Automatically populated by the containing grid component. Index of the row containing this cell.\n\taction: \"${3:String}\",// Which grid action this event contains\n\tpayload: \"${4:Object}\",// Attributes passed to the action\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-virtualDataTable-onsort",
+      "contents": "//  component: virtualDataTable\n//    evtName: onsort\n//    evtType: ui:sort\n//description: The event fired when a column is sorted.\nvar e = cmp.find(\"${1:virtualDataTable}\").get(\"e.onsort\");\ne.setParams({\n\tsortBy: \"${2:String}\",\n\tcallback: \"${3:Object}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-ui-virtualDataTable-onColumnResize",
+      "contents": "//  component: virtualDataTable\n//    evtName: onColumnResize\n//    evtType: ui:resize\n//description: The event fired when a column is resized.\nvar e = cmp.find(\"${1:virtualDataTable}\").get(\"e.onColumnResize\");\ne.setParams({\n\tsrc: \"${2:Object}\",// Object containing info about what has resized\n\toldSize: \"${3:Integer}\",// Previous size of the object\n\tnewSize: \"${4:Integer}\",// New size of the object\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-actionsTest-chainBoundaryCases-press",
       "contents": "//  component: chainBoundaryCases\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:chainBoundaryCases}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
     },
@@ -666,8 +726,84 @@
       "contents": "//  component: access\n//    evtName: internalEvent\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.internalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
     },
     {
-      "trigger": "evt-auratest-access-privateEvent",
-      "contents": "//  component: access\n//    evtName: privateEvent\n//    evtType: auratest:accessPrivateEvent\n//description: \nvar e = cmp.find(\"${1:access}\").get(\"e.privateEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",// private\n\tPublic: \"${3:String}\",// private\n\tInternal: \"${4:String}\",// private\n\tGlobal: \"${5:String}\",// private\n});\ne.fire();"
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithDefaultAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithDefaultAccessInSystemNamespaceRegisteredWithDefaultAccess\n//    evtType: auratest:accessDefaultEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithDefaultAccessInSystemNamespaceRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithPublicAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithDefaultAccessInSystemNamespaceRegisteredWithPublicAccess\n//    evtType: auratest:accessDefaultEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithDefaultAccessInSystemNamespaceRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithPrivilegedAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithDefaultAccessInSystemNamespaceRegisteredWithPrivilegedAccess\n//    evtType: auratest:accessDefaultEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithDefaultAccessInSystemNamespaceRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithGlobalAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithDefaultAccessInSystemNamespaceRegisteredWithGlobalAccess\n//    evtType: auratest:accessDefaultEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithDefaultAccessInSystemNamespaceRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithDefaultAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithInternalAccessInSystemNamespaceRegisteredWithDefaultAccess\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithInternalAccessInSystemNamespaceRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithPublicAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithInternalAccessInSystemNamespaceRegisteredWithPublicAccess\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithInternalAccessInSystemNamespaceRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithPrivilegedAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithInternalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithInternalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithGlobalAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithInternalAccessInSystemNamespaceRegisteredWithGlobalAccess\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithInternalAccessInSystemNamespaceRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithDefaultAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPublicAccessInSystemNamespaceRegisteredWithDefaultAccess\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPublicAccessInSystemNamespaceRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithPublicAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPublicAccessInSystemNamespaceRegisteredWithPublicAccess\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPublicAccessInSystemNamespaceRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithPrivilegedAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPublicAccessInSystemNamespaceRegisteredWithPrivilegedAccess\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPublicAccessInSystemNamespaceRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithGlobalAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPublicAccessInSystemNamespaceRegisteredWithGlobalAccess\n//    evtType: auratest:accessPublicEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPublicAccessInSystemNamespaceRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithDefaultAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPrivilegedAccessInSystemNamespaceRegisteredWithDefaultAccess\n//    evtType: auratest:accessPrivilegedEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPrivilegedAccessInSystemNamespaceRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPublicAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPublicAccess\n//    evtType: auratest:accessPrivilegedEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPrivilegedAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPrivilegedAccess\n//    evtType: auratest:accessPrivilegedEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithGlobalAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithPrivilegedAccessInSystemNamespaceRegisteredWithGlobalAccess\n//    evtType: auratest:accessPrivilegedEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithPrivilegedAccessInSystemNamespaceRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithDefaultAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithGlobalAccessInSystemNamespaceRegisteredWithDefaultAccess\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithGlobalAccessInSystemNamespaceRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithPublicAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithGlobalAccessInSystemNamespaceRegisteredWithPublicAccess\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithGlobalAccessInSystemNamespaceRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithPrivilegedAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithGlobalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithGlobalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithGlobalAccess",
+      "contents": "//  component: accessGlobalComponent\n//    evtName: eventWithGlobalAccessInSystemNamespaceRegisteredWithGlobalAccess\n//    evtType: auratest:accessGlobalEvent\n//description: \nvar e = cmp.find(\"${1:accessGlobalComponent}\").get(\"e.eventWithGlobalAccessInSystemNamespaceRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
     },
     {
       "trigger": "evt-auratest-requireConsumer-versionEvt",
@@ -692,10 +828,6 @@
     {
       "trigger": "evt-componentTest-accessAttributes-internalEvent",
       "contents": "//  component: accessAttributes\n//    evtName: internalEvent\n//    evtType: auratest:accessInternalEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.internalEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tInternal: \"${4:String}\",\n\tGlobal: \"${5:String}\",\n});\ne.fire();"
-    },
-    {
-      "trigger": "evt-componentTest-accessAttributes-privateEvent",
-      "contents": "//  component: accessAttributes\n//    evtName: privateEvent\n//    evtType: auratest:accessPrivateEvent\n//description: \nvar e = cmp.find(\"${1:accessAttributes}\").get(\"e.privateEvent\");\ne.setParams({\n\tPrivate: \"${2:String}\",// private\n\tPublic: \"${3:String}\",// private\n\tInternal: \"${4:String}\",// private\n\tGlobal: \"${5:String}\",// private\n});\ne.fire();"
     },
     {
       "trigger": "evt-handleEventTest-aHandlesEventFromA-evt",
@@ -734,12 +866,212 @@
       "contents": "//  component: basic\n//    evtName: foo\n//    evtType: ui:selectDate\n//description: The event fired when foo.\nvar e = cmp.find(\"${1:basic}\").get(\"e.foo\");\ne.setParams({\n\tvalue: \"${2:Date}\",// Date value (yyyy-MM-dd) of a timestamp.\n\thours: \"${3:Integer}\",// Hour value (0 - 23) of a timestamp.\n\tminutes: \"${4:Integer}\",// minute value (0 - 59) of a timestamp.\n});\ne.fire();"
     },
     {
+      "trigger": "evt-lockerTest-secureAuraEventTest-debugLog",
+      "contents": "//  component: secureAuraEventTest\n//    evtName: debugLog\n//    evtType: aura:debugLog\n//description: \nvar e = cmp.find(\"${1:secureAuraEventTest}\").get(\"e.debugLog\");\ne.setParams({\n\ttype: \"${2:String}\",// Logging event data or console data. Type is either 'event' or 'console'\n\tmessage: \"${3:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-lockerTest-secureComponentTest-press",
+      "contents": "//  component: secureComponentTest\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:secureComponentTest}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-lockerTestOtherNamespace-eventSource-foo",
+      "contents": "//  component: eventSource\n//    evtName: foo\n//    evtType: lockerTest:fooEvent\n//description: \nvar e = cmp.find(\"${1:eventSource}\").get(\"e.foo\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-performance-dependencyItem-press",
+      "contents": "//  component: dependencyItem\n//    evtName: press\n//    evtType: ui:press\n//description: \nvar e = cmp.find(\"${1:dependencyItem}\").get(\"e.press\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-renderingTest-testEventHandlerChain-A",
       "contents": "//  component: testEventHandlerChain\n//    evtName: A\n//    evtType: handleEventTest:event\n//description: \nvar e = cmp.find(\"${1:testEventHandlerChain}\").get(\"e.A\");\ne.setParams({\n\n});\ne.fire();"
     },
     {
+      "trigger": "evt-testCustomNS1-testApplicationEventACF-appEventInternalNSPublicAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSPublicAccess\n//    evtType: auratest:applicationEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSPublicAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS1-testApplicationEventACF-appEventInternalNSDefaultAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSDefaultAccess\n//    evtType: auratest:applicationEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSDefaultAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS1-testApplicationEventACF-appEventInternalNSInternalAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSInternalAccess\n//    evtType: auratest:applicationEventWithInternalAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSInternalAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithDefaultAccess\n//    evtType: testCustomNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithGlobalAccess\n//    evtType: testCustomNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithPublicAccess\n//    evtType: testCustomNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithDefaultAccess\n//    evtType: testCustomNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithGlobalAccess\n//    evtType: testCustomNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithPublicAccess\n//    evtType: testCustomNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithDefaultAccess\n//    evtType: testCustomNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithGlobalAccess\n//    evtType: testCustomNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithPublicAccess\n//    evtType: testCustomNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithDefaultAccess\n//    evtType: testCustomNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithGlobalAccess\n//    evtType: testCustomNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithGlobalAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithPublicAccess\n//    evtType: testCustomNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithGlobalAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS1-componentWithDefaultAccess2-NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithDefaultAccess2\n//    evtName: NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS1:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithDefaultAccess2}\").get(\"e.NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS1-testApplicationEventACF-appEventInternalNSPublicAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSPublicAccess\n//    evtType: auratest:applicationEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSPublicAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS1-testApplicationEventACF-appEventInternalNSDefaultAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSDefaultAccess\n//    evtType: auratest:applicationEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSDefaultAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS1-testApplicationEventACF-appEventInternalNSInternalAccess",
+      "contents": "//  component: testApplicationEventACF\n//    evtName: appEventInternalNSInternalAccess\n//    evtType: auratest:applicationEventWithInternalAccess\n//description: \nvar e = cmp.find(\"${1:testApplicationEventACF}\").get(\"e.appEventInternalNSInternalAccess\");\ne.setParams({\n\tmessage: \"${2:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS1:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS1:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithPrivilegedAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS1:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithPrivilegedAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithPrivilegedAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS1:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithPrivilegedAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS1eventWithGlobalAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS1:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS1eventWithGlobalAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithDefaultAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS2:componentEventWithDefaultAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithDefaultAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPublicAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS2:componentEventWithPublicAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPublicAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPrivilegedAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS2:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPrivilegedAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPrivilegedAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS2:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPrivilegedAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS2:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithPrivilegedAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS2:componentEventWithPrivilegedAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithPrivilegedAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithDefaultAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithDefaultAccess\n//    evtType: testPrivilegedNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithDefaultAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithPublicAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithPublicAccess\n//    evtType: testPrivilegedNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithPublicAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithPrivilegedAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithPrivilegedAccess\n//    evtType: testPrivilegedNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithPrivilegedAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithGlobalAccess",
+      "contents": "//  component: componentWithPrivilegedAccess\n//    evtName: NS2eventWithGlobalAccessRegisteredWithGlobalAccess\n//    evtType: testPrivilegedNS2:componentEventWithGlobalAccess\n//description: \nvar e = cmp.find(\"${1:componentWithPrivilegedAccess}\").get(\"e.NS2eventWithGlobalAccessRegisteredWithGlobalAccess\");\ne.setParams({\n\tPrivate: \"${2:String}\",\n\tPublic: \"${3:String}\",\n\tGlobal: \"${4:String}\",\n});\ne.fire();"
+    },
+    {
       "trigger": "evt-updateTest-updateable-click",
       "contents": "//  component: updateable\n//    evtName: click\n//    evtType: updateTest:updateableEvent\n//description: \nvar e = cmp.find(\"${1:updateable}\").get(\"e.click\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-moduletest-composite-onpress",
+      "contents": "//  component: composite\n//    evtName: onpress\n//    evtType: ui:press\n//description: The event fired when the button is clicked.\nvar e = cmp.find(\"${1:composite}\").get(\"e.onpress\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-moduletest-simple-onpress",
+      "contents": "//  component: simple\n//    evtName: onpress\n//    evtType: ui:press\n//description: The event fired when the button is clicked.\nvar e = cmp.find(\"${1:simple}\").get(\"e.onpress\");\ne.setParams({\n\n});\ne.fire();"
+    },
+    {
+      "trigger": "evt-moduletest-simple-callbackaction",
+      "contents": "//  component: simple\n//    evtName: callbackaction\n//    evtType: ui:response\n//description: Responds\nvar e = cmp.find(\"${1:simple}\").get(\"e.callbackaction\");\ne.setParams({\n\tvalue: \"${2:Object}\",// Weakly typed response value. Put anything in here that may be useful.\n});\ne.fire();"
     }
   ]
 }

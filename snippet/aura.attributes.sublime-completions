@@ -206,10 +206,6 @@
       "contents": "else=\"${1:aura:renderIf - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "aura-showDependencies-component\tAttr",
-      "contents": "component=\"${1:aura:showDependencies - Optional - String}\""
-    },
-    {
       "trigger": "aura-template-title\tAttr",
       "contents": "title=\"${1:aura:template - Optional - String}\""
     },
@@ -218,12 +214,8 @@
       "contents": "auraStyleTags=\"${1:aura:template - Optional - String}\""
     },
     {
-      "trigger": "aura-template-auraScriptTags\tAttr",
-      "contents": "auraScriptTags=\"${1:aura:template - Optional - String}\""
-    },
-    {
-      "trigger": "aura-template-auraBaseScriptTags\tAttr",
-      "contents": "auraBaseScriptTags=\"${1:aura:template - Optional - String}\""
+      "trigger": "aura-template-afterBody\tAttr",
+      "contents": "afterBody=\"${1:aura:template - Optional - String}\""
     },
     {
       "trigger": "aura-template-auraNamespacesScriptTags\tAttr",
@@ -232,10 +224,6 @@
     {
       "trigger": "aura-template-auraResetStyle\tAttr",
       "contents": "auraResetStyle=\"${1:aura:template - Optional - String}\""
-    },
-    {
-      "trigger": "aura-template-auraResetTags\tAttr",
-      "contents": "auraResetTags=\"${1:aura:template - Optional - String}\""
     },
     {
       "trigger": "aura-template-auraInlineStyle\tAttr",
@@ -264,6 +252,10 @@
     {
       "trigger": "aura-template-autoInitializeSync\tAttr",
       "contents": "autoInitializeSync=\"${1:aura:template - Optional - String}\""
+    },
+    {
+      "trigger": "aura-template-bootstrapInlineJs\tAttr",
+      "contents": "bootstrapInlineJs=\"${1:aura:template - Optional - String}\""
     },
     {
       "trigger": "aura-template-doctype\tAttr",
@@ -400,22 +392,6 @@
     {
       "trigger": "auraStorage-init-version\tAttr",
       "contents": "version=\"${1:auraStorage:init - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-dependencyItem-descriptor\tAttr",
-      "contents": "descriptor=\"${1:auradev:dependencyItem - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-dependencyItem-type\tAttr",
-      "contents": "type=\"${1:auradev:dependencyItem - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-dependencyItem-uid\tAttr",
-      "contents": "uid=\"${1:auradev:dependencyItem - Optional - String}\""
-    },
-    {
-      "trigger": "auradev-dependencyItem-error\tAttr",
-      "contents": "error=\"${1:auradev:dependencyItem - Optional - Boolean}\""
     },
     {
       "trigger": "auradev-lintc-name\tAttr",
@@ -942,6 +918,10 @@
       "contents": "inputType=\"${1:ui:autocomplete - Optional - String}\""
     },
     {
+      "trigger": "ui-autocomplete-inputFlavor\tAttr",
+      "contents": "inputFlavor=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
       "trigger": "ui-autocomplete-placeholder\tAttr",
       "contents": "placeholder=\"${1:ui:autocomplete - Optional - String}\""
     },
@@ -958,8 +938,20 @@
       "contents": "usePanel=\"${1:ui:autocomplete - Optional - boolean}\""
     },
     {
+      "trigger": "ui-autocomplete-maxlength\tAttr",
+      "contents": "maxlength=\"${1:ui:autocomplete - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-autocomplete-inputTitle\tAttr",
+      "contents": "inputTitle=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-selectOnTab\tAttr",
+      "contents": "selectOnTab=\"${1:ui:autocomplete - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocomplete-dataProvider\tAttr",
-      "contents": "dataProvider=\"${1:ui:autocomplete - Required - Aura.Component[]}\""
+      "contents": "dataProvider=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-autocomplete-emptyListContent\tAttr",
@@ -971,7 +963,7 @@
     },
     {
       "trigger": "ui-autocomplete-optionVar\tAttr",
-      "contents": "optionVar=\"${1:ui:autocomplete - Required - String}\""
+      "contents": "optionVar=\"${1:ui:autocomplete - Optional - String}\""
     },
     {
       "trigger": "ui-autocomplete-propertyToMatch\tAttr",
@@ -982,8 +974,12 @@
       "contents": "matchFunc=\"${1:ui:autocomplete - Optional - Aura.Action}\""
     },
     {
+      "trigger": "ui-autocomplete-disableMatch\tAttr",
+      "contents": "disableMatch=\"${1:ui:autocomplete - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocomplete-listOption\tAttr",
-      "contents": "listOption=\"${1:ui:autocomplete - Required - Aura.ComponentDefRef[]}\""
+      "contents": "listOption=\"${1:ui:autocomplete - Optional - Aura.ComponentDefRef[]}\""
     },
     {
       "trigger": "ui-autocomplete-listHeader\tAttr",
@@ -1010,6 +1006,14 @@
       "contents": "listReferenceComponent=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-autocomplete-devNameOrId\tAttr",
+      "contents": "devNameOrId=\"${1:ui:autocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-autocomplete-showEmptyList\tAttr",
+      "contents": "showEmptyList=\"${1:ui:autocomplete - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocomplete-autocompleteList\tAttr",
       "contents": "autocompleteList=\"${1:ui:autocomplete - Optional - Aura.Component[]}\""
     },
@@ -1028,6 +1032,10 @@
     {
       "trigger": "ui-autocomplete-fetchData\tAttr",
       "contents": "fetchData=\"${1:ui:autocomplete - Optional - ui:fetchData}\""
+    },
+    {
+      "trigger": "ui-autocomplete-abortFetchData\tAttr",
+      "contents": "abortFetchData=\"${1:ui:autocomplete - Optional - ui:abortFetchData}\""
     },
     {
       "trigger": "ui-autocomplete-matchText\tAttr",
@@ -1078,6 +1086,18 @@
       "contents": "listReferenceComponent=\"${1:ui:autocompleteList - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-autocompleteList-loadingIndicatorDelay\tAttr",
+      "contents": "loadingIndicatorDelay=\"${1:ui:autocompleteList - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-disableMatch\tAttr",
+      "contents": "disableMatch=\"${1:ui:autocompleteList - Optional - boolean}\""
+    },
+    {
+      "trigger": "ui-autocompleteList-showEmptyList\tAttr",
+      "contents": "showEmptyList=\"${1:ui:autocompleteList - Optional - boolean}\""
+    },
+    {
       "trigger": "ui-autocompleteList-matchDone\tAttr",
       "contents": "matchDone=\"${1:ui:autocompleteList - Optional - ui:matchDone}\""
     },
@@ -1110,6 +1130,10 @@
       "contents": "domId=\"${1:ui:autocompleteOption - Optional - String}\""
     },
     {
+      "trigger": "ui-autocompleteOption-listHighlight\tAttr",
+      "contents": "listHighlight=\"${1:ui:autocompleteOption - Optional - ui:listHighlight}\""
+    },
+    {
       "trigger": "ui-autocompletePanel-referenceElement\tAttr",
       "contents": "referenceElement=\"${1:ui:autocompletePanel - Optional - Object}\""
     },
@@ -1120,6 +1144,10 @@
     {
       "trigger": "ui-autocompletePanel-zIndex\tAttr",
       "contents": "zIndex=\"${1:ui:autocompletePanel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-autocompletePanel-listCollapse\tAttr",
+      "contents": "listCollapse=\"${1:ui:autocompletePanel - Optional - ui:autocompleteListCollapse}\""
     },
     {
       "trigger": "ui-block-overflow\tAttr",
@@ -1150,8 +1178,12 @@
       "contents": "class=\"${1:ui:button - Optional - String}\""
     },
     {
+      "trigger": "ui-button-variant\tAttr",
+      "contents": "variant=\"${1:ui:button - Optional - String}\""
+    },
+    {
       "trigger": "ui-button-label\tAttr",
-      "contents": "label=\"${1:ui:button - Required - String}\""
+      "contents": "label=\"${1:ui:button - Optional - String}\""
     },
     {
       "trigger": "ui-button-labelClass\tAttr",
@@ -1176,10 +1208,6 @@
     {
       "trigger": "ui-button-notSelectedClass\tAttr",
       "contents": "notSelectedClass=\"${1:ui:button - Optional - String}\""
-    },
-    {
-      "trigger": "ui-button-classList\tAttr",
-      "contents": "classList=\"${1:ui:button - Optional - String}\""
     },
     {
       "trigger": "ui-button-disabled\tAttr",
@@ -1614,6 +1642,10 @@
       "contents": "pageSelected=\"${1:ui:carouselPageIndicatorItem - Optional - ui:carouselPageEvent}\""
     },
     {
+      "trigger": "ui-checkboxMenuItem-role\tAttr",
+      "contents": "role=\"${1:ui:checkboxMenuItem - Optional - String}\""
+    },
+    {
       "trigger": "ui-containerManager-registeredContainers\tAttr",
       "contents": "registeredContainers=\"${1:ui:containerManager - Optional - Aura.ComponentDefRef[]}\""
     },
@@ -1624,6 +1656,10 @@
     {
       "trigger": "ui-dataGrid-useRowHeaders\tAttr",
       "contents": "useRowHeaders=\"${1:ui:dataGrid - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataGrid-devNameOrId\tAttr",
+      "contents": "devNameOrId=\"${1:ui:dataGrid - Optional - String}\""
     },
     {
       "trigger": "ui-dataGrid-updateRowAttributes\tAttr",
@@ -1778,6 +1814,10 @@
       "contents": "onchange=\"${1:ui:dataProvider - Optional - ui:dataChanged}\""
     },
     {
+      "trigger": "ui-dataProvider-abort\tAttr",
+      "contents": "abort=\"${1:ui:dataProvider - Optional - ui:abortFetchData}\""
+    },
+    {
       "trigger": "ui-dataProvider-error\tAttr",
       "contents": "error=\"${1:ui:dataProvider - Optional - ui:dataProvideError}\""
     },
@@ -1812,6 +1852,82 @@
     {
       "trigger": "ui-dataTableColumn-headerValue\tAttr",
       "contents": "headerValue=\"${1:ui:dataTableColumn - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-title\tAttr",
+      "contents": "title=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-scope\tAttr",
+      "contents": "scope=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-label\tAttr",
+      "contents": "label=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-hideLabel\tAttr",
+      "contents": "hideLabel=\"${1:ui:dataTableHeader - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-ascLabel\tAttr",
+      "contents": "ascLabel=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-descLabel\tAttr",
+      "contents": "descLabel=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-name\tAttr",
+      "contents": "name=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-type\tAttr",
+      "contents": "type=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-required\tAttr",
+      "contents": "required=\"${1:ui:dataTableHeader - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:dataTableHeader - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-sortable\tAttr",
+      "contents": "sortable=\"${1:ui:dataTableHeader - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-direction\tAttr",
+      "contents": "direction=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-initialDirectionOnSort\tAttr",
+      "contents": "initialDirectionOnSort=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-onsortchange\tAttr",
+      "contents": "onsortchange=\"${1:ui:dataTableHeader - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-assistiveSortText\tAttr",
+      "contents": "assistiveSortText=\"${1:ui:dataTableHeader - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-resizable\tAttr",
+      "contents": "resizable=\"${1:ui:dataTableHeader - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-width\tAttr",
+      "contents": "width=\"${1:ui:dataTableHeader - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-outputComponent\tAttr",
+      "contents": "outputComponent=\"${1:ui:dataTableHeader - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "ui-dataTableHeader-icon\tAttr",
+      "contents": "icon=\"${1:ui:dataTableHeader - Optional - Aura.ComponentDefRef[]}\""
     },
     {
       "trigger": "ui-dataTableRow-rowPress\tAttr",
@@ -1850,6 +1966,10 @@
       "contents": "hours=\"${1:ui:datePicker - Optional - Integer}\""
     },
     {
+      "trigger": "ui-datePicker-minutes\tAttr",
+      "contents": "minutes=\"${1:ui:datePicker - Optional - Integer}\""
+    },
+    {
       "trigger": "ui-datePicker-is24HourFormat\tAttr",
       "contents": "is24HourFormat=\"${1:ui:datePicker - Optional - Boolean}\""
     },
@@ -1862,20 +1982,12 @@
       "contents": "minYear=\"${1:ui:datePicker - Optional - Integer}\""
     },
     {
-      "trigger": "ui-datePicker-minutes\tAttr",
-      "contents": "minutes=\"${1:ui:datePicker - Optional - Integer}\""
-    },
-    {
       "trigger": "ui-datePicker-value\tAttr",
       "contents": "value=\"${1:ui:datePicker - Optional - String}\""
     },
     {
       "trigger": "ui-datePicker-visible\tAttr",
       "contents": "visible=\"${1:ui:datePicker - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-datePicker-_yearListInitialized\tAttr",
-      "contents": "_yearListInitialized=\"${1:ui:datePicker - Optional - Boolean}\""
     },
     {
       "trigger": "ui-datePicker-managed\tAttr",
@@ -1898,16 +2010,8 @@
       "contents": "setFocus=\"${1:ui:datePicker - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-datePicker-titleHeadingLevel\tAttr",
-      "contents": "titleHeadingLevel=\"${1:ui:datePicker - Optional - String}\""
-    },
-    {
       "trigger": "ui-datePicker-closeOnClickOut\tAttr",
       "contents": "closeOnClickOut=\"${1:ui:datePicker - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-datePicker-_today\tAttr",
-      "contents": "_today=\"${1:ui:datePicker - Optional - String}\""
     },
     {
       "trigger": "ui-datePicker-rangeStart\tAttr",
@@ -1918,8 +2022,20 @@
       "contents": "rangeEnd=\"${1:ui:datePicker - Optional - String}\""
     },
     {
-      "trigger": "ui-datePicker-rangeClass\tAttr",
-      "contents": "rangeClass=\"${1:ui:datePicker - Optional - String}\""
+      "trigger": "ui-datePicker-highlightClass\tAttr",
+      "contents": "highlightClass=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
+      "trigger": "ui-datePicker-value\tAttr",
+      "contents": "value=\"${1:ui:datePicker - Optional - String}\""
+    },
+    {
+      "trigger": "ui-datePicker-focus\tAttr",
+      "contents": "focus=\"${1:ui:datePicker - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-datePicker-referenceElement\tAttr",
+      "contents": "referenceElement=\"${1:ui:datePicker - Optional - Object}\""
     },
     {
       "trigger": "ui-datePicker-selectDate\tAttr",
@@ -1930,12 +2046,12 @@
       "contents": "class=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-date\tAttr",
-      "contents": "date=\"${1:ui:datePickerGrid - Optional - Integer}\""
-    },
-    {
       "trigger": "ui-datePickerGrid-hasTime\tAttr",
       "contents": "hasTime=\"${1:ui:datePickerGrid - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-date\tAttr",
+      "contents": "date=\"${1:ui:datePickerGrid - Optional - Integer}\""
     },
     {
       "trigger": "ui-datePickerGrid-month\tAttr",
@@ -1947,11 +2063,19 @@
     },
     {
       "trigger": "ui-datePickerGrid-selectedDate\tAttr",
-      "contents": "selectedDate=\"${1:ui:datePickerGrid - Optional - Date}\""
+      "contents": "selectedDate=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-setFocus\tAttr",
-      "contents": "setFocus=\"${1:ui:datePickerGrid - Optional - Boolean}\""
+      "trigger": "ui-datePickerGrid-_today\tAttr",
+      "contents": "_today=\"${1:ui:datePickerGrid - Optional - String}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-gridBody\tAttr",
+      "contents": "gridBody=\"${1:ui:datePickerGrid - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-showToday\tAttr",
+      "contents": "showToday=\"${1:ui:datePickerGrid - Optional - Boolean}\""
     },
     {
       "trigger": "ui-datePickerGrid-rangeStart\tAttr",
@@ -1962,40 +2086,52 @@
       "contents": "rangeEnd=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-rangeClass\tAttr",
-      "contents": "rangeClass=\"${1:ui:datePickerGrid - Optional - String}\""
+      "trigger": "ui-datePickerGrid-highlightClass\tAttr",
+      "contents": "highlightClass=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-_setFocus\tAttr",
-      "contents": "_setFocus=\"${1:ui:datePickerGrid - Optional - Boolean}\""
+      "trigger": "ui-datePickerGrid-rangeStart\tAttr",
+      "contents": "rangeStart=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-_namesOfWeekdays\tAttr",
-      "contents": "_namesOfWeekdays=\"${1:ui:datePickerGrid - Optional - List}\""
+      "trigger": "ui-datePickerGrid-rangeEnd\tAttr",
+      "contents": "rangeEnd=\"${1:ui:datePickerGrid - Optional - String}\""
     },
     {
-      "trigger": "ui-datePickerGrid-_today\tAttr",
-      "contents": "_today=\"${1:ui:datePickerGrid - Optional - String}\""
+      "trigger": "ui-datePickerGrid-highlightClass\tAttr",
+      "contents": "highlightClass=\"${1:ui:datePickerGrid - Optional - String}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-selectedDate\tAttr",
+      "contents": "selectedDate=\"${1:ui:datePickerGrid - Optional - String}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-monthChange\tAttr",
+      "contents": "monthChange=\"${1:ui:datePickerGrid - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-datePickerGrid-yearChange\tAttr",
+      "contents": "yearChange=\"${1:ui:datePickerGrid - Optional - Integer}\""
     },
     {
       "trigger": "ui-datePickerGrid-hide\tAttr",
       "contents": "hide=\"${1:ui:datePickerGrid - Optional - ui:change}\""
     },
     {
-      "trigger": "ui-datePickerGrid-focus\tAttr",
-      "contents": "focus=\"${1:ui:datePickerGrid - Optional - ui:focus}\""
-    },
-    {
       "trigger": "ui-datePickerGrid-selectDate\tAttr",
       "contents": "selectDate=\"${1:ui:datePickerGrid - Optional - ui:selectDate}\""
     },
     {
-      "trigger": "ui-datePickerGrid-updateCalendar\tAttr",
-      "contents": "updateCalendar=\"${1:ui:datePickerGrid - Optional - ui:updateCalendar}\""
-    },
-    {
       "trigger": "ui-datePickerGrid-updateCalendarTitle\tAttr",
       "contents": "updateCalendarTitle=\"${1:ui:datePickerGrid - Optional - ui:updateCalendarTitle}\""
+    },
+    {
+      "trigger": "ui-datePickerManager-loadDatePicker\tAttr",
+      "contents": "loadDatePicker=\"${1:ui:datePickerManager - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-dayInMonthCell-label\tAttr",
+      "contents": "label=\"${1:ui:dayInMonthCell - Optional - String}\""
     },
     {
       "trigger": "ui-dayInMonthCell-ariaSelected\tAttr",
@@ -2007,7 +2143,19 @@
     },
     {
       "trigger": "ui-dayInMonthCell-value\tAttr",
-      "contents": "value=\"${1:ui:dayInMonthCell - Optional - Date}\""
+      "contents": "value=\"${1:ui:dayInMonthCell - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dayInMonthCell-tdClass\tAttr",
+      "contents": "tdClass=\"${1:ui:dayInMonthCell - Optional - String}\""
+    },
+    {
+      "trigger": "ui-dayInMonthCell-config\tAttr",
+      "contents": "config=\"${1:ui:dayInMonthCell - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-dayInMonthCell-selectDate\tAttr",
+      "contents": "selectDate=\"${1:ui:dayInMonthCell - Optional - ui:selectDate}\""
     },
     {
       "trigger": "ui-dialog-ariaRole\tAttr",
@@ -2162,10 +2310,6 @@
       "contents": "disable=\"${1:ui:draggable - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-draggable-ariaGrabbed\tAttr",
-      "contents": "ariaGrabbed=\"${1:ui:draggable - Optional - boolean}\""
-    },
-    {
       "trigger": "ui-draggable-accessibilityComponent\tAttr",
       "contents": "accessibilityComponent=\"${1:ui:draggable - Optional - String}\""
     },
@@ -2220,10 +2364,6 @@
     {
       "trigger": "ui-dropzone-label\tAttr",
       "contents": "label=\"${1:ui:dropzone - Optional - String}\""
-    },
-    {
-      "trigger": "ui-dropzone-ariaDropEffect\tAttr",
-      "contents": "ariaDropEffect=\"${1:ui:dropzone - Optional - String}\""
     },
     {
       "trigger": "ui-dropzone-target\tAttr",
@@ -2338,8 +2478,56 @@
       "contents": "close=\"${1:ui:infiniteListRow - Optional - ui:close}\""
     },
     {
-      "trigger": "ui-input-disableDoubleClicks\tAttr",
-      "contents": "disableDoubleClicks=\"${1:ui:input - Optional - Boolean}\""
+      "trigger": "ui-inlineEditPanelBody-index\tAttr",
+      "contents": "index=\"${1:ui:inlineEditPanelBody - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inlineEditPanelBody-updateMap\tAttr",
+      "contents": "updateMap=\"${1:ui:inlineEditPanelBody - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-inlineEditPanelBody-submitOn\tAttr",
+      "contents": "submitOn=\"${1:ui:inlineEditPanelBody - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inlineEditPanelBody-inputComponent\tAttr",
+      "contents": "inputComponent=\"${1:ui:inlineEditPanelBody - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-inlineEditPanelBody-closeBehavior\tAttr",
+      "contents": "closeBehavior=\"${1:ui:inlineEditPanelBody - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inlineEditPanelBody-submit\tAttr",
+      "contents": "submit=\"${1:ui:inlineEditPanelBody - Optional - ui:gridAction}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-startOfDialogLabel\tAttr",
+      "contents": "startOfDialogLabel=\"${1:ui:inlinePanel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-title\tAttr",
+      "contents": "title=\"${1:ui:inlinePanel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-class\tAttr",
+      "contents": "class=\"${1:ui:inlinePanel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-closeOnClickOut\tAttr",
+      "contents": "closeOnClickOut=\"${1:ui:inlinePanel - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-referenceElement\tAttr",
+      "contents": "referenceElement=\"${1:ui:inlinePanel - Required - Object}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-closeAction\tAttr",
+      "contents": "closeAction=\"${1:ui:inlinePanel - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-inlinePanel-autoFocus\tAttr",
+      "contents": "autoFocus=\"${1:ui:inlinePanel - Optional - Boolean}\""
     },
     {
       "trigger": "ui-input-showErrors\tAttr",
@@ -2354,8 +2542,16 @@
       "contents": "errorComponent=\"${1:ui:input - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-input-fieldHelpComponent\tAttr",
+      "contents": "fieldHelpComponent=\"${1:ui:input - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "ui-input-type\tAttr",
       "contents": "type=\"${1:ui:input - Optional - String}\""
+    },
+    {
+      "trigger": "ui-input-isCompound\tAttr",
+      "contents": "isCompound=\"${1:ui:input - Optional - Boolean}\""
     },
     {
       "trigger": "ui-input-required\tAttr",
@@ -2388,6 +2584,10 @@
     {
       "trigger": "ui-input-labelTitle\tAttr",
       "contents": "labelTitle=\"${1:ui:input - Optional - String}\""
+    },
+    {
+      "trigger": "ui-input-useSpanLabel\tAttr",
+      "contents": "useSpanLabel=\"${1:ui:input - Optional - Boolean}\""
     },
     {
       "trigger": "ui-input-requiredIndicatorClass\tAttr",
@@ -2442,24 +2642,12 @@
       "contents": "updateOn=\"${1:ui:inputCheckbox - Optional - String}\""
     },
     {
-      "trigger": "ui-inputCurrency-inputValue\tAttr",
-      "contents": "inputValue=\"${1:ui:inputCurrency - Optional - string}\""
-    },
-    {
-      "trigger": "ui-inputCurrency-lastValue\tAttr",
-      "contents": "lastValue=\"${1:ui:inputCurrency - Optional - string}\""
-    },
-    {
-      "trigger": "ui-inputCurrency-updateWasFromOutside\tAttr",
-      "contents": "updateWasFromOutside=\"${1:ui:inputCurrency - Optional - boolean}\""
+      "trigger": "ui-inputDate-loadDatePicker\tAttr",
+      "contents": "loadDatePicker=\"${1:ui:inputDate - Optional - Boolean}\""
     },
     {
       "trigger": "ui-inputDate-placeholder\tAttr",
       "contents": "placeholder=\"${1:ui:inputDate - Optional - String}\""
-    },
-    {
-      "trigger": "ui-inputDate-loadDatePicker\tAttr",
-      "contents": "loadDatePicker=\"${1:ui:inputDate - Optional - Boolean}\""
     },
     {
       "trigger": "ui-inputDate-openPicker\tAttr",
@@ -2498,12 +2686,16 @@
       "contents": "timePlaceholder=\"${1:ui:inputDateTime - Optional - String}\""
     },
     {
-      "trigger": "ui-inputDateTime-openPicker\tAttr",
-      "contents": "openPicker=\"${1:ui:inputDateTime - Optional - ui:openPicker}\""
+      "trigger": "ui-inputDateTime-loadDatePicker\tAttr",
+      "contents": "loadDatePicker=\"${1:ui:inputDateTime - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-inputDateTimeHtml-timezone\tAttr",
-      "contents": "timezone=\"${1:ui:inputDateTimeHtml - Optional - String}\""
+      "trigger": "ui-inputDateTime-loadTimePicker\tAttr",
+      "contents": "loadTimePicker=\"${1:ui:inputDateTime - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputDateTime-openPicker\tAttr",
+      "contents": "openPicker=\"${1:ui:inputDateTime - Optional - ui:openPicker}\""
     },
     {
       "trigger": "ui-inputDefaultError-value\tAttr",
@@ -2518,8 +2710,96 @@
       "contents": "domId=\"${1:ui:inputDefaultError - Optional - String}\""
     },
     {
-      "trigger": "ui-inputOption-type\tAttr",
-      "contents": "type=\"${1:ui:inputOption - Optional - String}\""
+      "trigger": "ui-inputFile-files\tAttr",
+      "contents": "files=\"${1:ui:inputFile - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-inputFile-name\tAttr",
+      "contents": "name=\"${1:ui:inputFile - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFile-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:inputFile - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFile-required\tAttr",
+      "contents": "required=\"${1:ui:inputFile - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFile-includeFormElement\tAttr",
+      "contents": "includeFormElement=\"${1:ui:inputFile - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFile-accept\tAttr",
+      "contents": "accept=\"${1:ui:inputFile - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFile-multiple\tAttr",
+      "contents": "multiple=\"${1:ui:inputFile - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFile-maxSizeAllowed\tAttr",
+      "contents": "maxSizeAllowed=\"${1:ui:inputFile - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputFile-class\tAttr",
+      "contents": "class=\"${1:ui:inputFile - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFile-change\tAttr",
+      "contents": "change=\"${1:ui:inputFile - Optional - ui:inputFileChangeEvent}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-accept\tAttr",
+      "contents": "accept=\"${1:ui:inputFileDroppableZone - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-multiple\tAttr",
+      "contents": "multiple=\"${1:ui:inputFileDroppableZone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-maxSizeAllowed\tAttr",
+      "contents": "maxSizeAllowed=\"${1:ui:inputFileDroppableZone - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-class\tAttr",
+      "contents": "class=\"${1:ui:inputFileDroppableZone - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-classOver\tAttr",
+      "contents": "classOver=\"${1:ui:inputFileDroppableZone - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:inputFileDroppableZone - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFileDroppableZone-change\tAttr",
+      "contents": "change=\"${1:ui:inputFileDroppableZone - Optional - ui:inputFileChangeEvent}\""
+    },
+    {
+      "trigger": "ui-inputFileFilesList-files\tAttr",
+      "contents": "files=\"${1:ui:inputFileFilesList - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-inputFileOpenBrowse-accept\tAttr",
+      "contents": "accept=\"${1:ui:inputFileOpenBrowse - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputFileOpenBrowse-multiple\tAttr",
+      "contents": "multiple=\"${1:ui:inputFileOpenBrowse - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFileOpenBrowse-maxSizeAllowed\tAttr",
+      "contents": "maxSizeAllowed=\"${1:ui:inputFileOpenBrowse - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputFileOpenBrowse-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:inputFileOpenBrowse - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputFileOpenBrowse-change\tAttr",
+      "contents": "change=\"${1:ui:inputFileOpenBrowse - Optional - ui:inputFileChangeEvent}\""
     },
     {
       "trigger": "ui-inputRadio-disabled\tAttr",
@@ -2606,12 +2886,44 @@
       "contents": "size=\"${1:ui:inputSelect - Optional - Integer}\""
     },
     {
+      "trigger": "ui-inputSelect-useMenu\tAttr",
+      "contents": "useMenu=\"${1:ui:inputSelect - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-inputSelectOptionGroup-class\tAttr",
       "contents": "class=\"${1:ui:inputSelectOptionGroup - Optional - String}\""
     },
     {
       "trigger": "ui-inputSelectOptionGroup-label\tAttr",
       "contents": "label=\"${1:ui:inputSelectOptionGroup - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-id\tAttr",
+      "contents": "id=\"${1:ui:inputSmartNumber - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-required\tAttr",
+      "contents": "required=\"${1:ui:inputSmartNumber - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-value\tAttr",
+      "contents": "value=\"${1:ui:inputSmartNumber - Optional - Decimal}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:inputSmartNumber - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-style\tAttr",
+      "contents": "style=\"${1:ui:inputSmartNumber - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-updateOn\tAttr",
+      "contents": "updateOn=\"${1:ui:inputSmartNumber - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputSmartNumber-change\tAttr",
+      "contents": "change=\"${1:ui:inputSmartNumber - Optional - ui:change}\""
     },
     {
       "trigger": "ui-inputTextArea-rows\tAttr",
@@ -2650,6 +2962,10 @@
       "contents": "ariaActiveDescendant=\"${1:ui:inputTextAreaForAutocomplete - Optional - String}\""
     },
     {
+      "trigger": "ui-inputTextAreaForAutocomplete-inputTitle\tAttr",
+      "contents": "inputTitle=\"${1:ui:inputTextAreaForAutocomplete - Optional - String}\""
+    },
+    {
       "trigger": "ui-inputTextForAutocomplete-autocompleteButton\tAttr",
       "contents": "autocompleteButton=\"${1:ui:inputTextForAutocomplete - Optional - Aura.Component[]}\""
     },
@@ -2660,6 +2976,10 @@
     {
       "trigger": "ui-inputTextForAutocomplete-ariaActiveDescendant\tAttr",
       "contents": "ariaActiveDescendant=\"${1:ui:inputTextForAutocomplete - Optional - String}\""
+    },
+    {
+      "trigger": "ui-inputTextForAutocomplete-inputTitle\tAttr",
+      "contents": "inputTitle=\"${1:ui:inputTextForAutocomplete - Optional - String}\""
     },
     {
       "trigger": "ui-inputTimePicker-timeFormat\tAttr",
@@ -2690,8 +3010,16 @@
       "contents": "referenceElement=\"${1:ui:inputTimePicker - Optional - Object}\""
     },
     {
-      "trigger": "ui-inputTimePicker-_timeListInitialized\tAttr",
-      "contents": "_timeListInitialized=\"${1:ui:inputTimePicker - Optional - Boolean}\""
+      "trigger": "ui-inputTimePicker-hours\tAttr",
+      "contents": "hours=\"${1:ui:inputTimePicker - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-minutes\tAttr",
+      "contents": "minutes=\"${1:ui:inputTimePicker - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-inputTimePicker-focus\tAttr",
+      "contents": "focus=\"${1:ui:inputTimePicker - Optional - Boolean}\""
     },
     {
       "trigger": "ui-inputTimePicker-selectDate\tAttr",
@@ -2700,10 +3028,6 @@
     {
       "trigger": "ui-interactive-disabled\tAttr",
       "contents": "disabled=\"${1:ui:interactive - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-interactive-disableDoubleClicks\tAttr",
-      "contents": "disableDoubleClicks=\"${1:ui:interactive - Optional - Boolean}\""
     },
     {
       "trigger": "ui-interactive-blur\tAttr",
@@ -2752,6 +3076,26 @@
     {
       "trigger": "ui-label-requiredIndicator\tAttr",
       "contents": "requiredIndicator=\"${1:ui:label - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-legend-legend\tAttr",
+      "contents": "legend=\"${1:ui:legend - Optional - String}\""
+    },
+    {
+      "trigger": "ui-legend-title\tAttr",
+      "contents": "title=\"${1:ui:legend - Optional - String}\""
+    },
+    {
+      "trigger": "ui-legend-class\tAttr",
+      "contents": "class=\"${1:ui:legend - Optional - String}\""
+    },
+    {
+      "trigger": "ui-legend-labelDisplay\tAttr",
+      "contents": "labelDisplay=\"${1:ui:legend - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-legend-requiredIndicator\tAttr",
+      "contents": "requiredIndicator=\"${1:ui:legend - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-listSorter-dataProvider\tAttr",
@@ -2838,6 +3182,10 @@
       "contents": "resourceURLs=\"${1:ui:manifest - Optional - String}\""
     },
     {
+      "trigger": "ui-manifest-fallbackURLs\tAttr",
+      "contents": "fallbackURLs=\"${1:ui:manifest - Optional - String}\""
+    },
+    {
       "trigger": "ui-menuItem-selected\tAttr",
       "contents": "selected=\"${1:ui:menuItem - Optional - Boolean}\""
     },
@@ -2854,12 +3202,28 @@
       "contents": "hideMenuAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-menuItem-focusTriggerAfterSelected\tAttr",
-      "contents": "focusTriggerAfterSelected=\"${1:ui:menuItem - Optional - Boolean}\""
+      "trigger": "ui-menuItem-disabled\tAttr",
+      "contents": "disabled=\"${1:ui:menuItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-menuItem-class\tAttr",
+      "contents": "class=\"${1:ui:menuItem - Optional - String}\""
+    },
+    {
+      "trigger": "ui-menuItem-role\tAttr",
+      "contents": "role=\"${1:ui:menuItem - Optional - String}\""
     },
     {
       "trigger": "ui-menuItem-menuSelect\tAttr",
       "contents": "menuSelect=\"${1:ui:menuItem - Optional - ui:menuSelect}\""
+    },
+    {
+      "trigger": "ui-menuItem-click\tAttr",
+      "contents": "click=\"${1:ui:menuItem - Optional - ui:click}\""
+    },
+    {
+      "trigger": "ui-menuItemSeparator-label\tAttr",
+      "contents": "label=\"${1:ui:menuItemSeparator - Optional - String}\""
     },
     {
       "trigger": "ui-menuList-menuItems\tAttr",
@@ -2886,6 +3250,14 @@
       "contents": "childMenuItems=\"${1:ui:menuList - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-menuList-role\tAttr",
+      "contents": "role=\"${1:ui:menuList - Optional - String}\""
+    },
+    {
+      "trigger": "ui-menuList-triggerTypeAhead\tAttr",
+      "contents": "triggerTypeAhead=\"${1:ui:menuList - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-menuList-menuCollapse\tAttr",
       "contents": "menuCollapse=\"${1:ui:menuList - Optional - ui:collapse}\""
     },
@@ -2906,12 +3278,20 @@
       "contents": "refresh=\"${1:ui:menuList - Optional - ui:refresh}\""
     },
     {
+      "trigger": "ui-menuList-popupKeyboardEvent\tAttr",
+      "contents": "popupKeyboardEvent=\"${1:ui:menuList - Optional - ui:popupKeyboardEvent}\""
+    },
+    {
       "trigger": "ui-menuTrigger-menuTriggerPress\tAttr",
       "contents": "menuTriggerPress=\"${1:ui:menuTrigger - Optional - ui:menuTriggerPress}\""
     },
     {
-      "trigger": "ui-menuTriggerLink-label\tAttr",
-      "contents": "label=\"${1:ui:menuTriggerLink - Optional - String}\""
+      "trigger": "ui-menuTriggerLink-ariaLabel\tAttr",
+      "contents": "ariaLabel=\"${1:ui:menuTriggerLink - Optional - String}\""
+    },
+    {
+      "trigger": "ui-menuTriggerLink-ariaRequired\tAttr",
+      "contents": "ariaRequired=\"${1:ui:menuTriggerLink - Optional - Boolean}\""
     },
     {
       "trigger": "ui-menuTriggerLink-menuTriggerPress\tAttr",
@@ -2938,6 +3318,10 @@
       "contents": "closable=\"${1:ui:message - Optional - Boolean}\""
     },
     {
+      "trigger": "ui-modal-devNameOrId\tAttr",
+      "contents": "devNameOrId=\"${1:ui:modal - Optional - String}\""
+    },
+    {
       "trigger": "ui-modal-title\tAttr",
       "contents": "title=\"${1:ui:modal - Optional - String}\""
     },
@@ -2948,6 +3332,22 @@
     {
       "trigger": "ui-modal-class\tAttr",
       "contents": "class=\"${1:ui:modal - Optional - String}\""
+    },
+    {
+      "trigger": "ui-modal-modalClass\tAttr",
+      "contents": "modalClass=\"${1:ui:modal - Optional - String}\""
+    },
+    {
+      "trigger": "ui-modal-headerClass\tAttr",
+      "contents": "headerClass=\"${1:ui:modal - Optional - String}\""
+    },
+    {
+      "trigger": "ui-modal-bodyClass\tAttr",
+      "contents": "bodyClass=\"${1:ui:modal - Optional - String}\""
+    },
+    {
+      "trigger": "ui-modal-footerClass\tAttr",
+      "contents": "footerClass=\"${1:ui:modal - Optional - String}\""
     },
     {
       "trigger": "ui-modal-startOfDialogLabel\tAttr",
@@ -2990,6 +3390,10 @@
       "contents": "icon=\"${1:ui:modal - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-modal-trapFocus\tAttr",
+      "contents": "trapFocus=\"${1:ui:modal - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-output-value\tAttr",
       "contents": "value=\"${1:ui:output - Required - Object}\""
     },
@@ -3022,6 +3426,10 @@
       "contents": "currencySymbol=\"${1:ui:outputCurrency - Optional - String}\""
     },
     {
+      "trigger": "ui-outputDate-timezone\tAttr",
+      "contents": "timezone=\"${1:ui:outputDate - Optional - String}\""
+    },
+    {
       "trigger": "ui-outputDate-value\tAttr",
       "contents": "value=\"${1:ui:outputDate - Required - String}\""
     },
@@ -3036,6 +3444,10 @@
     {
       "trigger": "ui-outputEmail-value\tAttr",
       "contents": "value=\"${1:ui:outputEmail - Required - String}\""
+    },
+    {
+      "trigger": "ui-outputEmail-label\tAttr",
+      "contents": "label=\"${1:ui:outputEmail - Optional - String}\""
     },
     {
       "trigger": "ui-outputMultiSelect-value\tAttr",
@@ -3074,6 +3486,10 @@
       "contents": "value=\"${1:ui:outputRichText - Optional - String}\""
     },
     {
+      "trigger": "ui-outputRichText-linkify\tAttr",
+      "contents": "linkify=\"${1:ui:outputRichText - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-outputRichText-supportedTags\tAttr",
       "contents": "supportedTags=\"${1:ui:outputRichText - Optional - String}\""
     },
@@ -3092,6 +3508,10 @@
     {
       "trigger": "ui-outputTextArea-value\tAttr",
       "contents": "value=\"${1:ui:outputTextArea - Required - String}\""
+    },
+    {
+      "trigger": "ui-outputTextArea-linkify\tAttr",
+      "contents": "linkify=\"${1:ui:outputTextArea - Optional - Boolean}\""
     },
     {
       "trigger": "ui-outputURL-iconClass\tAttr",
@@ -3186,12 +3606,20 @@
       "contents": "title=\"${1:ui:panel - Optional - String}\""
     },
     {
+      "trigger": "ui-panel-devNameOrId\tAttr",
+      "contents": "devNameOrId=\"${1:ui:panel - Optional - String}\""
+    },
+    {
       "trigger": "ui-panel-class\tAttr",
       "contents": "class=\"${1:ui:panel - Optional - String}\""
     },
     {
       "trigger": "ui-panel-titleDisplay\tAttr",
       "contents": "titleDisplay=\"${1:ui:panel - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-panel-titleTruncate\tAttr",
+      "contents": "titleTruncate=\"${1:ui:panel - Optional - Boolean}\""
     },
     {
       "trigger": "ui-panel-startOfDialogLabel\tAttr",
@@ -3262,92 +3690,28 @@
       "contents": "pad=\"${1:ui:panel - Optional - Integer}\""
     },
     {
+      "trigger": "ui-panel-pointerPad\tAttr",
+      "contents": "pointerPad=\"${1:ui:panel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-panel-boundingBoxPad\tAttr",
+      "contents": "boundingBoxPad=\"${1:ui:panel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-panel-boxDirectionPad\tAttr",
+      "contents": "boxDirectionPad=\"${1:ui:panel - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-panel-classNames\tAttr",
+      "contents": "classNames=\"${1:ui:panel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-panel-trapFocus\tAttr",
+      "contents": "trapFocus=\"${1:ui:panel - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-panel-closeButton\tAttr",
       "contents": "closeButton=\"${1:ui:panel - Optional - Aura.Component[]}\""
-    },
-    {
-      "trigger": "ui-panelDialog-closeOnClickOut\tAttr",
-      "contents": "closeOnClickOut=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-showCloseButton\tAttr",
-      "contents": "showCloseButton=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-closeAction\tAttr",
-      "contents": "closeAction=\"${1:ui:panelDialog - Optional - Aura.Action}\""
-    },
-    {
-      "trigger": "ui-panelDialog-class\tAttr",
-      "contents": "class=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-animation\tAttr",
-      "contents": "animation=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-title\tAttr",
-      "contents": "title=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-startOfDialogLabel\tAttr",
-      "contents": "startOfDialogLabel=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-closeDialogLabel\tAttr",
-      "contents": "closeDialogLabel=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-detail\tAttr",
-      "contents": "detail=\"${1:ui:panelDialog - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelDialog-icon\tAttr",
-      "contents": "icon=\"${1:ui:panelDialog - Optional - Aura.Component[]}\""
-    },
-    {
-      "trigger": "ui-panelDialog-isVisible\tAttr",
-      "contents": "isVisible=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-autoFocus\tAttr",
-      "contents": "autoFocus=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-titleDisplay\tAttr",
-      "contents": "titleDisplay=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-isTransient\tAttr",
-      "contents": "isTransient=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-isModal\tAttr",
-      "contents": "isModal=\"${1:ui:panelDialog - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-panelDialog-referenceElement\tAttr",
-      "contents": "referenceElement=\"${1:ui:panelDialog - Optional - Object}\""
-    },
-    {
-      "trigger": "ui-panelDialog-lastFocusedInput\tAttr",
-      "contents": "lastFocusedInput=\"${1:ui:panelDialog - Optional - Object}\""
-    },
-    {
-      "trigger": "ui-panelDialog-callbacks\tAttr",
-      "contents": "callbacks=\"${1:ui:panelDialog - Optional - Object}\""
-    },
-    {
-      "trigger": "ui-panelDialog-panelDoneRendering\tAttr",
-      "contents": "panelDoneRendering=\"${1:ui:panelDialog - Optional - ui:panelDoneRendering}\""
-    },
-    {
-      "trigger": "ui-panelManager-class\tAttr",
-      "contents": "class=\"${1:ui:panelManager - Optional - String}\""
-    },
-    {
-      "trigger": "ui-panelManager-cancelButtonLabel\tAttr",
-      "contents": "cancelButtonLabel=\"${1:ui:panelManager - Optional - String}\""
     },
     {
       "trigger": "ui-panelManager2-registeredPanels\tAttr",
@@ -3356,6 +3720,30 @@
     {
       "trigger": "ui-panelManager2-useSharedContainer\tAttr",
       "contents": "useSharedContainer=\"${1:ui:panelManager2 - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-panelManager2-closeOnLocationChange\tAttr",
+      "contents": "closeOnLocationChange=\"${1:ui:panelManager2 - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-picklistLabel-label\tAttr",
+      "contents": "label=\"${1:ui:picklistLabel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-picklistLabel-title\tAttr",
+      "contents": "title=\"${1:ui:picklistLabel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-picklistLabel-class\tAttr",
+      "contents": "class=\"${1:ui:picklistLabel - Optional - String}\""
+    },
+    {
+      "trigger": "ui-picklistLabel-labelDisplay\tAttr",
+      "contents": "labelDisplay=\"${1:ui:picklistLabel - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-picklistLabel-requiredIndicator\tAttr",
+      "contents": "requiredIndicator=\"${1:ui:picklistLabel - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-pill-label\tAttr",
@@ -3442,12 +3830,20 @@
       "contents": "assistiveTextLabel=\"${1:ui:pillContainer - Optional - String}\""
     },
     {
-      "trigger": "ui-pillContainer-expanded\tAttr",
-      "contents": "expanded=\"${1:ui:pillContainer - Optional - Boolean}\""
+      "trigger": "ui-pillContainer-items\tAttr",
+      "contents": "items=\"${1:ui:pillContainer - Optional - List}\""
+    },
+    {
+      "trigger": "ui-pillContainer-fireInsertedEvent\tAttr",
+      "contents": "fireInsertedEvent=\"${1:ui:pillContainer - Optional - Boolean}\""
     },
     {
       "trigger": "ui-pillContainer-items\tAttr",
       "contents": "items=\"${1:ui:pillContainer - Optional - List}\""
+    },
+    {
+      "trigger": "ui-pillContainer-fireRemovedEvent\tAttr",
+      "contents": "fireRemovedEvent=\"${1:ui:pillContainer - Optional - Boolean}\""
     },
     {
       "trigger": "ui-pillContainer-pillInserted\tAttr",
@@ -3494,10 +3890,6 @@
       "contents": "refresh=\"${1:ui:popup - Optional - ui:refresh}\""
     },
     {
-      "trigger": "ui-popupTarget-visible\tAttr",
-      "contents": "visible=\"${1:ui:popupTarget - Optional - Boolean}\""
-    },
-    {
       "trigger": "ui-popupTarget-closeOnTabKey\tAttr",
       "contents": "closeOnTabKey=\"${1:ui:popupTarget - Optional - Boolean}\""
     },
@@ -3506,24 +3898,32 @@
       "contents": "autoPosition=\"${1:ui:popupTarget - Optional - Boolean}\""
     },
     {
-      "trigger": "ui-popupTarget-manualPosition\tAttr",
-      "contents": "manualPosition=\"${1:ui:popupTarget - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-popupTarget-attachToBody\tAttr",
-      "contents": "attachToBody=\"${1:ui:popupTarget - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-popupTarget-referenceElement\tAttr",
-      "contents": "referenceElement=\"${1:ui:popupTarget - Optional - Object}\""
-    },
-    {
       "trigger": "ui-popupTarget-curtain\tAttr",
       "contents": "curtain=\"${1:ui:popupTarget - Optional - Boolean}\""
     },
     {
       "trigger": "ui-popupTarget-closeOnClickOutside\tAttr",
       "contents": "closeOnClickOutside=\"${1:ui:popupTarget - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-popupTarget-attachToBody\tAttr",
+      "contents": "attachToBody=\"${1:ui:popupTarget - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-popupTarget-visible\tAttr",
+      "contents": "visible=\"${1:ui:popupTarget - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-popupTarget-manualPosition\tAttr",
+      "contents": "manualPosition=\"${1:ui:popupTarget - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-popupTarget-smartAttachToBody\tAttr",
+      "contents": "smartAttachToBody=\"${1:ui:popupTarget - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-popupTarget-referenceElement\tAttr",
+      "contents": "referenceElement=\"${1:ui:popupTarget - Optional - Object}\""
     },
     {
       "trigger": "ui-popupTarget-closeOnClickInside\tAttr",
@@ -3552,6 +3952,10 @@
     {
       "trigger": "ui-popupTarget-doClose\tAttr",
       "contents": "doClose=\"${1:ui:popupTarget - Optional - ui:collapse}\""
+    },
+    {
+      "trigger": "ui-popupTrigger-label\tAttr",
+      "contents": "label=\"${1:ui:popupTrigger - Optional - String}\""
     },
     {
       "trigger": "ui-popupTrigger-title\tAttr",
@@ -3584,6 +3988,10 @@
     {
       "trigger": "ui-radioMenuItem-hideMenuAfterSelected\tAttr",
       "contents": "hideMenuAfterSelected=\"${1:ui:radioMenuItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-radioMenuItem-role\tAttr",
+      "contents": "role=\"${1:ui:radioMenuItem - Optional - String}\""
     },
     {
       "trigger": "ui-radioToggleMenuItem-isAscending\tAttr",
@@ -3738,6 +4146,10 @@
       "contents": "infiniteLoadingDataProvider=\"${1:ui:scroller - Optional - Aura.Action}\""
     },
     {
+      "trigger": "ui-scroller-infiniteLoadingAutoFillPage\tAttr",
+      "contents": "infiniteLoadingAutoFillPage=\"${1:ui:scroller - Optional - Boolean}\""
+    },
+    {
       "trigger": "ui-scroller-infiniteLoadingNoDataLabel\tAttr",
       "contents": "infiniteLoadingNoDataLabel=\"${1:ui:scroller - Optional - String}\""
     },
@@ -3748,6 +4160,10 @@
     {
       "trigger": "ui-scroller-infiniteLoadingLoadingLabel\tAttr",
       "contents": "infiniteLoadingLoadingLabel=\"${1:ui:scroller - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scroller-infiniteLoadingTemplate\tAttr",
+      "contents": "infiniteLoadingTemplate=\"${1:ui:scroller - Optional - Aura.Component[]}\""
     },
     {
       "trigger": "ui-scroller-pullToShowMoreClick\tAttr",
@@ -3966,6 +4382,30 @@
       "contents": "scrollBy=\"${1:ui:scrollerDeprecated - Optional - ui:scrollBy}\""
     },
     {
+      "trigger": "ui-scrollerWrapper-class\tAttr",
+      "contents": "class=\"${1:ui:scrollerWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scrollerWrapper-width\tAttr",
+      "contents": "width=\"${1:ui:scrollerWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scrollerWrapper-height\tAttr",
+      "contents": "height=\"${1:ui:scrollerWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scrollerWrapper-destination\tAttr",
+      "contents": "destination=\"${1:ui:scrollerWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-scrollerWrapper-xcoord\tAttr",
+      "contents": "xcoord=\"${1:ui:scrollerWrapper - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-scrollerWrapper-ycoord\tAttr",
+      "contents": "ycoord=\"${1:ui:scrollerWrapper - Optional - Integer}\""
+    },
+    {
       "trigger": "ui-spinner-isVisible\tAttr",
       "contents": "isVisible=\"${1:ui:spinner - Optional - Boolean}\""
     },
@@ -4062,12 +4502,8 @@
       "contents": "overflowIcon=\"${1:ui:tabBar - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "ui-tabBar-overflowData\tAttr",
-      "contents": "overflowData=\"${1:ui:tabBar - Optional - Map}\""
-    },
-    {
-      "trigger": "ui-tabBar-tabHeaders\tAttr",
-      "contents": "tabHeaders=\"${1:ui:tabBar - Optional - Aura.Component[]}\""
+      "trigger": "ui-tabBar-name\tAttr",
+      "contents": "name=\"${1:ui:tabBar - Optional - String}\""
     },
     {
       "trigger": "ui-tabBar-setActive\tAttr",
@@ -4080,6 +4516,10 @@
     {
       "trigger": "ui-tabBar-closeTab\tAttr",
       "contents": "closeTab=\"${1:ui:tabBar - Optional - ui:tabsetEvent}\""
+    },
+    {
+      "trigger": "ui-tabBar-updateTab\tAttr",
+      "contents": "updateTab=\"${1:ui:tabBar - Optional - ui:tabsetEvent}\""
     },
     {
       "trigger": "ui-tabBar-onTabClosed\tAttr",
@@ -4190,22 +4630,6 @@
       "contents": "menuItems=\"${1:ui:tabOverflowMenuItem - Optional - Object[]}\""
     },
     {
-      "trigger": "ui-tabOverflowMenuItem-menuItemCache\tAttr",
-      "contents": "menuItemCache=\"${1:ui:tabOverflowMenuItem - Optional - Object}\""
-    },
-    {
-      "trigger": "ui-tabOverflowMenuItem-focusedItemName\tAttr",
-      "contents": "focusedItemName=\"${1:ui:tabOverflowMenuItem - Optional - String}\""
-    },
-    {
-      "trigger": "ui-tabOverflowMenuItem-active\tAttr",
-      "contents": "active=\"${1:ui:tabOverflowMenuItem - Optional - Boolean}\""
-    },
-    {
-      "trigger": "ui-tabOverflowMenuItem-index\tAttr",
-      "contents": "index=\"${1:ui:tabOverflowMenuItem - Optional - Integer}\""
-    },
-    {
       "trigger": "ui-tabOverflowMenuItem-onTabHover\tAttr",
       "contents": "onTabHover=\"${1:ui:tabOverflowMenuItem - Optional - ui:onTabHover}\""
     },
@@ -4218,24 +4642,16 @@
       "contents": "onTabSelection=\"${1:ui:tabOverflowMenuItem - Optional - ui:tabsetEvent}\""
     },
     {
-      "trigger": "ui-tabOverflowMenuList-forwardWrap\tAttr",
-      "contents": "forwardWrap=\"${1:ui:tabOverflowMenuList - Optional - ui:collapse}\""
-    },
-    {
-      "trigger": "ui-tabOverflowMenuList-reverseWrap\tAttr",
-      "contents": "reverseWrap=\"${1:ui:tabOverflowMenuList - Optional - ui:collapse}\""
-    },
-    {
       "trigger": "ui-tabset-tabs\tAttr",
       "contents": "tabs=\"${1:ui:tabset - Optional - List}\""
     },
     {
-      "trigger": "ui-tabset-tabItems\tAttr",
-      "contents": "tabItems=\"${1:ui:tabset - Optional - List}\""
-    },
-    {
       "trigger": "ui-tabset-class\tAttr",
       "contents": "class=\"${1:ui:tabset - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tabset-name\tAttr",
+      "contents": "name=\"${1:ui:tabset - Optional - String}\""
     },
     {
       "trigger": "ui-tabset-lazyRenderTabs\tAttr",
@@ -4258,6 +4674,14 @@
       "contents": "removeTab=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
     },
     {
+      "trigger": "ui-tabset-updateTab\tAttr",
+      "contents": "updateTab=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
+    },
+    {
+      "trigger": "ui-tabset-clearTabs\tAttr",
+      "contents": "clearTabs=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
+    },
+    {
       "trigger": "ui-tabset-activateTab\tAttr",
       "contents": "activateTab=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
     },
@@ -4272,6 +4696,10 @@
     {
       "trigger": "ui-tabset-onActivate\tAttr",
       "contents": "onActivate=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
+    },
+    {
+      "trigger": "ui-tabset-onRemove\tAttr",
+      "contents": "onRemove=\"${1:ui:tabset - Optional - ui:tabsetEvent}\""
     },
     {
       "trigger": "ui-timePicker-hours\tAttr",
@@ -4378,6 +4806,14 @@
       "contents": "domId=\"${1:ui:tooltip - Optional - String}\""
     },
     {
+      "trigger": "ui-tooltip-boundingElementSelector\tAttr",
+      "contents": "boundingElementSelector=\"${1:ui:tooltip - Optional - String}\""
+    },
+    {
+      "trigger": "ui-tooltip-devNameOrId\tAttr",
+      "contents": "devNameOrId=\"${1:ui:tooltip - Optional - String}\""
+    },
+    {
       "trigger": "ui-tooltipAdvanced-isVisible\tAttr",
       "contents": "isVisible=\"${1:ui:tooltipAdvanced - Optional - Boolean}\""
     },
@@ -4446,6 +4882,10 @@
       "contents": "domId=\"${1:ui:tooltipAdvanced - Optional - String}\""
     },
     {
+      "trigger": "ui-tooltipAdvanced-boundingElementSelector\tAttr",
+      "contents": "boundingElementSelector=\"${1:ui:tooltipAdvanced - Optional - String}\""
+    },
+    {
       "trigger": "ui-tree-nodes\tAttr",
       "contents": "nodes=\"${1:ui:tree - Optional - java://List<aura.components.ui.TreeNode>}\""
     },
@@ -4498,10 +4938,6 @@
       "contents": "getChildren=\"${1:ui:treeNode - Optional - ui:getChildren}\""
     },
     {
-      "trigger": "ui-underConstruction-short\tAttr",
-      "contents": "short=\"${1:ui:underConstruction - Optional - Boolean}\""
-    },
-    {
       "trigger": "ui-vbox-north\tAttr",
       "contents": "north=\"${1:ui:vbox - Optional - Aura.Component[]}\""
     },
@@ -4520,6 +4956,14 @@
     {
       "trigger": "ui-virtualDataGrid-items\tAttr",
       "contents": "items=\"${1:ui:virtualDataGrid - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataGrid-item\tAttr",
+      "contents": "item=\"${1:ui:virtualDataGrid - Required - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataGrid-index\tAttr",
+      "contents": "index=\"${1:ui:virtualDataGrid - Required - Integer}\""
     },
     {
       "trigger": "ui-virtualDataGrid-widths\tAttr",
@@ -4562,12 +5006,20 @@
       "contents": "itemVar=\"${1:ui:virtualDataGrid - Optional - String}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-delegatedEvents\tAttr",
+      "contents": "delegatedEvents=\"${1:ui:virtualDataGrid - Optional - String}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-_sortBy\tAttr",
       "contents": "_sortBy=\"${1:ui:virtualDataGrid - Optional - String}\""
     },
     {
       "trigger": "ui-virtualDataGrid-useRowHeaders\tAttr",
       "contents": "useRowHeaders=\"${1:ui:virtualDataGrid - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-virtualDataGrid-rowHeaderIndex\tAttr",
+      "contents": "rowHeaderIndex=\"${1:ui:virtualDataGrid - Optional - Integer}\""
     },
     {
       "trigger": "ui-virtualDataGrid-fixedHeader\tAttr",
@@ -4586,6 +5038,10 @@
       "contents": "resizableColumnsConfig=\"${1:ui:virtualDataGrid - Optional - Object}\""
     },
     {
+      "trigger": "ui-virtualDataGrid-renderInfo\tAttr",
+      "contents": "renderInfo=\"${1:ui:virtualDataGrid - Optional - Object}\""
+    },
+    {
       "trigger": "ui-virtualDataGrid-refresh\tAttr",
       "contents": "refresh=\"${1:ui:virtualDataGrid - Optional - ui:refresh}\""
     },
@@ -4600,6 +5056,110 @@
     {
       "trigger": "ui-virtualDataGrid-onColumnResize\tAttr",
       "contents": "onColumnResize=\"${1:ui:virtualDataGrid - Optional - ui:resize}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-sortBy\tAttr",
+      "contents": "sortBy=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-items\tAttr",
+      "contents": "items=\"${1:ui:virtualDataTable - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-item\tAttr",
+      "contents": "item=\"${1:ui:virtualDataTable - Required - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-index\tAttr",
+      "contents": "index=\"${1:ui:virtualDataTable - Required - Integer}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-widths\tAttr",
+      "contents": "widths=\"${1:ui:virtualDataTable - Optional - Integer[]}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-sortBy\tAttr",
+      "contents": "sortBy=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-class\tAttr",
+      "contents": "class=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-items\tAttr",
+      "contents": "items=\"${1:ui:virtualDataTable - Optional - List}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-headerColumns\tAttr",
+      "contents": "headerColumns=\"${1:ui:virtualDataTable - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-columns\tAttr",
+      "contents": "columns=\"${1:ui:virtualDataTable - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-columnsEdit\tAttr",
+      "contents": "columnsEdit=\"${1:ui:virtualDataTable - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-dataModel\tAttr",
+      "contents": "dataModel=\"${1:ui:virtualDataTable - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-_dirty\tAttr",
+      "contents": "_dirty=\"${1:ui:virtualDataTable - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-itemVar\tAttr",
+      "contents": "itemVar=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-delegatedEvents\tAttr",
+      "contents": "delegatedEvents=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-_sortBy\tAttr",
+      "contents": "_sortBy=\"${1:ui:virtualDataTable - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-useRowHeaders\tAttr",
+      "contents": "useRowHeaders=\"${1:ui:virtualDataTable - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-rowHeaderIndex\tAttr",
+      "contents": "rowHeaderIndex=\"${1:ui:virtualDataTable - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-fixedHeader\tAttr",
+      "contents": "fixedHeader=\"${1:ui:virtualDataTable - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-enableResizableColumns\tAttr",
+      "contents": "enableResizableColumns=\"${1:ui:virtualDataTable - Optional - Boolean}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-resizableColumnsConfig\tAttr",
+      "contents": "resizableColumnsConfig=\"${1:ui:virtualDataTable - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-renderInfo\tAttr",
+      "contents": "renderInfo=\"${1:ui:virtualDataTable - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-refresh\tAttr",
+      "contents": "refresh=\"${1:ui:virtualDataTable - Optional - ui:refresh}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-gridAction\tAttr",
+      "contents": "gridAction=\"${1:ui:virtualDataTable - Optional - ui:gridAction}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-onsort\tAttr",
+      "contents": "onsort=\"${1:ui:virtualDataTable - Optional - ui:sort}\""
+    },
+    {
+      "trigger": "ui-virtualDataTable-onColumnResize\tAttr",
+      "contents": "onColumnResize=\"${1:ui:virtualDataTable - Optional - ui:resize}\""
     },
     {
       "trigger": "ui-virtualList-_dirty\tAttr",
@@ -4626,8 +5186,60 @@
       "contents": "dataProvider=\"${1:ui:virtualList - Optional - Aura.Component[]}\""
     },
     {
+      "trigger": "ui-virtualList-templateMap\tAttr",
+      "contents": "templateMap=\"${1:ui:virtualList - Optional - Object}\""
+    },
+    {
+      "trigger": "ui-virtualList-key\tAttr",
+      "contents": "key=\"${1:ui:virtualList - Required - object}\""
+    },
+    {
+      "trigger": "ui-virtualList-template\tAttr",
+      "contents": "template=\"${1:ui:virtualList - Required - Object}\""
+    },
+    {
       "trigger": "ui-virtualList-items\tAttr",
-      "contents": "items=\"${1:ui:virtualList - Optional - Object}\""
+      "contents": "items=\"${1:ui:virtualList - Required - Object}\""
+    },
+    {
+      "trigger": "ui-virtualList-item\tAttr",
+      "contents": "item=\"${1:ui:virtualList - Required - Object}\""
+    },
+    {
+      "trigger": "ui-virtualList-index\tAttr",
+      "contents": "index=\"${1:ui:virtualList - Optional - Integer}\""
+    },
+    {
+      "trigger": "ui-virtualList-index\tAttr",
+      "contents": "index=\"${1:ui:virtualList - Required - Integer}\""
+    },
+    {
+      "trigger": "ui-virtualList-callback\tAttr",
+      "contents": "callback=\"${1:ui:virtualList - Required - Function}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-class\tAttr",
+      "contents": "class=\"${1:ui:virtualMenuWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-triggerLabel\tAttr",
+      "contents": "triggerLabel=\"${1:ui:virtualMenuWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-triggerTitle\tAttr",
+      "contents": "triggerTitle=\"${1:ui:virtualMenuWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-triggerClass\tAttr",
+      "contents": "triggerClass=\"${1:ui:virtualMenuWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-triggerBody\tAttr",
+      "contents": "triggerBody=\"${1:ui:virtualMenuWrapper - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "ui-virtualMenuWrapper-menu\tAttr",
+      "contents": "menu=\"${1:ui:virtualMenuWrapper - Optional - Aura.ComponentDefRef[]}\""
     },
     {
       "trigger": "actionsTest-chainBoundaryCases-responseOrder\tAttr",
@@ -4658,12 +5270,8 @@
       "contents": "value=\"${1:actionsTest:clientActionWithServerController - Optional - String}\""
     },
     {
-      "trigger": "actionsTest-deferredServerAction-result\tAttr",
-      "contents": "result=\"${1:actionsTest:deferredServerAction - Optional - String}\""
-    },
-    {
-      "trigger": "actionsTest-deferredServerAction-error\tAttr",
-      "contents": "error=\"${1:actionsTest:deferredServerAction - Optional - String}\""
+      "trigger": "actionsTest-clientActionWithServerController-coosHandled\tAttr",
+      "contents": "coosHandled=\"${1:actionsTest:clientActionWithServerController - Optional - Boolean}\""
     },
     {
       "trigger": "actionsTest-inheritanceByExtensionChildCmp-WhichControllerWasCalledChild\tAttr",
@@ -4712,22 +5320,6 @@
     {
       "trigger": "actionsTest-inheritanceByProviderThenExtensionCmp-WhichControllerWasCalledSolid\tAttr",
       "contents": "WhichControllerWasCalledSolid=\"${1:actionsTest:inheritanceByProviderThenExtensionCmp - Optional - string}\""
-    },
-    {
-      "trigger": "actionsTest-serverAction-text\tAttr",
-      "contents": "text=\"${1:actionsTest:serverAction - Optional - String}\""
-    },
-    {
-      "trigger": "actionsTest-serverAction-errorMessage\tAttr",
-      "contents": "errorMessage=\"${1:actionsTest:serverAction - Optional - String}\""
-    },
-    {
-      "trigger": "actionsTest-serverAction-transactionId\tAttr",
-      "contents": "transactionId=\"${1:actionsTest:serverAction - Optional - Integer}\""
-    },
-    {
-      "trigger": "actionsTest-transactions-transactionId\tAttr",
-      "contents": "transactionId=\"${1:actionsTest:transactions - Optional - string}\""
     },
     {
       "trigger": "actionsTest-transactionsEntry-transactionId\tAttr",
@@ -5250,6 +5842,138 @@
       "contents": "noneDefault=\"${1:attributesTest:serializeTo - Optional - String}\""
     },
     {
+      "trigger": "attributesTest-setFacet1-setFacet1_String\tAttr",
+      "contents": "setFacet1_String=\"${1:attributesTest:setFacet1 - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet1-setFacet1_Facet\tAttr",
+      "contents": "setFacet1_Facet=\"${1:attributesTest:setFacet1 - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet1-setFacet1_DefRef\tAttr",
+      "contents": "setFacet1_DefRef=\"${1:attributesTest:setFacet1 - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet1-setFacet1_DefaultString\tAttr",
+      "contents": "setFacet1_DefaultString=\"${1:attributesTest:setFacet1 - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet1-setFacet1_DefaultFacet\tAttr",
+      "contents": "setFacet1_DefaultFacet=\"${1:attributesTest:setFacet1 - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet1-setFacet1_DefaultDefRef\tAttr",
+      "contents": "setFacet1_DefaultDefRef=\"${1:attributesTest:setFacet1 - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_String\tAttr",
+      "contents": "setFacet2_String=\"${1:attributesTest:setFacet2 - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_Facet\tAttr",
+      "contents": "setFacet2_Facet=\"${1:attributesTest:setFacet2 - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_DefRef\tAttr",
+      "contents": "setFacet2_DefRef=\"${1:attributesTest:setFacet2 - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_DefaultString\tAttr",
+      "contents": "setFacet2_DefaultString=\"${1:attributesTest:setFacet2 - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_DefaultFacet\tAttr",
+      "contents": "setFacet2_DefaultFacet=\"${1:attributesTest:setFacet2 - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacet2-setFacet2_DefaultDefRef\tAttr",
+      "contents": "setFacet2_DefaultDefRef=\"${1:attributesTest:setFacet2 - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetConcreteAndSuperSimple-setFacet3_String\tAttr",
+      "contents": "setFacet3_String=\"${1:attributesTest:setFacetConcreteAndSuperSimple - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetConcreteAndSuperSimple-setFacet3_Facet\tAttr",
+      "contents": "setFacet3_Facet=\"${1:attributesTest:setFacetConcreteAndSuperSimple - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetConcreteAndSuperSimple-setFacet3_DefRef\tAttr",
+      "contents": "setFacet3_DefRef=\"${1:attributesTest:setFacetConcreteAndSuperSimple - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetDefRef-defref\tAttr",
+      "contents": "defref=\"${1:attributesTest:setFacetDefRef - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetFunctionCallValue-setFacetFunctionCallValue_String\tAttr",
+      "contents": "setFacetFunctionCallValue_String=\"${1:attributesTest:setFacetFunctionCallValue - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_String\tAttr",
+      "contents": "setFacet3_String=\"${1:attributesTest:setFacetOverrides - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_Facet\tAttr",
+      "contents": "setFacet3_Facet=\"${1:attributesTest:setFacetOverrides - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_DefRef\tAttr",
+      "contents": "setFacet3_DefRef=\"${1:attributesTest:setFacetOverrides - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_DefaultString\tAttr",
+      "contents": "setFacet3_DefaultString=\"${1:attributesTest:setFacetOverrides - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet1_DefaultFacet\tAttr",
+      "contents": "setFacet1_DefaultFacet=\"${1:attributesTest:setFacetOverrides - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet1_DefaultDefRef\tAttr",
+      "contents": "setFacet1_DefaultDefRef=\"${1:attributesTest:setFacetOverrides - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet2_DefaultFacet\tAttr",
+      "contents": "setFacet2_DefaultFacet=\"${1:attributesTest:setFacetOverrides - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet2_DefaultDefRef\tAttr",
+      "contents": "setFacet2_DefaultDefRef=\"${1:attributesTest:setFacetOverrides - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_DefaultFacet\tAttr",
+      "contents": "setFacet3_DefaultFacet=\"${1:attributesTest:setFacetOverrides - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetOverrides-setFacet3_DefaultDefRef\tAttr",
+      "contents": "setFacet3_DefaultDefRef=\"${1:attributesTest:setFacetOverrides - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacets-setFacet3_String\tAttr",
+      "contents": "setFacet3_String=\"${1:attributesTest:setFacetReferencesFacets - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacets-setFacet3_Facet\tAttr",
+      "contents": "setFacet3_Facet=\"${1:attributesTest:setFacetReferencesFacets - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacets-setFacet3_DefRef\tAttr",
+      "contents": "setFacet3_DefRef=\"${1:attributesTest:setFacetReferencesFacets - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacetsExtended-setFacetReferencesFacets_String\tAttr",
+      "contents": "setFacetReferencesFacets_String=\"${1:attributesTest:setFacetReferencesFacetsExtended - Optional - String}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacetsExtended-setFacetReferencesFacets_Facet\tAttr",
+      "contents": "setFacetReferencesFacets_Facet=\"${1:attributesTest:setFacetReferencesFacetsExtended - Optional - Aura.Component[]}\""
+    },
+    {
+      "trigger": "attributesTest-setFacetReferencesFacetsExtended-setFacetReferencesFacets_DefRef\tAttr",
+      "contents": "setFacetReferencesFacets_DefRef=\"${1:attributesTest:setFacetReferencesFacetsExtended - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
       "trigger": "attributesTest-setValue-componentDefault\tAttr",
       "contents": "componentDefault=\"${1:attributesTest:setValue - Optional - Aura.Component[]}\""
     },
@@ -5314,6 +6038,42 @@
       "contents": "intAttribute=\"${1:attributesTest:simpleValue - Optional - Integer}\""
     },
     {
+      "trigger": "auraStoragePerformanceTest-operations-adapterName\tAttr",
+      "contents": "adapterName=\"${1:auraStoragePerformanceTest:operations - Optional - String}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-maxSize\tAttr",
+      "contents": "maxSize=\"${1:auraStoragePerformanceTest:operations - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-initialSize\tAttr",
+      "contents": "initialSize=\"${1:auraStoragePerformanceTest:operations - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-payloadSize\tAttr",
+      "contents": "payloadSize=\"${1:auraStoragePerformanceTest:operations - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-runs\tAttr",
+      "contents": "runs=\"${1:auraStoragePerformanceTest:operations - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-operationIterations\tAttr",
+      "contents": "operationIterations=\"${1:auraStoragePerformanceTest:operations - Optional - Integer}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-operations\tAttr",
+      "contents": "operations=\"${1:auraStoragePerformanceTest:operations - Optional - String[]}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-displayLogs\tAttr",
+      "contents": "displayLogs=\"${1:auraStoragePerformanceTest:operations - Optional - Boolean}\""
+    },
+    {
+      "trigger": "auraStoragePerformanceTest-operations-callback\tAttr",
+      "contents": "callback=\"${1:auraStoragePerformanceTest:operations - Optional - Function}\""
+    },
+    {
       "trigger": "auraStorageTest-actionsStorageTest-actionsStorageOn\tAttr",
       "contents": "actionsStorageOn=\"${1:auraStorageTest:actionsStorageTest - Optional - Boolean}\""
     },
@@ -5346,8 +6106,8 @@
       "contents": "actionStatus=\"${1:auraStorageTest:initTest - Optional - String}\""
     },
     {
-      "trigger": "auraStorageTest-initTest-dupNamedStorage\tAttr",
-      "contents": "dupNamedStorage=\"${1:auraStorageTest:initTest - Optional - Boolean}\""
+      "trigger": "auraStorageTest-isolationTest-log\tAttr",
+      "contents": "log=\"${1:auraStorageTest:isolationTest - Optional - String}\""
     },
     {
       "trigger": "auraStorageTest-isolationTest-status\tAttr",
@@ -5366,40 +6126,16 @@
       "contents": "storageItemValue=\"${1:auraStorageTest:isolationTest - Optional - String}\""
     },
     {
-      "trigger": "auraStorageTest-newComponent-defaultExpiration\tAttr",
-      "contents": "defaultExpiration=\"${1:auraStorageTest:newComponent - Optional - Integer}\""
+      "trigger": "auraStorageTest-manualTesterCmp-stopper\tAttr",
+      "contents": "stopper=\"${1:auraStorageTest:manualTesterCmp - Optional - Boolean}\""
     },
     {
-      "trigger": "auraStorageTest-newComponent-defaultAutoRefreshInterval\tAttr",
-      "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:newComponent - Optional - Integer}\""
+      "trigger": "auraStorageTest-manualTesterCmp-randomActions\tAttr",
+      "contents": "randomActions=\"${1:auraStorageTest:manualTesterCmp - Optional - Boolean}\""
     },
     {
-      "trigger": "auraStorageTest-playerFacet-name\tAttr",
-      "contents": "name=\"${1:auraStorageTest:playerFacet - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-playerFacet-nickName\tAttr",
-      "contents": "nickName=\"${1:auraStorageTest:playerFacet - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-serverStorableTest-responseOrder\tAttr",
-      "contents": "responseOrder=\"${1:auraStorageTest:serverStorableTest - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-serverStorableTest-defaultExpiration\tAttr",
-      "contents": "defaultExpiration=\"${1:auraStorageTest:serverStorableTest - Optional - Integer}\""
-    },
-    {
-      "trigger": "auraStorageTest-serverStorableTest-defaultAutoRefreshInterval\tAttr",
-      "contents": "defaultAutoRefreshInterval=\"${1:auraStorageTest:serverStorableTest - Optional - Integer}\""
-    },
-    {
-      "trigger": "auraStorageTest-teamFacet-name\tAttr",
-      "contents": "name=\"${1:auraStorageTest:teamFacet - Optional - String}\""
-    },
-    {
-      "trigger": "auraStorageTest-teamFacet-city\tAttr",
-      "contents": "city=\"${1:auraStorageTest:teamFacet - Optional - String}\""
+      "trigger": "auraStorageTest-manualTesterCmp-randomTiming\tAttr",
+      "contents": "randomTiming=\"${1:auraStorageTest:manualTesterCmp - Optional - Boolean}\""
     },
     {
       "trigger": "auraStorageTest-versionTest-defaultExpiration\tAttr",
@@ -5434,10 +6170,6 @@
       "contents": "accessLevel=\"${1:auratest:access - Optional - String}\""
     },
     {
-      "trigger": "auratest-access-Private\tAttr",
-      "contents": "Private=\"${1:auratest:access - Optional - String}\""
-    },
-    {
       "trigger": "auratest-access-Public\tAttr",
       "contents": "Public=\"${1:auratest:access - Optional - String}\""
     },
@@ -5462,8 +6194,20 @@
       "contents": "internalEvent=\"${1:auratest:access - Optional - auratest:accessInternalEvent}\""
     },
     {
-      "trigger": "auratest-access-privateEvent\tAttr",
-      "contents": "privateEvent=\"${1:auratest:access - Optional - auratest:accessPrivateEvent}\""
+      "trigger": "auratest-accessDefaultComponent-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:auratest:accessDefaultComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessDefaultComponent-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:auratest:accessDefaultComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessDefaultComponent-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:auratest:accessDefaultComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessDefaultComponent-internalAttribute\tAttr",
+      "contents": "internalAttribute=\"${1:auratest:accessDefaultComponent - Optional - String}\""
     },
     {
       "trigger": "auratest-accessExtendsGlobalWithAttributes-output\tAttr",
@@ -5478,20 +6222,144 @@
       "contents": "attr=\"${1:auratest:accessGlobalAttribute - Optional - String}\""
     },
     {
-      "trigger": "auratest-accessInternalAttribute-attr\tAttr",
-      "contents": "attr=\"${1:auratest:accessInternalAttribute - Optional - String}\""
+      "trigger": "auratest-accessGlobalComponent-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:auratest:accessGlobalComponent - Optional - String}\""
     },
     {
-      "trigger": "auratest-accessPrivateAttribute-attr\tAttr",
-      "contents": "attr=\"${1:auratest:accessPrivateAttribute - Optional - String}\""
+      "trigger": "auratest-accessGlobalComponent-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:auratest:accessGlobalComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:auratest:accessGlobalComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-internalAttribute\tAttr",
+      "contents": "internalAttribute=\"${1:auratest:accessGlobalComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithDefaultAccess\tAttr",
+      "contents": "eventWithDefaultAccessInSystemNamespaceRegisteredWithDefaultAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessDefaultEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithPublicAccess\tAttr",
+      "contents": "eventWithDefaultAccessInSystemNamespaceRegisteredWithPublicAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessDefaultEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "eventWithDefaultAccessInSystemNamespaceRegisteredWithPrivilegedAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessDefaultEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithDefaultAccessInSystemNamespaceRegisteredWithGlobalAccess\tAttr",
+      "contents": "eventWithDefaultAccessInSystemNamespaceRegisteredWithGlobalAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessDefaultEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithDefaultAccess\tAttr",
+      "contents": "eventWithInternalAccessInSystemNamespaceRegisteredWithDefaultAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithPublicAccess\tAttr",
+      "contents": "eventWithInternalAccessInSystemNamespaceRegisteredWithPublicAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "eventWithInternalAccessInSystemNamespaceRegisteredWithPrivilegedAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithInternalAccessInSystemNamespaceRegisteredWithGlobalAccess\tAttr",
+      "contents": "eventWithInternalAccessInSystemNamespaceRegisteredWithGlobalAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessInternalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithDefaultAccess\tAttr",
+      "contents": "eventWithPublicAccessInSystemNamespaceRegisteredWithDefaultAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithPublicAccess\tAttr",
+      "contents": "eventWithPublicAccessInSystemNamespaceRegisteredWithPublicAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "eventWithPublicAccessInSystemNamespaceRegisteredWithPrivilegedAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPublicAccessInSystemNamespaceRegisteredWithGlobalAccess\tAttr",
+      "contents": "eventWithPublicAccessInSystemNamespaceRegisteredWithGlobalAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPublicEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithDefaultAccess\tAttr",
+      "contents": "eventWithPrivilegedAccessInSystemNamespaceRegisteredWithDefaultAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPrivilegedEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPublicAccess\tAttr",
+      "contents": "eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPublicAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPrivilegedEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "eventWithPrivilegedAccessInSystemNamespaceRegisteredWithPrivilegedAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPrivilegedEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithPrivilegedAccessInSystemNamespaceRegisteredWithGlobalAccess\tAttr",
+      "contents": "eventWithPrivilegedAccessInSystemNamespaceRegisteredWithGlobalAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessPrivilegedEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithDefaultAccess\tAttr",
+      "contents": "eventWithGlobalAccessInSystemNamespaceRegisteredWithDefaultAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithPublicAccess\tAttr",
+      "contents": "eventWithGlobalAccessInSystemNamespaceRegisteredWithPublicAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "eventWithGlobalAccessInSystemNamespaceRegisteredWithPrivilegedAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessGlobalComponent-eventWithGlobalAccessInSystemNamespaceRegisteredWithGlobalAccess\tAttr",
+      "contents": "eventWithGlobalAccessInSystemNamespaceRegisteredWithGlobalAccess=\"${1:auratest:accessGlobalComponent - Optional - auratest:accessGlobalEvent}\""
+    },
+    {
+      "trigger": "auratest-accessInternalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:auratest:accessInternalAttribute - Optional - String}\""
     },
     {
       "trigger": "auratest-accessPrivateAttribute-attrDefault\tAttr",
       "contents": "attrDefault=\"${1:auratest:accessPrivateAttribute - Optional - String}\""
     },
     {
+      "trigger": "auratest-accessPrivilegedComponent-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:auratest:accessPrivilegedComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPrivilegedComponent-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:auratest:accessPrivilegedComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPrivilegedComponent-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:auratest:accessPrivilegedComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPrivilegedComponent-internalAttribute\tAttr",
+      "contents": "internalAttribute=\"${1:auratest:accessPrivilegedComponent - Optional - String}\""
+    },
+    {
       "trigger": "auratest-accessPublicAttribute-attr\tAttr",
       "contents": "attr=\"${1:auratest:accessPublicAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPublicComponent-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:auratest:accessPublicComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPublicComponent-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:auratest:accessPublicComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPublicComponent-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:auratest:accessPublicComponent - Optional - String}\""
+    },
+    {
+      "trigger": "auratest-accessPublicComponent-internalAttribute\tAttr",
+      "contents": "internalAttribute=\"${1:auratest:accessPublicComponent - Optional - String}\""
     },
     {
       "trigger": "auratest-auraMethod-outputStringAttr\tAttr",
@@ -5830,6 +6698,14 @@
       "contents": "throwErrorFromUnrender=\"${1:auratest:errorHandling - Optional - Boolean}\""
     },
     {
+      "trigger": "auratest-errorHandlingExtend-throwErrorFromSuperRender\tAttr",
+      "contents": "throwErrorFromSuperRender=\"${1:auratest:errorHandlingExtend - Optional - boolean}\""
+    },
+    {
+      "trigger": "auratest-errorHandlingExtend-throwErrorFromSuperAfterRender\tAttr",
+      "contents": "throwErrorFromSuperAfterRender=\"${1:auratest:errorHandlingExtend - Optional - Boolean}\""
+    },
+    {
       "trigger": "auratest-eventCounter-renderCount\tAttr",
       "contents": "renderCount=\"${1:auratest:eventCounter - Optional - Integer}\""
     },
@@ -6166,6 +7042,10 @@
       "contents": "versionInSuperCmp=\"${1:auratest:versioningSuper - Optional - String}\""
     },
     {
+      "trigger": "bootstrapTest-bootstrapWrapper-url\tAttr",
+      "contents": "url=\"${1:bootstrapTest:bootstrapWrapper - Optional - String}\""
+    },
+    {
       "trigger": "clientApiTest-arrayIndexOf-array\tAttr",
       "contents": "array=\"${1:clientApiTest:arrayIndexOf - Optional - String[]}\""
     },
@@ -6194,16 +7074,48 @@
       "contents": "complete=\"${1:clientApiTest:getDefinition - Optional - Boolean}\""
     },
     {
+      "trigger": "clientApiTest-getReference-labelAttr\tAttr",
+      "contents": "labelAttr=\"${1:clientApiTest:getReference - Optional - String}\""
+    },
+    {
+      "trigger": "clientLibraryTest-testInterface-implNumber\tAttr",
+      "contents": "implNumber=\"${1:clientLibraryTest:testInterface - Optional - String}\""
+    },
+    {
+      "trigger": "clientServiceTest-enqueueAction-label\tAttr",
+      "contents": "label=\"${1:clientServiceTest:enqueueAction - Optional - String}\""
+    },
+    {
       "trigger": "clientServiceTest-enqueueAction-log\tAttr",
       "contents": "log=\"${1:clientServiceTest:enqueueAction - Optional - List}\""
     },
     {
-      "trigger": "componentTest-accessAttributes-output\tAttr",
-      "contents": "output=\"${1:componentTest:accessAttributes - Optional - String}\""
+      "trigger": "clientServiceTest-enqueueAction-children\tAttr",
+      "contents": "children=\"${1:clientServiceTest:enqueueAction - Optional - Aura.Component[]}\""
     },
     {
-      "trigger": "componentTest-accessAttributes-Private\tAttr",
-      "contents": "Private=\"${1:componentTest:accessAttributes - Optional - String}\""
+      "trigger": "clientServiceTest-enqueueAction-path\tAttr",
+      "contents": "path=\"${1:clientServiceTest:enqueueAction - Optional - Aura.Component}\""
+    },
+    {
+      "trigger": "clientServiceTest-enqueueAction-parent\tAttr",
+      "contents": "parent=\"${1:clientServiceTest:enqueueAction - Optional - Aura.Component}\""
+    },
+    {
+      "trigger": "clientServiceTest-enqueueAction-commands\tAttr",
+      "contents": "commands=\"${1:clientServiceTest:enqueueAction - Optional - String}\""
+    },
+    {
+      "trigger": "clientServiceTest-enqueueAction-label\tAttr",
+      "contents": "label=\"${1:clientServiceTest:enqueueAction - Optional - String}\""
+    },
+    {
+      "trigger": "clientServiceTest-enqueueAction-options\tAttr",
+      "contents": "options=\"${1:clientServiceTest:enqueueAction - Optional - String[]}\""
+    },
+    {
+      "trigger": "componentTest-accessAttributes-output\tAttr",
+      "contents": "output=\"${1:componentTest:accessAttributes - Optional - String}\""
     },
     {
       "trigger": "componentTest-accessAttributes-Public\tAttr",
@@ -6230,20 +7142,16 @@
       "contents": "internalEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessInternalEvent}\""
     },
     {
-      "trigger": "componentTest-accessAttributes-privateEvent\tAttr",
-      "contents": "privateEvent=\"${1:componentTest:accessAttributes - Optional - auratest:accessPrivateEvent}\""
+      "trigger": "componentTest-accessExternalNamespace-cmpToCreate\tAttr",
+      "contents": "cmpToCreate=\"${1:componentTest:accessExternalNamespace - Optional - String}\""
     },
     {
-      "trigger": "componentTest-accessUnprivilegedNamespace-cmpToCreate\tAttr",
-      "contents": "cmpToCreate=\"${1:componentTest:accessUnprivilegedNamespace - Optional - String}\""
+      "trigger": "componentTest-accessExternalNamespace-completed\tAttr",
+      "contents": "completed=\"${1:componentTest:accessExternalNamespace - Optional - Boolean}\""
     },
     {
-      "trigger": "componentTest-accessUnprivilegedNamespace-completed\tAttr",
-      "contents": "completed=\"${1:componentTest:accessUnprivilegedNamespace - Optional - Boolean}\""
-    },
-    {
-      "trigger": "componentTest-accessUnprivilegedNamespace-attrName\tAttr",
-      "contents": "attrName=\"${1:componentTest:accessUnprivilegedNamespace - Optional - String}\""
+      "trigger": "componentTest-accessExternalNamespace-attrName\tAttr",
+      "contents": "attrName=\"${1:componentTest:accessExternalNamespace - Optional - String}\""
     },
     {
       "trigger": "componentTest-appendComponent-descriptor\tAttr",
@@ -6296,6 +7204,14 @@
     {
       "trigger": "componentTest-findWithDefRefs-dupElement\tAttr",
       "contents": "dupElement=\"${1:componentTest:findWithDefRefs - Optional - Aura.ComponentDefRef[]}\""
+    },
+    {
+      "trigger": "componentTest-getReference-target\tAttr",
+      "contents": "target=\"${1:componentTest:getReference - Optional - Aura.Component}\""
+    },
+    {
+      "trigger": "componentTest-getReference-key\tAttr",
+      "contents": "key=\"${1:componentTest:getReference - Optional - String}\""
     },
     {
       "trigger": "componentTest-hasModel-value\tAttr",
@@ -6376,6 +7292,10 @@
     {
       "trigger": "componentTest-versioning-actionDone\tAttr",
       "contents": "actionDone=\"${1:componentTest:versioning - Optional - Boolean}\""
+    },
+    {
+      "trigger": "dependencyTest-cmpProvider-qualifiedName\tAttr",
+      "contents": "qualifiedName=\"${1:dependencyTest:cmpProvider - Optional - String}\""
     },
     {
       "trigger": "expressionTest-arrayValue-first\tAttr",
@@ -6562,6 +7482,26 @@
       "contents": "isNotSet=\"${1:expressionTest:undefined - Optional - String}\""
     },
     {
+      "trigger": "facetTest-facetChild-title\tAttr",
+      "contents": "title=\"${1:facetTest:facetChild - Optional - Object}\""
+    },
+    {
+      "trigger": "facetTest-facetChild-footer\tAttr",
+      "contents": "footer=\"${1:facetTest:facetChild - Optional - Object}\""
+    },
+    {
+      "trigger": "facetTest-facetWrapper-toggle\tAttr",
+      "contents": "toggle=\"${1:facetTest:facetWrapper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "facetTest-facetWrapper-foo\tAttr",
+      "contents": "foo=\"${1:facetTest:facetWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "facetTest-facetWrapper-facet\tAttr",
+      "contents": "facet=\"${1:facetTest:facetWrapper - Optional - Aura.Component[]}\""
+    },
+    {
       "trigger": "flavorTest-bug_flavorMisappliedToInner-count\tAttr",
       "contents": "count=\"${1:flavorTest:bug_flavorMisappliedToInner - Required - String}\""
     },
@@ -6698,6 +7638,22 @@
       "contents": "inner=\"${1:ifTest:testRenderIfNested - Optional - Boolean}\""
     },
     {
+      "trigger": "integrationService-injectableWithEverything-strAttribute\tAttr",
+      "contents": "strAttribute=\"${1:integrationService:injectableWithEverything - Optional - String}\""
+    },
+    {
+      "trigger": "integrationService-injectableWithEverything-valueFromJSProvider\tAttr",
+      "contents": "valueFromJSProvider=\"${1:integrationService:injectableWithEverything - Optional - String}\""
+    },
+    {
+      "trigger": "integrationService-injectableWithEverything-valueFromJavaProvider\tAttr",
+      "contents": "valueFromJavaProvider=\"${1:integrationService:injectableWithEverything - Optional - String}\""
+    },
+    {
+      "trigger": "integrationService-injectableWithEverything-dataFromAttributeStyle\tAttr",
+      "contents": "dataFromAttributeStyle=\"${1:integrationService:injectableWithEverything - Optional - String}\""
+    },
+    {
       "trigger": "integrationService-noHistoryService-txt\tAttr",
       "contents": "txt=\"${1:integrationService:noHistoryService - Optional - String}\""
     },
@@ -6716,6 +7672,10 @@
     {
       "trigger": "integrationService-simpleStub-attrMap\tAttr",
       "contents": "attrMap=\"${1:integrationService:simpleStub - Optional - Map}\""
+    },
+    {
+      "trigger": "integrationService-simpleStub-useAsync\tAttr",
+      "contents": "useAsync=\"${1:integrationService:simpleStub - Optional - boolean}\""
     },
     {
       "trigger": "iterationPerformanceTest-iterationBatchOperations-initialState\tAttr",
@@ -7134,10 +8094,6 @@
       "contents": "innerClassName=\"${1:iterationTest:resetIteration - Optional - String}\""
     },
     {
-      "trigger": "iterationTest-resetIteration-_initialized\tAttr",
-      "contents": "_initialized=\"${1:iterationTest:resetIteration - Optional - String}\""
-    },
-    {
       "trigger": "iterationTest-startAndEndIndexWithDefaults-items\tAttr",
       "contents": "items=\"${1:iterationTest:startAndEndIndexWithDefaults - Optional - List}\""
     },
@@ -7334,6 +8290,30 @@
       "contents": "waitId=\"${1:loadLevelTest:serverWithLazyChild - Optional - String}\""
     },
     {
+      "trigger": "locatorTest-innerWithLocator-innerTextValue\tAttr",
+      "contents": "innerTextValue=\"${1:locatorTest:innerWithLocator - Optional - String}\""
+    },
+    {
+      "trigger": "locatorTest-innerWithLocator-addText\tAttr",
+      "contents": "addText=\"${1:locatorTest:innerWithLocator - Optional - String}\""
+    },
+    {
+      "trigger": "locatorTest-locatorWrapper-wrapperText\tAttr",
+      "contents": "wrapperText=\"${1:locatorTest:locatorWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "locatorTest-locatorWrapper-parentKeyAppend\tAttr",
+      "contents": "parentKeyAppend=\"${1:locatorTest:locatorWrapper - Optional - String}\""
+    },
+    {
+      "trigger": "locatorTest-locatorWrapper-alwaysTrue\tAttr",
+      "contents": "alwaysTrue=\"${1:locatorTest:locatorWrapper - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerApiTest-propertyRow-prop\tAttr",
+      "contents": "prop=\"${1:lockerApiTest:propertyRow - Optional - Object}\""
+    },
+    {
       "trigger": "lockerTest-basic-xss\tAttr",
       "contents": "xss=\"${1:lockerTest:basic - Optional - String}\""
     },
@@ -7342,12 +8322,396 @@
       "contents": "foo=\"${1:lockerTest:basic - Optional - ui:selectDate}\""
     },
     {
-      "trigger": "lockerTest-basicTest-log\tAttr",
-      "contents": "log=\"${1:lockerTest:basicTest - Optional - Object}\""
+      "trigger": "lockerTest-basicTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:basicTest - Optional - Object}\""
     },
     {
-      "trigger": "lockerTest-basicTest-symbol\tAttr",
-      "contents": "symbol=\"${1:lockerTest:basicTest - Optional - String}\""
+      "trigger": "lockerTest-basicTest-testRenderer\tAttr",
+      "contents": "testRenderer=\"${1:lockerTest:basicTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-componentStore\tAttr",
+      "contents": "componentStore=\"${1:lockerTest:basicTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-thisAttribute\tAttr",
+      "contents": "thisAttribute=\"${1:lockerTest:basicTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-object\tAttr",
+      "contents": "object=\"${1:lockerTest:basicTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-basicTest-inIframe\tAttr",
+      "contents": "inIframe=\"${1:lockerTest:basicTest - Optional - boolean}\""
+    },
+    {
+      "trigger": "lockerTest-cmpWithMethod-isSecureComponent\tAttr",
+      "contents": "isSecureComponent=\"${1:lockerTest:cmpWithMethod - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-collectionsTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:collectionsTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-dataGridTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:dataGridTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-facet-callback\tAttr",
+      "contents": "callback=\"${1:lockerTest:facet - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-facet-callback\tAttr",
+      "contents": "callback=\"${1:lockerTest:facet - Optional - function}\""
+    },
+    {
+      "trigger": "lockerTest-platformApiTracker-apiMap\tAttr",
+      "contents": "apiMap=\"${1:lockerTest:platformApiTracker - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-promisesTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:promisesTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureActionTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureActionTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureActionTest-testComplete\tAttr",
+      "contents": "testComplete=\"${1:lockerTest:secureActionTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-secureActionTest-facetAction\tAttr",
+      "contents": "facetAction=\"${1:lockerTest:secureActionTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraEventTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureAuraEventTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraEventTest-debugLog\tAttr",
+      "contents": "debugLog=\"${1:lockerTest:secureAuraEventTest - Optional - aura:debugLog}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureAuraTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraTest-dynamicCmps\tAttr",
+      "contents": "dynamicCmps=\"${1:lockerTest:secureAuraTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraTest-testComplete\tAttr",
+      "contents": "testComplete=\"${1:lockerTest:secureAuraTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraTest-labelAttr\tAttr",
+      "contents": "labelAttr=\"${1:lockerTest:secureAuraTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureAuraTest-exposedAPIs\tAttr",
+      "contents": "exposedAPIs=\"${1:lockerTest:secureAuraTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentRefTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureComponentRefTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentRefTest-message\tAttr",
+      "contents": "message=\"${1:lockerTest:secureComponentRefTest - Optional - string}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentRefTest-unexposedPlatformApis\tAttr",
+      "contents": "unexposedPlatformApis=\"${1:lockerTest:secureComponentRefTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureComponentTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-cyclicObject\tAttr",
+      "contents": "cyclicObject=\"${1:lockerTest:secureComponentTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-attrString\tAttr",
+      "contents": "attrString=\"${1:lockerTest:secureComponentTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-attrList\tAttr",
+      "contents": "attrList=\"${1:lockerTest:secureComponentTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-attrMap\tAttr",
+      "contents": "attrMap=\"${1:lockerTest:secureComponentTest - Optional - Map}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-childCmp\tAttr",
+      "contents": "childCmp=\"${1:lockerTest:secureComponentTest - Optional - Aura.Component}\""
+    },
+    {
+      "trigger": "lockerTest-secureComponentTest-press\tAttr",
+      "contents": "press=\"${1:lockerTest:secureComponentTest - Optional - ui:press}\""
+    },
+    {
+      "trigger": "lockerTest-secureDOMEventTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureDOMEventTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureDOMEventTest-accounts\tAttr",
+      "contents": "accounts=\"${1:lockerTest:secureDOMEventTest - Optional - Object[]}\""
+    },
+    {
+      "trigger": "lockerTest-secureDocumentTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureDocumentTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureDocumentTest-cookie\tAttr",
+      "contents": "cookie=\"${1:lockerTest:secureDocumentTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementProxyTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureElementProxyTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureElementTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-testInRenderer\tAttr",
+      "contents": "testInRenderer=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-text\tAttr",
+      "contents": "text=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-scalarExpression\tAttr",
+      "contents": "scalarExpression=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-auraId\tAttr",
+      "contents": "auraId=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-elementPropertiesWhitelist\tAttr",
+      "contents": "elementPropertiesWhitelist=\"${1:lockerTest:secureElementTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-elementPropertiesBlacklist\tAttr",
+      "contents": "elementPropertiesBlacklist=\"${1:lockerTest:secureElementTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-htmlPropertiesWhitelist\tAttr",
+      "contents": "htmlPropertiesWhitelist=\"${1:lockerTest:secureElementTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-htmlPropertiesBlacklist\tAttr",
+      "contents": "htmlPropertiesBlacklist=\"${1:lockerTest:secureElementTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-methodsWhitelist\tAttr",
+      "contents": "methodsWhitelist=\"${1:lockerTest:secureElementTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-testWithUseCapture\tAttr",
+      "contents": "testWithUseCapture=\"${1:lockerTest:secureElementTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-targetElement\tAttr",
+      "contents": "targetElement=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureElementTest-targetElement\tAttr",
+      "contents": "targetElement=\"${1:lockerTest:secureElementTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureIframeTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-messageReceived\tAttr",
+      "contents": "messageReceived=\"${1:lockerTest:secureIframeTest - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-messageData\tAttr",
+      "contents": "messageData=\"${1:lockerTest:secureIframeTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-attributesWhitelist\tAttr",
+      "contents": "attributesWhitelist=\"${1:lockerTest:secureIframeTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-attributesBlacklist\tAttr",
+      "contents": "attributesBlacklist=\"${1:lockerTest:secureIframeTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureIframeTest-methodsWhitelist\tAttr",
+      "contents": "methodsWhitelist=\"${1:lockerTest:secureIframeTest - Optional - List}\""
+    },
+    {
+      "trigger": "lockerTest-secureLocationTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureLocationTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureMutationObserverTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureMutationObserverTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureNavigatorTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureNavigatorTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureObjectTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureObjectTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureObjectTest-wrapUnwrapTestObj\tAttr",
+      "contents": "wrapUnwrapTestObj=\"${1:lockerTest:secureObjectTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureScriptTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureScriptTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureStorageTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureStorageTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureStorageTest-verifyRawStorage\tAttr",
+      "contents": "verifyRawStorage=\"${1:lockerTest:secureStorageTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureWindowTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureWindowTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureWindowTest-testComplete\tAttr",
+      "contents": "testComplete=\"${1:lockerTest:secureWindowTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-secureWrappersPropertiesWritableTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureWrappersPropertiesWritableTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureXHRTest-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTest:secureXHRTest - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTest-secureXHRTest-completed\tAttr",
+      "contents": "completed=\"${1:lockerTest:secureXHRTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTest-wrapUnwrapFacet-value1\tAttr",
+      "contents": "value1=\"${1:lockerTest:wrapUnwrapFacet - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-wrapUnwrapFacet-value2\tAttr",
+      "contents": "value2=\"${1:lockerTest:wrapUnwrapFacet - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTest-wrapUnwrapFacet-obj\tAttr",
+      "contents": "obj=\"${1:lockerTest:wrapUnwrapFacet - Optional - object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-acceptsAttribute-obj\tAttr",
+      "contents": "obj=\"${1:lockerTestOtherNamespace:acceptsAttribute - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-acceptsAttribute-output\tAttr",
+      "contents": "output=\"${1:lockerTestOtherNamespace:acceptsAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-acceptsAttribute-testUtils\tAttr",
+      "contents": "testUtils=\"${1:lockerTestOtherNamespace:acceptsAttribute - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-cookieTester-key\tAttr",
+      "contents": "key=\"${1:lockerTestOtherNamespace:cookieTester - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGrid-lastCall\tAttr",
+      "contents": "lastCall=\"${1:lockerTestOtherNamespace:dataGrid - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGrid-component\tAttr",
+      "contents": "component=\"${1:lockerTestOtherNamespace:dataGrid - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGrid-param\tAttr",
+      "contents": "param=\"${1:lockerTestOtherNamespace:dataGrid - Optional - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGridDataProvider-sortBy\tAttr",
+      "contents": "sortBy=\"${1:lockerTestOtherNamespace:dataGridDataProvider - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGridDataProvider-empty\tAttr",
+      "contents": "empty=\"${1:lockerTestOtherNamespace:dataGridDataProvider - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-dataGridDataProvider-throwError\tAttr",
+      "contents": "throwError=\"${1:lockerTestOtherNamespace:dataGridDataProvider - Optional - Boolean}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-eventSource-message\tAttr",
+      "contents": "message=\"${1:lockerTestOtherNamespace:eventSource - Optional - string}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-eventSource-foo\tAttr",
+      "contents": "foo=\"${1:lockerTestOtherNamespace:eventSource - Optional - lockerTest:fooEvent}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-id\tAttr",
+      "contents": "id=\"${1:lockerTestOtherNamespace:facetLocked - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-class\tAttr",
+      "contents": "class=\"${1:lockerTestOtherNamespace:facetLocked - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-selectors\tAttr",
+      "contents": "selectors=\"${1:lockerTestOtherNamespace:facetLocked - Required - String[]}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-results\tAttr",
+      "contents": "results=\"${1:lockerTestOtherNamespace:facetLocked - Required - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-selectors\tAttr",
+      "contents": "selectors=\"${1:lockerTestOtherNamespace:facetLocked - Required - String[]}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetLocked-results\tAttr",
+      "contents": "results=\"${1:lockerTestOtherNamespace:facetLocked - Required - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-id\tAttr",
+      "contents": "id=\"${1:lockerTestOtherNamespace:facetUnlocked - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-class\tAttr",
+      "contents": "class=\"${1:lockerTestOtherNamespace:facetUnlocked - Optional - String}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-selectors\tAttr",
+      "contents": "selectors=\"${1:lockerTestOtherNamespace:facetUnlocked - Required - String[]}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-results\tAttr",
+      "contents": "results=\"${1:lockerTestOtherNamespace:facetUnlocked - Required - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-selectors\tAttr",
+      "contents": "selectors=\"${1:lockerTestOtherNamespace:facetUnlocked - Required - String[]}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-facetUnlocked-results\tAttr",
+      "contents": "results=\"${1:lockerTestOtherNamespace:facetUnlocked - Required - Object}\""
+    },
+    {
+      "trigger": "lockerTestOtherNamespace-iframeMessageChannel-loaded\tAttr",
+      "contents": "loaded=\"${1:lockerTestOtherNamespace:iframeMessageChannel - Optional - Boolean}\""
     },
     {
       "trigger": "miscTest-aura_iteration-tochange\tAttr",
@@ -7370,16 +8734,32 @@
       "contents": "count=\"${1:miscTest:aura_iteration - Optional - integer}\""
     },
     {
-      "trigger": "performanceTest-child-name\tAttr",
-      "contents": "name=\"${1:performanceTest:child - Optional - String}\""
+      "trigger": "performance-dependencyItem-index\tAttr",
+      "contents": "index=\"${1:performance:dependencyItem - Optional - Integer}\""
     },
     {
-      "trigger": "performanceTest-grandparent-name\tAttr",
-      "contents": "name=\"${1:performanceTest:grandparent - Optional - String}\""
+      "trigger": "performance-dependencyItem-def\tAttr",
+      "contents": "def=\"${1:performance:dependencyItem - Optional - String}\""
     },
     {
-      "trigger": "performanceTest-parent-name\tAttr",
-      "contents": "name=\"${1:performanceTest:parent - Optional - String}\""
+      "trigger": "performance-dependencyItem-isOpen\tAttr",
+      "contents": "isOpen=\"${1:performance:dependencyItem - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performance-dependencyItem-dependencies\tAttr",
+      "contents": "dependencies=\"${1:performance:dependencyItem - Optional - List}\""
+    },
+    {
+      "trigger": "performance-dependencyItem-press\tAttr",
+      "contents": "press=\"${1:performance:dependencyItem - Optional - ui:press}\""
+    },
+    {
+      "trigger": "performanceTest-datePickerTest-testHighlightRange\tAttr",
+      "contents": "testHighlightRange=\"${1:performanceTest:datePickerTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-infiniteListTest-itemsToLoad\tAttr",
+      "contents": "itemsToLoad=\"${1:performanceTest:infiniteListTest - Optional - Integer}\""
     },
     {
       "trigger": "performanceTest-runnerExample-loaded\tAttr",
@@ -7390,12 +8770,24 @@
       "contents": "loaded=\"${1:performanceTest:runnerExample2 - Optional - Boolean}\""
     },
     {
+      "trigger": "performanceTest-selectUseMenuWithOptionsPassViaAttributePerf-options\tAttr",
+      "contents": "options=\"${1:performanceTest:selectUseMenuWithOptionsPassViaAttributePerf - Optional - List}\""
+    },
+    {
+      "trigger": "performanceTest-selectWithOptionsPassViaAttributePerf-options\tAttr",
+      "contents": "options=\"${1:performanceTest:selectWithOptionsPassViaAttributePerf - Optional - List}\""
+    },
+    {
       "trigger": "performanceTest-storageEvictionTest-loaded\tAttr",
       "contents": "loaded=\"${1:performanceTest:storageEvictionTest - Optional - Boolean}\""
     },
     {
       "trigger": "performanceTest-storageEvictionTest-load\tAttr",
       "contents": "load=\"${1:performanceTest:storageEvictionTest - Optional - String}\""
+    },
+    {
+      "trigger": "performanceTest-tabSetTest-numTabs\tAttr",
+      "contents": "numTabs=\"${1:performanceTest:tabSetTest - Optional - Integer}\""
     },
     {
       "trigger": "performanceTest-tabSetTest-testDynamicTabLoading\tAttr",
@@ -7420,6 +8812,10 @@
     {
       "trigger": "performanceTest-uiMenuTest-testVisible\tAttr",
       "contents": "testVisible=\"${1:performanceTest:uiMenuTest - Optional - Boolean}\""
+    },
+    {
+      "trigger": "performanceTest-uiMenuTest-numMenuItems\tAttr",
+      "contents": "numMenuItems=\"${1:performanceTest:uiMenuTest - Optional - Integer}\""
     },
     {
       "trigger": "performanceTest-virtualDataGridTestAppendRows-data\tAttr",
@@ -7450,32 +8846,60 @@
       "contents": "value=\"${1:provider:cmpWithModel - Optional - String}\""
     },
     {
-      "trigger": "provider-providerA-attA\tAttr",
-      "contents": "attA=\"${1:provider:providerA - Optional - Boolean}\""
+      "trigger": "provider-javaProviderAbstract-stringAttribute\tAttr",
+      "contents": "stringAttribute=\"${1:provider:javaProviderAbstract - Optional - String}\""
     },
     {
-      "trigger": "provider-providerA-type\tAttr",
-      "contents": "type=\"${1:provider:providerA - Optional - String}\""
+      "trigger": "provider-javaProviderAbstract-overriddenAttribute\tAttr",
+      "contents": "overriddenAttribute=\"${1:provider:javaProviderAbstract - Optional - String}\""
     },
     {
-      "trigger": "provider-providerB-attB\tAttr",
-      "contents": "attB=\"${1:provider:providerB - Optional - Boolean}\""
+      "trigger": "provider-javaProviderExtends-overriddenAttribute\tAttr",
+      "contents": "overriddenAttribute=\"${1:provider:javaProviderExtends - Optional - String}\""
     },
     {
-      "trigger": "provider-providerB-new1\tAttr",
-      "contents": "new1=\"${1:provider:providerB - Optional - String}\""
+      "trigger": "provider-javaProviderImpl-overriddenAttribute\tAttr",
+      "contents": "overriddenAttribute=\"${1:provider:javaProviderImpl - Optional - String}\""
     },
     {
-      "trigger": "provider-providerB-new2\tAttr",
-      "contents": "new2=\"${1:provider:providerB - Optional - String}\""
+      "trigger": "provider-settingComponentAttributesInComponentConfigProvider-stringValue\tAttr",
+      "contents": "stringValue=\"${1:provider:settingComponentAttributesInComponentConfigProvider - Optional - String}\""
     },
     {
-      "trigger": "provider-providerB-new3\tAttr",
-      "contents": "new3=\"${1:provider:providerB - Optional - String}\""
+      "trigger": "provider-settingComponentAttributesInComponentConfigProvider-numberValue\tAttr",
+      "contents": "numberValue=\"${1:provider:settingComponentAttributesInComponentConfigProvider - Optional - Integer}\""
     },
     {
-      "trigger": "provider-providerBase-type\tAttr",
-      "contents": "type=\"${1:provider:providerBase - Optional - String}\""
+      "trigger": "provider-settingComponentAttributesInComponentConfigProvider-nullValue\tAttr",
+      "contents": "nullValue=\"${1:provider:settingComponentAttributesInComponentConfigProvider - Optional - String}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProvider-arrayValue\tAttr",
+      "contents": "arrayValue=\"${1:provider:settingComponentAttributesInComponentConfigProvider - Optional - String[]}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProvider-existingValue\tAttr",
+      "contents": "existingValue=\"${1:provider:settingComponentAttributesInComponentConfigProvider - Optional - String}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProviderImpl-stringValue\tAttr",
+      "contents": "stringValue=\"${1:provider:settingComponentAttributesInComponentConfigProviderImpl - Optional - String}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProviderImpl-numberValue\tAttr",
+      "contents": "numberValue=\"${1:provider:settingComponentAttributesInComponentConfigProviderImpl - Optional - Integer}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProviderImpl-nullValue\tAttr",
+      "contents": "nullValue=\"${1:provider:settingComponentAttributesInComponentConfigProviderImpl - Optional - String}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProviderImpl-arrayValue\tAttr",
+      "contents": "arrayValue=\"${1:provider:settingComponentAttributesInComponentConfigProviderImpl - Optional - String[]}\""
+    },
+    {
+      "trigger": "provider-settingComponentAttributesInComponentConfigProviderImpl-existingValue\tAttr",
+      "contents": "existingValue=\"${1:provider:settingComponentAttributesInComponentConfigProviderImpl - Optional - String}\""
     },
     {
       "trigger": "renderingTest-arrayValues-simpleValueArray\tAttr",
@@ -7594,6 +9018,430 @@
       "contents": "listAttribute=\"${1:setAttributesTest:typeCoercion - Optional - List}\""
     },
     {
+      "trigger": "testCustomNS1-accessExternalNamespace-cmpToCreate\tAttr",
+      "contents": "cmpToCreate=\"${1:testCustomNS1:accessExternalNamespace - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessExternalNamespace-completed\tAttr",
+      "contents": "completed=\"${1:testCustomNS1:accessExternalNamespace - Optional - Boolean}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessExternalNamespace-attrName\tAttr",
+      "contents": "attrName=\"${1:testCustomNS1:accessExternalNamespace - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessExternalNamespace-value\tAttr",
+      "contents": "value=\"${1:testCustomNS1:accessExternalNamespace - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessGlobalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:testCustomNS1:accessGlobalAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessInternalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:testCustomNS1:accessInternalAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessPublicComponent-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS1:accessPublicComponent - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-accessPublicComponent-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS1:accessPublicComponent - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithDefaultAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS1:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithDefaultAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS1:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithDefaultAccess2-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS1:componentWithDefaultAccess2 - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithDefaultAccess2-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS1:componentWithDefaultAccess2 - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithGlobalAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS1:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithGlobalAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS1:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithPublicAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS1:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-componentWithPublicAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS1:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-getDefinition-definitionNames\tAttr",
+      "contents": "definitionNames=\"${1:testCustomNS1:getDefinition - Optional - String[]}\""
+    },
+    {
+      "trigger": "testCustomNS1-getDefinition-complete\tAttr",
+      "contents": "complete=\"${1:testCustomNS1:getDefinition - Optional - Boolean}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-message1\tAttr",
+      "contents": "message1=\"${1:testCustomNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-message2\tAttr",
+      "contents": "message2=\"${1:testCustomNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-message3\tAttr",
+      "contents": "message3=\"${1:testCustomNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-message4\tAttr",
+      "contents": "message4=\"${1:testCustomNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-appEventInternalNSPublicAccess\tAttr",
+      "contents": "appEventInternalNSPublicAccess=\"${1:testCustomNS1:testApplicationEventACF - Optional - auratest:applicationEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-appEventInternalNSDefaultAccess\tAttr",
+      "contents": "appEventInternalNSDefaultAccess=\"${1:testCustomNS1:testApplicationEventACF - Optional - auratest:applicationEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testCustomNS1-testApplicationEventACF-appEventInternalNSInternalAccess\tAttr",
+      "contents": "appEventInternalNSInternalAccess=\"${1:testCustomNS1:testApplicationEventACF - Optional - auratest:applicationEventWithInternalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-accessGlobalAttribute-attr\tAttr",
+      "contents": "attr=\"${1:testCustomNS2:accessGlobalAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-accessPrivateAttribute-attrDefault\tAttr",
+      "contents": "attrDefault=\"${1:testCustomNS2:accessPrivateAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-accessPublicAttribute-attr\tAttr",
+      "contents": "attr=\"${1:testCustomNS2:accessPublicAttribute - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithDefaultAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS2:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithDefaultAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS2:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-defaultAttribute\tAttr",
+      "contents": "defaultAttribute=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithDefaultAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithGlobalAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithDefaultAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithPublicAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithDefaultAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithGlobalAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithPublicAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithPublicAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithDefaultAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithGlobalAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS2eventWithGlobalAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithPublicAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithDefaultAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithGlobalAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithGlobalAccess-NS1eventWithGlobalAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithPublicAccess=\"${1:testCustomNS2:componentWithGlobalAccess - Optional - testCustomNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithPublicAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testCustomNS2:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testCustomNS2-componentWithPublicAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testCustomNS2:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess2-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess2 - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess2-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess2 - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess2-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS1:componentWithDefaultAccess2 - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithDefaultAccess2-NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS1:componentWithDefaultAccess2 - Optional - testPrivilegedNS1:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithGlobalAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS1:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithGlobalAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS1:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithGlobalAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS1:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPrivilegedAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS1:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPrivilegedAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS1:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPrivilegedAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS1:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPublicAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS1:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPublicAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS1:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-componentWithPublicAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS1:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-message1\tAttr",
+      "contents": "message1=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-message2\tAttr",
+      "contents": "message2=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-message3\tAttr",
+      "contents": "message3=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-message4\tAttr",
+      "contents": "message4=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-appEventInternalNSPublicAccess\tAttr",
+      "contents": "appEventInternalNSPublicAccess=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - auratest:applicationEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-appEventInternalNSDefaultAccess\tAttr",
+      "contents": "appEventInternalNSDefaultAccess=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - auratest:applicationEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS1-testApplicationEventACF-appEventInternalNSInternalAccess\tAttr",
+      "contents": "appEventInternalNSInternalAccess=\"${1:testPrivilegedNS1:testApplicationEventACF - Optional - auratest:applicationEventWithInternalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithDefaultAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS2:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithDefaultAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS2:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithDefaultAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS2:componentWithDefaultAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithGlobalAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithGlobalAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithGlobalAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS2:componentWithGlobalAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS1eventWithPrivilegedAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS1eventWithPrivilegedAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS1eventWithPrivilegedAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithPrivilegedAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS1eventWithPrivilegedAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS1eventWithGlobalAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS1eventWithGlobalAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS1:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithDefaultAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS2eventWithDefaultAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithDefaultAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPublicAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithPublicAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPublicAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithPrivilegedAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithPrivilegedAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS2eventWithPrivilegedAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithPrivilegedAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithPrivilegedAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithPrivilegedAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithDefaultAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithDefaultAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithPublicAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithPublicAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithPrivilegedAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithPrivilegedAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPrivilegedAccess-NS2eventWithGlobalAccessRegisteredWithGlobalAccess\tAttr",
+      "contents": "NS2eventWithGlobalAccessRegisteredWithGlobalAccess=\"${1:testPrivilegedNS2:componentWithPrivilegedAccess - Optional - testPrivilegedNS2:componentEventWithGlobalAccess}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPublicAccess-publicAttribute\tAttr",
+      "contents": "publicAttribute=\"${1:testPrivilegedNS2:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPublicAccess-globalAttribute\tAttr",
+      "contents": "globalAttribute=\"${1:testPrivilegedNS2:componentWithPublicAccess - Optional - String}\""
+    },
+    {
+      "trigger": "testPrivilegedNS2-componentWithPublicAccess-privilegedAttribute\tAttr",
+      "contents": "privilegedAttribute=\"${1:testPrivilegedNS2:componentWithPublicAccess - Optional - String}\""
+    },
+    {
       "trigger": "updateTest-updateWithoutHandling-text\tAttr",
       "contents": "text=\"${1:updateTest:updateWithoutHandling - Optional - string}\""
     },
@@ -7616,6 +9464,74 @@
     {
       "trigger": "valueChange-simpleValueChange-observedC\tAttr",
       "contents": "observedC=\"${1:valueChange:simpleValueChange - Optional - string}\""
+    },
+    {
+      "trigger": "moduletest-composed-str\tAttr",
+      "contents": "str=\"${1:moduletest:composed - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-composite-literal\tAttr",
+      "contents": "literal=\"${1:moduletest:composite - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-composite-bound\tAttr",
+      "contents": "bound=\"${1:moduletest:composite - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-composite-unbound\tAttr",
+      "contents": "unbound=\"${1:moduletest:composite - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-composite-expression\tAttr",
+      "contents": "expression=\"${1:moduletest:composite - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-composite-callbackAction\tAttr",
+      "contents": "callbackAction=\"${1:moduletest:composite - Optional - Aura.Action}\""
+    },
+    {
+      "trigger": "moduletest-composite-onpress\tAttr",
+      "contents": "onpress=\"${1:moduletest:composite - Optional - ui:press}\""
+    },
+    {
+      "trigger": "moduletest-simple-literal\tAttr",
+      "contents": "literal=\"${1:moduletest:simple - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-simple-bound\tAttr",
+      "contents": "bound=\"${1:moduletest:simple - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-simple-unbound\tAttr",
+      "contents": "unbound=\"${1:moduletest:simple - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-simple-expression\tAttr",
+      "contents": "expression=\"${1:moduletest:simple - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-simple-onpress\tAttr",
+      "contents": "onpress=\"${1:moduletest:simple - Optional - ui:press}\""
+    },
+    {
+      "trigger": "moduletest-simple-callbackaction\tAttr",
+      "contents": "callbackaction=\"${1:moduletest:simple - Optional - ui:response}\""
+    },
+    {
+      "trigger": "moduletest-test-str1\tAttr",
+      "contents": "str1=\"${1:moduletest:test - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-test-str2\tAttr",
+      "contents": "str2=\"${1:moduletest:test - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-test-str3\tAttr",
+      "contents": "str3=\"${1:moduletest:test - Optional - String}\""
+    },
+    {
+      "trigger": "moduletest-text-text\tAttr",
+      "contents": "text=\"${1:moduletest:text - Optional - String}\""
     }
   ]
 }
